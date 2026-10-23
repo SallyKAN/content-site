@@ -205,30 +205,30 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 - <strong>OpenAI 称所有影响生产防护栈的漏洞已修补</strong>，METR/Redwood 明说 <strong>"我们未评估这些说法"</strong>——这句是全文最重要的引号；<br />
 - 6 条里第 3 条细节被 OpenAI 删节，<strong>不要试图补全</strong>；<br />
 - 不写"AI 在骗人"，写"<strong>结构上允许不被看见</strong>"；<br />
-- 原文：https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent ｜ https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/</p>
+- 原文：<a href="https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent" target="_blank" rel="noopener">https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent</a> ｜ <a href="https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/" target="_blank" rel="noopener">https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/</a></p>
 <hr />
 <h3>② ⭐ 同日对照：门框被开源了（89 分）</h3>
 <p><strong>一句话</strong>：10/22 圣何塞 AGNTCon + MCPCon，<strong>Agentic AI Foundation（AAIF）</strong> 收了四个新项目：<strong>Anthropic 的 Agent Skills</strong>（公开版称已有 1M 技能发布、2.8 亿次安装，含 ChatGPT / Cursor / GitHub Copilot / VS Code 等 70+ 集成，连 GitHub org、logo、agentskills.io 域名一起捐）、<strong>OpenAI 的 Open Responses</strong>（多厂商统一接口规范）、<strong>Hugging Face 的 OpenEnv</strong>（RL 训练环境）、<strong>阿里巴巴的 OpenSandbox</strong>（Agent 执行沙箱运行时）。AAIF 一年从 3 个项目涨到 10 个，其余是 A2A、Agent Router、agentgateway、AGENTS.md、goose、MCP。<br />
-- https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-four-new-projects-agent-skills-open-responses-openenv-and-opensandbox</p>
+- <a href="https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-four-new-projects-agent-skills-open-responses-openenv-and-opensandbox" target="_blank" rel="noopener">https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-four-new-projects-agent-skills-open-responses-openenv-and-opensandbox</a></p>
 <p><strong>角度</strong>：<strong>四层栈被四家不同公司分别交出</strong>——能力（Skills）/ 接口（Responses）/ 训练（OpenEnv）/ 执行（Sandbox）。跟①对读：<strong>"执行环境"这一层，今天同时被开源成公共品，和被证明有六个开关。</strong> 中性治理解决的是"谁来定标准"，不解决"谁来看住执行"。<br />
 <strong>⚠️</strong> 数字（1M 技能、2.8 亿安装、70+ 集成）均来自新闻稿公开版，标注"据 AAIF 公告"。</p>
 <hr />
 <h3>③ 🛒 门怎么开：沃尔玛给 Agent 单独账户 + 1Password 做无凭证认证（86 分）</h3>
 <p><strong>一句话</strong>：沃尔玛推出 <strong>Agent Gateway</strong>（MCP server，让获批的外部 Agent 查库存并代客下单）和 <strong>Agent Profiles</strong>（每个 Agent 独立账户空间、<strong>消费上限</strong>、单笔需审批，且<strong>碰不到支付信息和历史订单</strong>，不合规 Agent 直接封）。CEO John Furner 在 Masters of Scale Summit（10/21）发布，扩到 Sam's Club，不要求 Walmart+。对照：<strong>亚马逊在封杀第三方 AI 购物 Agent</strong>。同日 <strong>1Password</strong> 宣布 ARR 破 <strong>5 亿美元</strong>，Agent 月活暴涨 <strong>500%</strong>（人类 +200%），推出 <strong>1Password for Agents</strong>——让 Agent 认证第三方服务但<strong>不持有凭证</strong>，称已服务 85% 的 Forbes AI 50。<br />
-- https://www.walmart.com/news （Agent Gateway 公告）<br />
-- https://betakit.com/1password-tops-500-million-usd-arr-on-the-back-of-accelerating-ai-demand/</p>
+- <a href="https://www.walmart.com/news" target="_blank" rel="noopener">https://www.walmart.com/news</a> （Agent Gateway 公告）<br />
+- <a href="https://betakit.com/1password-tops-500-million-usd-arr-on-the-back-of-accelerating-ai-demand/" target="_blank" rel="noopener">https://betakit.com/1password-tops-500-million-usd-arr-on-the-back-of-accelerating-ai-demand/</a></p>
 <p><strong>角度</strong>：<strong>这是"身份证"（1019）第一次真的发下来</strong>——不是给模型发，是给 Agent 发：独立账户、额度、审批、不接触支付凭证。主线六天来所有关于"怎么管"的抱怨，在零售和密码管理这两个最务实的行业里，已经有了能跑的方案。<br />
 <strong>⚠️</strong> 两家策略相反（沃尔玛开门 vs 亚马逊关门）是事实对比，<strong>不要写成"亚马逊错了"</strong>。</p>
 <hr />
 <h3>④ 💰 账本：Meta 8250 亿美元 + 纳指跌 2.6%（83 分）</h3>
 <p><strong>一句话</strong>：Meta 新披露约 <strong>8250 亿美元</strong>未来承诺（7 月约 7000 亿）：<strong>3557 亿</strong>表外经营/融资租赁延到 2036 年，<strong>4545 亿</strong>不可撤销合同（云容量、服务器、能源、Reality Labs 硬件）；2026 资本开支仍指引 <strong>1350–1450 亿</strong>；Q3 营收 <strong>646 亿（+26%）</strong>，营业利润因<strong>新墨西哥 Cambridge Analytica 案 98.9 亿计提</strong>下滑 37% 至 <strong>129.9 亿</strong>；董事会批准 2027 年 1 月生效的<strong>无投票权 C 类股</strong>为 AI 融资。同日纳指跌 <strong>2.6%</strong>（6 月初以来最大单日跌幅），费城半导体指数跌 <strong>6.7%</strong>，Intel / AMD / SanDisk / Marvell 各跌超 8%，Meta 跌 7%。<br />
-- https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx<br />
-- https://www.staradvertiser.com/2026/10/22/breaking-news/nasdaq-plunges-2-6-as-ai-spending-fears-spark-tech-selloff/</p>
+- <a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx" target="_blank" rel="noopener">https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx</a><br />
+- <a href="https://www.staradvertiser.com/2026/10/22/breaking-news/nasdaq-plunges-2-6-as-ai-spending-fears-spark-tech-selloff/" target="_blank" rel="noopener">https://www.staradvertiser.com/2026/10/22/breaking-news/nasdaq-plunges-2-6-as-ai-spending-fears-spark-tech-selloff/</a></p>
 <p><strong>一句话</strong>：<strong>无投票权股票 + 表外租赁</strong>——AI 军备竞赛的融资结构正在绕开股东表决。可作为"算力金融化"系列的又一块料（见 10/4 卡）。</p>
 <hr />
 <h3>⑤ 🇨🇳 国内稿：DeepSeek 逆势融 ~150 亿美元（88 分）</h3>
 <p><strong>一句话</strong>：DeepSeek 完成约 <strong>150 亿美元（约 1000 亿人民币）</strong> 融资，<strong>腾讯、宁德时代</strong>领投，为中国最大私募 AI 轮次之一；发生在<strong>美方要求联邦机构移除 DeepSeek 技术两天后</strong>，此前 6 月一轮 70 亿美元、估值 500 亿。创始人梁文锋仍控制运营实体约 <strong>81.6%</strong>。<br />
-- https://emergent.sh/news/deepseek-raises-15b-challenge-openai （聚合，需回溯一手来源后再引用）</p>
+- <a href="https://emergent.sh/news/deepseek-raises-15b-challenge-openai" target="_blank" rel="noopener">https://emergent.sh/news/deepseek-raises-15b-challenge-openai</a> （聚合，需回溯一手来源后再引用）</p>
 <p><strong>角度</strong>：<strong>"禁令"与"融资"同一条时间线</strong>——制裁在切断渠道，资本在加固股权集中度（81.6%）。与③的"沃尔玛给 Agent 发身份证"形成一对：<strong>外面在发证，里面在集权。</strong><br />
 <strong>⚠️</strong> 这条<strong>必须先回溯一手来源（彭博/路透/公司公告）再动笔</strong>，聚合站数字不能直接采信，金额口径待核。</p>
 <hr />

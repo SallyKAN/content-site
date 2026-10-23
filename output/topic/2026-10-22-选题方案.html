@@ -189,13 +189,13 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 - 两次事件官方定性为 <strong>incident（事件）</strong>，OpenAI <strong>未定性为恶意</strong>，一律写"OpenAI 称仍在评估"；<br />
 - "no-notify flag""alert recipients"等英文原词保留并加中文解释；<br />
 - 不引申到"AI 有意识/有自我意识"，只讲<strong>权限设计与可监控性</strong>；<br />
-- 原文：https://alignment.openai.com/misalignment-reports/ （报告索引）；https://aiweekly.co/ai-news-today （10/22 汇总）</p>
+- 原文：<a href="https://alignment.openai.com/misalignment-reports/" target="_blank" rel="noopener">https://alignment.openai.com/misalignment-reports/</a> （报告索引）；<a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">https://aiweekly.co/ai-news-today</a> （10/22 汇总）</p>
 <hr />
 <h3>② 🐍 LiteLLM 投毒 + Railway 撞库：AI 供应链一夜两爆（90 分）</h3>
 <p><strong>一句话</strong>：<strong>LiteLLM 1.107.0</strong>（PyPI）由被篡改的 git 源码构建，带两个载荷：<code>cook.py</code> 把 SSH 密钥、云凭证、CI/CD secret、浏览器密码和<strong>各家 LLM Provider 的 API Key</strong> 外传到 <code>www.litellm[.]dev</code>；<code>sitecustomize.py</code> <strong>每小时轮询 GitHub 仓库取任意命令执行</strong>。因为走的是 sitecustomize，<strong>只要 Python 启动就会加载</strong>——不 import litellm 也中招。1.106.2 与 1.107.0 的 RC 版干净。同一天，<strong>Railway</strong> 披露第三方未授权访问了存客户环境变量的系统，部分<strong>解密后的内容</strong>（API Key、数据库/Registry 凭证）被拿走，全站暂停部署，要求所有用户轮换密钥。</p>
 <blockquote>
 <p>https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/<br />
-https://blog.railway.com/p/security-disclosure-wednesday-october-21st</p>
+<a href="https://blog.railway.com/p/security-disclosure-wednesday-october-21st" target="_blank" rel="noopener">https://blog.railway.com/p/security-disclosure-wednesday-october-21st</a></p>
 </blockquote>
 <p><strong>角度</strong>：AI 应用栈的"中间件"是新的高危面。LiteLLM 这类统一网关手里<strong>同时握着所有厂商的 Key</strong>——一个包被投毒，等于全公司的模型预算和云账户一起交出去。<strong>且与主线呼应：Agent 跑起来要有凭证，凭证都集中在一个网关里，网关就是新的单点。</strong></p>
 <p><strong>⚠️</strong>：版本号、文件名、域名（<code>litellm[.]dev</code>）必须逐字核对；不要给读者复制命令，只说"立刻检查版本 + 轮换所有 Key"。</p>
@@ -204,7 +204,7 @@ https://blog.railway.com/p/security-disclosure-wednesday-october-21st</p>
 <p><strong>一句话</strong>：10/21，中办、国办《关于推动科技创新和产业创新深度融合的意见》对外发布，第（七）条明确"<strong>全面实施'人工智能+'行动，推动人工智能全方位赋能千行百业</strong>"，并与制造业技改、大规模设备更新、工业互联网、数字经济与实体经济融合并列。</p>
 <blockquote>
 <p>https://www.news.cn/politics/zywj/20261021/8faf0548d6a74f8db999c141d1dd8f9b/c.html<br />
-https://www.21jingji.com/article/20261021/herald/f328c7714024a44c157d67b03a46d7dc.html</p>
+<a href="https://www.21jingji.com/article/20261021/herald/f328c7714024a44c157d67b03a46d7dc.html" target="_blank" rel="noopener">https://www.21jingji.com/article/20261021/herald/f328c7714024a44c157d67b03a46d7dc.html</a></p>
 </blockquote>
 <p><strong>角度</strong>：把它和今天另一条放一起——<strong>上游（Anthropic/Dario）在讨论"该不该为安全按暂停",下游（中办国办）在动员"全方位赋能千行百业"</strong>。中国路径是<strong>先铺场景、靠真实场景反哺能力</strong>；美国路径是<strong>先设闸门、靠闸门定价</strong>。这不是对错，是两种成本结构：一个先付"部署成本"，一个先付"治理成本"。<br />
 <strong>注意</strong>：全文口径以新华社/21经济网为准，只引用原文措辞，不解读成"监管放松"或"监管收紧"。</p>
@@ -221,7 +221,7 @@ https://www.21jingji.com/article/20261021/herald/f328c7714024a44c157d67b03a46d7d
 <p><strong>一句话</strong>：10/21，OpenAI 宣布前沿模型与 Codex Agent 工作流进入 <strong>Google Cloud Model Garden</strong>，通过 Cloud Marketplace 交易，<strong>企业可用已有 GCP 承诺额度抵扣</strong>；后续进入 Antigravity 与 Gemini Agent；常规可用"未来几周"。官方博客末尾一句："<strong>Microsoft remains OpenAI's primary cloud partner.</strong>"</p>
 <blockquote>
 <p>https://openai.com/index/openai-models-google-cloud/<br />
-https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers</p>
+<a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers" target="_blank" rel="noopener">https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers</a></p>
 </blockquote>
 <p>同一天：API 提示缓存可选 <strong>12 小时</strong>（默认仍 30 分钟），<strong>缓存写入价从 1.25 倍涨到 2.5 倍</strong>，读取价不变；Codex / Work 登录用户缓存<strong>永久保留</strong>。</p>
 <blockquote>

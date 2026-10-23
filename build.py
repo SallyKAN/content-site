@@ -133,6 +133,25 @@ def extract_summary(md_text):
     return ""
 
 
+URL_RE = re.compile(r'(?<![="\'>])(https?://[^\s<>"\u3000-\u303f\uff00-\uffef)]+)')
+
+
+def linkify_raw(html_text):
+    """把正文里裸露的 URL 转成可点击链接（跳过已有 <a> 标签内的）"""
+    parts = re.split(r'(<a\b[^>]*>.*?</a>)', html_text, flags=re.S | re.I)
+    out = []
+    for seg in parts:
+        if re.match(r'<a\b', seg, re.I):
+            out.append(seg)          # 已是链接，原样保留
+            continue
+        def rep(m):
+            u = m.group(1).rstrip('.,;:!?)')
+            tail = m.group(1)[len(u):]
+            return f'<a href="{u}" target="_blank" rel="noopener">{u}</a>{tail}'
+        out.append(URL_RE.sub(rep, seg))
+    return "".join(out)
+
+
 def collect(src):
     """收集某个源的所有文件 -> [{date, path, title, summary}]"""
     items = []
@@ -160,9 +179,46 @@ def collect(src):
             "title": extract_title(raw, fb),
             "summary": extract_summary(raw),
             "raw": raw,
+            "_upd": sub.endswith("-更新"),
+            "_key": (date, re.sub(r"-更新$", "", sub)),
         })
+
+    # --- 合并同日期同主题的「原版」与「-更新」版 ---
+    merged = {}
+    order = []
+    for it in items:
+        k = it["_key"]
+        if k not in merged:
+            merged[k] = it
+            order.append(k)
+        else:
+            keep = merged[k]
+            keep["raw"] = merge_two(keep["path"], it["path"])
+            keep["sub"] = re.sub(r"-更新$", "", keep["sub"])
+            keep["title"] = extract_title(keep["raw"], keep["date"])
+            keep["summary"] = extract_summary(keep["raw"])
+
+    items = [merged[k] for k in order]
     items.sort(key=lambda x: (x["date"], x["sub"]), reverse=True)
     return items
+
+
+def merge_two(p_orig, p_upd):
+    """把原版与更新版合并成一个 markdown 文档，保留两版各自独有的内容"""
+    import difflib
+    a = open(p_orig, encoding="utf-8", errors="ignore").read()
+    b = open(p_upd, encoding="utf-8", errors="ignore").read()
+    if a.strip() == b.strip():
+        return a
+    ratio = difflib.SequenceMatcher(None, a, b).ratio()
+    if ratio > 0.9:  # 几乎相同，取更长的
+        return a if len(a) >= len(b) else b
+    # 主体用较全的那版，另一版作为「更新版补充」附在后面
+    main, extra = (a, b) if len(a) >= len(b) else (b, a)
+    tag = "更新版补充" if main is a else "原始版本补充"
+    main = re.sub(r"^# .*$", "", main, count=1, flags=re.M).strip()
+    extra = re.sub(r"^# .*$", "", extra, count=1, flags=re.M).strip()
+    return (main + "\n\n---\n\n## 📎 " + tag + "\n\n" + extra).strip()
 
 
 def render_items(src, items):
@@ -172,6 +228,7 @@ def render_items(src, items):
     for i, it in enumerate(items):
         md.reset()
         body = md.convert(it["raw"])
+        body = linkify_raw(body)
         body = body.replace("<table>", '<div class="tw"><table>').replace("</table>", "</table></div>")
         nav_prev = nav_next = ""
         if i + 1 < len(items):  # 更旧
