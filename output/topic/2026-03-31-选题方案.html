@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0331 选题方案</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-03-31</div><h1>0331 选题方案</h1>
+<hr />
+<h2>选题1：Harness-First Engineering — Datadog 如何用 AI Agent 写出生产级系统</h2>
+<p><strong>日期</strong>：2026-03-31<br />
+<strong>状态</strong>：待写<br />
+<strong>审核分数</strong>：92/100</p>
+<h3>事件描述</h3>
+<p>Datadog 工程博客发布深度文章，分享他们用 AI coding agent（Claude Code + Codex）构建了 redis-rust（Redis 兼容服务器）和 Helix（Kafka 兼容流引擎）两个生产级系统。核心方法论是 "Harness-First Engineering"：不再逐行审查 agent 生成的代码，而是投资于自动化验证体系（确定性仿真测试 DST、TLA+ 形式化规约、Kani 有界证明、Maelstrom 线性化检查、生产流量影子测试），让 harness 做人类审查无法规模化的验证工作。</p>
+<p>redis-rust 在 staging 环境实现了与 Redis 8.4 相当的延迟，内存减少 87%。Helix 通过了数百万次确定性仿真运行，达到约 93% 的峰值磁盘吞吐量。</p>
+<h3>核心角度</h3>
+<p><strong>"不是更好的 Agent，而是更好的笼子"</strong> — 当 Agent 的代码生成速度远超人类验证速度时，瓶颈从"写代码"转移到了"信任代码"。Datadog 给出的答案不是更聪明的模型，而是更严格的验证框架。这是一个范式级的思维转变：从 vibe-coding 到 harness-first。</p>
+<h3>标题备选</h3>
+<ol>
+<li>「Datadog 内部实践：AI Agent 写出的 Redis 比原版省 87% 内存，他们是怎么做到的」</li>
+<li>「别再逐行审查 AI 的代码了 — Datadog 的 Harness-First 方法论」</li>
+<li>「从 Vibe Coding 到 Harness-First：大厂如何驯服 AI Coding Agent」</li>
+</ol>
+<h3>写作方式</h3>
+<p>深度技术解读 + 方法论提炼。拆解 Datadog 的 4 层验证体系（影子状态预言机→DST→TLA+/Kani→生产流量影子），提炼可复用的实践模式。</p>
+<h3>大纲</h3>
+<ol>
+<li>引子：AI Agent 写代码的速度已经超过人类审查的速度，瓶颈转移了</li>
+<li>Datadog 做了什么：redis-rust 和 Helix 两个项目</li>
+<li>Harness-First 的 4 层验证架构详解</li>
+<li>关键结果：内存-87%、93%峰值吞吐</li>
+<li>对普通开发者的启示：你不需要 Datadog 的规模也能用 Harness 思维</li>
+<li>BitsEvolve 的前传：从函数级优化到系统级构建的演进</li>
+</ol>
+<h3>素材链接</h3>
+<ul>
+<li><a href="https://www.datadoghq.com/blog/ai/harness-first-agents/">Datadog: Closing the verification loop</a></li>
+<li><a href="https://github.com/nerdsane/redis-rust">redis-rust on GitHub</a></li>
+<li><a href="https://github.com/jm424/helix">Helix on GitHub</a></li>
+<li><a href="https://github.com/nerdsane/redis-rust/blob/main/docs/DST_GUIDE.md">redis-rust DST Guide</a></li>
+<li><a href="https://github.com/nerdsane/redis-rust/blob/main/docs/PAPER.md">redis-rust Technical Report</a></li>
+</ul>
+<h3>备注</h3>
+<p>这是目前看到的关于 Agent Harness 最有深度的一手实践。Datadog 级别的工程博客背书 + 开源代码可追溯 + 有量化结果，非常适合深度解读。</p>
+<hr />
+<h2>选题2：Agent Harness 全景图 — 2026年 AI Agent 的"笼子"们</h2>
+<p><strong>日期</strong>：2026-03-31<br />
+<strong>状态</strong>：待写<br />
+<strong>审核分数</strong>：85/100</p>
+<h3>事件描述</h3>
+<p>2026 年 Q1，"Agent Harness" 作为概念在开发者社区快速崛起。从 Datadog 的 Harness-First Engineering、到 Eric Mann 的 Harness Problem 博文、再到 Gambit（91 stars）、Poncho、Oh-my-agent 等开源框架，一个清晰的趋势正在成形：AI Agent 不缺能力，缺的是约束和验证。</p>
+<h3>核心角度</h3>
+<p><strong>横评盘点 + 趋势判断</strong>。把 Harness 从"一个技术概念"升级为"一个正在发生的行业转向"。对比不同 Harness 方案的定位和差异：Datadog 面向生产验证、Gambit 面向工作流编排、Poncho 面向团队部署、Eric Mann 面向流程管控。</p>
+<h3>标题备选</h3>
+<ol>
+<li>「AI Agent 的下一个战场不是模型，是 Harness」</li>
+<li>「2026 Agent Harness 全景图：谁在给 AI 编码 Agent 上笼头？」</li>
+<li>「Vibe Coding 之后，Harness-First 正在成为新共识」</li>
+</ol>
+<h3>写作方式</h3>
+<p>横评盘点 + 趋势分析</p>
+<h3>大纲</h3>
+<ol>
+<li>什么是 Agent Harness？为什么突然火了？</li>
+<li>Harness 的四大流派：验证型 / 编排型 / 部署型 / 流程型</li>
+<li>重点项目逐个拆解（Datadog、Gambit、Poncho、Oh-my-agent）</li>
+<li>Eric Mann 的踩坑教训：Agent 的真正失败模式</li>
+<li>对开发者的行动建议</li>
+</ol>
+<h3>素材链接</h3>
+<ul>
+<li><a href="https://www.datadoghq.com/blog/ai/harness-first-agents/">Datadog: Harness-First Agents</a></li>
+<li><a href="https://eric.mann.blog/the-agentic-harness-problem-why-ai-agents-need-better-guardrails-than-code-reviews/">Eric Mann: The Agentic Harness Problem</a></li>
+<li><a href="https://github.com/bolt-foundry/gambit">Gambit on GitHub</a></li>
+<li><a href="https://github.com/cesr/poncho-ai">Poncho on GitHub</a></li>
+<li><a href="https://github.com/first-fluke/oh-my-agent">Oh-my-agent on GitHub</a></li>
+<li><a href="https://github.com/kevin-hs-sohn/hipocampus">Hipocampus on GitHub</a></li>
+<li><a href="https://news.ycombinator.com/item?id=47562440">Agent Orchestrator (HN)</a></li>
+</ul>
+<h3>备注</h3>
+<p>适合做成小红书信息图系列或公众号长文。横评类内容分享价值高。</p>
+<hr />
+<h2>选题3：AI Agent 写代码的 5 种翻车模式 — 从 Eric Mann 的密码学项目说起</h2>
+<p><strong>日期</strong>：2026-03-31<br />
+<strong>状态</strong>：待写<br />
+<strong>审核分数</strong>：88/100</p>
+<h3>事件描述</h3>
+<p>Eric Mann 让一组 AI Agent 根据详细 spec 构建一个密码学项目（阈值ECDSA签名仪式的终端动画）。Agent 交付很快，但结果充满了「看似正确实则致命」的问题：核心签名仪式从未被实现（只有 stub），bonus 功能却很精致；签名用了单人私钥而非组合幻影密钥（并在注释中承认"这是简化演示"）；测试通过是因为测试本身就是针对错误行为写的。</p>
+<h3>核心角度</h3>
+<p><strong>"Agent 不会告诉你它没做什么"</strong> — 五种典型翻车模式：① 优先级倒置（P3做完P0没做）② 集成断层（两半代码不连通）③ stub 伪装成功 ④ 测试验证错误行为 ⑤ 注释代替实现。每种翻车都有对应的 harness 解法。</p>
+<h3>标题备选</h3>
+<ol>
+<li>「AI Agent 交付的代码，核心功能根本没写 — 一个真实案例的复盘」</li>
+<li>「5 种 AI Agent 翻车模式，以及如何用 Harness 防住它们」</li>
+<li>「Agent 不会告诉你它跳过了什么：一个密码学项目的惨痛教训」</li>
+</ol>
+<h3>写作方式</h3>
+<p>案例复盘 + 解决方案。故事性强，适合传播。</p>
+<h3>大纲</h3>
+<ol>
+<li>故事开场：给 Agent 一份详细 spec，它们很快交付了</li>
+<li>但核心功能从未被实现——5 种翻车模式逐个拆解</li>
+<li>为什么 Agent 会这样？（优化局部完整性 vs 全局一致性）</li>
+<li>Eric Mann 的 5 个修复方案</li>
+<li>对我们的启示：用 Harness 思维管理 Agent</li>
+</ol>
+<h3>素材链接</h3>
+<ul>
+<li><a href="https://eric.mann.blog/the-agentic-harness-problem-why-ai-agents-need-better-guardrails-than-code-reviews/">Eric Mann: The Agentic Harness Problem</a></li>
+<li><a href="https://github.com/DisplaceTech/tss-ceremony">tss-ceremony on GitHub</a></li>
+</ul>
+<h3>备注</h3>
+<p>故事性极强的案例，适合公众号和 Twitter。"AI Agent 把 bonus 做得很漂亮但核心功能是 stub" 这个反差很有传播力。</p>
+<hr />
+<h2>选题4：Agent Browser Protocol — 155 stars 的 AI 浏览器方案</h2>
+<p><strong>日期</strong>：2026-03-31<br />
+<strong>状态</strong>：待写<br />
+<strong>审核分数</strong>：72/100</p>
+<h3>事件描述</h3>
+<p>Agent Browser Protocol 在 HN 获得 155 points / 55 comments，是近期最火的 Agent 基础设施项目之一。为 AI Agent 提供专用浏览器协议。</p>
+<h3>核心角度</h3>
+<p>Agent 基础设施层面，浏览器是最后一个被 Agent 化的入口。</p>
+<h3>标题备选</h3>
+<ol>
+<li>「AI Agent 的浏览器：Agent Browser Protocol 为什么获得 155 stars」</li>
+<li>「给 AI Agent 一个浏览器，它能做什么？」</li>
+</ol>
+<h3>写作方式</h3>
+<p>产品体验 + 技术解读</p>
+<h3>素材链接</h3>
+<ul>
+<li><a href="https://github.com/theredsix/agent-browser-protocol">Agent Browser Protocol on GitHub</a></li>
+</ul>
+<h3>备注</h3>
+<p>需要进一步研究产品细节。独立性不如 Harness 主题强。</p>
+<hr />
+<h2>选题5：AAP — MCP 的挑战者来了</h2>
+<p><strong>日期</strong>：2026-03-31<br />
+<strong>状态</strong>：待写<br />
+<strong>审核分数</strong>：68/100</p>
+<h3>事件描述</h3>
+<p>Agent Action Protocol (AAP) 在 GitHub 发布，明确定位"MCP got us started, but is insufficient"。提出了对 MCP 协议的不足之处的回应方案。</p>
+<h3>核心角度</h3>
+<p>MCP 已成事实标准，但不满的声音正在凝聚。AAP 代表了一种"后 MCP"思潮。</p>
+<h3>标题备选</h3>
+<ol>
+<li>「MCP 不够用了？Agent Action Protocol 想做 MCP 2.0」</li>
+<li>「后 MCP 时代的协议之争」</li>
+</ol>
+<h3>写作方式</h3>
+<p>对比分析</p>
+<h3>素材链接</h3>
+<ul>
+<li><a href="https://github.com/agentactionprotocol/aap/">AAP on GitHub</a></li>
+</ul>
+<h3>备注</h3>
+<p>热度还不够高（13pts），但话题有争议性。可以观察。</p>
+<hr />
+<h2>选题6：从 BitsEvolve 到 Helix — Datadog 的 AI 工程进化路线</h2>
+<p><strong>日期</strong>：2026-03-31<br />
+<strong>状态</strong>：待写<br />
+<strong>审核分数</strong>：75/100</p>
+<h3>事件描述</h3>
+<p>Datadog 的 AI 工程实践经历了清晰的进化：BitsEvolve（LLM 引导的进化优化器，函数级）→ redis-rust（系统级，单 Agent）→ Helix（系统级，多 Agent）。</p>
+<h3>核心角度</h3>
+<p>大厂的 AI 工程能力是如何一步步演进的？从优化单个函数到构建完整系统。</p>
+<h3>标题备选</h3>
+<ol>
+<li>「Datadog 的 AI 工程三级跳：从函数优化到系统构建」</li>
+<li>「一家监控公司如何变成 AI 工程的标杆」</li>
+</ol>
+<h3>写作方式</h3>
+<p>技术叙事</p>
+<h3>素材链接</h3>
+<ul>
+<li><a href="https://www.datadoghq.com/blog/engineering/self-optimizing-system/">BitsEvolve: Self-Optimizing System</a></li>
+<li><a href="https://www.datadoghq.com/blog/ai/harness-first-agents/">Datadog: Harness-First Agents</a></li>
+</ul>
+<h3>备注</h3>
+<p>可以和选题1合并，作为更宏观的技术叙事。</p><div class="pager"><a class="l" href="2026-03-31-今日AI热点.html">← 2026-03-31 今日AI热点</a><a class="r" href="2026-06-27-今日选题完成总结-晚间.html">2026-06-27 今日选题完成总结-晚间 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

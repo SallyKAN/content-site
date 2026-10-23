@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1004 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-04</div><h1>1004 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-10-04 22:00 (Asia/Shanghai)<br />
+数据源：今日内容池（上午 7 条海外 + 4 条国内 → 5 张选题卡，94/92/90/85/80 分）<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1001"没人再等监管，巨头各自设闸门" → 1002"闸门失守的账单当天到账" → 1003"补墙期：用人事与制度各补各的墙" → <strong>1004"补墙没补住：图纸和施工队同时出问题"</strong></p>
+</blockquote>
+<hr />
+<h2>🎯 今晚精选：3 篇可立即出稿</h2>
+<h3>① ⭐ 今晚主稿（双高）：GPT-6 Sol Codex 提示词 29.4 万字符被完整提取（94 分）</h3>
+<p><strong>一句话</strong>：继 Opus 5.5 泄露 190 万字之后，这次被完整抠出来的是 OpenAI 的"施工图纸"——1902 行、29.4 万字符系统提示词。</p>
+<p><strong>为什么是今晚主稿</strong>：热度（9）+ 角度（10）双高，是当日最热；且不是"偷到代码"，而是<strong>"偷到了调教方法"</strong>——提示词工程本身成了核心资产，而它天然可被提取。小红书/AI 工具向适配度也好，一稿多平台。</p>
+<p><strong>建议角度</strong>：核心资产到底藏在哪——从"被偷的是数据"升级到"被偷的是调教方法"。<br />
+- 爆料者 @elder_plinius 公开 1902 行、29.4 万字符完整系统提示词 + 工具定义，已上 GitHub <code>elder-plinius/CL4R1T4S</code>。<br />
+- 亮点：反"AI 废话"黑名单（禁 delve / leverage / it's worth noting）、<strong>极端自主性</strong>（"用户讨厌你停下提问，证据足够就继续干"）、工具链偏好（rg &gt; grep、<code>Promise.allSettled</code> 并行）、<strong>SKILL.md 动态技能树</strong>、浏览器/桌面接管四确认、token_budget 记忆压缩与交接、后台心跳唤醒（DONT_NOTIFY / NOTIFY）。<br />
+- 收口：当"怎么调教模型"变成能对面抄走的资产，护城河还剩什么？</p>
+<p><strong>平台</strong>：公众号（1800–2600 字）+ Twitter Thread（6–8 条）+ 小红书（AI 工具向）<br />
+<strong>原文链接</strong>：<br />
+- https://finance.sina.com.cn/wm/2026-10-04/doc-initzkxm4033260.shtml<br />
+- https://github.com/elder-plinius/CL4R1T4S</p>
+<hr />
+<h3>② ⭐ 国内主稿：DeepSeek 扩招——DSec 沙盒 38 万 Agent 同时在线（92 分）</h3>
+<p><strong>一句话</strong>：智力变便宜之后，"能同时跑多少 Agent"成了新的稀缺。</p>
+<p><strong>为什么今晚写</strong>：国内关注度满分（10/10），是"模型能力之外"的新军备指标，角度独特；与主稿形成"外看泄露 / 内看基建"的组合，一海外一国内，覆盖面完整。</p>
+<p><strong>建议角度</strong>：Agent 时代的"基建账本"。<br />
+- 单个分片：约 160 台服务器 / 3 万 CPU 核心 / 250TB 内存，每天约 300 万沙盒，峰值 <strong>38 万沙盒同时在线</strong>，每秒创建 5000+；资源超卖率 &gt;50 倍。<br />
+- 环境三层拆分（base image / workspace / toolkit），镜像按需加载（访问率仅 4.2%–13.3%），创建 8192 容器提速 1.71×，磁盘写入减少约 57%。<br />
+- 核心矛盾：90% 沙盒 CPU 使用 &lt;5%（在等模型出下一步），但内存不能释放——<strong>"稀疏负载"是 Agent 基建的关键</strong>。<br />
+- 收口：承接 0930"把够用的智力卖成白菜价"——<strong>能力之外，"能同时跑多少个 Agent"成了新的军备指标</strong>。</p>
+<p><strong>平台</strong>：公众号（1600–2200 字）+ 小红书（800–1200 字，标签 #DeepSeek #AI基建）<br />
+<strong>原文链接</strong>：<br />
+- https://www.qbitai.com/2026/10/501381.html</p>
+<hr />
+<h3>③ 反差稿（可合并）：OpenAI 安全队地震——透明度负责人离职 + 3 人因泄密被开（90 分）</h3>
+<p><strong>一句话</strong>：一边是负责"对外透明"的人走人，一边是"对内保密"的开除——透明度与保密同时收紧，方向相反。</p>
+<p><strong>为什么可写</strong>：同一条"安全队解散线"已连三天（1002 开除 3 人 → 1003 Meta 散队 → 1004 负责人离职），叙事成熟；但热度依赖前两日铺垫，作为<strong>独立稿偏窄</strong>，更适合并入今天的"补墙没补住"深度稿。</p>
+<p><strong>建议角度</strong>：AI 公司的"安全部门"到底是对外公关还是对内审计？两项合一时，负责人最难做。<br />
+- David Robinson 是"安全透明度"职能负责人，负责撰写 system card（风险说明书），也是《Preparedness Framework 2.0》主要起草人。<br />
+- 此前 WSJ：Jasmine Wang、Tomek Korbak、Mikita Balesni 三人因<strong>把公司敏感信息分享给外部 AI 安全机构</strong>被开除。<br />
+- ⚠️ 边界：开除理由官方口径为"处理敏感信息不当"，勿写成"因安全立场被打压"。</p>
+<p><strong>平台</strong>：公众号（1500–2200 字，建议并入深度稿）+ Twitter（4–6 条）<br />
+<strong>原文链接</strong>：<br />
+- https://www.qbitai.com/2026/10/501368.html</p>
+<hr />
+<h2>📦 备选（可排期 / 可并入主线）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>选题</th>
+<th>分数</th>
+<th>平台</th>
+<th>一句话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-6 Astra 刷屏 3D 圈，Meshy ARR 两年翻百倍</td>
+<td>85</td>
+<td>公众号 + 小红书</td>
+<td>通用能力狂飙 ≠ 垂直生意被吃掉——3D 门槛在工程细节，专业工具反而更值钱</td>
+</tr>
+<tr>
+<td>算力金融化：博通筹 600 亿为 Anthropic 买芯片、亚马逊卖 80 亿英伟达芯片</td>
+<td>80</td>
+<td>Twitter + 公众号</td>
+<td>芯片被融资、被转卖——"谁的算力"正变成"谁持有的金融头寸"</td>
+</tr>
+<tr>
+<td>台积电探讨与马斯克 Terafab 项目合作</td>
+<td>—</td>
+<td>Twitter</td>
+<td>芯片代工龙头 × 造车狂人，Terafab 是什么</td>
+</tr>
+<tr>
+<td>丘成桐新论文致谢 GPT/Claude；arXiv 限投稿 2 篇/月</td>
+<td>—</td>
+<td>公众号</td>
+<td>顶尖数学家公开致谢 AI，平台用配额对抗 AI 灌水</td>
+</tr>
+<tr>
+<td>高德长假首日 DAU 近 3.7 亿，28 亿次"空间智能"服务</td>
+<td>—</td>
+<td>小红书</td>
+<td>空间智能从导航走进日常</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Astra / Meshy：https://www.qbitai.com/2026/10/501451.html</li>
+<li>算力金融化：https://finance.sina.com.cn/stock/usstock/c/2026-10-02/doc-initvazp7485054.shtml ｜ https://finance.sina.com.cn/stock/usstock/c/2026-10-02/doc-initvazi1445462.shtml</li>
+<li>台积电：https://finance.sina.com.cn/world/2026-10-04/doc-inityptv4427769.shtml</li>
+<li>丘成桐 + arXiv：https://www.qbitai.com/2026/10/499991.html ｜ https://www.qbitai.com/2026/10/499958.html</li>
+<li>高德：https://finance.sina.com.cn/roll/2026-10-03/doc-inityccv3812748.shtml</li>
+</ul>
+<hr />
+<h2>🔗 编排建议：两个组合拳</h2>
+<p><strong>组合 A｜"核心资产到底藏在哪"</strong>（今晚主稿 1 + 1002 题 1）<br />
+- 1002 是"Agent 越权访问你的系统"，今晚是"模型内心 OS 被对面抠出来"。<br />
+- 一条线：<strong>从"被偷的是数据"升级到"被偷的是调教方法"</strong> → 适合一篇公众号深度长稿。</p>
+<p><strong>组合 B｜"补墙没补住：图纸和施工队同时出问题"</strong>（今晚题 3 + 1002 题 2 + 1003 题 3）<br />
+- 1002 开除 3 人 → 1003 Meta 散安全队 → 1004 透明度负责人离职；与此同时，GPT-6 提示词（图纸）被完整提取。<br />
+- 三卡合并成一篇观察稿，天然有连续叙事：<strong>补墙的人在走，墙里的图纸被人抄走了</strong>。</p>
+<hr />
+<h2>⚠️ 成稿核实提醒</h2>
+<ul>
+<li><strong>提示词泄露</strong>：来源为第三方爆料者（@elder_plinius），OpenAI 未官方确认；措辞用"被提取/被公开"，勿写成"OpenAI 官方证实"。</li>
+<li><strong>安全队地震</strong>：Robinson 离职与"3 人因泄密被开"为不同事件，注意时间线；"因安全立场被打压"属评论，未证实。</li>
+<li><strong>DSec 数据</strong>：来自量子位对 DeepSeek 招聘与技术资料的解读，具体数值以其原文为准。</li>
+<li><strong>Astra / Meshy</strong>：属于同一张参考图的对比评测，是"单点案例"，勿过度外推。</li>
+<li><strong>算力融资</strong>：博通为"筹资筹建"，亚马逊为"拟出售"，措辞须与"已完成"区分。</li>
+</ul>
+<hr />
+<h2>📋 库存提醒（库存积压）</h2>
+<ul>
+<li><strong>1002 五张卡</strong>（Agent 越权实锤、开除安全研究员、政府或入股、Anthropic IPO、Gemini 4 质疑）尚未深化。</li>
+<li><strong>1001 五张卡</strong>（Argon 限用、Anthropic 招股书、Kimi K3 结算、FTC+白宫自律、蒸馏指控）尚未深化。</li>
+<li><strong>1003 五张卡</strong>（模型权重、招股书毒害客户、造人才 vs 散队、挖白宫官员、Google 诉讼）昨日刚建，尚未深化。</li>
+<li>建议：<strong>今晚优先出稿 2 篇——主稿 1（提示词泄露，热度+角度双高）+ 国内主稿 3（DSec，国内关注满分）</strong>；其余按两个组合拳合并进深度稿。</li>
+</ul>
+<hr />
+<p><em>选题卡路径：<code>01-选题管理/01-待深化选题/2026-10-04-*.md</code> ｜ 详细方案：<code>01-选题管理/1004-选题方案.md</code> ｜ 今日热点：<code>01-选题管理/1004-今日AI热点.md</code></em></p><div class="pager"><a class="l" href="2026-10-04-今日AI热点.html">← 2026-10-04 今日AI热点</a><a class="r" href="2026-10-04-选题方案.html">2026-10-04 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

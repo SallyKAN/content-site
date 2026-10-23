@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-09-30（周三）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-30</div><h1>每日独立开发精选 — 2026-09-30（周三）</h1>
+<h2>⚠️ 采集故障说明</h2>
+<ul>
+<li>Twitter/X <code>search</code> 仍 HTTP 404（queryId 变更未同步）；<code>feed</code> 正常，Twitter 板块用时间线 + 关键词过滤。</li>
+<li>Reddit RSS <code>t=day</code> 仍 429，继续 <code>t=week</code> + SMT 池兜底。</li>
+</ul>
+<h2>🔥 Hacker News</h2>
+<ol>
+<li>
+<p><strong>Anthropic 发布 Sonnet 5.5</strong><br />
+   https://www.anthropic.com/claude-sonnet-5-5<br />
+   点评：今日最该看。快 30%+、成本低最多 30%，Haiku 5.5 在路上。Agent 产品边际成本持续下降。</p>
+</li>
+<li>
+<p><strong>Manus 2.0 + Cue：每个个人 Agent 都有独立邮箱、手机号、钱包和电脑</strong><br />
+   https://www.techmeme.com/260928/p33#a260928p33<br />
+   点评：与 x402 直接相关。个人 Agent 配钱包已是产品级标配，有钱包就必须有支付协议。</p>
+</li>
+<li>
+<p><strong>是时候调查 AI 实验室了（Cal Newport）</strong><br />
+   https://calnewport.com/its-time-to-investigate-the-ai-labs/<br />
+   点评：话题进入主流严肃讨论的标志。</p>
+</li>
+<li>
+<p><strong>问题不是 AI 代码，而是没人再懂系统架构和意图</strong><br />
+   https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/<br />
+   点评：对自动化测试最有价值。把 intent 变成可验证资产是关键。</p>
+</li>
+<li>
+<p><strong>Firebase SDK 让所有 iOS App 崩溃</strong><br />
+   https://twitter.com/GergoryOrosz/status/2104825886922911981<br />
+   点评：单点依赖的经典事故。</p>
+</li>
+</ol>
+<h2>🚀 Product Hunt</h2>
+<ol>
+<li>
+<p><strong>Harness Router</strong><br />
+   https://www.producthunt.com/products/harness-103<br />
+   点评：harness 词条第三个产品（前有 Harness Manager）。赛道拥挤，名字抢到 103 号。</p>
+</li>
+<li>
+<p><strong>Claude Sonnet 5.5</strong><br />
+   https://www.producthunt.com/products/claude<br />
+   点评：模型版本已成消费品级话题。</p>
+</li>
+<li>
+<p><strong>vantage.ai</strong><br />
+   https://www.producthunt.com/products/vantage-ai-2<br />
+   点评：数据洞察类工具。</p>
+</li>
+<li>
+<p><strong>Would you pay?</strong><br />
+   https://www.producthunt.com/products/would-you-pay<br />
+   点评：定价验证工具，名字即方法论。独立开发者最缺"有人愿付钱"的信号。</p>
+</li>
+<li>
+<p><strong>iFixAi</strong><br />
+   https://www.producthunt.com/products/ifixai<br />
+   点评：AI 修复类实用工具。</p>
+</li>
+</ol>
+<h2>👽 Reddit r/SideProject</h2>
+<ol>
+<li>
+<p><strong>Rust 写的原生超轻量 Spotify 客户端（官方版后台吃 1GB 内存）</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wru28z/i_got_tired_of_spotify_eating_1gb_of_ram_in_the/<br />
+   点评：今日最该看。典型"看不惯就重写"路径，符合性能优先、避免臃肿的偏好。</p>
+</li>
+<li>
+<p><strong>Reddit MCP：让 AI Agent 帮我读 subreddit</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wpv4ey/i_built_a_reddit_mcp_so_my_ai_agent_can_read/<br />
+   点评：与每日精选采集路径一致，已被产品化，说明信息获取层补全需求真实。</p>
+</li>
+<li>
+<p><strong>用计算机视觉教我解魔方</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1ws9wua/i_used_computer_vision_to_teach_me_how_to_solve_a/<br />
+   点评：CV 应用下沉到个人场景。</p>
+</li>
+<li>
+<p><strong>浏览器里的程序化动画锦鲤池</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wrqc2a/i_made_an_interactive_procedurally_animated_koi/<br />
+   点评：技术审美项目，传播力强。</p>
+</li>
+<li>
+<p><strong>独立项目冲到 Mac App Store 工具类第 12 名</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wscf2u/my_side_project_peaked_at_12_in_mac_app_store/<br />
+   点评：真实小里程碑，看冷启动方法。</p>
+</li>
+</ol>
+<h2>🐦 Twitter / X（时间线）</h2>
+<ol>
+<li>
+<p><strong>@SUOHA_AI — 月活百万的 AIHOT 生产级代码全开源（142 likes）</strong><br />
+   https://x.com/SUOHA_AI/status/2104855914700230794<br />
+   点评：本期最值得看且可复制。教如何做"垂类行业早报站，每天 8:00 自动去重/聚类/打分"——即每日精选的产品化形态。</p>
+</li>
+<li>
+<p><strong>@AYi_AInotes — Anthropic 首次公开 Prompt 优化/Agent 评测/自动调优方法论（440 likes）</strong><br />
+   https://x.com/AYi_AInotes/status/2104738218252059124<br />
+   点评：Claude Code 官方 Skill 上线 build-eval 与 hillclimb。等于给自动化测试领域发了一份参考答案。</p>
+</li>
+<li>
+<p><strong>@laogui / @LinearUncle — yetone 的 Magpie：本地网关给所有 Agent 喂所有模型（91+347 likes）</strong><br />
+   https://x.com/laogui/status/2104924921654648959<br />
+   https://x.com/LinearUncle/status/2104892506282537240<br />
+   点评：订阅共享 + 多协议适配，与 x402 同抽象层级，值得研究设计取舍。</p>
+</li>
+<li>
+<p><strong>@sectojoy — 独立开发满一年，月收入只完成目标 1/3（332 likes）</strong><br />
+   https://x.com/sectojoy/status/2104737917071737069<br />
+   点评：难得的真实数据。从字节离职，三档目标（1/2/3 年月入 1000 刀）落在悲观区间。提醒 x402 时间表按悲观档排。</p>
+</li>
+</ol>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<ol>
+<li>
+<p><strong>18 个月前从本站捡 idea，今天在和全球最大金融机构谈合作</strong>（240 分 / 42 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this/<br />
+   点评：持续第一（236→240）。</p>
+</li>
+<li>
+<p><strong>成人子女管理年迈父母密码的 App</strong>（87 分 / 43 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1vit5w3/an_app_where_adult_kids_manage_their_elderly/<br />
+   点评：存量帖最扎实。老龄化 + 数字遗产，付费意愿明确。</p>
+</li>
+<li>
+<p><strong>"Who Owns What?" — 公司股权/财富/影响力透明化 App</strong>（81 分 / 43 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1txx70x/someone_should_build_this_who_owns_what_a/<br />
+   点评：数据源门槛即护城河。</p>
+</li>
+<li>
+<p><strong>给后代留言的 App（文字/语音/视频）</strong>（32 分 / 53 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1s7ltpz/a_way_to_leave_letters_voice_or_video_recordings/<br />
+   点评：今日评论最多（53）。情感需求 + 低技术门槛。</p>
+</li>
+<li>
+<p><strong>给古典钢琴学习做 "Guitar Hero"</strong>（126 分 / 9 评论）<br />
+   https://v.redd.it/4fd1pzhacypg1<br />
+   点评：池内最高分，游戏化学习。</p>
+</li>
+</ol>
+<hr />
+<p>采集时间：2026-09-30 00:3x<br />
+数据源：orangebot.ai feed、Reddit r/SideProject RSS（week）、r/SomebodyMakeThis（100 条池）、Twitter feed<br />
+备注：Twitter search 接口 404 未修复</p><div class="pager"><a class="l" href="2026-09-29.html">← 2026-09-29</a><a class="r" href="2026-10-01.html">2026-10-01 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1019 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-19</div><h1>1019 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-10-19 22:00 (Asia/Shanghai)<br />
+数据源：<code>1019-选题方案.md</code>（今日上午采集，7 条线索）+ 内容池/闭环复检<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1013「Agent 会办事了」→ 1016「办事的账，有人来收」→ 1017「一周内来了三个收账人」→ 1018「算力的账，用别人的钱付」→ <strong>1019「会办事的东西，开始要身份证了」</strong></p>
+</blockquote>
+<hr />
+<h2>🚨 第二十二天：采集照常，稿子依旧为零</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>01-选题管理/01-待深化选题/</code></td>
+<td>🔴 <strong>49 张</strong>，全部未深化（连续第八天不建卡）</td>
+</tr>
+<tr>
+<td><code>01-选题管理/02-创作中选题/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/草稿/</code></td>
+<td>🔴 最新仍停在 <strong>9/25</strong>（<code>0925-AI入侵澳医保.md</code>，8492 字节，躺 <strong>24 天</strong>）</td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/待发布/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/Twitter/草稿/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>06-运营管理/发布日历.md</code></td>
+<td>🔴 最新发布行停在 <strong>10/13</strong>；10/14–10/18 五行未填</td>
+</tr>
+<tr>
+<td>今日上午采集 + 选题方案</td>
+<td>✅ 已跑（连续第五天正常）</td>
+</tr>
+<tr>
+<td>今日新增选题卡</td>
+<td>⛔ 0 张（第 8 天）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：连续第二十二天零出稿。</strong></p>
+<p>今晚这份推送<strong>不新增任何选题卡</strong>（再加就是第 50 张躺着不动的卡），只做一件事：<br />
+<strong>把 1019 的主稿拆成今晚能写完的两节。</strong></p>
+<blockquote>
+<p><strong>⚠️ 今晚硬指标（30 分钟，做完就算赢）</strong><br />
+1. <code>0925-AI入侵澳医保.md</code> → <code>03-内容成品/公众号/待发布/</code>（<code>mv</code> 一条命令的事，24 天了）<br />
+2. 主稿「World ID 进银行」先写两节：<strong>"World ID 是什么" + "为什么先卖银行"</strong>，1000 字<br />
+3. 发布日历补填 10/14–10/18 五行</p>
+<p>如果只能做一个动作——<strong>做第 1 个。</strong></p>
+</blockquote>
+<hr />
+<h2>🎯 今晚精选（沿用 1019 上午方案，不增题，只做减法）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>热度</th>
+<th>角度</th>
+<th>国内</th>
+<th>总分</th>
+<th>今晚定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🌍 World 给银行发 World ID 套件：AI 伪造的脸需要一个户口本</td>
+<td>8</td>
+<td>10</td>
+<td>6</td>
+<td><strong>82</strong></td>
+<td>⭐⭐ <strong>今晚主稿</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>💻 OpenCode 遭“大规模蒸馏攻击”，1.4% 用户厂商 key 外泄</td>
+<td>8</td>
+<td>9</td>
+<td>7</td>
+<td><strong>79</strong></td>
+<td>并进①第四节（400 字）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇨🇳 爱芯 AX8860P：256 TOPS / 40W / 6nm，正面对标 DGX Spark</td>
+<td>8</td>
+<td>9</td>
+<td>9</td>
+<td><strong>86</strong></td>
+<td>明早国内快稿</td>
+</tr>
+<tr>
+<td>4</td>
+<td>📉 Reuters：便宜的中国模型在美国本土追平 Anthropic / OpenAI</td>
+<td>9</td>
+<td>8</td>
+<td>8</td>
+<td><strong>84</strong></td>
+<td>数据支撑段（并进③）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>🤖 OpenAI API 冒出三个 <code>aurora-*-alpha</code> 模型</td>
+<td>7</td>
+<td>6</td>
+<td>6</td>
+<td><strong>65</strong></td>
+<td>素材/一句好细节</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>为什么今晚仍选 ① 做主稿</strong>：它是主线（身份）的<strong>开端</strong>，而不是主线的高潮——比"便宜"这条线更新，还能把 ② 收进来。而且它是<strong>唯一一篇写一半也不会浪费</strong>的稿子：两节写完就能独立成文。</p>
+</blockquote>
+<hr />
+<h3>① ⭐⭐ 今晚主稿：会办事的东西，开始要身份证了</h3>
+<p><strong>一句话</strong>：10/18（周日）在拉斯维加斯 Money20/20 大会上，Sam Altman 联合创办的身份项目 <strong>World</strong>（Worldcoin）发布 <strong>World ID 银行与金融机构套件</strong>——该身份协议第一个面向具体行业的产品，由联合创始人 <strong>Alex Blania</strong> 揭幕。套件把三个已有产品打包，用于防<strong>深度伪造欺诈与 AI 驱动冒名</strong>，覆盖三个场景：<strong>客户账户、员工工作流、AI Agent</strong>。同日，World 的 <strong>Zoom 深度伪造检测正式全面可用</strong>。</p>
+<p><strong>今晚只写这两节（各 500 字左右）</strong>：</p>
+<p><strong>第一节｜World ID 是什么</strong><br />
+- 不是账号，是"证明你是人"的凭证。讲清边界：它证明<strong>人类唯一性</strong>，不证明"你是谁"。<br />
+- 一句好用的对照：账号是"你记得密码"，身份是"你只有一个"。AI 时代，前者已经失守（key 会漏），后者才是新的稀缺品。<br />
+- 落点：过去十年我们证明"我是我"，靠的是记忆和凭据；今天记忆能克隆、凭据能泄漏，剩下的只有<strong>身体</strong>。</p>
+<p><strong>第二节｜为什么先卖银行</strong><br />
+- 银行是唯一"被伪造一次就破产"的行业。深度伪造欺诈不是技术问题，是<strong>举证责任问题</strong>——柜员问"你是本人吗"，这句话在 2026 年已经问不完了。<br />
+- 三个场景里，客户账户和员工工作流是老问题（反欺诈）；<strong>第三个"AI Agent 的身份验证"才是新的</strong>——留到明早写，那里是全文钩子。<br />
+- 一节收口：<strong>银行买的不是防伪技术，是"出事时能指认谁"的能力。</strong></p>
+<p><strong>明早补的两节</strong>：<br />
+- <strong>第三节｜给 Agent 发身份证</strong>（全文钩子）：Agent 有身份才能被追责，有身份也才能被授权；没身份的时候，出事了找谁？<br />
+- <strong>第四节｜反面教材：OpenCode</strong>（400 字，题 ②）：一个没有沙箱的 Agent，用你自己的 key 办事，被蒸馏攻击打穿，1.4% 用户 key 外泄，公司要同时协调 OpenAI / Anthropic / Google 三家处置。<strong>没有身份的地方，连追责对象都找不到。</strong><br />
+- <strong>收口</strong>：接 1018——算力的账用别人的钱付；今天开始出现新的账本：<strong>身份的账，用自己的脸付。</strong></p>
+<p><strong>平台</strong>：公众号（主）+ Twitter Thread（5–6 条，侧重"Agent 也要身份证了"）+ 小红书（"为什么银行先扛不住深度伪造"，700 字）</p>
+<p><strong>⚠️ 措辞红区</strong>：<br />
+- 发布方是 <strong>World（原 Worldcoin）</strong>，<strong>Altman 是联合创始人，不是 World 员工</strong>，勿写成"OpenAI 发布"；<br />
+- 套件"由三个已有产品组成"，<strong>官方未公布定价与签约银行名单</strong>，勿编造合作方；<br />
+- "Zoom 深度伪造检测全面可用"为同日发布，勿夸大为"Zoom 全线启用"；<br />
+- 加密资产属性敏感，正文不讨论 WLD 价格。</p>
+<p><strong>原文链接</strong>：<br />
+- https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869<br />
+- https://u.today/world-launches-identity-verification-tools-for-banks-to-address-ai-driven-fraud<br />
+- https://blockchainreporter.net/world-targets-banks-with-new-world-id-suite-to-combat-deepfake-fraud/</p>
+<hr />
+<h3>② OpenCode（79 分，并进①第四节）</h3>
+<p>官方口径：Console 安全事件与"大规模蒸馏攻击"相关，影响约 <strong>1.4%</strong> Console 用户；工作区内 <strong>OpenAI / Anthropic / Google API key 可能外泄</strong>，正被用于未授权扣费；以"事件仍在进行"为由拒绝披露技术细节。官方文档提示：<strong>该 Agent 缺少沙箱，会用用户自己的凭据执行命令。</strong></p>
+<p><strong>一句话用法</strong>：攻击者的目标不是数据，是<strong>别人的推理算力</strong>（蒸馏 = 偷输出）。<br />
+<strong>⚠️ 红区</strong>：1.4% 为官方口径；"蒸馏攻击"为官方描述，技术细节未披露，勿自行推断攻击链。<br />
+<strong>链接</strong>：<br />
+- https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/<br />
+- https://www.aicoder.com/zh/news/news-20261017-opencode-console-breach-provider-keys-distillation</p>
+<hr />
+<h3>③ 爱芯 AX8860P（86 分，明早国内快稿备选）</h3>
+<p>AX8860 / AX8860P：16 核 Cortex-A55、NPU 最高 <strong>256 TOPS（FP4）</strong>、6nm、最高 <strong>128GB LPDDR5x（273 GB/s）</strong>、PCIe 5.0 + AXLink 级联、满载约 <strong>40W</strong>。跑 vLLM / SGLang / PyTorch / ONNX / HF，支持 OpenAI 兼容 API。厂商对比对象是 <strong>DGX Spark（6949.99 美元）</strong>。</p>
+<p><strong>好用的技术细节</strong>：爱芯对"256 打不过 1000 TOPS"的回应——1000 TOPS 是<strong>稀疏 FP4</strong>，真实模型用不上；带宽同为 273 GB/s，但架构让更多带宽真正跑满。<strong>适合做"跑分之外"的科普。</strong><br />
+<strong>角度</strong>：没人再比"谁更强"，开始比"每瓦每美元能跑多少 token"。<br />
+<strong>⚠️ 红区</strong>：性能/跑分为厂商与 Sipeed 单方面口径；DGX Spark 售价为报道时点价；MaixStation 多数型号"即将推出/可预约"，勿写"已开售"；AX8860P 为笔记本供电版，勿与 AX8860 混写。<br />
+<strong>链接</strong>：<br />
+- https://www.cnx-software.com/2026/10/19/axera-ax8860p-16-core-cortex-a55-soc-takes-on-nvidia-dgx-spark-at-fraction-of-the-cost/<br />
+- https://pulsar2-docs.readthedocs.io/en/latest/user_guides_quick/quick_start_ax8860.html</p>
+<hr />
+<h3>④ Reuters：中国便宜模型在美国本土追平（84 分，并进③第一节）</h3>
+<p>中国模型曾占 OpenRouter 上美国公司 token 消耗 <strong>30%+，峰值 46%</strong>；某次降价后单模型用量暴涨 14 倍、营收升 34%；中国模型输入价低至 <strong>0.15 美元/百万 token</strong>，对照 OpenAI 约 2 美元、Anthropic 约 4 美元。<br />
+<strong>⚠️ 红区</strong>：原文<strong>未取得全文</strong>，仅见标题摘要，<strong>出稿前必须打开原文核实模型名与数字</strong>；OpenRouter 份额为第三方口径，不代表全市场。<br />
+<strong>链接</strong>：<br />
+- https://www.reuters.com/technology/artificial-intelligence/<br />
+- https://cryptobriefing.com/openrouter-developers-shift-cheaper-ai-models/</p>
+<hr />
+<h3>⑤ <code>aurora-*-alpha</code>（65 分，一句好细节）</h3>
+<p>三个未官宣模型 ID（aurora-red / green / blue）出现在 OpenAI API 列表，调用返回 503"无可用容量"。<br />
+<strong>⚠️ 红区</strong>：完全未经官方确认，只能写"有开发者发现/截图显示"，不推断能力与发布时间。<br />
+<strong>链接</strong>：<br />
+- https://cryptobriefing.com/openai-aurora-alpha-models-api/<br />
+- https://linux.do/t/topic/3039244</p>
+<hr />
+<h2>🔪 今晚就三件事</h2>
+<ol>
+<li><strong>🔴 <code>0925-AI入侵澳医保.md</code> → <code>待发布/</code></strong>（一条 <code>mv</code>，24 天，做完闭环才开始转）</li>
+<li><strong>✍️ 主稿写两节</strong>：World ID 是什么 + 为什么先卖银行，1000 字</li>
+<li><strong>📅 发布日历补 10/14–10/18</strong></li>
+</ol>
+<p><strong>第二十二天，唯一能改变分数的动作仍然只有一个：把一篇稿子推出去。</strong></p>
+<hr />
+<h2>⚠️ 数据核实提醒</h2>
+<ol>
+<li><strong>World ID</strong>：The Block 首发，多家转载；<strong>定价与合作银行未公布</strong>；Altman 为联合创始人。</li>
+<li><strong>OpenCode</strong>：1.4% 为官方口径；"蒸馏攻击"为官方描述，细节未披露。</li>
+<li><strong>爱芯 AX8860P</strong>：性能/跑分为厂商单方面口径；DGX Spark 售价为报道时点价。</li>
+<li><strong>Reuters</strong>：仅见标题摘要，<strong>未取得全文</strong>，数字须以原文为准。</li>
+<li><strong>aurora-alpha</strong>：未经官方确认，仅作"开发者观测"陈述。</li>
+<li>本轮以 Brave / Perplexity 为主，<strong>未做交叉全文核验</strong>，出稿前须打开原文二次确认。</li>
+</ol>
+<hr />
+<p><em>生成：content agent | 数据源：1019 当日搜索采集 | 晚间选题推送（第二十二天）</em></p><div class="pager"><a class="l" href="2026-10-18-选题方案.html">← 2026-10-18 选题方案</a><a class="r" href="2026-10-19-选题方案.html">2026-10-19 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

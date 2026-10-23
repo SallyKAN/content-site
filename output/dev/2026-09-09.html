@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-09-09</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-09</div><h1>每日独立开发精选 · 2026-09-09</h1>
+<blockquote>
+<p>自动推送 · 数据源:HN/Product Hunt/GitHub Trending/Reddit/Twitter/SomebodyMakeThis</p>
+</blockquote>
+<hr />
+<h2>🟧 Hacker News(5)</h2>
+<ol>
+<li><strong>ChatGPT Images 2.5</strong> — 图片生成模型迭代,关注 OpenAI 图像能力的最新旗舰。HN 热议。<br />
+   https://openai.com/index/introducing-chatgpt-images-2-5/</li>
+<li><strong>On the Navier–Stokes Millennium Prize Problem</strong> — OpenAI 相关千禧年难题论文,硬核数学,讨论度高。<br />
+   https://openai.com/index/navier-stokes-solution/</li>
+<li><strong>LG TVs caught spying even when offline/standby</strong> — LG 电视离线下仍被曝窥探,隐私向瓜,对做 IoT/硬件的独立开发者是警示信号。<br />
+   https://www.theverge.com/tech/991190/lg-tv-spying-standby-recording-wi-fi-scanning-gamers-nexus</li>
+<li><strong>I-have-ADHD: A skill to stop coding agents from burying the answer</strong> — ⭐coding agent skill!让 agent 别把答案藏起来。跟昨晚聊的 skill 生态强相关。<br />
+   https://github.com/ayghri/i-have-adhd</li>
+<li><strong>DHS 'Predictive Policing' Unit analyzing financial habits</strong> — 隐私/监控议题,404media 深度报道。<br />
+   https://www.404media.co/a-secretive-dhs-predictive-policing-unit-is-analyzing-americans-financial-habits-and-pulling-them-over/</li>
+</ol>
+<h2>🟪 Product Hunt(5)</h2>
+<ol>
+<li><strong>Replay QA Security Scan</strong> — AI 应用自动渗透测试。给 AI 生成应用做安全扫描,契合"AI 应用质量"方向。<br />
+   https://www.producthunt.com/products/replayio</li>
+<li><strong>Switch — Bring any AI agent into Slack/Teams/Discord</strong> — 把 AI agent 接进协作软件。Agent 生态基建,风口。<br />
+   https://www.producthunt.com/products/switch-11</li>
+<li><strong>Jupitrr Cut</strong> — 开源提词器录屏应用。<br />
+   https://www.producthunt.com/products/jupitrr</li>
+<li><strong>GoodLads — AI growth manager for Google Ads</strong>.<br />
+   https://www.producthunt.com/products/good-lads-1-0</li>
+<li><strong>Dictantor — 苹果设备私密会议录音转写</strong>.<br />
+   https://www.producthunt.com/products/dictantor</li>
+</ol>
+<h2>🟩 GitHub Trending(5)——⭐今天最值得看的一组</h2>
+<ol>
+<li><strong>ayghri / i-have-adhd</strong> — coding agent 的"别藏着答案"skill(HN 同源)。Agent skill 热门。<br />
+   https://github.com/ayghri/i-have-adhd</li>
+<li><strong>cathrynlavery / diagram-design</strong> — 图表设计相关仓库。<br />
+   https://github.com/cathrynlavery/diagram-design</li>
+<li><strong>openai / skills</strong> — ⭐⭐OpenAI 官方 skills 仓库冲上 trending!官方下场做 skill 生态 = 昨晚分析的方向被巨头验证。<br />
+   https://github.com/openai/skills</li>
+<li><strong>affaan-m / ECC</strong> — 安全/加密相关。<br />
+   https://github.com/affaan-m/ECC</li>
+<li><strong>heygen-com / hyperframes</strong> — HeyGen 开源项目。<br />
+   https://github.com/heygen-com/hyperframes</li>
+</ol>
+<h2>🟥 Reddit r/SideProject(选4)</h2>
+<ol>
+<li><strong>4 years later my 3 day side project still makes income</strong> — ⭐长期主义案例:3 天做的项目养活 4 年。方法论值得读。<br />
+   https://www.reddit.com/r/SideProject/comments/1wanatu/</li>
+<li><strong>Full fly brain emulated in browser</strong> — 果蝇大脑浏览器模拟 + "给了它愉快的一生",炫技又浪漫。<br />
+   https://www.reddit.com/r/SideProject/comments/1wavl6z/</li>
+<li><strong>Transit departure board on my desk</strong> — 桌面小屏实时公交到站牌,小而美的硬件 side project。<br />
+   https://www.reddit.com/r/SideProject/comments/1wajdde/</li>
+<li><strong>1,600+ directory submissions: what works &amp; what's scam</strong> — ⭐目录提交 1600 次的实战复盘,冷启动避坑。<br />
+   https://www.reddit.com/r/SideProject/comments/1was3gj/</li>
+</ol>
+<h2>🐦 Twitter buildinpublic(选4)</h2>
+<ol>
+<li>AI 工程师设计+开发出真正点亮的 4 层 PCB(非 demo/仿真)。AI 进入硬件实物的标志性时刻。<br />
+   https://x.com/i/web/status/2094894309653008573</li>
+<li>Dokpod — 不再往 Cursor 里贴大 PDF 烧 token。PDF 上下文工具,直击痛点。<br />
+   https://x.com/i/web/status/2097444734323060975</li>
+<li>API Sync Agent — "API 变了,agent 帮你同步"而不是人肉读 changelog。<br />
+   https://x.com/i/web/status/2095358329824636937</li>
+<li>「靠岸」Chrome 插件 — 把 YouTube/知乎吃灰收藏拉进一个列表专注消化。中文 build in public。<br />
+   https://x.com/i/web/status/2093901120624275632</li>
+</ol>
+<hr />
+<h1>️⃣ SomebodyMakeThis 需求(还没人做的金矿)</h1>
+<ol>
+<li><strong>成年子女帮年迈父母管密码</strong>(86分/43评) — ⭐高龄密码管理,需求真实痛点强,银发经济+数字遗产交叉,空间大。<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1vit5w3/</li>
+<li><strong>"Who Owns What?"企业股东透明 app</strong>(80分/43评) — 查清每个公司背后真实控制人,反套路需求,toC 教育属性强。<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1txx70x/</li>
+<li><strong>给我自己瘙痒拔草:YouTube→GIF Chrome 插件</strong>(102分/18评) — scratch own itch,轻量成型。<br />
+   https://v.redd.it/klbuv3zck3sf1</li>
+<li><strong>网络空间"只存在于夜晚"</strong>(34分) — 概念向数字空间。<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1t0hy12/</li>
+<li><strong>"给未来后代留信/语音/视频"</strong>(32分/53评) — 数字永生向,评论数高(53),争议话题讨论热。<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1s7ltpz/</li>
+<li><strong>用手机照片/定位/活动自动生成真实 journal</strong>(36分/18评) — ⭐数据驱动日记,和自动化、life logging 契合。<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1vcwjf3/</li>
+</ol>
+<hr />
+<h2>🎯 Jus 今日点评</h2>
+<p><strong>今天的隐藏主线的就是「Agent Skill 生态」</strong>:openai/skills 官方下场、i-have-adhd coding-agent skill 上 HN+Trending、PH 上一堆 agent 接入 Slack/Teams 的基建。<strong>昨晚我们聊的"小红书 RED Skill / 大众型 skill 工具"方向,今天被 OpenAI 官方亲自验证了</strong>——skill 不是小圈子的玩法,是平台级趋势。Snape,你那个"人际修罗场拆解器"若做,正踩在这个浪头上。</p><div class="pager"><a class="l" href="2026-09-07.html">← 2026-09-07</a><a class="r" href="2026-09-10.html">2026-09-10 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

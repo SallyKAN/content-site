@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-09-27（周日）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-27</div><h1>每日独立开发精选 — 2026-09-27（周日）</h1>
+<h2>⚠️ 采集故障说明</h2>
+<ul>
+<li>Twitter/X <code>search</code> 仍返回 HTTP 404（queryId 变更，<code>ClientTransaction</code> 初始化失败）；<code>feed</code> 正常，Twitter 板块改用时间线 + 关键词过滤。</li>
+<li>Reddit RSS <code>t=day</code> 仍 429，继续 <code>t=week</code> + SMT 池兜底。</li>
+</ul>
+<h2>🔥 Hacker News</h2>
+<ol>
+<li>
+<p><strong>NSA 在花数十亿美元测试 AI 模型</strong><br />
+   https://www.washingtonsun.com/technology/classified-estimates-nsa-paying-billions-to-test-ai-models<br />
+   点评：今日最值得读，且与 Snape 工作直接相关。"AI 驱动自动化测试"是国家级预算级刚需。</p>
+</li>
+<li>
+<p><strong>Ollaya — 开源版 Jev 式决策模型</strong><br />
+   https://ollaya.dev/<br />
+   点评：Jev 生态出现开源复刻 = 已被认可。基础设施被复刻是好信号。</p>
+</li>
+<li>
+<p><strong>美国上诉法院维持"Anthropic 为供应链风险"认定</strong><br />
+   https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html<br />
+   点评：地缘政治作用于具体公司，合规风险应作架构问题处理。</p>
+</li>
+<li>
+<p><strong>CAPTCHA 不能证明你是人，只能证明你是美国人</strong><br />
+   https://shkspr.mobi/blog/2017/11/captchas-dont-prove-youre-human-they-prove-youre-american/<br />
+   点评：Agent 时代验证码已失效（OpenAI Agent 造百万短链绕 CAPTCHA）。</p>
+</li>
+<li>
+<p><strong>不用 AI 的一个月</strong><br />
+   https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html<br />
+   点评：诚实的反潮流实验记录。</p>
+</li>
+</ol>
+<h2>🚀 Product Hunt</h2>
+<ol>
+<li>
+<p><strong>Chit</strong> — 把一天的 Claude Code 使用打印成收据<br />
+   https://www.producthunt.com/products/chit-2<br />
+   点评：今日最妙。给新行为做一张凭证，成本低传播强。</p>
+</li>
+<li>
+<p><strong>Fit Receipt</strong> — 私人试衣 Agent，"知道什么时候该叫 JEV"<br />
+   https://www.producthunt.com/products/fit-receipt<br />
+   点评：产品描述直接点名 JEV 模型，模型选择已成消费者卖点。</p>
+</li>
+<li>
+<p><strong>Wand</strong> — 以思考的速度构建软件<br />
+   https://www.producthunt.com/products/wand-6<br />
+   点评：AI 编码红海，需求仍在涨。</p>
+</li>
+<li>
+<p><strong>MakerMap</strong> — 一张"活着的"创作者地图<br />
+   https://www.producthunt.com/products/makermap<br />
+   点评：社交型项目，靠"被收录"自然拉新。</p>
+</li>
+<li>
+<p><strong>Fewer</strong> — 统计拿起手机次数的启动器<br />
+   https://www.producthunt.com/products/fewer<br />
+   点评：数字健康 + 极简。</p>
+</li>
+</ol>
+<h2>👽 Reddit r/SideProject</h2>
+<ol>
+<li>
+<p><strong>鸟类爱好项目成了本月 HN 第一，现在要被请去中国展示</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wozqy6/my_birdrelated_hobby_project_became_the_1_hacker/<br />
+   点评：连续在榜。纯爱好 → 顶级曝光 → 商业机会主动找上门。</p>
+</li>
+<li>
+<p><strong>jgrep：pattern 是一句话描述的 grep</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wo65w6/jgrep_grep_but_the_pattern_is_a_description/<br />
+   点评：给老工具换 AI 内核，零学习成本。</p>
+</li>
+<li>
+<p><strong>举铁姿势错误时提醒我的 App</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wqsd4f/i_built_an_app_that_tells_me_when_my_lifting_form/<br />
+   点评：CV + 健身，技术门槛不高但感知价值高。</p>
+</li>
+<li>
+<p><strong>给网上的开放麦：预约时段、开播、交棒</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wpib92/i_made_an_open_mic_for_the_internet_book_a_slot/<br />
+   点评："接棒式"设计有意思。</p>
+</li>
+<li>
+<p><strong>500 → 15,000 日活但不知道用户从哪来</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wn05d1/my_side_project_went_from_500_to_15000_users_a/<br />
+   点评：连续第三天在榜。</p>
+</li>
+</ol>
+<h2>🐦 Twitter / X（时间线）</h2>
+<ol>
+<li>
+<p><strong>@lidangzzz — "GPT-6 是个他妈非常神奇的时代"（695 likes）</strong><br />
+   https://x.com/lidangzzz/status/2103804274777936034<br />
+   点评：本期最值得看。技术圈原以为 Agent 必须走 CLI/MCP，但 GPT-6 太聪明，开始直接操作 GUI。高智力代偿复杂设计——精心设计的 Agent 友好接口可能被模型能力绕过。</p>
+</li>
+<li>
+<p><strong>@xiangxiang103 — Meta Muse 云电脑被"玩出花"（496 likes）</strong><br />
+   https://x.com/xiangxiang103/status/2103705259554275560<br />
+   点评：免费 24/7 云电脑 + 浏览器 + 终端，跑定时任务扒资讯。与每日精选推送同类。</p>
+</li>
+<li>
+<p><strong>@vovudebosh — Claude 自动找客户、发邮件、约会议（417 likes）</strong><br />
+   https://x.com/vovudebosh/status/2103465187164717479<br />
+   点评：销售 Agent 闭环已成事实。</p>
+</li>
+<li>
+<p><strong>@AcboxLiu — 自建 computer 集群，将开放低成本 24/7 cloud computer API（21 likes）</strong><br />
+   https://x.com/AcboxLiu/status/2103900267230187624<br />
+   点评：低赞但方向重要。"给 Agent 提供算力底座"与 x402 支付层是天然搭档。</p>
+</li>
+</ol>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<ol>
+<li>
+<p><strong>18 个月前从本站捡 idea，今天在和全球最大金融机构谈合作</strong>（236 分 / 41 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this/<br />
+   点评：持续第一，仍在涨（213→233→236）。</p>
+</li>
+<li>
+<p><strong>someone pls make this app</strong>（18 分 / 28 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wnjc3m/someone_pls_make_this_app/<br />
+   点评：第二天在榜，评论远多于赞。需求藏在评论里，最容易被做出来。</p>
+</li>
+<li>
+<p><strong>可定制的设备扩展坞</strong>（23 分 / 11 评论）<br />
+   https://i.redd.it/g1x7pvb3pbrh1.jpeg<br />
+   点评：分数评论双涨（19→23）。硬件类需求，真没人做。</p>
+</li>
+<li>
+<p><strong>简单 App 可视化/禁用/控制 USB 端口</strong>（9 分 / 11 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wkfqtg/simple_app_to_visualisedisablecontrol_your_usb/<br />
+   点评：一周可出原型，几乎无竞品。</p>
+</li>
+<li>
+<p><strong>流媒体该有个 "No Spoilers" 选项</strong>（19 分 / 2 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w6cm4h/streaming_sites_should_have_a_no_spoilers_option/<br />
+   点评：长期在榜。</p>
+</li>
+</ol>
+<hr />
+<p>采集时间：2026-09-27 02:3x<br />
+数据源：orangebot.ai feed、Reddit r/SideProject RSS（week）、r/SomebodyMakeThis（100 条池）、Twitter feed<br />
+备注：Twitter search 接口 404 未修复</p><div class="pager"><a class="l" href="2026-09-26.html">← 2026-09-26</a><a class="r" href="2026-09-28.html">2026-09-28 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

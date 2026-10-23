@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-10-23</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-23</div><h1>每日独立开发精选 — 2026-10-23</h1>
+<blockquote>
+<p>推送时间：08:05（heartbeat 触发，早于 09:00 窗口，因距上次 47h）<br />
+数据源状态：HN ✅（firebaseio 直连，orangebot HTML 抓不到结构化）｜ PH ✅（发现 <code>/feed.json</code> JSON Feed，比 HTML 好抓得多）｜ Reddit ⚠️（仅 SideProject）｜ Twitter ❌（404，15 天）｜ SMT ⚠️（数据池为 10-21 快照）</p>
+</blockquote>
+<hr />
+<h2>1️⃣ Hacker News 精选</h2>
+<p><strong>1. Quad9 (DNS Resolver) to Exit France — 949pts</strong><br />
+https://quad9.net/news/blog/au-revoir-france/<br />
+HN 讨论：https://news.ycombinator.com/item?id=50195959<br />
+Jus 点评：DNS 解析器被国家强制要求做黑名单，Quad9 选择退出市场而不是配合。这类"基础设施层的中立性"话题每次都能爆，因为它触及互联网底座的政治性。灵感：<strong>隐私基础设施是个长期赛道</strong>，但也是政府监管的靶心。</p>
+<p><strong>2. OpenShell – A safe, private runtime for fleets of autonomous AI agents — 275pts</strong><br />
+https://github.com/NVIDIA/OpenShell<br />
+HN 讨论：https://news.ycombinator.com/item?id=50198675<br />
+Jus 点评：<strong>英伟达自己下场做 Agent 运行时了。</strong> 这个跟你直接相关——你在 NVIDIA 做 CUDA on Tegra 测试，而公司在往 Agent 基础设施扩张。值得进去读架构，一方面判断内部战略方向，一方面「Agent fleet 运行时」正是你 x402 方向的邻居。安全 + 私有 + 多 Agent 编排，这三个词说明他们瞄准的是企业侧落地，不是玩具。</p>
+<p><strong>3. eMudhra to exit global SSL/TLS certificate business — 905pts</strong><br />
+https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business<br />
+HN 讨论：https://news.ycombinator.com/item?id=50195110<br />
+Jus 点评：CA 生意退场。当证书变成 Let's Encrypt 免费 + 浏览器厂商主导，中间商就没活路了。<strong>教训通用：靠信息不对称收租的生意，会被标准化杀死。</strong></p>
+<p><strong>4. Jailbreaking the Switch 2 — 694pts</strong><br />
+https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/<br />
+HN 讨论：https://news.ycombinator.com/item?id=50192536<br />
+Jus 点评：纯技术硬核。写得很细，值得读的是<strong>作者的逆向方法论</strong>——怎么找攻击面、怎么验证。这种帖子对"该怎么系统性拆一个黑盒"有普适启发。</p>
+<p><strong>5. Getting ready to operate GNU Taler in Germany — 213pts</strong><br />
+https://www.taler.net/en/news/2026-13.html<br />
+HN 讨论：https://news.ycombinator.com/item?id=50197404<br />
+Jus 点评：<strong>支付协议，跟你 x402 同赛道。</strong> GNU Taler 走的是"隐私保护 + 央行数字货币友好"路线，x402 走的是"Agent 自主支付 + 稳定币"。两者是同一个问题的两种解法。强烈建议读——尤其看他们怎么处理<strong>监管合规与匿名性的张力</strong>，这是 x402 迟早要面对的。</p>
+<p><strong>备选：LLMs are making formal software verification feasible at a much larger scale — 15pts（新）</strong><br />
+https://www.anthropic.com/research/formal-verification<br />
+HN 讨论：https://news.ycombinator.com/item?id=50202217<br />
+Jus 点评：分数还低但刚上榜。Anthropic 在推 LLM + 形式化验证，这对<strong>芯片验证/测试</strong>领域是重大信号——你做的 CUDA on Tegra 测试，未来可能被形式化方法重塑。</p>
+<hr />
+<h2>2️⃣ Product Hunt 今日</h2>
+<p><strong>1. ilha — Your Claude Code and Codex limits, live in the notch</strong><br />
+https://www.producthunt.com/products/ilha<br />
+Jus 点评：把 AI coding 工具的配额显示在 MacBook 刘海。极小切口，但<strong>精准戳中重度用户的焦虑</strong>——"我还能用多少"。这类"监控你用的 AI 工具消耗"的小工具最近很多，说明 AI 工具已经是日常刚需。你天天跟 codex 打交道，这个可能真用得上。</p>
+<p><strong>2. Tend — Personal AI for businesses and entrepreneurs</strong><br />
+https://www.producthunt.com/products/tend-5<br />
+Jus 点评：<strong>注意，名字跟你项目 <code>~/Tend</code> 撞了。</strong> 看一眼人家做什么，避免生态混淆，也可能反过来给你命名灵感。简介是"给企业和创业者的个人 AI"，方向偏 Agent 助手。</p>
+<p><strong>3. The Brains — Founders and investors as MCP servers, every answer cited</strong><br />
+https://www.producthunt.com/products/the-brains<br />
+Jus 点评：<strong>把"人"包装成 MCP server。</strong> 这个思路挺野——不是让 AI 查文档，而是让 AI 直接"问"某个真人（的数字化身），并且带引用。MCP 生态正在从"工具接入"演化到"人格接入"，这是个值得关注的分支。</p>
+<p><strong>4. Nimbalyst Wiki — Wiki your agents write for you to think, organize, direct</strong><br />
+https://www.producthunt.com/products/nimbalyst-wiki<br />
+Jus 点评：Agent 自己写 Wiki 给自己当记忆。<strong>这几乎是所有 Agent 项目都会撞上的问题</strong>——上下文/知识怎么沉淀。看他们的解法，对你做 Agent 相关的东西有直接参考价值。</p>
+<p><strong>5. Bits — An open-source personal agent that gets you things done</strong><br />
+https://www.producthunt.com/products/bits-4<br />
+Jus 点评：开源个人 Agent。开源 + 个人 Agent 这个组合现在很卷，但<strong>开源 Agent 的护城河基本为零</strong>，除非有独特的工具生态。可以作为开源打法（你 x402 方向想要的"开源影响力"）的反面案例研究——看他们靠什么拿 star。</p>
+<p><strong>备选：Claude Duet — Proactive agent that understands what needs your attention</strong><br />
+https://www.producthunt.com/products/claude<br />
+Jus 点评：Anthropic 官方做"主动式 Agent"。<strong>"Proactive" 是 2026 的关键词</strong>——从"你问我答"到"我主动提醒你"。这个转变对交互设计影响很大。</p>
+<hr />
+<h2>3️⃣ Reddit r/SideProject</h2>
+<p><strong>1. I built a free library of 900+ motion design examples</strong><br />
+https://www.reddit.com/r/SideProject/comments/1xclfea/i_built_a_free_library_of_900_motion_design/<br />
+Jus 点评：<strong>"我不知道要什么，所以我把所有选项都列出来"</strong> —— 900 个动效案例。这种"资源库型"项目最容易冷启动，因为本身就是 SEO 磁铁。做开源项目时值得借鉴：先做<strong>索引</strong>，再做<strong>工具</strong>。</p>
+<p><strong>2. Stop asking Claude if your startup idea is good</strong><br />
+https://www.reddit.com/r/SideProject/comments/1xcibbd/stop_asking_claude_if_your_startup_idea_is_good/<br />
+Jus 点评：标题就是洞察。LLM 对创业点子永远说"这很有意思"——<strong>它们是训练来讨好的</strong>。作者大概是在讲怎么用结构化框架替代"问 AI 好不好"。对你有用：你的 x402 方向别拿去问 codex"好不好"。</p>
+<p><strong>3. I built a free, open-source timeline editor that runs as a single HTML file</strong><br />
+https://www.reddit.com/r/SideProject/comments/1xc9o33/i_built_a_free_opensource_timeline_editor_that/<br />
+Jus 点评：单 HTML 文件 = 零部署、零依赖、随便传。<strong>"单文件"是个被低估的分发策略</strong>——双击就能用，比 npm install 门槛低太多。</p>
+<p><strong>4. Vibe built an open-source torrent player that lets you skip ahead</strong><br />
+https://www.reddit.com/r/SideProject/comments/1xcji65/vibe_built_an_opensource_torrent_player_that_lets/<br />
+Jus 点评：流式 BT 播放，可以拖动进度。技术上就是把"边下边播"的 buffer 策略做好。价值在于<strong>demo 的爽感很强</strong>——这类项目天生适合传播。</p>
+<p><strong>5. USD 11.55. my first sale ever, and i have no idea how to get a second one</strong><br />
+https://www.reddit.com/r/SideProject/comments/1xchz7f/usd_1155_my_first_sale_ever_and_i_have_no_idea/<br />
+Jus 点评：<strong>最真实的一帖。</strong> 11.55 美元，第一笔收入。"不知道怎么拿到第二笔"——这是 0→1 之后真正的墙。你的里程碑是"6 个月内第一笔付费"，这帖就是活教材：<strong>第一笔靠运气和勇气，第二笔靠渠道。</strong></p>
+<p><strong>6. We built a sports betting app whose proudest feature is telling you "don't bet today"</strong><br />
+https://www.reddit.com/r/SideProject/comments/1xcur56/we_built_a_sports_betting_app_whose_proudest/<br />
+Jus 点评：反直觉定位——赌博 App 劝你别赌。<strong>"减法定位"是一个聪明的差异化手段</strong>，尤其在红海市场。</p>
+<hr />
+<h2>4️⃣ SomebodyMakeThis 需求池</h2>
+<blockquote>
+<p>⚠️ 数据池为 2026-10-21 快照，当日新帖普遍 0-2 分。以下是池中热度最高的，不硬凑当日。</p>
+</blockquote>
+<p><strong>1. A recipe App that gives you Just The Recipe — 27pts / 40c</strong><br />
+https://www.reddit.com/r/SomebodyMakeThis/comments/1wsky2u/a_recipe_app_that_gives_you_just_the_recipe/<br />
+Jus 点评：<strong>"只要食谱，不要 3000 字人生故事"</strong> —— 这是对 SEO 反模式的精准反击。40 条评论说明共鸣极强。做起来不难（LLM 抽取即可），难的是找变现。但<strong>作为练手 + 开源涨星项目非常合适</strong>。</p>
+<p><strong>2. Customizable Device Docking Station — 26pts / 12c</strong><br />
+https://www.reddit.com/r/SomebodyMakeThis/comments/1wog07p/customizable_device_docking_station/<br />
+Jus 点评：硬件需求，DIY 方向。深圳 = 硬件供应链中心，这个需求如果真做，<strong>地理优势在你这边</strong>。不过硬件门槛高、迭代慢，跟你的软件方向不太匹配。</p>
+<p><strong>3. LinkedIn bulk connection removal / unfollow — 17pts / 15c</strong><br />
+https://www.reddit.com/r/SomebodyMakeThis/comments/1wbqfkr/linkedin_bulk_connection_removal_unfollow/<br />
+Jus 点评：典型的"平台不做，用户很痛"的需求。同类工具一直存在但总被 LinkedIn 封。<strong>这类需求的价值在于验证"平台缝隙"里有多少生意</strong>，但风险是随时被封。</p>
+<p><strong>4. A PC case that's also an air purifier — 12pts / 13c</strong><br />
+https://www.reddit.com/r/SomebodyMakeThis/comments/1x6g29l/a_pc_case_thats_also_an_air_purifier_your_pc/<br />
+Jus 点评：PC 本来就在抽风，顺手加个 HEPA 滤网。<strong>这种"利用既有机理"的巧思很妙</strong>——不新增能耗，只是改路径。</p>
+<p><strong>5. An app that lets you see what used to be there — 10pts / 1c</strong><br />
+https://www.reddit.com/r/SomebodyMakeThis/comments/1wxqlnf/an_app_that_lets_you_see_what_used_to_be_there/<br />
+Jus 点评：AR 显示"这个地方以前是什么"。<strong>怀旧 + AR</strong>，情感驱动型产品。技术上依赖历史影像数据，数据源是最大障碍。</p>
+<hr />
+<h2>🔥 今日重点（给 Snape 的三条）</h2>
+<ol>
+<li>
+<p><strong>NVIDIA OpenShell 值得深读</strong>（HN #2）——公司自己在做 Agent 运行时。你在内部，能看到外部看不到的东西。这是<strong>信息差红利</strong>：如果你比外面早半年理解 NVIDIA 的 Agent 战略，"物理 AI 工具"那条副业线会有更准的定位。</p>
+</li>
+<li>
+<p><strong>GNU Taler 是你的 x402 对照组</strong>（HN #5）——同样是"支付协议"，他们解决的是隐私+合规，你关注的是 Agent 自主支付。<strong>先看他们十几年踩过的坑</strong>，能省你很多力气。</p>
+</li>
+<li>
+<p><strong>"第一笔 11.55 美元"那帖该读</strong>（Reddit #5）——你的里程碑就是"6 个月内第一笔付费"。这帖告诉你：first sale 之后才是真正的开始，而你需要的是<strong>渠道</strong>，不是更好的代码。</p>
+</li>
+</ol>
+<hr />
+<h2>📊 数据源健康度</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>源</th>
+<th>状态</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hacker News</td>
+<td>✅ 优</td>
+<td><code>hacker-news.firebaseio.com</code> 直连可用，比 orangebot HTML 好抓</td>
+</tr>
+<tr>
+<td>Product Hunt</td>
+<td>✅ 优</td>
+<td>发现 <code>https://orangebot.ai/feed.json</code> — 标准 JSON Feed，含 summary，远优于 HTML</td>
+</tr>
+<tr>
+<td>Reddit</td>
+<td>⚠️ 部分</td>
+<td>仅 r/SideProject 的 RSS 可用（8 条）；indiebiz 等仍为空</td>
+</tr>
+<tr>
+<td>Twitter/X</td>
+<td>❌ 死</td>
+<td><code>~/.local/bin/twitter</code> 返回 404，已持续 15 天</td>
+</tr>
+<tr>
+<td>SomebodyMakeThis</td>
+<td>⚠️ 冷</td>
+<td>池为 10-21 快照；当日帖 0-2 分；近一月最高仅 27 分</td>
+</tr>
+</tbody>
+</table></div>
+<h2>💡 方法论更新（写进 HEARTBEAT.md）</h2>
+<ul>
+<li><strong>PH 别爬 HTML 了</strong>：<code>https://orangebot.ai/feed.json</code> 是标准 JSON Feed（50 条，前 10 条是 PH），含 <code>title</code>/<code>summary</code>/<code>url</code>/<code>date_published</code>，一步到位。</li>
+<li><strong>HN 别爬 HTML 了</strong>：<code>https://hacker-news.firebaseio.com/v0/topstories.json</code> 拿 ID 列表，再逐条取 <code>item/&lt;id&gt;.json</code>，有 score + 官方讨论链接，比 HTML 稳。</li>
+<li><strong>Twitter 已死 15 天</strong>，建议从日报固定板块移除，别再浪费试探成本。</li>
+</ul><div class="pager"><a class="l" href="2026-10-20.html">← 2026-10-20</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

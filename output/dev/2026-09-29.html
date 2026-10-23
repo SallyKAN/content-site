@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-09-29（周一）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-29</div><h1>每日独立开发精选 — 2026-09-29（周一）</h1>
+<h2>⚠️ 采集故障说明</h2>
+<ul>
+<li>Twitter/X <code>search</code> 仍 404（queryId 变更，上游 twitter-cli 未修）；<code>feed</code> 正常，Twitter 板块用时间线 + 关键词过滤。</li>
+<li>Reddit RSS <code>t=day</code> 仍 429，继续 <code>t=week</code> + SMT 池兜底。</li>
+</ul>
+<h2>🔥 Hacker News</h2>
+<ol>
+<li>
+<p><strong>There are no "rogue" AI agents（没有"失控"的 AI Agent）</strong><br />
+   https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents<br />
+   点评：今日最该读，直击 x402 靶心。Agent 问题不是"叛变"而是设计缺陷与责任缺位；FTC 主席近期同样表态（反 anthropomorphize，责任在开发者）。结论：Agent 间信任与责任必须由协议层强制执行。</p>
+</li>
+<li>
+<p><strong>Ember-1（fireworks.ai）</strong><br />
+   https://fireworks.ai/blog/ember-1<br />
+   点评：关注定价与吞吐，是 Agent 产品的成本变量。</p>
+</li>
+<li>
+<p><strong>Prompting Claude Opus 5.5（官方文档）</strong><br />
+   https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5<br />
+   点评：Opus 5.5 官方 prompt 指南，值得精读。</p>
+</li>
+<li>
+<p><strong>Parley：联邦式去中心化聊天，说正经 IRC 协议</strong><br />
+   https://git.mills.io/prologic/parley<br />
+   点评：去中心化 + 老协议兼容，呼应 Agent 通信协议讨论升温。</p>
+</li>
+<li>
+<p><strong>SpaceX 星舰首次入轨发射</strong><br />
+   https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live<br />
+   点评：大事，不展开。</p>
+</li>
+</ol>
+<h2>🚀 Product Hunt</h2>
+<ol>
+<li>
+<p><strong>Superhuman Go</strong> — Superhuman 移动版<br />
+   https://www.producthunt.com/products/superhuman-go<br />
+   点评：老牌邮件产品出移动端，AI 包装成"更快"。</p>
+</li>
+<li>
+<p><strong>MuM</strong> — 多项目 Markdown 管理器<br />
+   https://www.producthunt.com/products/mum-multi-project-markdown<br />
+   点评：开发者向小工具，"自己需要就做了"。</p>
+</li>
+<li>
+<p><strong>GenCode（Genspark）</strong><br />
+   https://www.producthunt.com/products/genspark<br />
+   点评：Genspark 进编码赛道，AI 编码继续内卷。</p>
+</li>
+<li>
+<p><strong>Humalike x GTA RP</strong> — 给 GTA 角色扮演服接入 AI 角色<br />
+   https://www.producthunt.com/products/humalike-2<br />
+   点评：AI NPC 寄生现成游戏生态，不需自建平台，成本极低的打法。</p>
+</li>
+<li>
+<p><strong>KiwiDesk</strong><br />
+   https://www.producthunt.com/products/kiwidesk<br />
+   点评：客服/桌面工具，观察定位切口。</p>
+</li>
+</ol>
+<h2>👽 Reddit r/SideProject</h2>
+<ol>
+<li>
+<p><strong>浏览器里跑的程序化锦鲤池</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wrqc2a/i_made_an_interactive_procedurally_animated_koi/<br />
+   点评：新上榜，本期最好玩。纯"美学+技术炫耀"型项目，传播效率极高。</p>
+</li>
+<li>
+<p><strong>举铁姿势错误时提醒我的 App</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wqsd4f/i_built_an_app_that_tells_me_when_my_lifting_form/<br />
+   点评：连续在榜，CV + 健身。</p>
+</li>
+<li>
+<p><strong>关于性的互动网站（基于同行评审研究）</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wrsyme/i_designed_an_interactive_website_all_about_sex/<br />
+   点评：选题大胆但走权威引用路线，规避风险又自带话题度。</p>
+</li>
+<li>
+<p><strong>鸟类爱好项目成了本月 HN 第一，要被请去中国</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wozqy6/my_birdrelated_hobby_project_became_the_1_hacker/<br />
+   点评：连续第五天在榜。</p>
+</li>
+<li>
+<p><strong>jgrep：pattern 是一句话描述的 grep</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wo65w6/jgrep_grep_but_the_pattern_is_a_description/<br />
+   点评：连续在榜。</p>
+</li>
+</ol>
+<h2>🐦 Twitter / X（时间线）</h2>
+<ol>
+<li>
+<p><strong>@mylifcc — Cloudflare 悄悄开源文档框架 Nimbus（360 likes）</strong><br />
+   https://x.com/mylifcc/status/2104430399053045976<br />
+   点评：本期最值得看。口号"文档要同时写给人和 AI agent 看"。与"为 Agent 重做旧基础设施"方向咬合。</p>
+</li>
+<li>
+<p><strong>@TechFlowPost — 中国允许字节、阿里等购买英伟达 RTX PRO 5500（37 likes）</strong><br />
+   https://x.com/TechFlowPost/status/2104464953268932655<br />
+   点评：与 Snape 工作最相关。政策松动冲击国产算力替代溢价，A 股算力硬件股大跌。</p>
+</li>
+<li>
+<p><strong>@bourneliu66 — $200/mo Claude Max 每月可消耗 500 亿 Opus 5.5 token，API 价值 $15k~20k（232 likes）</strong><br />
+   https://x.com/bourneliu66/status/2104527892348854535<br />
+   点评：模型价格战具体数字，对独立开发者纯利好。</p>
+</li>
+<li>
+<p><strong>@huoshan007 — 浙大开源 Easel，全网热榜 → 账号风格 → 脚本/日历/物料一条龙（407 likes）</strong><br />
+   https://x.com/huoshan007/status/2104106515225276632<br />
+   点评：内容生产 Agent 开源，按数据反馈调调性。本质是"内容运营 Agent 的 harness"。</p>
+</li>
+</ol>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<ol>
+<li>
+<p><strong>18 个月前从本站捡 idea，今天在和全球最大金融机构谈合作</strong>（242 分 / 41 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this/<br />
+   点评：持续第一，仍在涨（213→236→242）。</p>
+</li>
+<li>
+<p><strong>someone pls make this app</strong>（21 分 / 34 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wnjc3m/someone_pls_make_this_app/<br />
+   点评：评论涨得比分数快（28→34）。需求最实、竞品最少。</p>
+</li>
+<li>
+<p><strong>想要 PowerPoint 兼容编辑器，自定义工作区而非幻灯片</strong> 🆕（7 分 / 14 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wrinat/somebody_make_a_powerpointcompatible_editor_where/<br />
+   点评：今日新上榜，评论是分数两倍。切口小但用户明确。</p>
+</li>
+<li>
+<p><strong>可定制的设备扩展坞</strong>（23 分 / 11 评论）<br />
+   https://i.redd.it/g1x7pvb3pbrh1.jpeg<br />
+   点评：连续在榜，硬件类，真没人做。</p>
+</li>
+<li>
+<p><strong>简单 App 可视化/禁用/控制 USB 端口</strong>（8 分 / 11 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wkfqtg/simple_app_to_visualisedisablecontrol_your_usb/<br />
+   点评：一周可出原型，几乎无竞品。</p>
+</li>
+</ol>
+<hr />
+<p>采集时间：2026-09-29 00:0x<br />
+数据源：orangebot.ai feed、Reddit r/SideProject RSS（week）、r/SomebodyMakeThis（100 条池）、Twitter feed<br />
+备注：Twitter search 接口 404 未修复</p><div class="pager"><a class="l" href="2026-09-28.html">← 2026-09-28</a><a class="r" href="2026-09-30.html">2026-09-30 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

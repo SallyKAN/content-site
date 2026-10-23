@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-10-11</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-11</div><h1>每日独立开发精选 · 2026-10-11</h1>
+<p>采集源：OrangeBot JSON Feed (HN/PH) + Reddit RSS + SomebodyMakeThis 100条池<br />
+注：Twitter/X 后端连续第3天 404，本次跳过</p>
+<h2>Hacker News（5）</h2>
+<ol>
+<li>YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops — https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306</li>
+<li>Show HN: Carrier-Explode: iPhone/Pixel/Galaxy carrier settings decoded — https://carrierexplode.com/</li>
+<li>Typesafe AI raises $870M at $7.5B — https://typesafe.ai/blog/series-ai</li>
+<li>Triple-A Minesweeper — https://minesweeper.mikelacher.com/</li>
+<li>WSL3 Performance 5-60% faster than WSL2 — https://tonym.us/wsl2-vs-wsl3-benchmarks.html</li>
+<li>Computers Cannot Make Decisions — https://wiki.cateat.fish/art:computers_cannot_make_decisions</li>
+<li>Lobbying Is Corruption — https://geohot.github.io//blog/jekyll/update/2026/10/10/lobbying.html</li>
+<li>Danish CPR data breach, password "123456" — https://cphpost.dk/2026-10-10/news/round-up/123456-password-used-in-massive-danish-cpr-data-breach/</li>
+</ol>
+<h2>Product Hunt（5）</h2>
+<ol>
+<li>Porch — local project summaries and cost tracking for AI coding — https://www.producthunt.com/products/porch-6</li>
+<li>Playground by Google Labs — create/play/share games with Google AI — https://www.producthunt.com/products/google-labs</li>
+<li>De Stash — see/search/clean Mac storage, 100% private — https://www.producthunt.com/products/de-stash</li>
+<li>Sorted — private AI file organizer for Mac — https://www.producthunt.com/products/sorted-6</li>
+<li>Lune — search engine built for scientific AI agents — https://www.producthunt.com/products/lune-research</li>
+<li>Claude Dashboards &amp; Motion — live dashboards &amp; animated explainers — https://www.producthunt.com/products/claude-dashboards-motion</li>
+<li>Cue — AirPods in, Mac starts focusing — https://www.producthunt.com/products/cue-26</li>
+<li>Microsoft Surface Laptop Ultra — run 120B models locally — https://www.producthunt.com/products/microsoft-surface-laptop-ultra</li>
+</ol>
+<h2>Reddit r/SideProject（4）</h2>
+<ol>
+<li>I built a private infinite canvas to dump anything and control context of ai — https://www.reddit.com/r/SideProject/comments/1x2kb56/i_built_a_private_infinite_canvas_to_dump/</li>
+<li>60 releases in 5 months. 4 GitHub stars. — https://www.reddit.com/r/SideProject/comments/1x2k4hw/60_releases_in_5_months_4_github_stars/</li>
+<li>How many projects before your first paying sign-up? — https://www.reddit.com/r/SideProject/comments/1x2ekod/how_many_projects_did_you_make_before_you_got/</li>
+<li>I keep losing useful work I create with AI — https://www.reddit.com/r/SideProject/comments/1x293sx/i_keep_losing_useful_work_i_create_with_ai_so_im/</li>
+<li>I built FlashResume — https://www.reddit.com/r/SideProject/comments/1x2ggdx/i_built_flashresume_because_tailoring/</li>
+</ol>
+<h2>SomebodyMakeThis 需求（金矿）</h2>
+<ol>
+<li>(249赞/42评) 18 months ago I pulled an idea from here → 今天在和全球最大金融机构谈 — https://www.reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this/</li>
+<li>(85赞/44评) App where adult kids manage elderly parents' passwords — https://www.reddit.com/r/SomebodyMakeThis/comments/1vit5w3/an_app_where_adult_kids_manage_their_elderly/</li>
+<li>(82赞/44评) "Who Owns What?" — 企业持股/财富透明化 app — https://www.reddit.com/r/SomebodyMakeThis/comments/1txx70x/someone_should_build_this_who_owns_what_a/</li>
+<li>(41赞/30评) ADHD brain dump app 自动整理 ⭐ 与 Snape 的 GTD Agent 直接相关 — https://www.reddit.com/r/SomebodyMakeThis/comments/1ph7zem/app_idea_an_adhd_app_that_lets_you_brain_dump_all/</li>
+<li>(24赞/35评) Recipe App 只给"Just The Recipe" — https://www.reddit.com/r/SomebodyMakeThis/comments/1wsky2u/a_recipe_app_that_gives_you_just_the_recipe/</li>
+<li>(36赞/21评) 付费让人替你浪费诈骗者的时间 — https://www.reddit.com/r/SomebodyMakeThis/comments/1q4g9j6/a_service_where_you_pay_someone_to_waste_a/</li>
+<li>(25赞/11评) 可定制设备坞站 — https://i.redd.it/g1x7pvb3pbrh1.jpeg</li>
+<li>(22赞/36评) someone pls make this app — https://www.reddit.com/r/SomebodyMakeThis/comments/1wnjc3m/someone_pls_make_this_app/</li>
+</ol><div class="pager"><a class="l" href="2026-10-10.html">← 2026-10-10</a><a class="r" href="2026-10-12.html">2026-10-12 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

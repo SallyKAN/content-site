@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1020 上午选题方案</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-20</div><h1>1020 上午选题方案</h1>
+<blockquote>
+<p>生成时间：2026-10-20 10:00 (Asia/Shanghai)<br />
+数据源：当日搜索采集（Brave / Perplexity，含 Reuters 独家、官方博客、PR Newswire）<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1013「Agent 会办事了」→ 1016「办事的账，有人来收」→ 1017「一周内来了三个收账人」→ 1018「算力的账，用别人的钱付」→ 1019「会办事的东西，要身份证了」→ <strong>1020「身份证还没发，门先被关上了」</strong></p>
+</blockquote>
+<hr />
+<h2>🚨 内容池体检（第二十三天）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>01-选题管理/01-待深化选题/</code></td>
+<td>🔴 <strong>49 张</strong>，全部未深化（连续第九天不建卡）</td>
+</tr>
+<tr>
+<td><code>01-选题管理/02-创作中选题/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/草稿/</code></td>
+<td>🔴 最新仍停在 <strong>9/25</strong>（<code>0925-AI入侵澳医保.md</code>，8492 字节，躺 <strong>25 天</strong>）</td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/待发布/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/Twitter/草稿/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>06-运营管理/发布日历.md</code></td>
+<td>🔴 最新发布行停在 <strong>10/13</strong>；10/14–10/19 未填</td>
+</tr>
+<tr>
+<td>今日上午采集</td>
+<td>✅ 正常（连续第六天）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：连续第二十三天零出稿。</strong> 今天<strong>不建第 50 张卡</strong>。</p>
+<hr />
+<h2>🎯 今日精选 TOP5</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>热度</th>
+<th>角度</th>
+<th>国内</th>
+<th>总分</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🚪 平台开始封 Agent：Amazon / JPMorgan / Delta / Yelp 集体设卡</td>
+<td>9</td>
+<td>10</td>
+<td>7</td>
+<td><strong>89</strong></td>
+<td>⭐ 主稿</td>
+</tr>
+<tr>
+<td>2</td>
+<td>🏦 World ID 进银行（1019 主稿的续集：AgentKit 仍在 beta）</td>
+<td>8</td>
+<td>9</td>
+<td>6</td>
+<td><strong>78</strong></td>
+<td>并入①第三节</td>
+</tr>
+<tr>
+<td>3</td>
+<td>⚡ 微软退出英国 Nscale 数据中心：电网要等到 2030 年代</td>
+<td>8</td>
+<td>9</td>
+<td>6</td>
+<td><strong>78</strong></td>
+<td>备选深稿</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🇨🇳 DeepSeek V4.1-Flash-1017：DeepSWE 77.0，搜索 API $0.75/千次</td>
+<td>8</td>
+<td>8</td>
+<td>9</td>
+<td><strong>83</strong></td>
+<td>明早国内主稿</td>
+</tr>
+<tr>
+<td>5</td>
+<td>🧠 Anthropic 传在测"意图推断"新模型（Fable 5.5 传闻）</td>
+<td>7</td>
+<td>7</td>
+<td>6</td>
+<td><strong>67</strong></td>
+<td>素材/一句</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>为什么主稿不是 ④</strong>：④ 分数更高，但它是"便宜 + 跑分"的老叙事，1019 已用过同类数据段。① 是<strong>全新的反转</strong>：上周我们还在写"给 Agent 发身份证"，今天发现——<strong>门根本还没发证就先关了</strong>。</p>
+</blockquote>
+<hr />
+<h3>① ⭐ 主稿：平台开始封 Agent——"办事的东西"被拒之门外</h3>
+<p><strong>一句话</strong>：The Verge 10/17 拼出一份正在变长的<strong>封禁名单</strong>：Amazon 自 9/20 起封杀 Meta Muse；Yelp 只放行加入其<strong>付费数据授权计划</strong>的 Agent；Delta 声明与任何第三方 Agent <strong>无合作</strong>；<strong>JPMorgan Chase 与 Charles Schwab 禁止 Agent 访问账户</strong>。用户端已出现可见故障：Meta Muse、xAI 的 Grok、OpenAI 的 Dots 与 Instinct 近期均有任务失败记录。</p>
+<p><strong>为什么这是今天的主稿</strong>：<br />
+- <strong>主线最锋利的一次反转</strong>：1019 的 World ID 是"发证"，今天这批是"不给进门"。<strong>Agent 的身份问题，正在被平台用封禁代替回答。</strong><br />
+- <strong>它不是技术故障，是商业/责任边界</strong>：每家封的理由都不一样——Amazon 保护电商、Yelp 保护数据授权收入、Delta 保护直销渠道、银行保护账户责任。<strong>四家封的是同一件事的四个面。</strong><br />
+- <strong>有活人细节</strong>：LA Times 10/19 报道一位卖家让 Meta 的 Agent 帮他卖键盘，Agent 把买家<strong>送到了他家门口</strong>。这就是"平台为什么封"的最好注脚——Agent 没有边界感，因为它没有"责任"这个概念。</p>
+<p><strong>建议结构（公众号 2000–2400 字）</strong>：<br />
+- <strong>开场</strong>：一把键盘被卖出去，买家敲了卖家的门。Agent 完成了任务，只是不懂"送到门口"意味着什么。<br />
+- <strong>第一节｜封禁名单</strong>：逐条列出四家平台 + 各自的封禁理由，做成对照表（谁封了谁 / 起始时间 / 官方说法 / 实际动机）。<br />
+- <strong>第二节｜四种恐惧</strong>：电商怕比价与假流量、数据商怕授权收入被绕开、航司怕直销渠道被抽佣、银行怕账户责任无法归属。<strong>四种恐惧共享同一个根：Agent 能办事，但不能签责任书。</strong><br />
+- <strong>第三节｜接 1019：World 的 AgentKit 还在 beta</strong>：昨天 World 给的方案是"给 Agent 发凭证"，今天平台给的方案是"先别让它进"。<strong>两套方案同时运行，就是 2026 年的现状——凭证还没发下来，闸门已经先落下。</strong><br />
+- <strong>第四节｜对国内的影响</strong>：中国没有 Yelp/Direct 之争，但小程序、电商平台、银行 App 已经在面对同样的 Agent 流量。国内可预见的路径不是"封"，而是<strong>平台发自己的 Agent 通行证</strong>——谁掌握入口，谁发证。<br />
+- <strong>收口</strong>：算力的账用别人的钱付（1018），身份的账用自己的脸付（1019），今天多了第三本账——<strong>进门的账，用平台的许可付。</strong></p>
+<p><strong>平台</strong>：公众号（主）+ Twitter Thread（6 条，侧重"封禁名单 + 卖家被敲门的细节"）+ 小红书（"AI 帮你卖东西，买家找上门了"，700 字）</p>
+<p><strong>⚠️ 措辞红区</strong>：<br />
+- 名单来自 <strong>The Verge 10/17 的梳理</strong>，转述时须注明"据 The Verge 梳理"；<strong>各家官方未发完整声明</strong>；<br />
+- "Amazon 自 9/20 封杀 Meta Muse"为 Verge 口径，<strong>Amazon 未正面确认</strong>；<br />
+- <strong>不可推断</strong>"这是集体行动"或"有统一协调"，各家动机不同；<br />
+- LA Times 案例为<strong>单一报道方</strong>，出稿前须打开原文核对细节。</p>
+<p><strong>原文链接</strong>：<br />
+- https://aiweekly.co/ai-news-today （转述 The Verge 10/17 梳理）<br />
+- https://www.latimes.com/business/story/2026-10-19/he-let-metas-ai-agent-sell-keyboard-it-sent-buyer-to-his-home<br />
+- https://www.theverge.com/ （需在站内搜 10/17 agent blocklist）</p>
+<hr />
+<h3>② 🏦 World ID 进银行（补 1019，78 分）</h3>
+<p><strong>新增可核实信息</strong>（比昨天更硬）：<br />
+- 套件由三部分组成：<strong>独立身份钱包 + World ID for Zoom + AgentKit</strong>，其中 <strong>AgentKit 仍处于 beta</strong>；<br />
+- <strong>"Now available"</strong>（PR Newswire，10/19）：三件套已上线，而非"预告"；<br />
+- World 由 <strong>Sam Altman、Max Novendstern、Alex Blania</strong> 联合创办，Blania 在 Money20/20 揭幕，并在会上与 Mesh CEO <strong>Bam Azizi</strong> 对谈；<br />
+- <strong>Agent 凭据</strong>：AI Agent 可携带密码学凭据，<strong>代表已验证的个人行事</strong>（cryptoadventure）。</p>
+<p><strong>并稿用法</strong>：作为主稿①第三节的落点——<strong>发证的一方（World）说 AgentKit 还在 beta，收门的一方（平台）已经把门关上。这就是错位。</strong></p>
+<p><strong>⚠️ 红区</strong>：官方<strong>未公布定价与合作银行名单</strong>；Altman 是联合创始人<strong>非员工</strong>；不要写"银行已签约"。</p>
+<p><strong>链接</strong>：<br />
+- https://finance.yahoo.com/technology/ai/articles/world-launches-world-id-banking-150000490.html （PR Newswire 原文）<br />
+- https://www.biometricupdate.com/202610/world-brings-biometric-proof-of-human-to-banking-and-ai-agents<br />
+- https://winbuzzer.com/2026/10/20/world-id-targets-bank-fraud-with-human-verification-xcxwbn/<br />
+- https://cryptoadventure.com/world-launches-world-id-banking-suite-to-fight-deepfake-fraud/</p>
+<hr />
+<h3>③ ⚡ 微软退出英国 Nscale 数据中心（78 分，备选深稿）</h3>
+<p><strong>一句话</strong>：微软退出与英国初创 <strong>Nscale</strong> 在 <strong>Loughton（英格兰）</strong> 的 AI 数据中心交易——电网官员告知该站点<strong>电力可能要到 2030 年代才能到位</strong>。原规划 <strong>50MW</strong>，微软原预期拿走全部容量。Nscale 称仍坚持该项目，正寻找替代电源与其他选址。</p>
+<p><strong>为什么值得单独写</strong>：1018 写过"算力的账用别人的钱付"，这条给的是<strong>算力最不性感的那个约束——插座</strong>。微软不是没钱，是<strong>没电</strong>。</p>
+<p><strong>⚠️ 红区</strong>：金额口径不一（有报道称 ~20 亿美元级），<strong>统一写"据多方报道"或直接不写金额</strong>；退出原因<strong>只有电网格口径，微软未详细说明</strong>。</p>
+<p><strong>链接</strong>：<br />
+- https://www.thestreet.com/investing/microsoft-ai-expansion-loughton-england-delay-electricity-physical-limit<br />
+- https://www.standard.co.uk/news/london/microsoft-withdraw-ai-data-centre-london-power-delay-b1301417.html<br />
+- https://techorange.com/2026/10/20/microsoft-nscale-ai-data-center-power/<br />
+- https://www.finextra.com/newsarticle/48605/microsoft-pulls-out-of-nscale-uk-datacentre-plan</p>
+<hr />
+<h3>④ 🇨🇳 DeepSeek V4.1-Flash-1017（83 分，明早国内主稿）</h3>
+<p><strong>一句话</strong>：10/17 DeepSeek 更新 <strong>V4.1-Flash-1017</strong>（<code>deepseek-flash</code> 模型名不变，调用方式不变，<strong>未涨价</strong>）：DeepSWE v1.1 解决率 <strong>77.0%</strong>（前值 74.2%），<strong>输出更短</strong>；同时开放 <strong>Search &amp; Fetch API</strong>，<strong>$0.75 / 千次调用</strong>（约 Tavily 的十分之一）；DeepSeek Harness / Claude Code / Codex 中的服务端工具调用<strong>免费至 10/20 16:00 UTC 开始计费</strong>。压缩 KV 缓存把缓存显存降到上一代 Flash 的约 <strong>1/4</strong>。</p>
+<p><strong>角度</strong>：不是"又便宜了"，而是 <strong>DeepSeek 开始卖"进门的钥匙"</strong>——搜索和抓取是 Agent 的眼睛，谁提供眼睛，谁掌握 Agent 看到的世界。这条可以和主稿①的"平台封禁"接起来：<strong>一个在关门，一个在开窗。</strong></p>
+<p><strong>⚠️ 红区</strong>：77.0 / 74.2 为<strong>厂商自报跑分</strong>，注明"DeepSeek 自报"；"比 Tavily 便宜十倍"为第三方估算；<strong>10/20 16:00 UTC 计费开始</strong>这个时间点须以官方文档为准。</p>
+<p><strong>链接</strong>：<br />
+- https://api-docs.deepseek.com/ （官方：模型名与调用方式）<br />
+- https://dataconomy.com/2026/10/19/deepseek-v4-1-flash-1017-faster-ai-tasks/<br />
+- https://qz.com/deepseek-v4-1-flash-1017-model-update-benchmarks-101926<br />
+- https://byteiota.com/deepseek-v4-1-flash-1017-tops-deepswe-opens-0-75-search-api/<br />
+- https://openrouter.ai/deepseek/deepseek-v4.1-flash</p>
+<hr />
+<h3>⑤ 🧠 Anthropic"意图推断"新模型传闻（67 分，素材）</h3>
+<p>多家媒体称 Anthropic 在开发主打<strong>意图推断</strong>的新模型——用户指令不完整时仍能推断真实目标。代号 <strong>Fable 5.5</strong> 属<strong>未经证实的传闻</strong>，Anthropic <strong>未确认名称、规格、发布时间</strong>。另有报道称 Anthropic 向外部评估者开放<strong>接近员工级访问权限</strong>做安全测试。</p>
+<p><strong>⚠️ 红区</strong>：全部为传闻，<strong>只能写"据报道"，不可当事实</strong>；不要与 Fable 5 / Opus 5.5 / Sonnet 5.5 的命名体系做推断。</p>
+<p><strong>链接</strong>：<br />
+- https://tw.stock.yahoo.com/news/anthropic%E5%82%B3%E6%AD%A3%E9%96%8B%E7%99%BC%E6%96%B0%E6%A8%A1%E5%9E%8B-%E4%B8%BB%E6%89%93-%E6%84%8F%E5%9C%96%E6%8E%A8%E6%96%B7-%E8%83%BD%E5%8A%9B-004732865.html<br />
+- https://www.blocktempo.com/anthropic-new-model-reads-user-intentions/<br />
+- https://m.36kr.com/p/4032593642984066</p>
+<hr />
+<h2>📌 今日背景（不出稿，仅占位）</h2>
+<ul>
+<li><strong>OpenAI 抢在 Anthropic IPO 前融约 300 亿美元</strong>，估值或超 <strong>1.4 万亿</strong>（Reuters 10/19 独家，SoftBank、MGX 在谈）——与 1017「三个收账人」同一条线，可作为主稿里的"资本背景一句"。<br />
+  https://www.reuters.com/world/openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say-2026-10-19/</li>
+<li><strong>GTC Berlin 10/20–22 开幕</strong>，黄仁勋主题演讲在 <strong>10/21 11:00 当地时间</strong>（非今天），<strong>明日再跟</strong>。<br />
+  https://blogs.nvidia.com/gtc-berlin-2026-news/</li>
+<li><strong>阿里玄铁累计出货超 60 亿颗</strong>，首次发布车规增强 <strong>E908A</strong>（RISC-V 中国峰会，达摩院孟建熠）。<br />
+  https://www.ctee.com.tw/news/20261019701877-430804</li>
+</ul>
+<hr />
+<h2>🔪 今天只做三件事</h2>
+<ol>
+<li><strong>🔴 <code>0925-AI入侵澳医保.md</code> → <code>待发布/</code></strong>（第 25 天，一条 <code>mv</code>）</li>
+<li><strong>✍️ 主稿写前两节</strong>：封禁名单（表）+ 四种恐惧，1000 字</li>
+<li><strong>📅 发布日历补 10/14–10/19</strong></li>
+</ol>
+<hr />
+<h2>⚠️ 数据核实提醒</h2>
+<ol>
+<li>本轮以 Brave / Perplexity 为主，<strong>主稿四条封禁信息来自二手转述（The Verge 梳理），未取得原文全文</strong>，出稿前必须打开 The Verge 原文逐条核对。</li>
+<li>LA Times 的"键盘被送到家门口"为单一信源报道。</li>
+<li>DeepSeek 跑分为厂商自报。</li>
+<li>World 套件定价与合作银行未公布。</li>
+<li>Fable 5.5 全部为传闻。</li>
+<li>Nscale 交易金额口径不一。</li>
+</ol>
+<hr />
+<p><em>生成：content agent | 数据源：1020 当日搜索采集 | 上午选题方案（第二十三天）</em></p><div class="pager"><a class="l" href="2026-10-20-晚间选题推送.html">← 2026-10-20 晚间选题推送</a><a class="r" href="2026-10-21-晚间选题推送.html">2026-10-21 晚间选题推送 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

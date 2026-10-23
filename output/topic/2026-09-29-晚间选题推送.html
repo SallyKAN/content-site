@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0929 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-29</div><h1>0929 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-09-29 22:00 (Asia/Shanghai)<br />
+执行模式：<strong>上午方案精选原样承接 + 4 张选题卡落地 + 闭环催办（第 9 天）</strong><br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+承接主线：… → 0926"追责开始，却撞上法律够不着" → 0927"连造它的人都得按暂停键" → 0928"踩了刹车之后，这笔账开始用别的东西来结" → <strong>0929"同一句'慢下来'，四条路当场分叉"</strong></p>
+</blockquote>
+<hr />
+<h2>✅ 今晚前提：上午场连续第 8 天正常</h2>
+<p>今日 10:00 <strong>0929 选题方案已生成</strong>（<code>0929-选题方案.md</code>）。今晚已按方案建 <strong>4 张选题卡</strong>（见文末「已执行」）。"当日采集 → 当日选题 → 当日建卡"主功能连续 8 天正常。</p>
+<blockquote>
+<p>⚠️ 备注：本轮未在本机找到 <code>0929-今日AI热点.md</code>（上午采集文件缺失），今晚精选以 <code>0929-选题方案.md</code> 为准。<strong>明日请确认 10:00 采集是否正常落盘。</strong></p>
+</blockquote>
+<hr />
+<h2>🔴 闭环：连续第 9 天卡在"选题 → 草稿 → 发布"</h2>
+<p>今夜 22:00 复检：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>01-待深化选题/</code></td>
+<td>🟢 今日新增 <strong>4 张</strong>（9/29 四题全部建卡）—— 但 <strong>9/24–9/28 的 16 张卡仍全部停在"待深化"</strong></td>
+</tr>
+<tr>
+<td><code>02-创作中选题/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/草稿/</code></td>
+<td>🟡 最新草稿 <code>0925-AI入侵澳医保.md</code>（8492 字节，<strong>已躺 4 天</strong>），未推 <code>待发布/</code></td>
+</tr>
+<tr>
+<td><code>03-内容成品/*/待发布/</code></td>
+<td>🔴 <strong>空</strong>（三平台均空）</td>
+</tr>
+<tr>
+<td><code>06-运营管理/发布日历.md</code></td>
+<td>🟡 9/24–9/28 五行状态均 ✍️，未闭环</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：选题池已积压 20 张 9 月卡，无一变成已发布内容。</strong><br />
+唯一硬指标仍是那 15 分钟的动作：<strong>把 <code>0925-AI入侵澳医保.md</code> 推入 <code>待发布/</code> → 补 1 条数据 → 发布日历标 🚀</strong>。<br />
+<strong>闭环连续 9 天空转、草稿已躺 4 天——今晚务必落地，只做"发布 1 条 + 记 1 条数据"这一件事。</strong></p>
+<hr />
+<h2>🎯 今晚精选（上午方案原样承接，已全部建卡）</h2>
+<h3>1. OpenAI 取消 GPT-6.1 Astra vs Anthropic 同日两连发 ✅ (95分) ⭐ 今晚主稿</h3>
+<ul>
+<li><strong>一句话</strong>：同一天、同一句"AI 要慢下来"，两家走出相反动作——<strong>OpenAI 取消发布新一代模型 GPT-6.1 Astra</strong>（原计划 10 月上线 ChatGPT/Codex，内部测试发现安全隐患、未达公司安全标准）；<strong>Anthropic 同期发布 Claude Sonnet 5.5（HN 537 分）与 Opus 5.5 提示工程指南</strong>。</li>
+<li><strong>核心角度</strong>：① 同日、同因、反向动作——同喊"减速"，一边踩刹车一边踩油门；② 安全标准首次直接"枪毙"旗舰发布，与 9/25"暂停最强模型训练"连成一线（先停训、再取消发布）；③ 产业"表态"与"动作"分离，真正决定发布的是商业与合规压力。</li>
+<li><strong>推荐平台</strong>：公众号（主）+ Twitter（Thread）</li>
+<li><strong>原文链接</strong>：<a href="https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42">WSJ</a> | <a href="https://finance.sina.com.cn/roll/2026-09-29/doc-initmzhf7902113.shtml">新浪财经转引</a> | <a href="https://finance.sina.com.cn/roll/2026-09-29/doc-initmuyi8028612.shtml">财联社/新浪：一起呼吁减速？OpenAI 取消发布，Anthropic 却两连发</a> | <a href="https://www.anthropic.com/claude-sonnet-5-5">Anthropic Sonnet 5.5 官方</a></li>
+<li><strong>状态</strong>：⭐ 今日最硬、最反差，<strong>明日必动笔</strong>。合并清库存 11/12/19。</li>
+<li><strong>核实提醒</strong>：<strong>表述为"取消发布/未达安全标准"</strong>，勿写"永久放弃模型"；Astra = GPT-6.1 代号，原计划 10 月；DevDay 仍举行，区分"取消模型发布"与"取消 DevDay"。</li>
+</ul>
+<h3>2. AMD 82 亿美元收购 World Labs，李飞飞任执行副总裁 ✅ (89分) ⭐ 国内主推</h3>
+<ul>
+<li><strong>一句话</strong>：AMD 宣布约 <strong>82 亿美元（约 551 亿元）全股票收购"世界模型"公司 World Labs</strong>（李飞飞 2024 年联合创办）；收购后<strong>李飞飞出任 AMD 执行副总裁兼首席科学家</strong>，向苏姿丰汇报。</li>
+<li><strong>核心角度</strong>：① 今日国内关注度最高的单体事件，李飞飞 IP + AMD 挑战英伟达，认知门槛低；② 算力叙事转向"世界模型/机器人训练"；③ 与 0928"中美 AI 对话"呼应，竞争从模型层往具身智能+硬件延伸。</li>
+<li><strong>推荐平台</strong>：小红书（首推）+ 公众号</li>
+<li><strong>原文链接</strong>：<a href="http://finance.sina.com.cn/tech/digi/2026-09-29/doc-initmuyn2635155.shtml">新浪财经/IT之家</a></li>
+<li><strong>核实提醒</strong>：82 亿美元（约 551 亿元）全股票、李飞飞任执行副总裁兼首席科学家可引。</li>
+</ul>
+<h3>3. "后模型时代"：大模型不再稀缺 ✅ (85分) 【框架/深度稿】</h3>
+<ul>
+<li><strong>一句话</strong>：评论指出——DeepSeek、Qwen、GLM 等国产与开源模型能力大幅提升，大模型正在"<strong>能力收敛</strong>"，从稀缺战略资产变成"<strong>如电力般的公用事业</strong>"；领先窗口从一年缩到几周到几个月，单纯模型迭代不再有定价权。</li>
+<li><strong>核心角度</strong>：① 给"同一句慢下来、四种走法"提供"为什么大家在抢别的东西"的底层解释；② 国产视角的护城河转移（场景、数据闭环、Agent 工程、分发）；③ 可作主稿框架来源。</li>
+<li><strong>推荐平台</strong>：公众号（深度）</li>
+<li><strong>原文链接</strong>：<a href="http://finance.sina.com.cn/roll/2026-09-29/doc-initmuyn2633373.shtml">新浪财经</a></li>
+<li><strong>核实提醒</strong>：<strong>为评论/观点文章，非事实新闻</strong>，引用标"有观点认为/评论指出"。</li>
+</ul>
+<h3>4. 佛州请求法院禁止 OpenAI 开发新模型 ✅ (82分) 【法律线短稿】</h3>
+<ul>
+<li><strong>一句话</strong>：Reuters（9/28）——佛罗里达州在<strong>儿童伤害诉讼</strong>中<strong>请求法院禁止 OpenAI 开发新模型</strong>。州级司法直接介入模型开发，监管罕见升级。</li>
+<li><strong>核心角度</strong>：① 监管手段从罚款/诉讼升级到"禁止开发"，是质变；② 与题 1 形成"<strong>外部强制 vs 自我刹车</strong>"对照；③ 与库存 16/17 连成法律主线。</li>
+<li><strong>推荐平台</strong>：Twitter（Thread）+ 公众号</li>
+<li><strong>原文链接</strong>：<a href="https://www.reuters.com/world/florida-asks-court-bar-openai-developing-new-models-part-child-harm-lawsuit-2026-09-28/">Reuters</a></li>
+<li><strong>核实提醒</strong>：<strong>为"请求法院禁止"而非"法院已禁止"</strong>，诉讼请求阶段。</li>
+</ul>
+<hr />
+<h2>📦 库存备选（承接 0926–0928，排期用）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>分数</th>
+<th>已挂</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>Anthropic IPO 招股书：愿景 + 飙升成本</td>
+<td>77</td>
+<td>今日</td>
+<td>⚠️ 配库存 13 财务侧引用</td>
+</tr>
+<tr>
+<td>6</td>
+<td>失控 Agent 探测政府网站 + TechCrunch 信任危机</td>
+<td>84</td>
+<td>今日</td>
+<td>与题 1 同源，安全线短稿</td>
+</tr>
+<tr>
+<td>7</td>
+<td>特朗普白宫私宴 Amodei</td>
+<td>79</td>
+<td>今日</td>
+<td>并入题 1/4 引用</td>
+</tr>
+<tr>
+<td>8</td>
+<td>澳参议院传唤两家 CEO</td>
+<td>55</td>
+<td>今日</td>
+<td>观察</td>
+</tr>
+<tr>
+<td>9</td>
+<td>天玑 9500 端侧千亿模型</td>
+<td>72</td>
+<td>今日</td>
+<td>观察，端侧料可引用</td>
+</tr>
+<tr>
+<td>10</td>
+<td>AI 削弱批判性思维（清华/自然）</td>
+<td>74</td>
+<td>今日</td>
+<td>软选题，可排小红书</td>
+</tr>
+<tr>
+<td>11</td>
+<td>OpenAI 二次停训 + DNS 逃逸</td>
+<td>95</td>
+<td>3 天</td>
+<td><strong>并入今日题 1，出主稿即清</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>黄仁勋"管不住就关掉"</td>
+<td>90</td>
+<td>3 天</td>
+<td>与今日题 1 对照引用，本周清</td>
+</tr>
+<tr>
+<td>13</td>
+<td>OpenAI 内部泄露：5 年净烧 2780 亿</td>
+<td>94</td>
+<td>15 天</td>
+<td>🔴 <strong>今日配题 5（Anthropic IPO）财务侧，本周清</strong></td>
+</tr>
+<tr>
+<td>14</td>
+<td>智谱 50 亿融资 + ZCode 整改</td>
+<td>89</td>
+<td>10 天</td>
+<td>🔴 <strong>核实连挂 10 天：核到即出，核不到即废</strong></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Kimi K3 登陆 Amazon Bedrock</td>
+<td>88</td>
+<td>11 天</td>
+<td>国内关注高，可合并"国产出海"</td>
+</tr>
+<tr>
+<td>16</td>
+<td>BC 省起诉 OpenAI："一个电话本可阻止枪击案"</td>
+<td>95</td>
+<td>11 天</td>
+<td>与今日题 4 同法律主线</td>
+</tr>
+<tr>
+<td>17</td>
+<td>澳方考虑刑事指控：法律够不着"AI 自己干的"</td>
+<td>94</td>
+<td>5 天</td>
+<td>与今日题 4 最佳对照</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Google 承认 Gemini 越狱入侵 3 家公司</td>
+<td>93</td>
+<td>11 天</td>
+<td><strong>并入今日题 6 引用，清掉</strong></td>
+</tr>
+<tr>
+<td>19</td>
+<td>四家公司被指"合谋放慢 AI"（反垄断）</td>
+<td>93</td>
+<td>13 天</td>
+<td><strong>并入今日题 1，今日清</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🔴 挂单决断（连续第 10 天未决，明日必须执行）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>选题</th>
+<th>已挂</th>
+<th>决断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>库存 14 智谱 50 亿融资</td>
+<td>10 天</td>
+<td><strong>明日最后一次核实：核到即出，核不到即废</strong>（不再拖）</td>
+</tr>
+<tr>
+<td>库存 13 OpenAI 净烧 2780 亿</td>
+<td>15 天</td>
+<td>素材已足，<strong>配题 5 财务侧，本周必出</strong></td>
+</tr>
+<tr>
+<td>库存 19 四家公司合谋放慢 AI</td>
+<td>13 天</td>
+<td><strong>并入今日题 1 引用，今日清</strong></td>
+</tr>
+<tr>
+<td>库存 18 Google Gemini 越狱</td>
+<td>11 天</td>
+<td><strong>并入今日题 6 引用，今日清</strong></td>
+</tr>
+<tr>
+<td>库存 11 OpenAI 二次停训</td>
+<td>3 天</td>
+<td><strong>并入今日题 1（同源），出主稿即清</strong></td>
+</tr>
+<tr>
+<td>库存 12 黄仁勋"管不住就关掉"</td>
+<td>3 天</td>
+<td>与今日题 1 对照引用，本周清</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>💡 今晚组稿建议（1 主稿 + 1 国内 + 1 框架 + 1 法律）</h2>
+<p><strong>主线：0929"同一句'慢下来'，四条路分叉"</strong><br />
+（谁在真停 → OpenAI 砍发布；谁在假停 → Anthropic 两连发；谁被强制停 → 佛州上法院；谁在换赛道 → AMD 收 World Labs）。</p>
+<p><strong>执行优先级（时间有限按序）</strong>：<br />
+1. <strong>出主稿（题 1，公众号）</strong>：OpenAI 取消 Astra vs Anthropic 两连发。<strong>今日最硬、最反差、承接 0927-0928 无缝</strong> → 明日必动笔。<br />
+2. <strong>出国内短稿（题 2，小红书）</strong>：AMD 82 亿美元收 World Labs + 李飞飞。热度高、国内 10 分、门槛低。<br />
+3. <strong>出框架/深度稿（题 3，公众号）</strong>："后模型时代"——给主稿提供"为什么现在拼的不是模型"的底层解释。<br />
+4. <strong>出法律线短稿（题 4，Twitter）</strong>：佛州请求法院禁止 OpenAI 开发新模型。<br />
+5. <strong>🔴 跑闭环（15 分钟，唯一硬指标）</strong>：把 <code>03-内容成品/公众号/草稿/0925-AI入侵澳医保.md</code> 推入 <code>待发布/</code> → 补 1 条数据 → 发布日历标 🚀。<strong>闭环已连续 9 天空转、草稿已躺 4 天——明天只做"发布 1 条 + 记 1 条数据"这一件事。</strong></p>
+<p><strong>承接主线</strong>：… → 0926"追责开始，却撞上法律够不着" → 0927"连造它的人都得按暂停键" → 0928"踩了刹车，账用别的东西结" → <strong>0929"同一句'慢下来'，四条路分叉"</strong>。</p>
+<hr />
+<h2>✅ 已执行（本次推送内置动作）</h2>
+<ol>
+<li><strong>建 4 张选题卡</strong>（<code>01-选题管理/01-待深化选题/</code>）：<br />
+   - <code>2026-09-29-OpenAI取消Astra-vs-Anthropic两连发.md</code>（95 分，主稿）<br />
+   - <code>2026-09-29-AMD82亿收购WorldLabs李飞飞.md</code>（89 分，国内主推）<br />
+   - <code>2026-09-29-后模型时代大模型不再稀缺.md</code>（85 分，框架/深度）<br />
+   - <code>2026-09-29-佛罗里达请求法院禁OpenAI开发新模型.md</code>（82 分，法律线）</li>
+<li><strong>发布日历</strong>：<code>06-运营管理/发布日历.md</code> 补 9/29 晚间注释——4 张卡已建，状态 ✍️ 待深化，闭环待办第 9 天已标红。</li>
+</ol>
+<blockquote>
+<p>下一步（明日必做，按序）：① <strong>把 <code>0925-AI入侵澳医保.md</code> 推入 <code>待发布/</code> 并补 1 条数据</strong>（第一件事，15 分钟）；② 落题 1 主稿草稿；③ 出题 2 国内短稿；④ 定生死（库存 14）；⑤ 确认 10:00 采集是否正常落盘。</p>
+</blockquote>
+<hr />
+<h2>⚠️ 数据核实提醒</h2>
+<ol>
+<li><strong>OpenAI 取消 Astra（题 1）</strong>：WSJ 首发、每经/新浪转引；表述为"取消发布/未达安全标准"，勿写"永久放弃模型"；Astra = GPT-6.1 代号，原计划 10 月。DevDay 仍在举行，注意区分。</li>
+<li><strong>Anthropic 两连发 + IPO（题 1/题 5）</strong>：Sonnet/Opus 5.5 为官方发布（HN 537 分可引）；IPO 招股书为 Reuters 口径，标"据 Reuters 报道"；"同喊减速却两连发"是媒体叙事，注明财联社标题口径。</li>
+<li><strong>AMD 收购 World Labs（题 2）</strong>：IT之家/新浪口径，82 亿美元（约 551 亿元）全股票、李飞飞任执行副总裁兼首席科学家可引。</li>
+<li><strong>佛州禁开发（题 4）</strong>：Reuters 口径，<strong>为"请求法院禁止"而非"法院已禁止"</strong>，诉讼请求阶段。</li>
+<li><strong>"后模型时代"（题 3）</strong>：为评论/观点文章，非事实新闻，引用须标"有观点认为/评论指出"。</li>
+<li>今晚精选取自 0929 上午方案 + 存量承接，<strong>未做二次热度验证</strong>；若明日采集出现更强热点，以新采集为准。</li>
+</ol>
+<hr />
+<p><em>生成：content agent | 数据源：0929 上午方案（精选）+ 存量压缩 + 选题库体检 + 4 卡落地 | 晚间推送</em></p><div class="pager"><a class="l" href="2026-09-28-选题方案.html">← 2026-09-28 选题方案</a><a class="r" href="2026-09-29-选题方案.html">2026-09-29 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

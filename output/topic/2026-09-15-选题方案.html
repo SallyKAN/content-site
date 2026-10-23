@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0915 选题方案</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-15</div><h1>0915 选题方案</h1>
+<blockquote>
+<p>生成时间：2026-09-15 10:00 (Asia/Shanghai)<br />
+执行模式：每日上午选题推送<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%</p>
+</blockquote>
+<hr />
+<h2>🎯 今日精选（4 条）</h2>
+<h3>1. AI 股周一全球暴跌：一句"慢下来"，砸掉几千亿市值 ✅ (94分)</h3>
+<ul>
+<li><strong>来源</strong>：<code>01-选题管理/0915-今日AI热点.md</code> 第 1-4 条</li>
+<li><strong>原文链接</strong>：<a href="https://www.globalbankingandfinance.com/global-ai-stocks-fall-industry-chiefs-call-slowing/">Reuters</a> | <a href="https://www.cbsnews.com/news/tech-stock-selloff-ai-warning/">CBS News</a> | <a href="https://www.nbcnews.com/business/markets/stocks-tumble-ai-leaders-warning-slowdown-ipos-amodei-altman-rcna597643">NBC News</a> | <a href="https://www.cnbc.com/2026/09/14/ai-stocks-slowdown-amodei-altman.html">CNBC</a> | <a href="https://www.wjtv.com/news/business/ap-asian-shares-are-mixed-and-openai-investor-softbank-shares-plunge-after-calls-to-slow-ai-industry/">AP/WJTV</a> | <a href="https://nypost.com/2026/09/14/business/trump-blasts-anthropic-ceo-dario-amodei-over-ai-warning-sick-conspiracy/">NY Post（Trump 骂 Amodei）</a></li>
+<li><strong>一句话</strong>：Amodei 周末发《We Must Pace the Frontier》呼吁放缓后，周一 AI 股全球重挫——Nvidia、Microsoft、SoftBank（OpenAI 投资方）领跌；戏剧性的是网络安全股逆势上涨（"slowdown trade"），油价跳涨把 10 年期美债收益率推到 5% 放大跌幅；Trump 同日公开骂 Amodei 是"病态阴谋论"。</li>
+<li><strong>核心角度</strong>：<strong>"放缓"第一次有了价格标签</strong>。别人写"AI 股跌了"，我们三刀：① 拆"slowdown trade"——为什么安全股反而涨（钱没走，只是换了口袋）；② 这是治理叙事第一次被市场明码定价，从"谁该定规则"变成"市场用脚投票"；③ 把 Trump 骂战接上——争议从政策辩论升级到人身攻击，说明阵营已经彻底撕破脸。</li>
+<li><strong>标题备选</strong>：<br />
+  1. AI 大佬一句"慢点"，全球市值蒸发几千亿<br />
+  2. 喊"慢下来"的那一周，市场先崩了<br />
+  3. AI 股大跌，安全股大涨：钱只是换了个口袋</li>
+<li><strong>推荐平台</strong>：公众号（财经深度）+ Twitter Thread</li>
+<li><strong>状态</strong>：⭐ 最高优先级，时效极强，建议今天出稿</li>
+</ul>
+<h3>2. 一边喊慢、一边冲 IPO：OpenAI 推迟上市 vs. Anthropic 秋季冲 2 万亿 ✅ (90分)</h3>
+<ul>
+<li><strong>来源</strong>：第 5-7 条</li>
+<li><strong>原文链接</strong>：<a href="https://fortune.com/2026/09/14/openai-ipo-wait-grows-longer-as-ai-safety-fears-mount-cfo/">Fortune（Altman 确认不 IPO）</a> | <a href="https://www.axios.com/2026/09/14/anthropic-ipo-safety-openai">Axios</a> | <a href="https://www.techtimes.com/articles/327492/20260914/anthropic-picks-nasdaq-2-trillion-ipo-trump-linked-compute-deal-tests-safety-mission.htm">TechTimes</a> | <a href="https://www.medianama.com/2026/09/223-anthropic-evaluators-frontier-ai-labs/">Medianama（独立评估员）</a></li>
+<li><strong>一句话</strong>：Altman 确认 OpenAI 2026 年不上市、推迟；Anthropic 却已选纳斯达克、瞄准秋季上市、估值近 $2 万亿，还承诺给独立第三方评估员"近似员工级"访问权限（OpenAI 跟进）。</li>
+<li><strong>核心角度</strong>：<strong>"喊慢"阵营内部节奏完全分裂</strong>。反差极强：同一天、同一个"放缓"叙事，一家后退一家抢跑。核心判断：放缓是"对外话术"，上市是"对内刚需"——安全叙事正在变成估值工具。可接 0914 库存那条 Anthropic 财报线（Q2 营收 $115 亿、毛利率 &gt;80%），做一篇"喊退烧的公司赚最多"的完整版。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 都说要慢下来：一家推迟 IPO，一家冲向 2 万亿<br />
+  2. 喊"刹车"最响的 Anthropic，正在踩油门上市<br />
+  3. 安全叙事，成了最好的招股说明书</li>
+<li><strong>推荐平台</strong>：公众号</li>
+<li><strong>状态</strong>：⭐ 高优先级</li>
+</ul>
+<h3>3. Nvidia 和 Palantir 开始"弃用" OpenAI/Anthropic：数据主权反噬前沿实验室 ✅ (87分)</h3>
+<ul>
+<li><strong>来源</strong>：第 8-9 条</li>
+<li><strong>原文链接</strong>：<a href="https://www.theinformation.com/articles/anthropic-data-fears-prompt-nvidia-palantir-booz-allen-restrict-model-use">The Information（独家）</a> | <a href="https://finance.yahoo.com/technology/ai/articles/palantir-nvidia-curb-ai-model-151108619.html">Reuters/Yahoo</a> | <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-palantir-and-others-restrict-advanced-ai-model-usage-over-privacy-concerns-report-claims-paranoia-rising-over-customer-intellectual-property">Tom's Hardware</a> | <a href="https://www.benzinga.com/markets/prediction-markets/26/09/61771482/nvidia-palantir-anthropic-data-fears">Benzinga</a></li>
+<li><strong>一句话</strong>：The Information 独家——Nvidia、Palantir、Booz Allen 限制或威胁弃用 Anthropic/OpenAI 模型，除非保证不滥用客户知识产权；Nvidia 把 Anthropic 限定在低敏感任务、内部改用自家 Nemotron；Booz Allen 禁止员工用 Anthropic 做专有网络安全工作。Karp 补刀："AI 公司一边偷客户数据，一边收你无效 token 的钱。"</li>
+<li><strong>核心角度</strong>：<strong>大客户第一次"用脚投票"，前沿实验室尝到数据主权反噬</strong>。角度独特：不是监管、不是诉讼，是<strong>采购方直接抽单</strong>——比任何政策都狠。延伸："当你的最大客户也是你的竞争对手（Nvidia 有 Nemotron），卖模型给谁？"</li>
+<li><strong>标题备选</strong>：<br />
+  1. Nvidia 不想再用 Anthropic 了：大客户开始"用脚投票"<br />
+  2. 你的最大客户，正在限制用你的模型<br />
+  3. "AI 公司偷了你的数据"：Palantir CEO 开炮之后</li>
+<li><strong>推荐平台</strong>：公众号 + Twitter</li>
+<li><strong>状态</strong>：⭐ 高优先级</li>
+</ul>
+<h3>4. OpenAI 悄悄铺开 GPT-6 "Astra"：分层模型家族 + 分阶段放量 ✅ (83分)</h3>
+<ul>
+<li><strong>来源</strong>：第 10 条</li>
+<li><strong>原文链接</strong>：<a href="https://www.que.es/2026/09/14/openai-gpt-6-astra-como-acceder/">Que.es 教程</a> | <a href="https://itbrief.asia/story/aws-adds-openai-s-gpt-6-astra-to-bedrock-for-business">ITBrief Asia（Bedrock）</a> | <a href="https://www.36kr.com/p/3982715686583301">36Kr</a></li>
+<li><strong>一句话</strong>：OpenAI 分阶段铺开 GPT-6 "Astra" 与分层家族（GPT-5.6 Sol/Terra/Luna）；ChatGPT Pro 里显示为 GPT-6 Pro，Free/Go 无缘，Plus 需走 Work/Codex（CLI ≥0.153.0）；AWS Bedrock 已支持，明确向企业/金融场景定位。</li>
+<li><strong>核心角度</strong>：<strong>没有发布会的新模型，才是真正的信号</strong>。OpenAI 这次走"静默铺量 + 会员分层限流"——发布方式本身在讲商业逻辑：能力不再是新闻，<strong>分发和定价才是</strong>。对国内读者有强实用价值（谁可以用、怎么开）。可延伸"静默发布"变成大模型新品常态。</li>
+<li><strong>标题备选</strong>：<br />
+  1. GPT-6 来了，但 OpenAI 没开发布会<br />
+  2. 没有发布会的 GPT-6：谁先用上，谁用不上<br />
+  3. Astra 悄悄上线：OpenAI 的发布方式变了</li>
+<li><strong>推荐平台</strong>：小红书（实用向）+ Twitter</li>
+<li><strong>状态</strong>：⭐ 中高优先级</li>
+</ul>
+<hr />
+<h2>📦 库存备选（本周排期用）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>分数</th>
+<th>推荐平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>Anthropic 给独立评估员"员工级"权限</td>
+<td>84</td>
+<td>公众号</td>
+<td>与选题 2 可合并</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Trump 骂 Amodei"病态阴谋论"</td>
+<td>82</td>
+<td>Twitter + 公众号</td>
+<td>与选题 1 可合并为一段</td>
+</tr>
+<tr>
+<td>7</td>
+<td>美媒称 AI 放缓"给中国争取时间"</td>
+<td>80</td>
+<td>公众号</td>
+<td>地缘，国内关注高，角度需谨慎</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Claude for Financial Advisors 接贝莱德/嘉信/先锋</td>
+<td>78</td>
+<td>小红书</td>
+<td>AI 落地金融，实用向</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Anthropic×NEC / Anthropic×Cognizant 进日本</td>
+<td>76</td>
+<td>公众号</td>
+<td>与选题 2 呼应"加速商业化"</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Oracle 重组成本升至 $28 亿</td>
+<td>72</td>
+<td>公众号</td>
+<td>AI capex 挤压现金流案例</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Musk 预告 Grok 5，Grok 4.7 仍落后</td>
+<td>70</td>
+<td>小红书</td>
+<td>反差向</td>
+</tr>
+<tr>
+<td>12</td>
+<td>HF 隐式遥测（0914 遗留）</td>
+<td>86</td>
+<td>小红书</td>
+<td>昨日未做，可复活</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>💡 今日组稿建议</h2>
+<p><strong>两条线并行，今天主打"钱"：</strong></p>
+<p><strong>A. "放缓的价格"（选题 1）</strong> — 今天最有时效性。AI 股暴跌 + 安全股逆涨 + 油债双杀 + Trump 骂战，一天之内"放缓"从话术变成价格。建议公众号财经深度，标题首选"AI 大佬一句'慢点'，全球市值蒸发几千亿"。</p>
+<p><strong>B. "喊慢 vs. 抢跑"（选题 2 + 库存 5/6）</strong> — 同一天、同一个叙事、两种动作：OpenAI 推迟 IPO，Anthropic 冲 2 万亿。这是本周最好的商业反差。选题 2 主稿，库存 5/6 做补充素材。</p>
+<p><strong>平衡</strong>：选题 4（GPT-6 Astra 静默铺量）适合做小红书当日快稿——"怎么用、谁能用"的实战贴，成本低、收藏高。选题 3（Nvidia/Palantir 弃用）留作本周公众号 #2 或 Twitter 线程。</p>
+<p><strong>优先级</strong>：选题 1 → 选题 2 → 选题 4（快稿）→ 选题 3 →（库存）HF 遥测复活</p>
+<p><strong>承接主线</strong>：0913 菲尔兹奖得主反对刷榜 → 0914 纳维-斯托克斯署名争议 → 0915 "放缓砸盘"。整周主线是"AI 能力叙事与治理叙事同时进入互相指控 + 定价阶段"，选题 1 可作为本周主线收口。</p>
+<hr />
+<p><em>生成：content agent | 数据源：0915 内容池</em></p><div class="pager"><a class="l" href="2026-09-15-晚间选题推送.html">← 2026-09-15 晚间选题推送</a><a class="r" href="2026-09-16-今日AI热点.html">2026-09-16 今日AI热点 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

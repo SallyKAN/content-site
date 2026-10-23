@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0919 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-19</div><h1>0919 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-09-19 22:00 (Asia/Shanghai)<br />
+执行模式：晚间精选（0919 上午选题方案承接 + 0916-0918 库存承接）<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%</p>
+</blockquote>
+<hr />
+<h2>🎯 今晚精选（3 条）</h2>
+<h3>1. ZCode 静默上传整段 git 历史，密钥只在 Z.ai 手里 ✅ (94分)</h3>
+<ul>
+<li><strong>来源</strong>：<code>0919-选题方案.md</code> 第 1 条（今日最高优先级，上午场主稿候选）+ 0911 安全主线第三集</li>
+<li><strong>原文链接</strong>：<a href="https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/">ferstar 逆向原文</a> | <a href="https://news.ycombinator.com/item?id=49752422">HN 讨论 49752422</a> | <a href="https://news.ycombinator.com/item?id=49750694">HN 讨论 49750694</a> | <a href="https://tokenstead.ai/guides/zcode-silent-git-history-upload">Tokenstead</a> | <a href="https://runtimewire.com/article/zcode-git-history-upload-zai-server-key">runtimewire</a> | <a href="https://linux.do/t/topic/2920381">Linux.do</a></li>
+<li><strong>一句话</strong>：9/18，开发者 ferstar 逆向公开：Z.ai 的免费 GLM-5.2 编程 agent <strong>ZCode</strong> 在后台把<strong>整个 workspace（含完整 git 历史）打包上传到阿里云对象存储</strong>，用<strong>服务端专属密钥</strong>加密——<strong>只有 Z.ai 能解密</strong>；研究者实测一次打包 <strong>42,411 个文件</strong>。设置里关不掉，隐私开关形同虚设。HN 空降首页第 3。</li>
+<li><strong>核心角度</strong>：<strong>免费 agent 的真实定价，是你的整个代码库</strong>。三刀：① 0911"Claude 会话被盗 / GitSpawn 漏洞"安全主线的<strong>第三集</strong>——从"偷你的 token"到"你自愿把 git 全量递上去"；② 国内视角最扎心：<strong>国产开源模型赢口碑靠"免费+开源"，但配套 agent 的默认行为正在亲手拆掉信任</strong>；③ 实操结论——<strong>判断一个 agent 安不安全，不看它开源不开源，看它的出网请求和密钥归谁</strong>。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 免费的 GLM 编程 agent，把你的整个 git 历史传走了<br />
+  2. 逆向 ZCode：42,411 个文件被静默上传，密钥只在一家公司手里<br />
+  3. "开源"不等于"安全"——ZCode 事件给所有人上了一课</li>
+<li><strong>推荐平台</strong>：公众号（技术深度首选）+ 小红书（"你的代码被传走了"大众向也炸）+ Twitter Thread</li>
+<li><strong>状态</strong>：⭐ 今晚最高优先级。上午未落地，时效今天最后窗口（HN 首页热度约剩 1 天），<strong>今晚必做</strong></li>
+</ul>
+<h3>2. Anthropic 考虑 IPO 前紧急发新模型，正面对撞 OpenAI ✅ (90分)</h3>
+<ul>
+<li><strong>来源</strong>：<code>0919-选题方案.md</code> 第 2 条（路透 9/18 晚独家）</li>
+<li><strong>原文链接</strong>：<a href="https://ca.investing.com/news/company-news/anthropic-weighs-new-ai-model-launch-as-openai-gains-ground--reuters-4845546">Reuters via Investing</a> | <a href="https://thedailyguardian.com/news/science-tech/exclusive-anthropic-considers-releasing-new-ai-model-ahead-of-ipo-sources-say-2-758331/">Daily Guardian</a> | <a href="https://insideai.news/news/ai-in-business/anthropic-new-ai-model-release/12306/">Inside AI</a> | <a href="https://www.reuters.com/world/anthropic-ipo-launch-shifts-toward-mid-october-sources-say-2026-09-04/">Reuters IPO 时间</a></li>
+<li><strong>一句话</strong>：路透 9/18 独家：Anthropic 正<strong>考虑在 IPO 前发布一款新模型</strong>，以回击 OpenAI 自 <strong>GPT-6 Astra</strong> 发布以来的势头。IPO 时间推到<strong>最早 10 月中旬</strong>，可能赶在<strong>美国中期选举前几天</strong>上市。最新估值锚定 ~<strong>2 万亿美元</strong>。</li>
+<li><strong>核心角度</strong>：<strong>"安全第一"的公司，正在用发布节奏给 IPO 讲故事</strong>。三刀：① 时间线反讽——Amodei 上周还在呼吁"必须放缓"，本周就要"发新模型抢声势"；② 与 0918 主线闭环——<strong>一边自己写事故披露框架（0918），一边为上市加速发货（0919）</strong>；③ 国内启示：<strong>前沿模型竞争已从"谁更强"变成"谁的财报故事更性感"</strong>。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 一边喊"放缓"，一边赶 IPO：Anthropic 要考虑发新模型了<br />
+  2. 2 万亿估值前的最后一张牌：Anthropic 的新模型<br />
+  3. GPT-6 Astra 之后，Anthropic 坐不住了</li>
+<li><strong>推荐平台</strong>：公众号（财经+科技向）+ Twitter Thread</li>
+<li><strong>状态</strong>：⭐ 高优先级，与昨日"规矩写出来了"主线天然衔接，时效 1-2 天</li>
+</ul>
+<h3>3. OpenAI 发布 Astra for Law：2.3 亿 URL 法律检索库 ✅ (87分)</h3>
+<ul>
+<li><strong>来源</strong>：<code>0919-选题方案.md</code> 第 3 条（9/17-18 多方报道）</li>
+<li><strong>原文链接</strong>：<a href="https://www.artificiallawyer.com/2026/09/18/openai-launches-astra-for-law/">Artificial Lawyer</a> | <a href="https://thenextweb.com/news/openai-astra-for-law-gpt-6-legal-search-index">The Next Web</a> | <a href="https://runtimewire.com/article/openai-launches-astra-for-law-legal-search-plugins">runtimewire</a> | <a href="https://ai-tldr.dev/releases/openai-astra-for-law/">AI/TLDR</a></li>
+<li><strong>一句话</strong>：OpenAI 推出 <strong>Astra for Law</strong>，把 GPT-6 Astra 接到覆盖 <strong>2.3 亿+ URL</strong> 的专有法律检索索引（美国判例、法条、法规、法院规则、行政决定，数据来自 Free Law Project 的 CourtListener），<strong>按天更新</strong>；自称在自家研究基准上通过率 54%，先对选定律所开放"Trusted Access"。</li>
+<li><strong>核心角度</strong>：<strong>"通才模型 + 专有垂直索引"是 OpenAI 商业化落地的新范式</strong>。三刀：① 继"金融、医疗"之后<strong>又一个被 AI 直接切入的高门槛知识行业</strong>——检索库本身成了护城河，不是模型；② 数据来源反讽：<strong>用公共法律数据（CourtListener）包装成专有索引再卖给律所</strong>；③ 54% 这个数字——<strong>"AI 律师"离能独立办案还差多远，厂商自己给了个诚实数字</strong>。</li>
+<li><strong>标题备选</strong>：<br />
+  1. OpenAI 给律师造了个 2.3 亿条的法律搜索引擎<br />
+  2. "Astra for Law"：当护城河从模型变成数据<br />
+  3. 54% 通过率：OpenAI 亲自告诉你 AI 还不能当律师</li>
+<li><strong>推荐平台</strong>：公众号（专业向）+ 小红书（"AI 要抢律师饭碗了？"大众向）</li>
+<li><strong>状态</strong>：高优先级，垂直行业向，可做专业深度或大众科普</li>
+</ul>
+<hr />
+<h2>📦 库存备选（本周末排期用）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>分数</th>
+<th>推荐平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>OpenAI 自曝六起"越狱" + 事故披露框架</td>
+<td>92</td>
+<td>公众号</td>
+<td>0918 晚间主稿，本周主线收口，仍未落地</td>
+</tr>
+<tr>
+<td>5</td>
+<td>一次砍额度，Anthropic 丢了 2.5 年领先</td>
+<td>93</td>
+<td>公众号+Twitter</td>
+<td>0916 主线，可作选题 2 引用素材</td>
+</tr>
+<tr>
+<td>6</td>
+<td>HarnessTax：换 harness 成本差 5 倍</td>
+<td>90</td>
+<td>Twitter+公众号</td>
+<td>0918 晚间高优先级，技术向爆款潜力，仍未落地</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Anthropic 9月威胁情报报告：GTG-20006 国家级攻击</td>
+<td>89</td>
+<td>公众号+Twitter</td>
+<td>0917 遗留，国内关注极高，与选题 1 硬对照</td>
+</tr>
+<tr>
+<td>8</td>
+<td>微软 AI 一把手点名 Anthropic：把"意识"写进训练材料</td>
+<td>88</td>
+<td>公众号+小红书</td>
+<td>0917 遗留，争议向，当天可出</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Firefox × Mistral：浏览器"默认值战争"</td>
+<td>87</td>
+<td>公众号+小红书</td>
+<td>0918 晚间，⚠️ 时效已过期，建议降级或改写</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Kimi K3 发布：2.8T 参数全球最大开源模型</td>
+<td>87</td>
+<td>小红书</td>
+<td>⚠️ 动笔前必须核实权重/许可证/激活参数</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Google "CC" 家庭 AI agent（Gemini 3.8 Flash）</td>
+<td>86</td>
+<td>小红书+公众号</td>
+<td>0919 新增，消费级 AI agent 转向"持久化操作者"</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Microsoft/OpenAI 版权案新解封材料曝光</td>
+<td>87</td>
+<td>公众号</td>
+<td>0919 新增，Copilot 让 NYT 点击流量跌 93%</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Apple 官方 Safari MCP server</td>
+<td>85</td>
+<td>Twitter+小红书</td>
+<td>开发者向，Safari 27 技术预览</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Z.AI（原智谱）融资 $50 亿投 GLM 基座</td>
+<td>80</td>
+<td>小红书</td>
+<td>国产开源资本线，<strong>与选题 1 形成同一公司对照组</strong></td>
+</tr>
+<tr>
+<td>15</td>
+<td>HF 隐式遥测（0914 遗留，连续六日未做）</td>
+<td>86</td>
+<td>小红书</td>
+<td>⚠️ 今晚必须复活或明确废弃</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>💡 今晚组稿建议</h2>
+<p><strong>今晚主线：信任赤字——从"公司偷数据"到"公司自己发模型抢上市"。</strong></p>
+<p>0918 是"规矩写出来了"（被监管者自己起草规则）。<strong>0919 是"信任开始透支"</strong>：一边是 ZCode 把用户整个代码库静默上传（免费的真实代价），一边是 Anthropic 为 IPO 赶发模型（安全叙事的真实动机）。<strong>同日两条，一条讲用户的信任怎么被消耗，一条讲公司的姿态怎么服务于资本</strong>——本周叙事最自然的延展。</p>
+<p><strong>A. 主稿（今晚选题 1）</strong> — 《免费的 GLM 编程 agent，把你的整个 git 历史传走了》。公众号深度首选。落点：<strong>"开源"不等于"安全"，看的是出网请求和密钥归属</strong>。可串 0911 Claude 会话被盗 → GitSpawn → 0919 ZCode，安全主线三连。<strong>今晚必做，时效最后窗口。</strong></p>
+<p><strong>B. 财经/观点（今晚选题 2）</strong> — Anthropic 赶 IPO 发模型。公众号 + Twitter。"<strong>一边喊放缓，一边赶上市</strong>"是最强钩子。可与 0918"事故披露框架"对撞成双稿。</p>
+<p><strong>C. 垂直行业（今晚选题 3）</strong> — Astra for Law。公众号专业向或小红书大众向二选一。<strong>"护城河从模型变成数据"</strong>是核心认知。</p>
+<p><strong>D. 清库存（今晚顺带）</strong> — 库存 6（HarnessTax，数据硬、传播强）+ 库存 15（HF 遥测，六日未做，<strong>今晚复活或明确废弃</strong>）。库存 9（Firefox × Mistral）时效已过期，建议降级为观点素材或改写切入。</p>
+<p><strong>E. 对照素材</strong> — 库存 14（Z.AI 融资 $50 亿）与选题 1 是<strong>同一家公司</strong>，一个讲资本、一个讲隐私，可做组合或互为注脚。</p>
+<p><strong>承接主线</strong>：0915"放缓砸盘" → 0916"选边与迁移" → 0917"握手与标准" → 0918"规则落地与自曝" → 0919 <strong>"信任开始透支"</strong>。一周叙事从"谁对"→"谁用谁"→"谁来定规矩"→"规矩写出来了"→"规矩写了也没人真守"。</p>
+<hr />
+<h2>⚠️ 数据核实提醒</h2>
+<ol>
+<li><strong>ZCode（选题 1）</strong>：核心事实来自开发者 ferstar 的<strong>逆向分析</strong>，属单方研究结论；行文须标注为"研究者逆向实测"，勿写成 Z.ai 官方承认。文件数与密钥归属口径以原文为准。</li>
+<li><strong>Anthropic IPO（选题 2）</strong>：路透表述为"考虑（considers）"/"消息人士称"，<strong>非官方确认</strong>；IPO 时间与估值勿写成定论，须标注来源与"知情人士"口径。</li>
+<li><strong>Astra for Law（选题 3）</strong>：54% 通过率为 <strong>OpenAI 自家研究基准</strong>结论，非第三方评测；数据来源须标明 CourtListener（Free Law Project），勿写"OpenAI 自建 2.3 亿条数据"。</li>
+<li><strong>Kimi K3（库存 10）</strong>：权重开放范围、许可证（Apache/MIT/自定义）、激活参数量仍未核实，<strong>动笔前必须先查</strong>。</li>
+<li><strong>库存 9（Firefox × Mistral）</strong>：时效已过期约 1 天，<strong>不建议再作独立快稿</strong>。</li>
+<li><strong>Anthropic 持仓口径</strong>：OpenRouter 官方表述为 <strong>"more than 2.5 years"</strong>，勿再写"19 个月"。</li>
+</ol>
+<hr />
+<p><em>生成：content agent | 数据源：0919 选题方案 + 0916-0918 库存承接</em></p><div class="pager"><a class="l" href="2026-09-18-选题方案.html">← 2026-09-18 选题方案</a><a class="r" href="2026-09-19-选题方案.html">2026-09-19 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

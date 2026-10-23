@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0912 选题方案与审核</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-12</div><h1>0912 选题方案与审核</h1>
+<blockquote>
+<p>生成时间：2026-09-12 10:00 (Asia/Shanghai)<br />
+来源热点：<code>01-选题管理/0912-今日AI热点.md</code>（+ 承接 0911 主线）<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%</p>
+</blockquote>
+<hr />
+<h2>TOP 选题</h2>
+<h3>1. 数百个 AI Agent 攻陷 440 个系统：AI 武器化从"听说"变成"已发生" ✅ (94分)</h3>
+<ul>
+<li><strong>事件描述</strong>：疑似俄语系攻击者用 OpenAI Codex + DeepSeek 驱动<strong>数百个 AI Agent</strong>，对 PaperCut 漏洞（CVE-2026-81578 认证绕过 + CVE-2026-82078 RCE）实施规模化利用，攻陷 48 国 395 个组织、至少 440 个实例。攻击者还自建了含漏洞软件 + AD 的实验室做"AI 辅助漏洞开发"，并用 Netlas.io 生成目标列表。它甚至列了 28 个"不攻击"国家（含中国、俄罗斯），但"克制失败"。</li>
+<li><strong>核心角度</strong>：这不是"AI 会不会被滥用"的预测，是<strong>已完成的、有数字的、有组织的规模化攻击</strong>。三条可写的锐角：① 从冷兵器到流水线——数百个 Agent 意味着"人手"不再是攻击规模的瓶颈；② 那个 28 国排除名单，说明攻击者已经在做"地缘政治风控"，这比技术更值得写；③ 承接 0911 的 Aurora 案例，一周内两起，可以下判断：<strong>2026 是 AI Agent 武器化的元年</strong>。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 数百个 AI Agent，一夜之间攻陷了 440 个系统<br />
+  2. 这不是演习：AI 已经被用来打真实的大规模入侵了<br />
+  3. 攻击者列了份"不打的国家清单"，然后中国和俄罗斯在上面</li>
+<li><strong>写作方式</strong>：威胁情报解读 + 趋势判断</li>
+<li><strong>审核</strong>：热度 9 | 角度 10 | 国内关注 9 → <strong>94</strong></li>
+<li><strong>优先级</strong>：最高（本周主线收口，最硬实证）</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>2. 25 位菲尔兹奖得主联名：别再把"攻数学难题"当 benchmark 了 ✅ (89分)</h3>
+<ul>
+<li><strong>事件描述</strong>：包括 Terence Tao、Cédric Villani 在内的 25 位菲尔兹奖得主发表公开声明，认为 AI 公司把"解决重大数学问题"当基准冲榜，与这门学科真正的目标严重错位。</li>
+<li><strong>核心角度</strong>：非常罕见的一次"顶级学术共同体公开划线"。不写"数学家反对 AI"，而是写<strong>两种评价体系的冲突</strong>——AI 公司需要可量化的榜单，数学需要open-ended的、可能几十年才有答案的问题。前者天然会扭曲后者。可以和 0912 的 Armin Ronacher"40 亿 token 无产出"实验、以及"LLM 像 Waymo"的隐喻串成一篇"我们对 AI 的度量方式出了什么问题"。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 25 位菲尔兹奖得主联名：别再拿数学难题刷榜了<br />
+  2. 顶尖数学家集体划线：AI 的 benchmark 正在扭曲数学<br />
+  3. 当"能不能刷分"绑架了"值不值得做"</li>
+<li><strong>写作方式</strong>：观点分析 + 学术生态解读</li>
+<li><strong>审核</strong>：热度 8 | 角度 10 | 国内关注 9 → <strong>89</strong></li>
+<li><strong>优先级</strong>：高（角度极独特，国内数学/学术圈共鸣强）</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>3. OpenAI 去问国会：我们想一起慢下来，但这合法吗？ ✅ (88分)</h3>
+<ul>
+<li><strong>事件描述</strong>：WIRED 报道，OpenAI 花数周时间询问国会议员，组织全行业放缓前沿 AI 开发是否合法——担忧触犯《谢尔曼反垄断法》（约定限制建设速度≈限制产量）。Altman 同期对员工说，OpenAI 愿意与其他实验室一起"配速"，但承认有些不会配合。</li>
+<li><strong>核心角度</strong>：反直觉的新闻——<strong>一家公司不是在申请许可去造东西，是在申请许可停下来</strong>。真正的洞见：当前的竞争结构让"单方面谨慎"比"集体谨慎"法律上更安全——你可以自己慢，但你不能邀请别人一起慢。结果就是规则在奖励"不吭声、油门到底"的那家。可延伸：7月那份《Collaboration on Adversarial Threats and Security Risks Act》 bipartisan 法案还躺在众议院司法委员会。</li>
+<li><strong>标题备选</strong>：<br />
+  1. OpenAI 跑去问国会：我们能一起慢下来吗？<br />
+  2. 申请"停下来"的许可：AI 竞争进了一个荒诞的僵局<br />
+  3. "先停的人输"——AI 行业最真实的那场博弈</li>
+<li><strong>写作方式</strong>：政策解读 + 博弈分析</li>
+<li><strong>审核</strong>：热度 9 | 角度 8 | 国内关注 8 → <strong>88</strong></li>
+<li><strong>优先级</strong>：高（政策大事件，国内外媒体都在跟）</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>4. Armin Ronacher 花 40 亿 token、35 小时，什么有用的都没做出来 ✅ (86分)</h3>
+<ul>
+<li><strong>事件描述</strong>：知名开发者 Armin Ronacher 用 GPT-6 Astra 搞了个周末"软件工厂"，烧掉 40 亿 token、连跑 35 小时，想用 AI 建一个带虚拟线程的 Python。结果：没有可用产出，只有一大堆读不懂的代码。</li>
+<li><strong>核心角度</strong>：不是"AI 不行"的爽文，而是<strong>"投入 vs 产出"的诚实测量</strong>。可结合同日的"LLM 代码都对但臃肿"讨论——AI 写代码的问题不在正确率，在于它会持续产生"看起来像进展"的垃圾。给所有"Vibe Coding 到生产"的团队一个冷静的锚点。作者是 Flask 作者、业内公认高手，不是不懂行的人在抱怨。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 烧了 40 亿 token、跑了 35 小时，他什么都没做出来<br />
+  2. Flask 作者的"AI 软件工厂"实验：一场昂贵的失败<br />
+  3. AI 编程的真相：不是写不对，是写不出"有用的"</li>
+<li><strong>写作方式</strong>：案例复盘 + 观点</li>
+<li><strong>审核</strong>：热度 8 | 角度 9 | 国内关注 9 → <strong>86</strong></li>
+<li><strong>优先级</strong>：高（国内开发者极关注 Vibe Coding 的边界）</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>5. OpenRouter 跑了 1800 万条消息后的 10 条教训 ✅ (85分)</h3>
+<ul>
+<li><strong>事件描述</strong>：Olly 作者复盘在 OpenRouter 上跑 AI 助手的工程实践——"痛，一路痛到底"。核心洞察：同一个模型在基准上能拿 90%，也可能拿 75%。</li>
+<li><strong>核心角度</strong>：<strong>"模型能力"和"模型表现"是两回事</strong>。真正的产品差距在路由、限流、上下文管理、成本这些"脏活"里，而不是换更强的模型。非常实操，可对标国内做 Agent 产品的开发者。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 1800 万条消息后，我学会了这 10 件事<br />
+  2. 同一个模型，昨天 90 分今天 75 分——问题不在模型<br />
+  3. 把 AI 助手跑起来不难，难的是跑得住</li>
+<li><strong>写作方式</strong>：干货复盘 + 工程经验</li>
+<li><strong>审核</strong>：热度 7 | 角度 9 | 国内关注 9 → <strong>85</strong></li>
+<li><strong>优先级</strong>：中高</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>6. GPT-Live-1：全双工语音，打断率降了 80% ✅ (82分)</h3>
+<ul>
+<li><strong>事件描述</strong>：OpenAI 在 API 上线 GPT-Live-1，边听边说，消除"语音转文字→LLM→文字转语音"的链路延迟，打断率降低近 80%。</li>
+<li><strong>核心角度</strong>：语音交互的产品拐点——过去所有语音助手"像在跟对讲机说话"，全双工才真的是"对话"。重点写这对 AI 硬件 / 客服 / 陪伴类产品意味着什么。</li>
+<li><strong>标题备选</strong>：<br />
+  1. OpenAI 出了个"能同时听和说"的语音模型<br />
+  2. 语音助手终于不像对讲机了<br />
+  3. 打断率降 80%：语音 AI 的体验拐点到了</li>
+<li><strong>写作方式</strong>：产品解读 + 场景展望</li>
+<li><strong>审核</strong>：热度 8 | 角度 7 | 国内关注 8 → <strong>82</strong></li>
+<li><strong>优先级</strong>：中</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>7. Google 花 130 亿欧元买下芬兰核电站一半的产出 ✅ (80分)</h3>
+<ul>
+<li><strong>事件描述</strong>：Google 在芬兰 AI 基建投入创纪录的 130 亿欧元，建三个新数据中心并扩建一个，与 Fortum 签 22 年协议，锁定 Loviisa 核电站最高 50% 电力。</li>
+<li><strong>核心角度</strong>：AI 军备竞赛的"物理边界"——算力最终要落到电力和土地上。当科技巨头开始签 22 年的核电协议，AI 就从一个软件故事变成了能源故事。</li>
+<li><strong>标题备选</strong>：<br />
+  1. Google 买了半个核电站，就为了跑 AI<br />
+  2. AI 的下一场战争，抢的是电不是芯片<br />
+  3. 130 亿欧元 + 22 年核电协议：AI 正在变成一个能源行业</li>
+<li><strong>写作方式</strong>：行业分析 + 能源视角</li>
+<li><strong>审核</strong>：热度 7 | 角度 8 | 国内关注 7 → <strong>80</strong></li>
+<li><strong>优先级</strong>：中</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>8. Anthropic 给 Claude 加了年龄验证，未成年人不能用了 ⚠️ (74分)</h3>
+<ul>
+<li><strong>事件描述</strong>：Anthropic 上线年龄验证，Claude 不再对未成年人开放。</li>
+<li><strong>核心角度</strong>：AI 产品的合规化正在加速，"最低年龄"会成为行业标配吗？</li>
+<li><strong>审核</strong>：热度 7 | 角度 6 | 国内关注 6 → <strong>74</strong></li>
+<li><strong>修改建议</strong>：单一新闻信息量薄，需要和国内未成年人网络保护政策/其他厂商做法对比成篇</li>
+<li><strong>状态</strong>：待优化</li>
+</ul>
+<hr />
+<h2>📊 审核汇总</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>热度(30%)</th>
+<th>角度(40%)</th>
+<th>国内(30%)</th>
+<th>总分</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>数百 AI Agent 攻陷 440 系统</td>
+<td>9</td>
+<td>10</td>
+<td>9</td>
+<td><strong>94</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>2</td>
+<td>25 位菲尔兹奖得主联名</td>
+<td>8</td>
+<td>10</td>
+<td>9</td>
+<td><strong>89</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>3</td>
+<td>OpenAI 问国会能否减速</td>
+<td>9</td>
+<td>8</td>
+<td>8</td>
+<td><strong>88</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>4</td>
+<td>40 亿 token 无产出实验</td>
+<td>8</td>
+<td>9</td>
+<td>9</td>
+<td><strong>86</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>5</td>
+<td>OpenRouter 1800 万消息教训</td>
+<td>7</td>
+<td>9</td>
+<td>9</td>
+<td><strong>85</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>6</td>
+<td>GPT-Live-1 全双工语音</td>
+<td>8</td>
+<td>7</td>
+<td>8</td>
+<td><strong>82</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Google 130 亿欧元核电</td>
+<td>7</td>
+<td>8</td>
+<td>7</td>
+<td><strong>80</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Claude 年龄验证</td>
+<td>7</td>
+<td>6</td>
+<td>6</td>
+<td><strong>74</strong></td>
+<td>⚠️ 待优化</td>
+</tr>
+</tbody>
+</table></div>
+<p>✅ 通过 7 个 | ⚠️ 待优化 1 个</p>
+<hr />
+<h2>💡 组稿建议</h2>
+<p><strong>今日最优解：两条线并行</strong></p>
+<p><strong>A. AI Agent 安全周收口（选题 1）</strong><br />
+- 选题 1 是本周主线的"实锤"——从 0910 的盗 token、0911 的 GitSpawn / Aurora，到今天的"数百 Agent 攻陷 440 系统"，一周内形成了完整的证据链。<br />
+- 推荐写法：公众号深度，下判断——<strong>2026 是 AI Agent 武器化元年</strong>，附完整时间线（0910 盗 token → 0911 GitSpawn → 0911 Aurora → 0912 PaperCut）。<br />
+- 那个"28 国排除名单"是天然的传播钩子。</p>
+<p><strong>B. "我们到底在为什么加速"（选题 2 + 3 + 4）</strong><br />
+- 三条指向同一件事：<strong>AI 的度量方式（benchmark / 榜单 / token 数）正在扭曲真正重要的东西</strong>。<br />
+- 选题 2（菲尔兹奖得主）→ 公众号深度，学术生态<br />
+- 选题 3（OpenAI 问国会）→ 公众号 + Twitter Thread，政策博弈<br />
+- 选题 4（40 亿 token）→ 小红书，开发者共情向，反 Vibe Coding 神话但不唱衰</p>
+<p><strong>平衡排期</strong>：选题 6（GPT-Live-1）做正向产品内容，避免整天全是安全 + 反思。</p>
+<p><strong>预热库存</strong>：选题 5（OpenRouter 教训）可作为下周"AI 工程实践"系列的储备。</p><div class="pager"><a class="l" href="2026-09-12-今日AI热点.html">← 2026-09-12 今日AI热点</a><a class="r" href="2026-09-13-今日AI热点.html">2026-09-13 今日AI热点 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

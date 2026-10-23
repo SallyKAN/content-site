@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-09-24（周四）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-24</div><h1>每日独立开发精选 — 2026-09-24（周四）</h1>
+<h2>🔥 Hacker News</h2>
+<ol>
+<li>
+<p><strong>GPT-6 Sol 和 Luna 发布</strong><br />
+   https://openai.com/index/introducing-gpt-6-sol-and-luna/<br />
+   点评：今日头条。双模型命名，做 Agent 必须实测跑一遍，别信博客。</p>
+</li>
+<li>
+<p><strong>五角大楼：过度依赖 AI 导致对伊朗学校的导弹误击</strong><br />
+   https://www.bloomberg.com/graphics/2026-iran-school-attack/<br />
+   点评：今日最沉重。AI 决策链无人兜底，后果是物理世界的。自动化测试本质也是"别让人为错误无监督放大"。</p>
+</li>
+<li>
+<p><strong>Claude Code 只在遥测开启时才读 AGENTS.md</strong><br />
+   https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/<br />
+   点评：直接有用。读 AGENTS.md 被绑在遥测上——隐私换功能。需知道自己的文件在什么条件下才被读。</p>
+</li>
+<li>
+<p><strong>AMD Ryzen 两年内怎么快了 50%？</strong><br />
+   https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years/<br />
+   点评：大部分提升来自内存和缓存，不是算力。</p>
+</li>
+<li>
+<p><strong>Z80 REPL（浏览器里跑汇编）</strong><br />
+   https://abagames.github.io/z80-repl/index.html<br />
+   点评：底层机器码直觉 + 浏览器立即反馈。</p>
+</li>
+</ol>
+<h2>🚀 Product Hunt</h2>
+<ol>
+<li>
+<p><strong>Solid</strong> — Agent 拥有自己的电脑、账号和预算<br />
+   https://www.producthunt.com/products/solid-3<br />
+   点评：今日最该看，与 x402 直接相关。"Agent 有自己的预算"= 自主支付最直白表达。看额度控制与审计方案。</p>
+</li>
+<li>
+<p><strong>Contextberg</strong> — 通过 MCP 提供的本地 AI Agent 记忆<br />
+   https://www.producthunt.com/products/contextberg<br />
+   点评：本地 + MCP 是当前最干净的组合。</p>
+</li>
+<li>
+<p><strong>Valori</strong> — 确定性记忆层<br />
+   https://www.producthunt.com/products/valori-systems-deleted-1168484<br />
+   点评："确定性"很关键，与概率化记忆形成对照。企业/审计场景不能接受"可能记错"。</p>
+</li>
+<li>
+<p><strong>Plane Agents</strong> — 像给队友一样把工作派给 AI Agent<br />
+   https://www.producthunt.com/products/planehq<br />
+   点评：Agent 被当作"团队成员"而非"工具"。</p>
+</li>
+<li>
+<p><strong>Alexandria by Firecrawl</strong> — 超智能的知识图书馆<br />
+   https://www.producthunt.com/products/extract-by-firecrawl<br />
+   点评：Firecrawl 刚拿 $75M B 轮就出新品，抓取→清洗→知识库垂直整合完整。</p>
+</li>
+</ol>
+<h2>👽 Reddit r/SideProject</h2>
+<ol>
+<li>
+<p><strong>jgrep：grep，但匹配模式是一句话描述（按语义过滤行）</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wo65w6/jgrep_grep_but_the_pattern_is_a_description/<br />
+   点评：今日最对味的工具。经典 CLI × LLM，定位清晰、演示直观，最容易在 HN 爆的品类。</p>
+</li>
+<li>
+<p><strong>在线游戏，控制真实竞技场里的真实机器人</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wo1pmw/i_built_an_online_game_where_you_control_a_real/<br />
+   点评：与英伟达方向最近。物理 AI + 遥操作的消费者化尝试，看他的延迟方案。</p>
+</li>
+<li>
+<p><strong>为做产品视觉做了个工具，然后用它做了整个发布视频</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wnn5oz/i_built_a_tool_for_creating_premium_product/<br />
+   点评：dogfooding 到极致，最有说服力的营销。</p>
+</li>
+<li>
+<p><strong>我的副业日活从 500 涨到 15,000，我完全不知道用户从哪来</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wn05d1/my_side_project_went_from_500_to_15000_users_a/<br />
+   点评：连续第二天在榜，困惑太普遍。</p>
+</li>
+<li>
+<p><strong>Plexo — 合并多条网络连接做单次下载</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wjzpqm/i_built_plexo_a_download_manager_that_combines/<br />
+   点评：连续多天在榜，技术硬核类产品黏性强。</p>
+</li>
+</ol>
+<h2>🐦 Twitter / X</h2>
+<ol>
+<li>
+<p><strong>@coinbase — AiFi 升级：Agent 能买股票，配合 x402 支付（488 likes）</strong><br />
+   https://x.com/coinbase/status/2102489322394202542<br />
+   点评：本期最重要。Coinbase 官方推 x402 生态，Agent 从加密资产扩展到股票。切入点在协议原语/开发者体验，别跟交易所硬拼通道。</p>
+</li>
+<li>
+<p><strong>@BrianRoemmele — x402 市场上买家是卖家的 5 倍，但卖什么给 Agent？（425 likes）</strong><br />
+   https://x.com/BrianRoemmele/status/2075941605727695125<br />
+   点评：核心矛盾被说破。供应端严重不足 = 机会所在。</p>
+</li>
+<li>
+<p><strong>@Bitwux — OKX 推出 Agent Payments Protocol（自报价/收费/结算/争议）</strong><br />
+   https://x.com/Bitwux/status/2049766243549528254<br />
+   点评：大所入局，赛道确认但竞争也确认。差异化落在"最小原语 + 跨链中立"。</p>
+</li>
+<li>
+<p><strong>@ianneo_ai — 人人都在 Vibe Coding / 人人都是架构师（112 likes）</strong><br />
+   https://x.com/ianneo_ai/status/2102196569672200483<br />
+   点评："给一堆 Agent 当全职保姆"。提醒自己别把复杂度转嫁给用户。</p>
+</li>
+</ol>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<ol>
+<li>
+<p><strong>18 个月前从本站捡 idea，今天在和全球最大金融机构谈合作</strong>（231 分 / 40 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this/<br />
+   点评：第八天第一，分数仍在涨（213→228→231）。持续验证。</p>
+</li>
+<li>
+<p><strong>流媒体该有个 "No Spoilers" 选项</strong>（17 分 / 2 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w6cm4h/streaming_sites_should_have_a_no_spoilers_option/<br />
+   点评：长期在榜。</p>
+</li>
+<li>
+<p><strong>LinkedIn 批量删好友/取关</strong>（16 分 / 11 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wbqfkr/linkedin_bulk_connection_removal_unfollow/<br />
+   点评：长期在榜，评论持续累积。</p>
+</li>
+<li>
+<p><strong>"太好了舍不得扔"——私人闲置管理+出售</strong>（12 分 / 7 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wal3po/to_good_to_throw_private_junk_management_and_sale/<br />
+   点评：分数微涨（11→12）。</p>
+</li>
+</ol>
+<hr />
+<p>采集时间：2026-09-24 04:0x<br />
+数据源：orangebot.ai feed、Reddit r/SideProject RSS（week）、r/SomebodyMakeThis（100 条池）、Twitter（AI agent payments / build in public）<br />
+备注：Reddit RSS t=day 仍 429，继续 t=week + SMT 池兜底</p><div class="pager"><a class="l" href="2026-09-23.html">← 2026-09-23</a><a class="r" href="2026-09-25.html">2026-09-25 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

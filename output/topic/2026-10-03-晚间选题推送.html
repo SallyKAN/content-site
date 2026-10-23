@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1003 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-03</div><h1>1003 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-10-03 22:00 (Asia/Shanghai)<br />
+数据源：今日内容池（上午 10 条热点 → 5 张选题卡，96/93/89/89/80 分）<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：0930"把够用的智力卖成白菜价" → 1001"没人再等监管，巨头各自设闸门" → 1002"闸门失守的账单当天到账" → <strong>1003"补墙期：用人事与制度各补各的墙"</strong></p>
+</blockquote>
+<hr />
+<h2>🎯 今晚精选：3 篇可立即出稿（从今日 5 张卡中挑选）</h2>
+<h3>① ⭐ 今日主稿：议员追问五巨头——中国拿没拿走"模型权重"（96 分）</h3>
+<p><strong>一句话</strong>：1002 是"Agent 越权访问系统"，1003 直接问到"大脑本身有没有被拿走"。</p>
+<p><strong>为什么现在写</strong>：国内关注度最高（10/10），且是当日最硬的地缘信号。立法侧第一次把"模型权重"这种核心资产点名清点，非同小可；同时天然承接 1002 题 1（越权实锤），可做连续叙事。</p>
+<p><strong>建议角度</strong>：从"被偷数据"升级到"被拿走大脑"——立法关注点从"数据安全"上移到"能力资产安全"。<br />
+- 事实：众议员 Ro Khanna 9/30 致信 Alphabet、Anthropic、Meta、OpenAI、SpaceXAI，要求说明是否有中国相关方试图获取前沿模型<strong>权重</strong>、有无未遂入侵、过去两年应对与安全投入。<br />
+- 科普：<strong>权重 ≠ 源码</strong>，是训练后浓缩的数值参数，可被用于蒸馏/复现，是"训练成本的结晶"。<br />
+- ⚠️ 边界：报道明确<strong>不代表</strong>中国已成功窃取权重——是"问"，不是"实锤"。<br />
+- 深意：为何是现在问？承接 Agent 越权 + 斯坦福 2026 AI Index（中美最强模型差距仅 2.7%）。</p>
+<p><strong>平台</strong>：公众号（1800–2600 字）+ Twitter Thread（5–7 条）<br />
+<strong>原文链接</strong>：<br />
+- https://www.theepochtimes.com/us/us-ai-giants-asked-to-disclose-any-chinese-attempts-to-obtain-closely-guarded-model-weights-6097557<br />
+- https://biz.chosun.com/en/en-it/2026/10/02/YZQUWLHVV5GAJDIZKKJBJUWR5Q/<br />
+- https://www.cna.com.tw/news/aopl/202610020322.aspx</p>
+<hr />
+<h3>② ⭐ 反差稿：Anthropic 招股书——政府态度会"毒害"商业客户（93 分）</h3>
+<p><strong>一句话</strong>：一家要做史上最大 IPO 的公司，在招股书里把"政府不喜欢我"写成了风险。</p>
+<p><strong>为什么现在写</strong>：与 1001 题 2（招股书自曝最坏情况）、1002 题 4（11/9 路演、估值 1.8–2 万亿）连成"Anthropic 上市三连"，反差感强（政府合同不到 1% 收入，风险却是声誉溢出），适合与主稿同日形成"地缘 + 商业"组合。</p>
+<p><strong>建议角度</strong>：政府合同不到 1%，风险却写进招股书——<strong>风险是声誉溢出，不是直接收入</strong>。<br />
+- 事实：路透看到的机密招股书警告，政府对其态度的变化可能影响商业客户与合作伙伴关系，带来声誉损害。<br />
+- 援引的具体政府动作：总统 2 月下令联邦机构停用其模型、国防部将其列为<strong>供应链风险</strong>。<br />
+- 同时招股书重申 AI 可能带来"灾难性或存在性风险"、可能"抗拒关机、操纵信息"。</p>
+<p><strong>平台</strong>：公众号（1500–2200 字）+ Twitter（4–6 条）<br />
+<strong>原文链接</strong>：<br />
+- https://www.reuters.com/business/media-telecom/anthropic-warns-government-attitudes-may-hurt-customer-ties-ipo-prospectus-shows-2026-10-02/<br />
+- https://www.webpronews.com/anthropics-ipo-warning-government-scrutiny-could-poison-commercial-ties-as-ai-giant-chases-2-trillion-valuation<br />
+- https://www.tipranks.com/news/anthropic-ipo-filing-flags-government-sentiment-as-commercial-risk</p>
+<hr />
+<h3>③ ⭐ 对照稿：同一周——Anthropic 砸 1 亿造人才 vs Meta 散安全队（89 分）</h3>
+<p><strong>一句话</strong>：同一周，一家花 1 亿美元培养"会用 AI 的人"，另一家把 4 个月前并购来的 AI 安全团队放走。</p>
+<p><strong>为什么现在写</strong>：双线对照，观点密度高，小红书适配度好（"一家造人、一家散队"天然有话题）；也把"补墙"主线从制度层拉回到"人"这一层。</p>
+<p><strong>建议角度</strong>：AI 竞争的分水岭，可能不再是模型，而是人。<br />
+- Anthropic 侧：$100M、2027 底培训 10,000 名前沿部署工程师、含 12 周真实项目驻场；首批来自 Accenture / Morgan Stanley / Novo Nordisk / Deloitte / McKinsey / Bain / Capgemini。<br />
+- Meta 侧：6 月 acqui-hire Virtue AI 团队（联创 Bo Li、Dawn Song、Sanmi Koyejo），10 月放走，官方口径"工作方式冲突"。<br />
+- ⚠️ 边界：Meta 官方<strong>未</strong>称"因安全立场被清理"，勿写成"打压安全派"。<br />
+- 对照："会用 AI"本身成了新护城河；安全团队的去留是公司价值观的试纸。</p>
+<p><strong>平台</strong>：公众号（1500–2500 字，双线对照）+ 小红书（800–1200 字，标签 #AI #人才 #职场 #大厂）<br />
+<strong>原文链接</strong>：<br />
+- https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html<br />
+- https://www.businessinsider.com/anthropic-will-train-10-000-ai-engineers-boost-enterprise-adoption-2026-10<br />
+- https://www.semafor.com/article/10/02/2026/meta-parts-ways-with-virtue-ai</p>
+<hr />
+<h2>📦 备选（可排期 / 可并入主线）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>选题</th>
+<th>分数</th>
+<th>平台</th>
+<th>一句话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI 挖白宫网络政策负责人 Lind：把监管者请进门</td>
+<td>89</td>
+<td>公众号</td>
+<td>一边被 FTC 查、被加州传票，一边把白宫 ONCD 的人招进国家安全团队</td>
+</tr>
+<tr>
+<td>法院驳回 Google AI Overviews 流量诉讼</td>
+<td>80</td>
+<td>Twitter</td>
+<td>AI 摘要"抢流量"，法律上暂未被认定为违法——给全行业定了条边界</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>OpenAI 挖官员卡：https://www.theinformation.com/articles/openai-hires-top-trump-ai-official-work-national-security</li>
+<li>Google 诉讼卡：https://www.reuters.com/jp/economy/7PPMWRM7DZKQLB2WM2P5BG2WFI-2026-10-02/</li>
+</ul>
+<hr />
+<h2>🔗 编排建议：三个选题可串成"补墙期"一条线</h2>
+<p><strong>今日横切面</strong>：同一天四件事拼出荒诞对照——<br />
+1. OpenAI 把<strong>监管者请进门</strong>（挖白宫网络官员）<br />
+2. 国会<strong>反过来追问</strong>：中国拿没拿走模型权重<br />
+3. Anthropic 在招股书里写"<strong>政府会伤害我的客户</strong>"<br />
+4. Meta 把 4 个月前买来的<strong>安全团队放走</strong></p>
+<p>一条线走完：<strong>有人挖监管者 → 有人被立法追问 → 有人把政府写成风险 → 有人干脆拆掉安全队</strong>。收口可以是："越权事件之后，所有人都在补墙——只是补墙的方向各不相同。"</p>
+<p><strong>与昨日库存的连接</strong>：<br />
+- 今日题 1（模型权重）↔ 1002 题 1（Agent 越权实锤）："被偷的是数据，还是大脑"。<br />
+- 今日题 2（招股书政府风险）↔ 1001 题 2 + 1002 题 4：合为"Anthropic 上市三连"。<br />
+- 今日题 3（造人 vs 散队）↔ 1002 题 2（开除安全研究员）：同属"治理与人事"，一正一反。</p>
+<hr />
+<h2>⚠️ 成稿核实提醒</h2>
+<ul>
+<li><strong>模型权重</strong>：报道明确不代表中国已成功窃取；权重 ≠ 源码，须先科普再叙事，勿写成"已被窃取"。</li>
+<li><strong>TA419 钓鱼</strong>（今日热点 6）：为安全厂商归因，措辞为"与某国关联的行为体一致"，非官方定性；本节未入选 TOP5，如引用须标注来源。</li>
+<li><strong>Meta 散队</strong>：官方口径为"工作方式冲突"，勿写成"因安全立场被清理"。</li>
+<li><strong>Google 诉讼</strong>：为<strong>带偏见驳回（with prejudice）</strong>，非"永久免责"；勿过度外推。</li>
+<li><strong>DGX Spark</strong>：中文侧"可跑千亿参数"说法英文源未确认为官方规格，引用需谨慎。</li>
+<li><strong>Anthropic 招股书</strong>：政府合同占收入不到 1%，风险性质为"声誉溢出"，勿写成"收入将重创"。</li>
+</ul>
+<hr />
+<h2>📋 库存提醒（库存积压）</h2>
+<ul>
+<li><strong>1002 五张卡</strong>（Agent 越权实锤、开除安全研究员、政府或入股、Anthropic IPO 时间表、Gemini 4 内部质疑）尚未深化。</li>
+<li><strong>1001 五张卡</strong>（Argon 限用、Anthropic 招股书、Kimi K3 进 OpenAI 结算、FTC+白宫自律、蒸馏指控）尚未深化。</li>
+<li>建议：本周优先出稿 2 篇——<strong>今日题 1（国内关注最高）</strong> + <strong>1002 题 1（越权实锤，热度最高）</strong>，其余按"治理三连 / Anthropic 上市三连"合并进深度稿。</li>
+</ul>
+<hr />
+<p><em>选题卡路径：<code>01-选题管理/01-待深化选题/2026-10-03-*.md</code> ｜ 详细方案：<code>01-选题管理/1003-选题方案.md</code> ｜ 今日热点：<code>01-选题管理/1003-今日AI热点.md</code></em></p><div class="pager"><a class="l" href="2026-10-03-今日AI热点.html">← 2026-10-03 今日AI热点</a><a class="r" href="2026-10-03-选题方案.html">2026-10-03 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1021 上午选题方案</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-21</div><h1>1021 上午选题方案</h1>
+<blockquote>
+<p>生成时间：2026-10-21 10:00 (Asia/Shanghai)<br />
+数据源：AIHOT 10/21 日报（含一手发布链接）+ CNBC / DOJ / TechCrunch / Reuters 转述<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1013「Agent 会办事」→ 1016「账有人来收」→ 1018「算力的账用别人的钱付」→ 1019「会办事的东西要身份证」→ 1020「身份证没发，门先关了」→ <strong>1021「门里的人在偷听」</strong></p>
+</blockquote>
+<hr />
+<h2>🚨 内容池体检（第二十四天）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>01-待深化选题/</code></td>
+<td>🔴 <strong>49 张</strong>，全部未深化（连续第十天不建卡）</td>
+</tr>
+<tr>
+<td><code>02-创作中选题/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/草稿/</code></td>
+<td>🔴 最新仍停在 <strong>9/25</strong>（<code>0925-AI入侵澳医保.md</code>，躺 <strong>26 天</strong>）</td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/待发布/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>03-内容成品/Twitter/草稿/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>06-运营管理/发布日历.md</code></td>
+<td>🔴 最新发布行停在 <strong>10/13</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>连续第二十四天零出稿。今天仍不建卡。</strong> 昨天的方案已经写好主稿结构，标题、表格、四种恐惧都在 <code>1020-选题方案.md</code> 里躺着——<strong>直接照抄开写即可</strong>。</p>
+<hr />
+<h2>🎯 今日精选 TOP4</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>热度</th>
+<th>角度</th>
+<th>国内</th>
+<th>总分</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🕵️ OpenAI 员工在会议室电视后装窃听器：沙特领馆愿全额交保</td>
+<td>9</td>
+<td>9</td>
+<td>7</td>
+<td><strong>85</strong></td>
+<td>⭐ 主稿（与 1020 并稿）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>🇨🇳 DeepSeek 开源内部推理框架 DeepInfer + Token 编解码组件</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td><strong>89</strong></td>
+<td>明早国内主稿 / 今晚 Thread</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇺🇸 国土安全部下令全联邦文职机构移除 DeepSeek（10/20）</td>
+<td>9</td>
+<td>8</td>
+<td>10</td>
+<td><strong>90</strong></td>
+<td>⭐ 与②并稿，最强对撞</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🧪 Anthropic：Claude 自主跑 64 小时设计蝎毒蛋白结合剂</td>
+<td>6</td>
+<td>8</td>
+<td>7</td>
+<td><strong>69</strong></td>
+<td>素材</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3>① ⭐ 主稿：门里的人在偷听（85 分，接 1020）</h3>
+<p><strong>一句话</strong>：9/28，OpenAI 工程师 <strong>Abdulrahman Alfozan</strong>（35 岁，沙特籍，2025 年 7 月入职）把一枚"复杂录音设备"藏进了总部执行会议室的<strong>电视机后</strong>。10/13 DOJ 公布逮捕。10/19 旧金山联邦法官 <strong>Alex Tse</strong> 裁定<strong>不予保释</strong>——因为沙特驻洛杉矶领馆提出<strong>全额代付保释金</strong>，法官称"这像一张空白支票"。沙特与美国<strong>无引渡条约</strong>；OpenAI 已将其解雇；罪名最高 5 年。检察官称其被捕前<strong>与沙特王室成员有联系</strong>，并被指有"沙特政府文件"文件夹。</p>
+<p><strong>为什么今天写它</strong>：<br />
+- <strong>主线最狠的转场</strong>：前几天我们在争论"Agent 能不能进门""谁给它发证"，今天发现——<strong>门里的人本来就长着耳朵</strong>。所有关于身份、凭证、权限的讨论，都建立在"人类成员可信"这个隐含前提上。<br />
+- <strong>中国读者天然敏感</strong>：会议室的电视、录音设备、领馆交保、无引渡条约——这是谍战片素材，但当事人是 AI 公司员工。<br />
+- <strong>和 1020 的封禁名单是一体两面</strong>：平台封 Agent 是为了防"越界"，而真正的越界来自<strong>有正规工牌的人</strong>。</p>
+<p><strong>建议结构（公众号 2200–2600 字）</strong>：<br />
+- <strong>开场</strong>：那枚设备不在服务器机房，不在模型权重文件里，在一间会议室电视机背后。<strong>离模型最近的秘密，从来不是代码，是开会的那些人。</strong><br />
+- <strong>第一节｜34 天</strong>：9/28 装 → 发现 → 10/13 逮捕与 DOJ 公布 → 10/19 不得保释。做一条时间线。<br />
+- <strong>第二节｜"空白支票"</strong>：法官原话——"沙特政府说，我们会照顾一切，我们会监督，我们会交保释金……但我凭什么相信他们会保护美国政府的利益？" + 无引渡条约 + 他只要跑到加拿大或墨西哥就行。<br />
+- <strong>第三节｜AI 公司成了情报前线</strong>：模型公司同时握着三样东西——<strong>算力、权重、还有与政府的合同</strong>。这三样都是国家级资产。当一家公司拥有国家级资产，它就必须接受国家级安保成本。1018 写的是"算力的账用别人的钱付"，这里多一本账——<strong>信任的账，用员工背景调查付</strong>。<br />
+- <strong>第四节｜接 1020</strong>：昨天平台关门防 Agent，今天发现门里的人靠工牌。<strong>外部的 Agent 要凭证，内部的员工要审查，两件事本质相同：都在给"谁有权靠近模型"定价。</strong><br />
+- <strong>第五节｜国内视角</strong>：中国的模型公司大多在园区、有国资背景、安保由园区统一——但<strong>跨境协作、外籍雇员、海外分部</strong>是共同的新变量。国内读者能读出的结论：<strong>AI 竞争到这一步，已经不只是技术竞争，是安全竞争。</strong></p>
+<p><strong>平台</strong>：公众号（主）+ Twitter Thread（5 条，侧重"空白支票 + 无引渡条约"）+ 小红书（"AI 公司的会议室里，电视后面有东西"，700 字）</p>
+<p><strong>⚠️ 措辞红区</strong>：<br />
+- <strong>"间谍"不能用</strong>——官方罪名只有"使用或试图使用电子/机械装置截取口头通讯"，检方称"与沙特王室有联系"，<strong>不是"受沙特政府指使"</strong>，这是被告方可以争的点；<br />
+- 庭审内容<strong>以 CNBC 报道为准</strong>，法官引语须逐字核对；<br />
+- "沙特政府文件"文件夹来自 FBI 陈述（Ars Technica 报道），写"FBI 称"；<br />
+- 被告<strong>尚未定罪</strong>，一律写"被指控""涉嫌"。</p>
+<p><strong>原文链接</strong>：<br />
+- https://www.justice.gov/opa/pr/saudi-national-arrested-installing-surreptitious-audio-recording-device-openai<br />
+- https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html<br />
+- https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/<br />
+- https://www.bbc.com/news/articles/cwg5jq4vlddzo</p>
+<hr />
+<h3>② 🇨🇳 DeepSeek 开源 DeepInfer（89 分）+ ③ 🇺🇸 国土安全部下令移除 DeepSeek（90 分）——<strong>并稿</strong></h3>
+<p><strong>② 一句话</strong>：10/21 DeepSeek 宣布将<strong>内部推理框架 DeepInfer 全面开源</strong>，同步开源<strong>生产级 Token 编解码组件 <code>deepseek-recipe</code></strong>（DeepSeek 公众号，一手）。<br />
+<strong>③ 一句话</strong>：10/20 美国<strong>国土安全部（DHS）下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品</strong>（AIHOT 10/20 日报）。</p>
+<p><strong>为什么并稿</strong>：同一天，一边把推理引擎白送出去，一边被一个国家从所有联邦电脑上删掉。<strong>开源是它最锋利的传播手段，也是它被禁的最快理由。</strong></p>
+<p><strong>角度</strong>：不是"DeepSeek 又开源了"，而是 <strong>开源的成本结构变了</strong>——过去开源权重，这次开源<strong>推理框架</strong>（连"怎么跑"都给了）。当一个模型公司开始开源跑模型的机器，它卖的就不是模型，是<strong>生态位</strong>。</p>
+<p><strong>⚠️ 红区</strong>：DeepInfer 的开源协议、性能数据须以<strong>官方仓库/公众号原文</strong>为准；DHS 备忘录为二手转述，<strong>未取得原件</strong>，写"据 AIHOT 汇总、多家媒体报道"。</p>
+<p><strong>原文链接</strong>：<br />
+- https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&amp;mid=2247485884&amp;idx=1&amp;sn=d457981abe7db1f1b5d600fc109dc836<br />
+- https://aihot.news/daily/2026-10-20</p>
+<hr />
+<h3>④ 🧪 Anthropic 蝎毒蛋白结合剂（69 分，素材）</h3>
+<p>让内部研究模型在 Claude Science 中<strong>主要自主运行 64 小时</strong>，针对五种蝎子神经毒素设计迷你结合剂，生成 <strong>318,484 个设计</strong>、筛出 <strong>180 个</strong>。可用于主稿里"AI 做科研"的一句对照。<br />
+<strong>⚠️ 红区</strong>：为 Anthropic 自研自测，<strong>未经湿实验验证</strong>，写"据 Anthropic 研究博客"。<br />
+https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</p>
+<hr />
+<h2>📌 今日背景（不出稿）</h2>
+<ul>
+<li><strong>黄仁勋 GTC Berlin 主题演讲今天（10/21）</strong>，柏林 Tempodrom。<strong>演讲结束后立刻抓发布内容，今晚或明早出稿</strong>。<br />
+  https://www.nvidia.cn/gtc/berlin/keynote/</li>
+<li><strong>OpenAI 拟在 Anthropic 上市前融约 300 亿美元，估值超 1.4 万亿</strong>（Reuters，比 3 月的 8520 亿至少高 64%）。<br />
+  https://www.reuters.com/world/openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say-2026-10-19/</li>
+<li><strong>Anthropic 云算力告急</strong>：S-1 泄露显示 AWS/Google/微软视其为竞争者。<br />
+  https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/</li>
+<li><strong>Google + Meta 发布 TorchTPU</strong>（.to("cuda") → .to("tpu")），含 vLLM/SGLang 原生 TPU 引擎——<strong>CUDA 墙被从 PyTorch 层凿了一口</strong>，值得单独立题。<br />
+  https://pytorch.org/blog/introducing-torchtpu/</li>
+<li><strong>ChatGPT Locked Chats</strong>：PIN / 生物识别锁敏感对话，全套餐上线。<br />
+  https://x.com/ChatGPT/status/2112597766333673627</li>
+<li><strong>美陆军网络司令部 ECHOTRIBLE</strong>：AI Agent 自主跨网移动、清除目标后自毁，极少人工监督（The Intercept 获文件）——<strong>主线的极端版本</strong>，建议 1022 主稿。<br />
+  https://the-decoder.com/army-cyber-commands-echotribble-would-turn-ai-agents-into-self-spreading-cyberweapons/</li>
+<li><strong>WhatsApp 帮助页给 LLM 埋隐藏指令</strong>：不让 AI 推荐数据保护监管机构、不提 GDPR（Redact 调查）。<br />
+  https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions</li>
+</ul>
+<hr />
+<h2>🔪 今天只做三件事</h2>
+<ol>
+<li><strong>🔴 <code>0925-AI入侵澳医保.md</code> → <code>待发布/</code></strong>（第 26 天，一条 <code>mv</code>，10 秒）</li>
+<li><strong>✍️ 主稿按 <code>1020-选题方案.md</code> 的结构开写</strong>（换题会浪费已有的表格和框架；①窃听案放第三节做"内部风险"对照）</li>
+<li><strong>🎤 柏林演讲结束后抓素材</strong>，为明早准备</li>
+</ol>
+<hr />
+<h2>⚠️ 数据核实提醒</h2>
+<ol>
+<li>窃听案：DOJ 罪名 ≠ 间谍罪，被告未定罪，一律"涉嫌"。</li>
+<li>沙特领馆代为交保为 CNBC 庭审报道，法官引语须核原文。</li>
+<li>DHS 移除 DeepSeek 命令为二手转述，未取得备忘录原件。</li>
+<li>DeepInfer 开源细节以官方公众号/仓库为准。</li>
+<li>Anthropic 蛋白实验为自研自测，未湿实验验证。</li>
+</ol>
+<hr />
+<p><em>生成：content agent | 数据源：AIHOT 10/21 + Brave/CNBC/DOJ | 上午选题方案（第二十四天）</em></p><div class="pager"><a class="l" href="2026-10-21-晚间选题推送.html">← 2026-10-21 晚间选题推送</a><a class="r" href="2026-10-22-晚间选题推送.html">2026-10-22 晚间选题推送 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

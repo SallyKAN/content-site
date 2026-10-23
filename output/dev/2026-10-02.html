@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-10-02（周五）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-02</div><h1>每日独立开发精选 — 2026-10-02（周五）</h1>
+<h2>⚠️ 采集故障说明</h2>
+<ul>
+<li>Twitter/X <code>search</code> 仍 HTTP 404（queryId 变更未同步）；<code>feed</code> 正常，Twitter 板块用时间线 + 关键词过滤。</li>
+<li>Reddit RSS <code>t=day</code> 仍 429，继续 <code>t=week</code> + SMT 池兜底。</li>
+</ul>
+<h2>🔥 Hacker News</h2>
+<ol>
+<li>
+<p><strong>GPT-6 Sol and Luna（OpenAI 官方）</strong><br />
+   https://openai.com/index/introducing-gpt-6-sol-and-luna/<br />
+   点评：今日最该看。Sol + Luna 双模型发布，与手上 Codex-5.6-Sol 别名相关，评估是否换主力模型。</p>
+</li>
+<li>
+<p><strong>小米 MiMo v2.6：开源权重全模态模型，宣称多数 Agent 基准与 Opus 5 / GPT-5.6 Sol 持平</strong><br />
+   https://mimo.xiaomi.com/mimo-v2-6<br />
+   点评：开源追平闭源前沿。对 x402 类基础设施是成本结构重大利好。</p>
+</li>
+<li>
+<p><strong>微软给 DARPA 开放量子硬件现场访问（含 Majorana 2）</strong><br />
+   https://www.techmeme.com/260922/p54#a260922p54<br />
+   点评：量子 + 国防，远期变量。</p>
+</li>
+<li>
+<p><strong>五角大楼：过度依赖 AI 导致伊朗学校导弹袭击</strong><br />
+   https://www.bloomberg.com/graphics/2026-iran-school-attack/<br />
+   点评：沉重必读。过度信任 AI 输出造成实际伤亡的官方承认；验证机制不是可选项。</p>
+</li>
+<li>
+<p><strong>AMD Ryzen 两年内怎么快了 50%？</strong><br />
+   https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years/<br />
+   点评：底层优化思路优于堆参数。</p>
+</li>
+</ol>
+<h2>🚀 Product Hunt</h2>
+<ol>
+<li>
+<p><strong>Arcjet</strong><br />
+   https://www.producthunt.com/products/arcjet<br />
+   点评：安全工具上首页，与 Reddit "90% vibe-coded SaaS 会被黑"是同一市场需求。</p>
+</li>
+<li>
+<p><strong>Jev Wrapped</strong><br />
+   https://www.producthunt.com/products/jev-wrapped<br />
+   点评：JEV 生态长出周边产品，说明有真实用户基数与情感连接。</p>
+</li>
+<li>
+<p><strong>Prowler Cloud</strong><br />
+   https://www.producthunt.com/products/prowler<br />
+   点评：云安全扫描，开源商业化，同赛道第二个安全产品。</p>
+</li>
+<li>
+<p><strong>PewCB — 家用 PCB 打样机</strong><br />
+   https://www.producthunt.com/products/pewcb-in-house-pcb-prototyping-machine<br />
+   点评：硬件长尾需求。</p>
+</li>
+<li>
+<p><strong>ReallyFree</strong><br />
+   https://www.producthunt.com/products/know-what-s-really-free-before-you-click<br />
+   点评：点击前告诉你是否真免费，反套路小工具。</p>
+</li>
+</ol>
+<h2>👽 Reddit r/SideProject</h2>
+<ol>
+<li>
+<p><strong>花了 6 个多月给 Web 应用做了个真正的操作系统</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wu8xdz/i_spent_6_months_building_an_actual_os_for_web/<br />
+   点评：今日最该看。用"操作系统"抽象重做浏览器环境，与 Agent 沙箱/运行环境同方向。</p>
+</li>
+<li>
+<p><strong>90% 的 vibe-coded SaaS 随时会被黑</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wp7faq/90_of_vibecoded_saas_are_ready_to_get_hacked/<br />
+   点评：连续第二天在榜，PH 同日两个安全产品上首页，三处信号指向同一空档。</p>
+</li>
+<li>
+<p><strong>自建图书馆 App</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wu9rsk/selfhosted_library_app/<br />
+   点评：自托管，"数据在我手里"。</p>
+</li>
+<li>
+<p><strong>DOMiltion — 拆掉你不喜欢的网站</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wupnny/domiltion_demolish_sites_which_you_dont_like/<br />
+   点评：情绪型解压产品，传播效率高。</p>
+</li>
+<li>
+<p><strong>把手机倾斜变成开船小游戏</strong> 🆕<br />
+   https://www.reddit.com/r/SideProject/comments/1wurmh5/i_turned_phone_tilting_into_a_tiny_boat_game/<br />
+   点评：传感器玩法，小而巧。</p>
+</li>
+</ol>
+<h2>🐦 Twitter / X（时间线）</h2>
+<ol>
+<li>
+<p><strong>@saladday — "一切 infra 值得为 agent 重新做一遍，入口为先"（181 likes）</strong><br />
+   https://x.com/saladday/status/2105372039272128858<br />
+   点评：本期最该看。开源可自托管 agent core（sandbox + 模型 + harness），OpenAI 兼容接口。x402 最可能的邻居——它管 Agent 怎么跑，x402 管 Agent 怎么付钱。</p>
+</li>
+<li>
+<p><strong>@Kay2289123 — AI inference 为什么值得搞、怎么帮企业赚钱（120 likes）</strong><br />
+   https://x.com/Kay2289123/status/2105380204634148865<br />
+   点评：干货。GLM 5.3 Flash 优化到 670 tok/s、$0.11/M input。推理优化有明确商业回报。</p>
+</li>
+<li>
+<p><strong>@edwardxlaime — 自己搓论文阅读工具 EasyRead（691 likes）</strong><br />
+   https://x.com/edwardxlaime/status/2105511571967668267<br />
+   点评：今日高热度。"自己受够了就做"的经典路径，痛点来自日常则自带首批用户。</p>
+</li>
+<li>
+<p><strong>@fttt007 — Pi 的 Session 不是聊天记录，是 Agent 运行事件日志（106 likes）</strong><br />
+   https://x.com/fttt007/status/2105561984536089047<br />
+   点评：技术含量高。对 harness 与自动化测试的状态模型设计有直接启发。</p>
+</li>
+</ol>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<ol>
+<li>
+<p><strong>18 个月前从本站捡 idea，今天在和全球最大金融机构谈合作</strong>（240 分 / 42 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this/<br />
+   点评：持续第一，稳定 240。</p>
+</li>
+<li>
+<p><strong>一个"只要菜谱"的菜谱 App</strong>（16 分 / 25 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wsky2u/a_recipe_app_that_gives_you_just_the_recipe/<br />
+   点评：分数评论双涨（14/23→16/25），第二天在榜，最易上手。</p>
+</li>
+<li>
+<p><strong>可定制的设备扩展坞</strong>（24 分 / 11 评论）<br />
+   https://i.redd.it/g1x7pvb3pbrh1.jpeg<br />
+   点评：硬件类，持续在榜。</p>
+</li>
+<li>
+<p><strong>someone pls make this app</strong>（22 分 / 34 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wnjc3m/someone_pls_make_this_app/<br />
+   点评：评论持续高于赞。</p>
+</li>
+<li>
+<p><strong>PowerPoint 兼容编辑器：自定义工作区而非幻灯片</strong>（7 分 / 13 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wrinat/somebody_make_a_powerpointcompatible_editor_where/<br />
+   点评：第二天在榜，办公场景痛点。</p>
+</li>
+</ol>
+<hr />
+<p>采集时间：2026-10-01 23:0x（推送于 10-02 凌晨窗口）<br />
+数据源：orangebot.ai feed、Reddit r/SideProject RSS（week）、r/SomebodyMakeThis（100 条池）、Twitter feed<br />
+备注：Twitter search 接口 404 未修复</p><div class="pager"><a class="l" href="2026-10-01.html">← 2026-10-01</a><a class="r" href="2026-10-03.html">2026-10-03 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

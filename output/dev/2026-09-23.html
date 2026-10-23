@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-09-23（周三）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-23</div><h1>每日独立开发精选 — 2026-09-23（周三）</h1>
+<h2>🔥 Hacker News</h2>
+<ol>
+<li>
+<p><strong>小米 MiMo v2.6 发布（开源全模态）</strong><br />
+   https://mimo.xiaomi.com/mimo-v2-6<br />
+   点评：今日头条。官方称 Pro 版"在多数 Agent 基准上与 Opus 5 / GPT-5.6 Sol 持平"。中文大厂开源贴身肉搏。</p>
+</li>
+<li>
+<p><strong>AI Has No Wisdom and Neither Will You</strong><br />
+   https://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/<br />
+   点评：今日最该读。AI 给答案但不给判断力，长期依赖会削弱人的判断。做 Agent 产品者的自我提醒。</p>
+</li>
+<li>
+<p><strong>我说不，Apple 说是（Apple Intelligence 吐槽）</strong><br />
+   https://dbushell.com/2026/09/22/apple-intelligence/<br />
+   点评：用户拒绝后系统仍开启 AI。与 ZCode 偷传代码同类问题：默认开启 = 信任崩塌。</p>
+</li>
+<li>
+<p><strong>AMD 的随机数生成器生不出 0？</strong><br />
+   https://board.flatassembler.net/topic.php?t=24261<br />
+   点评：硬件边界 case 的典型漏测类型。</p>
+</li>
+<li>
+<p><strong>NASA 火星采样返回任务被砍</strong><br />
+   https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead<br />
+   点评：大科学项目的政治脆弱性。</p>
+</li>
+</ol>
+<h2>🚀 Product Hunt</h2>
+<ol>
+<li>
+<p><strong>Arcjet</strong> — 在运行时保护你正在构建的 AI Agent<br />
+   https://www.producthunt.com/products/arcjet<br />
+   点评：今日最该看。Agent 安全 runtime，x402 生态的必然配套层。当 Agent 能自主花钱，谁来拦它乱花？这个位置很空。</p>
+</li>
+<li>
+<p><strong>Sai</strong> — 听你指挥的自主计算机集群<br />
+   https://www.producthunt.com/products/simular<br />
+   点评："计算机集群"而非单个 Agent，规模化方向。</p>
+</li>
+<li>
+<p><strong>PostSider</strong> — 给人类和 Agent 同时用的社媒排期平台<br />
+   https://www.producthunt.com/products/postsider<br />
+   点评："为 Agent 设计"的接口正成为卖点，Agent 用户群体已真实。</p>
+</li>
+<li>
+<p><strong>PewCB</strong> — 桌面 PCB 原型机，"Vibe-routing is coming"<br />
+   https://www.producthunt.com/products/pewcb-in-house-pcb-prototyping-machine<br />
+   点评：硬件圈 AI 化从软件蔓延到物理制造。</p>
+</li>
+<li>
+<p><strong>Xem</strong> — 开源邮件营销 + 托管 SMTP<br />
+   https://www.producthunt.com/products/xem<br />
+   点评：开源替代 + 托管服务 = 成熟的开源商业化路径。</p>
+</li>
+</ol>
+<h2>👽 Reddit r/SideProject</h2>
+<ol>
+<li>
+<p><strong>我的副业日活从 500 涨到 15,000，我完全不知道用户从哪来的</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wn05d1/my_side_project_went_from_500_to_15000_users_a/<br />
+   点评：今日最该看。最真实的增长困惑。反过来说：产品能自然传播，流量会自己找上门。</p>
+</li>
+<li>
+<p><strong>Plexo — 合并多条网络连接做单次下载</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wjzpqm/i_built_plexo_a_download_manager_that_combines/<br />
+   点评：技术硬核，连续在榜。</p>
+</li>
+<li>
+<p><strong>把任意涂鸦变成二维码</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wm70b6/i_made_an_app_that_turns_any_drawing_into_a_qr/<br />
+   点评：连续在榜，演示自带传播力。</p>
+</li>
+<li>
+<p><strong>安全区域查询网站（新 iPhone 适配）</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wljtu9/i_got_tired_of_checking_safe_area_insets_in/<br />
+   点评：自用工具 → 免费发布的经典起手式。</p>
+</li>
+<li>
+<p><strong>第一个假发客户的 AI 试戴项目</strong><br />
+   https://www.reddit.com/r/SideProject/comments/1wm75q1/working_with_my_first_wigs_client_for_live_ai_wig/<br />
+   点评：不是 side project，是真实付费客户。垂直行业 + AI 试戴，跟"给房产经纪人做 Agent 收 $5k"同一模型。</p>
+</li>
+</ol>
+<h2>🐦 Twitter / X</h2>
+<ol>
+<li>
+<p><strong>@realchendahuang — 私藏的 10 个高质量信息源（366 likes）</strong><br />
+   https://x.com/realchendahuang/status/2101321535508406675<br />
+   点评：第一条推荐的 Buzzing 正是"抓取 HN/Reddit/PH 热帖翻译"的工具，与每日精选推送同一件事。</p>
+</li>
+<li>
+<p><strong>@kylegawley — 我不再自称 indie hacker 了（24 likes）</strong><br />
+   https://x.com/kylegawley/status/2091465479701594440<br />
+   点评：低赞但观点最锋利。indie hacking 已变成晒 MRR 截图、追流量、一周出 15 个垃圾 App 的地位游戏。与对 openJiuwen 的反感一致。</p>
+</li>
+<li>
+<p><strong>@AlleyBo55 — 每个钢琴有 88 个弹错的方式，我做了个不会弹错的（108 likes）</strong><br />
+   https://x.com/AlleyBo55/status/2102386467817640365<br />
+   点评："消灭一个具体失败模式"的极简创意型产品。</p>
+</li>
+<li>
+<p><strong>@heypetar — "$0 MRR 时辞职的独立开发者，来连接一下"（36 likes）</strong><br />
+   https://x.com/heypetar/status/2102369023988044025<br />
+   点评：情绪共鸣型内容。</p>
+</li>
+</ol>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<ol>
+<li>
+<p><strong>18 个月前从本站捡 idea，今天在和全球最大金融机构谈合作</strong>（228 分 / 40 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this/<br />
+   点评：第七天第一，分数仍在涨（213→227→228）。长期验证。</p>
+</li>
+<li>
+<p><strong>流媒体该有个 "No Spoilers" 选项</strong>（17 分 / 2 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w6cm4h/streaming_sites_should_have_a_no_spoilers_option/<br />
+   点评：长期在榜，浏览器插件零成本可做。</p>
+</li>
+<li>
+<p><strong>LinkedIn 批量删好友/取关</strong>（16 分 / 11 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wbqfkr/linkedin_bulk_connection_removal_unfollow/<br />
+   点评：长期在榜，评论持续累积。</p>
+</li>
+<li>
+<p><strong>朋友群旅行照片"同一时刻同时解锁"</strong>（10 分 / 11 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1w8xbnm/somebody_make_an_app_where_a_friend_groups_trip/<br />
+   点评：评论比分数高，情绪价值型需求。</p>
+</li>
+<li>
+<p><strong>"太好了舍不得扔"——私人闲置管理+出售</strong>（11 分 / 7 评论）<br />
+   https://www.reddit.com/r/SomebodyMakeThis/comments/1wal3po/to_good_to_throw_private_junk_management_and_sale/<br />
+   点评：持续在榜。"成年子女管理父母密码"本期掉出 45 天窗口。</p>
+</li>
+</ol>
+<hr />
+<p>采集时间：2026-09-23 05:0x<br />
+数据源：orangebot.ai feed、Reddit r/SideProject RSS（week）、r/SomebodyMakeThis（100 条池）、Twitter（buildinpublic / indie hacker MRR）<br />
+备注：Reddit RSS t=day 仍 429，继续 t=week + SMT 池兜底</p><div class="pager"><a class="l" href="2026-09-22.html">← 2026-09-22</a><a class="r" href="2026-09-24.html">2026-09-24 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

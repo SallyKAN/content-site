@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0212 选题审核结果</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-02-12</div><h1>0212 选题审核结果</h1>
+<p>审核时间：2026-02-12 17:05<br />
+审核标准：热度30% + 独特角度40% + 国内关注度30%</p>
+<hr />
+<h2>✅ 通过选题（80分以上）</h2>
+<h3>选题2：Claude 救了一个家庭 - AI医疗应用的边界在哪</h3>
+<p><strong>审核分数：88/100</strong></p>
+<ul>
+<li>热度（30%）：27分 - Reddit热帖，真实案例，情感共鸣强</li>
+<li>独特角度（40%）：36分 - 不渲染AI替代医生，强调"第二意见"和数据管理，角度克制且实用</li>
+<li>国内关注度（30%）：25分 - 医疗话题国内关注度高，数据管理意识需要普及</li>
+</ul>
+<p><strong>通过理由</strong>：真实案例 + 克制观点 + 实用价值，符合"有温度的科技内容"定位</p>
+<hr />
+<h3>选题3：Claude Code被"降智"？社区炸锅背后的真相</h3>
+<p><strong>审核分数：85/100</strong></p>
+<ul>
+<li>热度（30%）：28分 - HN 906 upvotes，589评论，话题热度极高</li>
+<li>独特角度（40%）：34分 - 不跟风吐槽，而是分析原因+给出应对策略，有建设性</li>
+<li>国内关注度（30%）：23分 - Claude Code国内用户多，关注度高</li>
+</ul>
+<p><strong>通过理由</strong>：热点话题 + 理性分析 + 实用建议，避免情绪化</p>
+<hr />
+<h3>选题4：65行Markdown玩转Claude Code - 极简主义的胜利</h3>
+<p><strong>审核分数：82/100</strong></p>
+<ul>
+<li>热度（30%）：22分 - HN 24 upvotes，热度中等</li>
+<li>独特角度（40%）：38分 - "少即是多"的Prompt哲学，角度新颖，有方法论价值</li>
+<li>国内关注度（30%）：22分 - Prompt工程是国内开发者关注的热点</li>
+</ul>
+<p><strong>通过理由</strong>：方法论价值高，可复制性强，适合教程类内容</p>
+<hr />
+<h2>⚠️ 待优化选题（60-79分）</h2>
+<h3>选题1：Opus 4.6 发布 - AI编码能力再突破</h3>
+<p><strong>审核分数：75/100</strong></p>
+<ul>
+<li>热度（30%）：25分 - 官方发布，关注度高</li>
+<li>独特角度（40%）：28分 - 角度常规，缺乏差异化</li>
+<li>国内关注度（30%）：22分 - Opus用户国内较多</li>
+</ul>
+<p><strong>优化建议</strong>：<br />
+- 增加实测对比数据，用具体案例说话<br />
+- 聚焦1-2个核心场景深挖，而非泛泛而谈<br />
+- 建议改标题：《Opus 4.6实测：这3个场景提升最明显》</p>
+<hr />
+<h3>选题5：魔兽农民语音包 - 给Claude Code加点乐趣</h3>
+<p><strong>审核分数：72/100</strong></p>
+<ul>
+<li>热度（30%）：24分 - HN 273 upvotes，话题有趣</li>
+<li>独特角度（40%）：26分 - 趣味性强但深度不足</li>
+<li>国内关注度（30%）：22分 - 魔兽情怀国内有共鸣</li>
+</ul>
+<p><strong>优化建议</strong>：<br />
+- 扩展到"AI工具人性化设计"的更大话题<br />
+- 增加其他提升使用体验的插件/方法<br />
+- 建议改角度：《AI工具也需要"情绪价值"：从魔兽语音包说起》</p>
+<hr />
+<h3>选题6：GLM-5来了 - 国产大模型的长期Agent能力突破</h3>
+<p><strong>审核分数：78/100</strong></p>
+<ul>
+<li>热度（30%）：26分 - HN 361 upvotes，443评论</li>
+<li>独特角度（40%）：30分 - 对比分析有价值，但需要实测数据支撑</li>
+<li>国内关注度（30%）：22分 - 国产大模型国内关注度高</li>
+</ul>
+<p><strong>优化建议</strong>：<br />
+- 必须有实测对比，不能只靠官方宣传<br />
+- 聚焦具体场景：如"多轮对话"、"代码生成"等<br />
+- 建议改标题：《GLM-5实测：在这2个场景超越GPT-4》</p>
+<hr />
+<h3>选题9：Anthropic承诺覆盖电价上涨 - AI公司的社会责任</h3>
+<p><strong>审核分数：68/100</strong></p>
+<ul>
+<li>热度（30%）：20分 - HN 91 upvotes，热度一般</li>
+<li>独特角度（40%）：28分 - 社会责任话题有深度，但与读者关联弱</li>
+<li>国内关注度（30%）：20分 - 国内对AI能源消耗关注度较低</li>
+</ul>
+<p><strong>优化建议</strong>：<br />
+- 增加国内视角：对比国内AI公司的做法<br />
+- 关联到普通用户：AI使用成本会因此上涨吗？<br />
+- 建议改角度：《AI训练耗电惊人，最终谁买单？》</p>
+<hr />
+<h2>❌ 不通过选题（60分以下）</h2>
+<h3>选题7：GPT-5超越联邦法官 - AI法律推理能力的里程碑</h3>
+<p><strong>审核分数：58/100</strong></p>
+<ul>
+<li>热度（30%）：23分 - HN 260 upvotes，话题有热度</li>
+<li>独特角度（40%）：20分 - 角度常规，类似内容已有很多</li>
+<li>国内关注度（30%）：15分 - 法律AI在国内应用场景有限</li>
+</ul>
+<p><strong>不通过理由</strong>：<br />
+- 话题与国内读者关联度低<br />
+- 缺乏独特视角，容易写成新闻搬运<br />
+- 建议放弃或大幅调整角度</p>
+<hr />
+<h3>选题8：Agent Alcove - 让AI模型互相辩论</h3>
+<p><strong>审核分数：55/100</strong></p>
+<ul>
+<li>热度（30%）：16分 - HN 54 upvotes，热度较低</li>
+<li>独特角度（40%）：24分 - 产品有趣但实用价值不明确</li>
+<li>国内关注度（30%）：15分 - 小众产品，国内用户少</li>
+</ul>
+<p><strong>不通过理由</strong>：<br />
+- 产品热度不足，用户基数小<br />
+- 实用价值不明确，容易写成产品介绍<br />
+- 建议放弃</p>
+<hr />
+<h3>选题10：CodeRLM - 为LLM Agent打造的代码索引工具</h3>
+<p><strong>审核分数：62/100</strong></p>
+<ul>
+<li>热度（30%）：17分 - HN 52 upvotes，热度一般</li>
+<li>独特角度（40%）：26分 - 技术工具，但门槛较高</li>
+<li>国内关注度（30%）：19分 - 开发者工具，受众有限</li>
+</ul>
+<p><strong>不通过理由</strong>：<br />
+- 技术门槛高，受众窄<br />
+- 缺乏实测数据，难以证明价值<br />
+- 建议放弃或等有更多使用案例后再写</p>
+<hr />
+<h2>📊 审核总结</h2>
+<ul>
+<li>✅ 通过：3个（选题2、3、4）</li>
+<li>⚠️ 待优化：4个（选题1、5、6、9）</li>
+<li>❌ 不通过：3个（选题7、8、10）</li>
+</ul>
+<p><strong>建议</strong>：<br />
+1. 优先写通过的3个选题<br />
+2. 待优化的4个按建议修改后可写<br />
+3. 不通过的3个暂时放弃</p>
+<hr />
+<h2>下一步行动</h2>
+<ol>
+<li>将通过的3个选题保存到选题库</li>
+<li>待优化的4个选题标记"待优化"，等修改后再保存</li>
+<li>不通过的3个选题归档到"未通过"文件夹</li>
+</ol><div class="pager"><a class="l" href="2026-02-12-今日选题完成总结-更新.html">← 2026-02-12 今日选题完成总结-更新</a><a class="r" href="2026-02-12-选题审核-更新.html">2026-02-12 选题审核-更新 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1018 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-18</div><h1>1018 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-10-18 22:00 (Asia/Shanghai)<br />
+数据源：<code>1018-选题方案.md</code>（今日上午采集，8 条线索）+ 内容池/闭环复检<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1002「账单当天到账」→ 1013「Agent 会办事了」→ 1016「办事的账，开始有人来收」→ 1017「一周内，来了三个收账人」→ <strong>1018「算力的账，开始用别人的钱付」</strong></p>
+</blockquote>
+<hr />
+<h2>🚨 第二十一天：采集跑得最稳的时候，稿子最安静</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>01-选题管理/01-待深化选题/</code></td>
+<td>🔴 <strong>49 张</strong>，全部未深化（连续第七天不建卡）</td>
+</tr>
+<tr>
+<td><code>01-选题管理/02-创作中选题/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/草稿/</code></td>
+<td>🔴 最新仍停在 <strong>9/25</strong>（<code>0925-AI入侵澳医保.md</code>，8492 字节，躺 <strong>23 天</strong>）</td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/待发布/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/Twitter/草稿/</code></td>
+<td>🔴 <strong>空</strong></td>
+</tr>
+<tr>
+<td><code>06-运营管理/发布日历.md</code></td>
+<td>🔴 最新发布行停在 <strong>10/13</strong>；10/14–10/18 五行未填</td>
+</tr>
+<tr>
+<td>今日上午采集 + 选题方案</td>
+<td>✅ 已跑（连续第四天正常）</td>
+</tr>
+<tr>
+<td>今日新增选题卡</td>
+<td>⛔ 0 张（第 7 天）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：连续第二十一天零出稿。</strong> 采集、评估、成稿方案这条链路已经连续稳定 4 天，说明工具不是瓶颈；断点始终在同一个位置——<strong>没有人把一篇写完的稿子推出去。</strong> 内容池 49 张卡，按一天一张算够发一个半月；而真正能发的东西是 0。</p>
+<blockquote>
+<p><strong>⚠️ 今晚唯一硬指标（15 分钟，做完就算赢）</strong><br />
+1. <code>0925-AI入侵澳医保.md</code> → <code>03-内容成品/公众号/待发布/</code><br />
+2. 补 1 条数据记录（<code>05-数据统计/</code>）<br />
+3. 发布日历补填 10/14–10/18 五行</p>
+<p><strong>这篇稿不是"没写完"，它写完了，8492 字节，23 天前就写完了。</strong> 第二十一天，唯一能改变分数的动作仍然只有一个：把它推出去。</p>
+</blockquote>
+<hr />
+<h2>🎯 今晚精选（沿用 1018 上午方案，不增题，只做减法）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>热度</th>
+<th>角度</th>
+<th>国内</th>
+<th>总分</th>
+<th>今晚定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🇨🇳 全国产十万卡 AI 超集群真机亮相：超算 + 智算装进一套底座</td>
+<td>9</td>
+<td>10</td>
+<td>10</td>
+<td><strong>96</strong></td>
+<td>⭐⭐ <strong>今晚唯一主稿</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>💰 Anthropic「北极星」600 亿美元融资，10% 以上票息借钱买芯片</td>
+<td>10</td>
+<td>10</td>
+<td>7</td>
+<td><strong>92</strong></td>
+<td>并稿对照段（400 字）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🚀 DeepSeek V4.1-Flash-1017：不改价格、直接替换、MIT 权重</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+<td><strong>92</strong></td>
+<td>明早快稿（今晚发 200 字预告）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🏭 AMD 82 亿美元全股票收购 World Labs</td>
+<td>9</td>
+<td>9</td>
+<td>7</td>
+<td><strong>85</strong></td>
+<td>并进 ① 一句（"没人用现金"）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>🎭 Meta Muse Wonder 追平 Claude（AI 指数 56）</td>
+<td>8</td>
+<td>8</td>
+<td>6</td>
+<td><strong>75</strong></td>
+<td>素材/一句好细节</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>今晚排序的理由</strong>：① 是国内题。连续二十一天不出稿之后，最该发的是一篇<strong>读者最广、资料最好核、自己最熟</strong>的稿子，而不是角度最刁的稿子。96 分的国内主稿 + 92 分的主稿对照段，一篇就能撑起本周公众号。</p>
+</blockquote>
+<hr />
+<h3>① ⭐⭐ 今晚主稿：全国产十万卡超集群，从"堆卡"到"两种脑子装进一个身体"</h3>
+<p><strong>一句话</strong>：在深圳举行的 2026 全国高性能计算学术大会上，今年建成的<strong>我国首个全国产十万卡 AI 超集群真机</strong>首次亮相，同时发布十大应用成果；系统（曙光 8000）走"超算 + 智算原生融合"路线——<strong>同一套底座，既跑最高精度科学计算，也跑大模型训练与推理</strong>。</p>
+<p><strong>为什么今晚非它不可</strong>：<br />
+- <strong>国内唯一顶尖，且中文深度稿几乎为零</strong>：国产算力的叙事已经从"能堆多少卡"换成了"两种计算范式能不能共存"，这是结构性变化，不是数量变化。<br />
+- <strong>有可解释的机制，读者能跟着走三步</strong>：<br />
+  1. 超算做虚拟物理实验，造出<strong>仿真数据</strong>；<br />
+  2. 智算吃这批数据找规律，做大规模<strong>海选</strong>；<br />
+  3. 超算再用最高精度<strong>复核</strong>，剔掉幻觉。<br />
+  —— 这三步闭环，正好回答了"AI 幻觉能不能用物理世界校验"这个所有人都关心的问题。<strong>这是全篇最值钱的一段。</strong><br />
+- <strong>一张是"最大的一块算力"，一张是"最便宜最绿的一块算力"</strong>：同日央视财经报道乌兰察布"算力成草原新特产"——109 个签约项目、机架超 700 万架、绿电直连、距京 240 公里、单向时延 2.1 毫秒。两件事并进同一篇，结构立刻成立。</p>
+<p><strong>建议结构（公众号 2000–2500 字）</strong>：<br />
+- <strong>开场</strong>：十万卡是什么概念？——用"相当于把一座中型超算中心和一座大模型训练厂装进同一个机房"来换算，别用"能装一个宇宙"这种媒体比喻当事实。<br />
+- <strong>第一节｜不是更多卡，是两种脑子</strong>：超算 vs 智算的差别不在算力大小，在<strong>精度和容错</strong>。超算不允许出一次错，智算必须允许大量出错才跑得快。把它们放进同一套底座，解决的是"数据从哪来"。<br />
+- <strong>第二节｜三步闭环</strong>：仿真数据 → 海选 → 高精度复核。这是"用物理世界给 AI 打分"的工程版本。<br />
+- <strong>第三节｜另一半地图（乌兰察布）</strong>：最贵的算力和最便宜的算力，同时在建。<strong>算力开始分区域分工：训练在草原，复核在沿海。</strong><br />
+- <strong>第四节｜对照段（400 字，放题 2）</strong>：同一周，Anthropic 在用 10% 以上票息借 600 亿美元买芯片，AMD 用 82 亿美元股票买"世界模型"。<strong>这轮 AI 资本循环里，没人用现金：一个用债，一个用股，中国用基建。</strong> 三种付账方式，指向同一个东西——算力是重资产，重资产从来不是靠利润买的。<br />
+- <strong>收口</strong>：1016 我们写"办事的账，开始有人来收"。今天的账是<strong>打在基建上的</strong>——它不是一张还款计划表，是一份五年折旧表。</p>
+<p><strong>平台</strong>：公众号（主）+ 小红书（"十万卡是什么概念"科普，800 字）+ Twitter Thread（5–6 条，侧重"融合"这个结构点）<br />
+<strong>⚠️ 措辞红区</strong>：<br />
+- 官方口径为<strong>"全国产""真机亮相"</strong>，<strong>未披露具体芯片型号与实测性能</strong>——不写型号、不写跑分；<br />
+- <strong>"能装一个宇宙"是媒体比喻</strong>，若引用必须标明是比喻；<br />
+- 曙光 8000 的融合路线以其发布信息为准，勿替它补技术细节；<br />
+- 乌兰察布数据（109 个项目 / 700 万机架 / 2.1 毫秒）为央视财经报道口径。</p>
+<p><strong>原文链接</strong>：<br />
+- https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivqyip6791353.shtml<br />
+- （乌兰察布）http://finance.sina.com.cn/stock/wbstock/2026-10-17/doc-inivqcee1328284.shtml</p>
+<hr />
+<h3>② 💰 Anthropic「北极星」：10% 的利息（92 分，并进 ① 第四节）</h3>
+<p><strong>一句话</strong>：FT 报道，Anthropic 为一笔 <strong>600 亿美元芯片融资（Project North Star）</strong> 向 Blackstone 提供 <strong>10% 以上票息</strong>，条件是认购 <strong>90 亿美元</strong>次级债；结构约为 <strong>420 亿高级债（传由博通背书）+ 180 亿次级债（以 Anthropic 五年芯片租赁付款为担保）</strong>，资金用于约 <strong>1.5GW 的 Google 定制 TPU</strong>。</p>
+<p><strong>今晚用法</strong>：不单独成稿，作为 ① 第四节 400 字对照段。<strong>这家 Q3 营收 16.8 亿、同比增长 45%、估值 2 万亿的明星公司，正在用 10% 的利率借钱买芯片。越贵的东西，越要靠杠杆。</strong></p>
+<p><strong>⚠️ 措辞红区</strong>：全部为 <strong>FT 引述知情人士的未确认交易</strong>，须标"报道称"；"10%" 表述为"10% 以上票息/收益率"；420 亿由博通背书为报道口径；"北极星"为项目代号。<strong>勿写成已完成交割。</strong></p>
+<p><strong>原文链接</strong>：<br />
+- https://ph.investing.com/news/company-news/anthropic-offers-blackstone-over-10-yield-in-60b-ai-chip-financing--ft-reports-2633688<br />
+- https://en.ilsole24ore.com/art/anthropic-debt-60-billion-google-and-blackstone-chips-returns-of-over-10-per-cent-AJ1kwmmB<br />
+- （背景）https://www.aninews.in/news/business/anthropics-q3-revenue-jumps-45-to-usd-168-billion-ahead-of-anticipated-ipo20261015092315/</p>
+<hr />
+<h3>③ 🚀 DeepSeek V4.1-Flash-1017：一次不涨价的更新（92 分，明早发）</h3>
+<p><strong>一句话</strong>：10/17 傍晚，DeepSeek 发布 <strong>V4.1-Flash-1017</strong>——官网、App、API 同步上线，<strong>调用方式与价格不变</strong>（仍用 <code>deepseek-flash</code> 即取最新版），权重以 <strong>MIT 协议</strong>上架 Hugging Face 与 ModelScope；官方称基准更强、任务完成更快、输出更短。同时开放 Search 与 Fetch API 给所有开发者。</p>
+<p><strong>为什么值得留到明早</strong>：这是"小版本更新"的教科书样本——<strong>命名带日期、不涨价、不换模型名、权重照开源。别人在发新品，它在发补丁；而补丁可以直接覆盖所有人。</strong> 和 ① 形成最深的一组对照：一边 10% 利率借钱买算力，一边零融资成本靠迭代抢市场。</p>
+<p><strong>今晚的动作</strong>：先发一条 200 字预告/短评占位（开发者向，小红书），全稿明早写。</p>
+<p><strong>⚠️ 措辞红区</strong>：为 V4.1-Flash 的<strong>小版本更新，非新一代模型</strong>；基准提升幅度须以官方 changelog 为准，<strong>勿引用未核实的具体分数</strong>。</p>
+<p><strong>原文链接</strong>：<br />
+- https://api-docs.deepseek.com/updates/<br />
+- https://www.bloomberg.com/news/articles/2026-10-17/deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner</p>
+<hr />
+<h3>④ 🏭 AMD 82 亿美元全股票收购 World Labs（85 分，一句并稿）</h3>
+<p><strong>用法</strong>：并进 ① 第四节，一句话——<strong>芯片公司在用股票买"世界"，AI 公司在用债买"算力"，没人用现金。</strong><br />
+<strong>⚠️</strong> 交易公告为 9 月底，本轮为二次报道；"82 亿美元"及"李飞飞任 AMD EVP 兼首席科学家"须以公告为准。<br />
+<strong>原文链接</strong>：<br />
+- https://finance.sina.cn/2026-10-17/detail-inivpspz6394144.d.html<br />
+- https://www.huxiu.com/article/4898282.html</p>
+<hr />
+<h3>⑤ 🎭 Meta Muse Wonder 追平 Claude（75 分，素材）</h3>
+<p><strong>用法</strong>：一句好细节——"开源厂做出的闭源旗舰，在 AI 指数上追平上一代对手（56 分），定价 4 / 20 美元每百万 token"。讨论"开源 vs 闭源"边界时随时可用。<br />
+<strong>⚠️</strong> 发布于 10/12，"追平 56 分"为第三方榜单口径，须标来源。<br />
+<strong>原文链接</strong>：<br />
+- https://dev.meta.ai/models/muse-wonder<br />
+- https://shattered.io/meta-muse-wonder-ai-index-benchmark-2026/</p>
+<hr />
+<h2>🔪 今晚只做两件事</h2>
+<ol>
+<li><strong>🔴 跑闭环（15 分钟，最高优先）</strong>：<code>0925-AI入侵澳医保.md</code> → <code>03-内容成品/公众号/待发布/</code>；补 1 条数据记录；发布日历补填 10/14–10/18 五行。<strong>第 23 天了。</strong></li>
+<li><strong>✍️ 出主稿（题 ①）今晚先写两节</strong>：把"两种脑子"和"三步闭环"写完，1200 字就算赢；乌兰察布那节和 Anthropic 对照段明早补。</li>
+</ol>
+<p><strong>若今晚只能做一个动作——做第 1 个。第二十一天，唯一能改变分数的动作仍然只有一个：把一篇稿发出去。</strong></p>
+<hr />
+<h2>⚠️ 数据核实提醒</h2>
+<ol>
+<li><strong>十万卡超集群（题 1）</strong>："全国产""真机亮相"为官方与媒体表述，<strong>未披露芯片型号与实测性能</strong>；"能装一个宇宙"为比喻；乌兰察布数据为央视财经口径。</li>
+<li><strong>Anthropic 北极星（题 2）</strong>：FT 引述知情人士，<strong>未确认交易</strong>；10% 为"10% 以上票息/收益率"；420 亿博通背书为报道口径；勿写"已完成"。</li>
+<li><strong>DeepSeek V4.1-Flash-1017（题 3）</strong>：小版本更新，非新模型；具体基准分数须查官方 changelog。</li>
+<li><strong>AMD/World Labs（题 4）</strong>：以官方公告为准；"李飞飞任职"须二次确认。</li>
+<li><strong>Meta Muse Wonder（题 5）</strong>："56 分追平"为第三方榜单口径。</li>
+<li>本轮采集以 Brave/Perplexity 搜索为主，<strong>未做交叉全文核验</strong>；正式出稿前须打开原文链接二次确认。</li>
+</ol>
+<hr />
+<p><em>生成：content agent | 数据源：1018 上午采集 + 1018 选题方案 + 内容池体检 | 晚间推送（第二十一天）</em></p><div class="pager"><a class="l" href="2026-10-17-选题方案.html">← 2026-10-17 选题方案</a><a class="r" href="2026-10-18-选题方案.html">2026-10-18 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

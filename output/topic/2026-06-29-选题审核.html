@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0629 选题审核</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-06-29</div><h1>0629 选题审核</h1>
+<h2>审核标准</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>权重</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>30%</td>
+<td>社交媒体讨论量、搜索趋势、发布时效性</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>40%</td>
+<td>是否有差异化视角，不是简单搬运</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>30%</td>
+<td>国内用户/开发者是否关心</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>通过标准</strong>: ✅ 80+通过 | ⚠️ 60-79待优化 | ❌ 60以下不通过</p>
+<hr />
+<h2>选题1：GPT-5.6三胞胎登场，但你可能用不上</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>28/30</td>
+<td>3天前发布，全网顶流热点，OpenAI官宣+VentureBeat+Axios多家报道</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>34/40</td>
+<td>"模型越强越远离普通人"切入较好，但"管制限制"角度已有人写</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>27/30</td>
+<td>国内开发者极度关注GPT新模型，且因管制无法使用更添焦虑</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>89/100</strong></td>
+<td>✅ 通过</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>选题2：Claude Fable 5封禁20天——AI出口管制时代来了</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>27/30</td>
+<td>持续20天的热点，最新进展是6月27日Lutnick信件，持续有新发展</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>36/40</td>
+<td>"开发者模型供应链冗余"是实操切入点，独特且有价值</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>28/30</td>
+<td>国内Claude用户众多（报告称大多数中国开发者首选Claude），直接受影响</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>91/100</strong></td>
+<td>✅ 通过</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>选题3：Transformer之父跳槽OpenAI——Google DeepMind为何留不住人</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>28/30</td>
+<td>Fortune、Axios、TechCrunch、Business Insider四大媒体报道，11小时前最新分析</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>32/40</td>
+<td>"发明者离开发明地"角度不错，但人才流动类文章已有不少同质化风险</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>24/30</td>
+<td>国内关注度中等，Shazeer知名度高但对普通开发者日常影响有限</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>84/100</strong></td>
+<td>✅ 通过</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>选题4：Windsurf消失了——Cognition如何用一次OTA重写AI编码格局</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>22/30</td>
+<td>6月2日发生（27天前），不算即时热点，但Cascade 7月1日EOL在即</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>36/40</td>
+<td>"IDE变Agent控制台"是极佳的范式转移切入点，国内少有深度分析</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>26/30</td>
+<td>Windsurf国内用户群体大，切换带来困惑，实操价值高</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>84/100</strong></td>
+<td>✅ 通过</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>选题5：Claude进入Apple生态——WWDC 2026最被低估的变化</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>24/30</td>
+<td>WWDC刚结束一周左右，热度尚可但不在最顶流</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>34/40</td>
+<td>"LLM变供应商"切入好，Foundation Models框架的开发者视角少有人写</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>22/30</td>
+<td>Apple开发者关注，但iOS 27 beta刚出，实际使用群体有限</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>80/100</strong></td>
+<td>✅ 通过（刚好达标）</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>选题6：MCP协议一统天下——从Salesforce到Microsoft到Chrome都在用</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>22/30</td>
+<td>非单一事件热点，而是趋势汇总，6月多家同时采纳</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>35/40</td>
+<td>"USB-C时刻"类比精准，18个月从嘲笑到标准的故事线有吸引力</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>26/30</td>
+<td>MCP在国内开发者圈热度很高，年初就有大量讨论</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>83/100</strong></td>
+<td>✅ 通过</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>选题7：2026本地Agent大讨论——288条评论告诉你真实体验</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>20/30</td>
+<td>Reddit单帖172票，热度不算极高</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>30/40</td>
+<td>社区整理类内容有价值但不够独特，国内也有类似汇总</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>24/30</td>
+<td>本地部署在国内有强需求（隐私+管制），但LocalLLaMA多数内容是英文</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>74/100</strong></td>
+<td>⚠️ 待优化</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>优化建议</strong>: 如能补充国内本地Agent方案对比（如通义千问本地版、DeepSeek开源模型），差异化会更强。</p>
+<hr />
+<h2>选题8：AI编码工具2026年中盘点——Claude Code/Cursor/Devin三国杀</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>24/30</td>
+<td>对比文章6月激增，持续热议</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>28/40</td>
+<td>"80/15/5法则"有亮点，但三者对比文章已极度同质化，很难再写出新意</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>28/30</td>
+<td>国内开发者高度关注，选型是刚需</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>80/100</strong></td>
+<td>✅ 通过（边缘通过）</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>选题9：AI模型出口管制——中国开发者如何应对</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>26/30</td>
+<td>GPT-5.6+Fable 5同时受限，话题极热</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>36/40</td>
+<td>国内视角写管制应对策略，"地下生态"角度独特且真实</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>30/30</td>
+<td>直接关系国内开发者切身利益，最高关注度</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>92/100</strong></td>
+<td>✅ 通过</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>选题10：从聊天到做事——2026年Agentic AI的三个关键转变</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度</td>
+<td>20/30</td>
+<td>趋势总结类，无单一爆发事件</td>
+</tr>
+<tr>
+<td>独特角度</td>
+<td>32/40</td>
+<td>"三个转变"框架清晰但稍显泛泛，需要更具体的案例支撑</td>
+</tr>
+<tr>
+<td>国内关注</td>
+<td>24/30</td>
+<td>Agent是国内AI圈热词，但宏观趋势文容易显得"正确的废话"</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>76/100</strong></td>
+<td>⚠️ 待优化</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>优化建议</strong>: 缩小范围，聚焦一个具体案例（如Salesforce Agentforce的multi-agent实战），比"三个转变"更有说服力。</p>
+<hr />
+<h2>审核汇总</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>分数</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GPT-5.6三胞胎登场</td>
+<td>89</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Claude Fable 5封禁20天</td>
+<td>91</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Transformer之父跳槽OpenAI</td>
+<td>84</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Windsurf消失→Devin Desktop</td>
+<td>84</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Claude进入Apple生态</td>
+<td>80</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>6</td>
+<td>MCP协议一统天下</td>
+<td>83</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>7</td>
+<td>本地Agent大讨论</td>
+<td>74</td>
+<td>⚠️ 待优化</td>
+</tr>
+<tr>
+<td>8</td>
+<td>AI编码工具2026年中盘点</td>
+<td>80</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>9</td>
+<td>AI模型出口管制-中国开发者</td>
+<td>92</td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Agentic AI三个转变</td>
+<td>76</td>
+<td>⚠️ 待优化</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>通过</strong>: 8个 | <strong>待优化</strong>: 2个 | <strong>不通过</strong>: 0个</p>
+<p><strong>TOP 3推荐写作顺序</strong>:<br />
+1. 🥇 选题9 (92分) - AI模型出口管制：中国开发者应对 → 最贴合读者利益<br />
+2. 🥈 选题2 (91分) - Claude Fable 5封禁启示录 → 时效性+实操价值<br />
+3. 🥉 选题1 (89分) - GPT-5.6发布解读 → 顶流热点，流量保证</p><div class="pager"><a class="l" href="2026-06-29-今日选题完成总结.html">← 2026-06-29 今日选题完成总结</a><a class="r" href="2026-06-29-选题方案.html">2026-06-29 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>今日AI热点 - 0331</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-03-31</div><h1>今日AI热点 - 0331</h1>
+<hr />
+<h3>🔥 核心主题：Agent Harness（AI代理约束框架）</h3>
+<ol>
+<li>
+<p><strong>Datadog 提出 Harness-First Engineering：用可观测性驱动的 Harness 替代人工代码审查</strong><br />
+   - 来源：Datadog Engineering Blog<br />
+   - 原文：<a href="https://www.datadoghq.com/blog/ai/harness-first-agents/">Closing the verification loop: Observability-driven harnesses for agents</a><br />
+   - 要点：Datadog 内部用 Agent 构建了 redis-rust（内存减少87%）和 Helix（Kafka 兼容流引擎），核心理念是"harness 做验证，agent 做生成"，用确定性仿真测试+TLA+形式化规约+生产流量影子测试替代人工 code review<br />
+   - 热度：⭐⭐⭐⭐⭐ 大厂实践，方法论级别</p>
+</li>
+<li>
+<p><strong>Eric Mann：The Agentic Harness Problem — AI Agents 需要比 Code Review 更好的护栏</strong><br />
+   - 来源：Eric Mann's Blog (3/24)<br />
+   - 原文：<a href="https://eric.mann.blog/the-agentic-harness-problem-why-ai-agents-need-better-guardrails-than-code-reviews/">Why AI Agents Need Better Guardrails Than Code Reviews</a><br />
+   - 要点：真实案例——多 Agent 团队构建密码学项目，核心签名仪式从未被实现，bonus 功能却很精致。Agent 优化局部完整性但丢失全局一致性。修复方案：里程碑完成门、数据契约、集成断言、占位符追踪<br />
+   - 热度：⭐⭐⭐⭐ 一手踩坑经验</p>
+</li>
+<li>
+<p><strong>Gambit — 开源 Agent Harness 框架，91 stars</strong><br />
+   - 来源：Show HN (1/16)<br />
+   - 原文：<a href="https://github.com/bolt-foundry/gambit">Gambit on GitHub</a><br />
+   - 要点：定义类型化 "deck" 作为 agent 工作流单元，支持输入输出验证、guardrail、本地 trace 调试 UI，91 pts / 27 comments，社区认可度高<br />
+   - 热度：⭐⭐⭐⭐</p>
+</li>
+<li>
+<p><strong>Poncho — Multiplayer Agent Harness，面向团队的 Agent 部署框架</strong><br />
+   - 来源：Show HN (2/18)<br />
+   - 原文：<a href="https://github.com/cesr/poncho-ai">Poncho on GitHub</a><br />
+   - 要点：AGENT.md + Skills 约定（兼容 Claude Code/OpenClaw），内置 Web UI、Slack/Telegram 集成、human-in-the-loop 审批、browser automation，定位是"让团队直接用 Agent"<br />
+   - 热度：⭐⭐⭐</p>
+</li>
+<li>
+<p><strong>Agent Orchestrator — 本地优先的 Harness Engineering 控制面板</strong><br />
+   - 来源：Show HN (3/29)<br />
+   - 原文：<a href="https://news.ycombinator.com/item?id=47562440">HN Discussion</a><br />
+   - 要点：14 pts，面向 DevOps 的 Agent 编排和治理工具<br />
+   - 热度：⭐⭐⭐</p>
+</li>
+<li>
+<p><strong>Oh-my-agent — Real Projects 的结构化 Agent Harness</strong><br />
+   - 来源：Show HN (3/17)<br />
+   - 原文：<a href="https://github.com/first-fluke/oh-my-agent">oh-my-agent on GitHub</a><br />
+   - 要点：面向真实项目的结构化约束框架</p>
+</li>
+<li>
+<p><strong>Hipocampus — Agent 持久记忆 Harness</strong><br />
+   - 来源：Show HN (3/18)<br />
+   - 原文：<a href="https://github.com/kevin-hs-sohn/hipocampus">hipocampus on GitHub</a><br />
+   - 要点：解决 Agent 跨会话记忆问题的 harness 方案</p>
+</li>
+</ol>
+<hr />
+<h3>🚀 创业公司/新产品</h3>
+<ol>
+<li>
+<p><strong>Agent Browser Protocol — 开源 AI Agent 浏览器，155 stars</strong><br />
+   - 原文：<a href="https://github.com/theredsix/agent-browser-protocol">GitHub</a><br />
+   - 热度：⬆️ 155 pts | 💬 55 comments<br />
+   - 要点：为 AI Agent 构建的专用浏览器协议</p>
+</li>
+<li>
+<p><strong>Vessel Browser — 面向 AI 的开源浏览器</strong><br />
+   - 原文：<a href="https://quantaintellect.com/">Vessel</a><br />
+   - 热度：⬆️ 6 pts | 💬 5 comments</p>
+</li>
+<li>
+<p><strong>HolyCode — Docker 中运行 OpenCode，使用 Claude 订阅，30 个工具</strong><br />
+   - 原文：<a href="https://github.com/CoderLuii/HolyCode">GitHub</a><br />
+   - 发布日期：3/31（今天）</p>
+</li>
+<li>
+<p><strong>AgentLair — 给 AI Agent 邮件身份和凭证保险库</strong><br />
+   - 原文：<a href="https://agentlair.dev/">agentlair.dev</a><br />
+   - 发布日期：3/30（昨天）</p>
+</li>
+<li>
+<p><strong>Kora — 37万行 Rust 写的 AI 原生 OS 层</strong><br />
+   - 原文：<a href="https://intuitivecompute.com">intuitivecompute.com</a><br />
+   - 发布日期：3/26</p>
+</li>
+</ol>
+<hr />
+<h3>🏢 模型厂商动态</h3>
+<ol>
+<li>
+<p><strong>OpenAI GPT-5.3-Codex 需要身份验证，静默路由问题</strong><br />
+   - 原文：<a href="https://twitter.com/embirico/status/2021376881942200801">Twitter</a><br />
+   - 要点：GPT-5.3-Codex 被部分用户报告静默路由到 5.2</p>
+</li>
+<li>
+<p><strong>GPT-5.3-Codex-Spark 研究预览版发布</strong><br />
+   - 原文：<a href="https://twitter.com/OpenAI/status/2022009582210715925">OpenAI Twitter</a></p>
+</li>
+</ol>
+<hr />
+<h3>🔬 协议与标准</h3>
+<ol>
+<li>
+<p><strong>Agent Action Protocol (AAP) — "MCP 让我们起步，但不够用"</strong><br />
+   - 原文：<a href="https://github.com/agentactionprotocol/aap/">GitHub</a><br />
+   - 热度：⬆️ 13 pts | 💬 2 comments<br />
+   - 要点：MCP 的不足之处和新协议提案</p>
+</li>
+<li>
+<p><strong>Skills 正在悄然成为 Agent 知识的标准单元</strong><br />
+   - 原文：<a href="https://news.ycombinator.com/item?id=47475832">HN Discussion</a><br />
+   - 热度：⬆️ 9 pts | 💬 13 comments</p>
+</li>
+<li>
+<p><strong>DarkMatter — P2P 网状网络协议，面向 AI Agent 间通信</strong><br />
+   - 原文：<a href="https://loseylabs.ai/docs">loseylabs.ai/docs</a></p>
+</li>
+</ol>
+<hr />
+<h3>🧑‍💻 开发者工具与实践</h3>
+<ol>
+<li>
+<p><strong>OpenCode — 开源 AI 编码 Agent，1272 pts / 622 comments</strong><br />
+   - 原文：<a href="https://opencode.ai/">opencode.ai</a><br />
+   - 发布日期：3/20<br />
+   - 要点：开源编码 Agent，HN 超高热度<br />
+   - 热度：⭐⭐⭐⭐⭐</p>
+</li>
+<li>
+<p><strong>GitAgent — 把任意 Git 仓库变成 AI Agent 的开放标准，147 pts</strong><br />
+   - 原文：<a href="https://www.gitagent.sh/">gitagent.sh</a><br />
+   - 发布日期：3/14<br />
+   - 热度：⬆️ 147 pts | 💬 39 comments</p>
+</li>
+<li>
+<p><strong>Modulus — 跨仓库知识编排，让多个编码 Agent 共享项目记忆</strong><br />
+   - 原文：<a href="https://modulus.so">modulus.so</a><br />
+   - 发布日期：3/10<br />
+   - 热度：⬆️ 15 pts | 💬 4 comments</p>
+</li>
+<li>
+<p><strong>Paseo — 开源编码 Agent 界面（桌面 + 移动 + CLI）</strong><br />
+   - 原文：<a href="https://github.com/getpaseo/paseo">GitHub</a><br />
+   - 发布日期：3/26</p>
+</li>
+</ol>
+<hr />
+<h3>🔒 AI Agent 安全</h3>
+<ol>
+<li>
+<p><strong>AI 编码 Agent 意外引入易受攻击的依赖</strong><br />
+   - 原文：<a href="https://news.ycombinator.com/item?id=47387054">HN Discussion</a><br />
+   - 发布日期：3/15<br />
+   - 热度：⬆️ 7 pts | 💬 16 comments</p>
+</li>
+<li>
+<p><strong>Vectimus — 用 Cedar 策略引擎给 AI 编码 Agent 做权限管控</strong><br />
+   - 原文：<a href="https://github.com/vectimus/vectimus">GitHub</a><br />
+   - 发布日期：3/26</p>
+</li>
+<li>
+<p><strong>AgentArmor — 开源 8 层安全框架，面向 AI Agent</strong><br />
+   - 原文：<a href="https://github.com/Agastya910/agentarmor">GitHub</a><br />
+   - 发布日期：3/14<br />
+   - 热度：⬆️ 10 pts | 💬 6 comments</p>
+</li>
+<li>
+<p><strong>EU AI Act 合规倒计时（2026年8月截止），多个开源合规中间件涌现</strong><br />
+   - AgentGuard：<a href="https://github.com/Sagar-Gogineni/agentguard">GitHub</a><br />
+   - 合规层：<a href="https://news.ycombinator.com/item?id=47141347">HN</a></p>
+</li>
+</ol>
+<hr />
+<h3>💬 社区热议</h3>
+<ol>
+<li>
+<p><strong>"AI Agent 发了一篇攻击我的文章" — 2346 pts 的年度热帖</strong><br />
+   - 原文：<a href="https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/">theshamblog.com</a><br />
+   - 后续：<a href="https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/">Part 2</a> (768 pts)<br />
+   - 要点：AI Agent 自主发布了一篇攻击博主的文章，引发巨大争议</p>
+</li>
+<li>
+<p><strong>Budibase AI Agents Beta — 模型无关的内部工作流 Agent</strong><br />
+   - 原文：<a href="https://budibase.com/blog/updates/ai-agents-beta/">Budibase Blog</a><br />
+   - 热度：⬆️ 7 pts</p>
+</li>
+<li>
+<p><strong>RetroShift — 运行、构建和治理 DevOps AI Agent 工作流</strong><br />
+   - 原文：<a href="https://retroshift.dev/">retroshift.dev</a></p>
+</li>
+<li>
+<p><strong>Lukan — 单个 Rust 二进制文件的开源 Agentic 工作站</strong><br />
+   - 原文：<a href="https://lukan.ai">lukan.ai</a></p>
+</li>
+</ol><div class="pager"><a class="l" href="2026-02-15-今日AI热点.html">← 2026-02-15 今日AI热点</a><a class="r" href="2026-03-31-选题方案.html">2026-03-31 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

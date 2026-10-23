@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0212 选题方案</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-02-12</div><h1>0212 选题方案</h1>
+<p>生成时间：2026-02-12 17:00</p>
+<hr />
+<h2>选题1：Opus 4.6 发布 - AI编码能力再突破</h2>
+<p><strong>事件描述</strong><br />
+Anthropic 发布 Opus 4.6，在 agentic coding、computer use、tool use 等领域表现领先业界，大幅提升了AI的实际应用能力。</p>
+<p><strong>核心角度</strong><br />
+从实际使用场景出发，对比 Opus 4.5 和 4.6 在编码、工具使用等方面的差异，给出升级建议和最佳实践。</p>
+<p><strong>标题备选</strong><br />
+1. Opus 4.6 来了：AI编码能力提升多少？实测告诉你<br />
+2. Anthropic 放大招：Opus 4.6 在这5个场景碾压竞品<br />
+3. 升级 Opus 4.6 前，你需要知道的3件事</p>
+<p><strong>写作方式</strong><br />
+产品体验 + 干货教程</p>
+<p><strong>大纲</strong><br />
+1. Opus 4.6 核心升级点解析<br />
+2. 实测对比：4.5 vs 4.6 在编码场景的表现<br />
+3. 哪些场景最值得用 4.6？<br />
+4. 升级建议和注意事项</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://www.anthropic.com/news">Anthropic News</a><br />
+- <a href="https://news.ycombinator.com/">HN讨论</a></p>
+<hr />
+<h2>选题2：Claude 救了一个家庭 - AI医疗应用的边界在哪</h2>
+<p><strong>事件描述</strong><br />
+Reddit 用户分享：上传7年医疗数据到 Claude，Opus 4.5 发现医生漏掉的 Beta Thalassemia Minor 特征，避免了严重的生育风险。</p>
+<p><strong>核心角度</strong><br />
+不是鼓吹AI替代医生，而是探讨：AI作为"第二意见"在医疗场景的价值和边界。强调数据管理的重要性。</p>
+<p><strong>标题备选</strong><br />
+1. 7年医疗数据喂给Claude，它发现了医生漏掉的遗传病<br />
+2. AI不会替代医生，但它能做你的"第二意见"<br />
+3. 这个Reddit故事告诉你：为什么要保存自己的医疗数据</p>
+<p><strong>写作方式</strong><br />
+故事 + 观点分享</p>
+<p><strong>大纲</strong><br />
+1. Reddit 真实案例还原<br />
+2. AI在医疗场景的优势：模式识别 + 长期数据分析<br />
+3. AI医疗应用的边界：辅助而非替代<br />
+4. 普通人如何管理自己的医疗数据</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://www.reddit.com/r/ClaudeAI/comments/1r2ku2x/claude_deduced_my_medical_anomaly_that_doctors/">Reddit原帖</a></p>
+<hr />
+<h2>选题3：Claude Code被"降智"？社区炸锅背后的真相</h2>
+<p><strong>事件描述</strong><br />
+HN热帖（906 upvotes，589评论）讨论 Claude Code 性能下降问题，社区用户反馈编码质量不如之前。</p>
+<p><strong>核心角度</strong><br />
+分析"降智"现象背后的可能原因（模型更新、成本控制、用户预期变化），给出应对策略。</p>
+<p><strong>标题备选</strong><br />
+1. Claude Code被"降智"了？906个程序员吵翻了<br />
+2. 你的Claude Code变笨了吗？3个方法验证+应对<br />
+3. AI模型"降智"背后：成本、质量、用户预期的三角博弈</p>
+<p><strong>写作方式</strong><br />
+观点分享 + 干货教程</p>
+<p><strong>大纲</strong><br />
+1. 社区热议：Claude Code到底怎么了<br />
+2. "降智"的3种可能原因分析<br />
+3. 如何验证你的Claude Code是否变差<br />
+4. 应对策略：Prompt优化 + 模型选择</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://symmetrybreak.ing/blog/claude-code-is-being-dumbed-down/">HN讨论</a><br />
+- <a href="https://news.ycombinator.com/item?id=46978710">HN评论区</a></p>
+<hr />
+<h2>选题4：65行Markdown玩转Claude Code - 极简主义的胜利</h2>
+<p><strong>事件描述</strong><br />
+HN用户分享：用65行Markdown实现了让Claude Code惊艳的功能，证明简洁的Prompt设计比复杂的更有效。</p>
+<p><strong>核心角度</strong><br />
+Prompt工程的"少即是多"哲学，分析为什么简洁的指令反而效果更好，给出Markdown Prompt的最佳实践。</p>
+<p><strong>标题备选</strong><br />
+1. 65行Markdown让Claude Code惊艳，秘诀是什么？<br />
+2. Prompt越长越好？这个案例告诉你：少即是多<br />
+3. 我用65行Markdown驯服了Claude Code</p>
+<p><strong>写作方式</strong><br />
+干货教程 + 案例分析</p>
+<p><strong>大纲</strong><br />
+1. 案例还原：65行Markdown做了什么<br />
+2. 为什么简洁的Prompt反而更有效<br />
+3. Markdown Prompt的3个设计原则<br />
+4. 实战：如何写出高效的Markdown Prompt</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://tildeweb.nl/~michiel/65-lines-of-markdown-a-claude-code-sensation.html">原文</a></p>
+<hr />
+<h2>选题5：魔兽农民语音包 - 给Claude Code加点乐趣</h2>
+<p><strong>事件描述</strong><br />
+开发者为Claude Code开发了魔兽争霸3农民语音通知插件，让编码过程更有趣。HN 273 upvotes，105评论。</p>
+<p><strong>核心角度</strong><br />
+不是单纯介绍插件，而是探讨：如何让AI工具使用体验更人性化、更有趣，提升长期使用的愉悦感。</p>
+<p><strong>标题备选</strong><br />
+1. 给Claude Code装上魔兽农民语音，编码快乐翻倍<br />
+2. AI工具也需要"人性化"：从魔兽语音包说起<br />
+3. 这个程序员给Claude Code加了魔兽音效，273人点赞</p>
+<p><strong>写作方式</strong><br />
+产品体验 + 观点分享</p>
+<p><strong>大纲</strong><br />
+1. 魔兽农民语音包介绍和安装<br />
+2. 为什么AI工具需要"人性化"设计<br />
+3. 其他提升AI工具使用体验的方法<br />
+4. 推荐：值得尝试的Claude Code插件</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://github.com/tonyyont/peon-ping">GitHub项目</a><br />
+- <a href="https://news.ycombinator.com/item?id=46985151">HN讨论</a></p>
+<hr />
+<h2>选题6：GLM-5来了 - 国产大模型的长期Agent能力突破</h2>
+<p><strong>事件描述</strong><br />
+智谱AI发布GLM-5，专注复杂系统工程和长时间Agent任务，HN 361 upvotes，443评论。</p>
+<p><strong>核心角度</strong><br />
+对比国内外大模型在Agent能力上的差异，分析GLM-5的技术特点和适用场景，给国内开发者选型建议。</p>
+<p><strong>标题备选</strong><br />
+1. GLM-5发布：国产大模型在Agent能力上追上来了吗？<br />
+2. 智谱AI的野心：用GLM-5挑战长期Agent任务<br />
+3. GLM-5 vs GPT-4/Claude：谁更适合做Agent？</p>
+<p><strong>写作方式</strong><br />
+新技术突破 + 对比分析</p>
+<p><strong>大纲</strong><br />
+1. GLM-5核心技术解析<br />
+2. 长期Agent任务的挑战和GLM-5的解决方案<br />
+3. 对比测试：GLM-5 vs 国际主流模型<br />
+4. 国内开发者如何选择大模型</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://z.ai/blog/glm-5">GLM-5 Blog</a><br />
+- <a href="https://news.ycombinator.com/item?id=46974853">HN讨论</a></p>
+<hr />
+<h2>选题7：GPT-5超越联邦法官 - AI法律推理能力的里程碑</h2>
+<p><strong>事件描述</strong><br />
+学术论文显示GPT-5在法律推理实验中表现超越联邦法官，HN 260 upvotes，179评论。</p>
+<p><strong>核心角度</strong><br />
+不是渲染"AI替代法官"，而是分析：AI在法律领域的优势和局限，以及对法律行业的影响。</p>
+<p><strong>标题备选</strong><br />
+1. GPT-5超越联邦法官？别急着下结论<br />
+2. AI法律推理能力突破，但离"替代法官"还很远<br />
+3. 这篇论文告诉你：GPT-5在法律领域能做什么</p>
+<p><strong>写作方式</strong><br />
+观点分享 + 深度分析</p>
+<p><strong>大纲</strong><br />
+1. 论文核心发现解读<br />
+2. AI在法律推理上的优势：逻辑一致性 + 海量案例<br />
+3. AI的局限：缺乏人文判断和社会经验<br />
+4. 对法律行业的影响：辅助而非替代</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6155012">SSRN论文</a><br />
+- <a href="https://news.ycombinator.com/item?id=46982792">HN讨论</a></p>
+<hr />
+<h2>选题8：Agent Alcove - 让AI模型互相辩论</h2>
+<p><strong>事件描述</strong><br />
+新产品Agent Alcove让Claude、GPT、Gemini在论坛中进行辩论，HN 54 upvotes，17评论。</p>
+<p><strong>核心角度</strong><br />
+探讨AI辩论的价值：不是娱乐，而是通过多模型对话发现盲点、验证观点。</p>
+<p><strong>标题备选</strong><br />
+1. 让Claude和GPT互相辩论，能擦出什么火花？<br />
+2. Agent Alcove：AI辩论不是娱乐，是验证观点的新方法<br />
+3. 我让3个AI模型辩论了一天，发现了这些</p>
+<p><strong>写作方式</strong><br />
+产品体验 + 观点分享</p>
+<p><strong>大纲</strong><br />
+1. Agent Alcove产品介绍和使用体验<br />
+2. AI辩论的价值：多视角 + 盲点发现<br />
+3. 实战案例：用AI辩论验证选题/观点<br />
+4. 其他AI协作工具推荐</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://agentalcove.ai">Agent Alcove</a><br />
+- <a href="https://news.ycombinator.com/item?id=46980273">HN讨论</a></p>
+<hr />
+<h2>选题9：Anthropic承诺覆盖电价上涨 - AI公司的社会责任</h2>
+<p><strong>事件描述</strong><br />
+Anthropic宣布承担因AI训练导致的数据中心电价上涨成本，HN 91 upvotes，47评论。</p>
+<p><strong>核心角度</strong><br />
+从企业社会责任角度分析：AI公司如何平衡技术发展和环境影响，这对行业意味着什么。</p>
+<p><strong>标题备选</strong><br />
+1. Anthropic承诺覆盖电价上涨，AI公司该承担什么责任？<br />
+2. AI训练耗电惊人，谁来买单？Anthropic给出了答案<br />
+3. 从Anthropic的承诺看：AI公司的社会责任边界</p>
+<p><strong>写作方式</strong><br />
+观点分享 + 行业分析</p>
+<p><strong>大纲</strong><br />
+1. Anthropic的承诺内容和背景<br />
+2. AI训练的能源消耗现状<br />
+3. AI公司的社会责任：技术发展 vs 环境影响<br />
+4. 对行业的影响和启示</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://www.anthropic.com/news/covering-electricity-price-increases">Anthropic News</a><br />
+- <a href="https://news.ycombinator.com/item?id=46981058">HN讨论</a></p>
+<hr />
+<h2>选题10：CodeRLM - 为LLM Agent打造的代码索引工具</h2>
+<p><strong>事件描述</strong><br />
+开源项目CodeRLM基于Tree-sitter为LLM Agent提供更好的代码索引能力，HN 52 upvotes，17评论。</p>
+<p><strong>核心角度</strong><br />
+分析AI编码工具的痛点：代码理解能力不足，CodeRLM如何解决，以及对开发者的实际价值。</p>
+<p><strong>标题备选</strong><br />
+1. CodeRLM：让AI更懂你的代码<br />
+2. AI编码工具的痛点：代码理解，CodeRLM来解决<br />
+3. 这个开源工具让Claude Code的代码理解能力提升3倍</p>
+<p><strong>写作方式</strong><br />
+干货教程 + 产品体验</p>
+<p><strong>大纲</strong><br />
+1. AI编码工具的代码理解痛点<br />
+2. CodeRLM技术原理：Tree-sitter + 代码索引<br />
+3. 实测：CodeRLM对AI编码效率的提升<br />
+4. 安装和使用教程</p>
+<p><strong>素材链接</strong><br />
+- <a href="https://github.com/JaredStewart/coderlm/blob/main/server/REPL_to_API.md">CodeRLM GitHub</a><br />
+- <a href="https://news.ycombinator.com/item?id=46974515">HN讨论</a></p>
+<hr />
+<h2>下一步</h2>
+<p>等待审核评分，通过后保存到选题库。</p><div class="pager"><a class="l" href="2026-02-12-选题审核-更新.html">← 2026-02-12 选题审核-更新</a><a class="r" href="2026-02-12-选题方案-更新.html">2026-02-12 选题方案-更新 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>

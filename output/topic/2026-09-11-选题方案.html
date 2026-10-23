@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>0911 选题方案与审核</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-09-11</div><h1>0911 选题方案与审核</h1>
+<blockquote>
+<p>生成时间：2026-09-11 10:00 (Asia/Shanghai)<br />
+来源热点：<code>01-选题管理/0911-今日AI热点.md</code><br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%</p>
+</blockquote>
+<hr />
+<h2>TOP 选题</h2>
+<h3>1. Claude 登录会话被盗：你的 AI 订阅正在被人白嫖 ✅ (92分)</h3>
+<ul>
+<li><strong>事件描述</strong>：Anthropic 向部分用户发警告邮件——有恶意分子用 infostealer 窃取 Claude 登录 session，复用 session 进账户消耗额度。因 Anthropic 只追踪总量不追踪明细，盗刷可潜伏数月不被发现。</li>
+<li><strong>核心角度</strong>：不写"又有安全事故了"，而是讲一个反常识的点——<strong>你被盗了但你永远不会知道</strong>。深入拆解 session token 这种"免密登录凭证"为什么比密码更危险，以及普通用户能做的自查动作。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 你的 Claude 正在被人偷偷用，而你永远收不到通知<br />
+  2. 黑客偷的不是你的密码，是你的"登录状态"<br />
+  3. 有人白嫖了我一个月的 Claude，Anthropic 只发了一封邮件</li>
+<li><strong>写作方式</strong>：事件分析 + 安全科普 + 自查清单</li>
+<li><strong>审核</strong>：热度 9 | 角度 9 | 国内关注 10 → <strong>92</strong></li>
+<li><strong>优先级</strong>：最高（本周主线，TechCrunch 原发，实用性强）</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>2. GitSpawn：AI 编程 Agent 在问你要授权之前，就已经执行了代码 ✅ (90分)</h3>
+<ul>
+<li><strong>事件描述</strong>：安全漏洞 GitSpawn 曝光——恶意仓库的 <code>.git/config</code> 可让 Git 在 Agent 启动时自动执行攻击者命令，且发生在信任提示之前，跑在用户权限下不在沙箱内。影响 Claude Code、Cursor、Codex、Goose、Qwen Code 等 7 款 Agent，部分厂商仍未修补。</li>
+<li><strong>核心角度</strong>：击穿所有人的心理安全假设——"我只在可信项目里用 Agent""它不是会先问我吗"。讲清楚"信任提示"这个安全设计为什么被绕过，以及一条自查命令（<code>git config --get core.fsmonitor</code>）。</li>
+<li><strong>标题备选</strong>：<br />
+  1. AI 编程工具在你点头之前，已经跑了别人的代码<br />
+  2. 你 clone 的那个仓库，可能在你打开 Cursor 的瞬间就动手了<br />
+  3. 一条 .git 配置，攻陷了 7 款主流 AI 编程 Agent</li>
+<li><strong>写作方式</strong>：安全科普 + 实操自查</li>
+<li><strong>审核</strong>：热度 8 | 角度 10 | 国内关注 9 → <strong>90</strong></li>
+<li><strong>优先级</strong>：高</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>3. 勒索团伙在用 Cursor + Claude 打真实入侵：AI 生产力倍增器的阴暗面 ✅ (87分)</h3>
+<ul>
+<li><strong>事件描述</strong>：威胁情报披露 Aurora 勒索团伙用 Cursor Agent（跑 Claude Sonnet）辅助对 10+ 组织的真实入侵（2026年4-5月）。手法是把攻击伪装成"授权渗透测试"来绕过安全控制。</li>
+<li><strong>核心角度</strong>：跳出"AI 会不会作恶"的抽象讨论，看真实攻击链——<strong>攻击者没有让 AI 自主行动，而是把 AI 当放大器用</strong>。这比科幻式的"AI 失控"叙事更值得警惕，因为它今天正在发生。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 勒索团伙的武器库里，多了一个 Cursor<br />
+  2. 他们没让 AI 自动攻击，只是让它帮忙——这才是最危险的<br />
+  3. AI 安全争论都错了：真正的风险不是失控，是被当枪使</li>
+<li><strong>写作方式</strong>：威胁情报解读 + 观点</li>
+<li><strong>审核</strong>：热度 8 | 角度 9 | 国内关注 8 → <strong>87</strong></li>
+<li><strong>优先级</strong>：高（可与选题 1、2 组成"AI Agent 安全周"系列）</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>4. Qwen3.8-27B：第一个让人敢"闭眼信任"的本地 Agent 模型 ✅ (86分)</h3>
+<ul>
+<li><strong>事件描述</strong>：r/LocalLLaMA 热帖——有用户让 Qwen3.8-27B 无人值守跑 8+ 小时 agentic 任务。27.78B 参数、Apache 2.0、原生 256K 上下文、17GB 内存可跑。</li>
+<li><strong>核心角度</strong>：关键不是跑分，是"trust"这个词——本地模型第一次让人觉得可以让它自己干活。结合"开源追平前沿"的趋势，讲消费级硬件上跑 Agent 的现实拐点。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 一个 27B 的本地模型，让我敢让它自己跑一整晚<br />
+  2. 17GB 内存跑 Agent：本地 AI 的拐点可能已经来了<br />
+  3. Qwen3.8-27B 实测：第一个可以"闭眼信任"的本地模型</li>
+<li><strong>写作方式</strong>：产品体验 + 技术教程</li>
+<li><strong>审核</strong>：热度 8 | 角度 9 | 国内关注 9 → <strong>86</strong></li>
+<li><strong>优先级</strong>：高（选题 1-3 全是负面，这条做正向平衡，适合小红书）</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>5. Kimi K3 登顶开源榜：开源与前沿的差距，真的闭合了吗 ✅ (85分)</h3>
+<ul>
+<li><strong>事件描述</strong>：Artificial Analysis v4.3 显示 Kimi K3（2.8T MoE）为开源权重第一、总榜第 7，距榜首 Fable 5.1 仅 6 分。同时 GLM-5.2（MIT 许可）在 SWE-bench Pro 上超过 GPT-5.5。</li>
+<li><strong>核心角度</strong>：不做又一个"中国模型牛逼"的爽文。冷静拆两个问题——① 差距在哪些维度真的闭合了，哪些还没 ② 对你我这样的使用者，这意味着什么（自托管的经济账、数据主权）。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 距全球第一只差 6 分：开源模型的最后一段路有多难走<br />
+  2. 可以自托管的模型，在编程上超过了美国旗舰<br />
+  3. Kimi K3 登顶开源榜：这一次不是营销话术</li>
+<li><strong>写作方式</strong>：数据分析 + 行业观点</li>
+<li><strong>审核</strong>：热度 9 | 角度 7 | 国内关注 10 → <strong>85</strong></li>
+<li><strong>优先级</strong>：中高</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>6. Claude Code 额度"涨了25%"，同一分钟承认是降了17% ✅ (81分)</h3>
+<ul>
+<li><strong>事件描述</strong>：8月29日 Anthropic 宣布 Claude Code 周额度永久上调 25%，同一线程承认相比现状其实是减少 17%。</li>
+<li><strong>核心角度</strong>：从一次公关话术翻车，讲 AI 订阅制正在进入的"降配时代"——涨价不好涨，就改计量单位。呼应 9月1日三家"定价重置"（座位价没变，账单涨了）。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 涨了 25%，也降了 17%：一句话看懂 AI 订阅的话术魔术<br />
+  2. AI 订阅开始"明涨暗降"了<br />
+  3. 没人涨座位价，但你的账单还是涨了</li>
+<li><strong>写作方式</strong>：事件分析 + 消费观察</li>
+<li><strong>审核</strong>：热度 7 | 角度 8 | 国内关注 8 → <strong>81</strong></li>
+<li><strong>优先级</strong>：中</li>
+<li><strong>状态</strong>：待深化</li>
+</ul>
+<h3>7. GPT-6 Astra 发布：OpenAI 自己说它不算 AGI ⚠️ (76分)</h3>
+<ul>
+<li><strong>事件描述</strong>：OpenAI 9月3日起分批放出 GPT-6 Astra，9月4-5日付费层全量。OpenAI 承认该模型未达到自家 AGI 门槛，监控机制被评"fragile"。</li>
+<li><strong>核心角度</strong>：想写的是"AGI 定义权"之争——当厂商自己设的门槛自己都过不去，AGI 这个词还剩多少意义。</li>
+<li><strong>标题备选</strong>：① OpenAI 发了 GPT-6，然后说这不算 AGI ② 当 AGI 的定义权回到厂商手里</li>
+<li><strong>审核</strong>：热度 9 | 角度 6 | 国内关注 8 → <strong>76</strong></li>
+<li><strong>修改建议</strong>：模型发布报道太多，角度不够锐。建议等社区实测数据出来再写，避免变成通稿。或者砍掉"发布"框架，只写"AGI 门槛"这一个点。</li>
+<li><strong>状态</strong>：待优化</li>
+</ul>
+<hr />
+<h2>📊 审核汇总</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>热度(30%)</th>
+<th>角度(40%)</th>
+<th>国内(30%)</th>
+<th>总分</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Claude 会话被盗</td>
+<td>9</td>
+<td>9</td>
+<td>10</td>
+<td><strong>92</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GitSpawn 漏洞</td>
+<td>8</td>
+<td>10</td>
+<td>9</td>
+<td><strong>90</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>3</td>
+<td>勒索团伙用 Cursor</td>
+<td>8</td>
+<td>9</td>
+<td>8</td>
+<td><strong>87</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Qwen3.8-27B 闭眼信任</td>
+<td>8</td>
+<td>9</td>
+<td>9</td>
+<td><strong>86</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Kimi K3 登顶开源榜</td>
+<td>9</td>
+<td>7</td>
+<td>10</td>
+<td><strong>85</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Claude Code 明涨暗降</td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+<td><strong>81</strong></td>
+<td>✅ 通过</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GPT-6 Astra 发布</td>
+<td>9</td>
+<td>6</td>
+<td>8</td>
+<td><strong>76</strong></td>
+<td>⚠️ 待优化</td>
+</tr>
+</tbody>
+</table></div>
+<p>✅ 通过 6 个 | ⚠️ 待优化 1 个</p>
+<hr />
+<h2>💡 组稿建议</h2>
+<p><strong>今日最优解：做"AI Agent 安全"三连</strong>（选题 1 + 2 + 3）</p>
+<p>三条都是本周内发生、都有原始信息源、都指向同一个主题：<strong>你每天在用的 AI 工具，安全假设已经失效</strong>。<br />
+- 选题 1（盗 token）→ 公众号深度，讲"隐形盗用"<br />
+- 选题 2（GitSpawn）→ 公众号+小红书，附自查命令，强实操<br />
+- 选题 3（勒索团伙）→ Twitter/X Thread，观点锐利</p>
+<p><strong>平衡选题</strong>：选题 4（Qwen3.8-27B）适合小红书，正向、有网感、国内开发者关注度高。</p>
+<p><strong>系列化</strong>：选题 2 和 3 可以和 8月的"AI 编程工具供应链安全"（Cline 恶意包）串成系列，已有素材积累。</p><div class="pager"><a class="l" href="2026-09-11-今日AI热点.html">← 2026-09-11 今日AI热点</a><a class="r" href="2026-09-12-今日AI热点.html">2026-09-12 今日AI热点 →</a></div></article>
+<footer>自动生成 · 2026-10-23</footer>
+</div>
+</body></html>
