@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1024 上午选题方案</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-24</div><h1>1024 上午选题方案</h1>
+<blockquote>
+<p>生成时间：2026-10-24 10:00 (Asia/Shanghai)<br />
+数据源：gov.uk 官方新闻稿（AI Biosecurity Lab 一手）+ Bloomberg/新浪财经/虎嗅/21财经/腾讯新闻 + 新浪 AI 热点小时报（10/23 全天）+ 财联社/中国信通院<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1019「要身份证」→ 1020「门先关了」→ 1021「门里有人贴墙」→ 1021 晚「门框成 SKU」→ 1022「自家孩子把摄像头转向墙」→ 1023「外人来做渗透测试，发现摄像头有六个开关」→ <strong>1024「不修摄像头了——直接盖一座专门的楼，100 亿人民币起步」</strong></p>
+</blockquote>
+<hr />
+<h2>🚨 内容池体检（第二十八天）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>01-选题管理/01-待深化选题/</code></td>
+<td>🔴 <strong>49 张</strong>，全部未深化（连续第十四天不建卡）</td>
+</tr>
+<tr>
+<td><code>01-选题管理/02-创作中选题/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/草稿/</code></td>
+<td>🔴 最新仍是 <strong><code>0925-AI入侵澳医保.md</code></strong>（9/25 22:00），躺 <strong>29 天</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/待发布/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>03-内容成品/Twitter/草稿/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>06-运营管理/发布日历.md</code></td>
+<td>🔴 最新发布行停在 <strong>10/13</strong>；10/14–10/23 <strong>十天</strong>未填</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>连续第二十八天零出稿。今天仍然不建新卡。</strong></p>
+<p>十天前我在日历里写的是"明天第一件事是把 <code>0925-AI入侵澳医保.md</code> 推入待发布"。这句已经复制了十次，一次都没执行。所以今天的方案不再给"明日第一件事"，只给三步，每步不超过五分钟。</p>
+<hr />
+<h2>🎯 今日精选 TOP5</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>选题</th>
+<th>热度</th>
+<th>角度</th>
+<th>国内</th>
+<th>总分</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🧬 <strong>英国 AI 生物安全实验室开张：政府 1 亿英镑 + OpenAI/Anthropic 各 1 亿，合计最高 3 亿</strong></td>
+<td>9</td>
+<td>10</td>
+<td>7</td>
+<td><strong>89</strong></td>
+<td>⭐⭐ <strong>今日主稿</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>🇨🇳 <strong>DeepSeek 千亿融资收官 + 启动科创板 IPO 筹备（投前 5000 亿，上市预期 1.5–2.5 万亿）</strong></td>
+<td>10</td>
+<td>8</td>
+<td>10</td>
+<td><strong>93</strong></td>
+<td>⭐ 国内主稿（热度第一）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🚪 <strong>中国 AI 出口管制"虚惊"解除：23 项技术入目录，DeepSeek、MiniMax 已完成登记与海外授权</strong></td>
+<td>9</td>
+<td>9</td>
+<td>10</td>
+<td><strong>92</strong></td>
+<td>⭐ 政策稿（和 ② 并读）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🏛 <strong>国办发文：《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》</strong></td>
+<td>9</td>
+<td>8</td>
+<td>10</td>
+<td><strong>89</strong></td>
+<td>政策并稿 / 独立短稿</td>
+</tr>
+<tr>
+<td>5</td>
+<td>🤖 <strong>Claude Duet 开测：会自己开工、需要你批准才动手的常驻 Agent</strong>（含 Meta Muse / OpenAI Dots 三强同场）</td>
+<td>8</td>
+<td>8</td>
+<td>7</td>
+<td><strong>84</strong></td>
+<td>与技术主线接续</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3>① ⭐⭐ 今日主稿：不修摄像头了，盖一座楼</h3>
+<p><strong>一句话</strong>：10/24，英国<strong>政府出 1 亿英镑</strong>，OpenAI 出 <strong>1 亿英镑算力与模型额度</strong>，Anthropic 出 <strong>至多 1 亿模型额度</strong>，合起来最高 <strong>3 亿</strong>，建了<strong>全球第一个专门的 AI 生物安全实验室（AIBL）</strong>；定位是<strong>独立非营利机构</strong>，对标英国 AI 安全研究院（AISI）的运作方式。</p>
+<p><strong>为什么这是今天最该写的</strong>：<br />
+- 1023 的结论是"摄像头有六个开关，而且结构上关不掉"。今天英国给的答案不是"修开关"，而是<strong>绕开开关另建一套体系</strong>——把最强的生物能力放进一个<strong>专门建的组织</strong>里，用"可信访问"（trusted access）而不是"公开接口"来控制谁能用。<br />
+- 这正是主线走了六天的逻辑终端：<strong>闸门（1020）→ 监控失效（1022）→ 六个开关（1023）→ 干脆另起一栋楼（1024）</strong>。<br />
+- 而且这是<strong>第一份有两个前沿实验室真金白银背书、又有一手官方文件（gov.uk）</strong>的素材，写起来不需要推测。</p>
+<p><strong>核心事实（下笔前逐条核）</strong>：<br />
+- 政府：<strong>£100m</strong>；OpenAI：<strong>£100m</strong> 算力与模型额度 + 通过 <strong>Rosalind Biodefense 计划</strong>提供"受信任的模型访问"；Anthropic：<strong>至多 £100m</strong> 模型额度 + 模型访问 + 专门技术支持。<br />
+- 另两个伙伴：<strong>Google DeepMind</strong>（研究人员与生物安全专家合作，拟提供 Gemini 与科学模型的可信访问）、<strong>Basecamp Research</strong>（提供 AI 生物模型与能力）。<br />
+- 定位：<strong>世界第一个专门做 AI 生物安全的组织</strong>；目标是把 AI 用在<strong>更早发现生物威胁</strong>和<strong>加速疫苗/治疗手段的发现、开发与测试</strong>。<br />
+- 组织形态：<strong>独立非营利</strong>，对标 AISI，强调"有足够自治权，以一家前沿 AI-生物公司的速度运转"。<br />
+- 英国整体 AI 安全投入：报道口径约 <strong>8 亿英镑</strong> 的一揽子计划（含生物安全 £100m + 病原体对策 £65m），数字各家略有差异，<strong>公众号正文只写 gov.uk 确认的部分，其余标"据 Reuters/FT 报道"</strong>。</p>
+<p><strong>数据点（用来做"对照组"）</strong>：<br />
+- DeepSeek 今天这条：单轮 <strong>1000 亿元人民币（约 150 亿美元）</strong> 融资。<br />
+- <strong>英国的 AI 生物安全实验室：1 亿英镑 ≈ 9.5 亿人民币。</strong> 两家最前沿的实验室一共也只给到约 20 亿人民币的额度（且是<strong>算力/模型额度，不是现金</strong>）。<br />
+- 一句可写进开场的对比：<strong>"一家中国公司单轮拿的钱，够建十六个'世界第一个 AI 生物安全实验室'。而后者拿到的，大部分还不是现金，是 token。"</strong>（注意：这句是评论，必须紧跟"gov.uk 与 Bloomberg 的数字见链接"）</p>
+<p><strong>建议结构（公众号 2000–2400 字）</strong>：<br />
+- <strong>开场</strong>：三个数字并排——1000 亿人民币（DeepSeek 融资）/ 3 亿英镑（AIBL 总额）/ 六个（昨天那份报告里的致盲路径条数）。<br />
+- <strong>第一节｜这栋楼是干什么的</strong>：不是研究"AI 会不会造生物武器"，而是<strong>用 AI 去更早发现生物威胁、加速疫苗与治疗</strong>。方向是"用 AI 防御"而不是"查 AI 进攻"——这是最容易读错的地方。<br />
+- <strong>第二节｜钱怎么给的</strong>：政府 1 亿是<strong>现金</strong>，OpenAI 的 1 亿是<strong>算力和模型额度</strong>，Anthropic 的是<strong>至多 1 亿模型额度</strong>。同一栏数字里，只有三分之一是钱。<strong>"用自家产品投资一个安全机构"，是目前前沿实验室最省的杠杆。</strong><br />
+- <strong>第三节｜"可信访问"这个词</strong>：整份文件反复出现 trusted access。翻译成人话：<strong>不是给你 API，是给你一张门口的权限表。</strong> 接 1020「闸门」与 1023「六个开关」——当监控被证明不可靠，行业的选择不是把监控做可靠，而是<strong>让需要它的机构在门口排队</strong>。<br />
+- <strong>第四节｜组织形态是重点</strong>：独立非营利 + 对标 AISI + "以创业公司的速度运转"。这是把<strong>安全基础设施产品化</strong>：政府出资、公司出模型、机构自主跑。它可以被复制成一种国际模板（下一站很可能是欧洲或日本）。<br />
+- <strong>第五节｜国内对照（题②③并读）</strong>：同一天，DeepSeek 融资收官、筹备科创板；中国 AI 出口目录在做"边界"——<strong>一边在建安全实验室，一边在建许可证制度。两边都承认同一件事：最前沿的能力必须由制度来分配，而不是由市场。</strong><br />
+- <strong>结尾</strong>：1020 问"门什么时候开"，今天英国的回答是——<strong>"我们另开一扇，只放发到权限的人进。"</strong></p>
+<p><strong>平台</strong>：公众号（主）+ Twitter Thread（5 条，钩子："英国花 1 亿英镑建了个 AI 生物安全实验室。OpenAI 和 Anthropic 各给 1 亿——但是用 token 付的。"）+ 小红书（"世界第一个 AI 生物安全实验室，为什么大部分是算力不是钱"，700 字）</p>
+<p><strong>⚠️ 措辞红区</strong>：<br />
+- "世界第一个"是<strong>英国政府的自我定位</strong>，写"英方称世界首个"，不写成事实陈述；<br />
+- 公司承诺是"<strong>up to</strong> £200m"、"<strong>至多</strong> 1 亿模型额度"，别写成"已投入"；<br />
+- 不写"英国在防 AI 末日"——官方文件的口径是<strong>生物威胁 + 医学对策加速</strong>；<br />
+- 8 亿英镑整体包的数字口径不统一，<strong>正文只引 gov.uk</strong>；<br />
+- 原文：<a href="https://www.gov.uk/government/news/introducing-the-ai-biosecurity-lab" target="_blank" rel="noopener">https://www.gov.uk/government/news/introducing-the-ai-biosecurity-lab</a> ｜ <a href="https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo" target="_blank" rel="noopener">https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo</a> ｜ <a href="https://news.bloomberglaw.com/artificial-intelligence/uk-vows-100-million-for-biosecurity-lab-with-openai-anthropic" target="_blank" rel="noopener">https://news.bloomberglaw.com/artificial-intelligence/uk-vows-100-million-for-biosecurity-lab-with-openai-anthropic</a></p>
+<hr />
+<h3>② ⭐ 国内主稿（热度全场最高）：DeepSeek 千亿融资收官，开始筹备科创板</h3>
+<p><strong>一句话</strong>：10/22 彭博披露 DeepSeek 完成约 <strong>1000 亿元人民币（约 150 亿美元）</strong> 融资，投前估值约 <strong>5000 亿元</strong>，腾讯、宁德时代为最大外部出资方；同期<strong>筹备科创板上市</strong>，计划 2026 年底递交招股书、2027 年登陆，行业测算上市后市值 <strong>1.5–2.5 万亿</strong>。</p>
+<p><strong>抓人的三个细节</strong>（比金额更值得写）：<br />
+- <strong>融资目标至少上调过两次</strong>：500 亿 → 800 亿 → 约 1000 亿。<strong>是投资人抢，不是公司要。</strong><br />
+- <strong>股东名单本身就是一张产业链地图</strong>：石溪资本、中芯聚源、宁德时代、腾讯、国家人工智能产业基金——<strong>算力、能源、流量、国家资本，四样都到了。</strong><br />
+- <strong>为了上科创板，先把股东人数压到 200 人红线以下</strong>：中信证券在做投资方背景审核，把专项基金改成盲池备案，<strong>申报时股东只按一名计算</strong>。这条最"投行"，也最真实。</p>
+<p><strong>角度</strong>：不是"DeepSeek 又融了多少钱"，而是<strong>"中国 AI 从风险投资进入资本市场募资时代"</strong>——A 股的散户，很快会用自己的账户给大模型估值。对照 Anthropic 冲 IPO（10/2 老卡），<strong>中美两家头部实验室，在同一季度同时准备变成上市公司。</strong></p>
+<p><strong>平台</strong>：公众号（可独立成 1500 字）+ 小红书（"DeepSeek 1000 亿融资，有 5 件事比金额更值得看"）<br />
+<strong>来源</strong>：<br />
+- <a href="https://news.qq.com/rain/a/20261022A04SWO00" target="_blank" rel="noopener">https://news.qq.com/rain/a/20261022A04SWO00</a> （腾讯新闻，转彭博，含两次上调细节）<br />
+- <a href="https://finance.sina.com.cn/roll/2026-10-23/doc-iniweuqq8121411.shtml" target="_blank" rel="noopener">https://finance.sina.com.cn/roll/2026-10-23/doc-iniweuqq8121411.shtml</a> （新浪财经，含 IPO 筹备与 200 人红线细节）<br />
+- <a href="https://www.huxiu.com/article/4899527.html" target="_blank" rel="noopener">https://www.huxiu.com/article/4899527.html</a> （虎嗅，5000 亿投前估值与两轮 1500 亿）<br />
+- <a href="https://finance.sina.com.cn/wm/2026-10-23/doc-iniweqhw2055769.shtml" target="_blank" rel="noopener">https://finance.sina.com.cn/wm/2026-10-23/doc-iniweqhw2055769.shtml</a> （新浪财经，股东名单）</p>
+<hr />
+<h3>③ ⭐ 政策稿：中国 AI 出口管制的"虚惊"与边界</h3>
+<p><strong>一句话</strong>：10/16 商务部、科技部就修订《中国禁止出口限制出口技术目录》征求意见，涉 <strong>23 项人工智能技术</strong>（大模型、智能体、算力集群、信息处理）；海外一片"中国要限制 AI 出口"的解读。10/22 晚，央视"玉渊谭天"报道 <strong>DeepSeek、MiniMax 已完成登记手续并完成开源和海外授权使用</strong>；10/23 收盘，MiniMax 涨近 17%，智谱涨超 8%。</p>
+<p><strong>角度</strong>：<strong>不是禁令，是登记制。</strong> 目录管的是"技术所有权转让、境内授权境外使用、控制人变更为境外主体"这三类动作——<strong>管的是授权，不是权重。</strong> 这条把"开源被迫关闸"的恐慌直接按掉了，也顺手解释了为什么两家公司股票当天反弹。</p>
+<p><strong>为什么值得单写</strong>：这是<strong>今天唯一一条"中国用制度把边界划清楚"的正面素材</strong>，和题①的"英国用制度把能力圈起来"正好同桌。<br />
+<strong>平台</strong>：Twitter 单条 + 公众号并入题①第五节<br />
+<strong>来源</strong>：<br />
+- <a href="https://news.sina.com.cn/c/2026-10-23/doc-iniweiyt5602081.shtml" target="_blank" rel="noopener">https://news.sina.com.cn/c/2026-10-23/doc-iniweiyt5602081.shtml</a> （玉渊谭天原文转载）<br />
+- <a href="https://m.21jingji.com/article/20261023/herald/cbeccbd50748efda57788d0dffb53af2.html" target="_blank" rel="noopener">https://m.21jingji.com/article/20261023/herald/cbeccbd50748efda57788d0dffb53af2.html</a></p>
+<hr />
+<h3>④ 政策并稿：国办印发"AI 就业友好型发展方式"意见</h3>
+<p><strong>一句话</strong>：10/23 下午，国务院办公厅印发《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》，明确"<strong>减缓人工智能应用就业替代影响</strong>"，同时提出<strong>加快开发人工智能领域新职业</strong>、深入实施"人工智能+"、产业与资本双轮驱动挖掘新增岗位。</p>
+<p><strong>角度</strong>：这是<strong>政策第一次把"AI 替代就业"写进要"减缓"的位置</strong>。注意措辞——不是"避免"，是"减缓"；同时配的是"开发新职业"，也就是<strong>默认替代会发生</strong>。<br />
+<strong>平台</strong>：Twitter 单条 / 公众号结尾一句 / 若②③④并成一篇"中国 AI 同一天三件事"（融资、出口、就业），这条是收口。<br />
+<strong>来源</strong>：<br />
+- <a href="https://finance.sina.com.cn/wm/2026-10-23/doc-iniwffek8297398.shtml" target="_blank" rel="noopener">https://finance.sina.com.cn/wm/2026-10-23/doc-iniwffek8297398.shtml</a><br />
+- <a href="https://www.21jingji.com/article/20261023/herald/800f36e6315b922493df22b1d2ec1620.html" target="_blank" rel="noopener">https://www.21jingji.com/article/20261023/herald/800f36e6315b922493df22b1d2ec1620.html</a></p>
+<hr />
+<h3>⑤ 技术接续：Claude Duet 开测</h3>
+<p><strong>一句话</strong>：10/21 Anthropic 开放 <strong>Claude Duet</strong> research preview，美国 Pro/Max 用户排队进；一个<strong>独立 App</strong>，会读你的邮箱日历、出晨报、在你离开时继续在云端电脑上干活，<strong>发消息/付款/签文件/删内容前要你批准</strong>，且<strong>不做股票交易与账户转账</strong>。</p>
+<p><strong>角度</strong>：和 Meta Muse、OpenAI Dots 放在一起看——<strong>三个"会自己开工"的 Agent 同月上线，而且都长成了同一个样子：需要批准才动手。</strong> 这是 1022/1023 的直接市场后果：<strong>监控机制从"事后审计"前移成了"事前弹窗"。</strong><br />
+<strong>平台</strong>：Twitter Thread 第 5 条 / 小红书次要选题<br />
+<strong>来源</strong>：<br />
+- <a href="https://www.cbsnews.com/news/anthropic-claude-duet-personal-ai-agentsuggest-a-e/" target="_blank" rel="noopener">https://www.cbsnews.com/news/anthropic-claude-duet-personal-ai-agentsuggest-a-e/</a><br />
+- <a href="https://www.ghacks.net/2026/10/23/anthropic-launches-claude-duet-a-background-ai-agent-for-claude-pro-and-max-subscribers-in-the-us/" target="_blank" rel="noopener">https://www.ghacks.net/2026/10/23/anthropic-launches-claude-duet-a-background-ai-agent-for-claude-pro-and-max-subscribers-in-the-us/</a><br />
+- <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">https://www.anthropic.com/news</a></p>
+<hr />
+<h2>✅ 今日只做这三步（每步 ≤5 分钟，别再复制"明日第一件事"）</h2>
+<ol>
+<li><strong>把 <code>0925-AI入侵澳医保.md</code> 移进 <code>03-内容成品/公众号/待发布/</code></strong>——29 天的草稿不会自己变好，先让它进入下一步。</li>
+<li><strong>打开 <code>1023-选题方案.md</code> 的第六节，按结构写 ①，只写开场 300 字</strong>（开场素材：1000 亿 / 3 亿英镑 / 六条路）。</li>
+<li><strong>在 <code>06-运营管理/发布日历.md</code> 补 10/14–10/23 十行</strong>，每行只填"空"或实际内容。数据断了十天，比没写稿更难补。</li>
+</ol>
+<blockquote>
+<p>昨天那份 61 页报告我没有动，它还在那儿。今天这条新闻，是它最好的开篇。</p>
+</blockquote>
+<hr />
+<p><strong>今日热点来源汇总</strong><br />
+- AI Biosecurity Lab（一手）：<a href="https://www.gov.uk/government/news/introducing-the-ai-biosecurity-lab" target="_blank" rel="noopener">https://www.gov.uk/government/news/introducing-the-ai-biosecurity-lab</a><br />
+- BBC：<a href="https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo" target="_blank" rel="noopener">https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo</a><br />
+- Bloomberg Law：<a href="https://news.bloomberglaw.com/artificial-intelligence/uk-vows-100-million-for-biosecurity-lab-with-openai-anthropic" target="_blank" rel="noopener">https://news.bloomberglaw.com/artificial-intelligence/uk-vows-100-million-for-biosecurity-lab-with-openai-anthropic</a><br />
+- Reuters（FT/Straits Times 转）：<a href="https://www.straitstimes.com/world/europe/britain-pledges-more-funding-to-guard-against-ai-risks" target="_blank" rel="noopener">https://www.straitstimes.com/world/europe/britain-pledges-more-funding-to-guard-against-ai-risks</a><br />
+- DeepSeek 融资（彭博转腾讯新闻）：<a href="https://news.qq.com/rain/a/20261022A04SWO00" target="_blank" rel="noopener">https://news.qq.com/rain/a/20261022A04SWO00</a><br />
+- DeepSeek IPO 筹备（新浪财经）：<a href="https://finance.sina.com.cn/roll/2026-10-23/doc-iniweuqq8121411.shtml" target="_blank" rel="noopener">https://finance.sina.com.cn/roll/2026-10-23/doc-iniweuqq8121411.shtml</a><br />
+- DeepSeek 股东名单（新浪财经）：<a href="https://finance.sina.com.cn/wm/2026-10-23/doc-iniweqhw2055769.shtml" target="_blank" rel="noopener">https://finance.sina.com.cn/wm/2026-10-23/doc-iniweqhw2055769.shtml</a><br />
+- DeepSeek 估值（虎嗅）：<a href="https://www.huxiu.com/article/4899527.html" target="_blank" rel="noopener">https://www.huxiu.com/article/4899527.html</a><br />
+- 中国 AI 出口目录（玉渊谭天/新浪）：<a href="https://news.sina.com.cn/c/2026-10-23/doc-iniweiyt5602081.shtml" target="_blank" rel="noopener">https://news.sina.com.cn/c/2026-10-23/doc-iniweiyt5602081.shtml</a><br />
+- 国办就业意见（新浪财经）：<a href="https://finance.sina.com.cn/wm/2026-10-23/doc-iniwffek8297398.shtml" target="_blank" rel="noopener">https://finance.sina.com.cn/wm/2026-10-23/doc-iniwffek8297398.shtml</a><br />
+- 国办就业意见（21 财经）：<a href="https://www.21jingji.com/article/20261023/herald/800f36e6315b922493df22b1d2ec1620.html" target="_blank" rel="noopener">https://www.21jingji.com/article/20261023/herald/800f36e6315b922493df22b1d2ec1620.html</a><br />
+- Claude Duet（CBS）：<a href="https://www.cbsnews.com/news/anthropic-claude-duet-personal-ai-agentsuggest-a-e/" target="_blank" rel="noopener">https://www.cbsnews.com/news/anthropic-claude-duet-personal-ai-agentsuggest-a-e/</a><br />
+- Claude Duet（Ghacks）：<a href="https://www.ghacks.net/2026/10/23/anthropic-launches-claude-duet-a-background-ai-agent-for-claude-pro-and-max-subscribers-in-the-us/" target="_blank" rel="noopener">https://www.ghacks.net/2026/10/23/anthropic-launches-claude-duet-a-background-ai-agent-for-claude-pro-and-max-subscribers-in-the-us/</a><br />
+- 中国信通院《大模型词元服务性能监测报告（2026年）》：<a href="https://k.sina.com.cn/article_7857201856_1d45362c001908s5xi.html" target="_blank" rel="noopener">https://k.sina.com.cn/article_7857201856_1d45362c001908s5xi.html</a><br />
+  （补充数据：2026 年 6 月国内词元日均消耗约 <strong>500 万亿</strong>，是 2025 年 12 月的近 4 倍；国内模型均价从 6.8 元涨到 13.46 元，涨幅接近一倍）</p><div class="pager"><a class="l" href="2026-10-23-选题方案.html">← 2026-10-23 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-10-24</footer>
+</div>
+</body></html>
