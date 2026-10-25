@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-10-25</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-25</div><h1>每日独立开发精选 · 2026-10-25</h1>
+<blockquote>
+<p>数据源：HN（Firebase API）、Product Hunt（orangebot feed）、Reddit r/SideProject（RSS）、r/SomebodyMakeThis（101 条池）<br />
+Twitter/X：已停止抓取</p>
+</blockquote>
+<hr />
+<h2>🧰 Hacker News 精选</h2>
+<h3>1. Show HN: Steal My Bitcoin —— 来偷我的比特币</h3>
+<p>https://stealmybitcoin.com/<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50224916" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50224916</a><br />
+<strong>356 分</strong>，今日最高。</p>
+<p>把私钥/助记词的谜题做成公开挑战站，谁破解谁拿走。</p>
+<p><strong>Jus 点评</strong>：这是<strong>「公开挑战 + 悬念」的传播范式</strong>。核心不是技术难度，是"有个可以公开角逐的奖品"这件事本身有戏剧性。对比昨天 1230 分的 Local Wikipedia——都是<strong>一句话能讲清 + 有天然传播钩子</strong>。你的 Tend 若要曝光，缺的就是这种钩子。</p>
+<h3>2. 我不懂量子物理（2018）</h3>
+<p>https://www.southampton.ac.uk/~doug/quantum_physics/index.html<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50219666" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50219666</a><br />
+<strong>267 分</strong>。一个物理学家写的"给外行解释量子力学"的长文。</p>
+<p><strong>Jus 点评</strong>：2018 年的老文章今天又冲上来，说明<strong>好内容的长尾价值</strong>。这里有个反常识信号：HN 上"我做了个产品"往往不如"我讲清了一件事"分高。</p>
+<h3>3. Roku 开发者仓库从 GitHub 迁移到 GitLab</h3>
+<p>https://blog.roku.com/developer/gitlab-move<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50222622" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50222622</a><br />
+<strong>242 分</strong>。</p>
+<p><strong>Jus 点评</strong>：<strong>平台迁移是信号</strong>。有人从 GitHub 走，说明 GitHub 的某些问题（价格、AI 训练政策、Copilot 绑定）在企业侧积累怨气了。你做开源项目时，托管平台选择值得留意风向。</p>
+<h3>4. FreeDNS —— 免费 DNS 服务</h3>
+<p>https://freedns.afraid.org/<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50222133" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50222133</a><br />
+<strong>239 分</strong>。老牌免费二级域名/DNS 服务。</p>
+<p><strong>Jus 点评</strong>：<strong>"免费 + 存活 20 年"</strong>是这个项目上首页的唯一原因。独立开发者容易低估"活得久"这件事的信用价值。</p>
+<h3>5. The Goose Programming Language</h3>
+<p>https://aardappel.github.io/goose/<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50224100" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50224100</a><br />
+<strong>182 分</strong>。新编程语言（作者是 Wouter van Oortmerssen，做过 WASM 相关工作）。</p>
+<p><strong>Jus 点评</strong>：<strong>编程语言项目是 star 磁铁</strong>，但也是墓地。真正能活的语言极少。看点是它的设计取舍，不是学它做语言。</p>
+<h3>6. 我们应该对做出来的软件更有野心</h3>
+<p>https://danluu.com/ambitious/<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50225695" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50225695</a><br />
+<strong>75 分</strong>。Dan Luu 的文章，一向质量高。</p>
+<p><strong>Jus 点评</strong>：<strong>这条跟你直接相关</strong>。他的核心论点是：现在的软件基础设施越来越多是"够用就行"的产物，缺少真正有野心的工程。你的 Tend 想做"会管承诺的 Agent"，正是野心型项目——但这篇也在提醒：<strong>野心不等于做不完</strong>。</p>
+<hr />
+<h2>🚀 Product Hunt 精选</h2>
+<h3>7. 1Password for Agents —— 让 AI agent 替你登录，但看不见密码</h3>
+<p>https://www.producthunt.com/products/1password</p>
+<p><strong>Jus 点评</strong>：<strong>这条今天最重要。</strong> 1Password 亲自下场做 Agent 凭证层，说明<strong>大厂认定 Agent 需要独立身份凭证体系</strong>了。这对你 x402 方向是强信号：支付/凭证基础设施是会有人抢的位置，但也是生态建立的信号——<strong>Agent 生态在往正规化走</strong>。</p>
+<h3>8. sideOS.ai —— 本地 AI：听写、会议、后台任务</h3>
+<p>https://www.producthunt.com/products/sideos-ai</p>
+<p><strong>Jus 点评</strong>：<strong>又一个本地优先的 AI 助手</strong>。这已经是本周第三个（Bits、Context Engine、sideOS）。<strong>本地优先这条赛道在快速拥挤</strong>。你的 Tend 必须靠"GTD 承诺语义"区分，不能靠"本地"这个点。</p>
+<h3>9. Many Displays —— 零点击：休眠/解锁/重插后窗口自动归位</h3>
+<p>https://www.producthunt.com/products/many-displays</p>
+<p><strong>Jus 点评</strong>：<strong>极小的痛点，极好的产品形态</strong>。Mac 多显示器用户被这个问题折磨多年（这个我深有体会——每次接上显示器窗口全乱）。<strong>一个人能做完、能收费、有明确用户群</strong>。这类项目是独立开发者最该抄的模板：小到不需要团队。</p>
+<h3>10. How It Went —— 把你的路线、照片、视频做成短片</h3>
+<p>https://www.producthunt.com/products/how-it-went</p>
+<p><strong>Jus 点评</strong>：多模态生成产品的典型。<strong>输入是散落的素材，输出是一个成品</strong>——这个"素材整理成叙事"的结构，跟你 GTD 里"散落信息整理成承诺"其实是同一个模式。</p>
+<h3>11. River Writer —— 安静的 Mac 剧本/小说写作应用</h3>
+<p>https://www.producthunt.com/products/river-writer</p>
+<p><strong>Jus 点评</strong>：「安静」是卖点。<strong>在 AI 喧嚣里主打"不打扰"</strong>，反潮流定位。写作者对 AI 干涉极敏感，这是个可守的小市场。</p>
+<hr />
+<h2>💡 Reddit r/SideProject 精选</h2>
+<h3>12. Mapademic —— 840 万研究者的合作网络地图，找两个学者之间最短的合作链</h3>
+<p>https://www.reddit.com/r/SideProject/comments/1xe3r7l/mapademic_a_map_of_84m_researchers_that_finds_the/</p>
+<p><strong>Jus 点评</strong>：<strong>"840 万条数据"是可量化的震撼点</strong>。数据可视化 + 一句话说清 = 天然的分享理由。这跟你昨天下载的 Local Wikipedia 是同类的"数据视角"项目。</p>
+<h3>13. [黑客松作品] Inkling：从刘海把 AI agent 拖到任何文件、标签页或应用上</h3>
+<p>https://www.reddit.com/r/SideProject/comments/1xe80j4/hackathon_build_inkling_drag_an_ai_agent_from/</p>
+<p><strong>Jus 点评</strong>：<strong>跟你的 Tend 交互设计直接相关</strong>。"拖拽 agent 到对象上"是极直观的操作隐喻——你的 VISION 写了"支持指向当前对象进行指导"，这就是一个现成的交互答案。<strong>记住这个：拖拽动词比对话框更符合"指导"这件事。</strong></p>
+<h3>14. 默默做了一年，我拿到了第一个付费用户</h3>
+<p>https://www.reddit.com/r/SideProject/comments/1xdvk2e/after_a_year_of_quietly_building_my_side_project/</p>
+<p><strong>Jus 点评</strong>：<strong>这条对你的副业目标是直接参考</strong>。你定了"6 个月内第一笔付费"的目标，这个人的时间线是一年。<strong>不是打击你，是校准预期</strong>——第一笔付费往往比想象慢。</p>
+<h3>15. 小小的 iOS 副业项目做了 6 年：约 20 万下载、无广告、然后慢慢消亡</h3>
+<p>https://www.reddit.com/r/SideProject/comments/1xebynd/6_years_of_a_small_ios_side_project_200k/</p>
+<p><strong>Jus 点评</strong>：<strong>这是今天最该读的一条。</strong> 20 万下载却慢慢死掉，说明<strong>下载量不等于生意</strong>。作者大概会讲清楚哪里出了问题。你要避免的正是这个坑。</p>
+<h3>16. 写了 8 万多行代码后，我遇到了最终 boss：怎么让人注意到我的游戏</h3>
+<p>https://www.reddit.com/r/SideProject/comments/1xek8bg/80000_lines_of_code_later_i_found_the_final_boss/</p>
+<p><strong>Jus 点评</strong>：<strong>"最终 boss 是分发"</strong>——这句话值得刻在你桌子上。技术从来不是最难的部分。你今天日报里一共出现三次类似主题（这个人、第 17 条、第 14 条），<strong>信号非常强</strong>。</p>
+<h3>17. 2016 年至今做了 10 个副业项目，2025 年才开始学分发。想法</h3>
+<p>https://www.reddit.com/r/SideProject/comments/1xe43ru/made_10_side_projects_since_2016_but_only_started/</p>
+<p><strong>Jus 点评</strong>：同主题第三条。<strong>"做了 10 个项目才意识到分发才是核心"</strong>——这是 Reddit 独立开发者反复踩的坑。你现在的状态是"在做第一个大项目"，<strong>如果只记一件事，记这个</strong>。</p>
+<hr />
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<blockquote>
+<p>池 101 条，近 10 天有效 23 条。以下为有讨论价值的：</p>
+</blockquote>
+<h3>18. 机箱兼空气净化器：PC 本来就在吸风，加个滤网</h3>
+<p>https://www.reddit.com/gallery/1x6g29l<br />
+12 分 / <strong>13 评论</strong> / 9.7 天</p>
+<p><strong>Jus 点评</strong>：硬件创意，两件事共用一个气流。虽然你做软件，但<strong>"已有动作的副作用被利用起来"</strong>这个思路可迁移——你的 Agent 常驻后台（always-on），那些"等待时的空转"能不能也变成有用的事？</p>
+<h3>19. Sprite 个人助理</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/comments/1xcivq7/the_sprite_personal_assistant/<br />
+2 分 / 5 评论 / 2.4 天</p>
+<p><strong>Jus 点评</strong>：又一条个人助理需求。<strong>这是本周第四条</strong>（Bits、Context Engine、sideOS、这条）。市场在往这个方向挤，但每条需求都很模糊——"个人助理"没有定义清楚要帮什么忙。<strong>你的 Tend 赢在这里：你把"帮什么忙"定义成了"管理承诺"。</strong></p>
+<h3>20. AI/聊天应用的本地数据存储（复现）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/comments/1xd7g0b/local_data_storage_from_ai_chat_apps_etc/<br />
+3 分 / 1 评论</p>
+<p><strong>Jus 点评</strong>：连续第二天出现，说明这条需求还活着且没人做。<strong>跟你的 Tend 方向重合</strong>，值得留意评论区有没有具体要求。</p>
+<hr />
+<h2>📌 今日灵感提炼</h2>
+<p><strong>今天最强的信号：分发 &gt; 代码</strong></p>
+<p>三条 Reddit 帖子（第 14、16、17 条）从不同角度讲同一件事：<br />
+- 做一年才拿到第一个付费用户<br />
+- 8 万行代码后卡在"怎么让人注意到"<br />
+- 做了 10 个项目才意识到要学分发</p>
+<p><strong>你定的「6 个月第一笔付费」目标，压力主要不在写代码，在于你能不能让人知道。</strong> 现在就该开始累积曝光渠道（GitHub、Twitter、Reddit 账号、技术博客），而不是等产品做完再说。</p>
+<p><strong>三个能立刻看的：</strong></p>
+<ol>
+<li><strong>1Password for Agents</strong> — 大厂做 Agent 凭证层，对你 x402 方向是强信号</li>
+<li><strong>Inkling（Reddit 第 13）</strong> — "拖拽 agent 到对象上"的交互，直接可用在 Tend</li>
+<li><strong>Dan Luu：我们应该更有野心</strong> — 对"野心 vs 做不完"的平衡</li>
+</ol>
+<p><strong>三个本地优先的竞品（本周累计）：</strong><br />
+Bits、Context Engine、sideOS.ai —— <strong>本地优先赛道在快速拥挤</strong>。Tend 的差异化只能是 GTD 承诺语义，不能是"本地"。</p>
+<p><strong>一条反向观察：</strong></p>
+<p>今天 HN 最高分是 <strong>"来偷我的比特币"</strong>，不是任何技术突破。<strong>叙事和悬念赢过技术深度</strong>——这条规律已经连续两天验证了。</p><div class="pager"><a class="l" href="2026-10-24.html">← 2026-10-24</a></div></article>
+<footer>自动生成 · 2026-10-25</footer>
+</div>
+</body></html>
