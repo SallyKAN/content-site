@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1026 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-26</div><h1>1026 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-10-26 22:00 (Asia/Shanghai)<br />
+数据源：今晚实时采集（新浪 AI 热点小时报 10/26 18 时 + 界面新闻/腾讯科技原文 + OpenRouter 周榜）<br />
+注意：<strong>今日上午采集未跑</strong>（无 <code>1026-选题方案.md</code> / <code>1026-今日AI热点.md</code>），本期由晚间实时采集补齐<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1019「要身份证」→ 1020「门先关了」→ 1021「门里有人贴墙」→ 1022「自家孩子把摄像头转向墙」→ 1023「外人做渗透测试，六个开关」→ 1024「不修摄像头，另盖一栋楼」→ 1025「楼盖好了，墙自己会传话」→ <strong>1026「墙挡不住，那就把门槛拆了卖票」</strong></p>
+</blockquote>
+<hr />
+<h2>🚨 第三十二天：内容池仍然一个字没动</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>01-选题管理/01-待深化选题/</code></td>
+<td>🔴 <strong>49 张</strong>，全部未深化（连续第十八天不建卡）</td>
+</tr>
+<tr>
+<td><code>01-选题管理/02-创作中选题/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/草稿/</code></td>
+<td>🔴 最新仍是 <strong><code>0925-AI入侵澳医保.md</code></strong>（9/25 22:00），躺满 <strong>31 天</strong></td>
+</tr>
+<tr>
+<td><code>03-内容成品/公众号/待发布/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>03-内容成品/Twitter/草稿/</code></td>
+<td>🔴 空</td>
+</tr>
+<tr>
+<td><code>06-运营管理/发布日历.md</code></td>
+<td>🔴 最新发布行停在 <strong>10/13</strong>，10/14–10/25 十二天未填</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>连续第三十二天零出稿。今晚不新建第 50 张卡。</strong></p>
+<hr />
+<h2>🎯 今晚精选（三条，选题逻辑全换了一代）</h2>
+<p>今天最有意思的不是某一家发了什么，而是<strong>三条独立的新闻在讲同一件事</strong>：护城河（模型能力）正在被拆成可计价的商品。</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>排序</th>
+<th>选题</th>
+<th>热度</th>
+<th>角度</th>
+<th>国内</th>
+<th>总分</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>📉 <strong>OpenRouter 周榜：DeepSeek V4.1-Flash-1017 单周 33.6 万亿 Token 登顶，环比 +801%</strong></td>
+<td>9</td>
+<td>10</td>
+<td>10</td>
+<td><strong>96</strong></td>
+<td>⭐⭐ <strong>今晚主稿</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>💰 <strong>OpenAI 最高 90% 折扣挖 Anthropic 客户，Rippling 编码负载份额 16% → 52%</strong></td>
+<td>9</td>
+<td>9</td>
+<td>7</td>
+<td><strong>84</strong></td>
+<td>并稿 / Thread 主料</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🧾 <strong>Anthropic 悄悄改 Claude 配额：200 美元 Max 20x 能跑出 1.17 万美元 API 用量的人，被精准收回</strong></td>
+<td>8</td>
+<td>9</td>
+<td>7</td>
+<td><strong>80</strong></td>
+<td>小红书向</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3>① ⭐⭐ 今晚主稿：33.6 万亿 Token，+801%</h3>
+<p><strong>今晚为什么是它</strong>：前三十二天的主线都在讨论"谁能防住 AI"（身份证、门、墙、敲墙）。今晚这份榜单是另一面：<strong>防不住的部分不要了，直接按 Token 论斤卖</strong>。而且它带一组极硬的数据：国产模型周调用量 93.54 万亿 vs 美国 22.47 万亿，<strong>连续二十六周高于美国</strong>，且差距在按周拉大。</p>
+<p><strong>核心事实（下笔前逐条核）</strong>：<br />
+- 榜单周期 10/19–10/25。第一：DeepSeek <strong>V4.1-Flash-1017</strong>（10/17 更新），<strong>33.6 万亿 Token，环比 +801%</strong>。<br />
+- 第二：DeepSeek 自己 9/10 的老版 V4.1 Flash，<strong>18 万亿 Token，环比 -45%</strong>——同一家内部完成代际切换，不是抢别家的量。<br />
+- 第三：MiniMax M3.1 Flash（10/19 上线），13.7 万亿 Token，推理速度提升近三倍、调用成本降七成。<br />
+- 第四：智谱 GLM 5.3 Flash，13.2 万亿 Token，环比 +8%。前十还有腾讯 Hy4 preview。<br />
+- 大盘：上周全球总调用 <strong>188 万亿 Token（+14.63%）</strong>；国产上榜 93.54 万亿（+18.14%），美国模型 22.47 万亿（+29.44%）。<br />
+- 架构：V4.1-Flash-1017 延续 <strong>552B 总参数 / 输入激活 8B / 输出激活 16B</strong> 的非对称 MoE，原生多模态，重点优化代码、自动化 Agent、视觉。<br />
+- 口径限制（必须写）：只统计 <strong>OpenRouter 聚合 API 渠道</strong>的公开流量，不含各家官网、独立 App、私有化部署。</p>
+<p><strong>角度（这篇的钩子）</strong>：<br />
+不是"国产又赢了"，是<strong>竞争单位换了</strong>。前两年比跑分、比榜单、比推理能力；这个榜在比"单位 Token 成本下的有效产出"。四个 Flash 版本进前十，百万上下文变成标配，迭代以周为单位——<strong>热门模型的优势窗口期正在以周为单位缩短</strong>。写成一句话：你不是在选最聪明的模型，你是在选这一周最便宜够用的那一档，然后每两周重新选一次。</p>
+<p><strong>今晚结构（1600 字封顶，写到第五节就停）</strong>：<br />
+1. 开场：一个数字——<strong>+801%</strong>。什么模型能一周翻八倍？答案不是更强，是更便宜。<br />
+2. 榜单三行：33.6 / 18 / 13.7（DeepSeek 新、DeepSeek 旧、MiniMax）。<br />
+3. 最值得写的一行：DeepSeek 旧版 -45%。<strong>这是自己家抢自己家的量</strong>。<br />
+4. 26 周：国产高于美国这条线，以及 +18% vs +29% 的增速并置（别写成"碾压"，写成"体量领先、增速落后"）。<br />
+5. 真正的变化：从"跑分竞赛"到"单位成本下的有效产出"——Flash 成了主力，旗舰不再是默认选项。</p>
+<p><strong>平台</strong>：公众号（主）+ Twitter Thread（5 条，钩子："一个模型一周调用量涨了 801%。它没有变强，它变便宜了。"）+ 小红书（700 字，题："这周全球用得最多的 AI 是中国的，因为它便宜"）</p>
+<p><strong>⚠️ 措辞红区</strong>：<br />
+- 数据只代表 <strong>OpenRouter 渠道</strong>，不能写"全球 AI 使用量"；<br />
+- +801% 是<strong>环比</strong>，基数来自 10/17 新版本上线，别写成"需求爆发"；<br />
+- 国产 93.54 万亿 vs 美国 22.47 万亿 → 写"调用量领先二十六周"，同时写美国增速更快（+29.44% vs +18.14%）；<br />
+- 不写"国产碾压""全面超越"。</p>
+<p><strong>原文（硬性要求）</strong>：<br />
+- <a href="http://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwpwit5453147.shtml" target="_blank" rel="noopener">http://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwpwit5453147.shtml</a> （界面新闻，一手数据与榜单口径）<br />
+- <a href="https://k.sina.com.cn/article_7857201856_1d45362c001908simk.html" target="_blank" rel="noopener">https://k.sina.com.cn/article_7857201856_1d45362c001908simk.html</a> （新浪 AI 热点小时报 10/26 18 时，多条聚合）</p>
+<hr />
+<h3>② 并稿 / Thread 主料：90% 折扣挖人</h3>
+<p><strong>一句话</strong>：OpenAI 以最高 <strong>90% 折扣</strong>从 Anthropic 手中拿下大客户，Rippling 的编码负载里 <strong>OpenAI 份额从 16% 升到 52%</strong>（据 RecsysFrontier 10/26 日报口径，需补英文一手核对）。</p>
+<p><strong>角度</strong>：与题①并读，是同一件事的两端——<strong>模型层已经进入价格战，切换成本低到一次 API key 替换</strong>。这条适合做 Thread 的第一条钩子，正文交给题①的数据。</p>
+<p><strong>来源</strong>：<br />
+- <a href="https://recsysfrontier.substack.com/p/ai-2026-10-26" target="_blank" rel="noopener">https://recsysfrontier.substack.com/p/ai-2026-10-26</a> （日报聚合，原始报道待补）</p>
+<p><strong>⚠️ 红区</strong>：目前只有聚合信源，<strong>下笔前必须找到原始报道（Bloomberg/The Information 级）</strong>，否则只做 Thread 引用，不进公众号正文。</p>
+<hr />
+<h3>③ 小红书向：薅羊毛的尽头是被精准收回</h3>
+<p><strong>一句话</strong>：200 美元/月的 Claude Max 20x，按 API 价折算，一个号用满一个月可产出约 <strong>1.17 万美元</strong>用量（<strong>59 倍</strong>月费）；Anthropic 近期<strong>悄悄改了配额规则</strong>，长期挂 Agent 跑代码的重度用户首当其冲。</p>
+<p><strong>角度</strong>：不骂也不站队，写"<strong>订阅制的漏洞被 Agent 填平了，于是订阅制也跟着变了</strong>"。Agent 时代，个人套餐的定价基础（人类打字速度）失效了。</p>
+<p><strong>来源</strong>：<br />
+- <a href="http://finance.sina.com.cn/wm/2026-10-26/doc-iniwpwir9254790.shtml" target="_blank" rel="noopener">http://finance.sina.com.cn/wm/2026-10-26/doc-iniwpwir9254790.shtml</a></p>
+<p><strong>⚠️ 红区</strong>：Anthropic <strong>未公开说明规则变更</strong>，写"据用户反馈/媒体测算"，不写"官方承认"。</p>
+<hr />
+<h2>📋 顺带记录（不进今日三题，留作素材）</h2>
+<ul>
+<li><strong>Kimi K3.1 Pro</strong>（10/24 凌晨发布）：Artificial Analysis 智能指数全球第四；Terminal-Bench 4.0 得 65.7，仅次于 Claude Opus 5.5 的 66.4；判断"权重发布后或登顶开放权重榜首，开源与闭源差距从 12 分降到 3 分"。<br />
+  <a href="http://k.sina.com.cn/article_1644114654_61ff32de02002ceuy.html" target="_blank" rel="noopener">http://k.sina.com.cn/article_1644114654_61ff32de02002ceuy.html</a></li>
+<li><strong>AI 竞选广告</strong>：美国中期选举（11/3）前，"卫斯理媒体项目"已识别 <strong>220 个</strong>部分由 AI 生成的政治广告，耗资超 <strong>1.37 亿美元</strong>；2024 周期同类支出不足 <strong>5 万美元</strong>。81% 由共和党方赞助、12% 民主党方。<br />
+  <a href="http://finance.sina.com.cn/roll/2026-10-26/doc-iniwpwiv2227714.shtml" target="_blank" rel="noopener">http://finance.sina.com.cn/roll/2026-10-26/doc-iniwpwiv2227714.shtml</a></li>
+<li><strong>DeepSeek 千亿融资进展</strong>：融资接近结束但未关闭，仍有机构争取最后入场；7 月中旬启动，目标从 500 亿→800 亿→近 1000 亿，投前估值维持约 5000 亿；最快明年上市。（第三十天挂着的那条，口径已更新，可并入题①做"钱从哪来"的段落）<br />
+  <a href="http://finance.sina.com.cn/wm/2026-10-26/doc-iniwpwiv2243545.shtml" target="_blank" rel="noopener">http://finance.sina.com.cn/wm/2026-10-26/doc-iniwpwiv2243545.shtml</a></li>
+<li><strong>宇树科技</strong>：10/16 起 7 个交易日反弹 <strong>65.89%</strong>，市值重回 2718 亿；王兴兴称 GPT-6 推出后物理 AI 有突破迹象，具身智能 1–3 年或迎关键节点。<br />
+  <a href="http://finance.sina.com.cn/tech/roll/2026-10-26/doc-iniwpwit5446888.shtml" target="_blank" rel="noopener">http://finance.sina.com.cn/tech/roll/2026-10-26/doc-iniwpwit5446888.shtml</a></li>
+</ul>
+<hr />
+<h2>✅ 今晚只做一件（仍然是那一件）</h2>
+<pre><code class="language-bash">mv &quot;/Users/snapek/BusinessContent/03-内容成品/公众号/草稿/0925-AI入侵澳医保.md&quot; \
+   &quot;/Users/snapek/BusinessContent/03-内容成品/公众号/待发布/&quot;
+</code></pre>
+<p>三十一天。这条命令一个字都不用改。</p>
+<p>但我这次不再重复催了。给你一个更省事的选项：<strong>回一句"推"</strong>，我直接执行 mv，然后把题①按第五节停笔的版本写进草稿目录，你只做最后一遍读。</p>
+<hr />
+<h2>📌 明天上午</h2>
+<ul>
+<li>若已出稿：转成"发布准备清单"（封面、摘要、发布时间、Thread 切分）。</li>
+<li>若仍未动：只推题①，不变题，不加题——池子 49 张已经够多了。</li>
+</ul><div class="pager"><a class="l" href="2026-10-25-选题方案.html">← 2026-10-25 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-10-27</footer>
+</div>
+</body></html>
