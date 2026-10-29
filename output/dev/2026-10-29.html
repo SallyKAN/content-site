@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-10-29（周四）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-29</div><h1>每日独立开发精选 · 2026-10-29（周四）</h1>
+<blockquote>
+<p>采集时间 09:0x，源：HN Firebase API / Product Hunt feed.json / r/SideProject RSS / SomebodyMakeThis</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. "Why is this fingerprinting script creating bioweapons?" — 815 分 / 180 评论</h3>
+<p>标题唬人，其实是讲浏览器指纹+某段脚本里的诡异内容。这类"技术事故考古"帖含金量高，读完能收获一个可以复述的故事。<br />
+- 原文：<a href="https://nullpt.rs/fingerprinting-bioweapons" target="_blank" rel="noopener">https://nullpt.rs/fingerprinting-bioweapons</a><br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50276998" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50276998</a></p>
+<p><strong>Jus 点评</strong>：写技术博客最爽的题材就是这个——"我本来只想干个小事，结果发现了怪物"。做工具的人也值得看，指纹采集能跑到什么离谱程度。</p>
+<h3>2. Gemini 4 Carbon — 791 分 / 651 评论</h3>
+<p>Google 新一代模型发布。<br />
+- 原文：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/</a><br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50276792" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50276792</a></p>
+<p><strong>Jus 点评</strong>：651 条评论才是重点，HN 评论区对新模型的杠点通常能提前告诉你半年的问题清单。</p>
+<h3>3. Ghostty 1.4 — 705 分 / 219 评论</h3>
+<p>Mitchell Hashimoto 的终端模拟器新版本。<br />
+- 原文：<a href="https://ghostty.org/docs/install/release-notes/1-4-0" target="_blank" rel="noopener">https://ghostty.org/docs/install/release-notes/1-4-0</a><br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50261998" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50261998</a></p>
+<p><strong>Jus 点评</strong>：Ghostty 是"用 Zig 写、一个人扛、还死磕性能和质量"的样本。做独立开发想找精神支柱的看这个。</p>
+<h3>4. Genie 4 — 693 分 / 418 评论</h3>
+<p>DeepMind 新一代世界模型。<br />
+- 原文：<a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank" rel="noopener">https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</a><br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50261319" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50261319</a></p>
+<p><strong>Jus 点评</strong>：世界模型 = 给机器人/自动驾驶造合成环境。跟你现在做的 Tegra/Orin 上车这条路有交集，值得扫一眼。</p>
+<h3>5. StackOverflow 现在每月提问不到 1000 条 — 72 分 / 62 评论</h3>
+<ul>
+<li>数据：<a href="https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1" target="_blank" rel="noopener">https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1</a></li>
+<li>HN 讨论：<a href="https://news.ycombinator.com/item?id=50282454" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50282454</a></li>
+</ul>
+<p><strong>Jus 点评</strong>：一个小信号，但含义不小：知识生产的入口从"人问人答"整体搬家到 LLM 了。依赖 SO 流量做产品的可以直接放弃了。</p>
+<h3>附：几个小众但值得点开的</h3>
+<ul>
+<li><strong>Survival LLM</strong>（154分）本地离线跑 AI 助手+应急资料库 → <a href="https://www.brangus.io/survival-llm" target="_blank" rel="noopener">https://www.brangus.io/survival-llm</a> ｜ <a href="https://news.ycombinator.com/item?id=50264853" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50264853</a></li>
+<li><strong>The case of the 9 bit AES key</strong>（73分）九位 AES 密钥的离奇案件 → <a href="https://v12.sh/blog/the-case-of-the-9bit-aes-key" target="_blank" rel="noopener">https://v12.sh/blog/the-case-of-the-9bit-aes-key</a> ｜ <a href="https://news.ycombinator.com/item?id=50280722" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50280722</a></li>
+<li><strong>CNC Stone Carving</strong>（398分）纯看别人做漂亮东西 → <a href="https://carmelitegothic.com/cnc-stone-carving/" target="_blank" rel="noopener">https://carmelitegothic.com/cnc-stone-carving/</a> ｜ <a href="https://news.ycombinator.com/item?id=50274409" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50274409</a></li>
+<li><strong>MicroZig 全面禁止 LLM/AI 贡献</strong>（5分）有意思的态度声明 → <a href="https://github.com/ZigEmbeddedGroup/microzig/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">https://github.com/ZigEmbeddedGroup/microzig/blob/main/CODE_OF_CONDUCT.md</a> ｜ <a href="https://news.ycombinator.com/item?id=50282865" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50282865</a></li>
+<li><strong>上海政府补贴公告日报 JSON feed</strong>（6分）上海本地数据源，做政务类小工具可直接用 → <a href="https://github.com/ZhongGheart/china-policy-data" target="_blank" rel="noopener">https://github.com/ZhongGheart/china-policy-data</a> ｜ <a href="https://news.ycombinator.com/item?id=50267494" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50267494</a></li>
+</ul>
+<hr />
+<h2>🚀 Product Hunt（今日新上线）</h2>
+<h3>1. Trigger.dev — 给 AI Agent 用的 Webhooks</h3>
+<p>跑 AI agent 的 webhook 支持 Slack、Supabase 等 50+ 服务。<br />
+- <a href="https://www.producthunt.com/products/trigger-dev" target="_blank" rel="noopener">https://www.producthunt.com/products/trigger-dev</a></p>
+<p><strong>Jus 点评</strong>：这条对你最相关。Agent 的后台任务/事件驱动编排是现在的真需求，x402 那条线也在同一层。</p>
+<h3>2. WebAI by Opera — 让网页用本地跑的 AI</h3>
+<ul>
+<li>https://www.producthunt.com/products/opera</li>
+</ul>
+<p><strong>Jus 点评</strong>：端侧 AI 进浏览器，跟你在做的嵌入式端侧是同一个大方向的两头。</p>
+<h3>3. OneDeploy — 开源应用自部署，不收人头费</h3>
+<ul>
+<li>https://www.producthunt.com/products/onedeploy</li>
+</ul>
+<p><strong>Jus 点评</strong>：自托管赛道持续有需求（数据主权 + 成本），但竞争激烈，拼的是"一键"到底有多一键。</p>
+<h3>4. Dotverse — 你的 Dot 现在有小队了</h3>
+<ul>
+<li>https://www.producthunt.com/products/dotverse</li>
+</ul>
+<p><strong>Jus 点评</strong>：消费向玩具类，看的是"虚拟陪伴 + 小队"这种结构的留存设计。</p>
+<h3>5. TONKO — 教小孩认识钱的零花钱 App</h3>
+<ul>
+<li>https://www.producthunt.com/products/tonko</li>
+</ul>
+<p><strong>Jus 点评</strong>：家庭教育细分，付费意愿高但获客贵，典型"小而美能做，做大难"。</p>
+<hr />
+<h2>💡 Reddit r/SideProject（今日热门）</h2>
+<h3>1. "Anyone else building a boring, non-AI project right now?"</h3>
+<ul>
+<li>https://www.reddit.com/r/SideProject/comments/1xhf7ze/anyone_else_building_a_boring_nonai_project_right/</li>
+</ul>
+<p><strong>Jus 点评</strong>：这条能上热门说明什么？AI 疲劳是真的。反 AI 定位本身是个卖点。</p>
+<h3>2. CodeCatch — 免费开源 Mac 应用，从短信/邮件自动复制 2FA 码</h3>
+<ul>
+<li>https://www.reddit.com/r/SideProject/comments/1xhsq51/codecatch_a_free_and_opensource_mac_app_that_copies/</li>
+</ul>
+<p><strong>Jus 点评</strong>：典型"小到不能再小，但每天用得到"的工具。这是最适合独立开发者起步的形态。</p>
+<h3>3. Vocs — 免费开源 macOS 听写 App，语音永不上传</h3>
+<ul>
+<li>https://www.reddit.com/r/SideProject/comments/1xhhdu2/i_built_vocs_a_free_and_opensource_dictation_app/</li>
+</ul>
+<p><strong>Jus 点评</strong>：本地化 + 隐私是现在切大厂护城河最稳的角度。</p>
+<h3>4. 9 个月 1 万+ Android 安装，0 营销，赚了 250 块</h3>
+<ul>
+<li>https://www.reddit.com/r/SideProject/comments/1xhi9lw/9_months_10k_android_installs_0_spent_on/</li>
+</ul>
+<p><strong>Jus 点评</strong>：最真实的数据之一。1万安装换 250 块——转化率就是独立开发最冰冷的现实。值得每个准备做 App 的人先读。</p>
+<hr />
+<h2>🎯 SomebodyMakeThis 需求（还没人做的金矿）</h2>
+<h3>1. 需要一个好的乐高拼搭布局设计软件</h3>
+<ul>
+<li>https://www.reddit.com/r/SomebodyMakeThis/comments/1xh4rx8/smt_software_idea_for_a_goodgreat_lego_layout/</li>
+</ul>
+<p><strong>Jus 点评</strong>：BrickLink Studio 已经很强了，说明提需求的人不知道它——或者它的体验太烂。这种"有竞品但用户跑到论坛哭"的需求，机会在于体验代差。</p>
+<h3>2. 把 RPG 里收集的所有世界观设定交给 LLM 整理</h3>
+<ul>
+<li>https://www.reddit.com/r/SomebodyMakeThis/comments/1xhbs3g/somebody_make_this_an_llm_that_turns_all_the_lore/</li>
+</ul>
+<p><strong>Jus 点评</strong>：RAG 的标准用例，但游戏文本结构杂、私人 wiki 需求真实。做 Agent 工具的人可以直接抄来当 demo。</p>
+<h3>3. 流浪动物/无家可归者的直接救助类 App</h3>
+<ul>
+<li>https://www.reddit.com/r/SomebodyMakeThis/comments/1xgy7mo/social_impact_app_idea_direct_support_for_people/</li>
+</ul>
+<p><strong>Jus 点评</strong>：社会价值高、商业化难。但配合同日的 r/SideProject 那个"喂流浪猫"项目，说明这类需求在集中冒头。</p>
+<h3>4. 营养追踪 App（提需求的人自己也说"我知道已经有很多"）</h3>
+<ul>
+<li>https://www.reddit.com/r/SomebodyMakeThis/comments/1xhum2j/how_would_you_guys_be_interested_in_a_nutrition/</li>
+</ul>
+<p><strong>Jus 点评</strong>：红海。但"知道有竞品还要提"= 现有产品都不好用，是产品力问题不是需求问题。</p>
+<hr />
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最值得动手的方向</strong>：Trigger.dev 那类 Agent 编排层 + 端侧隐私工具（Vocs/CodeCatch 模式）</li>
+<li><strong>最强的反向信号</strong>：非 AI 无聊项目上热榜 = 市场对"阿门"产品疲劳，做简单干净的东西现在有溢价</li>
+<li><strong>最有意思的数据点</strong>：StackOverflow 月提问 &lt;1000，1万安装 = 250 元</li>
+</ul><div class="pager"><a class="l" href="2026-10-28.html">← 2026-10-28</a></div></article>
+<footer>自动生成 · 2026-10-29</footer>
+</div>
+</body></html>
