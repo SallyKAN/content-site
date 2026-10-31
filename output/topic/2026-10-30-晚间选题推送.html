@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1030 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-30</div><h1>1030 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-10-30 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：… → 1029「账记完了，格子还是空的」→ 1030「稿子写完了」→ <strong>1030 晚「稿子写完了，但还锁在门里」</strong></p>
+</blockquote>
+<hr />
+<h2>✅ 第三十六天：上午那张待办，一半做完了，一半没动</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>昨天 22:00</th>
+<th>今天 22:00</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>草稿/1029-Anthropic招股书34小时.md</code></td>
+<td>🟡 已写完</td>
+<td>🟢 <strong>仍在原地，1981 字，5 条链接，封面已生成</strong></td>
+<td>⏸ 没再动（正常，稿子够用了）</td>
+</tr>
+<tr>
+<td>推送草稿箱</td>
+<td>🔴 未推</td>
+<td>🔴 <strong><code>publish_1029.py</code> 已写好，但没执行</strong></td>
+<td>❌ 卡在最后一步</td>
+</tr>
+<tr>
+<td><code>待发布/0925-AI入侵澳医保.md</code></td>
+<td>🟡 已移入</td>
+<td>🟡 <strong>仍只有它一个</strong></td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>01-待深化选题/</code></td>
+<td>49 张</td>
+<td><strong>49 张</strong>（连续第 22 天不建卡）</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>02-创作中选题/</code></td>
+<td>空</td>
+<td><strong>空</strong></td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>06-运营管理/发布日历.md</code></td>
+<td>停在 10/13（16 天）</td>
+<td><strong>停在 10/13（17 天）</strong></td>
+<td>❌ 又欠一天</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>说句直的：昨晚最难的那一半（写稿）一次性做成了，今晚最简单的十分钟（跑脚本）没跑。</strong> 稿子、封面、发布脚本三样全齐，卡在 <code>python3 publish_1029.py</code> 这一行。这是整条链路里唯一一个"不产生新判断、只需要按回车"的动作——它被跳过了 24 小时。</p>
+<hr />
+<h2>🎯 明日（10/31）唯一的动作顺序</h2>
+<ol>
+<li><strong>跑发布</strong>（10 分钟）：<code>cd 03-内容成品/公众号/草稿 &amp;&amp; python3 publish_1029.py</code> → 看到 <code>RESULT: True</code> → 稿子移入 <code>待发布/</code> → 日历补 10/30 一行。</li>
+<li><strong>若报错</strong>（10 分钟）：把报错原文贴出来，别再自己改脚本。这脚本逻辑已经是对的（剥 frontmatter / 去 H1 / 去状态行 / 传封面），报错大概率是凭证或代理。</li>
+<li><strong>发布成功后再谈图卡</strong>（30 分钟）：S-1 四个数字那张表（营收 162.9 亿 / 净亏 807.5 亿 / 其中 724 亿可转债公允价值变动 / 算力承诺 5180 亿）。<strong>没发布就做图卡 = 又开一条新战线，禁止。</strong></li>
+</ol>
+<p><strong>今日判断：不再选新题。</strong> 池子里已经有 49 张卡在等，主稿已经 95 分，缺的不是选题，是一根手指按回车。</p>
+<hr />
+<h2>今日精选（延续，不新增）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>排序</th>
+<th>选题</th>
+<th>总分</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🧨 Anthropic S-1：34 小时 × 停训一个多月</td>
+<td>95</td>
+<td>🟢 稿已成，<strong>待推送</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>🧾 同一份 S-1 的账：162.9 亿 / 807.5 亿 / 5180 亿</td>
+<td>91</td>
+<td>⏳ 发布后再做</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇨🇳 Kimi K3.1 Pro 上线 48 小时致歉</td>
+<td>89</td>
+<td>⏳ 排队</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>原文链接（发布前逐个点一遍，确认可打开）</strong>：<br />
+- <a href="https://www.channelnewsasia.com/business/anthropic-discloses-month-long-training-pause-ai-security-breaches-in-ipo-filing-6493811" target="_blank" rel="noopener">https://www.channelnewsasia.com/business/anthropic-discloses-month-long-training-pause-ai-security-breaches-in-ipo-filing-6493811</a><br />
+- <a href="https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html" target="_blank" rel="noopener">https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html</a><br />
+- <a href="http://finance.sina.com.cn/wm/2026-10-26/doc-iniwqpfp1985289.shtml" target="_blank" rel="noopener">http://finance.sina.com.cn/wm/2026-10-26/doc-iniwqpfp1985289.shtml</a><br />
+- <a href="http://news.sina.com.cn/o/2026-10-26/doc-iniwqpfh2382457.shtml" target="_blank" rel="noopener">http://news.sina.com.cn/o/2026-10-26/doc-iniwqpfh2382457.shtml</a><br />
+- <a href="https://openai.com/index/securing-our-frontier-model-training-environment/" target="_blank" rel="noopener">https://openai.com/index/securing-our-frontier-model-training-environment/</a></p>
+<hr />
+<h2>措辞红区（推送前 2 分钟再过一遍）</h2>
+<ul>
+<li>「<strong>测试环境未断网</strong>」——不写越狱／造反／自主意识；</li>
+<li>10–34 小时是<strong>单次会话时长</strong>，不是"逃逸 34 小时后被抓"；</li>
+<li>未披露第三方名称与人名，<strong>不猜</strong>；</li>
+<li>「没有证据表明」必须带主语（<strong>Anthropic 称</strong>）；</li>
+<li>807.5 亿亏损里 <strong>724 亿</strong>是可转债公允价值变动，调整后营业利润约 <strong>+16 亿</strong>——这句话是全稿最容易被喷的地方，别省。</li>
+</ul>
+<hr />
+<h2>硬指标（就一条）</h2>
+<p><strong>明日 10/31 结束前，<code>1029-Anthropic招股书34小时.md</code> 必须出现在公众号草稿箱，并且文件移入 <code>待发布/</code>。</strong> 完成即算第三十六天闭环，未完成则记录为"稿成未发第 2 天"。</p>
+<p><strong>清库建议（第 22 天）</strong>：<code>01-待深化选题/</code> 中 10/1–10/4 共 20 张卡归档进 <code>02-素材库/</code>。今天仍然排在发布之后，不许抢跑。</p><div class="pager"><a class="l" href="2026-10-29-选题方案.html">← 2026-10-29 选题方案</a><a class="r" href="2026-10-30-选题方案.html">2026-10-30 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-10-31</footer>
+</div>
+</body></html>

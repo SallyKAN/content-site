@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-10-31（周六）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-31</div><h1>每日独立开发精选 · 2026-10-31（周六）</h1>
+<blockquote>
+<p>采集时间 08:3x，源：HN Firebase API / Product Hunt feed.json / r/SideProject RSS / SomebodyMakeThis<br />
+补记：10-30 空档一天（心跳被其他任务占用）</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. Backdoor in Claude Code for VS Code extension on the Cursor Marketplace — 747 分 / 467 评论</h3>
+<p>Cursor 市场里的 Claude Code VS Code 扩展被植入后门。<br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50276998" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50276998</a></p>
+<p><strong>Jus 点评</strong>：这条是今天唯一必须看的。供应链攻击从 npm 包升级到「插件市场里冒充官方扩展」，攻击面跟着生态一起长。你给 Oren 接第三方 MCP 和插件时，这条就是活教材——签名、来源校验、最小权限，一个都别省。</p>
+<h3>2. Northflank Breached — 346 分 / 268 评论</h3>
+<p>Northflank 被入侵的事故通告。<br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50280000" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50280000</a></p>
+<p><strong>Jus 点评</strong>：Paas 类平台出事，用户全是被动方。自己跑在别人平台上的产品，先想清楚「平台挂了/被打了」你的降级方案是什么。</p>
+<h3>3. My favourite PowerMac is a Nintendo Wii — 227 分 / 59 评论</h3>
+<p>把 Wii 当 PowerMac 用的硬件改造。</p>
+<p><strong>Jus 点评</strong>：纯玩，但这类「老硬件榨出新用途」的帖子在 HN 常青。做硬件相关内容的可以当选题模板。</p>
+<h3>4. Florilegium: Procedural Flowers in LaTeX — 208 分 / 35 评论</h3>
+<p>用 LaTeX 画程序化生成的花。</p>
+<p><strong>Jus 点评</strong>：极端小众 + 极端优雅。这类项目 star 不会多，但在特定圈子会被反复传播，是「做深不做广」的样本。</p>
+<h3>5. Show HN: A working Nintendo in ~1GB of Qwen weights — 180 分 / 108 评论</h3>
+<p>把可运行的任天堂模拟器塞进 1GB 的 Qwen 权重里。</p>
+<p><strong>Jus 点评</strong>：模型当容器用的野路子。不实用，但说明「权重不只是参数」这个方向已经有人在认真试。</p>
+<p>其他：<br />
+- Breaking the open web won't stop the bad bots — 177pt<br />
+- Infinite Mac: BeOS — 96pt<br />
+- The oldest ice disappears and the Stone Age emerges from it — 77pt<br />
+- Jules Verne's Lost Novel — 70pt<br />
+- sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust — 47pt</p>
+<h2>🚀 Product Hunt（今日新上线）</h2>
+<h3>1. Intrascope 2.0 — AI agent，1650+ 应用，Skills + 模型路由</h3>
+<p>https://www.producthunt.com/products/intrascope</p>
+<p><strong>Jus 点评</strong>：1650 个应用集成 + skills + 智能模型路由，这三件正好是 agent 产品的三根支柱。跟 Oren 的插件/Skills 架构是同一层问题，值得看看他们的集成列表怎么组织的。</p>
+<h3>2. Floot in ChatGPT — 在 ChatGPT 里直接构建和发布真实应用</h3>
+<p>https://www.producthunt.com/products/floot</p>
+<p><strong>Jus 点评</strong>：从「对话」到「发布」的闭环。这类产品真正难的不是生成，是部署和密钥管理。</p>
+<h3>3. Empacer — 面向小商家的语音优先助手</h3>
+<p>https://www.producthunt.com/products/empacer</p>
+<p><strong>Jus 点评</strong>：语音 + 垂直人群，避开通用助手竞争。小商家这个场景付费意愿真实，但获客成本高。</p>
+<h3>4. AfterLid — 盖着 Mac 也继续工作，手机上远程查看</h3>
+<p>https://www.producthunt.com/products/afterlid</p>
+<p><strong>Jus 点评</strong>：这条跟你有关——昨天你还问过 Oren 在合盖状态下的常驻问题。这品类已经有产品在做了，说明需求真实。</p>
+<h3>5. Enclave — 一个悬停，什么都拿到</h3>
+<p>https://www.producthunt.com/products/enclave</p>
+<p><strong>Jus 点评</strong>：交互创新类，看的是「少一次点击」这件事能不能撑起一个产品。</p>
+<p>其他：<br />
+- StereoLift Live — 桌面变 3D，实时投到 Quest<br />
+- sitesolide — 自己服务器上部署 vibe-coded 应用<br />
+- Vaani Developer Platform — 语音 AI harness<br />
+- MCP Server by XWiki — 把 wiki 知识给 AI，控制权留在自己手里<br />
+- Canva Brush — 编辑设计稿的 VLM</p>
+<h2>💡 Reddit r/SideProject（今日热门）</h2>
+<h3>1. 11K swipes on 172 indie startups: what people say they'd actually pay</h3>
+<p>172 个独立项目、1.1 万次滑动，真实付费意愿数据。<br />
+<a href="https://www.reddit.com/r/SideProject/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/</a></p>
+<p><strong>Jus 点评</strong>：这种一手数据贴比任何「独立开发心得」都有价值。做产品前该看的是这个。</p>
+<h3>2. We built an AI tool nobody used. A sales veteran fixed it with one sentence.</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：标题就是全文精华——技术正确 ≠ 有人用。做 to B 工具的人必读。</p>
+<h3>3. How many unused domains are you guys paying for right now? be honest</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：自嘲帖，但暴露一个真实现象：独立开发者最容易在「买域名」上获得虚假进展感。你现在 Oren 的域名还没定，别掉进这个坑。</p>
+<h3>4. i built an engineering calculator that does realtime unit conversions</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：小而完整工具的标准形态。这类东西做成 web 版，靠搜索流量能活得不错。</p>
+<h2>#️⃣ SomebodyMakeThis 需求（今日新鲜）</h2>
+<p>池子今天偏水，只挑出 3 条真有价值的：</p>
+<h3>1. 低端 ARM + Linux + 电子墨水屏小笔记本（10.9 小时，新鲜）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：极客刚需，且现有产品（reMarkable 等）贵且封闭。硬件方向，但软件层（e-ink 下的写作/终端体验）是空白。</p>
+<h3>2. 带「午睡按钮」的游戏椅——时间到物理把你推起来（14.8 小时）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：硬件创意。有意思的是「用物理动作强制行为改变」，和之前那个「标签页长草」是同一类设计思路。</p>
+<h3>3. Smart Floorrobe（23.5 小时，4 分，今日最高分）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：智能衣橱类。4 分在这个 sub 算高热度，说明确实有人共鸣。但硬件 + 供应链，不适合个人开发者起步。</p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最该看的一条</strong>：Claude Code VS Code 扩展后门。供应链安全已经从包管理蔓延到插件市场。</li>
+<li><strong>对 Oren 最相关</strong>：Intrascope 2.0 的「应用集成 + Skills + 模型路由」三层结构，和你的插件架构是同一层问题。</li>
+<li><strong>最反直觉的信号</strong>：AfterLid（合盖继续跑）说明「让电脑持续工作」已经是个产品品类了。</li>
+</ul><div class="pager"><a class="l" href="2026-10-29.html">← 2026-10-29</a></div></article>
+<footer>自动生成 · 2026-10-31</footer>
+</div>
+</body></html>
