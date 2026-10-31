@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-01（周日）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-01</div><h1>每日独立开发精选 · 2026-11-01（周日）</h1>
+<blockquote>
+<p>采集时间 07:1x，源：HN Firebase API / Product Hunt feed.json / r/SideProject RSS / SomebodyMakeThis</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. HackerTube: YouTube built from videos recommended by HN — 447 分 / 173 评论</h3>
+<p>用 HN 上被推荐过的视频拼出来的「YouTube」。<br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50290000" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50290000</a></p>
+<p><strong>Jus 点评</strong>：把社区共识变成一个产品界面，这个思路很聪明。HN 的价值一直藏在评论区链接里，这东西算是把它挖出来了。做内容聚合的可以研究一下它的数据来源。</p>
+<h3>2. Molly (Signal fork) 三个月没更新，存在漏洞 — 290 分 / 167 评论</h3>
+<p>Signal 的第三方分支 Molly 长期未维护，被指出有安全漏洞。</p>
+<p><strong>Jus 点评</strong>：fork 的隐性成本。分叉的时候很快，维护的时候没人。你做 Oren 时要是动了 DSH 的代码，记得想清楚上游升级怎么跟。</p>
+<h3>3. TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8 — 236 分 / 112 评论</h3>
+<p>TCP 栈的严重漏洞，CVSS 9.8。</p>
+<p><strong>Jus 点评</strong>：基础设施层的 9.8，影响面极大。这周该去检查一下自己的服务器内核版本。</p>
+<h3>4. Jepsen: ParticleDB 1.1.4 — 167 分 / 93 评论</h3>
+<p>Jepsen 对 ParticleDB 的一致性测试报告。</p>
+<p><strong>Jus 点评</strong>：Jepsen 报告永远值得读。它教的是「怎么用测试证明一个分布式系统真的有问题」，方法论比结论值钱。</p>
+<h3>5. It's the Memory Latency, Stupid — 87 分 / 25 评论</h3>
+<p>内存延迟才是性能瓶颈。</p>
+<p><strong>Jus 点评</strong>：这条跟你现在做的事直接相关。CUDA/嵌入式性能优化里，带宽好算、延迟难测，真正卡住的往往是后者。</p>
+<p>其他：<br />
+- The Duty of a Scholar — 72pt<br />
+- Show HN: A language model that lives in a boot sector — 43pt（把一个 LLM 塞进引导扇区）<br />
+- With 86% of the words, you might understand only 38% of an anime's lines — 38pt<br />
+- Much Ado About None: Sentinel Values in Python — 33pt<br />
+- Surviving "The Graduate" — 32pt</p>
+<h2>🚀 Product Hunt（今日 5 个，池子偏少）</h2>
+<h3>1. StereoLift Live — 桌面变实时 3D，投到 Quest 上</h3>
+<p>https://www.producthunt.com/products/stereolift-live</p>
+<p><strong>Jus 点评</strong>：空间计算的实际落地场景，不是概念演示。这类「把现有屏幕内容空间化」的点子，比重新做一个 3D 应用务实得多。</p>
+<h3>2. Canva Brush — 编辑设计稿的视觉语言模型</h3>
+<p>https://www.producthunt.com/products/canva-brush</p>
+<p><strong>Jus 点评</strong>：大厂把 VLM 塞进既有产品线的标准动作。值得看的是交互——怎么让「用一句话改设计」不失控。</p>
+<h3>3. MCP Server by XWiki — 把 wiki 知识给 AI，控制权留在自己手里</h3>
+<p>https://www.producthunt.com/products/mcp-server-by-xwiki</p>
+<p><strong>Jus 点评</strong>：这条对 Oren 有参考价值。「数据不出自己的系统 + 给 AI 用」已经是企业端 MCP 的主流叙事。</p>
+<h3>4. SparkBots AI (Powered by Jev) — 从任意网页/PDF 提取关键信息</h3>
+<p>https://www.producthunt.com/products/sparkbots-ai</p>
+<p><strong>Jus 点评</strong>：注意后缀「Powered by Jev」——底层模型开始做成品牌了。这是模型层在往应用层渗透的信号。</p>
+<h3>5. fastbrowse — 最快的开源浏览器 agent</h3>
+<p>https://www.producthunt.com/products/fastbrowse</p>
+<p><strong>Jus 点评</strong>：浏览器 agent 赛道已经很挤（昨天 PH 也有类似的），「最快」这个定位能不能守住，取决于它是真优化还是只是营销词。</p>
+<h2>💡 Reddit r/SideProject（今日热门）</h2>
+<h3>1. 把 GitHub 仓库变成一个源码文件的小星系</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：可视化项目，几乎没有实用价值，但极具传播性。这类东西是纯流量产品，适合练手 + 涨粉，不适合变现。</p>
+<h3>2. 一个「不想让你更高效」的专注 App——只帮你慢下来</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：反生产力定位，跟之前那个「非 AI 无聊项目」是同一股情绪。逆着主流叙事做产品，在特定时点会特别有效。</p>
+<h3>3. 受够了在两小时播客里找那 10 分钟精华，所以做了个工具</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：又一个「从真实挫败感出发」的标准案例。开头两句把痛点说透，这是 Reddit 上最容易火的写法。</p>
+<h3>4. 用头顶追踪做动态壁纸（上课无聊时做的）</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：纯炫技，但「无聊时做的东西」这个叙事在社区里天然讨喜。</p>
+<h2>#️⃣ SomebodyMakeThis 需求（今日新鲜）</h2>
+<p>今天池子大量水帖（求灵感、做调研的），只捞 2 条：</p>
+<h3>1. 用冰箱里现有食材推荐晚餐食谱（19.8 小时，中文帖）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：经典需求，做过的人很多，但没人做出品牌。中文帖出现在这个 sub 说明国内用户也在往这找需求。真正的难点在食材识别，不在推荐算法。</p>
+<h3>2. 低端 ARM + Linux + 电子墨水屏小笔记本（33.6 小时）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：连续两天上榜，说明这个需求确实有人惦记。硬件方向，但软件层（e-ink 下的写作体验）是真空白。</p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最该看</strong>：TCP CVE-2026-98432（CVSS 9.8），基础设施层的，去查服务器</li>
+<li><strong>对 Oren 最相关</strong>：MCP Server by XWiki 的「数据不出系统 + 给 AI 用」叙事；以及 Molly fork 的教训——动了上游代码就要想好维护</li>
+<li><strong>最强反向信号</strong>：Reddit 上「不想让你更高效」的 App 又冒出来了，反生产力这条线还在持续</li>
+</ul><div class="pager"><a class="l" href="2026-10-31.html">← 2026-10-31</a></div></article>
+<footer>自动生成 · 2026-11-01</footer>
+</div>
+</body></html>
