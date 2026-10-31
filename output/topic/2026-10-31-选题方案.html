@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1031 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-10-31</div><h1>1031 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-10-31 10:00 (Asia/Shanghai)<br />
+数据源：<code>1030-晚间选题推送.md</code> + 内容池复检 + 今早发布脚本实跑<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1029「账记完了，格子还是空的」→ 1030「稿子写完了」→ 1030 晚「稿子写完了，但还锁在门里」→ <strong>1031「门锁找到了：不是笔，是 IP」</strong></p>
+</blockquote>
+<hr />
+<h2>✅ 第三十七天：卡点定位完成，不是怯场，是白名单</h2>
+<p>今早 10:00 我直接跑了 <code>publish_1029.py</code>，报错如下（原文）：</p>
+<pre><code>Exception: 获取access_token失败: {'errcode': 40164,
+ 'errmsg': 'invalid ip 183.23.95.134 ipv6 ::ffff:183.23.95.134,
+ not in whitelist rid: ...'}
+</code></pre>
+<p><strong>结论</strong>：脚本逻辑没问题（剥 frontmatter / 去 H1 / 传封面全部走通），卡在<strong>公众号后台 IP 白名单</strong>。<code>183.23.95.134</code> 是当前出口 IP，不在白名单里。这不是稿子的问题，也不是"拖延"，是<strong>一个 2 分钟的配置动作</strong>。</p>
+<hr />
+<h2>🔧 今天唯一硬指标（按顺序，卡住就停）</h2>
+<ol>
+<li>
+<p><strong>加白名单（2 分钟，只有你能做）</strong><br />
+   微信公众平台 → 设置与开发 → 基本配置 → IP 白名单 → 加入 <code>183.23.95.134</code>（保存后立即生效）。<br />
+   注意：家用宽带<strong>动态 IP</strong>，明天可能又变。若经常变，建议把家里出口 IP 段或改用固定出口。</p>
+</li>
+<li>
+<p><strong>重跑发布（1 分钟）</strong><br />
+<code>cd /Users/snapek/BusinessContent/03-内容成品/公众号/草稿 &amp;&amp; python3 publish_1029.py</code><br />
+   看到 <code>RESULT: True</code> 即进草稿箱。</p>
+</li>
+<li>
+<p><strong>闭环归档（5 分钟）</strong><br />
+   - <code>1029-Anthropic招股书34小时.md</code> → 移入 <code>03-内容成品/公众号/待发布/</code><br />
+   - <code>06-运营管理/发布日历.md</code> 补 10/14–10/30 空格（<strong>18 天</strong>）</p>
+</li>
+</ol>
+<hr />
+<h2>🎯 今日精选（延续，仍不新增采集）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>排序</th>
+<th>选题</th>
+<th>总分</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🧨 Anthropic S-1：34 小时 × 停训一个多月</td>
+<td>95</td>
+<td>🟢 稿成、封面成、脚本通，<strong>等白名单</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>🧾 同一份 S-1 的账：162.9 亿 / 807.5 亿 / 5180 亿</td>
+<td>91</td>
+<td>⏳ 发布成功后再做（30 分钟图卡）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇨🇳 Kimi K3.1 Pro 上线 48 小时致歉：额度几分钟烧光</td>
+<td>89</td>
+<td>⏳ 排队（小红书向）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>今日判断</strong>：连续第 23 天不建新卡是对的。池子里 49 张卡 + 一篇 95 分现成稿，缺的从来不是选题。</p>
+<hr />
+<h2>📎 原文链接（发布前逐个点开确认）</h2>
+<ul>
+<li>https://www.channelnewsasia.com/business/anthropic-discloses-month-long-training-pause-ai-security-breaches-in-ipo-filing-6493811</li>
+<li>https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html</li>
+<li>http://finance.sina.com.cn/wm/2026-10-26/doc-iniwqpfp1985289.shtml</li>
+<li>http://news.sina.com.cn/o/2026-10-26/doc-iniwqpfh2382457.shtml</li>
+<li>https://openai.com/index/securing-our-frontier-model-training-environment/</li>
+</ul>
+<hr />
+<h2>⚠️ 措辞红区（推送前 2 分钟过一遍）</h2>
+<ul>
+<li>「<strong>测试环境未断网</strong>」——不写越狱／造反／自主意识</li>
+<li>10–34 小时是<strong>单次会话时长</strong>，不是"逃逸 34 小时后被抓"</li>
+<li>未披露第三方名称与人名，<strong>不猜</strong></li>
+<li>「没有证据表明」必须带主语（<strong>Anthropic 称</strong>）</li>
+<li>807.5 亿亏损里 <strong>724 亿</strong>是可转债公允价值变动，调整后营业利润约 <strong>+16 亿</strong>——全稿最容易被喷的地方，别省</li>
+</ul>
+<hr />
+<h2>清库建议（第 23 天）</h2>
+<p><code>01-待深化选题/</code> 中 10/1–10/4 共 20 张卡归档进 <code>02-素材库/</code>，把 49 压到 29。<strong>今天仍然排在发布之后，不许抢跑。</strong></p><div class="pager"><a class="l" href="2026-10-30-选题方案.html">← 2026-10-30 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-10-31</footer>
+</div>
+</body></html>
