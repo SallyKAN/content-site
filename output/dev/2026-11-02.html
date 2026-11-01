@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-02（周一）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-02</div><h1>每日独立开发精选 · 2026-11-02（周一）</h1>
+<blockquote>
+<p>采集时间 07:3x，源：HN Firebase API / Product Hunt feed.json / r/SideProject RSS / SomebodyMakeThis</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. HackerTube: YouTube built from videos recommended by HN — 2186 分 / 530 评论</h3>
+<p>昨天那条一夜之间从 447 分涨到 2186 分，直接冲到 HN 榜首级别。<br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50290000" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50290000</a></p>
+<p><strong>Jus 点评</strong>：一天涨了 5 倍，说明它正好踩中了「社区想被看见」这个心理。HN 用户一直觉得自己的共识该有更好的呈现方式，这个产品就是把这件事做出来了。</p>
+<h3>2. Show HN: HackerBooks – HackerTube，但是书 — 782 分 / 162 评论</h3>
+<p>同一个人（或跟风者）做的书籍版，把 HN 评论区提到的书拼成书库。</p>
+<p><strong>Jus 点评</strong>：这个才是今天最值得学的一条。<strong>一个爆款出来后，48 小时内做出同构版本，吃到第二波流量</strong>。HackerTube 证明了模式可行，HackerBooks 直接收割。执行速度就是这个时代的护城河。</p>
+<h3>3. Mathematics has changed. Let's act like it — 188 分 / 199 评论</h3>
+<p>关于数学研究方式变化的文章，评论区比正文精彩。</p>
+<p><strong>Jus 点评</strong>：199 条评论说明争议大。这类文章的价值往往在评论区的对立观点里。</p>
+<h3>4. Show HN: OmniDiff – 开源、超快、内容感知的 Git difftool，Rust 写的 — 130 分</h3>
+<p>Rust 实现的 diff 工具，理解代码结构而不是逐行比较。</p>
+<p><strong>Jus 点评</strong>：开发者工具里的经典机会——<strong>把一个用了几十年的老工具重做一遍</strong>。diff 这么好用又这么多年没变，说明重做它的门槛在「内容感知」这一层。</p>
+<h3>5. Copper – 带 OOP 和泛型的最小低级语言 — 116 分</h3>
+<ul>
+<li>HN 讨论：<a href="https://news.ycombinator.com/item?id=50292000" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50292000</a></li>
+</ul>
+<p><strong>Jus 点评</strong>：语言设计项目永远是 HN 宠儿，star 好拿。但你做 Oren 那种要长跑的项目，别被这类「一周能做出 demo」的方向诱惑，两者的反馈周期完全不同。</p>
+<p>其他：<br />
+- Proving and improving the Platonic Representation Hypothesis with JEPAs — 99pt<br />
+- Ask HN: Which TV do you recommend for privacy? — 73pt<br />
+- Nibnib: 极致解压速度的图像压缩 — 70pt<br />
+- Tips for more effective fuzz testing with AFL++ — 59pt<br />
+- <strong>AI delivers 'zero financial payoff' to most companies, Apollo economist says — 25pt</strong>（分低但话很重）</p>
+<h2>🚀 Product Hunt（今日 10 个，池子厚）</h2>
+<h3>1. SpaceO — 给 AI agent 在 Mac 上分一块自己的屏幕</h3>
+<p>https://www.producthunt.com/products/spaceo</p>
+<p><strong>Jus 点评</strong>：这条对你最有参考价值。Oren 现在是在 Electron 里跑 agent，SpaceO 的思路是给 agent 独立的屏幕空间——<strong>「agent 有自己的一块地」这个交互隐喻</strong>，可能比「agent 在对话框里回答」更接近未来。值得看它怎么处理多 agent 并行时的视觉冲突。</p>
+<h3>2. Click — 托管 agents API，兼容任何模型</h3>
+<p>https://www.producthunt.com/products/click</p>
+<p><strong>Jus 点评</strong>：模型无关的托管 agent API。这个是 Oren 的潜在竞品方向，但它走云端，Oren 走本地，正好是光谱两端。</p>
+<h3>3. agentmash — 开源、多人协作的团队 coding agent</h3>
+<p>https://www.producthunt.com/products/agentmash</p>
+<p><strong>Jus 点评</strong>：<strong>开源 + 团队 + 多人</strong>，三个词组合很聪明。Oren 的 Agent Board 是单人视角，这个把协作维度加进来了。开源产品值得看看它的 repo 结构。</p>
+<h3>4. Usage for Claude + ChatGPT 4.0 — 一眼看清用量限制，覆盖 Mac/iPhone/iPad/Watch</h3>
+<p>https://www.producthunt.com/products/usage-for-claude-chatgpt</p>
+<p><strong>Jus 点评</strong>：纯工具，但解决真实痛点。这类「给大厂产品补一块缺失的仪表盘」是独立开发者最稳的一条路——需求明确、不用教育市场、付费意愿真实。</p>
+<h3>5. Screen Studio 4.0 — 玻璃放大镜、摄像头抠图、按转录稿剪辑</h3>
+<p>https://www.producthunt.com/products/screen-studio</p>
+<p><strong>Jus 点评</strong>：录屏工具的标杆在持续进化。你做 Oren 演示视频的话，这个品类是该付钱的。</p>
+<p>其他：<br />
+- GitHub Copilot Fusion — 自动挑选并组合模型<br />
+- BaseTab AI — 新标签页变 AI 工作台<br />
+- LumaFold: Screen Light — iPhone 补光化妆镜<br />
+- WinnerAdSpy — 竞品广告洞察转投放策略<br />
+- Riverside Agents — 视频制作全流程的 agent 团队</p>
+<h2>💡 Reddit r/SideProject（今日热门）</h2>
+<h3>1. 让 Opus 当主开发，DeepSeek 当它的团队，Opus token 少了 63%</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：这条最有价值。<strong>用强模型做编排、便宜模型做执行</strong>，省 63% 的 token。你手上正好有 Opus 和 DeepSeek 两条线，这个模式可以直接试。而且这跟 Oren「Host 薄、service 确定」的架构思路是吻合的——贵的地方少用。</p>
+<h3>2. 我做了个能写「我做了个 App」帖子的 App</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：元讽刺，但这个社区就吃这套自嘲。传播性强，注意这类东西火得快也凉得快。</p>
+<h3>3. 一个终端里就能搜多个站点的 torrent 客户端</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：命令行工具的典型形态。单点做透，不追求大而全。</p>
+<h3>4. LibreHold — 开源、持久的浏览器策略游戏</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：开源自托管方向。游戏 + 持久世界，留存天然强于普通小工具。</p>
+<h2>#️⃣ SomebodyMakeThis 需求（今日新鲜）</h2>
+<h3>1. 离线打包 App，提醒你<strong>还没装</strong>的东西（6.1 小时）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：这条设计很聪明。所有打包清单都是「列表式」，它把重点放在<strong>逆向提醒</strong>——你没带的。这是真正从痛点出发，而不是又一个 checklist 应用。</p>
+<h3>2. 手机测酒精度（19.2 小时）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：技术上有解（语音颤抖分析、反应测试），但准确度和法律责任是硬门槛。方向有，坑也深。</p>
+<h3>3. 收集行星题材的集换式卡牌 App（0.9 小时，最新鲜）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：TCG + 天文，垂直兴趣交叉。小众但目标用户精准，适合一个人做。</p>
+<p>⚠️ 注意：<strong>「Creator Showcase - Monthly Thread」已经发出来了（17.8 小时前）</strong>。你说过要在 r/SomebodyMakeThis 发产品只能进这个月度专帖——现在正是窗口期，Oren 想露脸的话这是本月唯一入口。</p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最该学的模式</strong>：HackerBooks 蹭 HackerTube —— 爆款出现后 48 小时内做同构版本</li>
+<li><strong>最该试的技术</strong>：Opus 编排 + DeepSeek 执行，省 63% token，你手上正好有这个组合</li>
+<li><strong>对 Oren 最相关</strong>：SpaceO 给 agent 独立屏幕空间的交互隐喻；agentmash 的多人协作维度</li>
+<li><strong>时效提醒</strong>：r/SomebodyMakeThis 的月度 Creator Showcase 帖已开，本月唯一发产品入口</li>
+</ul><div class="pager"><a class="l" href="2026-11-01.html">← 2026-11-01</a></div></article>
+<footer>自动生成 · 2026-11-02</footer>
+</div>
+</body></html>
