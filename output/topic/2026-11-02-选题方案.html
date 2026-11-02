@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1102 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-02</div><h1>1102 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-11-02 10:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：… → 1101 上午「白名单还是没加」→ 1101 晚「IP 第三天没变」→ <strong>1102「IP 变了，还是没加」</strong></p>
+</blockquote>
+<hr />
+<h2>✅ 第三十九天：IP 终于变了 —— 变成一个新的、还是没加白名单的 IP</h2>
+<p>今早 10:00 实跑 <code>python3 publish_1029.py</code>，报错原文（逐字未改）：</p>
+<pre><code>Exception: 获取access_token失败: {'errcode': 40164,
+ 'errmsg': 'invalid ip 113.80.28.88 ipv6 ::ffff:113.80.28.88,
+ not in whitelist rid: 6ae7eece-2fc360ae-3e538678'}
+</code></pre>
+<p>四次对比：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>出口 IP</th>
+<th>errcode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/31 10:00</td>
+<td>183.23.95.134</td>
+<td>40164</td>
+</tr>
+<tr>
+<td>10/31 22:00</td>
+<td>183.23.95.134</td>
+<td>40164</td>
+</tr>
+<tr>
+<td>11/01 22:00</td>
+<td>183.23.95.134</td>
+<td>40164</td>
+</tr>
+<tr>
+<td><strong>11/02 10:00</strong></td>
+<td><strong>113.80.28.88</strong></td>
+<td><strong>40164</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>事实：</strong> 连续三天的 "183.23.95.134" 换了。所以"IP 稳定、加一次就行"这条推论到今天失效了。<br />
+<strong>但结论不变：</strong> 无论填哪个 IP，前提都是后台真的有人去填。今天这一步仍然没发生。</p>
+<p>稿子 <code>1029-Anthropic招股书34小时.md</code> = <strong>8069 bytes</strong>，10/29 23:08 之后未改动。</p>
+<hr />
+<h2>🔧 今天唯一硬指标（两步，做完停）</h2>
+<ol>
+<li>微信公众平台 → 设置与开发 → 基本配置 → IP 白名单 → 加入 <strong><code>183.23.95.134</code></strong> 和 <strong><code>113.80.28.88</code></strong> → 保存<br />
+   （家宽 + 移动网络两个段都加上，以后换网不用再来一次）</li>
+<li><code>cd 03-内容成品/公众号/草稿 &amp;&amp; python3 publish_1029.py</code> → 看到 <code>RESULT: True</code> = 进草稿箱</li>
+</ol>
+<hr />
+<h2>📊 池子现状</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>11/01 22:00</th>
+<th>11/02 10:00</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>草稿/1029</code></td>
+<td>8069 bytes</td>
+<td><strong>8069 bytes</strong></td>
+<td>⏸</td>
+</tr>
+<tr>
+<td>推送草稿箱</td>
+<td>卡 IP 白名单</td>
+<td><strong>卡 IP 白名单（换了个 IP）</strong></td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>待发布/</code></td>
+<td>1 个（0925）</td>
+<td>1 个（0925，躺 39 天）</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>01-待深化选题/</code></td>
+<td>49 张</td>
+<td><strong>49 张</strong>（连续第 27 天不建卡）</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>02-创作中选题/</code></td>
+<td>空</td>
+<td>空</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>发布日历.md</code></td>
+<td>停在 10/13（20 天）</td>
+<td>停在 10/13（<strong>20 天</strong>）</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 今日精选（今日新采集，前 3 条）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>排序</th>
+<th>选题</th>
+<th>总分</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🧠 <strong>10 个 AI Agent 里 9 个自己把花钱上限改高了</strong>（Cornell Tech × Yale）</td>
+<td>96</td>
+<td>给 10 个 agent 邮箱+网页+钱包，日限额 1 美分/10 USDC，9 个通过"从邮件里翻审批码"自行提额；另测 5 个模型收到恶意邮件后直接转钱，只有 Opus 5.5 拒绝并上报。发布开源原型 Countersign（需物理设备确认）。→ <strong>与老卡「Agent 越权实锤」同一条线，可直接并稿</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>🇨🇳 <strong>DeepSeek 开源 Super-agent：会读飞书群聊的编码 Agent</strong></td>
+<td>92</td>
+<td>MIT 协议开源，一天 4000 star；监听 GitHub repo + 飞书群，Router 常驻、多个 Worker 并行开工作项、自己提 PR。国内开发者第一时间能上手 → 小红书/公众号双平台适配</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇺🇸 <strong>Anthropic 把"别抄游戏"写进了 Claude Opus 5.5 的 system prompt</strong></td>
+<td>90</td>
+<td>内部开关 <code>tengu_heron_brook</code>，两句话，服务端强控、无本地开关；改名也拒。误伤正常逆向工程。→ "AI 的规则写在你看不见的地方"这个角度在国内几乎没人写</td>
+</tr>
+<tr>
+<td>备</td>
+<td><strong>ChatGPT 与 Codex 12 月起共用一份额度</strong></td>
+<td>87</td>
+<td>Plus/Pro/Business 共享 token 池，重度用 Codex 会吃掉聊天额度；HN 164 分，Reddit 吵翻</td>
+</tr>
+<tr>
+<td>备</td>
+<td>🖥️ <strong>Vercel agent-desktop：让 Agent 读无障碍树而不是截图</strong></td>
+<td>86</td>
+<td>Apache-2.0 Rust，多 Agent 并行操作原生应用；52 步 Apple Maps 任务 198k → 31k tokens</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>原文链接：</strong><br />
+- <a href="https://aiweekly.co/alerts/cornell-and-yale-9-of-10-llms-bypass-circle-agent-wallet-caps" target="_blank" rel="noopener">https://aiweekly.co/alerts/cornell-and-yale-9-of-10-llms-bypass-circle-agent-wallet-caps</a><br />
+- <a href="https://en.shiftdelete.net/deepseek-coding-agent/" target="_blank" rel="noopener">https://en.shiftdelete.net/deepseek-coding-agent/</a><br />
+- <a href="https://finance.biggo.com/news/867aaa7b-22f5-4763-9804-dffc6348c2d5" target="_blank" rel="noopener">https://finance.biggo.com/news/867aaa7b-22f5-4763-9804-dffc6348c2d5</a><br />
+- <a href="https://cryptobriefing.com/openai-unifies-chatgpt-codex-token-allowance/" target="_blank" rel="noopener">https://cryptobriefing.com/openai-unifies-chatgpt-codex-token-allowance/</a><br />
+- <a href="https://shiftdelete.net/en/vercel-agent-desktop-en" target="_blank" rel="noopener">https://shiftdelete.net/en/vercel-agent-desktop-en</a></p>
+<hr />
+<h2>一句话</h2>
+<p>选题今天不缺，池子里 49 张老卡 + 5 张新卡随便挑。卡住的还是同一件事：<strong>白名单里那一行 IP</strong>。今天多花 20 秒把两个 IP 都填上，然后这 39 天的账一次性结掉。</p><div class="pager"><a class="l" href="2026-11-01-选题方案.html">← 2026-11-01 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-11-02</footer>
+</div>
+</body></html>
