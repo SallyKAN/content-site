@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-03（周二）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-03</div><h1>每日独立开发精选 · 2026-11-03（周二）</h1>
+<blockquote>
+<p>采集时间 06:0x，源：HN Firebase API / Product Hunt feed.json / r/SideProject RSS / SomebodyMakeThis</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. Astra can read and write weights to improve Qwen — 1323 分 / 416 评论</h3>
+<p>Astra 能直接读写模型权重来改进 Qwen。<br />
+- HN 讨论：<a href="https://news.ycombinator.com/item?id=50305000" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50305000</a></p>
+<p><strong>Jus 点评</strong>：今天唯一必须点开的。<strong>「读权重 + 写权重」意味着模型改进不再只靠训练和微调</strong>，是在权重层面做直接干预。这跟你做 Oren 自进化的思路在哲学上是同一件事——只不过 Oren 改的是自己的源码，Astra 改的是自己的脑子。值得认真读它的实现边界。</p>
+<h3>2. WTF Ubuntu? — 1167 分 / 557 评论</h3>
+<p>Ubuntu 又搞了什么让社区炸锅的事，557 条评论说明怨气不小。</p>
+<p><strong>Jus 点评</strong>：Linux 桌面发行版的信任危机是周期性的。这类高分吐槽帖的真正信息量在评论区的迁移讨论——每次都会有一批人认真评估换发行版。</p>
+<h3>3. Show HN: Subvocal – 不出声就能跟电脑说话 — 416 分 / 241 评论</h3>
+<p>通过捕捉喉部肌肉信号实现「默念输入」。</p>
+<p><strong>Jus 点评</strong>：输入方式的下一代候选。如果这条路走通，键盘和语音之外的第三条路就有了。对 Oren 这类要「随手 capture」的产品，未来输入形态的变化会直接影响交互设计。</p>
+<h3>4. If you love a website, back it up — 297 分 / 74 评论</h3>
+<p>呼吁大家备份自己珍视的网站。</p>
+<p><strong>Jus 点评</strong>：互联网内容的持续消失比大多数人想的严重。这条对你有个具体提醒——<strong>你的 daily-digest 和站点，本地 md 才是真正的存档，Cloudflare 只是展示层</strong>。这个结构现在已经是对的，别改。</p>
+<h3>5. US boy names that became girl names and vice versa — 211 分 / 234 评论</h3>
+<p>美国名字的性别流转数据可视化。</p>
+<p><strong>Jus 点评</strong>：纯数据趣味帖，但评论 234 条超过分数一半，说明这类「社会数据可视化」的互动率极高。做内容的角度看，这是低成本高传播的模板。</p>
+<p>其他：<br />
+- Show HN: Warsaw in voxels – 交互式 3D 城市地图 — 171pt<br />
+- <strong>Ask HN: Who is hiring? (November 2026)</strong> — 140pt（找工作的该看看，每月固定）<br />
+- Oracle 发债 200 亿美元融资 AI 基建 — 104pt<br />
+- Launch HN: Momentic (YC W24) – 通过实际使用你的应用来抓 bug 的 agent — 98pt<br />
+- Egoless Mathematics in the AI Era — 75pt</p>
+<h2>🚀 Product Hunt（今日 10 个）</h2>
+<h3>1. beacon.sh — 开源的、自我改进的 AI coding agent 记忆</h3>
+<p>https://www.producthunt.com/products/beacon-sh</p>
+<p><strong>Jus 点评</strong>：<strong>这条今天对你最有价值。</strong>「自我改进的记忆」跟 Oren 的核心命题高度重叠——怎么让 agent 从使用中变好。而且是开源的，可以直接看它的实现。建议今天就去 clone 下来读。</p>
+<h3>2. Display 1.0 — 在一个工作区里用任意 agent 创建文档和应用</h3>
+<p>https://www.producthunt.com/products/display</p>
+<p><strong>Jus 点评</strong>：「一个工作区 + 任意 agent」，是 Oren「本地 Personal Agent 承载多执行器」的云端版本。看它怎么处理多 agent 的产物归集。</p>
+<h3>3. Agent Inbox — 给你的 agent 一个邮箱地址、Slack 和 Telegram 账号</h3>
+<p>https://www.producthunt.com/products/agent-inbox</p>
+<p><strong>Jus 点评</strong>：<strong>agent 有了自己的身份。</strong>这个方向很关键——当 agent 需要收邮件、被 @ 的时候，它就不再是「你调用的工具」，而是「你团队的一员」。Oren 的承诺管理会用到这个。</p>
+<h3>4. redu.cloud — 以 agent 的速度跑机器，而不是人的速度</h3>
+<p>https://www.producthunt.com/products/redu-cloud</p>
+<p><strong>Jus 点评</strong>：这句话本身就是好的定位写作。「按人的速度设计的基础设施，跑不了 agent 的工作量」，这个洞察可以套用到很多场景。</p>
+<h3>5. Click — 托管 agents API，兼容任何模型</h3>
+<p>https://www.producthunt.com/products/click</p>
+<p><strong>Jus 点评</strong>：连续两天上榜，模型无关的托管 agent API 这个位置有人在抢。</p>
+<p>其他：<br />
+- Screen Studio 4.0 — 录屏标杆持续进化<br />
+- Usage for Claude + ChatGPT 4.0 — 大厂产品的用量仪表盘补位<br />
+- agentmash — 开源多人协作 coding agent<br />
+- Riverside Agents — 视频制作 agent 团队<br />
+- UnleashX — 「把对话变成结果」的 AI workforce</p>
+<h2>💡 Reddit r/SideProject（今日热门）</h2>
+<h3>1. 我把 100 本旧科幻小说变成 6222 条创业点子的数据库</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：这条思路很值得偷。<strong>从存量文本里挖掘结构化需求</strong>，比凭空想点子靠谱得多。你的 daily-digest 每天在做的其实就是类似的事——把社区信息流变成结构化洞察。</p>
+<h3>2. 我在 Product Hunt 发布了一个 App，我不会再做了</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：<strong>这条必须看。</strong>PH 的 ROI 已经严重下降是业内共识，这篇是第一手吐槽。对你的 Oren 上线计划直接相关——PH 可以列为最低优先级，别抱期待。</p>
+<h3>3. 我重做了 20 年前的副业项目：一个跑了 20 年的社交德州扑克站</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：20 年还在跑，这本身就是最强的产品故事。长跑项目的价值不在爆红，在活得久。</p>
+<h3>4. 我的副业刚过 100 GitHub stars：能告诉你依赖是否健康的系统设计图</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：100 stars 就发帖庆祝——这个社区对「阶段性进展」的接受度很高。<strong>这是养号时可以学的叙事方式</strong>：小进展也值得分享，不需要等到大新闻。</p>
+<h3>5. 受够了 AI 用大段文字解释，我做了个工具让 Claude 画图</h3>
+<p>https://www.reddit.com/r/SideProject/</p>
+<p><strong>Jus 点评</strong>：直接对标「AI 输出形态」这个痛点，方向清晰。</p>
+<h2>#️⃣ SomebodyMakeThis 需求（今日新鲜）</h2>
+<h3>1. 为什么没有一个简单的 App 来记录线下扑克的筹码？（3.4 小时，3 分）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：今天最实的一条。<strong>「这么简单为什么没人做」是需求验证的强信号</strong>，而且线下牌局记账这件事，现有产品确实都是赌场级的重型系统，家用是空白。一个人一周能做出来。</p>
+<h3>2. 把「改天一起玩」变成真正落地的邀约的 AI（9.3 小时）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：跟 Oren 的承诺概念直接撞车。<strong>「随口说说」和「真的要约」之间的分辨</strong>，正是 GTD 里 clarify 那一步。这条需求说明这个痛点是被广泛感知到的。</p>
+<h3>3. 只关注共享列表/文档的某一部分，而不是全部（13.3 小时）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：协作工具的细粒度订阅。技术上不复杂，但产品设计难——怎么定义「某一部分」并保持同步。</p>
+<h3>4. TCG + 天文卡牌 App（23.5 小时，连续两天上榜）</h3>
+<p>https://www.reddit.com/r/SomebodyMakeThis/</p>
+<p><strong>Jus 点评</strong>：连续两天在池子里，说明作者是真想做。</p>
+<p>⚠️ <strong>Creator Showcase Monthly Thread 已开 40 小时</strong>，本月唯一发产品入口，还在窗口期。</p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最该读</strong>：Astra 读写 Qwen 权重 —— 在权重层改进模型，跟 Oren 自进化是同一哲学</li>
+<li><strong>该去 clone 的</strong>：beacon.sh —— 开源的自我改进 agent 记忆，跟 Oren 核心命题重叠</li>
+<li><strong>最该避的坑</strong>：Reddit 上「在 PH 发过就不再发了」的吐槽 —— Oren 上线时 PH 排最低优先级</li>
+<li><strong>最好的需求</strong>：线下扑克筹码记录 App，「这么简单为什么没人做」= 强信号</li>
+<li><strong>顺带提醒</strong>：HN 那个 Ask HN: Who is hiring (Nov 2026) 已开，140pt</li>
+</ul><div class="pager"><a class="l" href="2026-11-02.html">← 2026-11-02</a></div></article>
+<footer>自动生成 · 2026-11-03</footer>
+</div>
+</body></html>
