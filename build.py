@@ -133,7 +133,9 @@ def extract_summary(md_text):
     return ""
 
 
-URL_RE = re.compile(r'(?<![="\'>])(https?://[^\s<>"\u3000-\u303f\uff00-\uffef)]+)')
+# 不能用前置 (?<!=) 排除 '>' ：markdown 会把裸链接生成 <p>https://...</p>，
+# 紧跟 '>' 后的 URL 会被跳过导致链接不可点
+URL_RE = re.compile(r'https?://[^\s<>"\u3000-\u303f\uff00-\uffef)]+')
 
 
 def linkify_raw(html_text):
@@ -145,8 +147,8 @@ def linkify_raw(html_text):
             out.append(seg)          # 已是链接，原样保留
             continue
         def rep(m):
-            u = m.group(1).rstrip('.,;:!?)')
-            tail = m.group(1)[len(u):]
+            u = m.group(0).rstrip('.,;:!?)')
+            tail = m.group(0)[len(u):]
             return f'<a href="{u}" target="_blank" rel="noopener">{u}</a>{tail}'
         out.append(URL_RE.sub(rep, seg))
     return "".join(out)

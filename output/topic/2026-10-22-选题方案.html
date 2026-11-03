@@ -194,7 +194,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 <h3>② 🐍 LiteLLM 投毒 + Railway 撞库：AI 供应链一夜两爆（90 分）</h3>
 <p><strong>一句话</strong>：<strong>LiteLLM 1.107.0</strong>（PyPI）由被篡改的 git 源码构建，带两个载荷：<code>cook.py</code> 把 SSH 密钥、云凭证、CI/CD secret、浏览器密码和<strong>各家 LLM Provider 的 API Key</strong> 外传到 <code>www.litellm[.]dev</code>；<code>sitecustomize.py</code> <strong>每小时轮询 GitHub 仓库取任意命令执行</strong>。因为走的是 sitecustomize，<strong>只要 Python 启动就会加载</strong>——不 import litellm 也中招。1.106.2 与 1.107.0 的 RC 版干净。同一天，<strong>Railway</strong> 披露第三方未授权访问了存客户环境变量的系统，部分<strong>解密后的内容</strong>（API Key、数据库/Registry 凭证）被拿走，全站暂停部署，要求所有用户轮换密钥。</p>
 <blockquote>
-<p>https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/<br />
+<p><a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/" target="_blank" rel="noopener">https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/</a><br />
 <a href="https://blog.railway.com/p/security-disclosure-wednesday-october-21st" target="_blank" rel="noopener">https://blog.railway.com/p/security-disclosure-wednesday-october-21st</a></p>
 </blockquote>
 <p><strong>角度</strong>：AI 应用栈的"中间件"是新的高危面。LiteLLM 这类统一网关手里<strong>同时握着所有厂商的 Key</strong>——一个包被投毒，等于全公司的模型预算和云账户一起交出去。<strong>且与主线呼应：Agent 跑起来要有凭证，凭证都集中在一个网关里，网关就是新的单点。</strong></p>
@@ -203,7 +203,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 <h3>③ ⭐ 国内主稿：中办国办"人工智能+"（90 分）</h3>
 <p><strong>一句话</strong>：10/21，中办、国办《关于推动科技创新和产业创新深度融合的意见》对外发布，第（七）条明确"<strong>全面实施'人工智能+'行动，推动人工智能全方位赋能千行百业</strong>"，并与制造业技改、大规模设备更新、工业互联网、数字经济与实体经济融合并列。</p>
 <blockquote>
-<p>https://www.news.cn/politics/zywj/20261021/8faf0548d6a74f8db999c141d1dd8f9b/c.html<br />
+<p><a href="https://www.news.cn/politics/zywj/20261021/8faf0548d6a74f8db999c141d1dd8f9b/c.html" target="_blank" rel="noopener">https://www.news.cn/politics/zywj/20261021/8faf0548d6a74f8db999c141d1dd8f9b/c.html</a><br />
 <a href="https://www.21jingji.com/article/20261021/herald/f328c7714024a44c157d67b03a46d7dc.html" target="_blank" rel="noopener">https://www.21jingji.com/article/20261021/herald/f328c7714024a44c157d67b03a46d7dc.html</a></p>
 </blockquote>
 <p><strong>角度</strong>：把它和今天另一条放一起——<strong>上游（Anthropic/Dario）在讨论"该不该为安全按暂停",下游（中办国办）在动员"全方位赋能千行百业"</strong>。中国路径是<strong>先铺场景、靠真实场景反哺能力</strong>；美国路径是<strong>先设闸门、靠闸门定价</strong>。这不是对错，是两种成本结构：一个先付"部署成本"，一个先付"治理成本"。<br />
@@ -212,7 +212,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 <h3>④ 🎭 Dario 两千字回应批评者（87 分）</h3>
 <p><strong>一句话</strong>：10/21 凌晨，Dario Amodei 在 X 上回应 Encode AI 策略负责人 <strong>Nathan Calvin</strong> 的长文批评（"九宗罪"），浏览量超 80 万。核心披露：<strong>Mythos 级模型 2 月就训完，为强化网络安全防护，直到 6 月才对公众开放，其间只给一小批网络防御伙伴用</strong>——"我们很可能牺牲了几个月模型领先的一大块"。另列八项"为安全主动亏钱"的决策（SB 53、呼吁政府有权阻止发布、对华芯片出口管制支持、限制向中国控制企业销售、5% 股份的公共利益基金等）。同时<strong>承认</strong>有三点处理欠佳（措辞/政策沟通不严谨），并称 RSP 修订是"最实质的一条"，还说自己"接近认为 AI 跑得比安全快了"，对"pacing"会有更多表态。</p>
 <blockquote>
-<p>https://thenextweb.com/news/dario-amodei-anthropic-race-to-the-top-nine-safety-decisions</p>
+<p><a href="https://thenextweb.com/news/dario-amodei-anthropic-race-to-the-top-nine-safety-decisions" target="_blank" rel="noopener">https://thenextweb.com/news/dario-amodei-anthropic-race-to-the-top-nine-safety-decisions</a></p>
 </blockquote>
 <p><strong>角度</strong>：<strong>"雪藏四个月"是本周最强的一个数字</strong>——它把"安全"从口号变成了可对账的时间成本。但 Vox 记者 Sigal Samuel 当场反问："从外面看,Anthropic 净效果更像在推动一场向下竞速。" 一面自证，一面被追问证据——<strong>这正是 1019–1022 主线里"谁来验证治理是真的"的现场版</strong>。<br />
 <strong>⚠️</strong>：区分"<strong>Mythos 级模型的广泛开放被推迟四个月</strong>"与"模型没发布"；引用须标注"Amodei 在 X 上称"；Calvin 的"九宗罪"是他个人指控，写"Calvin 列举的九项质疑"。</p>
@@ -220,12 +220,12 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 <h3>⑤ 🌐 OpenAI 上架 Google Cloud（83 分，素材）</h3>
 <p><strong>一句话</strong>：10/21，OpenAI 宣布前沿模型与 Codex Agent 工作流进入 <strong>Google Cloud Model Garden</strong>，通过 Cloud Marketplace 交易，<strong>企业可用已有 GCP 承诺额度抵扣</strong>；后续进入 Antigravity 与 Gemini Agent；常规可用"未来几周"。官方博客末尾一句："<strong>Microsoft remains OpenAI's primary cloud partner.</strong>"</p>
 <blockquote>
-<p>https://openai.com/index/openai-models-google-cloud/<br />
+<p><a href="https://openai.com/index/openai-models-google-cloud/" target="_blank" rel="noopener">https://openai.com/index/openai-models-google-cloud/</a><br />
 <a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers" target="_blank" rel="noopener">https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers</a></p>
 </blockquote>
 <p>同一天：API 提示缓存可选 <strong>12 小时</strong>（默认仍 30 分钟），<strong>缓存写入价从 1.25 倍涨到 2.5 倍</strong>，读取价不变；Codex / Work 登录用户缓存<strong>永久保留</strong>。</p>
 <blockquote>
-<p>https://www.tokenpost.com/news/technology/36613</p>
+<p><a href="https://www.tokenpost.com/news/technology/36613" target="_blank" rel="noopener">https://www.tokenpost.com/news/technology/36613</a></p>
 </blockquote>
 <p><strong>角度（一句话素材）</strong>：<strong>卖模型的开始接受对手的购物券。</strong> 模型层的竞争，已经从"谁的模型强"变成"谁的账单能走通"。</p>
 <hr />
@@ -242,67 +242,67 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 <tr>
 <td>Meta Q3 + 135–145B capex + 无投票权 C 类股</td>
 <td>营收 646 亿(+26%)，资本开支再上调，董事会批准 2027 年 1 月生效的无投票权 C 类股，为 AI 基建融资同时保住创始人控制权；运营利润因 98.9 亿和解费降 37%</td>
-<td>https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx</td>
+<td><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx" target="_blank" rel="noopener">https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx</a></td>
 </tr>
 <tr>
 <td>德州 288 个数据中心、NOx 或涨近 400%</td>
 <td>HARC 报告：439GW 潜在用电（约全美发电量三分之一），燃气情形下 2031 年氮氧化物升约 400%</td>
-<td>https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/</td>
+<td><a href="https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/" target="_blank" rel="noopener">https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/</a></td>
 </tr>
 <tr>
 <td>AI 助攻 31 年 KLS 猜想被证明</td>
 <td>微软研究院张新志 + 赵松，140 页证明；人类主导的 agentic 工作流探索 100+ 路径，AI 负责推导、成稿、查错；作者强调"无人引导时同等算力的模型做不到"</td>
-<td>https://www.unite.ai/microsoft-researcher-and-collaborator-prove-31-year-old-kls-conjecture/</td>
+<td><a href="https://www.unite.ai/microsoft-researcher-and-collaborator-prove-31-year-old-kls-conjecture/" target="_blank" rel="noopener">https://www.unite.ai/microsoft-researcher-and-collaborator-prove-31-year-old-kls-conjecture/</a></td>
 </tr>
 <tr>
 <td>Wiz + OpenAI 挖出 PHP RCE（CVE-2026-109618/109619）</td>
 <td>影响 5.4 以来所有 PHP 版本，CVSS 9.2，Cloudflare 提前 9 小时上 WAF</td>
-<td>https://www.wiz.io/blog/php2shell-php-rce</td>
+<td><a href="https://www.wiz.io/blog/php2shell-php-rce" target="_blank" rel="noopener">https://www.wiz.io/blog/php2shell-php-rce</a></td>
 </tr>
 <tr>
 <td>OpenAI Patch the Planet 成绩单</td>
 <td>68 个代码库、1,995 个问题、679 个补丁、466 个被上游接受</td>
-<td>https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/</td>
+<td><a href="https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/" target="_blank" rel="noopener">https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/</a></td>
 </tr>
 <tr>
 <td>DeepMind 工程师因军方合同辞职</td>
 <td>Sofia Liguori 公开辞职，指五角大楼合同、Nimbus、GenAI.mil，称"不再相信我们的技术净影响为正"</td>
-<td>https://aiweekly.co/ai-news-today</td>
+<td><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">https://aiweekly.co/ai-news-today</a></td>
 </tr>
 <tr>
 <td>Claude Duet</td>
 <td>Opus 5.5 主动型 agent，独立 App，可远程操作云端电脑，敏感操作需批准；6,000+ 连接器，美国 Pro/Max 候补</td>
-<td>https://aiweekly.co/ai-news-today</td>
+<td><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">https://aiweekly.co/ai-news-today</a></td>
 </tr>
 <tr>
 <td>Mistral Large 4</td>
 <td>1T MoE / 52B 激活，多模态，欧洲数据中心 3,800 张 GB 卡自研；权重月底开放</td>
-<td>https://aiweekly.co/ai-news-today</td>
+<td><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">https://aiweekly.co/ai-news-today</a></td>
 </tr>
 <tr>
 <td>讯飞 1024 开发者节</td>
 <td>星火 X2.6（全国产算力）、Spark-Audio、星帆 WinWork 数字员工</td>
-<td>https://gxq.hefei.gov.cn/xwdt/yqyw/18982139.html</td>
+<td><a href="https://gxq.hefei.gov.cn/xwdt/yqyw/18982139.html" target="_blank" rel="noopener">https://gxq.hefei.gov.cn/xwdt/yqyw/18982139.html</a></td>
 </tr>
 <tr>
 <td>中国电信 TeleAI 孵化「伽马智能」</td>
 <td>上海徐汇注册，入驻模速空间，自进化人形机器人</td>
-<td>https://www.smzdm.com/p/a4qx8207/（转载每日经济新闻）</td>
+<td><a href="https://www.smzdm.com/p/a4qx8207/" target="_blank" rel="noopener">https://www.smzdm.com/p/a4qx8207/</a>（转载每日经济新闻）</td>
 </tr>
 <tr>
 <td>无界动力开源 MWA-Phoenix</td>
 <td>7B 端侧世界模型基座，六个榜单登顶</td>
-<td>https://www.toutiao.com/article/7699155646742118953</td>
+<td><a href="https://www.toutiao.com/article/7699155646742118953" target="_blank" rel="noopener">https://www.toutiao.com/article/7699155646742118953</a></td>
 </tr>
 <tr>
 <td>宇树 H2-X「功夫传奇」</td>
 <td>人形机器人，续航约 8 小时</td>
-<td>https://k.sina.com.cn/article_7857201856_1d45362c001908rxfo.html</td>
+<td><a href="https://k.sina.com.cn/article_7857201856_1d45362c001908rxfo.html" target="_blank" rel="noopener">https://k.sina.com.cn/article_7857201856_1d45362c001908rxfo.html</a></td>
 </tr>
 <tr>
 <td>MOFCOM 回应 DHS 禁 DeepSeek</td>
 <td>商务部"强烈不满、坚决反对"，称禁令"歧视性"，将"采取一切必要措施"</td>
-<td>https://aiweekly.co/ai-news-today</td>
+<td><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">https://aiweekly.co/ai-news-today</a></td>
 </tr>
 </tbody>
 </table></div>
