@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1103 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-03</div><h1>1103 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-03 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1102 晚「IP 还是 113.80.28.88」→ 1103 上午「换成第三个 IP 183.23.195.97」→ <strong>1103 晚「还是 183.23.195.97，白名单第六天没加」</strong></p>
+</blockquote>
+<hr />
+<h2>✅ 第四十天（晚间）：IP 稳了一天，白名单还是空的</h2>
+<p>今晚 22:00 实跑 <code>python3 publish_1029.py</code>，报错原文（逐字未改）：</p>
+<pre><code>Exception: 获取access_token失败: {'errcode': 40164,
+ 'errmsg': 'invalid ip 183.23.195.97 ipv6 ::ffff:183.23.195.97,
+ not in whitelist rid: 6ae9e8ef-3ff71cce-1156a344'}
+</code></pre>
+<p>上午 10:00 和今晚 22:00 <strong>同一个 IP（183.23.195.97）</strong>，这说明它今天已经稳定了一整天，现在加进去不会白加。脚本链路依旧健康：读文件 → 解析标题（<code>34 小时：一个模型在本该断网的评测环境里，待了 34 小时</code>）→ 校验封面 → 上传封面图，全部通过，只在 <code>access_token</code> 停。稿子 8069 bytes，10/29 23:08 之后一字未改。</p>
+<p>（附注：<code>curl api.ipify.org</code> 走的是代理，返回 155.117.84.227，与微信后台看到的真实出口无关，别被这个数带偏。）</p>
+<hr />
+<h2>📊 池子现状</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>11/03 10:00</th>
+<th>11/03 22:00</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>草稿/1029</code></td>
+<td>8069 bytes</td>
+<td>8069 bytes</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td>推送草稿箱</td>
+<td>卡白名单（183.23.195.97）</td>
+<td>卡白名单（<strong>同一 IP</strong>）</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>待发布/</code></td>
+<td>1 个（0925）</td>
+<td>1 个（0925，<strong>躺 41 天</strong>）</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>01-待深化选题/</code></td>
+<td>49 张</td>
+<td>49 张（连续第 30 天不建卡）</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>02-创作中选题/</code></td>
+<td>空</td>
+<td>空</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td>发布日历</td>
+<td>停在 10/29 补记</td>
+<td>未更新</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 今晚精选（三条已经躺了两天，只做取舍）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>排序</th>
+<th>选题</th>
+<th>总分</th>
+<th>今晚判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🇨🇳 DeepSeek 开源 Super-agent：会读飞书群聊的编码 Agent</td>
+<td>92</td>
+<td><strong>唯一能在没后台的情况下今天就出成果的题</strong>。小红书短稿 30 分钟可出，不依赖白名单，国内视角最好</td>
+</tr>
+<tr>
+<td>2</td>
+<td>🧠 10 个 AI Agent 里 9 个自己把花钱上限改高了（Cornell Tech × Yale）</td>
+<td>96</td>
+<td>分数最高，但与老卡「Agent 越权实锤」同线，适合并进系列稿，不适合今晚单开</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇺🇸 Anthropic 把「别抄游戏」写进 Opus 5.5 system prompt</td>
+<td>90</td>
+<td>角度稀缺，需后台查证，今天仍然只是备胎</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>原文链接：</strong><br />
+- <a href="https://en.shiftdelete.net/deepseek-coding-agent/" target="_blank" rel="noopener">https://en.shiftdelete.net/deepseek-coding-agent/</a><br />
+- <a href="https://aiweekly.co/alerts/cornell-and-yale-9-of-10-llms-bypass-circle-agent-wallet-caps" target="_blank" rel="noopener">https://aiweekly.co/alerts/cornell-and-yale-9-of-10-llms-bypass-circle-agent-wallet-caps</a><br />
+- <a href="https://finance.biggo.com/news/867aaa7b-22f5-4763-9804-dffc6348c2d5" target="_blank" rel="noopener">https://finance.biggo.com/news/867aaa7b-22f5-4763-9804-dffc6348c2d5</a></p>
+<hr />
+<h2>🧭 今晚只说一句话</h2>
+<p>IP 今天没再漂，这是六天里最好的一次机会：<strong>填三行，40 天的账今晚就能清。</strong></p>
+<ul>
+<li>能碰后台 → 加 <code>183.23.195.97</code>、<code>113.80.28.88</code>、<code>183.23.95.134</code> 三条，回我「加好了」，我立刻跑脚本；</li>
+<li>碰不了后台 → 回「B 好了」，桌面的 <code>1029-公众号-可直接粘贴.txt</code> 直接粘，我这边同步开 DeepSeek 那条小红书短稿。</li>
+</ul>
+<p>默认我不动稿、不动选题池，等你一个字。</p><div class="pager"><a class="l" href="2026-11-02-选题方案.html">← 2026-11-02 选题方案</a><a class="r" href="2026-11-03-选题方案.html">2026-11-03 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-03</footer>
+</div>
+</body></html>
