@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-04（周三）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-04</div><h1>每日独立开发精选 · 2026-11-04（周三）</h1>
+<blockquote>
+<p>采集时间 08:40，源：HN Firebase API / Product Hunt feed.json / r/SideProject RSS / SomebodyMakeThis RSS</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. Postman 静默自动安装 AI 插件，并试图上传你所有的 API 密钥</h3>
+<p><a href="https://github.com/postmanlabs/postman-app-support" target="_blank" rel="noopener">https://github.com/postmanlabs/postman-app-support</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50354960" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50354960</a></p>
+<p><strong>984 分，148 条评论。今天唯一的超级爆款。</strong></p>
+<p><strong>Jus 点评</strong>：这是今天最该读的一条，而且不是当八卦读。<strong>一个装机量千万级的开发者工具，悄悄装 AI 插件、动了用户的 API key</strong> —— 这件事的性质是「你信任的工具在你不察觉的时候扩张权限」。对你在做的 Oren / agent 分身产品是直接的反面教材：<strong>agent 最大的成本不是能力不够，是信任透支</strong>。用户给 agent 的每一个权限，都要能一句话说清"我为什么要这个"。<br />
+另一个信号：开发者对"AI 功能强塞进来"的容忍度已经到底了。你以后加 AI 功能，最好做成显式、可关、默认关闭。</p>
+<h3>2. 为了改个时间，我把车机的导航系统破解了</h3>
+<p><a href="https://blog.nns.ee/2026/11/02/renault-hack/" target="_blank" rel="noopener">https://blog.nns.ee/2026/11/02/renault-hack/</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50339288" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50339288</a></p>
+<p><strong>587 分，评论区在吵"车厂为什么连改时间都不让"。</strong></p>
+<p><strong>Jus 点评</strong>：你在英伟达做车载 SoC（N1-Auto/Thor），这条跟你的工作直接相关——<strong>用户为了改一个时间戳黑进车机</strong>，说明车厂的软件权限设计有多失败。评论区一定能看到真实用户对"车机 OTA / 权限锁"的怨气。这部分第一手吐槽，比任何产品文档都值钱，可以当你在内部讨论"车载软件开放性"的弹药。</p>
+<h3>3. Qwen 3.8 27B 在我的笔记本上就能解释自己的权重</h3>
+<p><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" target="_blank" rel="noopener">https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50355251" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50355251</a></p>
+<p><strong>469 分，148 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：本地可跑的 27B 模型 + 可解释性。对你的意义很实际：<strong>本地模型的可用性门槛又降了一档</strong>。你要做的东西如果在端侧推理，27B 这个尺寸在消费级设备上已经能"跑得有用了"，这直接影响你对产品形态的假设（能不能不做云端）。</p>
+<h3>4. Fujifilm 把磁带产能提高 5 倍，因为 AI 拉爆了归档需求</h3>
+<p><a href="https://arstechnica.com/gadgets/2026/10/fujifilm-t" target="_blank" rel="noopener">https://arstechnica.com/gadgets/2026/10/fujifilm-t</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50336918" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50336918</a></p>
+<p><strong>363 分。</strong></p>
+<p><strong>Jus 点评</strong>：AI 时代的反直觉事实——<strong>最高端的算力需求，靠最古老的存储介质接</strong>。磁带便宜、离线、寿命长。可以当选题素材：AI 基建的瓶颈不在 GPU，在"数据放哪儿"。</p>
+<h3>5. Stringman：800 美元的开源桌面级抓取机器人</h3>
+<p><a href="https://neufangled.com/" target="_blank" rel="noopener">https://neufangled.com/</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50354358" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50354358</a></p>
+<p><strong>341 分，132 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条对你是今天的第二重点。</strong> 800 美元 + 开源 = 机器人开发者的入场券。你在关注"物理 AI 开发工具"方向，这类便宜硬件的出现意味着<strong>开发者基数会涨</strong>，工具需求的窗口正在打开。评论区值得细看：大家在抱怨什么、缺什么工具。</p>
+<p>其他：<br />
+- Safari 27.3 引入自适应暗色模式 — 241pt（<a href="https://webkit.org/blog/18541/" target="_blank" rel="noopener">https://webkit.org/blog/18541/</a>）<br />
+- 《生成式 AI 基础小书》— 177pt（<a href="https://arxiv.org/abs/2605.29713" target="_blank" rel="noopener">https://arxiv.org/abs/2605.29713</a>）<br />
+- Show HN: HackerTV — 把 HN 最常推荐的 YouTube 做成 24/7 电视频道 — 143pt（<a href="https://hackertv.org" target="_blank" rel="noopener">https://hackertv.org</a>）<br />
+- Show HN: Kairos — 开源风控与反欺诈决策平台 — 40pt（<a href="https://github.com/finic-ai/kairos" target="_blank" rel="noopener">https://github.com/finic-ai/kairos</a>）</p>
+<h2>🚀 Product Hunt（今日 10 个）</h2>
+<h3>1. CuriousLM — 跑在你设备上的私有 AI，不需要账号</h3>
+<p><a href="https://www.producthunt.com/products/curiouslm" target="_blank" rel="noopener">https://www.producthunt.com/products/curiouslm</a></p>
+<p><strong>Jus 点评</strong>："不需要账号"被当成卖点写在标题，说明<strong>隐私已经从功能变成了营销语言</strong>。你如果要碰个人 agent，这句话你迟早要能说。</p>
+<h3>2. Clayzo — 用你的 coding agent 做动画和动效</h3>
+<p><a href="https://www.producthunt.com/products/clayzo" target="_blank" rel="noopener">https://www.producthunt.com/products/clayzo</a></p>
+<p><strong>Jus 点评</strong>：又一个"把 agent 塞进专业工作流"的案例。注意它的定位不是"AI 做动画"，而是"<strong>你的 agent 会做动画了</strong>"——把能力挂到已有的 agent 上，而不是造一个新 agent。这个思路比造新入口聪明，借的是用户已有的使用习惯。</p>
+<h3>3. Xmind 2027 — 你的脑图现在是 AI 思考伙伴</h3>
+<p><a href="https://www.producthunt.com/products/xmind" target="_blank" rel="noopener">https://www.producthunt.com/products/xmind</a></p>
+<p><strong>Jus 点评</strong>：老牌工具（Xmind）的 AI 化。值得看的是它怎么把 AI 藏在原有交互里而不是新开一个聊天框——<strong>这是传统工具 AI 化的正确姿势</strong>，也是大多数产品做砸的地方。</p>
+<h3>4. Looper — 如果 Grok Bot 支持团队协作而且是开源的</h3>
+<p><a href="https://www.producthunt.com/products/looper-3" target="_blank" rel="noopener">https://www.producthunt.com/products/looper-3</a></p>
+<p><strong>Jus 点评</strong>：标题直接"碰瓷"Grok Bot + 开源标签，定位一句话说清。<strong>这是你在准备 Oren 上线文案时可以学的</strong>：不说自己是什么，而说"如果 X 支持 Y 而且开源"。降低理解成本。</p>
+<h3>5. Teamily AI — 个人 agent、agent 团队和人，都在一个 messenger 里</h3>
+<p><a href="https://www.producthunt.com/products/teamily-ai-human-ai-social-network" target="_blank" rel="noopener">https://www.producthunt.com/products/teamily-ai-human-ai-social-network</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天跟你方向最接近的一个。</strong>「人在一个聊天界面里同时跟 agent 和人协作」，这就是"agent 身份"的具体形态。跟昨天的 Agent Inbox 是同一波。建议今天真去看一眼它怎么处理"谁说的话是谁说的"。</p>
+<h3>6. MachineMail — 给 AI agent 真实收件箱，内置信任机制</h3>
+<p><a href="https://www.producthunt.com/products/machinemail" target="_blank" rel="noopener">https://www.producthunt.com/products/machinemail</a></p>
+<p><strong>Jus 点评</strong>：<strong>连续两天出现"agent 邮箱"</strong>（昨天 Agent Inbox，今天 MachineMail）。两天两个产品撞同一个点，说明这个需求正在被交叉验证。而且这次关键词是"trust built in"——大家已经在解决"怎么确认发邮件的是个 agent"。</p>
+<h3>7. LifeVal — OpenAI 的日常生活任务 AI 基准</h3>
+<p><a href="https://www.producthunt.com/products/openai" target="_blank" rel="noopener">https://www.producthunt.com/products/openai</a></p>
+<p><strong>Jus 点评</strong>：OpenAI 官方出的生活场景 benchmark。<strong>做 agent 的人应该看它的任务设计</strong>，这是官方口径的"什么算把一件事做完了"。</p>
+<h3>8. Hookdeck Inspect — 给你和你的 agent 用的免费 webhook 测试器</h3>
+<p><a href="https://www.producthunt.com/products/hookdeck" target="_blank" rel="noopener">https://www.producthunt.com/products/hookdeck</a></p>
+<p><strong>Jus 点评</strong>：工具类，实用。webhook 是 agent 触发链路的常见断点。</p>
+<h3>9. Corvo — 邮件一到就自动整理的邮箱</h3>
+<p><a href="https://www.producthunt.com/products/corvo-3" target="_blank" rel="noopener">https://www.producthunt.com/products/corvo-3</a></p>
+<p><strong>Jus 点评</strong>：跟 Oren 的"承诺管理"思路同源——<strong>不让你整理，它替你整理</strong>。</p>
+<h3>10. Help — 为"定向、透明的求助"设计的 App</h3>
+<p><a href="https://www.producthunt.com/products/help-381" target="_blank" rel="noopener">https://www.producthunt.com/products/help-381</a></p>
+<p><strong>Jus 点评</strong>：一句话没太说清是什么，但这种定位模糊的产品往往藏着真需求，可以点进去看看它到底解决什么。</p>
+<h2>💡 Reddit r/SideProject（今日热门）</h2>
+<h3>1. 我做了个手机枪械模拟器</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xmhavi/i_made_a_gun_simulator_for_phones/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xmhavi/i_made_a_gun_simulator_for_phones/</a></p>
+<p><strong>Jus 点评</strong>：猎奇向。可以观察它的评论区——<strong>"这个能上架吗"类问题通常比产品本身有意思</strong>。</p>
+<h3>2. Swipe the Flow — 画一堵墙，看真实气流绕着它打转</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xmqq8e/swipe_the_flow_draw_a_wall_and_watch_live_wind/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xmqq8e/swipe_the_flow_draw_a_wall_and_watch_live_wind/</a></p>
+<p><strong>Jus 点评</strong>：<strong>纯粹的"演示即产品"</strong>。不需要卖功能，点开看见它动起来就懂了。这种项目拿 star 的效率极高，值得学它的展示方式。</p>
+<h3>3. 我做了个 Windows boss key，用摄像头自动触发</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xmmp2z/i_made_a_boss_key_for_windows_that_triggers_by/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xmmp2z/i_made_a_boss_key_for_windows_that_triggers_by/</a></p>
+<p><strong>Jus 点评</strong>：小到不能再小的需求，但"老板走近自动切屏"是个真实的物理场景。经典的一周项目。</p>
+<h3>4. 厌烦了选举夜开 16 个标签页，我做了个单窗口聚合</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xmvfcr/i_got_tired_of_juggling_16_tabs_on_election_night/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xmvfcr/i_got_tired_of_juggling_16_tabs_on_election_night/</a></p>
+<p><strong>Jus 点评</strong>：<strong>"我烦了某件事，所以做了个工具"是最稳的立项理由</strong>。这条的选题时机也值得注意——蹭事件，但蹭得有道理。</p>
+<h3>5. 我总记不住读过的东西，所以做了个 App</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xmzqff/i_kept_forgetting_everything_i_read_so_i_built_an/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xmzqff/i_kept_forgetting_everything_i_read_so_i_built_an/</a></p>
+<p><strong>Jus 点评</strong>：跟你的日常信息流处理贴近。看它怎么解决"存了不看"的经典死局。</p>
+<p>其他：<br />
+- 一个月用 Opus 5.5/Astra/Tripo 做了个莫比乌斯风格冒险游戏 — <a href="https://www.reddit.com/r/SideProject/comments/1xn76pn/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xn76pn/</a><br />
+- 用 8 个月做的习惯追踪 App，已有 2500 人使用 — <a href="https://www.reddit.com/r/SideProject/comments/1xn0omh/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xn0omh/</a><br />
+- 我如何在一个月内拿到 Google 的前 100 次点击 — <a href="https://www.reddit.com/r/SideProject/comments/1xmpwf9/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xmpwf9/</a><br />
+- MVP 用一体化 backend 以后会后悔吗？ — <a href="https://www.reddit.com/r/SideProject/comments/1xmxt0h/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xmxt0h/</a></p>
+<h2>#️⃣ SomebodyMakeThis 需求（今日新鲜）</h2>
+<h3>1. 独立开发者：什么小工具你愿意每月付 5-10 美元？</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xn8tsa/solo_dev_here_what_small_tool_would_you_pay/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xn8tsa/solo_dev_here_what_small_tool_would_you_pay/</a></p>
+<p><strong>昨晚 23:35 发的，最热的一条。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条不是需求，是价格验证样本。</strong> 评论区会是一堆真实付费意愿的句子，比你看任何定价文章都管用。你的 x402 / agent 分身那套东西，去翻翻有没有人提到"支付""订阅""按次付费"。</p>
+<h3>2. 为何游戏不能像自媒体主播那样以观看和互动为主？</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xmy2ny/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xmy2ny/</a></p>
+<p><strong>Jus 点评</strong>：中文提问，游戏形态的讨论，产品化难度大，更像思考题。</p>
+<h3>3. "Gravitas Protocol" 创业想法：新的标签系统（面向高级推荐）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xmvxng/gravitas_protocol_startup_idea_we_should_develop/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xmvxng/gravitas_protocol_startup_idea_we_should_develop/</a></p>
+<p><strong>Jus 点评</strong>：<strong>又一个人在做标签/推荐协议。</strong> 这是本周第二次看到协议类想法（x402 也是一类）。注意趋势：越来越多人相信"下一个大机会在协议层"。</p>
+<h3>4. App 想法：能自定义 YouTube 字幕的浏览器扩展</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xmvh3n/app_idea_a_browser_ex" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xmvh3n/app_idea_a_browser_ex</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天最容易动手的一个。</strong> 边界清楚、一周能做完、有现成的目标用户（看英文视频的中文用户）。想练手做个 side project 的话，选这个。</p>
+<h3>5. 为什么不做一个简单的 App 来记录线下扑克的筹码？（昨日延续）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xm5ndo/why_is_there_no_simple_app_to_track_poker_chips/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xm5ndo/why_is_there_no_simple_app_to_track_poker_chips/</a></p>
+<p><strong>Jus 点评</strong>：昨天推过，今天仍在池子里，说明还没有人动手。<strong>"这么简单为什么没人做"的窗口期通常是几天到几周</strong>，过了就有人做了。</p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最值得读</strong>：Postman 静默装 AI 插件（信任问题）+ Stringman 800 美元开源机器人（你的方向）</li>
+<li><strong>最接近你方向</strong>：Teamily AI（人在一个界面里跟 agent 和人协作）、MachineMail（agent 邮箱）</li>
+<li><strong>趋势观察</strong>：agent 邮箱两天两撞、协议层想法密集出现</li>
+<li><strong>能立刻动手的</strong>：YouTube 字幕定制扩展</li>
+<li><strong>该去翻评论区的</strong>：800 美元机器人的帖子、独立开发者付费意愿那个帖</li>
+</ul>
+<h2>⚠️ 数据源状态</h2>
+<ul>
+<li><strong>SMT 抓取方式已切换</strong>：原 <code>fetch_smt.py</code>（Playwright + 登录态打 <code>hot.json</code>/<code>new.json</code>）今天起返回 <strong>403</strong>，Reddit 的 JSON API 对这台机器全面封锁（带 cookie 也没用）。已改用 <strong>RSS</strong>（<code>r/SomebodyMakeThis/new/.rss?limit=100</code>）成功取满 100 条。注意 <code>hot/.rss</code> 仍返回空。</li>
+<li><strong>Product Hunt</strong>：<code>orangebot.ai/feed.json</code> 恢复到 50 条 / PH 10 条（昨天只有 30/5）。</li>
+<li><strong>HN</strong>：Firebase API 正常。</li>
+</ul><div class="pager"><a class="l" href="2026-11-03.html">← 2026-11-03</a></div></article>
+<footer>自动生成 · 2026-11-04</footer>
+</div>
+</body></html>
