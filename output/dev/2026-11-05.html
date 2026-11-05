@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-05（周四）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-05</div><h1>每日独立开发精选 · 2026-11-05（周四）</h1>
+<blockquote>
+<p>采集时间 08:05，源：HN Firebase API / Product Hunt feed.json / r/SideProject RSS<br />
+⚠️ SomebodyMakeThis 今天所有 RSS 端点返回空，SMT 板块暂停一天（详见文末）</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. AI 正在逼我们还清 40 年的技术债</h3>
+<p><a href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell" target="_blank" rel="noopener">https://spectrum.ieee.org/ai-in-cybersecurity-php2shell</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50364336" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50364336</a></p>
+<p><strong>1015 分，612 条评论。今天的绝对主角，评论区比文章更值得看。</strong></p>
+<p><strong>Jus 点评</strong>：612 条评论意味着这是整个行业都在争论的命题。核心论点是：AI 让"发现漏洞"的成本无限趋近于零，于是所有靠"没人仔细看"活到今天的旧代码，一夜之间全变成了待爆的雷。<br />
+对你的直接含义有两条：<strong>一是</strong>你手上那些 legacy 系统（车载软件这边尤甚）在 AI 审计面前有多脆；<strong>二是</strong>反过来看——"帮别人清旧账"本身是个巨大的市场。你在想副业方向时，这条可以当作需求侧的宏观证据。</p>
+<h3>2. 白宫网络里检测到住宅代理节点</h3>
+<p><a href="https://layer3intel.com/blog/residential-proxies-white-" target="_blank" rel="noopener">https://layer3intel.com/blog/residential-proxies-white-</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50371246" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50371246</a></p>
+<p><strong>507 分，148 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：住宅代理（residential proxy）这个灰色产业已经渗透到国家级网络。对你的实际意义：<strong>你以后做爬虫/数据采集，用住宅代理这件事的法律风险和"看起来像攻击"的风险在上升</strong>。我们的日报采集链路一直用官方 API 和 RSS，这个选择今天看起来更对了。</p>
+<h3>3. Kimi K3.1 Pro 权重开源了</h3>
+<p><a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">https://huggingface.co/moonshotai/Kimi-K3.1-Pro</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50366999" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50366999</a></p>
+<p><strong>332 分。</strong></p>
+<p><strong>Jus 点评</strong>：国产开源模型的节奏还是快。<strong>这条要实际操作一下</strong>：如果你的东西需要本地推理，K3.1 Pro 现在是个应该被放进候选名单的选项，跑一下你自己的 benchmark，别只看榜单。</p>
+<h3>4. Go 的 JSON v2 新 API 正式落地</h3>
+<p><a href="https://go.dev/blog/jsonv2" target="_blank" rel="noopener">https://go.dev/blog/jsonv2</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50369106" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50369106</a></p>
+<p><strong>202 分，87 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：Go 的 <code>encoding/json</code> 是社区抱怨了十年的东西（性能差、行为怪异），v2 终于动了。<strong>你说过偏好 Rust/Go</strong>——如果你真要在 Go 里做 x402 那套东西，今天这个 API 值得先读，因为它会影响你未来的序列化性能基线。</p>
+<h3>5. Ripple-65B：美国开源权重的 Agentic Coding SOTA</h3>
+<p><a href="https://www.ricursive.com/ripple" target="_blank" rel="noopener">https://www.ricursive.com/ripple</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50369925" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50369925</a></p>
+<p><strong>199 分，67 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：标题里"U.S. Open-Weight"这个前缀很有意思——<strong>开源模型的地缘政治标签已经成了卖点的一部分</strong>。技术上：专攻 agentic coding 的开源权重模型又多了一个。</p>
+<p>其他：<br />
+- Anthropic：大模型可证明推理的进展 — 166pt（<a href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener">https://www.anthropic.com/research/provable-inference</a>）<strong>这条对做 agent 安全的人是硬货，建议细读</strong><br />
+- Conductor 加入 Meta — 84pt（<a href="https://www.conductor.build/announcement" target="_blank" rel="noopener">https://www.conductor.build/announcement</a>）<br />
+- 高通 Cloud AI 100 Ultra：150W / 128GB / 548GB/s — 81pt（<a href="https://www.qualcomm.com/data-center/products/cloud-ai-" target="_blank" rel="noopener">https://www.qualcomm.com/data-center/products/cloud-ai-</a>）<br />
+- Launch HN: Kino AI (YC S23) — AI 媒体管理与视频剪辑 — 65pt（<a href="https://news.ycombinator.com/item?id=50368804" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50368804</a>）</p>
+<h2>🚀 Product Hunt（今日 10 个）</h2>
+<h3>1. Screen Studio 4.0 — 玻璃放大镜、摄像挖孔、按文字剪辑</h3>
+<p><a href="https://www.producthunt.com/products/screen-studio" target="_blank" rel="noopener">https://www.producthunt.com/products/screen-studio</a></p>
+<p><strong>Jus 点评</strong>：录屏赛道的标杆又迭代了。<strong>"按 transcript 剪辑"是个好提示</strong>：当内容有了文字，编辑就从拖时间轴变成了改文本。这个交互范式可以搬到任何音视频工具。</p>
+<h3>2. Click — 兼容任何模型的托管 agent API</h3>
+<p><a href="https://www.producthunt.com/products/click-6" target="_blank" rel="noopener">https://www.producthunt.com/products/click-6</a></p>
+<p><strong>Jus 点评</strong>：连续三天上榜。模型无关的托管 agent API 这个位置挤得很凶，<strong>说明市场认为这是个刚需位</strong>。但连续三天还在榜，也可能说明它还没找到增长点。</p>
+<h3>3. Usage for Claude + ChatGPT 4.0 — 全设备用量面板</h3>
+<p><a href="https://www.producthunt.com/products/usage-for-claude" target="_blank" rel="noopener">https://www.producthunt.com/products/usage-for-claude</a></p>
+<p><strong>Jus 点评</strong>：大厂不做的小功能被独立开发者吃了。<strong>一个"帮你看限额"的 app 能迭代到 4.0</strong>，说明这需求的复购率很稳。</p>
+<h3>4. agentmash — 开源的团队 coding agent 多人协作</h3>
+<p><a href="https://www.producthunt.com/products/agentmash" target="_blank" rel="noopener">https://www.producthunt.com/products/agentmash</a></p>
+<p><strong>Jus 点评</strong>：多人 + agent + 开源。你在华为带 12 人团队做 Harness，<strong>这个问题你比大多数人懂</strong>——多个 agent 或多个人的 agent 抢同一个代码库时怎么不打架。看它的锁/合并策略。</p>
+<h3>5. Riverside Agents — 一支做视频的 agent 团队</h3>
+<p><a href="https://www.producthunt.com/products/riverside-fm" target="_blank" rel="noopener">https://www.producthunt.com/products/riverside-fm</a></p>
+<p><strong>Jus 点评</strong>：「agent 团队」作为产品形态再次出现（昨天 Teamily 也是）。<strong>趋势已经很清楚：单 agent 讲故事讲了两年，现在拼的是多 agent 的编排。</strong></p>
+<h3>6. Agent Inbox — 给 agent 邮箱、Slack 和 Telegram 账号</h3>
+<p><a href="https://www.producthunt.com/products/agent-inbox" target="_blank" rel="noopener">https://www.producthunt.com/products/agent-inbox</a></p>
+<p><strong>Jus 点评</strong>：<strong>连续第三天在榜。</strong> 我跟你说过 agent 邮箱两天两撞，现在是同一产品连挂三天。这个信号比撞车更强——要么需求真硬，要么团队在拼命刷。</p>
+<h3>7. redu.cloud — 以 agent 的速度跑机器</h3>
+<p><a href="https://www.producthunt.com/products/redu-cloud" target="_blank" rel="noopener">https://www.producthunt.com/products/redu-cloud</a></p>
+<p><strong>Jus 点评</strong>：同上，连续在榜。它们的定位文案"Run machines at agent speed, not human speed"是我这几天看到最好的一句。</p>
+<h3>8. beacon.sh — 开源自改进的 coding agent 记忆</h3>
+<p><a href="https://www.producthunt.com/products/asymptotelabs" target="_blank" rel="noopener">https://www.producthunt.com/products/asymptotelabs</a></p>
+<p><strong>Jus 点评</strong>：<strong>注意 URL 变了</strong>——之前是 <code>/products/beacon-sh</code>，现在是 <code>/products/asymptotelabs</code>。产品换了 slug，旧链接可能失效。这正是我昨天提的那个"我没法验证 PH 链接有效性"的风险变成了现实。<strong>抓取时应该存 slug 而不是猜测。</strong></p>
+<h3>9. Display 1.0 — 一个工作区里用任意 agent 建文档和应用</h3>
+<p><a href="https://www.producthunt.com/products/display-dev" target="_blank" rel="noopener">https://www.producthunt.com/products/display-dev</a></p>
+<p><strong>Jus 点评</strong>：slug 也从 <code>/display</code> 变成了 <code>/display-dev</code>。同样的问题。</p>
+<h3>10. UnleashX — 把对话变成结果的 AI workforce</h3>
+<p><a href="https://www.producthunt.com/products/unleashx" target="_blank" rel="noopener">https://www.producthunt.com/products/unleashx</a></p>
+<p><strong>Jus 点评</strong>：又一个"AI 员工"叙事。</p>
+<p><strong>⚠️ 今日 PH 观察</strong>：10 条里 <strong>7 条是昨天已经上过榜的</strong>。<code>orangebot.ai</code> 的 feed 明显在重复返回同一批条目，说明它不是每天刷新，或者 PH 侧今天确实没上新。<strong>这个源的可靠性需要重新评估。</strong></p>
+<h2>💡 Reddit r/SideProject（今日热门）</h2>
+<h3>1. 我做了一个浏览器里的线缆游乐场：在插孔间拉线、用魔术贴捆起来</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xnf5tk/i_made_a_cable_playground_in_the_browser_pull/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnf5tk/i_made_a_cable_playground_in_the_browser_pull/</a></p>
+<p><strong>Jus 点评</strong>：<strong>纯物理模拟的玩具型项目</strong>。这类东西的 star 效率一直很高——不需要用户，只需要他们"哇"一声。作为开源养号的第一发，这种比做工具更划算。</p>
+<h3>2. 被拒了几百次之后，我花两年做了个数据库 GUI，刚拿到……</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xnvrlr/after_months_of_job_rejections_i_spent_2_years/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnvrlr/after_months_of_job_rejections_i_spent_2_years/</a></p>
+<p><strong>Jus 点评</strong>：<strong>叙事模板教科书</strong>：个人挫折 → 长期投入 → 阶段性成果。这类帖子的曝光度显著高于纯产品帖。你在准备 Oren 上线时，<strong>你的故事（大厂内部视角 → 出来做工具）本身就有传播力</strong>，别浪费。</p>
+<h3>3. 我做了个把桌面变成活水塘的 Mac app</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xnsilp/i_made_a_mac_app_that_turns_your_desktop_into_a/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnsilp/i_made_a_mac_app_that_turns_your_desktop_into_a/</a></p>
+<p><strong>Jus 点评</strong>：无用的美，但正是 Mac 用户会付钱的那种无用之美。</p>
+<h3>4. 我的 app 收入刚过 2000 刀</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xnnj6z/guys_my_app_just_passed_2k_in_revenue/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnnj6z/guys_my_app_just_passed_2k_in_revenue/</a></p>
+<p><strong>Jus 点评</strong>：<strong>2000 刀不算多，但它是真实的第一笔</strong>。你 6 个月拿第一笔付费的目标，这种量级就是参照系。</p>
+<h3>5. 我做了个免费 app，在 Windows 桌面上放了台小机器人吸尘器</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xntcba/i_made_a_free_app_that_puts_a_tiny_robot_vacuum/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xntcba/i_made_a_free_app_that_puts_a_tiny_robot_vacuum/</a></p>
+<p><strong>Jus 点评</strong>：你天天在做真机器人（Orin/Thor），有人在桌面上做虚拟的。<strong>这个反差本身就是个可以写的选题。</strong></p>
+<p>其他（今天质量普遍不错）：<br />
+- 我不想花 6 个月做一个没人要的 app，现在该怎么办？— <a href="https://www.reddit.com/r/SideProject/comments/1xne2hk/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xne2hk/</a><br />
+- 我做了一个阻止自己再做蠢 app 的 app — <strong>自我指涉的元项目，评论会很热闹</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xnnrpm/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnnrpm/</a><br />
+- 我做了一个让无限信息流有"终点"的 app（限时免费）— <a href="https://www.reddit.com/r/SideProject/comments/1xnernd/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnernd/</a><br />
+- 花了 500 刀做内容还是自己干了一半，于是做了个开源工具 — <a href="https://www.reddit.com/r/SideProject/comments/1xnsdld/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnsdld/</a><br />
+- NiceDB：生产库默认只读的免费桌面数据库客户端 — <a href="https://www.reddit.com/r/SideProject/comments/1xno804/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xno804/</a><br />
+- 我烦了在 400 条消息的 AI 对话里翻答案，做了个…… — <a href="https://www.reddit.com/r/SideProject/comments/1xnq2fo/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnq2fo/</a><br />
+- 一个教你做真衣服的免费浏览器游戏 — <a href="https://www.reddit.com/r/SideProject/comments/1xo2ih9/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xo2ih9/</a><br />
+- 3 周 4 次流量尖峰，最后一次 10337 人投票 — <a href="https://www.reddit.com/r/SideProject/comments/1xnv68e/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xnv68e/</a><br />
+- 考完 200+ 道 LeetCode 还是挂了 Google 面试 — <a href="https://www.reddit.com/r/SideProject/comments/1xng983/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xng983/</a></p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最该读</strong>：AI 逼我们还 40 年技术债（612 评论，行业级争论）</li>
+<li><strong>该动手的</strong>：Kimi K3.1 Pro 跑一遍自己的 benchmark；Go JSON v2 读一下</li>
+<li><strong>对你的方向</strong>：Riverside Agents 的多 agent 编排、agentmash 的多人协作策略</li>
+<li><strong>趋势</strong>：PH 首页被"agent 团队/agent 身份"占满（Teamily / Riverside / Agent Inbox / MachineMail）</li>
+<li><strong>叙事参考</strong>：SideProject 那条"被拒百次 + 两年做一个 GUI"的模板</li>
+</ul>
+<h2>⚠️ 数据源状态（今天两处异常）</h2>
+<ol>
+<li><strong>SomebodyMakeThis 全挂</strong>：<code>new/.rss</code>、<code>/.rss</code>、<code>old.reddit.com/.rss</code>、<code>top/.rss?t=day</code> <strong>四个端点全部返回 0 条</strong>（r/SideProject 的 RSS 同时段正常）。说明不是 Reddit 整体封锁，而是这个 sub 的 RSS 被单独限制了（前一天是 JSON API 403）。<strong>今天 SMT 板块暂停</strong>，明天换别的路子（浏览器渲染或第三方镜像）再试。</li>
+<li><strong>Product Hunt feed 疑似未刷新</strong>：50 条里 10 条 PH 有 7 条是昨天同款，且 <code>beacon.sh</code>、<code>Display</code> 的 slug 都变了（→ <code>asymptotelabs</code> / <code>display-dev</code>）。说明昨天的旧链接<strong>今天可能已经失效</strong>。这个源需要重新校准。</li>
+<li><strong>HN</strong>：正常。</li>
+</ol><div class="pager"><a class="l" href="2026-11-04.html">← 2026-11-04</a></div></article>
+<footer>自动生成 · 2026-11-05</footer>
+</div>
+</body></html>
