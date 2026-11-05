@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1105 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-05</div><h1>1105 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-05 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1105 上午「代理坐实」→ <strong>1105 晚「坐实但没用：微信看到的是 113.80.26.22，不是代理出口」</strong></p>
+</blockquote>
+<hr />
+<h2>✅ 第七天（晚间）：代理的说法被现实打了一巴掌</h2>
+<p>上午我说：<code>publisher.py</code> 继承 <code>https_proxy</code>，所以微信看到的是代理出口（155.117.84.x 那一段）。</p>
+<p>今晚 22:00 实跑 <code>python3 publish_1029.py</code>，报错原文（逐字未改）：</p>
+<pre><code>Exception: 获取access_token失败: {'errcode': 40164,
+ 'errmsg': 'invalid ip 113.80.26.22 ipv6 ::ffff:113.80.26.22,
+ not in whitelist rid: 6aec8beb-0f3bb1ec-3d341ec0'}
+</code></pre>
+<p><strong>113.80.26.22 —— 这是家宽 IP，不是任何一次 curl 拿到的 155.117.84.x。</strong></p>
+<p>也就是说：requests 这一步实际没走代理（或代理对这段走了直连），微信看到的一直是家宽真实出口。上午的「B 方案（trust_env=False）能拿到真实 IP」根本改变不了什么——本来就是真实 IP。</p>
+<h3>真正的结论</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>微信看到的 IP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/29–11/02</td>
+<td>183.23.195.97 / 183.23.95.134 / 113.80.28.88 等</td>
+</tr>
+<tr>
+<td>11/03</td>
+<td>183.23.195.97</td>
+</tr>
+<tr>
+<td>11/05 22:00</td>
+<td><strong>113.80.26.22</strong>（新尾号，同 113.80 段）</td>
+</tr>
+</tbody>
+</table></div>
+<p>家宽确实在漂：113.80.28.88 → 113.80.26.22，<strong>同一 /16，但尾号变了</strong>。<br />
+所以问题不是「链路设计错了」，是更朴素的：<strong>这个家宽是动态 IP，白名单填了也会过期。</strong></p>
+<h3>这反而让答案变简单了</h3>
+<p>一天漂一次 IP 的家庭宽带上，任何白名单方案都注定反复填。真正的解法只剩两个：</p>
+<ul>
+<li><strong>① 固定出口（唯一长期有效）</strong>：换静态住宅 / 固定 IP 节点，把 requests 显式指向它（<code>proxies=</code> 硬指定，不靠环境变量继承），然后填那一个 IP，一次到位。</li>
+<li><strong>② 放弃后台，手动发</strong>：稿子在 <code>03-内容成品/公众号/草稿/1029-Anthropic招股书34小时.md</code>（8069 bytes，10/29 23:08 后未改），封面 <code>covers/1029-anthropic-34hours.png</code>。粘贴 + 传封面 + 存草稿，约 5 分钟。</li>
+</ul>
+<p>我不会去改你的代理设置、也不会动 publisher.py 的连接逻辑——那是你的链路，等你一句话。</p>
+<hr />
+<h2>📊 池子现状</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>11/05 10:00</th>
+<th>11/05 22:00</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>草稿/1029</code></td>
+<td>8069 bytes</td>
+<td>8069 bytes</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td>推送草稿箱</td>
+<td>卡白名单（代理出口漂移）</td>
+<td>卡白名单（<strong>113.80.26.22，家宽 IP，上午判断被推翻</strong>）</td>
+<td>🔍</td>
+</tr>
+<tr>
+<td><code>待发布/</code></td>
+<td>1 个（0925，躺 42 天）</td>
+<td>1 个（0925，<strong>躺 43 天</strong>）</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>01-待深化选题/</code></td>
+<td>49 张</td>
+<td>49 张（连续第 32 天不建卡）</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td><code>02-创作中选题/</code></td>
+<td>空</td>
+<td>空</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td>发布日历</td>
+<td>未更新</td>
+<td>未更新</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 今晚精选（连推第三天，我不换题）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>排序</th>
+<th>选题</th>
+<th>总分</th>
+<th>今晚判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🇨🇳 DeepSeek 开源 Super-agent：会读飞书群聊的编码 Agent</td>
+<td>92</td>
+<td><strong>还是它</strong>。不依赖微信后台，今晚 30 分钟能出一篇小红书短稿，是唯一能在链路卡死时不空手的题</td>
+</tr>
+<tr>
+<td>2</td>
+<td>🧠 10 个 AI Agent 里 9 个自己把花钱上限改高了（Cornell Tech × Yale）</td>
+<td>96</td>
+<td>分最高，但和「Agent 越权实锤」同线，适合并进系列</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇺🇸 Anthropic 把「别抄游戏」写进 Opus 5.5 system prompt</td>
+<td>90</td>
+<td>角度稀缺，需后台查证，备胎</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>原文链接：</strong><br />
+- <a href="https://en.shiftdelete.net/deepseek-coding-agent/" target="_blank" rel="noopener">https://en.shiftdelete.net/deepseek-coding-agent/</a><br />
+- <a href="https://aiweekly.co/alerts/cornell-and-yale-9-of-10-llms-bypass-circle-agent-wallet-caps" target="_blank" rel="noopener">https://aiweekly.co/alerts/cornell-and-yale-9-of-10-llms-bypass-circle-agent-wallet-caps</a><br />
+- <a href="https://finance.biggo.com/news/867aaa7b-22f5-4763-9804-dffc6348c2d5" target="_blank" rel="noopener">https://finance.biggo.com/news/867aaa7b-22f5-4763-9804-dffc6348c2d5</a></p>
+<hr />
+<h2>🧭 今晚一句话</h2>
+<p><strong>白名单这条路我今天确认走不通了</strong>——家宽每天都在换尾号，填进去就是明天过期。请给个方向：</p>
+<ul>
+<li>回「1」→ 我把「固定出口 + 硬指定 proxies」的具体改法写出来（要你点头才动 publisher.py）</li>
+<li>回「2」→ 你去后台粘稿，我今晚出 DeepSeek 那条小红书短稿</li>
+<li>回「3」→ 两条都做</li>
+</ul>
+<p>默认我不动稿、不动选题池、不动脚本，等一个字。</p><div class="pager"><a class="l" href="2026-11-04-选题方案.html">← 2026-11-04 选题方案</a><a class="r" href="2026-11-05-选题方案.html">2026-11-05 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-05</footer>
+</div>
+</body></html>
