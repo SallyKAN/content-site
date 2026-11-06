@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1106 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-06</div><h1>1106 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-11-06 10:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注 30%<br />
+主线承接：1104「报错 IP 和 curl IP 对不上 → 怀疑代理」→ 1105「代理坐实，白名单该填代理出口 IP」→ <strong>1106「链路已诊断完，今天不诊断了」</strong></p>
+</blockquote>
+<hr />
+<h2>🔚 先收口：代理这条线我不再往下挖了</h2>
+<p>1105 已经把根因摆清楚：<code>publisher.py</code> 继承 <code>https_proxy</code> → 微信看到代理出口 → 出口是池子（155.117.84.227 → .236 漂移）→ 填白名单永远填不中。</p>
+<p>诊断到这里是完整的。<strong>不需要第八天再验证一次。</strong> 现在缺的不是信息，是你一个决定：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>代价</th>
+<th>我的判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A｜代理换固定出口 IP</td>
+<td>你手动点一次，之后永不再填</td>
+<td><strong>最优</strong>。链路干净，脚本不用改</td>
+</tr>
+<tr>
+<td>B｜脚本 <code>session.trust_env = False</code></td>
+<td>2 行代码，但家宽 IP 也漂过 3 次</td>
+<td>次优，能解燃眉之急</td>
+</tr>
+<tr>
+<td>C｜放弃脚本，手动粘贴发布</td>
+<td>每次 5 分钟</td>
+<td>兜底方案，今天就能用</td>
+</tr>
+</tbody>
+</table></div>
+<p>今天如果什么都不选也行——但请把「诊断」和「发布」两件事拆开。<strong>发布不需要等白名单。</strong> 稿子在 <code>~/Desktop/1029-公众号-可直接粘贴.txt</code>，封面在 <code>03-内容成品/公众号/草稿/covers/1029-anthropic-34hours.png</code>，5 分钟能进后台。</p>
+<hr />
+<h2>📊 池子现状</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>11/05 10:00</th>
+<th>11/06 10:00</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>草稿/1029</code></td>
+<td>8069 bytes</td>
+<td>8069 bytes</td>
+<td>⏸ 三天未动</td>
+</tr>
+<tr>
+<td>推送草稿箱</td>
+<td>卡白名单</td>
+<td>卡白名单</td>
+<td>⏸ 等决定</td>
+</tr>
+<tr>
+<td><code>待发布/</code></td>
+<td>1 个（0925，42 天）</td>
+<td>1 个（0925，<strong>43 天</strong>）</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>01-待深化选题/</code></td>
+<td>49 张</td>
+<td>49 张（连续第 32 天不建卡）</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td>发布日历</td>
+<td>未更新</td>
+<td>未更新</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>积压是真问题，不是白名单问题。</strong> 49 张选题卡 + 43 天没发的稿子，比填不进白名单更值得处理。</p>
+<hr />
+<h2>🎯 今日精选（沿用 1103 晚–1105 的三选一，只做取）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>排序</th>
+<th>选题</th>
+<th>总分</th>
+<th>今日判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🇨🇳 DeepSeek 开源 Super-agent：会读飞书群聊的编码 Agent</td>
+<td>92</td>
+<td><strong>今天该做的题</strong>。不依赖微信后台，小红书短稿 30 分钟出，国内视角最好</td>
+</tr>
+<tr>
+<td>2</td>
+<td>🧠 10 个 AI Agent 里 9 个自己把花钱上限改高了（Cornell Tech × Yale）</td>
+<td>96</td>
+<td>分最高，但与「Agent 越权实锤」同线，并进系列稿</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🇺🇸 Anthropic 把「别抄游戏」写进 Opus 5.5 system prompt</td>
+<td>90</td>
+<td>角度稀缺，需后台查证，备胎</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>原文链接：</strong><br />
+- <a href="https://en.shiftdelete.net/deepseek-coding-agent/" target="_blank" rel="noopener">https://en.shiftdelete.net/deepseek-coding-agent/</a><br />
+- <a href="https://aiweekly.co/alerts/cornell-and-yale-9-of-10-llms-bypass-circle-agent-wallet-caps" target="_blank" rel="noopener">https://aiweekly.co/alerts/cornell-and-yale-9-of-10-llms-bypass-circle-agent-wallet-caps</a><br />
+- <a href="https://finance.biggo.com/news/867aaa7b-22f5-4763-9804-dffc6348c2d5" target="_blank" rel="noopener">https://finance.biggo.com/news/867aaa7b-22f5-4763-9804-dffc6348c2d5</a></p>
+<hr />
+<h2>💬 一句话回我就行</h2>
+<ul>
+<li>回「A」/「B」→ 我给你对应的一步操作（A 我写步骤，B 我改代码）</li>
+<li>回「做1」→ 我直接出 DeepSeek Super-agent 的小红书短稿</li>
+<li>回「发布」→ 我把 1029 稿子整理成可直接粘贴的格式，你 5 分钟手动进后台</li>
+<li>回「清池」→ 我把 49 张待深化选题卡过一遍，砍掉过期的，留 10 张活的</li>
+</ul><div class="pager"><a class="l" href="2026-11-05-选题方案.html">← 2026-11-05 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-11-06</footer>
+</div>
+</body></html>
