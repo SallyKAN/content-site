@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1107 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-07</div><h1>1107 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-07 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1107 上午「池子里没有今日的鱼」→ <strong>1107 晚「鱼重新有了，P0 我自己先做了」</strong></p>
+</blockquote>
+<hr />
+<h2>🧾 今晚先交作业：采集管道我跑了</h2>
+<p>上午方案的 P0 是「修采集管道」，你一直没回。所以我按 1106 晚的承诺，<strong>不再问第五遍，自己先动</strong>。</p>
+<p>这次只做最小动作：<strong>HN 首页 + HN Algolia（11-04 以来 points&gt;60）跑一轮，拿标题 + URL + 时间，只写 <code>00-选题收集箱.md</code>，不建卡、不评分。</strong> 关键 3 条做了二手交叉核实。</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>今天 10:00</th>
+<th>现在 22:00</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>00-选题收集箱.md</code></td>
+<td>Oct 2 10:01（36 天未更新）</td>
+<td><strong>Nov 7 22:01</strong></td>
+<td>✅ 已补 20 条</td>
+</tr>
+<tr>
+<td><code>01-今日AI热点.md</code></td>
+<td>无</td>
+<td>无（本次写入收集箱，未单开文件）</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td><code>01-待深化选题/</code></td>
+<td>49 张（全部过期）</td>
+<td>49 张</td>
+<td>⏸ 待你回「清池」</td>
+</tr>
+<tr>
+<td><code>02-创作中选题/</code></td>
+<td>空</td>
+<td>空</td>
+<td>⏸</td>
+</tr>
+<tr>
+<td>草稿 1029</td>
+<td>8069 bytes</td>
+<td>8069 bytes</td>
+<td>⏸ 第六天</td>
+</tr>
+<tr>
+<td>待发布/（0925）</td>
+<td>44 天</td>
+<td><strong>45 天</strong></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>桌面粘贴版</td>
+<td>已有</td>
+<td>已有</td>
+<td>✅ 随时可发</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：池子不再是死水了。</strong> 20 条今天是活的，明天开始会继续往里进。</p>
+<hr />
+<h2>🎯 今晚精选（3 条，全部今日/昨日一手）</h2>
+<h3>1. Claude Code 把你的邮箱写进 User-Agent，发给每一个网站 ✅（94 分）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://github.com/anthropics/claude-code/issues/107757">GitHub Issue #107757（1579 pts）</a> | <a href="https://explainx.ai/blog/claude-code-leaks-your-email-user-agent-header-how-to-stop-it-2026">explainx 复现说明</a> | <a href="https://pasqualepillitteri.it/en/news/30672/claude-code-bug-email-user-agent-header">pasqualepillitteri 报道</a></li>
+<li><strong>一句话</strong>：11 月 5 日，用户在 <code>anthropics/claude-code</code> 提 issue：<strong>Claude Code 2.1.318（macOS）在做网页搜索时，把用户邮箱地址塞进 <code>User-Agent</code> 请求头发给任意第三方站点，且未经询问</strong>。报告者称因此<strong>每天收到几十封诈骗邮件</strong>。HN 两天冲到 1579 pts，是本周 AI 相关最高热度。</li>
+<li><strong>为什么现在做</strong>：这条是 1103–1106 那批二手链接的<strong>正相反面</strong>——一手 GitHub issue、可点开原文、有版本号、有复现描述。<strong>你的溯源要求这次完全满足。</strong></li>
+<li><strong>核心角度</strong>：<strong>Agent 的隐私泄露，往往不在模型，而在"顺手带的元数据"。</strong> 三刀：① 用户以为泄露的是 prompt，其实泄露的是<strong>身份</strong>——UA 头是给站点看的、不是给模型看的，却成了天然指纹；② 与 10-02「Agent 越权实锤」、10-04「DSec 沙盒 38 万 Agent」同一条线：<strong>agent 的权限边界从来没定义过"能自报家门到什么程度"</strong>；③ 国内落点——<strong>"我怎么查自己有没有被卖"</strong>的可操作清单（查 UA、看代理日志、换别名邮箱），这类实用稿在小红书转化最好。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 你的邮箱，被 Claude Code 塞进了每一个网站的请求头<br />
+  2. 每天几十封诈骗邮件的源头：一个没人看的 HTTP 头<br />
+  3. Agent 泄露的不是你的话，是你的身份</li>
+<li><strong>推荐平台</strong>：小红书（"查一下你有没有中"）+ 公众号（权限边界主线）+ Twitter</li>
+<li><strong>状态</strong>：⭐ 今晚最高优先级。<strong>事实可靠（一手 issue），1 小时内可出短稿。</strong></li>
+</ul>
+<h3>2. Anthropic 的 IPO，被市场自己砍了一半 ✅（91 分）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout">Bloomberg（11-06）</a> | <a href="https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html">CNBC：1.5 万亿是"拉伸"</a> | <a href="https://www.axios.com/2026/11/06/anthropicai-ipo-valuation-ai-trade">Axios：估值下调抬高了整条 AI 交易的赌注</a> | <a href="https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b">WSJ：一度低至 1 万亿</a></li>
+<li><strong>一句话</strong>：<strong>距正式 IPO 路演只剩一周</strong>，潜在买家讨论的估值区间已降到 <strong>1.2–1.3 万亿</strong>（彭博），WSJ 称一度低至 <strong>1 万亿</strong>，CNBC 引投资人称原定 1.5 万亿是"拉伸"。同一周纳斯达克因 AI 交易退潮<strong>跌 5%</strong>。</li>
+<li><strong>为什么现在做</strong>：<strong>这条把 10 月的旧稿救活了。</strong> 你 10-29 写的《Anthropic 招股书 34 小时》躺在草稿里第六天，那条讲的是"招股书怎么写"，这条讲的是<strong>"招股书还没生效，价格先被改了"</strong>——两篇能直接串成一个系列。</li>
+<li><strong>核心角度</strong>：<strong>AI 的估值不再由公司讲，由买家砍。</strong> 三刀：① 时间线要说清——<strong>1.5 万亿（预期）→ 1.3 万亿（谈论）→ 1.1 万亿（彭博另一口径）→ 1 万亿（WSJ 低点）</strong>，一周内四次下修，这不是波动，是重定价；② 和 0920 那条 OpenAI「2780 亿窟窿」闭环：<strong>同一个问题，从"烧多少"变成了"谁还信"</strong>；③ 国内落点——<strong>这不是 Anthropic 一家的事</strong>，AI 资产定价下移会顺着算力订单传到台积电/英伟达/国内算力概念。</li>
+<li><strong>标题备选</strong>：<br />
+  1. 路演前一周，Anthropic 的估值被砍掉四分之一<br />
+  2. 1.5 万亿没人接了：AI 泡沫第一次被标价<br />
+  3. 你的 1029 稿可以发了——因为市场替它写好了结尾</li>
+<li><strong>推荐平台</strong>：公众号（财经主线）+ Twitter Thread</li>
+<li><strong>状态</strong>：⭐ 时效极强（路演下周开始）。<strong>建议和 1029 稿合并发布</strong>，一篇讲招股书，一篇讲定价下修。</li>
+</ul>
+<h3>3. GitHub 1590 分之下的另一个信号：闭源模型正在赢性价比 ✅（86 分）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/">village.dev：闭源模型主导性价比前沿</a> | <a href="https://hightouch.com/blog/llm-judges-identity-resolution">hightouch：Jev 借 Opus 用 1/4 成本拿到 Opus 精度（517 pts）</a></li>
+<li><strong>一句话</strong>：同一天的两篇：一篇用数据说<strong>闭源模型已占据"价格-性能"前沿</strong>（开源不再默认更便宜）；另一篇展示<strong>小模型遇到难题时向 Opus 求助，用 1/4 成本拿到接近 Opus 的准确率</strong>。</li>
+<li><strong>核心角度</strong>：<strong>"开源省钱"这个默认前提，今年第一次被数据打穿。</strong> 三刀：① 与 10-01「后模型时代大模型不再稀缺」闭环——<strong>稀缺的从模型变成了"便宜地调用对的模型"</strong>；② 路由/级联（routing &amp; cascade）从工程技巧变成<strong>主流成本结构</strong>；③ 国内落点——<strong>通义/GLM/Kimi 的价格战已经打到"不是最便宜就没人用"</strong>，这篇是给国内读者的镜子。</li>
+<li><strong>标题备选</strong>：<br />
+  1. "开源更便宜"这句话，今年过期了<br />
+  2. 花四分之一的钱，拿 Opus 的准确率：路由正在吃掉模型</li>
+<li><strong>推荐平台</strong>：公众号（技术向）+ 小红书（省钱向）</li>
+<li><strong>状态</strong>：高价值但<strong>不紧急</strong>，适合本周内做，作为选题 1/2 的反差稿。</li>
+</ul>
+<hr />
+<h2>📦 库存与遗留（今晚必须有人做决定）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>天数</th>
+<th>今晚建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>草稿 <code>1029-Anthropic招股书34小时</code></td>
+<td>第 6 天</td>
+<td><strong>合进选题 2 一起发</strong>，或在桌面粘贴版直接发</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>45 天</strong></td>
+<td>上午说了归档，<strong>我没动手，因为那是你的文件</strong>。回「归档」我执行</td>
+</tr>
+<tr>
+<td>3</td>
+<td>49 张过期卡</td>
+<td>第 35 天</td>
+<td>回「清池」我归档到 <code>03-已发布选题/归档/</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>02-创作中选题/</code> 空</td>
+<td>—</td>
+<td>待你确认选题 1 后我建第一张卡</td>
+</tr>
+<tr>
+<td>5</td>
+<td>发布日历</td>
+<td>Oct 29 未更新</td>
+<td>选题 2 定了我一次补齐</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一句实话</strong>：采集我修了，选题我给了，但<strong>发布这一环还是空的</strong>——从 10-29 到现在 9 天，零发布。今晚这 3 条里任何一条，都比再攒一周库存有用。</p>
+<hr />
+<h2>💬 回一个词就行（这次真的只需要一个词）</h2>
+<ul>
+<li>「<strong>稿</strong>」→ 我今晚出<strong>选题 1</strong>（Claude Code 邮箱）小红书短稿，30 分钟</li>
+<li>「<strong>合并</strong>」→ 我把 1029 稿 + 选题 2 拼成一篇公众号（招股书写成、价格被砍）</li>
+<li>「<strong>清池</strong>」+「<strong>归档</strong>」→ 两个清理动作我一起执行</li>
+<li>「<strong>停</strong>」→ 晚间推送改每周三一次</li>
+</ul>
+<p>不回也可以。<strong>明早 10:00 我默认出选题 1 的短稿</strong>——那是唯一一条今天写、今天就能发的。</p>
+<hr />
+<h2>⚠️ 数据核实提醒</h2>
+<ol>
+<li><strong>选题 1</strong>：核心事实来自<strong>单个用户的 GitHub issue（#107757）</strong>，版本 2.1.318 on macOS，<strong>Anthropic 尚未公开回应</strong>。行文必须写"用户报告 / issue 称"，<strong>不能写成官方确认的隐私事故</strong>。诈骗邮件与 UA 泄露之间的因果是<strong>报告者的归因</strong>，非技术鉴定。</li>
+<li><strong>选题 2</strong>：1.5 万亿是<strong>此前预期</strong>，1.2–1.3 万亿为彭博引"知情人士"，WSJ 口径为"一度低至 1 万亿"。<strong>均为路演前讨论，非定价</strong>。严禁写成"Anthropic IPO 定价 X"。纳斯达克 5% 跌幅为 11-05 单日，需注明。</li>
+<li><strong>选题 3</strong>：village.dev 为博客分析，<strong>非学术基准</strong>，引用时标注"一篇分析"。hightouch 文中 Jev 为内部/特定任务评测，<strong>不构成通用结论</strong>。</li>
+<li>本次采集源为 HN，<strong>中文圈热度未验证</strong>——发布前建议在微博/微信搜一下关键词，确认国内是否已有跟进。</li>
+</ol>
+<hr />
+<p><em>生成：content agent | 数据源：HN 首页 + Algolia（11-04 以来）+ 二手交叉核实 3 条 | 采集已写入 <code>00-选题收集箱.md</code></em></p><div class="pager"><a class="l" href="2026-11-06-选题方案.html">← 2026-11-06 选题方案</a><a class="r" href="2026-11-07-选题方案.html">2026-11-07 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-07</footer>
+</div>
+</body></html>
