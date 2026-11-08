@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1108 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-08</div><h1>1108 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-08 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1108 上午「挑一条，今天发出去」→ <strong>1108 晚「三条里挑一条，我把稿子骨架搭好了」</strong></p>
+</blockquote>
+<hr />
+<h2>一、先给结论</h2>
+<p>上午给的 3 条，<strong>没有一条变差</strong>，也没有出现推翻它们的新料（周日 HN 冷，AI 圈基本没新硬新闻）。<br />
+<strong>所以今晚不换题，只做三件更有用的事：</strong></p>
+<ol>
+<li><strong>给 #1 排出一条具体的「1.5 小时出稿」路径</strong>（这是你昨晚说最容易动的一次）</li>
+<li><strong>把「#1 + 1107 晚 #1」两集合成一篇的结构定下来</strong>（这是本周最好的一篇）</li>
+<li><strong>把「10 天零发布」这件事重新摆到桌面上</strong></li>
+</ol>
+<hr />
+<h2>二、今晚精选：还是这 3 条，但顺序变了</h2>
+<h3>⭐ 1. Agent 泄密第二集：Claude Code 把密码提交到了公开 GitHub（91 分）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again">Apiiro 研究博客（11-07）</a> · <a href="https://news.ycombinator.com/item?id=45389100">HN 185 pts</a></li>
+<li><strong>为什么今晚还是它</strong>：<strong>它有一个别的话题没有的东西——可执行的自查动作。</strong> 「3 分钟查你的仓库有没有中招」这种内容，小红书发出去当天就有人保存，不依赖 AI 新闻的新鲜度。</li>
+<li><strong>今晚的决定性理由</strong>：它和 1107 晚 #1（邮箱写进 User-Agent，1579 pts）合并后，是一篇<strong>有第一集、有第二集、有结论</strong>的完整故事。中文圈到现在还没有这个视角。</li>
+</ul>
+<p><strong>📐 成稿结构（直接可用，约 2500 字）</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>内容</th>
+<th>字数</th>
+<th>耗时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开头</td>
+<td>两句话讲完两件事：① Agent 把你邮箱发给每个网站；② 你点了「不要再问」，Agent 把密码提交到公开仓库</td>
+<td>200</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>第一集</td>
+<td>UA 头事件：版本号 2.1.318、1579 pts、每天几十封诈骗邮件。<strong>观点：泄露的不是 prompt，是身份</strong></td>
+<td>600</td>
+<td>25 min</td>
+</tr>
+<tr>
+<td>第二集</td>
+<td>Apiiro 扫描：1,122 个公开文件里有真凭据。<strong>观点：泄露的不是代码，是契约</strong></td>
+<td>700</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>合流</td>
+<td><strong><code>Don't Ask Again</code> 是一次「永久授权」的静默签署</strong>。逐次授权 → 永久授权，代价可量化</td>
+<td>500</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>落点</td>
+<td>3 分钟自查（见下）+ 绝不能关的 4 类确认 + 团队 5 条 pre-commit 规则</td>
+<td>500</td>
+<td>20 min</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>🔧 自查动作（稿子里的干货，先用这个验证）</strong></p>
+<pre><code class="language-bash"># 1. 仓库里有没有被提交的凭据
+git log --all --full-history -- &quot;*.env&quot; &quot;*settings.local.json&quot; &quot;*credentials*&quot;
+# 2. 全仓扫一遍常见密钥前缀
+git grep -nE &quot;sk-[a-zA-Z0-9]{20,}|ghp_[a-zA-Z0-9]{30,}|AKIA[0-9A-Z]{16}&quot; $(git rev-list --all) -- | head
+# 3. 确认 Claude Code 权限配置里哪些被设成了「不再询问」
+cat ~/.claude/settings.json 2&gt;/dev/null | grep -i -A3 &quot;allow\|permission&quot;
+</code></pre>
+<p><strong>绝不能关的 4 类确认</strong>：网络请求 / 写盘到仓库目录 / <code>git push</code> / 读取凭证文件。</p>
+<ul>
+<li><strong>标题备选</strong>：<br />
+  1. 你点了一次「不要再问」，就把密码提交到了 GitHub<br />
+  2. Agent 泄密第二集：1,122 个公开仓库里的真密码<br />
+  3. 关掉 AI 权限提示的那一刻，你签的是什么合同</li>
+<li><strong>平台</strong>：公众号（主）+ 小红书（「3 分钟自查」卡）+ Twitter</li>
+<li><strong>状态</strong>：<strong>⏱ 1.5 小时可出稿，今晚定稿明天就能发。</strong></li>
+</ul>
+<hr />
+<h3>2. 每台 Mac 里有一个你不知道的「人际图谱」（89 分）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://8rank.ai/game/apple-intelligence-personal-knowledge-graph">Anatomy of Apple's Personal Knowledge Graph（Eighth Rank）</a> · <a href="https://news.ycombinator.com/item?id=45384162">HN 606 pts，11-07</a></li>
+<li><strong>今晚判断</strong>：<strong>这是本周质量最高的一条，但它是「周末稿」，不是「今晚稿」。</strong> 606 pts 是今日 AI 相关第二高，且作者放出了查看工具——<strong>读者可以自己验证</strong>，这在内容上非常值钱。</li>
+<li><strong>为什么排第 2</strong>：它需要一点额外的功课（国产手机端侧图谱的对照），不是 1.5 小时能出的。<strong>但它值得单独的半天。</strong></li>
+<li><strong>唯一新增建议</strong>：小红书角度定成 <strong>「跟着做，看你的 Mac 知道你多少」</strong> —— 可复现 = 天然传播。</li>
+<li><strong>标题</strong>：① 你的 Mac 一直在画一张图：你是谁，你认识谁 ② 端侧 AI 不等于隐私安全，苹果自己给了证据</li>
+</ul>
+<hr />
+<h3>3. 微软解散了自己的 AI 前沿研究组（86 分）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://hunch.net/?p=13764006">John Langford：The End of AI Frontiers</a> · <a href="https://news.ycombinator.com/item?id=45387875">HN 389 pts</a></li>
+<li><strong>今晚判断</strong>：<strong>不紧急，但它是 #1 的「产业版镜像」</strong>。同一周里，一边是 Agent 在个人层面越权，一边是前沿研究在组织层面收缩——<strong>两者都是「约束开始生效」</strong>。</li>
+<li><strong>建议</strong>：等 1029 招股书稿和这篇一起做「AI 进入算账阶段」系列，别单独发。</li>
+</ul>
+<hr />
+<h2>三、库存与遗留（今晚实况）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1108#1 + 1107 晚 #1 合并稿</td>
+<td><strong>结构已定</strong>（见上表）</td>
+<td>回「开写」我建卡 + 出初稿</td>
+</tr>
+<tr>
+<td>2</td>
+<td>草稿 <code>1029-Anthropic招股书34小时</code>（8069 bytes）</td>
+<td><strong>第 11 天未动</strong></td>
+<td>与 1107#2（估值下修）合并，一次发两篇</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1108#2 Mac 人际图谱</td>
+<td>已选，未动笔</td>
+<td>需要半天，排在本周</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1108#3 MSR</td>
+<td>已选，未动笔</td>
+<td>并入「算账阶段」系列</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>01-待深化选题/</code> 49 张过期卡（10-01~10-04）</td>
+<td><strong>第 37 天</strong></td>
+<td>回「清池」→ 归档到 <code>03-已发布选题/归档/</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>02-创作中选题/</code></td>
+<td>空</td>
+<td>等 #1 开工</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 47 天</strong></td>
+<td>回「归档」我执行</td>
+</tr>
+<tr>
+<td>8</td>
+<td>发布日历</td>
+<td>10-29 未更新</td>
+<td>#1 定了我一次补齐</td>
+</tr>
+<tr>
+<td>9</td>
+<td>距上次发布</td>
+<td><strong>第 11 天零发布</strong>（10-29 至今）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>四、一句实话</h2>
+<p>上午说「问题不在选题，在没人按下发布」。<strong>今天这句更硬了：池子里现在有 4 篇能发的稿（2 篇半成品 + 2 篇有完整结构），0 篇在发。</strong></p>
+<h1>1 的骨架今晚已经搭好了——<strong>你只需要回一个字，或者什么都不回，明天早上我就按这个结构自己写。</strong></h1>
+<p>你觉得这套「不回就自己动」的做法对吗？不对的话告诉我，我改。</p><div class="pager"><a class="l" href="2026-11-07-选题方案.html">← 2026-11-07 选题方案</a><a class="r" href="2026-11-08-选题方案.html">2026-11-08 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-08</footer>
+</div>
+</body></html>
