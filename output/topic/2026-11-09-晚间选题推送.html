@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1109 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-09</div><h1>1109 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-09 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1109 上午「高盛收回 Claude Code，今天必须发」→ <strong>1109 晚「白天来了一条比高盛更大的新闻，但它不能今晚发」</strong></p>
+</blockquote>
+<hr />
+<h2>一、先给结论</h2>
+<p>上午的 #1（高盛收回 Claude Code，605 pts）<strong>依然是今天最该发的那篇</strong>，它的利益关系和国内落点没有任何一条能替代。</p>
+<p>但下午 HN 出了一条更炸的：<strong>黄仁勋 11-08 深夜发全员信承认婚外情，同时董事会宣布启动独立调查——因为外媒报道他"是外国情报行动的目标"。</strong> 785 + 476 pts，85 + 54 条评论。</p>
+<p><strong>我的判断：这条热度第一，但今晚不能写。</strong> 理由是硬性的——<strong>国内信源为零，二是案情未定</strong>。我现在能拿到的只有 NVIDIA 官方两页声明和 Ars/Axios 的标题（Axios 有反爬，正文我没读到，"外国情报"这个定性目前只在董事会声明的措辞里）。<strong>写这种稿，错一个词就是谣言传播者。</strong> 我把它列成 P0-但必须等 24 小时的题，明天早上如果路透/彭博/财新出了可引用的正文，我立刻开写。</p>
+<hr />
+<h2>二、今晚精选（3 条）</h2>
+<h3>⭐ 1. 【维持】高盛把 Claude Code 收了回去——它就是 Anthropic IPO 的主承销商（95 分）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers">TheStateOfAI（11-08）</a> · <a href="https://www.fa-mag.com/news/goldman-restricts-traders-and-bankers-from-using-some-ai-tools-89026.html">Bloomberg 原始报道</a> · <a href="https://news.ycombinator.com/item?id=50415628">HN 817 pts（已从上午 605 涨到 817）</a></li>
+<li><strong>今晚新增的一条硬证据（很重要）</strong>：同一天，<strong>苹果把部分工程师的每日 AI 预算从 300 美元砍到 200 美元</strong>（Stork AI Daily，11-08）。<strong>三条独立的机构动作在 48 小时内指向同一件事：大厂开始给 AI 使用量装表了。</strong></li>
+<li><a href="https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget" target="_blank" rel="noopener">https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget</a></li>
+<li><strong>今晚修改后的成稿结构（把"一家"变成"一轮"）</strong>：</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>内容</th>
+<th>字数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开头</td>
+<td>三个数字：高盛 12,000 名工程师 · 苹果 300→200 美元/天 · OpenAI 融资低于目标 1500 亿</td>
+<td>200</td>
+</tr>
+<tr>
+<td>主体一</td>
+<td>高盛：不是模型变差，是"谁在用"变了。交易员用它做客户材料＝合规敞口</td>
+<td>700</td>
+</tr>
+<tr>
+<td>主体二</td>
+<td>苹果：连最赚钱的公司都在给 token 装表。<strong>token 预算正在变成新的差旅预算</strong></td>
+<td>500</td>
+</tr>
+<tr>
+<td>主体三</td>
+<td>利益关系：主承销商在写招股书时，把自己的产品收了回去＝尽调信号</td>
+<td>500</td>
+</tr>
+<tr>
+<td>落点</td>
+<td>国内怎么落地：按岗位（不是按部门）划 4 档权限 + 客户数据与代码工具隔离 + 谁签字谁留痕</td>
+<td>600</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>标题备选</strong>：<br />
+  1. 高盛把 Claude Code 收了回去——它是 Anthropic IPO 的主承销商<br />
+  2. 48 小时，三家大厂同时给 AI 装上了电表<br />
+  3. 让交易员用 AI 写代码，高盛试了半年，然后收回了</li>
+<li><strong>平台</strong>：公众号（主）+ 小红书（「你们公司该不该全员开 AI」）+ Twitter</li>
+<li><strong>状态</strong>：<strong>素材已齐，1.5~2 小时可出稿。</strong></li>
+</ul>
+<hr />
+<h3>2. 【降级为素材】Agent 泄密的第三集：ChatGPT 桌面版把你的 SSH agent 转发到了远程机器（83 pts，但很致命）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://github.com/openai/codex/pull/28131#discussion_r3410013180">OpenAI/codex PR #28131 讨论</a> · <a href="https://news.ycombinator.com/item?id=50422628">HN 83 pts，11-09 08:17</a></li>
+<li><strong>一句话</strong>：ChatGPT 桌面版会把<strong>你本地的 SSH agent 转发到远程机器</strong>，于是远程在跑的 agent <strong>可以拿你的本地凭证做认证</strong>——比如往你的私有 GitHub 仓库 push。</li>
+<li><strong>为什么今晚不单独发</strong>：它和 1107#1（邮箱写进 UA）、1108#1（Don't Ask Again 泄露密码）是同一系列第三集，热度低但<strong>说服力最强</strong>——因为这次连"用户点了什么"都没有，是你装了桌面版就有的默认行为。</li>
+<li><strong>今晚的决定</strong>：<strong>它不单独成稿，直接作为 #1 的"个人版对照段"</strong>——机构在收紧工具的<strong>权限范围</strong>（高盛），个人在放开工具的<strong>凭证范围</strong>（ChatGPT 桌面版）。这一段放在 #1 落点之前，200 字，杀伤力很强。</li>
+<li><strong>备选</strong>：如果高盛稿写不下去，它就是单独一篇「三步自查你的 agent 有没有拿你的钥匙」的小红书卡。</li>
+</ul>
+<hr />
+<h3>3. 【新，但有坑】"Opus 5.5 被悄悄削弱了？11 月 3 日推理模式变了"（313 pts，69 评论）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://twitter.com/shanemelaugh/status/2119192075505893695">原帖（X）</a> · <a href="https://news.ycombinator.com/item?id=50422069">HN 313 pts，11-09 07:04</a></li>
+<li><strong>为什么值得看</strong>：这是"模型降智"话题第一次有具体日期（11-03）和具体表现（thinking pattern 变化），69 条评论里有人在贴对比实验。<strong>"我的模型变笨了"是小红书/公众号最容易爆的 AI 话题之一。</strong></li>
+<li><strong>为什么今晚不定</strong>：<strong>信源是单条 X 帖 + 社区复盘，没有官方回应，没有可复现的 benchmark。</strong> 这类题一旦写，就必须自己跑实验——至少要 20 组 prompt 的 A/B，今晚做不完。</li>
+<li><strong>建议</strong>：<strong>这是本周最好的"可复现实验型"选题</strong>。如果你愿意，我用半天跑一组对照（同一批任务、11-03 前后的输出对比），做出来是<strong>国内首发</strong>，比转述 HN 强十倍。</li>
+</ul>
+<hr />
+<h2>三、库存与遗留（今晚实况）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>1109#1 高盛稿</strong></td>
+<td><strong>素材齐，结构已改（从"一家"到"一轮"）</strong></td>
+<td>回「开写」我出初稿</td>
+</tr>
+<tr>
+<td>2</td>
+<td>黄仁勋 / NVIDIA 调查</td>
+<td><strong>新增 P0，等 24 小时</strong></td>
+<td>明早看路透/彭博正文，有就写</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ChatGPT 桌面版 SSH 转发</td>
+<td>已并入 #1 作对照段</td>
+<td>—</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Opus 5.5 降智</td>
+<td><strong>新增，本周最佳实验题</strong></td>
+<td>回「做实验」我跑 A/B</td>
+</tr>
+<tr>
+<td>5</td>
+<td>草稿 <code>1029-Anthropic招股书34小时</code></td>
+<td><strong>第 13 天未动</strong></td>
+<td>今天钩子更硬了（主承销商自己收回产品），建议与 #1 同周发</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1108#2 Mac 人际图谱（856 pts）</td>
+<td>已选未动</td>
+<td>本周半天</td>
+</tr>
+<tr>
+<td>7</td>
+<td>1108#3 MSR 解散</td>
+<td>已选未动</td>
+<td>并入「AI 算账阶段」系列</td>
+</tr>
+<tr>
+<td>8</td>
+<td>49 张过期卡（10-01~10-04）</td>
+<td><strong>第 39 天</strong></td>
+<td>回「清池」我归档</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 49 天</strong></td>
+<td>回「归档」我执行</td>
+</tr>
+<tr>
+<td>10</td>
+<td>发布日历</td>
+<td>10-29 未更新</td>
+<td>#1 定了我一次补齐</td>
+</tr>
+<tr>
+<td>11</td>
+<td>距上次发布</td>
+<td><strong>第 13 天零发布</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>四、一句实话</h2>
+<p>今天的池子质量是最近两周最好的：<strong>一条 817 分的产业稿（高盛+苹果）、一条 785 分的公司危机稿（英伟达）、一条 313 分的模型质疑稿</strong>。三篇都有得写。</p>
+<p>我克制住了不写英伟达那条，因为<strong>热度不等于可以写</strong>——它现在是"董事会用了'外国情报行动'这个措辞"，不是"黄仁勋泄密了"。这两者之间的差距，就是一篇文章会不会被删的差距。</p>
+<p>高盛那篇我等你一个字。<strong>如果今晚还是不回，明早我直接按上表的结构把初稿写出来放到 <code>03-内容成品/公众号/草稿/</code>，你起来只需要删改。</strong></p><div class="pager"><a class="l" href="2026-11-08-选题方案.html">← 2026-11-08 选题方案</a><a class="r" href="2026-11-09-选题方案.html">2026-11-09 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-09</footer>
+</div>
+</body></html>
