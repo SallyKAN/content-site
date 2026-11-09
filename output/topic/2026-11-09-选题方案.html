@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1109 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-09</div><h1>1109 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-11-09 10:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1108 晚「三条里挑一条」→ <strong>1109「昨晚来了一条真新闻，今天必须发」</strong></p>
+</blockquote>
+<hr />
+<h2>一、今日采集（10:00 实跑）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>源</th>
+<th>条件</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HN Algolia <code>search_by_date</code></td>
+<td>points&gt;60，11-07 起</td>
+<td><strong>21 条</strong>（其中多条昨晚/今早新上榜）</td>
+</tr>
+<tr>
+<td>HN Algolia <code>search_by_date</code></td>
+<td>points&gt;80，11-07 起</td>
+<td>19 条（筛选后）</td>
+</tr>
+<tr>
+<td>HN Algolia <code>search</code></td>
+<td>points&gt;100，AI 相关</td>
+<td>老帖为主，无新料</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>关键变化：周日晚上 HN 突然热了。</strong> 昨晚 22:00 之后新增了一批非周末的料，最重要的一条是 <strong>Goldman Sachs 把 Claude Code 从投行/交易员手里收回</strong>——11-08 18:16 上榜，<strong>605 pts / 50+ 评论</strong>，是本周 AI 相关最高分。</p>
+<hr />
+<h2>二、今日精选（3 条）</h2>
+<h3>1. 高盛把 Claude Code 收了回去——而它正是 Anthropic IPO 的主承销商 ⭐ P0</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers">TheStateOfAI（11-08）</a> · <a href="https://www.fa-mag.com/news/goldman-restricts-traders-and-bankers-from-using-some-ai-tools-89026.html">Bloomberg 原始报道</a> · <a href="https://news.ycombinator.com/item?id=50415628">HN 605 pts</a></li>
+<li><strong>一句话</strong>：高盛 10 月更新内部规定，把 <strong>Claude Code 和 GitHub 的使用权限收回到约 12,000 名工程师</strong>，交易员和投行员工失去访问权（Strats 岗保留）。此前 7 月，CIO Marco Argenti 还在公开吹嘘非技术员工的「vibe coding」；4 月起高盛香港投行部已禁用 Claude。<strong>而高盛，是 Anthropic IPO 的主承销商之一。</strong></li>
+<li><strong>计分</strong>：热度 30/30（605 pts，今日 AI 相关第一）· 角度 37/40 · 国内 28/30 → <strong>95（本周最高）</strong></li>
+<li><strong>为什么现在做</strong>：这是过去 10 天所有主线第一次<strong>合流</strong>。</li>
+<li>1107#1 UA 泄露 → 「Agent 会自己往外送东西」</li>
+<li>1108#1 Don't Ask Again → 「你关掉确认，等于签了永久授权」</li>
+<li><strong>今天这条是：一家最懂钱的机构，看完账之后，选择把工具收回。</strong> 它不是「AI 不行了」，是<strong>「AI 在受监管环境里的真实成本被算出来了」</strong>。</li>
+<li><strong>三刀</strong>：<br />
+  1. <strong>不是模型变差了，是「谁在用」变了。</strong> 同一个工具，工程师用是生产力，交易员用是<strong>合规风险敞口</strong>——他们拿它去监控客户交易流、建仓位模型、做材料，产出物直接进客户文件。<br />
+  2. <strong>最锋利的角度是利益关系</strong>：<strong>主承销商在给 Anthropic 做 IPO 的同时，内部把 Anthropic 的产品收了起来。</strong> 这不是丑闻，这是<strong>尽调</strong>。银行在写招股书时看到的数字，和它在自己楼里跑出来的数字，不一定一致。<br />
+  3. <strong>接 OpenAI 同一天的动作</strong>：11-07 OpenAI 以 <strong>1.25 万亿估值融 110 亿美元</strong>（<a href="https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/">链接</a>，HN 181 pts，<strong>低于它最初想要的 1.4 万亿</strong>）。一个砍价，一个收工具——<strong>同一条基线：估值开始向下修。</strong></li>
+<li><strong>国内落点（非常强）</strong>：国内券商/银行的「全员 AI」推进速度比高盛只快不慢，但<strong>几乎没有一家做过「岗位 × 权限」的分层</strong>。可操作落地：① 按岗位（不是按部门）划 AI 权限的 4 档；② 客户数据与代码工具必须物理/账号隔离；③ 谁签字谁负责的留痕要求。<strong>这条国内大概率没人写。</strong></li>
+<li><strong>标题备选</strong>：<br />
+  1. 高盛把 Claude Code 收了回去——它是 Anthropic IPO 的主承销商<br />
+  2. 让交易员用 AI 写代码，高盛试了半年，然后收回了<br />
+  3. 最懂钱的机构，最先撤了</li>
+<li><strong>平台</strong>：公众号（主）+ 小红书（「你们公司该不该全员开 AI」）+ Twitter</li>
+<li><strong>状态</strong>：一手报道 + 有明确利益关系可挖，<strong>今天就能发</strong>。1.5~2 小时出稿。</li>
+</ul>
+<h3>2. OpenAI 融 110 亿，但估值没到它想要的那个数（181 pts）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/">247wallst 报道（11-07）</a> · <a href="https://news.ycombinator.com/item?id=50413822">HN 181 pts</a></li>
+<li><strong>一句话</strong>：OpenAI 完成 110 亿美元融资，估值 1.25 万亿美元，<strong>低于最初寻求的 1.4 万亿</strong>。同一周 Anthropic IPO 估值被砍到 1.1 万亿。</li>
+<li><strong>计分</strong>：热度 24/30（181 pts，但金额大）· 角度 34/40 · 国内 27/30 → <strong>85</strong></li>
+<li><strong>为什么现在做</strong>：<strong>它和 #1 是一篇稿的两半</strong>，不建议单独发。合起来就是「AI 定价重估周」的中文总结：一边是融资缩水，一边是机构收工具，一边（1108#3）是微软解散前沿研究组。</li>
+<li><strong>注意</strong>：这条<strong>已经有 1.5 天龄</strong>，加上 1107#2（Anthropic 估值下修），<strong>建议写成「一周定价重估」综述，而不是新闻</strong>。</li>
+<li><strong>状态</strong>：作为 #1 的第二段素材，或本周合稿。</li>
+</ul>
+<h3>3. Person of Interest：反 AI 监控的人（289 pts）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://krthr.co/person-of-interest/">krthr.co（11-08）</a> · <a href="https://news.ycombinator.com/item?id=50412318">HN 289 pts</a></li>
+<li><strong>判断</strong>：<strong>一条需要先读原文再决定</strong>的非典型料（标题看不出内容，289 pts 说明文章质量不错）。<strong>暂列备选</strong>，我读完再给你判断，不占今天的时间。</li>
+<li><strong>可以作为</strong>：1108#2（Mac 人际图谱）的配套材料——那条讲「设备在画你的关系图」，这条可能讲「人怎么被系统标记」。</li>
+</ul>
+<hr />
+<h2>三、库存与遗留（实况）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>1109#1 高盛</strong></td>
+<td><strong>新增，95 分</strong></td>
+<td><strong>今天发这一篇</strong>，我按「开写」直接出初稿</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1108#1 + 1107晚#1 合并稿（Agent 泄密）</td>
+<td>结构已定，第 1 天</td>
+<td><strong>可以不发了，或改成 #1 的配套背景段</strong>——高盛这条更强</td>
+</tr>
+<tr>
+<td>3</td>
+<td>草稿 <code>1029-Anthropic招股书34小时</code></td>
+<td><strong>第 12 天未动</strong></td>
+<td><strong>今天是对的时间</strong>：高盛是主承销商，招股书稿有了新闻钩子</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1108#2 Mac 人际图谱（606 pts）</td>
+<td>已选未动</td>
+<td>本周半天</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1108#3 MSR 解散</td>
+<td>已选未动</td>
+<td>并入「定价重估周」综述</td>
+</tr>
+<tr>
+<td>6</td>
+<td>49 张过期卡（10-01~10-04）</td>
+<td><strong>第 38 天</strong></td>
+<td>回「清池」我归档</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 48 天</strong></td>
+<td>回「归档」我执行</td>
+</tr>
+<tr>
+<td>8</td>
+<td>发布日历</td>
+<td>10-29 未更新</td>
+<td>#1 定了我一次补齐</td>
+</tr>
+<tr>
+<td>9</td>
+<td>距上次发布</td>
+<td><strong>第 12 天零发布</strong>（10-29 至今）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>四、一句实话</h2>
+<p>过去三天我一直在说「池子里的料够写三篇，问题在没人按下发布」。<br />
+<strong>今天不一样：池子里那条最强的料，自己长出了发布理由。</strong> 高盛既是 Anthropic 的主承销商、又是把 Claude Code 收回去的机构——<strong>这个矛盾点，就是文章的标题。</strong></p>
+<p>你只需要回「开写」，我按下面的顺序出：<strong>高盛稿（今天）→ 招股书稿改钩子（今天）→ 定价重估综述（本周）</strong>。</p><div class="pager"><a class="l" href="2026-11-08-选题方案.html">← 2026-11-08 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-11-09</footer>
+</div>
+</body></html>
