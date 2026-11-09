@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-10（周二）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-10</div><h1>每日独立开发精选 · 2026-11-10（周二）</h1>
+<blockquote>
+<p>采集时间 02:05。源：HN Firebase API / Product Hunt feed.json / Reddit 浏览器渲染</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. Fold Epic Paper Airplanes</h3>
+<p><a href="https://www.foldableflight.com" target="_blank" rel="noopener">https://www.foldableflight.com</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50424581" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50424581</a></p>
+<p><strong>538 分，86 条评论。今天的榜首，而且是个"没用但很美"的项目。</strong></p>
+<p><strong>Jus 点评</strong>：折纸飞机 + 能飞的物理模拟。这类项目能上榜首靠的不是技术难度，是<strong>"我点开就想动手试试"的即时体验</strong>。你要做开源项目第一波曝光，这种形态比工具型产品好传播得多——<strong>因为用户不需要先理解你的价值</strong>。</p>
+<h3>2. Opus 5.5 被削弱了吗？11 月 3 日推理模式发生了变化</h3>
+<p><a href="https://twitter.com/shanemelaugh/status/211919207550589" target="_blank" rel="noopener">https://twitter.com/shanemelaugh/status/211919207550589</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50422069" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50422069</a></p>
+<p><strong>387 分，289 条评论。今天对你最实用的一条。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条别当八卦看。</strong> 用户感知到的"模型变笨"往往是真的——服务端会悄悄换量化版本、改路由、调温度策略。<strong>对你的实际含义是：你依赖模型能力做的任何自动化（测试、agent 工作流），基准会漂移。</strong> 289 条评论里有大量具体对比，值得扫一遍看你有没有同感。<strong>做 agent 系统必须自己做回归测试，这条就是原因。</strong></p>
+<h3>3. Payments Canada 宣布上线实时支付系统 RTR</h3>
+<p><a href="https://www.payments.ca/canada-launches-real-time-rail-" target="_blank" rel="noopener">https://www.payments.ca/canada-launches-real-time-rail-</a>...<br />
+讨论：<a href="https://news.ycombinator.com/item?id=50427362" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50427362</a></p>
+<p><strong>173 分，104 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条跟你的 x402 方向直接相关。</strong> 国家级实时支付轨道上线，意味着"支付变成基础设施"这件事在每个国家都在推进。<strong>你做的 agent 支付协议，最终要落在这些底层轨道上</strong>——了解 RTR 的能力边界（实时清算、单笔限额、参与方准入），比读任何 crypto 白皮书实际。</p>
+<h3>4. malloc 到底在干什么？</h3>
+<p><a href="https://benmandrew.com/articles/what-is-malloc-doing-an" target="_blank" rel="noopener">https://benmandrew.com/articles/what-is-malloc-doing-an</a>...<br />
+讨论：<a href="https://news.ycombinator.com/item?id=50424157" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50424157</a></p>
+<p><strong>144 分，32 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>基础功的经典题材，永远有新读者。</strong> 你要做性能敏感的东西（Go/Rust），这块的直觉值钱。</p>
+<h3>5. 同一块 H100，不同地方租价 $2.69 到 $12.29 一小时</h3>
+<p><a href="https://github.com/datareceipts/data-receipts/tree/main" target="_blank" rel="noopener">https://github.com/datareceipts/data-receipts/tree/main</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50427085" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50427085</a></p>
+<p><strong>106 分，61 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>接近 5 倍的价差。</strong> 如果你以后要跑训练或大规模推理，这条直接省钱。而且——<strong>"同一资源不同渠道价差巨大"本身就是个信息产品</strong>，这个 repo 做的事情（数据回执/比价）很值得借鉴。</p>
+<p>其他：<br />
+- <strong>Magenta 太阳能板可能是农光互补最聪明的招</strong> — 103pt（<a href="https://www.anthropocenemagazine.org/2026/10/magenta-so" target="_blank" rel="noopener">https://www.anthropocenemagazine.org/2026/10/magenta-so</a>...）<br />
+- <strong>Zebkit — 把 Chromium 当嵌入式库用</strong> — 77pt（<a href="https://github.com/ikey4u/zebkit" target="_blank" rel="noopener">https://github.com/ikey4u/zebkit</a>）<strong>做桌面 app 的人该看</strong><br />
+- 以太坊基金会要求"自杀誓言"的加密诉讼 — 77pt（77 条评论）<br />
+- <strong>Raspberry Pi 5 16GB 涨到 385 美元了</strong> — 25pt（<a href="https://www.cnx-software.com/2026/11/03/when-will-this-" target="_blank" rel="noopener">https://www.cnx-software.com/2026/11/03/when-will-this-</a>...）<strong>注意：今天看到的涨价，会影响任何低成本硬件方案的成本假设</strong><br />
+- <strong>Show HN: DBDelve — 用 Rust 和 GPUI 做的开源数据库客户端</strong> — 16pt（<a href="https://news.ycombinator.com/item?id=50427934" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50427934</a>）<strong>跟上周 Blender 比 GPUI 快那条连起来看，很有意思</strong><br />
+- Pigshell: Unix the Web — 20pt（<a href="http://pigshell.com/v/0.6.4/" target="_blank" rel="noopener">http://pigshell.com/v/0.6.4/</a>）</p>
+<h2>🚀 Product Hunt（今日 10 个）</h2>
+<p><strong>今天有一半是昨日延续，新条目里最有价值的两个都跟 agent 有关。</strong></p>
+<h3>1. AXL — 给 AI 产品创始人的 GTM 副驾，1200+ 动作走 MCP</h3>
+<p><a href="https://www.producthunt.com/products/axl-2" target="_blank" rel="noopener">https://www.producthunt.com/products/axl-2</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天最该研究的一个，因为它同时踩中三个点：GTM、MCP、1200 个动作。</strong><br />
+「用 MCP 暴露 1200 个动作」这个思路，意味着 AXL 不是造一个 app，而是造<strong>一个能被任何 agent 调用的能力集合</strong>。<strong>这正是你 x402 应该考虑的形态</strong>——别做框架，做"能被别人 agent 直接调用的能力"。跟我之前说的 Rimlight（做 skill 不做入口）是同一个逻辑。</p>
+<h3>2. Flic Cue — AI 语音按钮：按住说话、摇一摇撤销、开放 SDK</h3>
+<p><a href="https://www.producthunt.com/products/flic-cue" target="_blank" rel="noopener">https://www.producthunt.com/products/flic-cue</a></p>
+<p><strong>Jus 点评</strong>：<strong>"摇一摇撤销"这个设计很聪明</strong>——语音交互最大的问题就是误触发和无法回退，它把撤销做成了物理动作。<strong>物理硬件 + 开放 SDK</strong>，跟你做嵌入式这条线能对上。</p>
+<h3>3. Memorias — 把你讲的故事变成一本书的 AI 传记作者</h3>
+<p><a href="https://www.producthunt.com/products/memorias-3" target="_blank" rel="noopener">https://www.producthunt.com/products/memorias-3</a></p>
+<p><strong>Jus 点评</strong>：<strong>这是"AI 做内容"里少数真正有情感价值的方向</strong>。老人回忆录、家庭史，付费意愿高且不嫌贵。</p>
+<h3>4. GitHub New PR Overview — 滚之前先看见是什么卡住了你的 PR</h3>
+<p><a href="https://www.producthunt.com/products/github" target="_blank" rel="noopener">https://www.producthunt.com/products/github</a></p>
+<p><strong>Jus 点评</strong>：<strong>GitHub 官方做的，很小但很准。</strong> 说明大厂开始专门优化"PR 卡在哪"这个环节。</p>
+<h3>5. Higgsfield Miracle — 编辑视频的任何部分而不影响其他部分</h3>
+<p><a href="https://www.producthunt.com/products/higgsfield" target="_blank" rel="noopener">https://www.producthunt.com/products/higgsfield</a></p>
+<p><strong>Jus 点评</strong>："改局部不影响整体"——这是视频 AI 编辑真正的技术门槛所在。</p>
+<h3>6. skuttr — 一句话，从你的相册生成一条 Reel</h3>
+<p><a href="https://www.producthunt.com/products/skuttr" target="_blank" rel="noopener">https://www.producthunt.com/products/skuttr</a></p>
+<p><strong>Jus 点评</strong>：跟上周的 PostMyPace 同一类：<strong>只做"最后一步分享"的窄切口</strong>。</p>
+<h3>7. Nörth — 远程工作的自然点对点协作</h3>
+<p><a href="https://www.producthunt.com/products/north-5" target="_blank" rel="noopener">https://www.producthunt.com/products/north-5</a></p>
+<p><strong>Jus 点评</strong>：P2P 协作，无视带宽/服务器成本。做小团队有可能，做大很难。</p>
+<h3>8-10. 昨日延续（NoMac / DocsAlot / NotchX）</h3>
+<ul>
+<li><strong>NoMac</strong>（给 agent 一台按分钟计费的 Mac）<strong>连续第二天在榜</strong> — 这个信号值得注意，一周内两个产品（Glasshand + NoMac）撞同一件事，现在还在延续</li>
+<li>DocsAlot、NotchX 都是昨天上过的</li>
+</ul>
+<h2>💡 Reddit r/SideProject（今日热门 · 浏览器渲染 24 条）</h2>
+<p><strong>今天热度明显回升，榜首 83 分，且技术味很浓。</strong></p>
+<h3>1. 我在做一个能瞬间打开超大文件的文本编辑器</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xr6gs1/im_building_a_text_editor_that_opens_huge" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xr6gs1/im_building_a_text_editor_that_opens_huge</a></p>
+<p><strong>83 分，104 条评论（今日双榜第一）。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>今天最值得读的一条，因为 104 条评论里有真正的工程讨论。</strong> 打开几个 GB 的日志文件不卡——这背后是内存映射、分块渲染、虚拟滚动。<strong>你每天要看 agent 生成的日志，这类工具是刚需。</strong> 而且它再次证明：<strong>技术难度高的窄工具，在 SideProject 里的讨论质量远高于消费级 app。</strong></p>
+<h3>2. 我做了个流媒体 app，描述场景就能跳到那一幕</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xr9flw/i_built_a_streaming_app_that_lets_you_jum" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xr9flw/i_built_a_streaming_app_that_lets_you_jum</a></p>
+<p><strong>78 分，23 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>"用自然语言定位视频内容"是搜索的下一形态。</strong> 现在靠字幕索引，未来靠多模态理解。</p>
+<h3>3. 我让桌面跟着周围环境变化，感觉更有生命力</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xrmsfn/i_made_my_desktop_feel_more_alive_by_maki" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrmsfn/i_made_my_desktop_feel_more_alive_by_maki</a></p>
+<p><strong>62 分。</strong></p>
+<p><strong>Jus 点评</strong>：感官型产品，靠惊艳感取胜。</p>
+<h3>4. 我做了个 Windows app，雪花真的会堆在你的窗户上</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xrofua/i_made_a_windows_app_where_the_snow_actua" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrofua/i_made_a_windows_app_where_the_snow_actua</a></p>
+<p><strong>37 分，14 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>纯美学的拟物项目，季节性爆发。</strong> 这类项目最能训练的一件事是"<strong>怎么在 3 秒内让人想装</strong>"。</p>
+<h3>5. 我做了个用手机相机换算外币价格的免费 app</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xrg7q4/i_built_a_free_app_that_converts_foreign_" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrg7q4/i_built_a_free_app_that_converts_foreign_</a></p>
+<p><strong>21 分，19 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>场景极其明确的小工具</strong>——出国旅游、看标价、即时换算。<strong>这个"一句话说清用在哪"的能力，是你写 Oren 文案时该学的。</strong></p>
+<h3>6. 拿到 20 个 star 了！做了个让 coding agent 生成发布视频的工具包</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xr7kr7/reached_20_stars_built_a_toolkit_so_your" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xr7kr7/reached_20_stars_built_a_toolkit_so_your</a></p>
+<p><strong>14 分。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条对你最直接</strong>——20 个 star 就发帖，而且内容是"给 agent 做的工具包"。<strong>你的开源项目第一发可以照这个来：小切口、挂在 agent 生态上、阶段性进展就发。</strong> 20 stars 在 HN 眼里不算什么，但在 r/SideProject 是会被祝贺的。</p>
+<p>其他值得点开：<br />
+- <strong>创始人，你到底做了什么才判断这个想法值得做？— 19 条评论，验证方法论</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xrosyx/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrosyx/</a><br />
+- <strong>让陌生人用你的 app 之前，你的检查清单上有什么？— 重要的上线前清单</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xr9ycu/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xr9ycu/</a><br />
+- <strong>Rocket：Rust 写的免费开源桌面 Git 客户端</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xrrafu/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrrafu/</a><br />
+- 落地页 demo 在废弃标签页里还在轮询，把数据库额度用光了 — <a href="https://www.reddit.com/r/SideProject/comments/1xr5hbs/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xr5hbs/</a><br />
+- 把户型图变成可以走进去的 3D 房子 — <a href="https://www.reddit.com/r/SideProject/comments/1xrl0hb/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrl0hb/</a><br />
+- 女儿要背诗，我做了个"百叶窗遮挡"式的记忆工具 — <a href="https://www.reddit.com/r/SideProject/comments/1xrmpum/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrmpum/</a><br />
+- 可交互 3D 地球，点任意国家看首都和关键事实 — <a href="https://www.reddit.com/r/SideProject/comments/1xris8l/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xris8l/</a><br />
+- 我做的建筑梦游戏上 Steam 了 — <a href="https://www.reddit.com/r/SideProject/comments/1xrwdj9/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrwdj9/</a></p>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<p><strong>SMT 依然冷，但出现了一条新的、值得注意的帖子。</strong></p>
+<h3>1. 为什么不做一个简单的 App 记录线下扑克筹码？（8 分，9 条评论 · 第七天）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xm5ndo/why_is_there_no_simple_app_to_track" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xm5ndo/why_is_there_no_simple_app_to_track</a></p>
+<p><strong>Jus 点评</strong>：<strong>第七天。分数仍是 SMT 最高，仍然没人动手。</strong></p>
+<h3>2. 恒温咖啡杯 / 茶杯 / 保温瓶（3 分，7 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xqlbge/a_temperature-ma" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xqlbge/a_temperature-ma</a></p>
+<p><strong>Jus 点评</strong>：<strong>硬件需求，可以对接上周那个说"我愿意帮你造硬件"的人。</strong></p>
+<h3>3. 准备好免费为商家做东西了（新帖）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xrfock/ready_to_build_f" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xrfock/ready_to_build_f</a></p>
+<p><strong>Jus 点评</strong>：<strong>有人愿意免费给商家做产品换案例。</strong> 这是典型的"新人攒作品集"信号——<strong>如果你有真实需求想验证，去找这种人合作，零成本出 MVP。</strong></p>
+<h3>4. 能让你用语音控制浏览器的扩展（4 分，4 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xpi04g/extension_that_lets_you_to_control_" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xpi04g/extension_that_lets_you_to_control_</a></p>
+<h3>5. 按「文明 × 时代 × 风格」组织美学的 app（1 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xr0n6t/would_you_use_an_app_that_organizes" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xr0n6t/would_you_use_an_app_that_organizes</a></p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最该读</strong>：Opus 5.5 是否被削弱（289 条评论，<strong>你的 agent 系统必须自己做回归测试</strong>）、能秒开超大文件的编辑器（104 条评论，真工程讨论）</li>
+<li><strong>对你的方向</strong>：AXL（用 MCP 暴露 1200 个动作——x402 该学的形态）、Payments Canada RTR（国家级实时支付轨道，比 crypto 白皮书实际）</li>
+<li><strong>对你的开源</strong>：那条"20 stars 就发帖"的帖子——小切口 + 挂 agent 生态 + 阶段进展就报</li>
+<li><strong>能省钱的</strong>：同一块 H100 租价差 5 倍</li>
+<li><strong>零成本验证</strong>：SMT 上有人说愿意免费给商家做东西</li>
+</ul>
+<h2>⚠️ 数据源状态</h2>
+<ul>
+<li><strong>新抓取链路首次实战</strong>：HN 11 / PH 10 / Reddit 24（浏览器兜底）/ SMT 23，全部成功。</li>
+<li><strong>但 Reddit 走 RSS 时只有 6 条且没有热度分数</strong>——今天为了拿到 83 分那条榜首，我手动跑了一次浏览器版。<strong>这印证了昨晚问你的那个问题：Reddit 要不要强制走浏览器？</strong></li>
+<li><strong>HN/PH 的"0 items"老 bug 已修</strong>（list 和 dict 类型混用导致统计恒为 0，数据本身没问题）。</li>
+</ul><div class="pager"><a class="l" href="2026-11-09.html">← 2026-11-09</a></div></article>
+<footer>自动生成 · 2026-11-10</footer>
+</div>
+</body></html>
