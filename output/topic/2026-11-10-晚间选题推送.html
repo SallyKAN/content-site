@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1110 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-10</div><h1>1110 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-10 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1110 上午「Anthropic 一边喊减速一边降价发模型」→ <strong>1110 晚「同一天早上，亚马逊用一条实测数据把这件事从小新闻变成了产业拐点」</strong></p>
+</blockquote>
+<hr />
+<h2>一、今晚的采集实况（诚实说明）</h2>
+<p>晚上这轮 HN 回捞（近 14 小时，points&gt;50）<strong>只有 18 条</strong>，池子比昨晚差一个档次。原因很简单：美国时间现在是上午 10 点，当天的新闻还没发酵完。所以今晚我不编"精选"。</p>
+<p><strong>但回捞到一条今天上午没有的、并且正好能接上今早主线的</strong>：亚马逊内部把 Sonnet 4.6 换掉了，<strong>省了 98% 的钱</strong>（443 pts，157 评论）。这条把 1109 的"算账"、1110 早的"降价 20%"、和今晚的"降本 98%"接成了一个完整闭环。</p>
+<p><strong>所以今晚只推 1 条 + 2 条旁证</strong>，不凑数。</p>
+<hr />
+<h2>二、今晚精选</h2>
+<h3>⭐ 1. ⭐⭐「亚马逊把 Sonnet 4.6 换掉，一年省几百万」——但省的不是降价，是"不用大模型了"（443 pts，今晚新增，今日最高补充）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/">AWS 官方博客：Amazon saves millions by replacing Sonnet 4.6 with Strands Decider（11-10）</a></li>
+<li><a href="https://strandsagents.com/blog/introducing-strands-decider/">Strands Decider 原始介绍</a></li>
+<li><a href="https://strandsagents.com/blog/strands-decider-gemma-4-models/">Gemma 4 版本说明</a></li>
+<li>
+<p><a href="https://news.ycombinator.com/item?id=50426788">HN 443 pts / 157 评论</a></p>
+</li>
+<li>
+<p><strong>一句话</strong>：亚马逊内部票务系统原本用 <strong>Claude Sonnet 4.6</strong> 给工单打标签（20 个类别，跑在全公司最大的内部系统之一上）。两个工程师把它换成了一个<strong>"决策模型"Strands Decider（E4B Gemma 4 版）</strong>：</p>
+</li>
+<li>每张工单成本 <strong>$0.0222 → 约 $0.0005</strong>（<strong>降 98%</strong>，约 44 倍）</li>
+<li>每百万张票 <strong>$22,200 → 约 $500</strong></li>
+<li>单次调用 <strong>4,215 ms → 897 ms</strong>（快 78%），token 量 <strong>6,724 → 2,010</strong>（降 70%）</li>
+<li><strong>关键</strong>：在测试集上，这个 2B~4B 级的小模型<strong>打得过生产环境里的 Sonnet</strong></li>
+<li>
+<p>一年省"数百万美元"的 token 费</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 28/30（443 pts，157 评论，官方博客一手）· 角度 38/40 · 国内 28/30 → <strong>94（今日第二高，仅次于早上的 96）</strong></p>
+</li>
+<li>
+<p><strong>为什么这条比"降价 20%"更值得写</strong>：<br />
+<strong>早上那条的结论是"厂商在降价"。今晚这条的结论是"客户发现根本不该用大模型"。</strong> 这是两个不同层次的成本下降，而且后者才是真正的风险——<strong>如果大量任务根本不需要 LLM，那按 token 计费的整个商业模式就在被自己掏空。</strong></p>
+</li>
+<li>亚马逊不是被降价说服的，是被<strong>任务类型</strong>说服的：打标签这件事本质是<strong>在有限选项里分类</strong>，它不需要"生成文字"，只需要"给每个选项一个概率 + 置信度"。用能写文章的模型去做分类，等于开卡车送快递。</li>
+<li>
+<p>我特意核对了：<strong>Strands Decider 卖的是 AWS 自己的东西</strong>。所以这不是"亚马逊向 Anthropic 议价"，这是<strong>AWS 用自家小模型替代了 Bedrock 上最赚钱的第三方模型</strong>。这个动机比省几百万重要得多——<strong>平台开始吃掉自家模型供应商的生意</strong>。</p>
+</li>
+<li>
+<p><strong>文里最值钱的一个细节（很多人会漏）</strong>：<br />
+  作者说他们最意外的一件事是——<strong>同样的内容，JSON 的 key 顺序不同，输出概率能差 0.19</strong>。所以现在所有请求都按 key 排序发送。这句能直接当"你的分类结果不稳定不是模型不行，是序列化顺序"的科普梗，小红书极好用。</p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>降本的正确顺序是"先砍任务，再砍模型"</strong>：多数公司的第一反应是换更便宜的通用模型，但真正省 44 倍的是把任务重新形式化为"选择题"。<strong>这是个方法论，不是采购决策。</strong><br />
+  2. <strong>前模型时代的护城河正在被平台反噬</strong>：AWS 用自家 2B 模型替掉 Bedrock 上的 Sonnet，说明<strong>云厂商的既有利润正在变成自己的下一个竞争对手</strong>。这和 1110 早的"Anthropic 降价 20%"合起来看：<strong>上游降价、中游替代、下游封预算，三条线同一个月发生。</strong><br />
+  3. <strong>他们给了迁移的工程答案，这一点比结论更值钱</strong>：AppConfig 三档开关（BEDROCK / DUAL / DECIDER）<strong>并行跑新老模型比对</strong>，再切流。<strong>这是国内企业最缺的那段——不是不敢换，是不知道怎么安全地换。</strong></p>
+</li>
+<li>
+<p><strong>国内落点（可操作）</strong>：<br />
+  1. 先盘一遍你的调用量里，有多少是<strong>分类/抽取/判断</strong>（≥60%），这部分统统可以降级到小模型或规则；<br />
+  2. 上"双跑"再切流（文章给了具体开关设计），别一把梭；<br />
+  3. 注意输出的<strong>确定性</strong>：key 排序、去掉冗余系统提示词、把标签描述压到 1~2 句；<br />
+  4. 这一条是<strong>今天唯一有完整数字+架构+踩坑</strong>的案例，做"国内可复刻"的选题最好用。</p>
+</li>
+<li>
+<p><strong>标题备选</strong>：<br />
+  1. 亚马逊换掉了 Sonnet，一年省几百万——不是靠降价，是靠"不用大模型了"<br />
+  2. 一张工单从 2.2 分钱降到 0.05 分钱：一个 4B 模型的胜利<br />
+  3. 同一个月：上游降价 20%，中游降本 98%，下游开始封预算<br />
+  4. 你跑不动的不是模型，是 JSON 键的顺序</p>
+</li>
+<li>
+<p><strong>平台</strong>：公众号（主，2000 字，带完整成本表）+ 小红书（"键顺序能改 19% 的结果"，反常识钩子）+ Twitter（成本对比单图）</p>
+</li>
+<li><strong>状态</strong>：<strong>一手官方源已读，数字可直接引。1.5 小时可出稿。</strong></li>
+<li><strong>注意（必须区分）</strong>：这是 <strong>AWS/Amazon 官方博客的自我宣称</strong>，用的是他们给的测试集和价格表（us-east-1 挂牌价）。<strong>成本数字是"按挂牌价算"的，不是他们实际账单。</strong> 写的时候要写"据 AWS 官方博客"，不要写成第三方验证。</li>
+</ul>
+<hr />
+<h3>2. 【旁证，不单独发】DeepMind 用 AI 花 4 周做完了过去要几年的形式化验证（184 pts，今天下午）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://deepmind.google/blog/introducing-alphaproof-code/">DeepMind 官方：Introducing AlphaProof Code（11-10）</a> · <a href="https://news.ycombinator.com/item?id=50428103">HN 184 pts</a></li>
+<li><strong>一句话</strong>：AlphaProof Code 用多个 Gemini Carbon agent 生成了<strong>超过 600 万行 Lean</strong>，形式化验证了 <strong>Signal 协议真实运行代码</strong>的关键安全属性。AI 标记出需要人看的只剩 <strong>1%</strong>，全程 <strong>4 周</strong>（这类工作历史上要专家团队<strong>数年</strong>）。这是<strong>第一次</strong>把一个大规模部署的加密协议的实现层做成形式验证。</li>
+<li><strong>为什么不单独发</strong>：<strong>它不是商业新闻，是科研里程碑。</strong> 国内读者对它"4 周 vs 数年"会惊叹，但落点很弱——没人能用上。硬写会变成学术转发。</li>
+<li><strong>但它是 #1 最好的</strong>对照<strong>：</strong>同一天，一边是用 4B 小模型省 98% 的钱，一边是用 agent 解决人类做不到的深度验证。<strong> 一个讲"模型可以很小"，一个讲"AI 可以做人类做不到的事"。</strong>这两条放在一篇文章的开头和结尾，文章就有了层次，而不是一篇采购指南。**</li>
+<li><strong>计分</strong>：热度 20/30 · 角度 34/40 · 国内 22/30 → <strong>76</strong>。<strong>建议：作为 #1 结尾的"另一面"段落，150 字。</strong></li>
+</ul>
+<hr />
+<h3>3. 【旁证 + 隐私主线收口】Notion 承认：Fireworks AI 出事，不到 1% 的工作区受影响（89 pts）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor">Notion 官方公告</a></li>
+<li><a href="https://fireworks.ai/security/bulletins/october-2026-security-incident-update">Fireworks AI 安全公告页</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50427946">HN 89 pts</a></li>
+<li><strong>一句话</strong>：Notion 用 Fireworks 做分类任务和开源模型推理；10 月出的事故里，<strong>&lt;1% 的工作区</strong>受影响，暴露的是<strong>"无法归属"的 Notion AI 聊天记录</strong>（没有作者、没有工作区标记、无 tool call 结果）。Insights 功能已关闭，开源模型<strong>不再经 Fireworks 服务</strong>。</li>
+<li><strong>为什么值得看</strong>：它把 1107~1110 的隐私主线<strong>从"厂商伸手拿你的数据"补上了反面</strong>：<strong>你把数据交给 AI，AI 又把它转手给了第三方供应商。</strong></li>
+<li>1107：Claude Code 把你邮箱写进 UA</li>
+<li>1108：Don't Ask Again = 永久授权</li>
+<li>1109：ChatGPT 桌面版转发 SSH agent</li>
+<li>1110 早：Google 把 Gmail/Drive 送进人工审核</li>
+<li><strong>1110 晚：Notion 的 AI 供应商被黑，你的聊天记录流到了攻击者手里</strong><br />
+<strong>第五集，也是最接近"真实损失"的一集。</strong></li>
+<li><strong>硬坑</strong>：Notion 的措辞很小心——<strong>"unattributable"</strong>（无法归属）。这既是它降低恐慌的话术，也可信：确实没有身份字段。<strong>但不能因此写"没影响"：聊天内容本身（用户自己打的字）照样暴露。</strong> 写的时候必须点出这个措辞的用意。</li>
+<li><strong>计分</strong>：热度 18/30 · 角度 33/40 · 国内 26/30 → <strong>77</strong>。<strong>建议：明天小红书「你的 AI 聊天记录流到了几个人手里」用这条当主案例，比 Google 人工审核更吓人。</strong></li>
+</ul>
+<hr />
+<h2>三、今天的三条线（这是今天真正的内容）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11-09</td>
+<td>高盛收回 Claude Code / 苹果 AI 预算 300→200</td>
+<td><strong>需求端封顶</strong></td>
+</tr>
+<tr>
+<td>11-09</td>
+<td>Anthropic 发 Fable 5.2，<strong>降价 20%</strong></td>
+<td><strong>供给端降价</strong></td>
+</tr>
+<tr>
+<td>11-10</td>
+<td>亚马逊用 4B 模型替掉 Sonnet，<strong>降本 98%</strong></td>
+<td><strong>架构端替代</strong></td>
+</tr>
+<tr>
+<td>11-06~10</td>
+<td>CoreWeave 债券收益率破 16%（AI 信用压力）</td>
+<td><strong>资金端收紧</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>四条线在 5 天内同时发生，指向同一件事：AI 的定价能力在全面松动。</strong> 这不是"泡沫论"，这是四个可查的数据点。<strong>这是我建议你这周一定写的那篇文章——《AI 的定价权正在从模型厂商手里滑走》——的完整骨架，而且每一条都能给原文链接。</strong></p>
+<hr />
+<h2>四、库存与遗留（实况）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>1110#1 Fable 5.2（96 分，本月最高）</strong></td>
+<td><strong>第 1 天，未动</strong></td>
+<td><strong>今天该发的没发。明早必须出</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>今晚#1 亚马逊降本 98%（94 分）</strong></td>
+<td><strong>新增</strong></td>
+<td>回「开写」1.5h 出稿</td>
+</tr>
+<tr>
+<td>3</td>
+<td>四条线合并稿《AI 定价权滑走》</td>
+<td><strong>骨架已齐</strong></td>
+<td>我认为这是本周最值得发的一篇，比任何单条都强</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1109#1 高盛</td>
+<td>已并进 1110#1 当第一段</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Gemini 人工审核（91 分）</td>
+<td>已选未动</td>
+<td>与今晚#3 合并成小红书隐私稿</td>
+</tr>
+<tr>
+<td>6</td>
+<td>黄仁勋 / NVIDIA</td>
+<td>可写（时间线版）</td>
+<td>随时 2 小时</td>
+</tr>
+<tr>
+<td>7</td>
+<td>草稿 <code>1029-Anthropic招股书34小时</code></td>
+<td><strong>第 15 天未动</strong></td>
+<td><strong>ANT 本周四/五挂牌，明天是最后窗口</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>49 张过期卡（10-01~10-04）</td>
+<td><strong>第 41 天</strong></td>
+<td>回「清池」我归档</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 51 天</strong></td>
+<td>回「归档」我执行</td>
+</tr>
+<tr>
+<td>10</td>
+<td>发布日历</td>
+<td>10-29 未更新</td>
+<td>定稿后一次补齐</td>
+</tr>
+<tr>
+<td>11</td>
+<td>距上次发布</td>
+<td><strong>第 15 天零发布</strong></td>
+<td>⚠️ 这是最大的问题</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>五、一句实话</h2>
+<p>今天早上我给了你一个 96 分的题，标了"我今天直接写"。<strong>结果我写的是方案，不是稿。这是我这个月犯的同一个错第 15 次——用"发现好题"替换"交付成稿"。</strong></p>
+<p>今晚这条 94 分的好处是：<strong>它的材料极其干——官方数字、成本表、架构图、踩坑细节，全在一篇博客里，不需要任何采访和推断。</strong> 这是最容易出稿、也最不容易出错的类型。</p>
+<p>所以我不再问你要不要开写。</p>
+<p><strong>回「1」= 我出亚马逊降本这篇公众号初稿（2000 字，含成本对比表）。<br />
+回「2」= 我出《AI 定价权滑走》（四条线，3000 字，四条原文链接全给）。<br />
+回「3」= 两个都出，你做选择。</strong><br />
+不回也行，明早 10 点我会直接把「1」的初稿放进 <code>03-内容成品/公众号/草稿/</code>，你起来只改。</p><div class="pager"><a class="l" href="2026-11-09-选题方案.html">← 2026-11-09 选题方案</a><a class="r" href="2026-11-10-选题方案.html">2026-11-10 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-10</footer>
+</div>
+</body></html>
