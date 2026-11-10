@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-11（周三）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-11</div><h1>每日独立开发精选 · 2026-11-11（周三）</h1>
+<blockquote>
+<p>采集时间 00:05。源：HN Firebase API / Product Hunt feed.json / Reddit 浏览器渲染（自动）</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. Claude Fable 5.2 与 Mythos 5.2</h3>
+<p><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">https://www.anthropic.com/claude-fable-and-mythos-5-2</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50435" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50435</a></p>
+<p><strong>783 分，923 条评论。今天唯一的超级爆款，评论区是所有近期最多。</strong></p>
+<p><strong>Jus 点评</strong>：Anthropic 一次放两个模型——<strong>"Fable" 和 "Mythos" 这种拆分本身就是个信号</strong>：不再是一个通用模型打天下，而是按用途分线。923 条评论里最值得看的是大家在猜哪条线是给 coding agent 的。<br />
+<strong>对你的实际含义</strong>：昨天那条"Opus 5.5 被削弱"的讨论还没结束，今天又出新版本——<strong>模型迭代节奏已经快到"你的系统必须能做回归测试"不再是建议而是生存条件</strong>。</p>
+<h3>2. 亚马逊把 Sonnet 4.6 换成 Strands Decider，省下几百万美元</h3>
+<p><a href="https://strandsagents.com/blog/amazon-saves-millions-replaci" target="_blank" rel="noopener">https://strandsagents.com/blog/amazon-saves-millions-replaci</a>...<br />
+讨论：<a href="https://news.ycombinator.com/item?id=50435" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50435</a></p>
+<p><strong>541 分，194 条评论。今天对你最有参考价值的一条。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这是"模型路由"最大规模的一次实证。</strong> 亚马逊没换更强的模型，换的是一个<strong>决策器</strong>——把任务分给合适的（更便宜的）模型，省下百万级成本。<br />
+跟上周那条"小模型评审 + 大模型兜底省 4 倍成本"是同一件事，但这次是<strong>巨头级别的落地</strong>。<strong>你在英伟达搭 AI 测试系统，这套架构（decider 分流 + 分级模型）可以直接抄。</strong></p>
+<h3>3. AlphaProof Code</h3>
+<p><a href="https://deepmind.google/blog/introducing-alphaproof-code/" target="_blank" rel="noopener">https://deepmind.google/blog/introducing-alphaproof-code/</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50435" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50435</a></p>
+<p><strong>347 分，120 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：DeepMind 把形式化证明的能力往代码上推。<strong>这是"AI 写出的代码凭什么可信"这个问题的正式答案路线</strong>——不是靠测试，是靠证明。短期内不实用，但方向值得记住。</p>
+<h3>4. 皇后区公共图书馆遭勒索攻击，电子借阅暂停</h3>
+<p><a href="https://connect.queenslibrary.org/" target="_blank" rel="noopener">https://connect.queenslibrary.org/</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50435" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50435</a></p>
+<p><strong>127 分，85 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：公共基础设施被勒索的又一个案例。<strong>这条对你上周装的那些 agent 工具有间接关系</strong>——你那台 Mac 上有多少能一键执行脚本的东西？</p>
+<h3>5. Show HN: 加纳街头游戏，浏览器里就能玩</h3>
+<p><a href="https://www.ghanastreetgames.com/" target="_blank" rel="noopener">https://www.ghanastreetgames.com/</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=50435" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50435</a></p>
+<p><strong>65 分，11 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>文化保存型项目，传播力天然强。</strong> 这类项目的价值不在技术，在"只有你能做"的独特性——<strong>你的开源项目如果要找类似的差异化，就是"只有内部视角的人才能做出来的东西"。</strong></p>
+<p>其他：<br />
+- <strong>NetBSD 11 跑在树莓派 4 上的桌面</strong> — 64pt（<a href="https://neongd.com/articles/netbsd11-rpi4.gmi" target="_blank" rel="noopener">https://neongd.com/articles/netbsd11-rpi4.gmi</a>）<br />
+- <strong>The Hardest Tarball？</strong> — 47pt（<a href="https://stoppels.ch/2026/11/07/the-hardest-tarball.html" target="_blank" rel="noopener">https://stoppels.ch/2026/11/07/the-hardest-tarball.html</a>）<strong>打包格式的边界问题，工程味很足</strong><br />
+- 《教授与疯子》作者 Simon Winchester 去世 — 42pt（NYT）<br />
+- 再战廉价 IP 摄像头 part 2 — 33pt（<a href="https://ericswpark.com/blog/2026/2026-11-09-ip-camera-pt2/" target="_blank" rel="noopener">https://ericswpark.com/blog/2026/2026-11-09-ip-camera-pt2/</a>）<br />
+- Let over Lambda — Lisp 50 年（2008）— 33pt（<a href="https://letoverlambda.com/" target="_blank" rel="noopener">https://letoverlambda.com/</a>）<br />
+- 一个带时间和空间控制的环境日光钟 — 28pt（<a href="https://hannahilea.com/blog/daylight-clock/" target="_blank" rel="noopener">https://hannahilea.com/blog/daylight-clock/</a>）<br />
+- <strong>数字搜索的丧钟</strong> — 11pt（New Yorker）<strong>低分但可能是今天最值得想的一篇：搜索正在被什么取代</strong></p>
+<h2>🚀 Product Hunt（今日 10 个）</h2>
+<p><strong>今天 PH 质量很高，一半以上跟你的方向直接相关。</strong></p>
+<h3>1. MCP1 — 一个 URL 对应所有 MCP 服务器</h3>
+<p><a href="https://www.producthunt.com/products/appwrite" target="_blank" rel="noopener">https://www.producthunt.com/products/appwrite</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天的头号重点。</strong> Appwrite 出品，把 MCP 服务器的接入简化成一个 URL。<strong>MCP 正在从"协议"变成"基础设施"</strong>——这跟你"协议优于框架"的判断完全一致，而且验证了这条路正在被大厂铺平。<br />
+<strong>这条你该认真看</strong>：如果你的 x402 能力想被别人的 agent 调用，<strong>最省力的入口就是做成一个 MCP server</strong>。</p>
+<h3>2. Terse - Durable Actors — 多人 AI 产品的基础设施</h3>
+<p><a href="https://www.producthunt.com/products/terse-durable-actors" target="_blank" rel="noopener">https://www.producthunt.com/products/terse-durable-actors</a></p>
+<p><strong>Jus 点评</strong>：<strong>"多 agent 协作"开始需要底层原语了</strong>（持久化 actor）。之前大家都在做编排层，现在开始有人做"当 agent 崩溃、重启、并发时的状态一致性"。<strong>这是真正难的部分，也是护城河。</strong></p>
+<h3>3. OpenVibe — 一排真实终端画布，给 AI coding agent 用</h3>
+<p><a href="https://www.producthunt.com/products/openvibe-2" target="_blank" rel="noopener">https://www.producthunt.com/products/openvibe-2</a></p>
+<p><strong>Jus 点评</strong>：<strong>跟你日常工具链直接相关</strong>（你本来就开一堆 agent 终端）。上周 SideProject 上有个 Still（终端标签爆炸），这周 PH 上有了 OpenVibe——<strong>同一个痛点，两周内两拨人在解</strong>。</p>
+<h3>4. If You Read This — 像"死人开关"一样的每日签到 app</h3>
+<p><a href="https://www.producthunt.com/products/if-you-read-this" target="_blank" rel="noopener">https://www.producthunt.com/products/if-you-read-this</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天最有创意的产品概念。</strong> 每天签到，断签就触发某些事（发消息、交钥匙、公布文件）。<strong>它把"每日习惯"和"遗产/安全"绑在一起</strong>，是个没人做过但真实存在的需求。</p>
+<h3>5. gitmanual — 看看一个 GitHub repo 能不能在你的系统上跑起来</h3>
+<p><a href="https://www.producthunt.com/products/gitmanual" target="_blank" rel="noopener">https://www.producthunt.com/products/gitmanual</a></p>
+<p><strong>Jus 点评</strong>：<strong>这个痛点太真了。</strong> 你 clone 过多少跑不起来的 repo？它直接回答"这玩意儿在我的 OS 上能不能装、怎么装"。<strong>这同时也是一种新的开源项目评估维度——你以后发项目，README 要能过这一关。</strong></p>
+<h3>6. Watchflows — Mac 上的可视化自动化，内置 AI</h3>
+<p><a href="https://www.producthunt.com/products/watchflows" target="_blank" rel="noopener">https://www.producthunt.com/products/watchflows</a></p>
+<p><strong>Jus 点评</strong>：可视化自动化的老赛道 + AI。<strong>跟你的 OpenClaw 有点撞</strong>，可以看看它怎么处理"触发器 + 动作"的表达。</p>
+<h3>7. Nadhif — 检查 Mac、服务器和网站的安全</h3>
+<p><a href="https://www.producthunt.com/products/nadhif" target="_blank" rel="noopener">https://www.producthunt.com/products/nadhif</a></p>
+<p><strong>Jus 点评</strong>：<strong>安全自检工具化</strong>。上周我提醒你查 agent 生成的明文凭据、查 OpenSSH 版本——这类工具正好做这些。</p>
+<h3>8. ClipsPal — 自动剪你的口播视频</h3>
+<p><a href="https://www.producthunt.com/products/clipspal" target="_blank" rel="noopener">https://www.producthunt.com/products/clipspal</a></p>
+<p><strong>Jus 点评</strong>：口播剪辑是红海，但需求永远在。</p>
+<h3>9. LotusQ — 在任何 app 里说话代替打字</h3>
+<p><a href="https://www.producthunt.com/products/lotusq" target="_blank" rel="noopener">https://www.producthunt.com/products/lotusq</a></p>
+<p><strong>Jus 点评</strong>：<strong>注意：这跟 SMT 上那条"语音控制浏览器的扩展"是同一个方向，而且现在有成品了。</strong></p>
+<h3>10. AppuBot — 跑在你自己的 AI 上的 Grok Bot 免费替代</h3>
+<p><a href="https://www.producthunt.com/products/appubot" target="_blank" rel="noopener">https://www.producthunt.com/products/appubot</a></p>
+<p><strong>Jus 点评</strong>：<strong>"免费替代 + 跑在你自己模型上"这个组合是当下最有力的定位句式之一。</strong></p>
+<h2>💡 Reddit r/SideProject（今日热门 · 自动走浏览器，24 条带分数）</h2>
+<p><strong>今天整体偏冷（榜首 29 分），但项目质量不错，字面意义上的"造物"很多。</strong></p>
+<h3>1. 我完全用代码做了个活的 3D 低音鱼缸：没有模型、没有图片</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xsdd0m/i_built_a_live_3d_bass_aquarium_enti" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsdd0m/i_built_a_live_3d_bass_aquarium_enti</a></p>
+<p><strong>29 分，7 条评论（今日榜首）。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>"no models, no images" 是这条的全部价值所在。</strong> 纯程序化生成的美，是当下 AI 图泛滥环境里的一种反向证明——<strong>"每一像素都是算出来的"本身就带着可信度</strong>。</p>
+<h3>2. 我终于上线了我的个人作品集网站</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xs8i0s/ive_finally_launched_my_personal_por" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xs8i0s/ive_finally_launched_my_personal_por</a></p>
+<p><strong>18 分，13 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：你的 GitHub 是 <a href="https://github.com/SallyKAN" target="_blank" rel="noopener">https://github.com/SallyKAN</a>，<strong>有没有一个正式的 portfolio？</strong> 做开源影响力，"有一个能一眼看完你是谁、做过什么"的页面，比什么都重要。</p>
+<h3>3. 我做了个不生成图片的 AI 墙面刷漆预览</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xs9ao8/i_built_an_ai_paint_visualizer_that_" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xs9ao8/i_built_an_ai_paint_visualizer_that_</a></p>
+<p><strong>14 分，6 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>"不生成图片" 被写进标题，说明生成式 AI 的可信度问题已经大到需要主动声明"我不是生成"。</strong> 这是个重要信号。</p>
+<h3>4. Call Dibs —— 朋友偷偷认领礼物的愿望清单</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xsllwe/i_built_call_dibs_a_wishlist_app_whe" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsllwe/i_built_call_dibs_a_wishlist_app_whe</a></p>
+<p><strong>11 分，8 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>合作式游戏的机制被套用到送礼场景</strong>，解决"送礼撞车"的真实痛点。</p>
+<h3>5. 我做了个小 app，因为总忘事</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xsk3w9/i_built_a_little_app_because_i_kept_" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsk3w9/i_built_a_little_app_because_i_kept_</a></p>
+<p><strong>11 分，13 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条跟你的 Oren（承诺管理）几乎同一个命题。</strong> 值得看它怎么处理"记下来之后还是会忘"这个死结。</p>
+<h3>6. 我做了个 app，能把几个找到的字变成一整套字体</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xsbhxl/i_made_an_app_that_can_turn_a_few_fo" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsbhxl/i_made_an_app_that_can_turn_a_few_fo</a></p>
+<p><strong>11 分，2 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>字体的"补全"比"生成"难得多</strong>（要保持风格一致、字形合理）。技术门槛高的小众工具。</p>
+<p>其他值得点开：<br />
+- <strong>我做了一个 AI 助手，用视觉引导你父母操作电脑/手机 — 10 条评论</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xrxv0j/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrxv0j/</a> <strong>"给父母做工具"是被严重低估的品类</strong><br />
+- 我做了一个多人扫雷，所有人在同一张板上挖 — <a href="https://www.reddit.com/r/SideProject/comments/1xsi5p1/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsi5p1/</a><br />
+- SkySaver：会动的实时壁纸 — <a href="https://www.reddit.com/r/SideProject/comments/1xs0bm4/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xs0bm4/</a><br />
+- 我在做微型世界的城市 — <a href="https://www.reddit.com/r/SideProject/comments/1xsk7ln/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsk7ln/</a><br />
+- AlleyCat —— 社交地图 + 旅行日记 — <a href="https://www.reddit.com/r/SideProject/comments/1xrz3qi/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrz3qi/</a><br />
+- Ballast —— 更温和的 iPhone app 拦截器，免费无广告 — <a href="https://www.reddit.com/r/SideProject/comments/1xrwji6/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xrwji6/</a><br />
+- <strong>Instagram Edits 新 MCP 的开源替代，支持 Windows — 有人在做 MCP 生态的补齐位</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xsng70/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsng70/</a><br />
+- <strong>怎么找到不过度付费的软件测试服务？— 这个问题本身就说明测试服务市场很乱</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xshcw1/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xshcw1/</a></p>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<p><strong>SMT 还没起色，但今天出现了一条新的开放式提问。</strong></p>
+<h3>1. 为什么不做一个简单的 App 记录线下扑克筹码？（8 分，9 条评论 · 第八天）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xm5ndo/why_is_there_no_simple_app_to_track" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xm5ndo/why_is_there_no_simple_app_to_track</a></p>
+<p><strong>Jus 点评</strong>：<strong>第八天，分数仍是全 SMT 最高，仍无人动手。</strong> 这周我就只说这一次了。</p>
+<h3>2. 有什么东西你希望存在、却到处都找不到？（新帖，0 分）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xrpb0d/whats_something_you_w" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xrpb0d/whats_something_you_w</a></p>
+<p><strong>Jus 点评</strong>：<strong>新开的开放式征集帖，现在还没热。</strong> 这类帖子一旦涨起来，评论区就是最干净的需求池——值得明天回去看一眼。</p>
+<h3>3. 恒温咖啡杯 / 茶杯 / 保温瓶（3 分，8 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xqlbge/a_temperature_maintai" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xqlbge/a_temperature_maintai</a></p>
+<p><strong>Jus 点评</strong>：评论还在缓慢增加，硬件需求。<strong>上周那个说"我愿意帮你造硬件"的人还挂着，两条可以对接。</strong></p>
+<h3>4. 能让你用语音控制浏览器的扩展（5 分，5 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xpi04g/extension_that_lets_y" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xpi04g/extension_that_lets_y</a></p>
+<p><strong>Jus 点评</strong>：<strong>注意：今天 PH 上已经有成品了（LotusQ）。</strong> 这条需求的窗口正在关闭。</p>
+<h3>5. 按「文明 × 时代 × 风格」组织美学的 app（1 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xr0n6t/would_you_use_an_app_that_organizes" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xr0n6t/would_you_use_an_app_that_organizes</a></p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最该读</strong>：亚马逊用 Strands Decider 省钱（模型路由的巨头实证，<strong>你的测试系统可以直接抄架构</strong>）、Claude Fable/Mythos 5.2（923 条评论）</li>
+<li><strong>对你的方向</strong>：MCP1（一个 URL 接入所有 MCP——<strong>x402 最省力的入口就是做成 MCP server</strong>）、Terse Durable Actors（多 agent 的底层原语）</li>
+<li><strong>对你的工具链</strong>：OpenVibe（一排真实终端跑 agent，两周内第二拨人在解这个痛点）</li>
+<li><strong>该做的</strong>：有没有正式的个人 portfolio？做开源影响力，这个比什么都重要</li>
+<li><strong>信号</strong>："不生成图片"成了需要主动声明的卖点</li>
+</ul>
+<h2>⚠️ 数据源状态</h2>
+<ul>
+<li><strong>新链路首次全自动跑通</strong>：HN 12 / PH 10 / Reddit 24（via browser，带分数）/ SMT 23。</li>
+<li><strong>Reddit 强制浏览器已生效</strong>，昨晚改完今天验证：24 条且分数完整，不用再手动救。</li>
+<li><strong>SMT 持续低温</strong>（最高 8 分，且是那个八天没动静的扑克需求）。</li>
+</ul><div class="pager"><a class="l" href="2026-11-10.html">← 2026-11-10</a></div></article>
+<footer>自动生成 · 2026-11-11</footer>
+</div>
+</body></html>
