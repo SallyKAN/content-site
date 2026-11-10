@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1110 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-10</div><h1>1110 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-11-10 10:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1109 晚「高盛稿等你一个字」→ <strong>1110 早「不用等了，稿子我自己写；同时来了一条能当它终点的新闻」</strong></p>
+</blockquote>
+<hr />
+<h2>一、今日采集（10:00 实跑）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>源</th>
+<th>条件</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HN Algolia <code>search_by_date</code></td>
+<td>points&gt;60，近 24h</td>
+<td>45 条</td>
+</tr>
+<tr>
+<td>HN Algolia <code>search_by_date</code></td>
+<td>points&gt;80，近 48h</td>
+<td>78 条（筛后）</td>
+</tr>
+<tr>
+<td>二手核实</td>
+<td>Fable 5.2 / Gemini 隐私 / Anthropic IPO 时间表</td>
+<td>3 条均有官方或主流英文源</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>今天早上 HN 是全周最热的一晚。</strong> 两条 &gt;900 分的帖子在同一天：<br />
+- <strong>Claude Fable 5.2 + Mythos 5.2 发布（955 pts）</strong> ← 今天的主线<br />
+- <strong>黄仁勋全员信（945 + 490 pts）</strong> ← 昨晚的 P0，现在有 CNBC 跟进稿了</p>
+<p>另外 <strong>Gemini 把 Gmail/Drive 送进人工审核（417 pts）</strong> 是过去 10 天隐私主线的收口一条。</p>
+<hr />
+<h2>二、今日精选（3 条）</h2>
+<h3>⭐ 1. Anthropic 一边喊减速，一边发最强模型——而且下周就上市（P0，今日必发）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Anthropic 官方发布（11-09）</a></li>
+<li><a href="https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html">CNBC（11-09，标题：Amodei 呼吁减速后的首个前沿模型）</a></li>
+<li><a href="https://venturebeat.com/technology/anthropic-releases-claude-fable-5-2-and-mythos-5-2-pairing-new-record-high-benchmarks-with-20-api-cost-reduction">VentureBeat（含 20% 降价拆解）</a></li>
+<li>
+<p><a href="https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card">系统卡</a> · <a href="https://news.ycombinator.com/item?id=50429906">HN 955 pts</a> · <a href="https://artificialanalysis.ai/models/claude-fable-5-2">Artificial Analysis 65 分（历史最高）287 pts</a></p>
+</li>
+<li>
+<p><strong>一句话</strong>：Anthropic 发布 Fable 5.2 / Mythos 5.2，输出快 30%、<strong>降价 20%</strong>（$8 / $40 每百万 token），FrontierSWE v2 <strong>69.9%</strong>（Opus 5.5 是 62.3%、GPT-6 Astra 65.5%、Gemini 4 Carbon 61.2%）。<strong>这是 Dario Amodei 9 月公开呼吁"给 AI 发展减速"之后，Anthropic 发的第一个前沿模型。</strong></p>
+</li>
+<li>CNBC 引述 Anthropic 产品管理负责人 Dianne Penn 的原话："<strong>我们呼吁的是控制节奏（pacing），不是暂停（pausing）</strong>。"</li>
+<li>
+<p>这是它<strong>上市前最后一个模型发布</strong>：ANT 拟下周四/五在纳斯达克挂牌，估值区间已从 1.5 万亿下修到 1.1–1.3 万亿，募资目标最高 1000 亿美元。</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 30/30（955 pts + 官方 + 主流媒体全覆盖）· 角度 38/40 · 国内 28/30 → <strong>96（高于 1109 的高盛条 95，是本月最高）</strong></p>
+</li>
+<li>
+<p><strong>为什么现在做（这是关键）</strong>：<br />
+  1. <strong>它给 1109 高盛稿提供了一句话的终点。</strong> 高盛收回 Claude Code、苹果把 AI 预算砍到 200 美元/天、OpenAI 融资低于目标——这三件事的结论是"<strong>算账开始了</strong>"。今天这条是"<strong>账算完之后，厂商的动作是降价</strong>"。这是一个完整的因果链，不是两个独立新闻。<br />
+  2. <strong>"pacing, not pausing" 是今天最好的一个引号。</strong> 一家公司 CEO 9 月写公开信说我们要慢下来，11 月发布更强的模型并且降价 20%——这个对比本身就是标题。<br />
+  3. <strong>降价 20% 这个数字，国内读者反应会最大。</strong> 因为国内厂商过去三个月都在打价格战，Anthropic 是第一次跟。</p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>"减速"和"降价"是两个不同意义上的词，但都指向同一个方向：需求端在收紧。</strong> 前者是叙事，后者是真金白银。厂商在需求变弱时降价，比任何"AI 泡沫"论战都有说服力。<br />
+  2. <strong>安全策略的商业含义</strong>：Fable 是 Mythos 的"带保险版本"。Mythos 里网络安全能力（CyScenarioBench 76.3%、CVE 复现 89.6%）只给通过验证的组织。<strong>这家公司把最强能力拆成两个 SKU 卖</strong>——一个给大众，一个给政府和金融机构。这是新的商业模式：<strong>用合规当分销渠道</strong>。<br />
+  3. <strong>最后一条，也是最锋利的一条</strong>：Fable 5.2 的 benchmark 里出现了 <strong>"GPT-6 Astra" 和 "Gemini 4 Carbon"</strong> 两个对照项，说明三家都在同一个月更新旗舰。而 Anthropic 的表格里有一列叫 <strong>"without safeguards"</strong>（不加安全限制时的分数），Opus 5.5 在 CyScenarioBench 不加限制是 67.6%，<strong>Mythos 5.2 加了限制是 76.3%</strong>——也就是说<strong>新模型带着刹车，比旧模型的裸奔还快</strong>。这个细节国内没有人会写。</p>
+</li>
+<li>
+<p><strong>国内落点</strong>：</p>
+</li>
+<li>「你的模型变笨了」这个感知（1109#3，Opus 5.5 降智，753 pts）<strong>今天有了一半答案</strong>：Anthropic 自己承认 5.1 的安全分类器误拦率高，5.2 把误拦降了 55%（网络安全 60%、生物 40%）。也就是说<strong>用户感觉到的"降智"，很可能有一部分是误拦。</strong> 这条是对国内所有"AI 变笨了"抱怨的技术性回击，非常好用。</li>
+<li>
+<p>国内可操作：① 用 FrontierSWE v2 这类真实仓库级任务做内部验收，别用 HumanEval；② 把"安全拦截率"作为采购指标写进合同；③ 降价 20% 的时代，应该重算一遍自建模型 vs 采购的临界点。</p>
+</li>
+<li>
+<p><strong>标题备选</strong>：<br />
+  1. Anthropic 说该慢一点，然后发了最强的模型，还降了价<br />
+  2. 带着刹车跑得比裸奔还快：Claude Fable 5.2 的三个细节<br />
+  3. 上市前最后一次发布：Anthropic 把最强的能力拆成两个价目表<br />
+  4. 你感觉到的"AI 变笨了"，有一半是误拦</p>
+</li>
+<li>
+<p><strong>平台</strong>：公众号（主，2000 字）+ 小红书（"你的 Claude 可能不是你用错，是被拦了"，讲误拦率 55% 这个点）+ Twitter（"pacing, not pausing" 单条 + benchmark 表一张图）</p>
+</li>
+<li>
+<p><strong>状态</strong>：<strong>素材已齐，官方 + CNBC + 系统卡三源可引。1.5 小时可出稿。我今天直接写。</strong></p>
+</li>
+</ul>
+<hr />
+<h3>2. Google 把 Gmail 和 Drive 的文件送进了人工审核——而它 2023 年承诺过不会（417 pts）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://github.com/thisisme6598/gemini_files/">GitHub 复现仓库（含 4 种抽取状态测试法）</a></li>
+<li><a href="https://support.google.com/gemini/answer/16836988">Google 帮助文档 Answer 16836988</a></li>
+<li><a href="https://blog.google/innovation-and-ai/products/our-responsible-approach-to-building-guardrails-for-generative-ai/">2023 年原始博客（已于 10-16 被编辑）</a></li>
+<li>
+<p><a href="https://news.ycombinator.com/item?id=50429426">HN 417 pts</a></p>
+</li>
+<li>
+<p><strong>一句话</strong>：Google 2023 年明确承诺"Gmail/Docs/Drive 的个人内容<strong>不会被人工审核员看到</strong>"。10 月 16 日它悄悄编辑了那篇博客，更新后的帮助文档里直接写着：审核员看到的"<strong>可能就是这个邮件或文件本身</strong>"，并警告"<strong>不要把机密信息接入 Gemini</strong>"。更要紧的是作者实测：<strong>你不需要 @Drive、@Gmail，随口聊到账单、行程、预订，就会在后台自动触发检索</strong>，而且抽取是<strong>概率性</strong>的——一次测试没抽到，不代表没有。</p>
+</li>
+<li><strong>计分</strong>：热度 26/30（417 pts）· 角度 36/40 · 国内 29/30 → <strong>91</strong></li>
+<li><strong>为什么值得做</strong>：它是 1107 以来所有隐私主线的收口——</li>
+<li>1107#1：Claude Code 把你邮箱写进 UA（<strong>工具往外送你的身份</strong>）</li>
+<li>1108#1：Don't Ask Again 等于永久授权（<strong>你签了授权书</strong>）</li>
+<li>1109#2：ChatGPT 桌面版把 SSH agent 转发出去（<strong>你装了就等于给了钥匙</strong>）</li>
+<li><strong>今天：你没有连接，它自己伸手拿了，而且有真人看。</strong><br />
+  四步走完，这是最接地气的一条——因为<strong>它不需要任何人犯错</strong>。</li>
+<li><strong>坑（必须写进去）</strong>：核心证据是<strong>第三方复现仓库 + Google 自己的帮助文档文字</strong>，不是 Google 的公告。写的时候必须区分"<strong>Google 文档确实这么写了</strong>（硬证据）"和"<strong>作者实测到全文件抽取</strong>（单一信源，但方法可复现）"。<strong>不要写成"Google 泄露了你的邮件"。</strong></li>
+<li><strong>三刀</strong>：<br />
+  1. <strong>承诺的修改方式和承诺本身一样重要</strong>：不是发公告，是改了一篇 2023 年的博客。<strong>这比泄露更值得写。</strong><br />
+  2. <strong>"概率性抽取"是最坏的设计</strong>：意味着你测不出来。你测一次是安全的，不等于安全——这是国内几乎所有人都不懂的模型行为。<br />
+  3. <strong>企业边界被抹掉了</strong>：个人版 Gemini 出问题，但公司同事都在用个人账号处理文件。</li>
+<li><strong>国内落点</strong>：「<strong>为了不让人看，只能不连</strong>」——可操作：① 公司机密文件禁止走个人 AI 账号；② 每次对话删掉再测（这是作者给的方法）；③ 关闭 Connected Apps 的具体路径。</li>
+<li><strong>平台</strong>：小红书（这条最合适）+ 公众号（作为 #1 的隐私对照短文）/ Twitter</li>
+<li><strong>状态</strong>：半天可出。<strong>但它不该今天发——今天发会让 #1 模糊。</strong></li>
+</ul>
+<hr />
+<h3>3. 黄仁勋危机：昨晚 24 小时，英文媒体跟进了一轮（945 + 490 pts）⭐ 可以写了</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://nvidianews.nvidia.com/news/a-message-to-our-company">NVIDIA 官方：黄仁勋致全员信（11-09）</a> · <a href="https://news.ycombinator.com/item?id=50425416">HN 945 pts</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">NVIDIA 董事会声明</a> · <a href="https://news.ycombinator.com/item?id=50424382">HN 490 pts</a></li>
+<li><a href="https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html">CNBC（11-09）：英伟达管理层动荡，民主党拿到新弹药</a></li>
+<li>
+<p><a href="https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/">NY Post（10-29）：被指中国间谍与黄仁勋"关系密切"</a></p>
+</li>
+<li>
+<p><strong>昨晚我为什么压着</strong>：只有官方声明 + 标题，"外国情报行动"只在董事会措辞里，国内信源为零。</p>
+</li>
+<li><strong>今天的判断变了</strong>：<strong>CNBC 出了一篇把国会监督这条线接上的稿</strong>，NY Post 10-29 那条（"被指中国间谍"）也能作为<strong>背景时间线</strong>引用了。这意味着<strong>可以写，但只能写成"事实时间线 + 公司治理"</strong>，不能写案情。</li>
+<li><strong>安全的写法</strong>：只写三件有信源的事——① 黄仁勋 11-08 深夜发信；② 董事会同日宣布启动独立调查；③ 国会（中期选举后民主党掌权）已就此要求说明。<strong>不解释"为什么查"，不引用任何未署名的"知情人士"。</strong></li>
+<li><strong>计分</strong>：热度 30/30 · 角度 26/40（只能写治理）· 国内 28/30 → <strong>84</strong></li>
+<li><strong>建议</strong>：<strong>它不是今天的主稿，但它是国内媒体一定会做的题。</strong> 如果你要做"抢在华语媒体之前"，我可以两小时内出一版纯时间线的短稿（1500 字，全部可引），不加任何推断。</li>
+</ul>
+<hr />
+<h2>三、一句话衔接（写给 #1 的开头用）</h2>
+<blockquote>
+<p>上周四，高盛把它最好的 AI 编程工具从交易员手里收回；同一天，苹果把工程师每天的 AI 预算从 300 美元砍到 200；这周 OpenAI 融资差它想要的估值 1500 亿美元。<br />
+昨天，Anthropic 发了它最强的模型——<strong>降价 20%</strong>。<br />
+这就是"算账"的完整过程：先算用量，再算人头，最后厂商自己把价格放下来。</p>
+</blockquote>
+<hr />
+<h2>四、库存与遗留（实况）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>1110#1 Fable 5.2</strong></td>
+<td><strong>新增，96 分，本月最高</strong></td>
+<td><strong>今天发这篇，我直接出初稿</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>1109#1 高盛（817 pts）</td>
+<td>已选未动，<strong>第 2 天</strong></td>
+<td><strong>并进 #1 当第一段</strong>，不再单独成稿</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1110#2 Gemini 人工审核</td>
+<td>新增 91 分</td>
+<td>明天小红书主稿</td>
+</tr>
+<tr>
+<td>4</td>
+<td>黄仁勋 / NVIDIA</td>
+<td><strong>可从"等"转"写"</strong></td>
+<td>只写时间线版，2 小时</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Opus 5.5 降智（753 pts）</td>
+<td>本周最佳实验题</td>
+<td><strong>今天有半个答案了</strong>（误拦率 -55%），可写进 #1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>草稿 <code>1029-Anthropic招股书34小时</code></td>
+<td><strong>第 14 天未动</strong></td>
+<td><strong>今天必须动</strong>：ANT 下周四/五挂牌，再不写就过期</td>
+</tr>
+<tr>
+<td>7</td>
+<td>1108#2 Mac 人际图谱</td>
+<td>已选未动</td>
+<td>本周</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1108#3 MSR 解散</td>
+<td>已选未动</td>
+<td>并入"算账"系列</td>
+</tr>
+<tr>
+<td>9</td>
+<td>49 张过期卡（10-01~10-04）</td>
+<td><strong>第 40 天</strong></td>
+<td>回「清池」我归档</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 50 天</strong></td>
+<td>回「归档」我执行</td>
+</tr>
+<tr>
+<td>11</td>
+<td>发布日历</td>
+<td>10-29 未更新</td>
+<td>#1 定稿后一次补齐</td>
+</tr>
+<tr>
+<td>12</td>
+<td>距上次发布</td>
+<td><strong>第 14 天零发布</strong>（10-29 至今）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>五、一句实话</h2>
+<p>昨晚我说"如果你不回，我就自己写"。<strong>我写了方案没写稿，因为我发现今天早上的新闻让那篇稿的第一段变了</strong>——现在高盛不是主角，是<strong>引子</strong>。</p>
+<p>真正的好消息是：<strong>今天不用你再做选择。</strong> 池子里唯一 96 分的题只有一条，而且它把过去两周所有散着的线（隐私、算账、降智、IPO）全串上了。</p>
+<p><strong>回「开写」，我出 #1 的公众号初稿（2000 字，带三源引用）；回「全开」，我一次出 #1 公众号 + 小红书 + 招股书稿改稿。</strong></p><div class="pager"><a class="l" href="2026-11-09-选题方案.html">← 2026-11-09 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-11-10</footer>
+</div>
+</body></html>
