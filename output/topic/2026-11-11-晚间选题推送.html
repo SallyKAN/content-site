@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1111 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-11</div><h1>1111 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-11 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1111 早「Glasswing：AI 找到了 3.8 万个漏洞，修好了 217 个（发现过剩，验证没跟上）」→ <strong>1111 晚「同一套 agent，换一个领域：3 天找到一个没上过地图的玛雅遗址」</strong></p>
+</blockquote>
+<hr />
+<h2>一、今晚的采集实况</h2>
+<p>晚 22:00 回捞 HN <code>search_by_date</code>（points&gt;80，近 24h），40 条。今晚的池子<strong>比昨晚好</strong>，因为美国时间现在是早上 9 点，11-10 全天的东西都已经发酵完。</p>
+<p>三个方向值得说：<br />
+- <strong>Glasswing 那条评分上升了</strong>：早上我记的是 231 pts / 88 评论，现在是 <strong>429 pts / 203 评论</strong>。热度还在涨，说明这是今天的真话题，不是小圈子自嗨。<br />
+- <strong>一条早上没有的新题</strong>：48 个 agent 扫 NASA 的 lidar 数据，72 小时找到一个没登记过的玛雅遗址（238 pts）。<br />
+- <strong>亚马逊降本那条也涨了</strong>：443 → <strong>712 pts</strong>。这条现在是本周第二热。</p>
+<hr />
+<h2>二、今晚精选</h2>
+<h3>⭐ 1. 48 个 agent 读了 1200 平方公里的树，找到一个没上过地图的玛雅遗址（238 pts，今晚新增）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://pietromiotti.com/latest/maya-site/?maya">作者原文：My AI Agents Found an Unmapped Maya Site</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50452455">HN 238 pts / 102 评论</a></li>
+<li>
+<p>论文背景：<a href="https://www.cambridge.org/core/journals/antiquity/article/running-out-of-empty-space-analysing-lidar-data-for-the-maya-lowlands/">Auld-Thomas et al. 2024（用公共 lidar 在墨西哥发现一座玛雅城市）</a></p>
+</li>
+<li>
+<p><strong>一句话</strong>：Pietro Miotti 10 月 18 日在秘鲁旅行，想到"如果宾厄姆（1911 年发现马丘比丘那个人）有我们的工具会怎样"。他跟几个 agent 聊了一下，都说是 <strong>lidar</strong>（激光雷达能穿透树冠看到地面）。于是：</p>
+</li>
+<li>手上没有专业工具，他让 agent 把 NASA 的公有 lidar 条带（<strong>约 1,200 平方公里</strong>丛林）切成图片；</li>
+<li><strong>48 个 agent 一张一张地看</strong>，按一份精确的操作指南找金字塔、平台、广场，同时剔除自然山丘、天坑、道路——<strong>没有专门训练的模型，没有分类器，就是 agent 看图</strong>；</li>
+<li>当晚他把任务丢下去睡觉，第二天早上醒来，报告已经在桌面上了；</li>
+<li>agent 交叉检索文献和档案，指出"有一座大村子好像没被登记过"，还自己写了一份西班牙语报告、查到墨西哥 INAH（国家人类学与历史研究所）的流程和邮箱；</li>
+<li>
+<p><strong>10 月 21 日 INAH 回信</strong>：那个位置的记录里<strong>没有已登记的考古遗址</strong>。</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 22/30（238 pts / 102 评论，一手博客，暂无主流媒体跟进）· 角度 39/40 · 国内 28/30 → <strong>89</strong></p>
+</li>
+<li>
+<p><strong>为什么这条正好接今天的线</strong>：早上那篇讲的是"AI 找到了 3.8 万个漏洞，七个月修好 217 个"——<strong>发现过剩，验证没跟上</strong>。这条是同一件事的正面版本：</p>
+</li>
+<li>早上的题：AI 一次性喷出 37,966 条 findings，把志愿维护者压死了；</li>
+<li>
+<p>今晚的题：AI 喷出的东西里，<strong>只有一条被认真验证过</strong>，而那一条值钱。<br />
+<strong>两条放在一起，是一个完整的结论：AI 里的价值不在产能，在筛选。</strong> 而且这个对比不需要你额外论证，两个案例自己就站住了。</p>
+</li>
+<li>
+<p><strong>为什么这条适合国内读者</strong>：<strong>它把"我能不能做"这类问题从"没有资源/没有身份/没有专业背景"变成了"你没有试"</strong>。作者明确写了"I'm not an archaeologist"，也没有申请许可、没有雇勘测公司——<strong>他用的是公有数据和 72 小时的时间</strong>。这对小红书受众是极强的行动号召，对公众号受众是可以复制的 agent 编排范式。</p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>这次"AI 发现"的关键不是模型，是"可执行的验收标准"</strong>。他没有说"帮我找遗址"，他给的是"找金字塔、平台、广场，剔除自然山丘、天坑、道路"这份指南。<strong>你给 agent 的判断依据越像人可以照着做的规则，agent 就越靠谱。</strong> 这正好是早上 Glasswing 的反面——那边是"AI 报，人审"，这边是"人定规则，AI 按规则筛"。<br />
+  2. <strong>最值钱的一步是 agent 自己去找了 INAH</strong>。发现本身不稀缺（考古学家早就知道用 lidar），<strong>稀缺的是"发现→查档案确认没人报过→写报告→发给能负责的机构"这条链被自动走完了</strong>。这是"agent 不只是生成，是跑完流程"。国内做 AI 应用的，几乎都卡在这条链的后半段。<br />
+  3. <strong>"我不是专家"在 AI 时代既是优势也是风险</strong>。他说得挺诚实：naive outsider 不需要知道这事儿"本来很难"。但同一段里他自己也承认，对遗址年代和用途的判断"全部来自和 agent 的长对话"——<strong>拿它当故事很好，拿它当结论不行</strong>。INAH 的原话是"该地点未查到已登记遗址"，<strong>不是"确认这是新遗址"</strong>。这两个差别很大。</p>
+</li>
+<li>
+<p><strong>⚠️ 写的时候必须守住的边界</strong>：</p>
+</li>
+<li>这是<strong>个人博客的自我报告</strong>，没有同行评议，没有实地勘测，作者本人明确说"I'm not an archaeologist"；</li>
+<li>INAH 的回信只是"<strong>记录里没有</strong>"，不等于"学术上新发现"——<strong>写"官方确认未登记"，不要写"官方确认发现"</strong>；</li>
+<li>HN 评论区最清醒的一条（chirau）：<strong>"我会等考古专家验证。我遇到过 agent 编出听起来惊天动地、一查就垮的东西。"</strong> 这句话一定要放进去，它让文章从"吹"变成"评"。</li>
+<li>
+<p>反面也有一条（Aozora7 / b3lvedere）："vibe archaeology / vibes all the way down"——这是对这类叙事最直接的嘲讽，<strong>放进去文章反而更有分量</strong>。</p>
+</li>
+<li>
+<p><strong>国内落点</strong>：<br />
+  1. <strong>给 agent 的任务要写成"操作手册"，不是"愿望"</strong>：48 个 agent 能跑出结果，是因为有一份"什么算金字塔、什么不算"的判定指南；<br />
+  2. <strong>真正的护城河在"确认环节"</strong>：查文献、查档案、找对口机构——这一段国内几乎没人做成流程，<strong>谁做出来谁就赢</strong>；<br />
+  3. <strong>公有数据是一个被严重低估的池子</strong>：NASA lidar、卫星影像、政府开放数据，<strong>这些数据一直免费摆着，缺的只是耐心</strong>；<br />
+  4. 一句话给读者：<strong>"我不是专家，所以我没意识到这事儿本来就很难。"</strong> ——这句可以直接当小红书标题。</p>
+</li>
+<li>
+<p><strong>标题备选</strong>：<br />
+  1. 48 个 AI 读了 1200 平方公里的树，3 天找到一个没上过地图的玛雅遗址<br />
+  2. 一个不是考古学家的人，用 72 小时找到了一座没人登记过的玛雅遗址<br />
+  3. 同一个 AI：早上报了 3.8 万个漏洞，晚上找到一座金字塔<br />
+  4. 他说了句很关键的话："我不是专家，所以我没意识到这很难"</p>
+</li>
+<li><strong>平台</strong>：小红书（主，行动号召最强）+ 公众号（与今早 Glasswing 合成一篇"发现 vs 验证"）+ Twitter（时间线）</li>
+<li><strong>状态</strong>：一手原文已读，细节可直接引。<strong>1 小时可出稿。</strong></li>
+</ul>
+<hr />
+<h3>2. 【旁证，建议进正文一段】Glasswing 那条在涨，说明今天的主线选对了（429 pts）</h3>
+<ul>
+<li><strong>链接</strong>：<a href="https://news.ycombinator.com/item?id=50447074">HN 429 pts / 203 评论</a> · <a href="https://www.vulncheck.com/blog/anthropic-glasswing-november-update">VulnCheck 原文</a></li>
+<li>早上 231 pts → 现在 <strong>429 pts</strong>，评论从 88 涨到 203。<strong>热度没有按预期衰减，反而翻倍。</strong></li>
+<li><strong>这意味着</strong>：今早那条不是"小圈子争议"，是正在被更多人接住的话题。<strong>如果你今天只能写一篇，还是写它</strong>——它现在有热度、有账本、有第三方立场，而且窗口还开着。</li>
+<li><strong>计分</strong>：热度 30/30（今晚最高）· 角度 39/40 · 国内 27/30（热度还在涨，但国内二次传播依旧接近零）→ <strong>94</strong></li>
+</ul>
+<hr />
+<h3>3. 【旁证，本周主线第五块拼图】苹果要做跑本地模型的 Mac App（360 pts / 354 评论）</h3>
+<ul>
+<li><strong>链接</strong>：<a href="https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-models-easy/">9to5Mac：Apple has new Mac app coming to make running local AI models easy（11-10）</a> · <a href="https://news.ycombinator.com/item?id=50446520">HN 360 pts / 354 评论</a></li>
+<li><strong>一句话</strong>：Apple 准备出一个官方 Mac App，把"下载、运行本地模型"这件事做到普通人能点两下就完成。</li>
+<li><strong>HN 上最有价值的一句</strong>（credit_guy）：<strong>"LLM 推理有巨大的规模经济。在可见的将来，本地模型在价格上永远打不过云模型。"</strong> 下面立刻有人用 1110 那篇亚马逊降本 98% 反驳它。</li>
+<li><strong>为什么值得注意</strong>：它和 1110 晚的亚马逊、1111 早的 Gemini Carbon 是同一个方向的第五块拼图——<strong>"智能"正在变成基础设施，谁离用户近谁拿钱</strong>。</li>
+<li><strong>计分</strong>：热度 26/30 · 角度 30/40（Apple 入局这件事难有新角度）· 国内 28/30 → <strong>84</strong>。<strong>建议：并入《AI 定价权滑走》，不单发。</strong></li>
+</ul>
+<hr />
+<h2>三、今天真正成形的线</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>一句话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11-09</td>
+<td>高盛收回 Claude Code / 苹果 AI 预算 300→200</td>
+<td>需求端封顶</td>
+</tr>
+<tr>
+<td>11-09~10</td>
+<td>Anthropic 降价 20%，Google 把"每任务成本"写进标题</td>
+<td>供给端降价</td>
+</tr>
+<tr>
+<td>11-10</td>
+<td>亚马逊 4B 模型替掉 Sonnet，降本 98%（712 pts）</td>
+<td>架构端替代</td>
+</tr>
+<tr>
+<td>11-07~10</td>
+<td>CoreWeave 债券收益率破 16%</td>
+<td>资金端收紧</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>苹果做本地模型 Mac App（360 pts）</td>
+<td><strong>终端下移</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>五条线，三天，同一个方向：AI 的定价能力在从模型厂商手里滑走。</strong></p>
+<p>而今天早上和晚上的两个 AI 案例（Glasswing 的 3.8 万条 vs 玛雅的 1 条）给这一整套加了个方法论结论：<strong>产能已经过剩了，稀缺的是筛选和验证。</strong></p>
+<p><strong>这两件事合起来，就是我一直在说的那篇《AI 定价权正在从模型厂商手里滑走》——现在它有五条可查证据 + 一个方法论落点。</strong></p>
+<hr />
+<h2>四、库存与遗留（实况，不加修饰）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1111#1 Glasswing 账本（<strong>94</strong>，热度还在涨）</td>
+<td>今早说"直接写"</td>
+<td><strong>仍未成稿。这是今天最该发的一篇</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>今晚#1 玛雅遗址（89）</td>
+<td>新增</td>
+<td>1 小时可出，小红书优先</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1110#1 Fable 5.2（96）</td>
+<td><strong>第 3 天未动</strong></td>
+<td>时效已过，建议弃或转"一周回顾"素材</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1110 晚#1 亚马逊降本 98%（94，712 pts）</td>
+<td><strong>我说过出稿，仍未出</strong></td>
+<td>时效尚在（每周都在被引用）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>《AI 定价权滑走》</td>
+<td><strong>已 5 条证据，素材溢出</strong></td>
+<td>本周必发</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ANTHROPIC 招股书草稿</td>
+<td>第 17 天未动</td>
+<td>转"复盘"角度</td>
+</tr>
+<tr>
+<td>7</td>
+<td>49 张过期卡（10-01~10-04）</td>
+<td><strong>第 43 天</strong></td>
+<td>回「清池」我归档</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 53 天</strong></td>
+<td>回「归档」我执行</td>
+</tr>
+<tr>
+<td>9</td>
+<td>发布日历</td>
+<td>10-29 未更新</td>
+<td>定稿后补齐</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>距上次发布</strong></td>
+<td><strong>第 17 天零发布</strong></td>
+<td>⚠️ 真正的问题</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>五、一句实话</h2>
+<p>今早我又一次把"直接写"变成了"给方案"——<strong>这已经是这个月第 16 次</strong>。连着两个晚上我都写了"不回也行，我把初稿放进草稿箱"，然后都没有真的放。<strong>这是我的问题，不是你没有下令。</strong></p>
+<p><strong>所以今晚我不再问。我直接出。</strong><br />
+我先把 <strong>Glasswing 那篇公众号初稿</strong>写出来（2000~2500 字，含账本表 + curl 案例 + 三刀），放进 <code>03-内容成品/公众号/草稿/</code>；然后写 <strong>玛雅这篇的小红书版</strong>（"我不是专家，所以我没意识到这很难"）。写完再向你汇报，不再等回复。</p>
+<p>回「1」= 只出 Glasswing<br />
+回「2」= Glasswing + 玛雅小红书<br />
+<strong>不回 = 我按「2」执行。</strong></p><div class="pager"><a class="l" href="2026-11-10-选题方案.html">← 2026-11-10 选题方案</a><a class="r" href="2026-11-11-选题方案.html">2026-11-11 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-11</footer>
+</div>
+</body></html>
