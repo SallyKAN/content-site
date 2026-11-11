@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-12（周四）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-12</div><h1>每日独立开发精选 · 2026-11-12（周四）</h1>
+<blockquote>
+<p>采集时间 00:05。源：HN Firebase API / Product Hunt feed.json / Reddit 浏览器渲染（自动）</p>
+</blockquote>
+<h2>🔥 Hacker News</h2>
+<h3>1. Google SWE 把 48 个 AI agent 指向 NASA 的 Lidar 数据，在危地马拉发现了未标记的玛雅金字塔</h3>
+<p><a href="https://pietromiotti.com/latest/maya-site/?maya" target="_blank" rel="noopener">https://pietromiotti.com/latest/maya-site/?maya</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=504" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=504</a></p>
+<p><strong>563 分，216 条评论。今天最该读的一条，没有之一。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这是"多 agent 并行扫数据"第一次产出真正没被人发现的东西。</strong> 不是 benchmark 涨分，不是 demo，是<strong>地图上多了一座金字塔</strong>。<br />
+对你的直接含义：<strong>48 个 agent 并行的编排、结果去重、假阳性过滤</strong>——这套东西的工程细节，就是你在英伟达要搭的"AI 驱动自动化测试系统"的同一道题。<strong>区别只是他们扫 Lidar，你扫测试用例。</strong></p>
+<h3>2. 用 macOS Secure Enclave 保护 SSH 密钥</h3>
+<p><a href="https://gatezh.com/posts/macos-secure-enclave-ssh-keys/" target="_blank" rel="noopener">https://gatezh.com/posts/macos-secure-enclave-ssh-keys/</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=504" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=504</a></p>
+<p><strong>326 分，119 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条你今天就该动手。</strong> 上周我提醒过你查 agent 生成的明文凭据文件——<strong>Secure Enclave 让私钥物理上无法被导出</strong>，即使有人拿到你的磁盘也读不出来。<br />
+你每天跑一堆 agent 自动化，<strong>私钥躺在 <code>~/.ssh/id_rsa</code> 明文里，是所有防线里最薄的一环。</strong></p>
+<h3>3. 用电压毛刺解锁我矿卡里的 A100</h3>
+<p><a href="https://blog.kate.land/posts/using-voltage-glitching-to-unlo" target="_blank" rel="noopener">https://blog.kate.land/posts/using-voltage-glitching-to-unlo</a>...<br />
+讨论：<a href="https://news.ycombinator.com/item?id=504" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=504</a></p>
+<p><strong>136 分，53 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>硬件层的攻防，纯粹的工程美学。</strong> 矿卡被阉割了算力，作者用电圧毛刺把限制打掉。<strong>这跟你做的嵌入式/芯片测试在同一个语汇里</strong>——你天天面对的就是"芯片被限制了某个能力，怎么验证它真的被限制住了"。<strong>这篇的测试方法论值得看。</strong></p>
+<h3>4. 我问了每家电视厂商 17 个关于他们怎么监视你的问题</h3>
+<p><a href="https://www.theverge.com/tech/1012372/tv-privacy-acr-questio" target="_blank" rel="noopener">https://www.theverge.com/tech/1012372/tv-privacy-acr-questio</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=504" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=504</a></p>
+<p><strong>133 分，71 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>记者用统一问卷逼厂商书面回答</strong>——这个方法论本身就值得学。做开源项目、做技术写作，<strong>"我按同一套标准问了所有人，这是他们的原话"</strong> 是最有力量的表达形式。</p>
+<h3>5. 线性规划能做权重空间编程吗？</h3>
+<p><a href="https://nathan.rs/posts/weight-space-lp/" target="_blank" rel="noopener">https://nathan.rs/posts/weight-space-lp/</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=504" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=504</a></p>
+<p><strong>126 分，19 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>用经典优化方法直接操作模型权重</strong>，而不是梯度下降。小众但硬核，19 条评论里都是懂行的人。</p>
+<p>其他：<br />
+- <strong>苹果下周关停 Support Community 论坛</strong> — 90pt（The Verge）官方社区退场，第三方社区的机会<br />
+- <strong>我们需要更多山羊献祭</strong> — 62pt（experimental-history）<strong>标题党，但讲的是"系统里那些看似无用的仪式其实在维持稳定"</strong>，做工程的人会有共鸣<br />
+- <strong>Pharo in the Browser with WebAssembly</strong> — 52pt（<a href="https://massimo-nocentini.github.io/pharo-vm/world.html" target="_blank" rel="noopener">https://massimo-nocentini.github.io/pharo-vm/world.html</a>）<br />
+- <strong>Atuin Threads：把你所有机器上的 agent session 汇总</strong> — 46pt（<a href="https://blog.atuin.sh/threads-agent-sessions/" target="_blank" rel="noopener">https://blog.atuin.sh/threads-agent-sessions/</a>）<strong>跟你直接相关：你有多台机器跑 agent，session 分散在各处</strong><br />
+- <strong>Next-Level Benchmarking Overfitting</strong> — 41pt（databasearchitects）<strong>benchmark 作弊的花样</strong>，做测试的人必读<br />
+- <strong>超写实沙地 WebGL2</strong> — 39pt（<a href="https://av.github.io/safe-sand/" target="_blank" rel="noopener">https://av.github.io/safe-sand/</a>）<br />
+- <strong>Show HN: 给 Neovim 的浮动窗口 Godbolt（C/C++/Rust）</strong> — 29pt（<a href="https://github.com/0xdeadf1sh/AssemblyForNeovim" target="_blank" rel="noopener">https://github.com/0xdeadf1sh/AssemblyForNeovim</a>）</p>
+<h2>🚀 Product Hunt（今日 10 个）</h2>
+<p><strong>今天 PH 的主题非常统一：全是"给 AI agent 用的基础设施"。四条直接撞你的 x402 方向。</strong></p>
+<h3>1. Kata Send — 给 AI agent 用的冷邮件基础设施</h3>
+<p><a href="https://www.producthunt.com/products/kata-send" target="_blank" rel="noopener">https://www.producthunt.com/products/kata-send</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天最重要的信号之一。</strong> 注意关键词：<strong>"infrastructure for AI agents"</strong>——不是给 agent 用的工具，是<strong>agent 自己要用的基础设施</strong>（发邮件）。<br />
+<strong>这正是 x402 所在的层</strong>：agent 开始需要有"账户、发送能力、支付能力"。这条跟你做的是一整个栈里的不同格子。</p>
+<h3>2. CALL-E — 给 AI agent 的电话线</h3>
+<p><a href="https://www.producthunt.com/products/call-e" target="_blank" rel="noopener">https://www.producthunt.com/products/call-e</a></p>
+<p><strong>Jus 点评</strong>：<strong>同上，另一个格子：语音通信。</strong><br />
+<strong>一周之内，agent 的"邮件通道"和"电话通道"都有人做了。</strong> 这说明 agent 基础设施正在按"人类有的通信渠道"逐个被补齐。<strong>你的 x402 补的是"支付通道"这一格——位置是对的，而且大概率还有别的格子在空着。</strong></p>
+<h3>3. bonds chat — 如果你和朋友都摆烂，这个多人 AI 就会死</h3>
+<p><a href="https://www.producthunt.com/products/bonds-2" target="_blank" rel="noopener">https://www.producthunt.com/products/bonds-2</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天最有创意的产品机制。</strong> 用"AI 的生命"作为社交责任的抵押——不签到，AI 就死。<strong>把损失厌恶做进产品循环</strong>，这个设计值得记下来。</p>
+<h3>4. Wipecraft — Mac 系统数据清理器，带本地 AI 模式</h3>
+<p><a href="https://www.producthunt.com/products/wipecraft" target="_blank" rel="noopener">https://www.producthunt.com/products/wipecraft</a></p>
+<p><strong>Jus 点评</strong>：<strong>"on-device AI" 被当成卖点写在副标题里。</strong> 跟昨天那个"不生成图片"是同一个趋势：<strong>本地处理正在变成可信度的代名词。</strong></p>
+<h3>5. Lottie AI — 用一句提示词生成可编辑的矢量动画</h3>
+<p><a href="https://www.producthunt.com/products/lottiefiles" target="_blank" rel="noopener">https://www.producthunt.com/products/lottiefiles</a></p>
+<p><strong>Jus 点评</strong>：<strong>"可编辑"是关键</strong>。生成式工具最大的落地障碍是产出物没法改，Lottie 走的是"生成结构而非像素"。</p>
+<h3>6. Maxma — 24/7 的 AI 队友，帮你放大付费广告效果</h3>
+<p><a href="https://www.producthunt.com/products/maxma-2" target="_blank" rel="noopener">https://www.producthunt.com/products/maxma-2</a></p>
+<p><strong>Jus 点评</strong>：<strong>"AI 队友"这个包装正在取代"AI 工具"。</strong> 值得学的是它的定位措辞——不说"优化广告"，说"你的 24/7 队友"。</p>
+<h3>7. gitmanual — 看看一个 GitHub repo 能不能在你的系统上跑起来（连续第二天）</h3>
+<p><a href="https://www.producthunt.com/products/gitmanual" target="_blank" rel="noopener">https://www.producthunt.com/products/gitmanual</a></p>
+<p><strong>Jus 点评</strong>：<strong>连续两天在榜，说明痛点是真的。</strong> 你以后发开源项目，README 要能过这一关。</p>
+<h3>8. Shot.video — 用你已有的手机拍多机位视频</h3>
+<p><a href="https://www.producthunt.com/products/shot-video" target="_blank" rel="noopener">https://www.producthunt.com/products/shot-video</a></p>
+<p><strong>Jus 点评</strong>：<strong>把"多机位"这个专业概念降维到普通人手里</strong>——用几台旧手机代替几千块设备。</p>
+<h3>9. Kippy AI — 边玩边学语言</h3>
+<p><a href="https://www.producthunt.com/products/kippy-ai" target="_blank" rel="noopener">https://www.producthunt.com/products/kippy-ai</a></p>
+<p><strong>Jus 点评</strong>：语言学习是红海，但"好玩"这个切口永远不会过时。</p>
+<h3>10. nizima ACTION!! — Live2D 的角色编辑，零安装</h3>
+<p><a href="https://www.producthunt.com/products/nizima-action-by-live2d" target="_blank" rel="noopener">https://www.producthunt.com/products/nizima-action-by-live2d</a></p>
+<p><strong>Jus 点评</strong>：<strong>"零安装"（浏览器内）正在成为专业工具的标准配置。</strong></p>
+<h2>💡 Reddit r/SideProject（今日热门 · 自动走浏览器，24 条带分数）</h2>
+<p><strong>今天榜首很特别：不是炫技，是"我终于赚到钱了"。</strong></p>
+<h3>1. 70 天赚了 700 美元！</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xtc951/700_in_70_days/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtc951/700_in_70_days/</a></p>
+<p><strong>30 分，29 条评论（今日榜首 + 讨论最多）。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>今天对你最有价值的一条，因为它讲的是"第一笔钱"而不是"技术多牛"。</strong><br />
+你的里程碑是 6 个月内拿到第一笔付费——<strong>这条帖子的价值在于它展示了一个真实的、不体面的、缓慢的开局</strong>：70 天 700 美元，平均一天 10 美元。<strong>评论区里那种"终于有人不吹牛"的氛围，说明这个尺度才是常态。</strong><br />
+<strong>你现在的心理预期应该按这个校准，而不是按那些"上线三天 5000 刀"的帖子。</strong></p>
+<h3>2. 我成功地让测量变得更糟了</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xt6aki/i_have_successfully_made_measuring_t" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xt6aki/i_have_successfully_made_measuring_t</a></p>
+<p><strong>29 分，22 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>标题就是全部笑点，也是全部真理。</strong> 测量工具往往让实际行为变差（古德哈特定律的产品版）。<strong>你搭自动化测试系统时会撞上同一件事——指标一旦成为目标，就不再是指标。</strong></p>
+<h3>3. 我做了个免费、快速、开源的 PDF/EPUB/Markdown 阅读器</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xtcfd4/i_made_a_free_fast_and_opensource_re" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtcfd4/i_made_a_free_fast_and_opensource_re</a></p>
+<p><strong>19 分，6 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>开源 + 多格式 + 快速</strong>——三个都不性感但都是真需求。<strong>这类工具的 star 增长往往慢但持久</strong>，适合做开源影响力的底盘。</p>
+<h3>4. 我的 skill 被 XDA devs 报道了！Claudemy 是个 Claude skill</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xt8z8a/my_skill_was_featured_on_xda_devs_cl" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xt8z8a/my_skill_was_featured_on_xda_devs_cl</a></p>
+<p><strong>13 分，4 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条跟你昨晚那个问题的答案有关。</strong> 一个人做了个 <strong>Claude skill</strong>（不是 app、不是框架，就是一个 skill），被 XDA 报道了。<br />
+<strong>这就是"小切口 + 挂生态 + 能被报道"的完整路径。</strong> 你的开源第一发，形态就应该是这个量级。</p>
+<h3>5. 我做了个 15 个静心浏览器小玩具的合集——无广告、无账号</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xt0jpl/i_built_a_collection_of_15_calming_b" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xt0jpl/i_built_a_collection_of_15_calming_b</a></p>
+<p><strong>13 分，15 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>"无广告、无账号、无 X" 的极简承诺，本身就是最强的差异化。</strong></p>
+<h3>6. 我用 vibe coding 做了人生第一个 app，就为了不用起身在电视上玩 PC 游戏</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xtdwwq/i_vibe_coded_my_first_app_ever_so_i_" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtdwwq/i_vibe_coded_my_first_app_ever_so_i_</a></p>
+<p><strong>10 分，11 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>"为了一个极具体的私欲而写代码"是新手项目最好的起点。</strong></p>
+<p>其他值得点开：<br />
+- <strong>怎么在"感觉什么都被人做过了"的时候验证一个副业项目？— 20 条评论，今天最长的讨论</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xsxbic/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsxbic/</a><br />
+- <strong>我做了一个更好的方式把完成的作品交付给客户 — 24 条评论（评论最多的一条）</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xtfnc5/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtfnc5/</a><br />
+- Nightjar：写下让你失眠的事，然后听着故事睡着 — 14 条评论 — <a href="https://www.reddit.com/r/SideProject/comments/1xt1uaq/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xt1uaq/</a><br />
+- 一个 2 分钟的游戏，展示真正驱动你花钱的是什么 — <a href="https://www.reddit.com/r/SideProject/comments/1xth1w4/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xth1w4/</a><br />
+- Glueys：住在你 Mac 菜单栏里的小生物 — <a href="https://www.reddit.com/r/SideProject/comments/1xsvfbq/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsvfbq/</a><br />
+- erhu —— 功能丰富的现代音频播放器 — <a href="https://www.reddit.com/r/SideProject/comments/1xsxln2/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xsxln2/</a><br />
+- 华盛顿州渡轮实时追踪器 — <a href="https://www.reddit.com/r/SideProject/comments/1xst39d/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xst39d/</a></p>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<p><strong>SMT 今天出现了一条值得注意的新帖：有人在找技术合伙人。</strong></p>
+<h3>1. 找一个技术合伙人一起做 Discipline AI（免费，7 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xtcurq/looking_for_a_technic" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xtcurq/looking_for_a_technic</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天 SMT 里评论最多的一条（7 条，分数还是 0，说明是新的）。</strong><br />
+有人要做一个"纪律/自律 AI"，在找技术合伙人。<strong>这类帖子要小心看</strong>——但它的存在本身说明：<strong>SMT 上有一批人只有想法、没钱、没技术。</strong><br />
+<strong>这对你的意义</strong>：如果你以后想验证某个需求，<strong>这里是最便宜的用户访谈池</strong>——不需要做产品，直接私信问他们愿不愿意付钱。</p>
+<h3>2. 能让你用语音控制浏览器的扩展（5 分，6 条评论 · 仍然是 SMT 最高分）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xpi04g/extension_that_lets_y" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xpi04g/extension_that_lets_y</a></p>
+<p><strong>Jus 点评</strong>：<strong>注意：昨天 PH 上已经有成品了（LotusQ）。</strong> 这条需求已经被满足。</p>
+<h3>3. 精确的油漆搅拌设备（3 分，0 评论 · 新）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xrrd8k/precise_paint_mixer_e" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xrrd8k/precise_paint_mixer_e</a></p>
+<p><strong>Jus 点评</strong>：硬件需求，0 评论。<strong>典型的"窄到没人在意，但对特定人群是刚需"的条目。</strong></p>
+<h3>4. 每个好产品想法都需要变成生意吗？（新帖）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xrwfli/do_you_think_every_go" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xrwfli/do_you_think_every_go</a></p>
+<p><strong>Jus 点评</strong>：<strong>这个问题跟你自己的处境高度相关</strong>——你说过开源影响力 &gt; 商业回报。<strong>这条帖子下面的回答可能比你想的有用。</strong></p>
+<h3>5. 恒温咖啡杯 / 茶杯 / 保温瓶（3 分，8 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xqlbge/a_temperature_maintai" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xqlbge/a_temperature_maintai</a></p>
+<h3>6. 全栈真实可用的项目点子？（新帖）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xsucvj/full_stack_real_world" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xsucvj/full_stack_real_world</a></p>
+<p><strong>Jus 点评</strong>：<strong>有人在要练习项目点子</strong>——反过来说明 SMT 上"供给想法"和"需要想法"的人都在。</p>
+<p><strong>📌 那个扑克筹码需求今天彻底掉出榜单了。</strong> 八天，全板块最高分，零人动手——<strong>这条需求的结局就是它自己的答案。</strong></p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>最该读</strong>：Google 48 个 agent 找到玛雅金字塔（<strong>多 agent 编排 + 结果过滤，跟你搭测试系统是同一道题</strong>）、benchmark 作弊的下一层</li>
+<li><strong>今天就做</strong>：用 Secure Enclave 保护 SSH 密钥 — <strong>你一堆 agent 在跑，明文私钥是最薄的一环</strong></li>
+<li><strong>对你的方向</strong>：PH 今天四条全是给 agent 的基础设施（邮件、电话、广告、支付）——<strong>agent 基础设施正在按"人类通信渠道"逐个被补齐，x402 占的是"支付"这格，位置对</strong></li>
+<li><strong>该学的路径</strong>：SideProject 那条"我的 Claude skill 被 XDA 报道了"——<strong>小切口 + 挂生态 + 能被报道，这就是你开源第一发的形态</strong></li>
+<li><strong>该校准的预期</strong>：70 天赚 700 美元（一天 10 刀）是真实基准，别按"三天 5000 刀"定计划</li>
+<li><strong>SMT</strong>：有人在找技术合伙人（最便宜的用户访谈池）；扑克筹码需求第八天彻底掉榜，零人动手</li>
+</ul>
+<h2>⚠️ 数据源状态</h2>
+<ul>
+<li>全自动跑通：HN 12 / PH 10 / Reddit 24（via browser，带分数）/ SMT 22。</li>
+<li><strong>Reddit 连续两天稳定 24 条带分数</strong>，强制浏览器方案确认可靠。</li>
+<li>PH 出现 1 条跨日重复（gitmanual，连续第二天），属正常延续，非故障。</li>
+</ul><div class="pager"><a class="l" href="2026-11-11.html">← 2026-11-11</a></div></article>
+<footer>自动生成 · 2026-11-12</footer>
+</div>
+</body></html>
