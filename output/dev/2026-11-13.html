@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-13（周五）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-13</div><h1>每日独立开发精选 · 2026-11-13（周五）</h1>
+<blockquote>
+<p>采集时间 00:05。源：HN Firebase API / Product Hunt feed.json / Reddit 浏览器渲染（自动）</p>
+</blockquote>
+<h2>🚨 今天先说一件跟你的公司直接相关的事</h2>
+<h3>NVIDIA 宣布 CEO 交接 — 1058 分，903 条评论（今日 HN 绝对爆款）</h3>
+<p><a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-tran" target="_blank" rel="noopener">https://nvidianews.nvidia.com/news/nvidia-announces-ceo-tran</a><br />
+讨论：<a href="https://news.ycombinator.com/item?id=504" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=504</a></p>
+<p><strong>官方新闻稿确认的事实（已核对原文）：</strong></p>
+<ul>
+<li><strong>黄仁勋辞去总裁、CEO 及董事会成员职务，即刻生效</strong></li>
+<li><strong>Colette Kress（现任执行副总裁兼 CFO）出任临时 CEO</strong>，同时继续担任 CFO，直到找到正式继任者</li>
+<li><strong>Harvey C. Jones 出任公司首位董事会主席</strong>（曾任 Synopsys CEO 和执行主席）</li>
+<li>董事会启动正式 CEO 搜寻，<strong>内部和外部候选人都考虑</strong></li>
+<li><strong>11 月 17 日（下周二）照原计划发布 FY2027 Q3 财报</strong></li>
+<li>官方口径：<strong>运营、客户承诺、产品路线图"不中断"</strong></li>
+</ul>
+<p><strong>Jus 点评</strong>：<strong>这条对你来说不是新闻，是风险评估。</strong></p>
+<ol>
+<li><strong>交接是"即刻生效"+"临时 CEO"，且继任者要外部找</strong> — 这说明不是计划内的平滑过渡。董事会同时新设了主席职位，是典型的<strong>加强治理结构</strong>动作。</li>
+<li><strong>对你个人的直接含义</strong>：你在 SW GPU 大部门做 N1-Auto（车载 SoC）+ CUDA on Tegra 测试。<strong>CEO 空缺期，最先被审视的一定是非核心、非当期营收的投入</strong>。自动驾驶/机器人是长期故事，但<strong>车载 SoC 的验证团队在这种时期是最容易被问"能不能少点人"的地方</strong>。</li>
+<li><strong>反过来说，这也是你的机会</strong>：混乱期里，"能自己搭 AI 自动化测试系统"的人比"按流程执行测试"的人安全得多。<strong>你那个自动化测试系统，现在从"有意思的项目"变成"你的护城河"。</strong></li>
+<li><strong>11 月 17 日财报</strong>：临时 CEO 主持的第一场财报，通常会说得很保守。<strong>留意那天有没有提到车载业务的口径变化。</strong></li>
+</ol>
+<p><strong>我的建议</strong>：<strong>这周把你那个 AI 测试系统做出一个能演示的版本</strong>，别等它"完善"。现在需要的是"能证明价值的东西"，不是"完美的系统"。</p>
+<h2>🔥 Hacker News（其余精选）</h2>
+<h3>1. Socratic Tutor — Jane Street 开源的 agent skill</h3>
+<p><a href="https://github.com/janestreet/agent_skills/blob/master/socra" target="_blank" rel="noopener">https://github.com/janestreet/agent_skills/blob/master/socra</a>...<br />
+讨论：<a href="https://news.ycombinator.com/item?id=504" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=504</a></p>
+<p><strong>508 分，115 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>今天对你最有实操价值的一条。</strong> Jane Street（顶级量化）开源的不是框架、不是库，<strong>是一个 agent skill</strong>。</p>
+<p>这直接回答了你前几天的问题：<strong>你的开源第一发该做什么形态</strong>。答案是——<strong>一个 skill，挂在别人已有的 agent 生态上，小而精，出自有信誉的地方</strong>。</p>
+<p>而且注意：他们做的是"苏格拉底式教学"这类<strong>纯方法论</strong>的东西，不含任何基础设施。<strong>这说明 agent skill 这个赛道现在缺的不是工具，是"好的做法"</strong>。</p>
+<h3>2. Anthropic IPO — 344 分，368 条评论</h3>
+<p><a href="https://ipo.anthropic.com/us/" target="_blank" rel="noopener">https://ipo.anthropic.com/us/</a></p>
+<p><strong>Jus 点评</strong>：Anthropic 要上市了。<strong>368 条评论里有大量在讨论"模型公司的商业模式到底是什么"</strong>——这跟你判断 x402 值不值得做有关：如果模型公司纷纷上市，<strong>它们的定价和成本结构会变得透明</strong>，agent 支付层的价值也会更清晰。</p>
+<h3>3. 为什么写正确的软件这么难 — 231 分，96 条评论</h3>
+<p><a href="https://pron.github.io/posts/correctness-and-complexity" target="_blank" rel="noopener">https://pron.github.io/posts/correctness-and-complexity</a></p>
+<p><strong>Jus 点评</strong>：<strong>你今天第二该读的。</strong> 你搭的是测试系统，"为什么正确性难以保证"是这个工作的理论地基。<strong>96 条评论质量很高。</strong></p>
+<h3>4. systemd 启动任务的可视化树 — 242 分，97 条评论</h3>
+<p><a href="https://codeberg.org/wvhulle/bootvine" target="_blank" rel="noopener">https://codeberg.org/wvhulle/bootvine</a></p>
+<p><strong>Jus 点评</strong>：<strong>把不可见的系统状态变成一张树图。</strong> 你的测试系统做报告时，"一眼看清发生了什么"比"输出一堆日志"有价值得多。<strong>这个可视化思路可以抄。</strong></p>
+<h3>5. Jane Street 的软件工程面试正在改变 — 57 分，32 条评论</h3>
+<p><a href="https://blog.janestreet.com/software-engineering-interviews-" target="_blank" rel="noopener">https://blog.janestreet.com/software-engineering-interviews-</a></p>
+<p><strong>Jus 点评</strong>：面试形式的演进方向。你今年面了不少，可以对照看看。</p>
+<p>其他：<br />
+- <strong>废弃的 Quake 4 资料片被 modder 做完了，现在能玩</strong> — 67pt（moddb）<strong>十几年后有人把它做完，是社区力量的样本</strong><br />
+- <strong>和 AMD 的 Mike Clark 深聊 Zen 6</strong> — 67pt（chipsandcpus）<strong>芯片架构，跟你的工作同一个语系</strong><br />
+- 研究人员发现每 8 分钟发一次射电信号的罕见恒星系统 — 65pt<br />
+- <strong>Libreagi — Save OSS Models</strong> — 31pt（<a href="https://libreagi.com/" target="_blank" rel="noopener">https://libreagi.com/</a>）<strong>"拯救开源模型"，一个值得关注的倡议</strong><br />
+- 电动船电池 —— 更紧凑、更凉快的电源 — 20pt（IEEE Spectrum）<br />
+- <strong>ExcalidrawZ：macOS/iOS 上本地原生的 Excalidraw</strong> — 5pt（<a href="https://github.com/chocoford/ExcalidrawZ" target="_blank" rel="noopener">https://github.com/chocoford/ExcalidrawZ</a>）</p>
+<h2>🚀 Product Hunt（今日 10 个）</h2>
+<p><strong>今天 PH 的主题：AI skill 开始有"库"了。</strong></p>
+<h3>1. Skillbox — 一个 AI skill 库，同步到每个 agent</h3>
+<p><a href="https://www.producthunt.com/products/skillbox-5" target="_blank" rel="noopener">https://www.producthunt.com/products/skillbox-5</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天最该看的一个。</strong> 注意：<strong>"One library for your AI skills, synced to every agent"</strong>。</p>
+<p>昨天我说"agent 基础设施正在按人类通信渠道被补齐"，今天这个更进一步——<strong>连"skill 本身"都开始需要有共享库了</strong>。</p>
+<p><strong>这跟 Jane Street 开源 Socratic Tutor 是一个硬币的两面</strong>：一边是有人写 skill，一边是开始有人管 skill。<strong>你的开源项目如果做成 skill，就该考虑怎么进这类库——这是零成本的分发渠道。</strong></p>
+<h3>2. StableBar — macOS 原生的开源菜单栏</h3>
+<p><a href="https://www.producthunt.com/products/stablebar" target="_blank" rel="noopener">https://www.producthunt.com/products/stablebar</a></p>
+<p><strong>Jus 点评</strong>：<strong>开源 + 原生 + macOS</strong>。这类项目 star 增长慢但持久，适合当开源影响力的底盘。</p>
+<h3>3. Earlybird — 2900 万参数的语音转文字，在你话没说完就输出词</h3>
+<p><a href="https://www.producthunt.com/products/earlybird-5" target="_blank" rel="noopener">https://www.producthunt.com/products/earlybird-5</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天技术上最有意思的一个。</strong> 29M 参数——<strong>极小模型</strong>，而它的卖点是"预测性输出"（在人说完之前就出字）。<strong>小模型 + 场景特化，这条路正在被反复验证。</strong></p>
+<h3>4. Omnigraph — 给 AI agent 用的开源图数据库</h3>
+<p><a href="https://www.producthunt.com/products/omnigraph" target="_blank" rel="noopener">https://www.producthunt.com/products/omnigraph</a></p>
+<p><strong>Jus 点评</strong>：<strong>agent 需要"记住关系"</strong>，关系型数据库不合适，图数据库合适。这是 agent 记忆层的基础设施。</p>
+<h3>5. Reddit Reviews — 产品页面收集 subreddit 的情绪</h3>
+<p><a href="https://www.producthunt.com/products/reddit" target="_blank" rel="noopener">https://www.producthunt.com/products/reddit</a></p>
+<p><strong>Jus 点评</strong>：<strong>把 Reddit 当情报源做成产品</strong>。你每天做的日报其实做了同样的事——<strong>只是你给人看，它给产品页看</strong>。</p>
+<h3>6. YouArt Desktop App — 给创意团队的 Codex</h3>
+<p><a href="https://www.producthunt.com/products/youart" target="_blank" rel="noopener">https://www.producthunt.com/products/youart</a></p>
+<p><strong>Jus 点评</strong>：<strong>"给 X 团队的 Codex" 这个句式正在变成模板</strong>——说明"Codex 式交互"已经被当成一个可复制的范式。</p>
+<h3>7. Grok Bot 1.0 — bot 和你的团队一起工作</h3>
+<p><a href="https://www.producthunt.com/products/grok" target="_blank" rel="noopener">https://www.producthunt.com/products/grok</a></p>
+<h3>8. Insight7 Voice AI Agents — AI 语音 agent 替你给客户打电话</h3>
+<p><a href="https://www.producthunt.com/products/insight7" target="_blank" rel="noopener">https://www.producthunt.com/products/insight7</a></p>
+<p><strong>Jus 点评</strong>：<strong>注意：这是本周第二个"agent 打电话"的产品</strong>（前天是 CALL-E）。这个格子正在快速变挤。</p>
+<h3>9. Jot 2.0 — 选中文本连按两下 Shift，变成一个 markdown 文件</h3>
+<p><a href="https://www.producthunt.com/products/jot-2-0" target="_blank" rel="noopener">https://www.producthunt.com/products/jot-2-0</a></p>
+<p><strong>Jus 点评</strong>：<strong>交互做到极致的范例</strong>——连按两下 Shift，零界面。<strong>"用已有习惯承载新功能"是最好的设计。</strong></p>
+<h3>10. Kippy AI — 边玩边学语言（连续第二天）</h3>
+<p><a href="https://www.producthunt.com/products/kippy-ai" target="_blank" rel="noopener">https://www.producthunt.com/products/kippy-ai</a></p>
+<h2>💡 Reddit r/SideProject（今日热门 · 自动走浏览器，24 条带分数）</h2>
+<p><strong>今天质量不错，而且有两条直接戳你的现状。</strong></p>
+<h3>1. Dopamine Chic — 一个设计师折扣店，结账永远是 0.00</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xtqbj1/i_built_dopamine_chic_a_designer_out" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtqbj1/i_built_dopamine_chic_a_designer_out</a></p>
+<p><strong>40 分，22 条评论（今日榜首）。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>今天最有创意的概念。</strong> 一个"设计师品牌店"，但 checkout 永远显示 $0.00——<strong>它在玩的是"购物冲动"和"最终不花钱"之间的心理落差</strong>。这是个艺术项目伪装成电商，而<strong>这种"让人先以为是真的、再发现是个作品"的结构，传播力极强。</strong></p>
+<h3>2. 我的 app 留存不错，但没人找得到它。几个月只有 35 次下载</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xuckex/my_app_retains_users_but_nobody_can_" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xuckex/my_app_retains_users_but_nobody_can_</a></p>
+<p><strong>8 分，20 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>这条对你最直接，因为它就是开源项目会遇到的同一个问题。</strong><br />
+产品做对了（留存好），但没人知道它存在。<strong>你的开源项目发布那天，会面临一模一样的情况——技术做好了，曝光是另一件事。</strong></p>
+<p><strong>20 条评论里一定有可操作的分发建议，值得读。</strong></p>
+<h3>3. 我一直在做没人搜索的 app，所以做了个工具检查有没有人真的在搜</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xtnv88/i_kept_building_apps_nobody_searched" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtnv88/i_kept_building_apps_nobody_searched</a></p>
+<p><strong>7 分，14 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>跟上面那条是同一个问题的解法</strong>——先查有没有人搜，再做。<strong>对你的意义：做 x402 之前，先查中文世界里有多少人在搜"agent 支付"。如果搜的人很少，说明你在教育市场，那是成本最高的事。</strong></p>
+<h3>4. 我做了个开源 API 客户端，把请求直接存在 Git 里</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xu6mmz/i_built_an_opensource_api_client_tha" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xu6mmz/i_built_an_opensource_api_client_tha</a></p>
+<p><strong>19 分，7 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>"把数据存在 Git 里"是个很聪明的架构选择</strong>——免费获得版本历史、协作、备份。<strong>做工具时能复用别人基础设施的地方，都该复用。</strong></p>
+<h3>5. 我做了个 app，让我知道在海外的爸妈今天起床了，但不用打扰他们</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xtttzk/i_built_an_app_so_i_know_my_parents_" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtttzk/i_built_an_app_so_i_know_my_parents_</a></p>
+<p><strong>18 分，16 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>跟前几天那条"AI 助手引导父母操作电脑"是同一类：为父母做工具。</strong> 这个品类被严重低估——<strong>需求真实、付费者是子女（有付费能力）、且没有大厂在做。</strong></p>
+<h3>6. 我把分析面板做成了一个 PHP 文件 —— 不用 SaaS，没有追踪脚本</h3>
+<p><a href="https://www.reddit.com/r/SideProject/comments/1xty8r7/i_built_my_analytics_dashboard_as_on" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xty8r7/i_built_my_analytics_dashboard_as_on</a></p>
+<p><strong>9 分，10 条评论。</strong></p>
+<p><strong>Jus 点评</strong>：<strong>"一个 PHP 文件"本身就是反抗。</strong> 在所有人都在加依赖的年代，<strong>减法是最显眼的差异化</strong>。</p>
+<p>其他值得点开：<br />
+- <strong>花几周做了自己的 reels 自动化，其中一个视频爆了 — 12 条评论</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xtlw3q/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtlw3q/</a> <strong>做内容自动化能看到具体结果的一条</strong><br />
+- <strong>「app 让我验证邮箱，然后在我用之前就让我评分」— 11 条评论，全是愤怒的用户体验吐槽</strong> — <a href="https://www.reddit.com/r/SideProject/comments/1xtwz9h/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtwz9h/</a><br />
+- 做了一款非传统约会 app 想解决一个常见问题 — <a href="https://www.reddit.com/r/SideProject/comments/1xtx4mt/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtx4mt/</a><br />
+- Orthant —— Windows 和 macOS 的免费窗口管理器 — <a href="https://www.reddit.com/r/SideProject/comments/1xtlwl6/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xtlwl6/</a><br />
+- Talkthrough：会大声回答的开源屏幕助手 — <a href="https://www.reddit.com/r/SideProject/comments/1xu7jq3/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xu7jq3/</a><br />
+- 我沉迷刷手机，所以做了个 app 强迫我先回答问题 — <a href="https://www.reddit.com/r/SideProject/comments/1xturt9/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xturt9/</a><br />
+- 基于 Payload CMS 的网站平台 — <a href="https://www.reddit.com/r/SideProject/comments/1xu6r3m/" target="_blank" rel="noopener">https://www.reddit.com/r/SideProject/comments/1xu6r3m/</a></p>
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<p><strong>SMT 今天有新需求，其中有两条比之前那些更有意思。</strong></p>
+<h3>1. 一个 AI，告诉我哪家超市最便宜（新帖，0 评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xtl3sq/an_ai_that_gives_me_t" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xtl3sq/an_ai_that_gives_me_t</a></p>
+<p><strong>Jus 点评</strong>：<strong>今天 SMT 里最实用的需求。</strong> 比价是刚需中的刚需，而且<strong>数据抓取难度适中、商业模式清晰（返利/广告）</strong>。比那个八天没人做的扑克筹码靠谱得多。</p>
+<h3>2. 一个目标追踪器，允许你决定某个目标不再属于你（新帖）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xte49q/a_goal_tracker_that_l" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xte49q/a_goal_tracker_that_l</a></p>
+<p><strong>Jus 点评</strong>：<strong>这个想法有哲学深度。</strong> 所有目标追踪工具都假设"你要坚持"，<strong>没有工具帮你体面地放弃</strong>。而这恰恰是大部分人真正需要的。</p>
+<h3>3. 把所有虚拟支付卡合在一起的免费 app（新帖）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xu69yl/i_wanted_to_create_a_" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xu69yl/i_wanted_to_create_a_</a></p>
+<p><strong>Jus 点评</strong>：<strong>这条跟你的 x402 领域相邻</strong>——聚合支付卡、虚拟卡管理。值得看评论区有没有人聊实现难点。</p>
+<h3>4. 能让你用语音控制浏览器的扩展（5 分，7 条评论 · 仍是最热门）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xpi04g/extension_that_lets_y" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xpi04g/extension_that_lets_y</a></p>
+<p><strong>Jus 点评</strong>：<strong>PH 上已经有成品（LotusQ），这条需求基本关闭。</strong></p>
+<h3>5. 精确的油漆搅拌设备（3 分，0 评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xrrd8k/precise_paint_mixer_e" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xrrd8k/precise_paint_mixer_e</a></p>
+<h3>6. 恒温咖啡杯 / 茶杯 / 保温瓶（3 分，8 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xqlbge/a_temperature_maintai" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xqlbge/a_temperature_maintai</a></p>
+<h3>7. 我想做一个简单、真的能帮到人的网站（新帖，2 条评论）</h3>
+<p><a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xtzbi0/i_want_to_build_a_sim" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xtzbi0/i_want_to_build_a_sim</a></p>
+<h2>📌 今日总览</h2>
+<ul>
+<li><strong>🚨 头等大事</strong>：<strong>英伟达 CEO 黄仁勋即刻辞职，CFO Colette Kress 任临时 CEO，董事会新设主席，启动外部搜寻。11/17 财报照常。</strong> 对你的含义不是新闻，是风险——<strong>CEO 空缺期，非核心投入最先被审视，你的车载 SoC 验证团队在其中。建议这周把 AI 测试系统做出可演示版本。</strong></li>
+<li><strong>最该读</strong>：Jane Street 开源的 Socratic Tutor（<strong>一个 skill，不是框架——这就是你开源第一发该有的形态</strong>）、为什么写正确的软件这么难</li>
+<li><strong>对你的方向</strong>：Skillbox（AI skill 开始有共享库了——<strong>零成本分发渠道</strong>）、Omnigraph（agent 的记忆层）</li>
+<li><strong>该校准的</strong>：SideProject 那条"留存好但只有 35 次下载"——<strong>做对了产品和被人发现是两件事，你的开源项目会遇到同一个问题</strong></li>
+<li><strong>该做的检查</strong>：做 x402 之前，先查中文世界有多少人在搜"agent 支付"——<strong>搜的人少，说明你在教育市场，那是成本最高的事</strong></li>
+<li><strong>SMT</strong>：今天有真需求了（超市比价 AI、允许放弃的目标追踪器），比之前那些强</li>
+</ul>
+<h2>⚠️ 数据源状态</h2>
+<ul>
+<li>全自动跑通：HN 12 / PH 10 / Reddit 24（via browser，带分数）/ SMT 22。</li>
+<li>已联网核对英伟达官方新闻稿原文，确认 CEO 交接细节（非二手转述）。</li>
+<li>Reddit 连续三天稳定 24 条带分数。PH 跨日重复 1 条（Kippy AI），属正常延续。</li>
+</ul><div class="pager"><a class="l" href="2026-11-12.html">← 2026-11-12</a></div></article>
+<footer>自动生成 · 2026-11-13</footer>
+</div>
+</body></html>
