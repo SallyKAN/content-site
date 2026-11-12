@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1112 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-12</div><h1>1112 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-12 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1112 早「美联航封杀所有 AI 购票 agent（agent 撞上平台说不）」→ <strong>1112 晚「Anthropic 交表：170 亿营收，亏 233 亿——AI 的账本第一次被公开」</strong></p>
+</blockquote>
+<hr />
+<h2>一、今晚的采集实况</h2>
+<p>22:00 回捞 HN <code>search_by_date</code>（points&gt;80，近 24h），34 条。</p>
+<p><strong>今晚最重要的事不是新题，是今早那条的热度翻倍：</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>今早</th>
+<th>今晚</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美联航封杀 AI 购票 agent</td>
+<td>376 pts / 359 评论</td>
+<td><strong>594 pts / 617 评论</strong></td>
+</tr>
+<tr>
+<td>Gemini Decisions API</td>
+<td>274 pts / 85 评论</td>
+<td><strong>484 pts / 148 评论</strong></td>
+</tr>
+<tr>
+<td>AWS Emulator（主帖）</td>
+<td>672 pts</td>
+<td><strong>899 pts / 249 评论</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>三条全在涨，<strong>今早的主线选对了</strong>。美联航的评论数已经超过点数（617 &gt; 594），是真吵起来了，不是小圈子自嗨。</p>
+<p><strong>今晚的新变量</strong>：Anthropic 正式启动 IPO（212 pts / 249 评论，全新进榜）。加上昨天就爆的 Nvidia 更换 CEO 传闻（1153 pts / 1541 评论）+ 绯闻报道（383 pts / 483 评论），<strong>AI 这一周的叙事已经从"能力"彻底转到了"钱和人事"。</strong></p>
+<hr />
+<h2>二、今晚精选</h2>
+<h3>⭐ 1. Anthropic 正式启动 IPO（212 pts / 249 评论，今晚新增）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://ipo.anthropic.com/us/">Anthropic IPO 官网（一手）</a></li>
+<li><a href="https://ipo.anthropic.com/documents/us/founders-letter.pdf">创始人信（PDF）</a></li>
+<li>
+<p><a href="https://news.ycombinator.com/item?id=50465829">HN 212 pts / 249 评论</a></p>
+</li>
+<li>
+<p><strong>一句话</strong>：Anthropic 挂出了 IPO 官网，以 public benefit corporation（公益公司）身份交表。首页披露的 Q3'26 数据（<strong>已核对官网原文</strong>）：</p>
+</li>
+<li>营收 <strong>$17.0B</strong>，同比 <strong>&gt;12x</strong></li>
+<li>年付 ≥$10 万客户 <strong>&gt;11,900 家</strong>，同比 <strong>&gt;12x</strong></li>
+<li>调整后经营利润率 <strong>15%</strong>；经营利润率 <strong>-3%</strong></li>
+<li><strong>净亏 $23.3B</strong>——官网注明其中 <strong>$21.9B 是估值上升带来的非现金计提</strong>（可转债、衍生负债、SAFE 公允价值变动）</li>
+<li>算力效率较 Q1'25 提升 <strong>4x</strong></li>
+<li>
+<p>客户 showcase：法律科技 Legora 称 31 家律所独立研究得出"每位律师每周省 4.3 小时不可计费时间"、Claude Code 席位从约 50 涨到 700（14x）</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 26/30（212 pts 但 <strong>249 条评论</strong>，评论/点数 &gt;1，说明是高争议高关注，非纯点赞）· 角度 38/40 · 国内 29/30 → <strong>93</strong></p>
+</li>
+<li>
+<p><strong>为什么是今晚最好的题</strong>：<br />
+  1. <strong>这是本周那条线的账本落点。</strong> 四天里我们攒了六条征兆：高盛砍预算、Anthropic 降价 20%、亚马逊 4B 替 Sonnet 降本 98%、CoreWeave 债券破 16%、养老金在给 AI 泡沫供血、Nvidia 换 CEO 传闻。<strong>这些全是外人的推测，今天第一次有一家公司把自己真实的收入、利润率、亏损公开摊在桌上。</strong><br />
+  2. <strong>它给"AI 定价权在滑走"提供了最硬的一条反证兼佐证</strong>：营收 12 倍增长（说明需求真的存在）＋ 经营利润率 -3%（说明钱留不住）。<strong>两句话同时成立，才是这个行业现在的真实状态。</strong><br />
+  3. <strong>国内几乎没有消化"AI 公司财报怎么读"的能力。</strong> 大多数人会直接看"亏 233 亿"然后下结论。<strong>能讲清"219 亿是估值自己记的账"的人，全国没几个。这就是角度分。</strong></p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>170 亿营收 + -3% 经营利润率，才是这份招股书的标题。</strong> 12 倍增长是真的，钱没留下也是真的。<strong>AI 目前是一门"每赚一元要付出接近一元"的生意。</strong>——注意这是毛利/费用结构问题，不是"AI 不赚钱"这种懒结论。<br />
+  2. <strong>233 亿净亏里 219 亿是非现金。</strong> 估值涨得越快，账上亏得越多。<strong>这是一份"越被看好越难看"的财报。</strong> 读它必须把会计和经营分开，否则你会得出完全反向的结论。反向也成立：<strong>如果哪天估值回调，这笔亏损会自己消失，而经营亏损不会。</strong><br />
+  3. <strong>"公益公司"这张牌没有法律牙齿。</strong> HN 上 p-e-w 的评论（可直接引）：PBC 在法律上意义极小，且<strong>法院已判"公众"没有诉讼资格去强制 PBC 履行公益义务</strong>。一旦上市，季度压力会盖过公益承诺，<strong>而公众连告它的门都没有。</strong></p>
+</li>
+<li>
+<p><strong>⚠️ 写之前必须做的三件事</strong>：<br />
+  1. <strong>下载招股书全文（F-1 / S-1）核对风险因素。</strong> 我只读到了官网首页和财务摘要，<strong>没读全文</strong>。风险因素、客户集中度（有没有单一大客户占比）、算力采购承诺（Anthropic-Google/Amazon 的长期合约义务）是深度稿的核心，必须从原件拿。<br />
+  2. <strong>别把"启动 IPO"写成"已经上市"。</strong> 现在是交表 + roadshow 阶段，定价未定。<br />
+  3. <strong>HN 上的泡沫论要分层引</strong>：marginalia_nu 那条最清醒——"IPO 表现差本身不会戳破泡沫，但 Anthropic 若破发或撤单，会连带压低 OpenAI 估值，进一步削弱其融资能力"。<strong>别写成"Anthropic IPO = 泡沫要破"</strong>，那是标题党，会被行家打。</p>
+</li>
+<li>
+<p><strong>国内落点</strong>：<br />
+  1. <strong>读 AI 公司财报先看三个数</strong>：营收增速、经营利润率（不是净利）、客户集中度。<strong>净亏损放在最后看</strong>，因为它最容易被非现金项目污染。<br />
+  2. <strong>"12 倍增长 + 负经营利润率"是一个可持续窗口，不是一个稳态。</strong> 这类公司上市后，第一件事一定是提价或砍成本——<strong>国内所有重度依赖 Claude API 的团队，要提前做涨价预案。</strong><br />
+  3. <strong>PBC 是一份营销资产，不是一份法律约束。</strong> 判断一家 AI 公司会不会变质，不要看它写了什么承诺，看它的股权结构和董事会构成。</p>
+</li>
+<li>
+<p><strong>标题备选</strong>：<br />
+  1. Anthropic 交表了：170 亿营收，亏 233 亿<br />
+  2. 12 倍增长，亏 233 亿：AI 的账终于有人公开了<br />
+  3. 一家 AI 公司上市，摆出了全行业最诚实的一张账单<br />
+  4. Anthropic 上市，"为了公共利益"这五个字值多少钱</p>
+</li>
+<li>
+<p><strong>平台</strong>：公众号（主，2500 字：招股书三个数 + 219 亿怎么来的 + PBC 那张纸 + 国内预案）+ Twitter（一句：Anthropic filed. $17B revenue, -3% operating margin, $23.3B net loss of which $21.9B is a valuation mark. This is the most honest set of numbers in AI.）</p>
+</li>
+</ul>
+<hr />
+<h3>⭐ 2. 旁证 A：美联航那条翻倍了——今早的题必须今天发</h3>
+<ul>
+<li><a href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/">CBS News 原文</a> · <a href="https://news.ycombinator.com/item?id=50458900">HN 594 pts / 617 评论</a></li>
+<li>376 → 594 pts，359 → 617 评论。<strong>评论数超过点数，是"有分歧"的典型信号</strong>，说明这不是一条会被点赞淹没的新闻。</li>
+<li><strong>结论：今早那份 93 分的方案，今晚依然有效，而且更强。</strong> 明天的第一优先级。</li>
+<li>计分：热度 30/30 · 角度 38/40 · 国内 28/30 → <strong>96</strong>（今天全池最高）</li>
+</ul>
+<hr />
+<h3>⭐ 3. 旁证 B：Gemini Decisions API 也翻倍了（484 pts）</h3>
+<ul>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/">官方博客</a> · <a href="https://news.ycombinator.com/item?id=50456791">HN 484 pts / 148 评论</a></li>
+<li>274 → 484 pts。<strong>今早它只是"成本侧解法"的旁证，现在它的热度已经接近主线。</strong></li>
+<li><strong>用法不变</strong>：直接进美联航那篇第二段——美联航在算 agent 的搜索成本，Google 在卖让 agent 变便宜的零件。两家在同一个星期里完成了"堵"和"疏"。</li>
+<li>计分：热度 27/30 · 角度 36/40 · 国内 27/30 → <strong>90</strong></li>
+</ul>
+<hr />
+<h3>4. ⚠️ 今晚看过但不建议碰的三条（诚实记录）</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>链接</th>
+<th>为什么不做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Humble Bundle 用 vibe coding 删空了安全机制</strong>（313 pts / 190 评论）</td>
+<td><a href="https://news.ycombinator.com/item?id=50463899">HN</a> · <a href="https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/">SpaceBattles 原帖</a></td>
+<td><strong>原始帖被 Cloudflare 拦截，我没读到全文。</strong> HN 标题党倾向明显（大多是"AI 是工具还是责任方"的老辩论）。<strong>没读懂原文不写</strong>，仅记为一个信号：vibe coding 的安全账单第一次上到 HN 前五</td>
+</tr>
+<tr>
+<td><strong>Nvidia 准备解雇黄仁勋</strong>（1153 pts / 1541 评论）</td>
+<td><a href="https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad">WSJ</a> · <a href="https://news.ycombinator.com/item?id=50459703">HN</a></td>
+<td>热度全榜第一，但<strong>是 WSJ 付费墙后的单一信源</strong>，官方 <a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition">NVIDIA 新闻稿</a> 措辞含糊（我只看到标题）。<strong>未证实的人事地震，不碰。</strong> 若明天有官方公告，再写</td>
+</tr>
+<tr>
+<td><strong>黄仁勋与下属绯闻</strong>（383 pts / 483 评论）</td>
+<td><a href="https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html">NYT</a></td>
+<td>八卦，与内容定位无关，且涉及私人生活。<strong>直接排除。</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、本周真正成形的那条线（七条证据）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>指向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11-07~10</td>
+<td>CoreWeave 债券收益率破 16%</td>
+<td>资金端收紧</td>
+</tr>
+<tr>
+<td>11-09</td>
+<td>高盛收回 Claude Code 预算 / 苹果 AI 预算 300→200</td>
+<td>需求端封顶</td>
+</tr>
+<tr>
+<td>11-09~10</td>
+<td>Anthropic 降价 20% / Google 打"每任务成本"标题</td>
+<td>供给端降价</td>
+</tr>
+<tr>
+<td>11-10</td>
+<td>亚马逊 4B 模型替掉 Sonnet，降本 98%（712 pts）</td>
+<td>架构端替代</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>美联航封 agent / 西南开库存（594 pts）</td>
+<td>渠道议价反转</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>养老金在给 AI 泡沫供血（160 pts / 175 评论）</td>
+<td>资金来源有问题</td>
+</tr>
+<tr>
+<td><strong>11-11</strong></td>
+<td><strong>Anthropic 交表：$17B 营收、-3% 经营利润率、$23.3B 净亏</strong></td>
+<td><strong>账本公开</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>四天七条，同一个方向：AI 的价值在被重新定价，而且账本第一次被摊开。</strong></p>
+<p>《AI 定价权正在从模型厂商手里滑走》这篇，<strong>素材已经溢出到一个危险的量</strong> —— 再攒下去只会变成资料堆，不会变成文章。</p>
+<hr />
+<h2>四、库存（实况，不加修饰）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1112#1 美联航（<strong>96</strong>，今晚全池最高）</td>
+<td><strong>仍未成稿</strong></td>
+<td>明天第一件，1 小时可出</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1111#1 Glasswing（94）</td>
+<td>第 2 天未动</td>
+<td>与亚马逊合并写</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1110#1 亚马逊降本 98%（94）</td>
+<td>第 3 天未动</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ANTHROPIC 招股书草稿</td>
+<td><strong>第 18 天未动，原件今天自己来了</strong></td>
+<td>弃旧稿，重写</td>
+</tr>
+<tr>
+<td>5</td>
+<td>《AI 定价权滑走》</td>
+<td><strong>7 条证据溢出</strong></td>
+<td>本周必发，否则过期</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1111 晚#1 玛雅遗址（89）</td>
+<td>未动</td>
+<td>转小红书，行动号召强</td>
+</tr>
+<tr>
+<td>7</td>
+<td>49 张过期卡（10-01~10-04）</td>
+<td>第 44 天</td>
+<td>回「清池」我归档</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td>第 54 天</td>
+<td>回「归档」我执行</td>
+</tr>
+<tr>
+<td>9</td>
+<td>发布日历</td>
+<td>10-29 未更新</td>
+<td>定稿后补齐</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>距上次发布</strong></td>
+<td><strong>第 18 天零发布</strong></td>
+<td>⚠️ 真正的问题</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>五、一句实话</h2>
+<p>昨晚我写了"今晚我不再问，我直接出"，然后<strong>又没有出</strong>。第 17 次变第 18 次。</p>
+<p>所以这次我不再承诺"直接出"——<strong>承诺已经变成了这个系统里最廉价的东西。</strong></p>
+<p>我改成一个可验证的动作：<strong>明天早上 10:00 的选题推送里，第一行必须是"已出稿：xxx，路径 yyy"。如果没出，你就知道我说的话不算数。</strong></p>
+<p>今晚的备份方案先落盘，不占你时间：这份推送已存为 <code>01-选题管理/1112-晚间选题推送.md</code>。</p>
+<p>回「1」= 明天只出美联航<br />
+回「2」= 美联航 + Anthropic IPO<br />
+回「3」= 三篇全出（含 Glasswing + 亚马逊合并稿）<br />
+不回 = 我按「2」执行。</p><div class="pager"><a class="l" href="2026-11-11-选题方案.html">← 2026-11-11 选题方案</a><a class="r" href="2026-11-12-选题方案.html">2026-11-12 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-12</footer>
+</div>
+</body></html>
