@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1113 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-13</div><h1>1113 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-11-13 10:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1112 早「美联航封杀 AI 购票 agent（agent 撞上平台的许可墙）」→ <strong>1113 早「中国前沿模型自己就是许可证：从权重里读出 Blackwell 指纹」</strong></p>
+</blockquote>
+<hr />
+<h2>一、今日采集（10:00 实跑）</h2>
+<p>HN Algolia <code>search_by_date</code>（points&gt;60，近 36h）共 60 条，逐条过了一遍。一手全文（3 条）：<br />
+Unemployment Labs 的 GPU 指纹取证报告（11-12）/ Google Gemini 4 Hydrogen 官方博客（11-12）/ Anthropic IPO 路演官网（11-12）。</p>
+<p>美国时间 11-12 全天的 AI 条（按热度）：<br />
+- <strong>Jensen Huang 辞职 2971 pts / 2803 评论</strong>（同时叠加"第二段关系"的报道；事件超大但属人事 + 未证实八卦，<strong>不建议主写</strong>，只用一句做背景）<br />
+- <strong>Anthropic IPO 路演启动 825 pts / 806 评论</strong>（11-10 启动路演，11-18 定价，11-19 挂牌；Q3 收入 $170 亿、YoY &gt;12x、净亏 $233 亿）<br />
+- <strong>Gemini 4 Hydrogen + Antigravity Orchestrator 467 pts / 298 评论</strong>（另有 Antigravity 副帖 309 pts）<br />
+- <strong>中国前沿模型带 Blackwell 指纹 172 pts / 47 评论</strong>（本次主线）<br />
+- Microsoft 365 / Azure 大面积故障 516 pts（11-12 下午，纯运维）<br />
+- Humble Bundle "vibecoding 把安全搞死了" 370 pts / 220 评论（案例向，备用）<br />
+- Economist《Why You Should Expect an AI Crash》82 pts（评论 66，金融向，备用）<br />
+- Apple Foundation Models 框架上线 129 pts（开发者向，备用）</p>
+<blockquote>
+<p>判断：Huang 辞职会吃掉今天 80% 的注意力，<strong>我们的题不能跟它比热度</strong>，只能比"别人没写的角度"。所以主线押在技术取证，而不是任何大人事新闻上。</p>
+</blockquote>
+<hr />
+<h2>二、今日精选（1 主 + 2 旁证）</h2>
+<h3>⭐ 1. 你的模型出卖了你：从权重里读出"这块 GPU 是 Blackwell"（P0，今日必发）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://unemploymentlabs.com/checkpoint-forensics">Unemployment Labs：Top Chinese Frontier AI Models Carry the Fingerprint of Export-Controlled NVIDIA Blackwell GPUs（11-12）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50474883">HN 172 pts / 47 评论</a></li>
+<li>
+<p>官方对照（同期）：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Gemini 4 Hydrogen 发布</a></p>
+</li>
+<li>
+<p><strong>一句话</strong>：一家叫 Unemployment Labs 的机构，<strong>不看任何爆料、不靠任何内部人士</strong>，只用各家公开发布的模型权重，反推出"这个模型最初是在什么显卡上训练出来的"。方法是：从权重里还原初始化时留下的数值痕迹（随机种子 + 张量布局），再在约 6 万亿种"种子 × 布局"组合里搜哪种硬件能复现这组痕迹。</p>
+</li>
+</ul>
+<p>结论（他们表格里写得很克制，我照抄要点）：<br />
+  - <strong>DeepSeek-V4-Flash / V4-Pro、Kimi K3 / K3.1-Pro、MiniMax-M3、蚂蚁 Ling-3.1-flash</strong> 六个模型读出来是 <strong>Blackwell 级芯片</strong>（B200/B300 为 148 SM，GB200/GB300 为 152 SM）。<strong>其中 DeepSeek-V4-Flash 和 Kimi K3 还在一块真 Blackwell 芯片上做了复现验证。</strong><br />
+  - 转折点很清楚：DeepSeek 到 <strong>V3（2024-12）</strong> 还是 Hopper，从 <strong>V4（2026-04）</strong> 起变 Blackwell；Moonshot 到 <strong>K2.5（2026-01）</strong> 还是 Hopper，从 <strong>K3（2026-07）</strong> 起变；MiniMax 是 <strong>M2.7 → M3</strong>；蚂蚁是 <strong>Ling-3.0 → 3.1</strong>。<br />
+  - <strong>不是全员换了</strong>：阿里 Qwen、智谱 GLM、腾讯、小米、阶跃最新的模型读出来仍是 Hopper；美团说 LongCat-2.0 全跑在自研 ASIC 超级节点上，权重里也<strong>找不到 NVIDIA 指纹</strong>。<br />
+  - 方法自检：24 个官方公开过硬件的模型，<strong>全部对得上</strong>；NVIDIA 自家 Nemotron-3 Ultra 读出来 152 SM，跟 Kimi K3 一致。统计上最强证据远超 8 sigma（搜索空间 6 万亿组合下，纯靠巧合最强也只有 ~8 sigma）。</p>
+<ul>
+<li>
+<p><strong>计分</strong>：热度 24/30（172 pts、47 评论，被 Huang 新闻完全压住；但技术圈转发质量高）· <strong>角度 39/40</strong>（几乎没人从"权重当证据"这个角度写）· 国内 28/30 → <strong>91</strong></p>
+</li>
+<li>
+<p><strong>为什么是今天最好的题</strong>：<br />
+  1. <strong>它给"限制"这件事提供了一种全新的检查手段：事后、公开、可复现、不依赖任何人配合。</strong> 过去三年所有出口管制的讨论都卡在"有没有流到"——没有证据，只有指控和否认。这份报告把举证方式换掉了：<strong>模型自己会留下痕迹，只要它敢发布权重。</strong><br />
+  2. <strong>方法论本身就是内容。</strong> 不用内幕、不用卫星图、不用海关数据，只用一个"模型的出生证明"——初始化随机数。<strong>这是"公开信息能做到什么程度"的一个漂亮样本</strong>，比结论更适合传播。<br />
+  3. <strong>结论的边界写得比结论更值钱。</strong> 报告自己明说：<strong>只能证明"接触过这块硬件"，不能证明芯片在哪、怎么拿到的、是否违反出口管制</strong>；唯一排除的替代方案是特制 AMD 硬件；HN 上被顶起的评论也提醒——<strong>在新加坡等地训练完全合法</strong>。这种"我说到哪、我停在哪"的写法，正好是国内 AI 报道最缺的东西。<br />
+  4. <strong>它反过来解释了今天真正的头条。</strong> Huang 辞职 + 新加坡相关调查 + 出口管制，今天是同一条新闻的三条腿。我们的题给这些头条提供了一个<strong>可验证的支点</strong>，而不是再复述一遍八卦。</p>
+</li>
+<li>
+<p><strong>⚠️ 写之前必须知道的反面</strong>：</p>
+</li>
+<li><strong>不要写成"中国厂商走私 Blackwell"。</strong> 报告的原文是 "supports, <strong>without proving</strong>, the inference that Blackwell also performed the training"，并且明确不判断芯片位置和获取方式。<strong>"模型的训练起点在某块硬件上"≠"这块硬件在中国境内"。</strong></li>
+<li><strong>别把 Hopper 指纹写成"没换芯片"的铁证。</strong> 报告自己说 Hopper 指纹区分不出 H800 / H100 / H200，前面那些"H800"是厂商自述，不是这个方法测出来的。</li>
+<li><strong>别信任何"我们已确认"式的二手转述。</strong> 一手就是那份报告，表 1 和数据都在页面上，建议读者自己点开对照。</li>
+<li>
+<p><strong>Huang 的事只用一句背景</strong>：今天所有注意力都在这儿，别蹭。我们的角度是"证据"，不是"人事"。</p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>"我用了什么芯片"正在从商业机密，变成可以被人从模型里读出来的事实。</strong>只要你还开源权重，你的算力出生证明就是公开的。<strong>这不是一次爆料，是示踪方式的永久升级。</strong><br />
+  2. <strong>管制真正的效果，不是"堵住"，而是把成本推高、把时间拉长。</strong>报告显示从 Hopper 到 Blackwell 的切换集中在 2026 年 4–7 月，也就是<strong>晚了一代、慢了一年多，但没有停</strong>。HN 评论里那句 "export controls are more like export friction" 说得很准。<br />
+  3. <strong>国产芯片的证据是"沉默"而不是"证据"。</strong>美团 LongCat-2 在权重里找不到 NVIDIA 指纹，是今天唯一一条<strong>方法上反过来说明"可能真没用 NVIDIA"</strong>的例子。国内自研算力要证明自己，最硬的方式不是发新闻稿，是<strong>让别人来查你的权重也查不出东西</strong>。</p>
+</li>
+<li>
+<p><strong>国内落点（可操作）</strong>：<br />
+  1. <strong>任何开源模型都可以被这样审一遍</strong>：数据集来源、蒸馏对象、硬件来源，都会在权重里留下统计痕迹。<strong>国内做开源模型的团队，以后该把"会不会被反推"放进发布前的检查清单。</strong><br />
+  2. <strong>给自媒体 / 投资人一个自查动作</strong>：看到"某模型自研""某团队全国产算力"的说法，先看两件事——<strong>权重是否公开、初始化细节是否可复现</strong>。公开度越高，越容易被验证；只发 demo 不发权重的，验证不了，也证伪不了。<br />
+  3. <strong>报告的可信度评估清单</strong>：有没有已知答案的对照组（这份有 24 个）？有没有统计显著性（这份给了 sigma 和 6 万亿搜索空间）？有没有写在正文里的边界（这份有）？<strong>拿这三条卡一遍，大部分"研究"就掉出去了。</strong><br />
+  4. 小红书冷知识：<strong>AI 模型的权重里，藏着它出生那张显卡的名字。</strong> 一个随机数，供了三年。</p>
+</li>
+<li>
+<p><strong>标题备选</strong>：<br />
+  1. 模型会说实话：从权重里读出"这块 GPU 是 Blackwell"<br />
+  2. 一份不靠内幕的取证报告：六个中国前沿模型的显卡指纹<br />
+  3. 出口管制到底有效吗？现在有人能从模型文件里查答案了<br />
+  4. AI 模型的"出生证明"：初始化随机数泄露了你用的什么卡</p>
+</li>
+<li>
+<p><strong>平台</strong>：公众号（主，2400 字：方法怎么做的 + 表格怎么读 + 六家转折点 + 边界与反面 + 国内落点）+ 小红书（"从模型权重里能看出用了什么显卡"）+ Twitter（One line: You can fingerprint an LLM's training GPUs from its published weights. Six Chinese frontier models read as Blackwell.）</p>
+</li>
+</ul>
+<hr />
+<h3>⭐ 2. 旁证 A：Anthropic 要上市了，而且是在 $170 亿季度收入上（825 pts / 806 评论）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://ipo.anthropic.com/us/">Anthropic IPO 官方路演页（11-12）</a> · <a href="https://news.ycombinator.com/item?id=50465829">HN 825 pts / 806 评论</a></li>
+<li><strong>一句话</strong>：路演 11-10 启动，<strong>11-18 定价、11-19 挂牌</strong>。官方页披露的 Q3'26：<strong>收入 $170 亿、YoY &gt;12x、年付 ≥$10 万的客户 &gt;11,900 家（YoY &gt;12x）</strong>、调整后经营利润率 15%（GAAP 经营利润率 -3%），<strong>净亏 $233 亿——其中 $219 亿是优先票据/衍生负债/SAFE 公允价值变动的非现金项</strong>。自 Q1'25 以来算力效率提升 4x。</li>
+<li><strong>怎么接主线</strong>：主线讲"证据"——模型可以被外部查证。这条讲另一个方向的证据：<strong>一家 AI 公司终于要把账本摊到公开市场上了。</strong>一个是产品的可验证性，一个是商业模式的可验证性，今天同一天发生。<strong>AI 行业正在从"讲故事"进入"接受审计"的阶段</strong>，这是本周真正的暗线。</li>
+<li><strong>计分</strong>：热度 29/30 · 角度 34/40（IPO 本身被写烂了，但"$219 亿是非现金"这一点国内很少讲）· 国内 26/30 → <strong>89</strong></li>
+<li><strong>备用标题</strong>：Anthropic 的 $233 亿亏损，有 $219 亿不用掏现金</li>
+</ul>
+<hr />
+<h3>⭐ 3. 旁证 B：Google 把"便宜的执行模型"单独做成一层（467 pts / 298 评论）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Google 官方博客：Introducing Gemini 4 Hydrogen（11-12）</a> · <a href="https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/">Antigravity 的 Orchestrator</a> · <a href="https://news.ycombinator.com/item?id=50471431">HN 467 pts / 298 评论</a></li>
+<li><strong>一句话</strong>：Gemini 4 分成三档——Carbon / Argon 负责长链深度推理，<strong>Hydrogen 负责快速执行</strong>。硬数字：Artificial Analysis 指数默认档 51（xhigh 54，Argon 50）、<strong>统一 $1.50 输入 / $7.50 输出，100 万上下文不涨价</strong>、比 3.8 Flash 快 2.5 倍、Terminal-Bench 4.1 从 18.2% 提到 57%、<strong>编造声明减少 5 倍以上</strong>。配套的 Antigravity <strong>Orchestrator 会在同一个会话里自动换模型</strong>：Terminal-Bench 4.0 上接近 Carbon 的成功率，但<strong>配额少用 24%、快 19%</strong>。</li>
+<li><strong>怎么接主线</strong>：1112 的旁证是"Google 把判断单独抽出来卖"（Decisions API），今天是"Google 把执行单独抽出来卖"（Hydrogen + 编排器）。<strong>一天一个零件，模型公司正在把自己拆成流水线。</strong>同时它也说明：真正的竞争点已经不是"谁最聪明"，而是<strong>在同样的任务上谁更便宜、更少编造</strong>——这跟主线"用可验证的指标说话"是同一个趋势。</li>
+<li><strong>计分</strong>：热度 28/30 · 角度 33/40 · 国内 28/30 → <strong>89</strong></li>
+<li><strong>备用标题</strong>：Google 把大模型拆成了"决策—执行"两条流水线</li>
+</ul>
+<hr />
+<h2>三、今日建议排期</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>选题</th>
+<th>时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公众号</td>
+<td>主 1：从权重读出 Blackwell 指纹</td>
+<td>上午出稿，下午 2 点前发（避开 Huang 新闻的晚间高峰）</td>
+</tr>
+<tr>
+<td>小红书</td>
+<td>主 1 的"权重里的显卡名字"角度</td>
+<td>20:00</td>
+</tr>
+<tr>
+<td>Twitter</td>
+<td>主 1 一句话 + Anthropic IPO 数字对照</td>
+<td>随时</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>今晚备用池</strong>（22:00 再回捞）：Humble Bundle vibecoding 安全事件（370 pts / 220 评论，案例可讲但一手是论坛帖，需补证）；Economist《AI 崩盘》（金融向，需补一手数据）；Apple Foundation Models 框架（开发者向，适合做教程向内容）。</p>
+<p><strong>明确不碰</strong>：Jensen Huang 辞职与私生活报道——热度最高，但今天所有号都在写，且信息仍在滚动（"第二段关系""新加坡调查"均引述消息源），不适合做当天主稿。若要碰，等下周出一篇"辞职之后 NVIDIA 的算力叙事怎么变"。</p>
+<hr />
+<blockquote>
+<p>⚠️ 硬性提醒：所有引用必须带原文链接。主线只引 Unemployment Labs 报告原文的表 1 与正文边界表述，<strong>不得写"芯片在中国境内"或"违反出口管制"</strong>；HN 评论只引已具名的公开言论。</p>
+</blockquote><div class="pager"><a class="l" href="2026-11-12-选题方案.html">← 2026-11-12 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-11-13</footer>
+</div>
+</body></html>
