@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1113 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-13</div><h1>1113 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-13 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1113 早「从权重里读出 Blackwell 指纹（证据）」→ <strong>1113 晚「agent 自己掏出钱包买搜索：402 这道门，终于有人拆了」</strong></p>
+</blockquote>
+<hr />
+<h2>一、今晚的采集实况（22:00 实跑）</h2>
+<p>HN Algolia <code>search_by_date</code>，points&gt;60，近 30h，60 条，逐条过。</p>
+<p><strong>先说昨晚的承诺，我欠你一个交代</strong>：昨晚我说"明天 10:00 推送第一行必须是已出稿路径"。<br />
+今早 10:00 那份推送（<code>1113-选题方案.md</code>）第一行是"今日采集"，不是出稿路径。<strong>第 19 天，零发布。</strong></p>
+<p>（顺手更正一处：昨晚我写"美联航 594pts / 617评论"。今晚复核，HN 该条实际是 376→594 pts，评论区与主帖合并口径不同，<strong>617 这个数我没能在接口里复现</strong>。昨晚那条我给的是合并估算，不该写得像实测。）</p>
+<p><strong>今早三条主线的晚间热度：</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>今早</th>
+<th>今晚</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国前沿模型带 Blackwell 指纹</td>
+<td>172 pts / 47 评论</td>
+<td><strong>319 pts / 122 评论</strong></td>
+</tr>
+<tr>
+<td>Anthropic IPO</td>
+<td>825 pts / 806 评论</td>
+<td><strong>967 pts / 879 评论</strong></td>
+</tr>
+<tr>
+<td>Gemini 4 Hydrogen（主帖）</td>
+<td>467 pts / 298</td>
+<td><strong>550 pts / 341</strong>（+副帖 451/137、<strong>722/137</strong>）</td>
+</tr>
+<tr>
+<td>Claude 全线故障（今晚新增）</td>
+<td>—</td>
+<td><strong>321 pts / 272 评论</strong> + 159/131</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>早上的判断全对</strong>：指纹那条一倍多增长，<strong>但热度依然只有黄仁勋辞职（3728 pts / 3241 评论）的 1/12</strong>。<br />
+所以今晚不推翻早上的主线，只给它补一个<strong>国内几乎没人写的后继</strong>（见下面第 1 条）。</p>
+<hr />
+<h2>二、今晚精选</h2>
+<h3>⭐ 1. Brave 把"搜索"卖给了 agent：HTTP 402 从一句玩笑变成收费门（170 pts / 95 评论）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://brave.com/blog/search-api-agentic-payments/">Brave 官方博客：The Brave Search API now accepts agentic payments via the x402 protocol（11-12）</a></li>
+<li>
+<p><a href="https://news.ycombinator.com/item?id=50477649">HN 170 pts / 95 评论</a></p>
+</li>
+<li>
+<p><strong>一句话（已读官方原文）</strong>：Brave Search API 的 x402 端点<strong>不要 API key，按次收费</strong>。请求不带付款 → 服务器返回 <code>HTTP 402 Payment Required</code>，响应体里写明这次搜索的价格和收款地址；agent 用自己的钱包签一笔 <strong>USDC（Base 链）</strong>付款，重试时带上签名，付款验证通过才返回结果。Brave 自己跑 facilitator，<strong>后续接更多链和更多稳定币</strong>。付款后可用额度包括 "LLM Context（agentic grounding）" 和普通网页搜索。</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 22/30（170 pts / 95 评论，评论密度高但盘子小）· <strong>角度 39/40</strong>（402 状态码被程序员调侃了三十年，真落地收费门，中文互联网零讨论）· 国内 27/30 → <strong>88</strong></p>
+</li>
+<li>
+<p><strong>为什么是今晚最好的题</strong>：<br />
+  1. <strong>它把 1112 的美联航题接成了下半场。</strong> 美联航是"平台对 agent 说不"——堵。Brave 是"平台给 agent 开一个自动收费的门"——疏。<strong>同一个星期，两种态度，一个行业在给自己装上 agent 计价器。</strong> 这条比早上任何补充都更像"故事的第二幕"。<br />
+  2. <strong>技术上极其土，但意义极新。</strong> HTTP 402 是 1997 年 RFC 里预留的状态码，三十年来基本没人正经用过。<strong>它被启用的前提不是技术成熟，是"请求方变成了不需要人点确认的东西"。</strong> 人类讨厌微支付，agent 不在乎——HN 上 wmf 的评论点得最准："Humans hate micropayments, but maybe it will be hidden somehow."<br />
+  3. <strong>账本身份变了，这是最容易被忽略的一刀。</strong> 过去的 API 计费单位是"账号 + 套餐"；x402 的单位是"一次请求 + 一个签名"。<strong>身份从账号变成了资金。</strong> 结果是：谁能付钱，谁就能调 API，不需要注册、不需要审批、不需要被风控看见。</p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>API 的准入机制，从"你被批准"变成"你付得起"。</strong> 对 agent 生态是解放（没有 key 管理、没有额度审批），对平台治理是麻烦（<strong>付费即准入 = 放弃对调用方的识别</strong>）。<br />
+  2. <strong>微支付真正解决的不是"付钱不方便"，是"没有人的付款流程"。</strong> 人类那套订阅/套餐/发票，本质是为"需要被说服的付款人"设计的；agent 不需要被说服，它只需要一个能签名的东西。<br />
+  3. <strong>搜索索引正在从"广告生意"变成"计量生意"。</strong> 广告卖给需要被影响的眼球，x402 卖给不需要眼球的进程。<strong>这两种生意能共存多久，是接下来一年最值得看的分岔。</strong></p>
+</li>
+<li>
+<p><strong>⚠️ 写之前必须知道的边界</strong>：</p>
+</li>
+<li><strong>这不是"搜索引擎开始向 AI 收费"的大新闻。</strong> 只是 Brave 的 <strong>API 端点</strong>新增一种支付方式，网页搜索本身没变。别升格。</li>
+<li><strong>USDC on Base = 稳定币 + 公链。</strong> 国内读者会立刻问合规，<strong>我不会替它回答</strong>，只陈述它做了什么。</li>
+<li>
+<p><strong>HN 上"会不会所有搜索引擎都跟进"的讨论只是猜测</strong>（原评论 araarabish 是设问），<strong>不能当预测引用</strong>。</p>
+</li>
+<li>
+<p><strong>国内落点（可操作）</strong>：<br />
+  1. <strong>给做 agent 产品的人一个具体动作</strong>：如果你的工具要调第三方 API，"无 key + 按次付费"这条路今年第一次有了真实案例。<strong>成本模型要从"月订阅"改成"每次任务预算"。</strong><br />
+  2. <strong>给平台方一个提醒</strong>：一旦接受匿名付款，<strong>风控就得从"审核调用方"改成"审核调用行为"</strong>。这道作业大部分国内平台还没做。<br />
+  3. <strong>小红书冷知识</strong>：HTTP 402「Payment Required」空了二十九年，2026 年第一次被大规模真用——<strong>因为终于有一类用户不介意点付款</strong>。</p>
+</li>
+<li>
+<p><strong>标题备选</strong>：<br />
+  1. 空了二十九年的 402，被 AI agent 用上了<br />
+  2. Brave 开始向 agent 卖搜索：不要 key，要钱<br />
+  3. agent 不需要被说服，只需要一个能签名的东西<br />
+  4. 美联航堵门，Brave 开门：同一个星期的两种态度</p>
+</li>
+<li>
+<p><strong>平台</strong>：公众号（主，2200 字：402 是什么 / 流程怎么走 / 为什么现在才成立 / 准入机制变了 / 国内平台作业）+ Twitter（One line: HTTP 402 sat unused since 1997. Brave just turned it on — for agents, paid in USDC, no API key. The unit of access is no longer an account, it's a signature.）</p>
+</li>
+</ul>
+<hr />
+<h3>⭐ 2. 旁证 A：Nvidia 员工请愿要回黄仁勋（704 pts / 557 评论，今晚新增）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/">WIRED 原文（11-13）</a> · <a href="https://news.ycombinator.com/item?id=50477231">HN 704 pts / 557 评论</a> · 二手转述：<a href="https://qz.com/nvidia-employees-board-bring-back-jensen-huang-111326">Quartz</a> · <a href="https://decrypt.co/383217/nvidia-employees-push-board-to-bring-back-jensen-huang-report">Decrypt</a></li>
+<li><strong>一句话</strong>：WIRED 查阅 Nvidia 内部通讯：<strong>一条内部帖下 1,600+ 条评论</strong>要求董事会重新考虑黄的离任；<strong>11-09~10 在 Blind 上对 232 名员工的调查，88% 认为他应继续担任 CEO</strong>（11% 支持自愿辞职，1% 支持董事会罢免）；WIRED 称同期<strong>未能找到任何公开支持他辞职的内部帖</strong>。HN 上另有转述称本周员工薪酬受影响（<strong>未核实，别引</strong>）。</li>
+<li><strong>怎么接主线</strong>：不接内容，接情绪——<strong>这是今天全榜第二热（仅次于辞职本身），也是唯一一条"公司内部对治理事件表态"的一手材料。</strong> 但我不建议现在写：它属于人事线，且 WIRED 信源是"审阅内部通讯"，公司无官方回应。</li>
+<li><strong>计分</strong>：热度 30/30 · 角度 26/40（所有媒体都在写）· 国内 29/30 → <strong>85</strong></li>
+<li><strong>处理建议</strong>：<strong>不进本周主稿。</strong> 等任命/董事会决议落地，再出一篇"辞职一周后：NVIDIA 的算力叙事怎么变"，那时这条是最好的开头材料。今晚只记录。</li>
+</ul>
+<h3>⭐ 3. 旁证 B：TSMC 承认员工个资外泄（110 pts / 17 评论，今晚新增）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm">TSMC 提交 SEC 的 6-K 原文（11-12，一手）</a> · <a href="https://news.ycombinator.com/item?id=50479721">HN 110 pts / 17 评论</a></li>
+<li><strong>一句话（已读 6-K 原文，很短）</strong>：TSMC 发现<strong>部分在职及离职员工个资在外部网站未授权公开</strong>；<strong>目前无证据显示公司系统被入侵</strong>；已核实该数据<strong>与某云服务商系统内的数据一致</strong>，但<strong>与公司运营及客户数据无关</strong>；已通知受影响人员并联系云服务商、调查机关与第三方安全机构。</li>
+<li><strong>怎么接主线</strong>：<strong>"AI 供应链的安全短板不在芯片厂，在云。"</strong> TSMC 自己把话说得很清楚：系统没被破，<strong>是托管方那边漏的</strong>。这跟早上"用公开信息验证硬件来源"是同一类题——<strong>你信任的链路，比你想象的长。</strong></li>
+<li><strong>计分</strong>：热度 18/30（盘子极小）· 角度 34/40 · 国内 28/30 → <strong>80</strong></li>
+<li><strong>⚠️ 别写错</strong>：HN 标题写的是 "TSMC Hacked"，<strong>TSMC 原文明确说无证据显示系统被入侵</strong>。<strong>标题党与原文直接冲突，这是写作陷阱。</strong></li>
+</ul>
+<hr />
+<h3>4. 今晚看过但没选的（诚实记录）</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>链接</th>
+<th>为什么不选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Claude 全线故障</strong>（321 pts / 272 评论 + 159/131）</td>
+<td><a href="https://status.claude.com/incidents/nn11wk485zfn">status.claude.com</a> · <a href="https://news.ycombinator.com/item?id=50481187">HN</a></td>
+<td>今晚全榜 AI 第一热，但<strong>是运维事故不是选题</strong>。有一个真角度：<strong>Anthropic 挂着 IPO 路演时全站宕机</strong>——建议只作为 Anthropic 稿里的一句事实，不单独成篇</td>
+</tr>
+<tr>
+<td>Microsoft 365 / Azure 全球故障（1042 pts / 871 评论，12 小时以上）</td>
+<td><a href="https://news.ycombinator.com/item?id=50478609">HN</a></td>
+<td>热度极高但纯运维，与我们定位无关。<strong>注意：今天两个最大云和最大 AI 应用先后挂，这本身是"基础设施脆弱性"的信号</strong>，留到以后合并写</td>
+</tr>
+<tr>
+<td>Edge0-145B：个人电脑跑 145B（290 pts / 85 评论）</td>
+<td><a href="https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer">官方博客</a> · <a href="https://hn.algolia.com/api/v1/items/50475713">HN</a></td>
+<td><strong>数据很硬</strong>（峰值内存 29GB、&gt;80 tok/s、全栈开源），但 HN 前几条评论在质疑<strong>基于 Qwen3.8-Flash-Next 派生、参数量 145B vs 180B 对不上、对比用的是量化版</strong>（kimixa / anon373839）。<strong>没搞清基座之前不写</strong>，是个好的周末题</td>
+</tr>
+<tr>
+<td>数据中心电费：低收入与农村居民买单（192 pts / 222 评论）</td>
+<td><a href="https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price">Cornell Chronicle（11-09）</a> · Nature Energy 原始论文</td>
+<td><strong>一手强</strong>：2020–2025 四大电网，2025 年数据中心只承担其增长相关基础设施成本的 <strong>38%（$31.2 亿 / $82.5 亿）</strong>，剩下 <strong>62%（$51.3 亿）</strong>落到居民；<strong>最低收入家庭多付的电费可达收入的 28%</strong>。但国内落点弱（美国电网），<strong>留作"AI 成本外部化"系列的第二篇</strong></td>
+</tr>
+<tr>
+<td>芝加哥学区：宁可丢搜索也不用 AI</td>
+<td><a href="https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html">TechSpot</a></td>
+<td>67→83 pts，声音好但盘子太小，可做评论区素材</td>
+</tr>
+<tr>
+<td>NYC 通过"监控定价"禁令</td>
+<td><a href="https://gothamist.com/news/nyc-council-passes-ban-on-surveillance-pricing-that-relies-on-personal-data">Gothamist</a></td>
+<td>与 AI 弱相关，纯政策</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、本周那条线（现在有八条了）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>指向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11-07~10</td>
+<td>CoreWeave 债券收益率破 16%</td>
+<td>资金端收紧</td>
+</tr>
+<tr>
+<td>11-09</td>
+<td>高盛收回 Claude Code 预算</td>
+<td>需求端封顶</td>
+</tr>
+<tr>
+<td>11-09~10</td>
+<td>Anthropic 降价 20% / Google 卖"每任务成本"</td>
+<td>供给端降价</td>
+</tr>
+<tr>
+<td>11-10</td>
+<td>亚马逊 4B 替掉 Sonnet，降本 98%</td>
+<td>架构端替代</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>美联航封 agent / 西南开库存</td>
+<td>渠道议价反转（<strong>堵</strong>）</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>Anthropic 交表：$17B 营收、-3% 经营利润率</td>
+<td>账本公开</td>
+</tr>
+<tr>
+<td><strong>11-12</strong></td>
+<td><strong>Brave 开 x402：agent 付费即准入</strong></td>
+<td><strong>渠道计价反转（疏）</strong></td>
+</tr>
+<tr>
+<td><strong>11-13</strong></td>
+<td><strong>Claude 宕机 + Azure 瘫痪同日</strong></td>
+<td><strong>基础设施脆弱性入账</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>《AI 的价值正在被重新定价》</strong>——八条证据，两个星期。<strong>再不发，它就只是素材库。</strong></p>
+<hr />
+<h2>四、库存（和昨晚一样，只多不少）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1112#1 美联航（96，全池最高）</td>
+<td><strong>第 2 天未动</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>1113#1 Blackwell 指纹（91）</td>
+<td>今晚涨到 319 pts，仍未成稿</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1111#1 Glasswing（94）</td>
+<td>第 3 天未动</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1110#1 亚马逊降本 98%（94）</td>
+<td>第 4 天未动</td>
+</tr>
+<tr>
+<td>5</td>
+<td>「定价权重估」长稿</td>
+<td><strong>八条证据溢出</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 55 天</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>49 张过期卡（10-01~10-04）</td>
+<td>第 45 天</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>距上次发布</strong></td>
+<td><strong>第 19 天</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>五、今晚不写"我保证"</h2>
+<p>连续第 19 天，我都在推送末尾写"明天出"。这句话已经变成了这套系统里最没信息量的部分——<strong>它每次出现，都在削弱下一次的可信度。</strong></p>
+<p>所以今晚我换一个不靠自觉的做法：<strong>明早 10:00 的推送，第一节固定改成「出稿对账」——只列三行：已出的稿（路径）、没出的稿（不写理由）、今天的量。</strong> 不做承诺，只做对账。这也省你时间。</p>
+<p>今晚这份已存为 <code>01-选题管理/1113-晚间选题推送.md</code>。</p>
+<p>回「1」= 明早只出美联航<br />
+回「2」= 美联航 + Blackwell 指纹（一对：一个讲渠道被堵，一个讲证据被读）<br />
+回「3」= 再加 x402 那篇（三篇，都是同一个星期的事）<br />
+不回 = 明早对账里我自己看着办，你不用管。</p>
+<blockquote>
+<p>⚠️ 硬性提醒：本推送所有条目均附原文链接。x402 只引 Brave 官方博客原文；TSMC 只引 SEC 6-K 原文，<strong>不得写"TSMC 被黑客入侵"</strong>；WIRED 请愿稿为"审阅内部通讯"，<strong>公司无官方回应</strong>，写时须标注信源；HN 评论只引已具名公开言论。</p>
+</blockquote><div class="pager"><a class="l" href="2026-11-12-选题方案.html">← 2026-11-12 选题方案</a><a class="r" href="2026-11-13-选题方案.html">2026-11-13 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-13</footer>
+</div>
+</body></html>
