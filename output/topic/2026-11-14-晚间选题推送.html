@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1114 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-14</div><h1>1114 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-14 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1114 早「$1140 万 GPU 在途蒸发（实物）」→ <strong>1114 晚「黄仁勋走后 48 小时：他在任时到底做了什么」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账（只列三行，不写理由）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已出的稿</td>
+<td><strong>零。</strong> <code>03-内容成品/公众号/草稿/</code> 今天没有新增任何 <code>.md</code>；<code>待发布/</code> 仍只有 <code>0925-AI入侵澳医保.md</code>（09-25）。<strong>第 21 天，零发布。</strong></td>
+</tr>
+<tr>
+<td>没出的稿</td>
+<td>A（GPU 在途失窃）、B（定价权重估长稿）、C（美联航）——<strong>三个都没写</strong>。早上说"不回按 A 执行"，我确实按 A 准备，但今晚 HN 出了一条更硬的新料，我把时间花在了核它上面。<strong>这是我选的优先级，不是没时间。</strong></td>
+</tr>
+<tr>
+<td>今天的量</td>
+<td>采集 1 次实跑（HN 60 条）、读一手/准一手原文 5 篇、新增卡 2 张、推翻昨晚一个数字（见下）。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>顺带更正昨晚一处</strong>：昨晚写"1140 万"来自 FreightWaves 报价口径，今早卡片里我加了限定（警方未确认估值）。今晚复核 HN 该条：<strong>293 → 363 pts / 197 评论</strong>。数字本身没错，但<strong>它不是"NVIDIA 被偷"，是一批"被称为 NVIDIA 硬件"的货物</strong>——这条边界我在早上已经钉住了，今晚再钉一次，别让它在成稿里漂回成"NVDA 损失 1140 万"。</p>
+<hr />
+<h2>二、今晚的采集实况（22:00 实跑）</h2>
+<p>HN Algolia <code>search_by_date</code>（points&gt;60，近 24h，60 条）逐条过。<strong>今天 HN 的 AI 版面被一件事占满了：黄仁勋辞职后的余波。</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>今早</th>
+<th>今晚</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FAA 全国停飞（非 AI，全站第一）</td>
+<td>1330 pts / 819</td>
+<td><strong>1585 pts / 1205</strong>（已解除，只停 4.5 小时）</td>
+</tr>
+<tr>
+<td><strong>NVIDIA 被指"自造稀缺"</strong>（今晚新增，AI 侧第一）</td>
+<td>—</td>
+<td><strong>784 pts / 465 评论</strong></td>
+</tr>
+<tr>
+<td><strong>NVIDIA 董事在辞职前几周抛售近 $10 亿股票</strong>（今晚新增）</td>
+<td>—</td>
+<td><strong>203 pts / 49</strong></td>
+</tr>
+<tr>
+<td>Nvidia 员工请愿要黄回来（昨晚记录）</td>
+<td>704 pts / 557</td>
+<td>继续在榜</td>
+</tr>
+<tr>
+<td>$1140 万 GPU 在途失窃</td>
+<td>293 / 162</td>
+<td><strong>363 / 197</strong></td>
+</tr>
+<tr>
+<td>AI 解锁哥德尔手稿</td>
+<td>332 / 91</td>
+<td><strong>403 / 101</strong></td>
+</tr>
+<tr>
+<td>Anthropic 把 Claude Code Projects 升级成并行 agent</td>
+<td>—</td>
+<td>92 / <strong>86 评论</strong>（评论密度极高）</td>
+</tr>
+<tr>
+<td><strong>ggml v1.0.0 发布</strong></td>
+<td>—</td>
+<td><strong>321 pts / 50</strong>（GitHub 官方 release，11-13 08:34Z）</td>
+</tr>
+<tr>
+<td>No AI Slop 宣言</td>
+<td>185 / 104</td>
+<td>203 / 123</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、今晚精选</h2>
+<h3>⭐ 1. WSJ：一位刚辞职的 CEO，被指在任内"自己制造了缺货"（784 pts / 465 评论，今晚 AI 侧第一）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://www.wsj.com/tech/jensen-huang-colette-kress-nvidia-ceo">WSJ 原报道（一手，付费墙）</a>（含 "deer in the headlights" 引语，见 HN 评论区 dcrazy 指出的原始链接）</li>
+<li><a href="https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus">TechPowerUp 转述（今晚 HN 主帖来源，已读全文）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50493251">HN 784 pts / 465 评论</a></li>
+<li>
+<p>同源媒体链：WSJ → Wccftech → TechPowerUp（<strong>注意：今晚能读到的只有第二、三手</strong>）</p>
+</li>
+<li>
+<p><strong>一句话（已读 TechPowerUp 全文，只在这里陈述它写了什么）</strong>：WSJ 报道称，黄仁勋在任内<strong>投资了一批 AI 初创公司，这些公司随即去买 NVIDIA 的 GPU、建数据中心</strong>，目的是维持"需求旺盛"的观感，并把 <strong>TSMC 那边积压的超额芯片</strong>消化掉。报道还写：NVIDIA 财务负责人 <strong>Colette Kress</strong> 曾主张收缩循环融资规模的协议（含 <strong>$250 亿的 OpenAI 大单</strong>），黄仁勋据称斥其"像被车灯照住的鹿"（"deer in the headlights"）；他转而加码投资<strong>小型云厂商</strong>。报道同时记录了 Kress 的反驳逻辑：<strong>这些小云厂商本身买不起 NVIDIA 的 GPU，投它们同样是死路。</strong></p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 29/30（784 pts，今天 AI 侧第一，465 条评论全场最密之一）· <strong>角度 38/40</strong>（所有人都在骂"果然如此"，没人写"<strong>这份指控最狠的一句，是公司自家 CFO 说的</strong>"）· 国内 29/30 → <strong>96，全池并列最高</strong>（与 1112#1 美联航同分，但<strong>这条的可写性更高</strong>，因为美联航已经三天没动）</p>
+</li>
+<li>
+<p><strong>为什么是今晚最好的题</strong>：<br />
+  1. <strong>它是「定价权重估」这条线的账本面。</strong> 过去两周我们攒的全是外部信号：债券收益率、预算被砍、降价、宕机、卡车。<strong>这条第一次给出内部机制</strong>——不是"市场缺货"，是"<strong>有人先造了缺货，再把货卖给自己投的公司</strong>"。<br />
+  2. <strong>最锋利的刀口不在指控，在反驳。</strong> Kress 的那句话（"这些小云买不起卡，投它们也是死路"）<strong>不是辩解，是承认</strong>：如果连投资方自己都知道那些买家付不起钱，那"旺盛需求"里到底有多少是真实需求？<strong>这是整篇报道里唯一不需要"据称"三个字的逻辑。</strong><br />
+  3. <strong>时间点是它最大的信息量。</strong> 报道出现在<strong>辞职后不到两天</strong>（辞职 11-12 官方公告），而 <strong>NVIDIA 财报日是 11-17</strong>（HN 热评 2aFds 提到 "Cooked Nvidia numbers on the 17th"——<strong>这是 HN 用户的说法，不是官方日历，别当日期引用</strong>）。一个刚离任的 CEO，在一个即将发财报的窗口里，被一份财报级指控追着走。</p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>循环融资不是财务技巧，是需求制造。</strong> 别人写"关联交易"，你写：<strong>当一个公司的客户主要是它自己投的公司，它的收入表就变成了自己写的剧本。</strong> 这在美国不是新问题（互联网泡沫期的 vendor financing 是同一套），<strong>新的是规模</strong>——$250 亿量级的一笔单子。<br />
+  2. <strong>"稀缺"是可以经营的资产。</strong> 缺货对卖方不是坏事：价格不跌、配额有议价权、客户抢着预付。<strong>所以真正的问题不是"他有没有造稀缺"，而是"GPU 市场的价格里，有多少是稀缺溢价。"</strong> 这个问题对国内所有算力采购方都成立。<br />
+  3. <strong>CFO 那句"deer in the headlights"是治理切片。</strong> 一家公司里唯一对数字负责的人，被形容成"被车灯照住的鹿"。<strong>这不是性格冲突，是"讲故事的人"和"要对账的人"在同一个会议室里的必然碰撞。</strong> 而这个碰撞，最后是讲故事的人赢了——直到他离开。</p>
+</li>
+<li>
+<p><strong>⚠️ 写之前必须知道的边界（这条最容易写炸，逐条钉死）</strong>：</p>
+</li>
+<li><strong>我只读到第二、三手。</strong> WSJ 原文在付费墙后，<strong>我没读到全文</strong>。所有引语（"deer in the headlights"、$250 亿、$25 亿投资）<strong>都标注"据 TechPowerUp 转述 WSJ"</strong>。</li>
+<li><strong>"allegedly" 是原报道和转述都在用的词。</strong> 不得写成"NVIDIA 制造了缺货"，只能写"被指/据报道"。</li>
+<li><strong>NVIDIA 官方未见回应</strong>（TechPowerUp 文中未提回应，<strong>我也不假设有</strong>）。黄仁勋本人<strong>无公开回应</strong>。</li>
+<li>HN 评论区有大量"早就知道了""这是老新闻 Redrum"的说法（nickalaso / kondamin / da_chicken 引了 2025-12 的 Guardian 旧文），<strong>这类"已知论"可以写进展望，但不能用来否认新料</strong>——新料的增量是<strong>CFO 内部争执与 $250 亿单子</strong>，不是"循环融资"这个大类。另有 metadat「There is no concrete evidence of this」<strong>属否认方观点，可引但须标明是评论者判断</strong>。</li>
+<li>
+<p><strong>不要在标题里写"黄仁勋被指控"</strong>——报道指控的是<strong>一种商业安排</strong>，不是刑事指控。</p>
+</li>
+<li>
+<p><strong>国内落点（可操作）</strong>：<br />
+  1. <strong>给算力采购方</strong>：如果 GPU 的"缺货"部分是经营出来的，<strong>那现在的高价里有一部分是叙事成本</strong>。国内智算中心上架率低、租不出去，和这条报道是同一个问题的两个半球——<strong>供给方在讲稀缺，需求方在讲空置。</strong><br />
+  2. <strong>给做 AI 应用的人</strong>：别把"卡贵"完全归因于制裁和产能。<strong>产业链内部有自我强化的定价机制</strong>，这决定了未来半年降价可能来得比预期快。<br />
+  3. <strong>小红书冷知识</strong>：NVIDIA 投的钱，很多又变成了买 NVIDIA 卡的订单——<strong>这在财务上叫 vendor financing，在互联网泡沫里它有个更朴素的名字：自己给自己下单。</strong></p>
+</li>
+<li>
+<p><strong>标题备选</strong>：<br />
+  1. 黄仁勋辞职 48 小时，WSJ 抖出了他任内最难看的一笔账<br />
+  2. "缺货"可能是被经营出来的：一份财报级指控的三个细节<br />
+  3. 最狠的那句话，是 CFO 说的<br />
+  4. 投你，再让你买我的卡：$250 亿单子背后的循环</p>
+</li>
+<li>
+<p><strong>平台</strong>：公众号（主，2400 字：报道说了什么 / 三手信源的边界 / 循环融资为什么不是新故事但是新规模 / CFO 那句反驳为什么最致命 / 对国内算力价格的含义）+ Twitter（One line: WSJ alleges Nvidia invested in AI startups so they'd buy its GPUs, clearing an "avalanche" of TSMC supply. The sharpest line isn't the allegation — it's the CFO reportedly saying those startups couldn't afford the GPUs anyway.）</p>
+</li>
+</ul>
+<hr />
+<h3>2. 旁证 A：一位董事在辞职前几周卖了近 $10 亿股票（203 pts / 49 评论）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html">Yahoo Finance 转述</a> · <a href="https://news.ycombinator.com/item?id=50492993">HN 203 pts / 49 评论</a></li>
+<li><strong>一句话</strong>：报道称 NVIDIA 一名董事在黄仁勋辞职风波前数周，卖出近 $10 亿公司股票。</li>
+<li><strong>⚠️ 这条我已经在评论里核到反面证据，必须写进去</strong>：HN 上多位用户（edot、refurb、cobychapple）指出——<strong>内部人不能临时卖股，卖出计划须提前很久（refurb 说一年以上）申报；edot 具体写"几个月内卖了 400 万股，全部需提前 90 天公告，手上仍持有超过 2500 万股"</strong>；cobychapple 指出 <strong>8 月 31 日前后是财报后窗口打开的时间，属常规操作</strong>。</li>
+<li><strong>计分</strong>：热度 22/30 · 角度 24/40（媒体标题党，但评论区已经把它拆了）· 国内 28/30 → <strong>74</strong></li>
+<li><strong>处理建议</strong>：<strong>不进主稿，也不单独成篇。</strong> 唯一价值是作为 §1 里的一句"顺带"——<strong>而且必须带上"预申报计划"这个限定</strong>，否则就是替媒体做标题党。这条可作为我们写作纪律的示范：<strong>同一天的热榜第二，被评论区 90 分钟内拆掉，这就是为什么我们只写一手。</strong></li>
+</ul>
+<h3>3. 旁证 B：ggml 发了 v1.0.0——本地推理的地基，第一次有版本号（321 pts / 50 评论）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://github.com/ggml-org/ggml/releases/tag/v1.0.0">ggml v1.0.0 官方 release（11-13 08:34Z）</a> · <a href="https://news.ycombinator.com/item?id=50493062">HN 321 pts / 50 评论</a></li>
+<li><strong>一句话（已读 release 原文）</strong>：清理废弃公共 API、移除旧 <code>DIAG_MASK</code> 算子、支持可配置 YaRN 截断与 <strong>FP8</strong>；后端做了大量性能工作——CUDA/Metal 上的 few-row 量化 matmul 与 <strong>MoE fusion</strong>、<strong>Vulkan prefill FlashAttention</strong>、<strong>SYCL 设备端 MoE 调度器</strong>、<strong>OpenCL 里 Adreno 的分解式 FlashAttention</strong>、新增 <strong>WebGPU kernel</strong>、扩展 <strong>Hexagon</strong> 算子覆盖；RPC 协议升到 <strong>v9</strong>，不兼容对端会被拒绝。</li>
+<li><strong>怎么接主线</strong>：<strong>跟「定价权重估」是同一条线的另一头。</strong> 算力价格高的对立面不是"便宜"，是"<strong>不需要买</strong>"。ggml 1.0 把 FP8、MoE 融合、手机 GPU（Adreno/Hexagon）全塞进同一条推理栈——<strong>它量产的不是模型，是"不租 GPU 也能跑"这件事的可行性。</strong></li>
+<li><strong>计分</strong>：热度 24/30 · 角度 32/40（技术向，中文圈会写，但大多只翻译 release notes）· 国内 27/30 → <strong>83</strong></li>
+<li><strong>处理建议</strong>：<strong>不进本周主稿</strong>，但<strong>值得做成一篇"本地推理栈成熟度"的独立稿</strong>（配合 1113 挂起的 Edge0-145B，两条一起写：一条是"能跑多大"，一条是"跑得多省"）。<strong>周末题。</strong></li>
+</ul>
+<hr />
+<h3>4. 今晚看过但没选的（诚实记录）</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>链接</th>
+<th>为什么不选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FAA 全国停飞 1585 pts / 1205 评论（全站第一，已解除）</td>
+<td><a href="https://news.ycombinator.com/item?id=50489641">HN</a> · <a href="https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247">NBC News</a></td>
+<td>航空安全，与 AI 无关。<strong>但它今晚盖住了整个 HN 首页</strong>，AI 侧被压到 300 分水位——这也是为什么今天 AI 第一条只有 784 而不是 1500+</td>
+</tr>
+<tr>
+<td>AI 解锁哥德尔手稿（403 pts / 101 评论）</td>
+<td><a href="https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths">The Guardian（11-13）</a> · <a href="https://news.ycombinator.com/item?id=50486748">HN</a></td>
+<td><strong>已读 Guardian 全文，非常好，但不是今晚最该写的。</strong> 事实很硬：1,009 页笔记、Gabelsberger 速记（von Plato 自称全球仅 6 人能读）、人工"一周一页"→ Claude <strong>两天</strong>给 650 页通读、据报道含<strong>数百条已证定理</strong>与 <strong>14 个未被追随的逻辑主题</strong>。<strong>但这是"AI 帮人类做了一件人类做不完的事"，容易写成鸡汤。</strong> 真角度是 sheikhnbake 那句：von Plato 2017 年因强制退休启动项目，<strong>"一个人用 AI 让自己变得不可替代"</strong>——这条留着，等有人愿意写"专业知识 + AI"的题时再用</td>
+</tr>
+<tr>
+<td>Claude Code Projects 升级为并行 agent（92 pts / 86 评论）</td>
+<td><a href="https://claude.com/resources/articles/projects-redesigned">Claude 官方</a> · <a href="https://news.ycombinator.com/item?id=50492141">HN</a></td>
+<td><strong>评论密度是分数两倍</strong>（86 评论 / 92 分），说明争议大。但我们不写产品更新稿，等它落地两周后看真实使用反馈</td>
+</tr>
+<tr>
+<td>OpenAI 解散机器人团队（172 pts / 72）</td>
+<td><a href="https://news.ycombinator.com/item?id=50487184">HN</a></td>
+<td>早上已记录，未见官方公告，<strong>继续不作为事实引用</strong></td>
+</tr>
+<tr>
+<td>Edge0-145B</td>
+<td><a href="https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer">官方博客</a></td>
+<td>仍未核到基座争议，<strong>第 3 天挂起</strong>，与 ggml 1.0 合并成周末题</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>四、本周那条线（十条，账本面到齐了）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>指向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11-07~10</td>
+<td>CoreWeave 债券收益率破 16%</td>
+<td>资金端收紧</td>
+</tr>
+<tr>
+<td>11-09</td>
+<td>高盛收回 Claude Code 预算</td>
+<td>需求端封顶</td>
+</tr>
+<tr>
+<td>11-09~10</td>
+<td>Anthropic 降价 20% / Google 卖"每任务成本"</td>
+<td>供给端降价</td>
+</tr>
+<tr>
+<td>11-10</td>
+<td>亚马逊 4B 替掉 Sonnet，降本 98%</td>
+<td>架构端替代</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>美联航封 agent / 西南开库存</td>
+<td>渠道议价反转（堵）</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>Anthropic 交表：$17B 营收、-3% 经营利润率</td>
+<td>账本公开</td>
+</tr>
+<tr>
+<td>11-12</td>
+<td>Brave 开 x402：agent 付费即准入</td>
+<td>渠道计价反转（疏）</td>
+</tr>
+<tr>
+<td>11-12</td>
+<td>黄仁勋正式辞职</td>
+<td>叙事主体离场</td>
+</tr>
+<tr>
+<td>11-13</td>
+<td>Claude 宕机 + Azure 瘫痪同日</td>
+<td>基础设施脆弱性</td>
+</tr>
+<tr>
+<td>11-13</td>
+<td>$1140 万 GPU 在途消失</td>
+<td>实物端断裂</td>
+</tr>
+<tr>
+<td><strong>11-14</strong></td>
+<td><strong>WSJ：自造稀缺 + CFO 内争</strong></td>
+<td><strong>需求端被证伪（账本反面）</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>《AI 正在被重新定价》——十一条，两周。资金、需求、供给、架构、渠道、账本、叙事、基础设施、实物、需求真实性，全齐。</strong><br />
+我的判断没变，而且更确定：<strong>这十一条已经是同一篇稿的章节，不是十一条素材。</strong> 第十一条最大的价值不是新增一个角度，而是<strong>把前十条里"需求旺盛"这个默认前提打穿了</strong>——<strong>定价的前提是需求真实，而这一条质疑的正是这一点。</strong></p>
+<hr />
+<h2>五、库存</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>1114晚#1 WSJ 自造稀缺（96）</strong></td>
+<td><strong>NEW，今晚新卡，全池并列最高</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>1114#1 GPU 在途失窃（93）</td>
+<td>早上的卡，<strong>第 1 天未动</strong>（HN 已 363/197）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1112#1 美联航（96）</td>
+<td><strong>第 3 天未动</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>1113#1 Blackwell 指纹（91）</td>
+<td>第 3 天未动</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1111#1 Glasswing（94）</td>
+<td>第 5 天未动</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1110#1 亚马逊降本 98%（94）</td>
+<td>第 6 天未动</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ggml 1.0 + Edge0（周末题，83）</td>
+<td>NEW</td>
+</tr>
+<tr>
+<td>8</td>
+<td>「定价权重估」长稿</td>
+<td><strong>十一条证据，严重溢出</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 57 天</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>49 张过期卡</td>
+<td>第 47 天</td>
+</tr>
+<tr>
+<td>11</td>
+<td>距上次发布</td>
+<td><strong>第 21 天</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>六、今晚只给一个选项（但这次加一条硬规矩）</h2>
+<p>我不想再写"明天出"。但我也不能假装"不回"是一个中立选择——<strong>这 21 天已经证明，"不回"的实际含义是"不用出"。</strong></p>
+<p>所以今晚改成这样：</p>
+<ul>
+<li><strong>回「1」</strong> = 我写 <strong>WSJ 自造稀缺</strong>（今晚新卡，2400 字，三手信源全部标注，今晚的料明早就能成稿）</li>
+<li><strong>回「2」</strong> = 我写 <strong>《AI 正在被重新定价》长稿</strong>（十一条证据，3000 字，这篇写完，前六张卡作废也无所谓）</li>
+<li><strong>回「3」</strong> = 我写 <strong>GPU 在途失窃</strong>（早上那张卡，事实边界我已经钉死，2000 字）</li>
+</ul>
+<p><strong>硬规矩：从明天起，「出稿对账」的第一行如果还是"零"，我就不再推送新选题了。</strong><br />
+理由很简单：这套系统每天产出 2000 字的高质量选题分析，<strong>却没有产出一篇可以发的内容</strong>——那么它产出的其实不是生产力，是<strong>替代品</strong>。它让我每天感觉自己做了重要的工作，而这正是它最危险的地方。</p>
+<p>如果明天还是零，明晚 22:00 我会只发一件事：<strong>一篇稿。</strong></p>
+<p>今晚这份已存为 <code>01-选题管理/1114-晚间选题推送.md</code>。</p>
+<blockquote>
+<p>⚠️ 硬性提醒：本文主条只有三方可写——<strong>WSJ 原报道（付费墙，我未读全文）、TechPowerUp 转述（已读）、Wccftech（未能抓取，Cloudflare）</strong>；所有细节须标注"据 TechPowerUp 转述 WSJ 报道"。<strong>不得写"NVIDIA 制造了缺货"</strong>，只能写"被指/据报道"；<strong>不得写"黄仁勋被指控"</strong>（不是刑事指控）；<strong>不得引用董事抛售作为"内幕交易"证据</strong>（HN 已指出系预申报计划，edot 口径：400 万股、提前 90 天公告、仍持 2500 万股+）；哥德尔一条须写"据报道"；OpenAI 机器人团队<strong>未见官方公告，不作事实</strong>。</p>
+</blockquote><div class="pager"><a class="l" href="2026-11-13-选题方案.html">← 2026-11-13 选题方案</a><a class="r" href="2026-11-14-选题方案.html">2026-11-14 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-14</footer>
+</div>
+</body></html>
