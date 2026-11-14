@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1114 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-14</div><h1>1114 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-11-14 10:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1113 晚「Brave 开 x402：agent 付费即准入（疏）」→ <strong>1114 早「一卡车 GPU 在路上蒸发了：算力连"送到"都保证不了」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账（昨晚说好的第一节，只列三行）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已出的稿</td>
+<td><strong>零。</strong> <code>03-内容成品/公众号/草稿/</code> 最新仍是 <code>1029-Anthropic招股书34小时.md</code>（10-29）；<code>待发布/</code> 仍只有 <code>0925-AI入侵澳医保.md</code>（09-25）。<strong>第 20 天，零发布。</strong></td>
+</tr>
+<tr>
+<td>没出的稿</td>
+<td>不写理由。1112#1 美联航、1113#1 Blackwell 指纹、1111#1 Glasswing、1110#1 亚马逊降本 98%，四张卡全部原地。</td>
+</tr>
+<tr>
+<td>今天的量</td>
+<td>采集 1 次实跑（HN）、读一手原文 2 篇、新卡 1 张。</td>
+</tr>
+</tbody>
+</table></div>
+<p>昨晚你回的是「不回 = 对账里我自己看着办」。所以我看着办：<strong>今天不再推第 9 个新角度，我把它砍到 1 个，剩下的时间留给你选一篇让我出全文。</strong></p>
+<hr />
+<h2>二、今日采集（10:00 实跑）</h2>
+<p>HN Algolia <code>search_by_date</code>（points&gt;60，近 36h）+ front_page（points&gt;100），逐条过。今日 AI 相关按热度：</p>
+<ul>
+<li><strong>AI 解锁哥德尔手稿（332 pts / 91 评论，11-13 17:30 UTC）</strong> —— 今日新增最好的一条</li>
+<li><strong>No AI Slop: A Manifesto（185 pts / 104 评论）</strong> —— 立场文，非事件</li>
+<li><strong>OpenAI 解散机器人团队（143 pts / 64 评论）</strong> —— 因"通用模型已能直接驱动机器人"</li>
+<li><strong>$11.4M NVIDIA 硬件在运输途中消失（293 pts / 162 评论，11-13 18:40 UTC）</strong></li>
+<li>昨日的（已在昨晚推送）：Claude 宕机 484 / Edge0-145B 338 / 指纹报告 356 / 请愿黄仁勋 791</li>
+<li>非 AI / 不用：FAA 全国停飞 1330 pts（航空事故）、Coway 空气净化器逆向 680 pts（硬件极客向）</li>
+</ul>
+<blockquote>
+<p>判断：<strong>今天整个 HN 没有新的 AI 大事。</strong> 332 分的哥德尔已经是 AI 侧第一。这正好适合"收口"——把周线写掉，而不是再开一条。</p>
+</blockquote>
+<hr />
+<h2>三、今日精选（1 主 + 2 旁证）</h2>
+<h3>⭐ 1. 算力不是交付物，是"在途货物"：$1140 万 NVIDIA 硬件从奥克兰开走了（293 pts / 162 评论）</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas">FreightWaves（11-13）：$11.4 million in NVIDIA hardware vanishes during shipment from California to Texas</a></li>
+<li><a href="https://www.mercurynews.com/2026/11/04/police-investigating-11-4-million-nvidia-cargo-theft-from-oakland/">Mercury News（11-04）一手调查：Police investigating $11.4 million Nvidia cargo theft from Oakland</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50487864">HN 293 pts / 162 评论</a></li>
+<li>
+<p>行业背景（同源报道）：<a href="https://www.freightwaves.com/news/nearly-111m-in-data-center-freight-stolen-as-thieves-test-bump-and-run-tactic">FreightWaves：近 $1.11 亿数据中心货运被盗，"碰瓷式"作案手法</a></p>
+</li>
+<li>
+<p><strong>一句话（已读 FreightWaves 全文，读得很克制）</strong>：<strong>六托盘</strong> NVIDIA 硬件，报价 <strong>$1140 万</strong>，8-29 在<strong>奥克兰</strong>装车，目的地<strong>沃斯堡（德州）</strong>。接货的卡车<strong>车身贴着一家食品运输公司的标志</strong>；司机随后向南开，途中<strong>多次长时间停留</strong>，警方最终在<strong>圣贝纳迪诺县</strong>跟丢。<strong>奥克兰警方 11-13 向 FreightWaves 确认</strong>：9-13 接到报案，重大盗窃案侦查中。同一篇报道给出背景：<strong>今年已有多起数据中心货运失窃，累计近 $1.11 亿</strong>。</p>
+</li>
+<li>
+<p><strong>⚠️ 边界（这条最容易写炸，先钉死）</strong>：</p>
+</li>
+<li>FreightWaves 原文明确写：警方<strong>未确认</strong> $1140 万这个估值，<strong>未确认</strong>货品具体是什么，<strong>未公布</strong>货主、发货人、承运方、司机，<strong>未公开解释</strong>那些停留，<strong>未确认</strong>是否有人假冒运输商，<strong>无人被捕，未确认找回</strong>。<strong>NVIDIA 对 FreightWaves 的置评请求未回复。</strong></li>
+<li><strong>"NVDA 被偷了 1140 万"是错的。</strong> 货主是谁、NVIDIA 是否承运方或受损方，原文都没说。<strong>只能说"一批报价 1140 万、被称为 NVIDIA 硬件的货物"。</strong></li>
+<li>
+<p>HN 评论区关于"内鬼、政治、Lutnick"的猜测（treebeard901 等）<strong>全部是推论，不得引用</strong>。可引的只有行业性评论：manquer「约两个 NVL72 机柜的量，物流业默认按比例计失窃成本」；roenxi「单次十万级损失对他们是四舍五入」；exmadscientist「按合同这批货很可能在买方手里就转移了风险」。</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 27/30（293 pts / 162 评论，今天 AI 侧第二，评论密度全场最高）· <strong>角度 37/40</strong>（中文圈几乎没人写"AI 硬件的物理链路风险"，都在写模型和股价）· 国内 29/30 → <strong>93（全池最高，超 1112#1 美联航的 96 → 见下方说明）</strong></p>
+</li>
+</ul>
+<blockquote>
+<p>修正：美联航 96 分是当时口径。按今天同一把尺子重算（热度按当期相对位置），<strong>这条 93 分与美联航基本并列</strong>，差别在于美联航"有官方表态可引"，这条"只有警方一句确认"——<strong>证据更薄，但故事更具体。</strong></p>
+</blockquote>
+<ul>
+<li>
+<p><strong>为什么是今天最好的题</strong>：<br />
+  1. <strong>它是「本周那条线」的物理版本。</strong> 这一周我们攒了八条证据，全部是钱、价格、许可、额度——<strong>全是纸面上的</strong>。这条是第一次出现<strong>实物</strong>：算力在到达之前就可能不存在。定价的前提是"东西交付了"，而这次<strong>连交付都没完成</strong>。<br />
+  2. <strong>它把出口管制的争论换了个参照系。</strong> 过去两年所有讨论都是"芯片能不能出境"。这条问的是另一个问题：<strong>芯片能不能出加州。</strong> 国内的产业视角看这个是陌生的——我们习惯讨论"卡能不能买到"，很少讨论"买到了能不能运到"。<br />
+  3. <strong>细节即内容。</strong> 食品运输公司标志的卡车、几个小时一停的停留、圣贝纳迪诺跟丢——<strong>这不需要任何评论，读者自己会在脑子里补完一部片。</strong> 而全文的克制（"警方未确认估值"）正好是我们最该示范的写法。</p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>算力风险的最后一公里，不在晶圆厂，在卡车。</strong> 大家盯 EDA、盯光刻、盯出口许可，<strong>没人盯承运商的资质核验</strong>。报道自己给了旁证：另有一起 $1200 万案，嫌疑人<strong>盗用既有卡车公司身份</strong>去拿货。<br />
+  2. <strong>"高价值 + 低可追溯 = 必然被专业化盯上。"</strong> $1140 万压在六托盘上，托盘不记序列号，货值密度决定犯罪组织形态。物流业的老结论：<strong>针对性盗抢九成是内部信息泄露</strong>（HN pixl97 父亲的行业经验，可作行业口径引用，非本案结论）。<br />
+  3. <strong>保险与合同把风险转移给了"看不见的一方"。</strong> FOB 条款一换，损失落在买方或承运保险，<strong>NVIDIA 可能连报表都不用动一行</strong>。所以这类事件<strong>在财报里是隐形的</strong>——这是它值得写、但很难被统计到的原因。</p>
+</li>
+<li>
+<p><strong>国内落点（可操作）</strong>：<br />
+  1. <strong>给做智算中心/机房采购的人</strong>：合同里 FOB / CIF / DAP 选哪个，现在不只是钱的问题，是<strong>谁承担"在途灭失"</strong>。今年这个条款值得单独审一遍。<br />
+  2. <strong>给做供应链的人</strong>：承运商身份核验（MC 号、保险凭证、联系方式一致性）在 AI 硬件上是<strong>必须项</strong>，不是加分项。<br />
+  3. <strong>小红书冷知识</strong>：一辆车能拉走 $1140 万的 GPU——<strong>按 8 万美元一张算约 140 张，一辆厢式车装得下。</strong></p>
+</li>
+<li>
+<p><strong>标题备选</strong>：<br />
+  1. 一卡车 GPU 在路上蒸发了：算力最脆弱的一环是卡车<br />
+  2. 1140 万美元的 NVIDIA 硬件，贴着一张食品公司的车贴开走了<br />
+  3. 我们吵了两年芯片能不能出境，没人问它能不能出加州<br />
+  4. 算力不是交付物，是在途货物</p>
+</li>
+<li>
+<p><strong>平台</strong>：公众号（主，2000 字：案子事实 / 警方口径边界 / 在途风险为什么被忽视 / FOB 与保险 / 国内采购动作）+ 小红书（冷知识向，短）+ Twitter（One line: $11.4M of NVIDIA hardware left Oakland on a truck with a food company's logo on it. Police lost it in San Bernardino County. The chip supply chain's weakest link isn't the fab — it's the last mile.）</p>
+</li>
+</ul>
+<hr />
+<h3>2. 旁证 A：AI 读懂了哥德尔的速记本（332 pts / 91 评论，今日新增最佳）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths">The Guardian（11-13）</a> · <a href="https://news.ycombinator.com/item?id=50486748">HN 332 pts / 91 评论</a> · HN 评论里给出的会议幻灯片（非官方一手）：<a href="https://aitp-conference.org/2026/slides/JvP.pdf">AITP 2026 JvP slides</a></li>
+<li><strong>一句话</strong>：哥德尔留有大量<strong>速记（Gabelsberger 体）笔记</strong>，几十年几乎没人能读。报道称 AI 辅助转写后，笔记里<strong>含数百条已证明的定理</strong>，并显示他后来转向了<strong>14 个新的逻辑主题</strong>。</li>
+<li><strong>计分</strong>：热度 28/30 · 角度 30/40（"AI 辅助古籍/手稿"已有先例）· 国内 26/30 → <strong>84</strong></li>
+<li><strong>怎么用</strong>：<strong>不单独成篇</strong>。它的价值是一句"本周正面样本"——在同一个星期里，AI 既在偷我们的信任，也在把一个人 50 年前的字迹还给人类。<strong>写"AI 价值重估"长稿时，这是唯一一条能抬头喘气的材料。</strong></li>
+<li><strong>⚠️ 谨慎</strong>：我<strong>没有读到那篇论文本身</strong>，只有 Guardian 报道 + 会议幻灯片链接。"数百条已证明的定理"是报道转述，<strong>写时必须写"据报道"</strong>。HN 上有评论提醒（2aFds）：<strong>模型是在哥德尔笔记已有的转写稿上训练的</strong>——即"读字"与"做数学"不是同一件事，别混。</li>
+</ul>
+<h3>3. 旁证 B：OpenAI 解散机器人团队（143 pts / 64 评论，今日新增）</h3>
+<ul>
+<li><strong>原文链接</strong>：<a href="https://news.ycombinator.com/item?id=50487184">HN 143 pts / 64 评论</a></li>
+<li><strong>一句话</strong>：据该条报道，OpenAI 解散原机器人团队，理由是<strong>通用模型已经开始能直接驱动机器人硬件</strong>——"不需要专门的机器人模型团队了"。</li>
+<li><strong>计分</strong>：热度 22/30 · 角度 31/40 · 国内 27/30 → <strong>80</strong></li>
+<li><strong>怎么用</strong>：这是<strong>组织形态被模型能力吃掉</strong>的一个样本，和"定价权重估"同源（能力上移，组织下沉）。<strong>只做评论区素材</strong>，等我核到官方声明再考虑单独写。<strong>目前只有 HN 条目标题 + 二手转述，未见 OpenAI 官方公告——不要当事实写。</strong></li>
+</ul>
+<hr />
+<h3>4. 今日看过但没选的（诚实记录）</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>链接</th>
+<th>为什么不选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No AI Slop: A Manifesto</strong>（185 pts / 104 评论）</td>
+<td><a href="https://www.slopmanifesto.com/">slopmanifesto.com</a></td>
+<td><strong>抓取只拿到标题，正文没取到</strong>（站点疑似 JS 渲染）。立场文、无新事实，且容易写成"我也反对 AI 味"——我们没资格写</td>
+</tr>
+<tr>
+<td>FAA 全国停飞（1330 pts / 819 评论，全站第一）</td>
+<td><a href="https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247">NBC News</a></td>
+<td>航空安全事件，与 AI 无关。<strong>提醒：今天我在核 HN 时它盖住了整个首页</strong>，AI 侧被压到 300 分水位，这也是今天"没有大事"的原因之一</td>
+</tr>
+<tr>
+<td>Coway 空气净化器逆向去云（680 pts / 200 评论）</td>
+<td><a href="https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/">scottjg.com</a></td>
+<td>好文，但是硬件极客向，不是 AI。可作"云依赖"系列的素材</td>
+</tr>
+<tr>
+<td>$1.11 亿数据中心货运失窃（行业数据）</td>
+<td><a href="https://www.freightwaves.com/news/nearly-111m-in-data-center-freight-stolen-as-thieves-test-bump-and-run-tactic">FreightWaves</a></td>
+<td>不单独，<strong>直接并入今日主稿做量级背景</strong></td>
+</tr>
+<tr>
+<td>Edge0-145B（338 pts，昨日记）</td>
+<td><a href="https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer">官方博客</a></td>
+<td>仍未核到基座争议，<strong>继续挂起</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>四、本周那条线（九条，物理版进来了）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>指向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11-07~10</td>
+<td>CoreWeave 债券收益率破 16%</td>
+<td>资金端收紧</td>
+</tr>
+<tr>
+<td>11-09</td>
+<td>高盛收回 Claude Code 预算</td>
+<td>需求端封顶</td>
+</tr>
+<tr>
+<td>11-09~10</td>
+<td>Anthropic 降价 20% / Google 卖"每任务成本"</td>
+<td>供给端降价</td>
+</tr>
+<tr>
+<td>11-10</td>
+<td>亚马逊 4B 替掉 Sonnet，降本 98%</td>
+<td>架构端替代</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>美联航封 agent / 西南开库存</td>
+<td>渠道议价反转（堵）</td>
+</tr>
+<tr>
+<td>11-11</td>
+<td>Anthropic 交表：$17B 营收、-3% 经营利润率</td>
+<td>账本公开</td>
+</tr>
+<tr>
+<td>11-12</td>
+<td>Brave 开 x402：agent 付费即准入</td>
+<td>渠道计价反转（疏）</td>
+</tr>
+<tr>
+<td>11-13</td>
+<td>Claude 宕机 + Azure 瘫痪同日</td>
+<td>基础设施脆弱性入账</td>
+</tr>
+<tr>
+<td><strong>11-13</strong></td>
+<td><strong>$1140 万 NVIDIA 硬件在途消失</strong></td>
+<td><strong>实物端断裂（在途）</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>《AI 正在被重新定价》</strong>——九条证据，两周。<strong>纸面、账本、渠道、基础设施、实物，五个面全部到齐了。</strong></p>
+<p>我的判断很直接：<strong>这九条已经不是"素材"，是一篇稿的骨架，而且是别人写不出来的那篇。</strong> 再攒第十条，收益递减，风险递增——因为每条新证据都在让前面那些过期。</p>
+<hr />
+<h2>五、库存</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>1114#1 GPU 在途失窃（93，并列最高）</strong></td>
+<td><strong>NEW，今天新卡</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>1112#1 美联航（96）</td>
+<td><strong>第 3 天未动</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>1113#1 Blackwell 指纹（91）</td>
+<td>第 2 天未动（HN 已涨到 356 pts）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1111#1 Glasswing（94）</td>
+<td>第 4 天未动</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1110#1 亚马逊降本 98%（94）</td>
+<td>第 5 天未动</td>
+</tr>
+<tr>
+<td>6</td>
+<td>「定价权重估」长稿</td>
+<td><strong>九条证据，已溢出</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td><strong>第 56 天</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>49 张过期卡（10-01~10-04）</td>
+<td>第 46 天</td>
+</tr>
+<tr>
+<td>9</td>
+<td>距上次发布</td>
+<td><strong>第 20 天</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>六、今天只做一个选择</h2>
+<p>我不再写"明早出"。今天把选项压到三个，每个都对应一篇完整的、我现在就能写完的稿：</p>
+<ul>
+<li><strong>回「A」</strong> = 我写 <strong>GPU 在途失窃</strong>（今日新卡，2000 字公众号，事实边界全部标注，今晚 22:00 前出稿到 <code>03-内容成品/公众号/草稿/</code>）</li>
+<li><strong>回「B」</strong> = 我写 <strong>《AI 正在被重新定价》长稿</strong>（九条证据串成一篇，3000 字，今天下午出稿）</li>
+<li><strong>回「C」</strong> = 我写 <strong>美联航</strong>（1112#1，全池最老的一线题，第 3 天，今天出稿）</li>
+</ul>
+<p><strong>回一个字母就行。</strong> 不回，我今晚 22:00 的推送里按 A 执行——但我会把"没人选"也一起写进对账，因为那才是真实发生的。</p>
+<p>今晚这份已存为 <code>01-选题管理/1114-选题方案.md</code>。</p>
+<blockquote>
+<p>⚠️ 硬性提醒：本推送所有条目均附原文链接。今天主稿只有三方可引——<strong>FreightWaves 正文、Mercury News 报道、奥克兰警方对 FreightWaves 的书面确认</strong>。不得写"NVDA 被偷"，不得写"内鬼"，不得引用 HN 上的政治猜测；哥德尔一条须写"据报道"；OpenAI 机器人团队一条<strong>未见官方公告，暂不作为事实</strong>。</p>
+</blockquote><div class="pager"><a class="l" href="2026-11-13-选题方案.html">← 2026-11-13 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-11-14</footer>
+</div>
+</body></html>
