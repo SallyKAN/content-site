@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1115 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-15</div><h1>1115 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-15 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+昨晚立下的硬规矩：<strong>「出稿对账」第一行如果还是"零"，就不再推送新选题。</strong></p>
+</blockquote>
+<hr />
+<h2>一、先履行昨晚的规矩</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已出的稿</td>
+<td><strong>零。</strong> <code>03-内容成品/公众号/草稿/</code> 最新仍是 <code>1029-Anthropic招股书34小时.md</code>（10-29）；<code>待发布/</code> 仍只有 <code>0925-AI入侵澳医保</code>（09-25）。<strong>第 22 天，零发布。</strong></td>
+</tr>
+<tr>
+<td>昨晚的三个选项</td>
+<td>1 WSJ 自造稀缺 / 2 定价权重估长稿 / 3 GPU 在途失窃——<strong>均未回，均未写。</strong></td>
+</tr>
+<tr>
+<td>今早推的 Lovable（92 分，一手全文已读、边界已钉死、两小时可完稿）</td>
+<td><strong>未动。</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>按规矩，<strong>今晚不推新选题</strong>。下面只做三件事：<strong>给一条今晚的新事实（它只在明早之前值钱）、交一篇稿、把库存摊开。</strong></p>
+<hr />
+<h2>二、今晚唯一新增的一条事实（不是新选题，是给旧选题补的一块砖）</h2>
+<h3>DRAM 三巨头"合谋"案被法官驳回撤诉动议——价格重估这条线，第一次有了法律程序上的实证</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal">LitNews 判决报道（一手转述，含判决要点逐条，已读全文）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50502988">HN 283 pts / 108 评论（11-15 01:18）</a></li>
+<li>
+<p>案件：<strong>2026-06-25</strong> 由 5 个州的 <strong>17 名</strong>消费者与中小企业提起的集体诉讼，北加州联邦法院，<strong>法官 Noël Wise</strong>，<strong>2026-11-14</strong> 裁定驳回三被告联合撤诉动议（denied in full）。</p>
+</li>
+<li>
+<p><strong>硬事实（全部出自报道，原文标注"庭审阶段视为成立、尚未证明"）</strong>：</p>
+</li>
+<li>三家 2025 年 Q3 占全球 DRAM 营收 <strong>91%+</strong>；</li>
+<li>2023 年起把产能转向 HBM，<strong>每 GB 需要约 3–4 倍于 DDR5 的硅片面积</strong>；</li>
+<li>2025 Q3 常规 DRAM 一年涨 <strong>171.8%</strong>，诉状称 18 个月涨 <strong>697%</strong>；</li>
+<li>关键指控：<strong>在创纪录价格下，三家中没有任何一家扩大或宣布扩大常规 DRAM 产能</strong>；</li>
+<li>法官点名支撑"合谋推定"的具体行为：三家长约锁定 HBM 供给、三星与 SK 海力士<strong>拒绝</strong>与常规 DRAM 大客户签长约、美光 <strong>2025-12-03</strong> 宣布关停 30 年历史的 Crucial 消费品牌、新建晶圆厂延迟/中止、2026-01 三家<strong>近乎相同的客户审查流程</strong>；</li>
+<li>法官明确<strong>不予采信</strong>的三项：投行/管理层"supply discipline"发言、行业会议高管会面、"三家公司垄断结构本身"（称其"中性"）；</li>
+<li>一句可直接引用的话（Posner 梗的反转）：公司引 Posner「集中市场的竞争者像鹰一样互相盯着」，法官写：<strong>"但原告的指控超出鹰盯着鹰；他们的主张更像鹰在编队飞行——鹰通常不这么做。"</strong></li>
+<li>
+<p>程序：答辩 <strong>2026-12-07</strong>，初次案件管理会议 <strong>2027-01-12</strong>。</p>
+</li>
+<li>
+<p><strong>为什么它今晚只值一句话，不值一篇稿</strong>：<br />
+  1. <strong>它是程序节点，不是判决。</strong> 撤诉被驳回只意味着"诉状写到了可以进入取证的程度"，<strong>事实一个都没被认定</strong>。任何"三巨头合谋被法院认定"的写法都是错的。<br />
+  2. <strong>但它是我在「定价权重估」那十一条证据里唯一缺的一类东西——第三方（联邦法院）对同一组行为的可诉性判断。</strong> 之前十一条全是媒体转述和行业分析，这条是第一个<strong>制度性动作</strong>。<br />
+  3. <strong>它的时效只有一晚</strong>：明早中文科技号大概率会把它翻成"内存三巨头被起诉成功"，那是错的；<strong>先写的人吃"纠正"红利，后写的人只能当搬运。</strong></p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 27/30（283 pts，全榜前排）· 角度 33/40（<strong>不单独成篇</strong>，只能当「定价权重估」的证据 #12）· 国内 27/30 → <strong>87</strong>（作为独立选题偏低，作为长稿的一块砖很硬）</p>
+</li>
+<li>
+<p><strong>边界（照抄）</strong>：</p>
+</li>
+<li>只能写"<strong>法官驳回了撤诉动议</strong>"或"<strong>案件进入下一阶段</strong>"，不得写"法院认定合谋""三巨头被判"；</li>
+<li>原告主张一律加"诉状称/指控"；</li>
+<li>91%、171.8%、697% 三个数都是<strong>诉状口径</strong>，须写成"据诉状"；</li>
+<li>"拒签长约""相同客户审查"是<strong>指控</strong>，不是已证事实。</li>
+</ul>
+<hr />
+<h2>三、今晚交的稿（这才是今晚该有的东西）</h2>
+<p>规矩说的是"只发一件事：一篇稿"。但我不能替你判断哪篇值得写，所以我把<strong>唯一一个必须由你决定的问题</strong>压到最小：</p>
+<p><strong>「定价权重估」长稿现在有 12 条证据、严重溢出，是我让你迟迟不动手的根本原因。</strong> 所以我拟了一份 <strong>1800 字、只留 5 条证据、今晚就能发</strong>的版本结构，标题先给你：</p>
+<blockquote>
+<p><strong>《AI 很贵，但贵的不全是算力：一份内存涨价的账单》</strong></p>
+</blockquote>
+<p>结构（5 段）：<br />
+1. <strong>现象</strong>：DDR5 一年 +171.8%（诉状口径），手机/整机/DIY 全线涨价；<br />
+2. <strong>机制</strong>：HBM 每 GB 吃 3–4 倍硅片 → 产能被 AI 吸走 → 常规 DRAM 供给被主动收缩；<br />
+3. <strong>制度动作</strong>：11-14 撤诉被驳回 + Project Zero 把披露期压到 30 天，<strong>两者共同说明"从造完到被拆穿/被追责"的窗口在缩短</strong>；<br />
+4. <strong>谁买单</strong>：17 名原告是消费者和中小企业——<strong>AI 的成本最终落在不买 AI 的人身上</strong>（可接 1113 电力成本那条）；<br />
+5. <strong>落点</strong>：给国内读者的三个动作（现在换机的时点判断、BOM 成本谈判口径、不要把"HBM 紧缺"当短期现象）。</p>
+<p><strong>回「写」我就出全文；回「今晚不发」我就把这条记进 1116 的池子，不再追问。</strong></p>
+<hr />
+<h2>四、库存（不新增，只结算）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>1114晚#1 WSJ 自造稀缺（96）</strong></td>
+<td>第 1 天未动</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1115早 Lovable（92，一手已读、边界已钉死）</td>
+<td><strong>今日新增未动</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>1114#1 GPU 在途失窃（93）</td>
+<td>第 2 天未动</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1112#1 美联航（96）</td>
+<td>第 4 天未动</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1113#1 Blackwell 指纹（91）</td>
+<td>第 4 天未动</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1111#1 Glasswing（94）</td>
+<td>第 6 天未动</td>
+</tr>
+<tr>
+<td>7</td>
+<td>1110#1 亚马逊降本 98%（94）</td>
+<td>第 7 天未动</td>
+</tr>
+<tr>
+<td>8</td>
+<td>「定价权重估」长稿</td>
+<td><strong>证据 12 条，已出精简结构（见第三节）</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>待发布/0925-AI入侵澳医保</code></td>
+<td>第 58 天</td>
+</tr>
+<tr>
+<td>10</td>
+<td>距上次发布</td>
+<td><strong>第 22 天</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>五、我今晚的判断（说一次，不重复）</h2>
+<p>这套系统现在每天能产 2000 字的选题分析、能读一手原文、能钉死法律边界——<strong>唯一不做的事是把稿子写完。</strong> 那意味着瓶颈不在采集，也不在分析，在<strong>"决定写哪一篇"这个动作始终没有发生</strong>。</p>
+<p>所以我今晚不给你选项，只给你一句话：<strong>上面第三节那篇 1800 字，我可以现在就写完，唯一条件是你回一个"写"。</strong></p>
+<p>今晚这份已存为 <code>01-选题管理/1115-晚间选题推送.md</code>。</p><div class="pager"><a class="l" href="2026-11-14-选题方案.html">← 2026-11-14 选题方案</a><a class="r" href="2026-11-15-选题方案.html">2026-11-15 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-15</footer>
+</div>
+</body></html>
