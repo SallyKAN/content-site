@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-15（周六）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-15</div><h1>每日独立开发精选 · 2026-11-15（周六）</h1>
+<blockquote>
+<p>采集时间 09:0x GMT+8｜来源：HN / Product Hunt / Reddit r/SideProject / SomebodyMakeThis<br />
+Twitter 源仍死（跳过）；SMT 用 <strong>cookie + RSS</strong>（<code>/new/.rss</code>）拿到 25 条，JSON API 404</p>
+</blockquote>
+<hr />
+<h2>1️⃣ Hacker News 热榜（5）</h2>
+<p><strong>1. Reverse engineering my Coway air purifier to ditch the cloud</strong> — 670 👍 / 198 💬<br />
+<a href="https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/" target="_blank" rel="noopener">https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/</a></p>
+<blockquote>
+<p>逆向空气净化器，把云依赖拆成本地控制。Jus 点评：这是「本地优先」最硬的落地证明——不是反对云，是证明云根本没必要存在。你手里 Tegra 边缘推理那套，故事完全可以照这个路子讲。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50474959" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50474959</a></p>
+</blockquote>
+<p><strong>2. Lovable apps expose passport details and more than 200K private messages</strong> — 620 👍 / 256 💬<br />
+<a href="https://www.crissyfield.de/research/lovable-en/" target="_blank" rel="noopener">https://www.crissyfield.de/research/lovable-en/</a></p>
+<blockquote>
+<p>Vibe-coding 平台 Lovable 生成的应用大面积泄露隐私数据。Jus 点评：AI 生成代码的安全债务开始集中爆雷了。反过来看，这也是个赛道——「AI 生成应用的自动安全审计」，你现在做测试基建，正好是同一套思路的延伸。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50499017" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50499017</a></p>
+</blockquote>
+<p><strong>3. Why get an expensive Pi when I have an old phone?</strong> — 497 👍 / 280 💬<br />
+<a href="https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/" target="_blank" rel="noopener">https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/</a></p>
+<blockquote>
+<p>拿旧手机当服务器/边缘节点，比买树莓派划算。Jus 点评：边缘算力的「废物利用」叙事正在升温。旧手机 = 现成的 SoC + 摄像头 + 电池，做机器人玩具级项目的成本能砍到几乎为零。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50440709" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50440709</a></p>
+</blockquote>
+<p><strong>4. After 600 experiments, here's what I discovered about JEPA world models</strong> — 209 👍 / 35 💬<br />
+<a href="https://haddyalchaer.com/jepa" target="_blank" rel="noopener">https://haddyalchaer.com/jepa</a></p>
+<blockquote>
+<p>600 次实验沉淀的世界模型经验。Jus 点评：JEPA（LeCun 路线）是绕开「视频生成幻觉」最现实的架构，做机器人 / 物理 AI 的必读，跟你手上的 N1-Auto 方向直接相关。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50487185" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50487185</a></p>
+</blockquote>
+<p><strong>5. PyPI's redesigned project pages with clearer security signals are now live</strong> — 199 👍 / 90 💬<br />
+<a href="https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/" target="_blank" rel="noopener">https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</a></p>
+<blockquote>
+<p>PyPI 新项目页上线，安全信号前置。Jus 点评：包管理器的「信任层」正在变成标配。你要是真做开源影响力（x402 那条线），发布渠道的安全信号别忽略，这是别人决定敢不敢 <code>pip install</code> 的第一眼。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50497892" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50497892</a></p>
+<p>备注：今日 HN 头条仍是 FAA 全国停飞（1254 分，NBC 新闻）+ SpaceX 星舰 Flight 15 回收成功（623 分），非技术/航天类已过滤。<br />
+<a href="https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247" target="_blank" rel="noopener">https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</a><br />
+<a href="https://www.spacex.com/launches/starship-flight-15" target="_blank" rel="noopener">https://www.spacex.com/launches/starship-flight-15</a></p>
+</blockquote>
+<hr />
+<h2>2️⃣ Product Hunt（5）</h2>
+<p><strong>1. Filament by Galaxy</strong> — Move data using your terminal or agent. Fast &amp; open source.<br />
+<a href="https://www.producthunt.com/products/galaxy" target="_blank" rel="noopener">https://www.producthunt.com/products/galaxy</a></p>
+<blockquote>
+<p>用终端/Agent 搬数据的开源工具。Jus 点评：<strong>Agent-native CLI</strong> 这条线今年的赢家，比起给 Agent 套 GUI，直接给命令行语义才是对的。你要是做 x402，工具形态优先于 SDK 形态。<br />
+（PH 页面无独立发布链接，见 products 页）</p>
+</blockquote>
+<p><strong>2. HireNow（HiringNow）</strong> — AI job agent that finds &amp; apply for jobs before anyone else.<br />
+<a href="https://www.producthunt.com/products/hiringnow" target="_blank" rel="noopener">https://www.producthunt.com/products/hiringnow</a></p>
+<blockquote>
+<p>AI 求职 Agent，抢先投递。Jus 点评：你今年 4-5 月那波面试的经历就是最好的 PMF 验证。不过这类「代投」服务的天花板在于——真岗位还是看内推和人脉，Agent 只能解决「不知情」，解决不了「够不上」。</p>
+</blockquote>
+<p><strong>3. qorqbot</strong> — Proactive agent for business work<br />
+<a href="https://www.producthunt.com/products/qorqbot" target="_blank" rel="noopener">https://www.producthunt.com/products/qorqbot</a></p>
+<blockquote>
+<p>主动型商务 Agent。Jus 点评：「Proactive」是今年的关键词，从「你问我答」到「我主动盯着」。难点从来不是主动触发，而是主动错了怎么办——人类容错率极低。</p>
+</blockquote>
+<p><strong>4. Tacie</strong> — Meeting notes on your Mac, with no bot in the call<br />
+<a href="https://www.producthunt.com/products/tacie" target="_blank" rel="noopener">https://www.producthunt.com/products/tacie</a></p>
+<blockquote>
+<p>Mac 端本地会议纪要，不放机器人进会议。Jus 点评：这就是「本地优先」在 SaaS 红海里的差异化——同样的功能，凭什么选你？凭隐私。企业市场这一刀砍得准。</p>
+</blockquote>
+<p><strong>5. Kokonut UI</strong> — Open-source UI components for your AI agent<br />
+<a href="https://www.producthunt.com/products/kokonutui" target="_blank" rel="noopener">https://www.producthunt.com/products/kokonutui</a></p>
+<blockquote>
+<p>AI Agent 的开源 UI 组件库。Jus 点评：Agent 界面的设计语言还没定型，现在做组件库等于在标准确立前占地。开源项目想涨 star，做「别人必须依赖的基础件」比做完整产品快得多。</p>
+</blockquote>
+<hr />
+<h2>3️⃣ Reddit r/SideProject（4）</h2>
+<p><strong>1. I built a quiet online room where strangers just study together</strong> — 367 👍 / 91 💬<br />
+<a href="https://reddit.com/r/SideProject/comments/1xvrhcn/i_built_a_quiet_online_room_where_strangers_just/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xvrhcn/i_built_a_quiet_online_room_where_strangers_just/</a></p>
+<blockquote>
+<p>陌生人一起静音自习的线上房间。Jus 点评：Z 世代「一起孤独」需求被反复验证。成本极低、情感密度高的产品，是最典型的低成本爆款样板。</p>
+</blockquote>
+<p><strong>2. Our chili crunch side project has sold over 1,500 jars in 3.5 months generating 25K in revenue</strong> — 206 👍 / 54 💬<br />
+<a href="https://reddit.com/r/SideProject/comments/1xw7b36/our_chili_crunch_side_project_has_sold_over_1500/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xw7b36/our_chili_crunch_side_project_has_sold_over_1500/</a></p>
+<blockquote>
+<p>3.5 个月卖 1500 罐辣酱，收入 $25K。Jus 点评：实体副业反而比 SaaS 更容易开张——不需要用户改变习惯。副业第一课：别一上来做软件。</p>
+</blockquote>
+<p><strong>3. I built an iPhone app where you roll the dice and land on a music radio station somewhere on Earth</strong> — 86 👍 / 22 💬<br />
+<a href="https://reddit.com/r/SideProject/comments/1xw2rw9/i_built_an_iphone_app_where_you_roll_the_dice_and/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xw2rw9/i_built_an_iphone_app_where_you_roll_the_dice_and/</a></p>
+<blockquote>
+<p>掷骰子随机落到地球上某个电台。Jus 点评：纯粹为了「有意思」做的产品。这类项目最容易被大平台抄，所以它的护城河是创作者的品味本身，抄不走。</p>
+</blockquote>
+<p><strong>4. Amazon is going to hate me for this: I checked 685 storage prices 13 days before Black Friday</strong> — 67 👍 / 13 💬<br />
+<a href="https://reddit.com/r/SideProject/comments/1xw0y34/amazon_is_going_to_hate_me_for_this_i_checked_685/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xw0y34/amazon_is_going_to_hate_me_for_this_i_checked_685/</a></p>
+<blockquote>
+<p>黑五前手动核对 685 个存储价格，74% 已经在降价。Jus 点评：<strong>手动数据劳动 + 公开结论</strong> 是获取流量的最短路径。不用写代码，用几百次重复劳动换一次病毒传播。</p>
+</blockquote>
+<hr />
+<h2>4️⃣ SomebodyMakeThis 需求（还没人做的金矿）</h2>
+<p><strong>1. Intelligent wellbeing planner</strong> — 今天刚发，热度为零但概念先行<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xwi8b0/intelligent_wellbeing_planner/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xwi8b0/intelligent_wellbeing_planner/</a></p>
+<blockquote>
+<p>「智能身心健康规划器」。Jus 点评：概念太泛了，但泛意味着没被占。真要下手的切口是「不追踪数据，只安排休息」——反量化自我，反而清爽。</p>
+</blockquote>
+<p><strong>2. Virtual Mall idea</strong> — 11-14，有具体描述<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xvy9t3/virtual_mall_idea/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xvy9t3/virtual_mall_idea/</a></p>
+<blockquote>
+<p>一个「里面卖的东西都是真的」的虚拟商城，免费下载 Xbox 版。Jus 点评：硬件/平台太重（要上 Xbox），但 Descript 那套「虚拟空间 + 真实商品」的电商试衣间形态，Web 端完全可做。</p>
+</blockquote>
+<p><strong>3. SponsorBlock for Movies &amp; TV</strong> — 11-12，需求明确且作者明说自己不会写代码<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xuepql/sponsorblock_for_movies_tv_an_opensource/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xuepql/sponsorblock_for_movies_tv_an_opensource/</a></p>
+<blockquote>
+<p>开源众包的时间戳数据库，自动跳过裸露/血浆/惊吓/脏话/注水剧情。Jus 点评：<strong>这是本周质量最高的需求</strong>。有现成对标（SponsorBlock 在 YouTube 已验证），有社区众包机制，有明确的「作者不做」声明。缺点是版权和分发（浏览器插件 vs 播放器集成）需要设计，但这正是技术人的主场。</p>
+</blockquote>
+<p><strong>4. An app that connects people based on their favourite series, movies, shows</strong> — 11-13<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xvgqu9/an_app_that_connects_people_based_on_their/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xvgqu9/an_app_that_connects_people_based_on_their/</a></p>
+<blockquote>
+<p>按喜欢的剧集/电影匹配交友。Jus 点评：冷启动极难——两边都要人。除非先做「单向」版本：只做剧集同好社区，不做配对。</p>
+</blockquote>
+<p><strong>5. AV2 conversion site</strong> — 11-13，有具体技术路径<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xvkdby/first_av2_corvertion_site/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xvkdby/first_av2_corvertion_site/</a></p>
+<blockquote>
+<p>把 AV1 转 AV2 的在线转换站，作者贴了 AOM 的 avm 源码地址。Jus 点评：技术型需求，工程量不小（要服务端跑编码器），但用户极其明确——现在做就是第一个。适合当 Rust 练手项目。</p>
+</blockquote>
+<p><strong>6. I wanted to create a free app for combining all my virtual payment cards</strong> — 11-12<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xu69yl/i_wanted_to_create_a_free_app_for_combining_all/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xu69yl/i_wanted_to_create_a_free_app_for_combining_all/</a></p>
+<blockquote>
+<p>把一堆小额礼品卡/虚拟卡余额合并成一个池子。Jus 点评：痛点是真的（沙发缝里找零钱），但<strong>支付牌照和合规是硬门槛</strong>，个人做不了。这条可以直接跳过。</p>
+</blockquote>
+<hr />
+<h2>今日灵感提炼</h2>
+<ol>
+<li><strong>「本地优先」正在成为默认卖点</strong> — Coway 逆向、Tacie 本地纪要、旧手机当边缘节点，三条独立信号指向同一个方向：用户开始为「数据不出门」付钱。</li>
+<li><strong>AI 生成代码的安全债开始爆雷</strong> — Lovable 泄露事件是个分水岭。会有人需要「AI 应用的安全审计」，这跟你的测试基建背景是同一套能力。</li>
+<li><strong>SMT 本周最佳是 SponsorBlock for Movies</strong> — 有对标、有众包机制、作者明确不自己做。若要练手 + 涨 star，这是比凭空想点子更好的起点。</li>
+</ol>
+<hr />
+<h2>采集方法记录（for next time）</h2>
+<ul>
+<li>HN：<code>topstories.json</code> → 前 12 个 id → 并行 <code>item/&lt;id&gt;.json</code> ✅</li>
+<li>PH：<code><a href="https://orangebot.ai/feed.json" target="_blank" rel="noopener">https://orangebot.ai/feed.json</a></code>，过滤 tags 含 <code>product-hunt</code>，今日返回 10 条 ✅</li>
+<li>Reddit r/SideProject：<strong>cookie + <code>/top.json?t=day</code></strong> ✅（cookies 在 <code>~/clawd/.reddit-cookies.json</code>，需拼成 <code>name=value; ...</code> 头）</li>
+<li>Reddit r/indiebiz：同上，但今日分数极低（最高 3 分），无用 → 只取 SideProject</li>
+<li>SMT：<code>/new.json</code> 返回 <strong>HTML 而非 JSON</strong>（被挡），<code>/new/.rss</code> <strong>可用</strong>，25 条，含 title/link/updated/content ✅</li>
+<li>Twitter：仍死，跳过</li>
+</ul><div class="pager"><a class="l" href="2026-11-14.html">← 2026-11-14</a></div></article>
+<footer>自动生成 · 2026-11-15</footer>
+</div>
+</body></html>
