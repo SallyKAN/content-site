@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 · 2026-11-16（周日）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-16</div><h1>每日独立开发精选 · 2026-11-16（周日）</h1>
+<blockquote>
+<p>采集时间 08:3x GMT+8｜来源：HN / Product Hunt / Reddit r/SideProject / SomebodyMakeThis<br />
+Twitter 源仍死（跳过）；SMT 用 cookie + <code>/new/.rss</code>，25 条</p>
+</blockquote>
+<hr />
+<h2>1️⃣ Hacker News 热榜（5）</h2>
+<p><strong>1. The MacBook Pro's OLED PWM problem</strong> — 408 👍 / 228 💬<br />
+<a href="https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/" target="_blank" rel="noopener">https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/</a></p>
+<blockquote>
+<p>更好的屏幕，更难受的眼睛——OLED 调光频闪。Jus 点评：典型的「参数赢了，体验输了」。做硬件/嵌入式这行最该记住的教训：规格表之外的生理效应，用户用身体投票。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50506719" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50506719</a></p>
+</blockquote>
+<p><strong>2. Claude Code 和 Codex 用一个 3 美元 Arduino 逆向了我 1994 年吉普的 ECU</strong> — 322 👍 / 160 💬 [视频]<br />
+<a href="https://www.youtube.com/watch?v=WPj3aQ-xxpI" target="_blank" rel="noopener">https://www.youtube.com/watch?v=WPj3aQ-xxpI</a></p>
+<blockquote>
+<p>三天前你手上 N1-Auto 的活儿还在跑测试，人家用 $3 板子逆向了整台车的控制器。Jus 点评：<strong>这是今天最该点开的一条</strong>。AI Agent + 逆向工程的组合，正在把「需要专业设备+多年经验」的活儿压成周末项目。你的自动驾驶/机器人工具赛道，需求端就在这类人身上。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50463399" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50463399</a></p>
+</blockquote>
+<p><strong>3. Protomaps：自托管地图瓦片已经变得又便宜又简单</strong> — 138 👍 / 32 💬<br />
+<a href="https://bruceroettgers.eu/blog/protomaps/" target="_blank" rel="noopener">https://bruceroettgers.eu/blog/protomaps/</a></p>
+<blockquote>
+<p>自托管地图瓦片成本降下来了。Jus 点评：机器人项目的地图层终于有「不依赖 Google/高德」的选项。国内做机器人的话，这一块的本地化空白还没人填。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50509837" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50509837</a></p>
+</blockquote>
+<p><strong>4. 老 Bitly 短链正在被劫持</strong> — 129 👍 / 61 💬<br />
+<a href="https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/" target="_blank" rel="noopener">https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</a></p>
+<blockquote>
+<p>Burger King 的推文链接被劫持到别处。Jus 点评：所有依赖第三方短链的「永久链接」都是定时炸弹。跟今天 Reddit 那条「别做 URL shortener」配着看，一个讲技术坑，一个讲商业坑。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50511395" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50511395</a></p>
+</blockquote>
+<p><strong>5. Handwriting, as a Font</strong> — 103 👍 / 23 💬<br />
+<a href="https://ductus.sorenblank.com" target="_blank" rel="noopener">https://ductus.sorenblank.com</a></p>
+<blockquote>
+<p>把手写做成字体。Jus 点评：单点需求做到极致的样本。这类「小而怪」的项目在 HN 上永远有一席之地——因为够具体，不需要教育用户。<br />
+HN 讨论：<a href="https://news.ycombinator.com/item?id=50509972" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50509972</a></p>
+<p>备注：今日头条是微软 365 故障导致酒店 15 人氯气中毒（352 分），安全事故类已过滤。<br />
+<a href="https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html" target="_blank" rel="noopener">https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html</a></p>
+</blockquote>
+<hr />
+<h2>2️⃣ Product Hunt（5）</h2>
+<p><strong>1. Talyn</strong> — 在并行云沙箱里跑 Claude Code 和 Codex<br />
+<a href="https://www.producthunt.com/products/talyn" target="_blank" rel="noopener">https://www.producthunt.com/products/talyn</a></p>
+<blockquote>
+<p>多 Agent 并行沙箱。Jus 点评：<strong>跟你直接相关</strong>。你现在就在 OpenClaw 里跑 agent，这套「隔离环境 + 并行执行」正是自建多 agent 流水线时最缺的一块。可以扒一下它的隔离方案。</p>
+</blockquote>
+<p><strong>2. Rakazo</strong> — 你真的拥有的开源 Grok Bot 替代品<br />
+<a href="https://www.producthunt.com/products/rakazo" target="_blank" rel="noopener">https://www.producthunt.com/products/rakazo</a></p>
+<blockquote>
+<p>自托管 bot。Jus 点评：「你真正拥有」这句话现在是开源项目的标准卖点——不是功能差异，是所有权差异。这类定位值得你在 x402 那条线上借用。</p>
+</blockquote>
+<p><strong>3. Dex Semantics</strong> — 让你的 agent 构建分析，错误少 25%<br />
+<a href="https://www.producthunt.com/products/dex-by-exmergo" target="_blank" rel="noopener">https://www.producthunt.com/products/dex-by-exmergo</a></p>
+<blockquote>
+<p>Agent 做数据分析的语义层。Jus 点评：「少 25% 错误」这个量化说法很有杀伤力。做工具类产品，能给数字就别给形容词。</p>
+</blockquote>
+<p><strong>4. Emayler</strong> — 自有域名邮箱，减去头疼<br />
+<a href="https://www.producthunt.com/products/emayler" target="_blank" rel="noopener">https://www.producthunt.com/products/emayler</a></p>
+<blockquote>
+<p>简化自有域名邮箱配置。Jus 点评：纯「省事」型产品。护城河极浅但现金流失血慢——典型的一个人能维护的生意。</p>
+</blockquote>
+<p><strong>5. Spiik</strong> — 会议/讲座 AI 笔记，通话里不放 bot<br />
+<a href="https://www.producthunt.com/products/spiik" target="_blank" rel="noopener">https://www.producthunt.com/products/spiik</a></p>
+<blockquote>
+<p>又是本地会议笔记，跟昨天的 Tacie 撞车。Jus 点评：<strong>同一个需求两天内两次上 PH，说明拥挤了</strong>。本地化会议纪要这个方向现在入场已经晚了，除非做垂直（比如医疗/法律术语）。</p>
+</blockquote>
+<hr />
+<h2>3️⃣ Reddit r/SideProject（4）</h2>
+<p><strong>1. built a fact-checker that catches politicians lying in real-time</strong> — 479 👍 / 99 💬<br />
+<a href="https://reddit.com/r/SideProject/comments/1xwmije/built_a_factchecker_that_catches_politicians/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xwmije/built_a_factchecker_that_catches_politicians/</a></p>
+<blockquote>
+<p>实时政治事实核查。Jus 点评：今日最高分。技术不难，难的是「谁定义说谎」。这类产品本质是裁决权之争，做起来争议比用户来得快。</p>
+</blockquote>
+<p><strong>2. Never build a URL shortener. NEVER!</strong> — 142 👍 / 35 💬<br />
+<a href="https://reddit.com/r/SideProject/comments/1xx5n46/never_build_a_url_shortener_never/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xx5n46/never_build_a_url_shortener_never/</a></p>
+<blockquote>
+<p>血泪教训贴。Jus 点评：配合今天 HN 那条 Bitly 劫持，双份劝退。这类「很多人都踩过的坑」帖子价值极高，写自己踩坑经历的博客是长期流量资产。</p>
+</blockquote>
+<p><strong>3. I made AI crawlers pay per page with HTTP 402 instead of blocking them</strong> — 61 👍 / 36 💬<br />
+<a href="https://reddit.com/r/SideProject/comments/1xwlwy2/i_made_ai_crawlers_pay_per_page_with_http_402/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xwlwy2/i_made_ai_crawlers_pay_per_page_with_http_402/</a></p>
+<blockquote>
+<p>用 HTTP 402 让 AI 爬虫按页付费，人类照常免费。Jus 点评：🔥 <strong>这条必须点开</strong>。这就是你 8 月定的 x402 方向，已经有独立开发者在做真实落地了。注意评论数 36 比分数/2 还高，说明争议大——去评论区看看大家卡在哪，就是你的差异化入口。</p>
+</blockquote>
+<p><strong>4. I built a trip planner that lays out every day as a metro line on a hand-drawn map</strong> — 33 👍 / 22 💬<br />
+<a href="https://reddit.com/r/SideProject/comments/1xwuo7i/i_built_a_trip_planner_that_lays_out_every_day_as/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xwuo7i/i_built_a_trip_planner_that_lays_out_every_day_as/</a></p>
+<blockquote>
+<p>把行程画成地铁线路图。Jus 点评：纯粹的可视化创意。做工具的人容易忽略——「换个表现形态」本身就是产品创新，不需要新功能。</p>
+</blockquote>
+<hr />
+<h2>4️⃣ SomebodyMakeThis 需求（还没人做的金矿）</h2>
+<blockquote>
+<p>今日池子里最新一条已是 11-14，周六日没什么新需求。挑了几条仍值得看的：</p>
+</blockquote>
+<p><strong>1. Virtual Mall idea</strong> — 11-14<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xvy9t3/virtual_mall_idea/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xvy9t3/virtual_mall_idea/</a></p>
+<blockquote>
+<p>「里面卖的东西都是真的」的虚拟商城。Jus 点评：描述够具体，但平台太重。Web 端做轻量版才现实。</p>
+</blockquote>
+<p><strong>2. SponsorBlock for Movies &amp; TV</strong> — 11-12（<strong>连续两天推荐，仍是本周最佳</strong>）<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xuepql/sponsorblock_for_movies_tv_an_opensource/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xuepql/sponsorblock_for_movies_tv_an_opensource/</a></p>
+<blockquote>
+<p>众包时间戳，跳过裸戏/血腥/惊吓/脏话。Jus 点评：昨天说过一遍，今天再提是因为——有公认对标、有机制设计、作者明确不做。这种需求在 SMT 里一年出不了几个。</p>
+</blockquote>
+<p><strong>3. A goal tracker that lets you decide a goal isn't yours anymore</strong> — 11-11<br />
+<a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1xte49q/a_goal_tracker_that_lets_you_decide_a_goal_isnt/" target="_blank" rel="noopener">https://www.reddit.com/r/SomebodyMakeThis/comments/1xte49q/a_goal_tracker_that_lets_you_decide_a_goal_isnt/</a></p>
+<blockquote>
+<p>允许你「放弃目标」的目标追踪器。Jus 点评：反直觉的切入点——所有目标 app 都在推你更努力，它让你放下。这类「反向功能」很容易做出产品性格。<br />
+顺带一提：你的创业 deadline 从 8/31 走过来也快三个月了，这种「何时该放弃一个目标」的框架，或许自己用得上。</p>
+</blockquote>
+<hr />
+<h2>今日灵感提炼</h2>
+<ol>
+<li><strong>AI Agent 正在吃掉「专业逆向工程」</strong> — $3 Arduino + Claude Code 搞定 1994 年汽车 ECU。这类「原本要专业设备和经验」的活儿，正在变成周末项目。你的机器人工具赛道，客户画像越来越清晰了。</li>
+<li><strong>x402 已经有真实落地者了</strong> — r/SideProject 那条 402 付费爬虫，评论数超过分数的 2/3，说明争议巨大。去读评论区，那里是需求最真实的地方。</li>
+<li><strong>同一需求两天内两次上 PH</strong>（Tacie → Spiik）是拥挤信号。看到重复要当心，不是机会是红海。</li>
+</ol>
+<hr />
+<h2>采集方法记录</h2>
+<ul>
+<li>HN：<code>topstories.json</code> → 前 12 → 并行 <code>item/&lt;id&gt;.json</code> ✅</li>
+<li>PH：<code>orangebot.ai/feed.json</code> 过滤 <code>product-hunt</code> ✅ 10 条（注意与昨日有 5 条重叠，属正常）</li>
+<li>Reddit r/SideProject：cookie + <code>/top.json?t=day</code> ✅</li>
+<li>SMT：<code>/new/.rss</code> 可用（<code>/new.json</code> 返回 HTML 被挡）；周末更新少，池子最新停在 11-14</li>
+<li>Twitter：仍死，跳过</li>
+</ul><div class="pager"><a class="l" href="2026-11-15.html">← 2026-11-15</a></div></article>
+<footer>自动生成 · 2026-11-16</footer>
+</div>
+</body></html>
