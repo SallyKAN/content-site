@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1117 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-17</div><h1>1117 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-11-17 10:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1116 早「AI 生成代码该不该闭源（许可证洗白）」→ <strong>1117 早「你用的工具已经把你注册成'AI 用户'了——被统计的是人，不是软件」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账（先说难听的）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已出的稿</td>
+<td><strong>零。</strong> <code>03-内容成品/公众号/草稿/</code> 最新仍是 <code>1029-Anthropic招股书34小时.md</code>（10-29）；<code>待发布/</code> 只有 <code>0925-AI入侵澳医保.md</code>。<strong>第 24 天，零发布。</strong></td>
+</tr>
+<tr>
+<td>没出的稿</td>
+<td>1116 主推（AI 代码许可证洗白，90 分）、Alpha School（83 分）、1115 Lovable、1114 GPU/定价、1113 美联航 —— <strong>五张卡全部原地</strong></td>
+</tr>
+<tr>
+<td>今天的量</td>
+<td>HN Algolia 实跑（points&gt;60，近 36h，40 条）+ 一手全文读 2 篇（Xusheng Li 遥测逆向、Breck McKye 系统崩坏）+ 新增卡 1 张</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>判断不变：你不缺题，缺的是坐下来写。今天的推送按「写完成本从低到高」排序，第一条是一个下午能写完的立场文。</strong></p>
+<hr />
+<h2>二、今日采集（10:00 实跑，points&gt;60）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>分/评</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Windows 11 在收集你在用哪个 coding agent</strong>（Xusheng Li）</td>
+<td><strong>239 / 115</strong></td>
+<td><strong>今日最硬，一手全文已读</strong> ✅ 见第三节</td>
+</tr>
+<tr>
+<td><strong>Software is breaking down at a systemic level</strong>（Breck McKye）</td>
+<td><strong>340 / 218</strong></td>
+<td><strong>今天思想密度最高的一篇</strong>，一手全文已读 ✅ 见第四节</td>
+</tr>
+<tr>
+<td>Many of Amazon's Black Friday "deals" offered no savings</td>
+<td>840 / 510</td>
+<td>热度第一，但非 AI 主线，可做小红书素材</td>
+</tr>
+<tr>
+<td>JPMorgan 故障拖累美国多家银行网银</td>
+<td>715 / 593</td>
+<td>与第四节是同一现象的第一手证据，<strong>做旁证</strong></td>
+</tr>
+<tr>
+<td>CMU 把计算机课程免费放上 YouTube</td>
+<td>735 / 121</td>
+<td>国内关注度高（教育平权），但角度不新，可做轻稿</td>
+</tr>
+<tr>
+<td>Microsoft 邮件大规模中断，官方归因于 7 月修复引入的缺陷</td>
+<td>222 / 164</td>
+<td>旁证（系统崩坏）</td>
+</tr>
+<tr>
+<td>Frame 31.5 寸彩色墨水屏</td>
+<td>298 / 212</td>
+<td>硬件，小红书素材</td>
+</tr>
+<tr>
+<td>Nvidia 在 Jensen Huang 出事之前就有麻烦（Wired）</td>
+<td>254 / 234</td>
+<td>1114 卡的延续，无新一手</td>
+</tr>
+<tr>
+<td>保险资金正在押注 AI 债务（NYT）</td>
+<td>78 / 38</td>
+<td><strong>国内会问的问题</strong>，但 NYT 付费墙未读，<strong>不敢推主推</strong></td>
+</tr>
+<tr>
+<td>仅 400 个美国数据中心用电超密歇根全州（Wired）</td>
+<td>88 / 89</td>
+<td>数据好，可做数据卡</td>
+</tr>
+<tr>
+<td>美国拒绝全球禁用杀手机器人条约</td>
+<td>69 / 84</td>
+<td>政策，热度一般</td>
+</tr>
+<tr>
+<td>Optimizely 被入侵，向 CNN/Zoom/Fox 投毒</td>
+<td>109 + 186 / 65</td>
+<td>供应链安全，非 AI</td>
+</tr>
+<tr>
+<td>Rust 改变了我（startifact）</td>
+<td>188 / 121</td>
+<td>开发者情绪文，无新事实</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、今日主推 ⭐</h2>
+<h3>你装了 Cursor，微软就知道你是"AI 用户"了——而且这份名单是硬编码进系统 DLL 的</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://xusheng.dev/posts/windows-coding-agent-telemetry/">Xusheng Li：Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use（一手全文，已读）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50524736">HN 239 pts / 115 评论</a></li>
+<li>
+<p><a href="https://x.com/CrackmesOne/status/2122147747390468384">作者最初在 X 上的发现</a></p>
+</li>
+<li>
+<p><strong>一句话（全部来自原文）</strong>：作者用 AI 辅助逆向 Windows 二进制，在 <code>MissionControlAggregator.dll</code> 里发现一个叫 <strong>CLICodingAgentUsage（feature ID 62580080）</strong> 的功能，硬编码检查 <strong>codex.exe / claude.exe / copilot.exe / agy.exe / cursor.exe / antigravity.exe</strong> 等可执行文件名，命中后把"你用过哪个 AI 编程工具"记成一个<strong>位图（bitset）</strong>，日常通过 ETW 上报；在允许"可选诊断数据"（美国版安装<strong>默认开启</strong>）的情况下，这份报告<strong>会进入上传队列发给微软</strong>。</p>
+</li>
+<li>
+<p><strong>原文里可直接引的四个硬细节</strong>：<br />
+  1. <strong>只记名字，不记内容</strong>：报告里<strong>没有 prompt、没有源码</strong>，只记"是否观察到"；运行时、聚焦时长、资源占用这些反而被丢弃。<strong>这点必须写清楚，否则就是造谣。</strong><br />
+  2. <strong>改个文件名就能复现</strong>：作者把 <code>cmd.exe</code> 复制成 <code>codex.exe</code> 一跑，聚合器的 Codex 槽位就被置位，上报事件里 <code>CliAgentSubCohorts: 4</code>（1&lt;&lt;2 = Codex 位）。把 <code>cmd.exe</code> 复制成 <code>gcc.exe</code>，开发者工具槽位被置为编译器/调试器类别。<br />
+  3. <strong>不是每台机器都开</strong>：作者查了公开 ISO 的基线虚拟机，<strong>该功能在镜像里默认关闭</strong>；但他自己的 Parallels ARM64 VM（build 26200.9974）上<strong>功能已按"服务实验"启用</strong>，DiagTrack 自动运行，<code>AggregatorHost.exe</code> 加载该 DLL。<br />
+  4. <strong>数据落在本地</strong>：<code>C:\ProgramData\Microsoft\Diagnosis\AggregatorStorage\MissionControlAggregator$</code>。</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 24/30（239 pts，今日最热的可写题）· <strong>角度 35/40</strong>（全网在问"微软是不是偷我代码"，<strong>没人指出它测的是"人群分层"不是"代码"</strong>）· 国内 26/30 → <strong>85</strong></p>
+</li>
+<li>
+<p><strong>三刀（这才是可写性所在）</strong>：<br />
+  1. <strong>它的单位是"人"，不是"进程"。</strong> 报告的字段叫 <strong>SubCohorts（子队列）</strong>、发源头叫 <strong>Aggregator</strong>（聚合器）——这是<strong>人群测量</strong>的词，不是遥测的用词。微软真正想要的不是"你写了什么"，而是<strong>"这台机器背后的人属于哪一类"</strong>。这和你以为的"隐私泄露"是<strong>两个不同的问题</strong>，而后者严重得多：<strong>代码可以删，人群标签不会。</strong><br />
+  2. <strong>名单是要维护的，维护名单是指标驱动的。</strong> 什么时候 Windows 才需要认识 <code>antigravity.exe</code>？<strong>只有当它在统计这个的时候，才会有 KPI。</strong> 一个操作系统的诊断组件里出现"AI 竞品清单"，说明<strong>"AI 工具渗透率"已经成了一个被上报的经营指标</strong>。<br />
+  3. <strong>国内落点：这件事在中国大概率已经在发生，只是没人去看 DLL。</strong> 国产办公套件、安全软件、企业管控终端对"员工使用哪些 AI 工具"的采集<strong>是合规要求下的常规动作</strong>——真正的差别不是"采不采"，而是<strong>能不能被看见</strong>。作者能写这篇，因为他有一台能拆的 VM 和一个愿意读汇编的下午。<strong>把"隐私争议"改成"可审计性争议"，文章立刻不同。</strong></p>
+</li>
+<li>
+<p><strong>⚠️ 写之前必须钉死的边界</strong>：</p>
+</li>
+<li><strong>不许写"微软在偷你的代码/prompt"</strong>。原文明确说报告里没有 prompt、没有源码。</li>
+<li><strong>不许写"所有 Windows 11 都在上传"</strong>。作者自己说公开 ISO 基线是<strong>关闭</strong>的，只有他的 VM 和（据功能默认值）开了可选诊断数据的机器才会上传。写成"默认开启设备可选诊断数据的安装 + 该实验性功能被启用的设备"。</li>
+<li><strong>不许写成官方确认</strong>。这是<strong>个人逆向 + 复现</strong>，微软方面<strong>本文未载任何回应</strong>。</li>
+<li><strong>"可选诊断数据默认开启"限于作者测试的美国区域安装</strong>，原文自己加了 "at least in the US setup I tested"。</li>
+</ul>
+<hr />
+<h2>四、备选主推（想写深稿就写这个）</h2>
+<h3>2026 年软件为什么集体崩？不是 AI 写坏了代码，是没人还看得懂整个系统</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/">Breck McKye：Software is breaking down at a systemic level（一手全文，已读）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50520866">HN 340 pts / 218 评论</a></li>
+<li>文中引用的核心概念：<a href="https://maevyn.codes/decoherence">Kristen Maevyn：The Decoherence Trap</a></li>
+<li>
+<p>旁证一手：<a href="https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda">JPMorgan 故障拖垮多家银行网银（AP）</a>（HN 715 pts）</p>
+</li>
+<li>
+<p><strong>一句话</strong>：作者认为 2026 年这一串事故（微软两天全球中断、FAA 全美停飞、PHP2Shell、eMudhra 弱密钥、JPMorgan 银行故障）<strong>原因各不相同，形状却完全一样</strong>——<strong>过度复杂 + 低质量部件 + 没人掌握全貌</strong>；而 AI 不是唯一原因，它是<strong>原因同时也是症状</strong>，真正危险的不是"AI 写出烂代码"，而是<strong>"去相干"（decoherence）</strong>：每个局部改动都合理，合起来整个系统失去意义。</p>
+</li>
+<li>
+<p><strong>可直接引的三段</strong>：</p>
+</li>
+<li><strong>"decocherence" 的定义（引自 Maevyn）</strong>：系统内累积了<strong>各自成立但互不兼容或重复的模型</strong>，以至于变更成本被"在模型之间翻译"和"防止意外副作用"吃掉；而且<strong>系统越去相干，增长越快，呈指数级</strong>。</li>
+<li><strong>"没有人在做有意图的事"</strong>：Claude 写代码，因为工程师写了个 prompt；prompt 来自用 Claude 写的工单；工单来自 PM 对一份由 Claude 写、又由 Claude 摘要的文档的总结……作者自己说"这是漫画，但没夸张多少"。</li>
+<li>
+<p><strong>"能力退化 = 权力转移"</strong>：工程师不再能独立处理工程问题，于是<strong>更没资格在事情变坏时报警</strong>；最坏情况是变成 <strong>"meat proxies"（肉体代理）</strong>，每天调 prompt，让 Claude 判断活干完没有。</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 26/30 · 角度 33/40 · 国内 25/30 → <strong>84</strong></p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>"AI 让软件变差"是个错的问题，对的问题是"成本转移到了谁的账上"。</strong> 云把运维删了、开源把细节删了、AI 把理解删了——<strong>三次删除的共同点是：删掉的是"能报警的人"</strong>。这条线正好接上 1115（Lovable 删掉访问控制）、1116（AI 代码删掉作者归属）。<br />
+  2. <strong>去相干是可以用一句话给国内读者讲明白的</strong>：<strong>"每一行都 review 过了，但没人 review 过它们加起来的样子。"</strong> 这一句能当标题。<br />
+  3. <strong>反驳点别放过（这是你的立论位置）</strong>：作者把"复杂度"当成病因，但<strong>复杂度是需求的函数，不是工具的</strong>。真正变了的是<strong>变更速率</strong>——AI 把变更速率推到了维护模型跟不上的程度。<strong>是速率问题，不是复杂度问题。</strong> 这一改，文章从"哀悼"变成"提出一个可执行的约束"（比如：限制单周变更面积、强制"整体视图"轮值）。</p>
+</li>
+<li>
+<p><strong>⚠️ 边界</strong>：文中的事故<strong>全部是作者叙述</strong>，我<strong>只额外核了 JPMorgan 那篇 AP 新闻</strong>；PHP2Shell、eMudhra、Shai Hulud、微软中断的原始报道<strong>本次未逐一打开</strong>，写作时<strong>不要给这些事件加具体数字</strong>，除非另行核实。</p>
+</li>
+</ul>
+<hr />
+<h2>五、视角素材（不单独成篇）</h2>
+<ul>
+<li><strong>"软件正在系统性地坏掉"的最佳实证不是文章，是今天的 HN 首页本身</strong>：同一屏上有 JPMorgan 银行故障（715）、亚马逊假折扣（840）、微软邮件中断（222）、Optimizely 供应链投毒（109+186）。<strong>一天的首页就够当开篇。</strong></li>
+<li><strong>CMU 免费开课（735 pts）</strong> 适合做对照：<strong>一边是知识被免费开放，一边是技能被外包给机器</strong>——同一周里发生的两件事。</li>
+</ul>
+<hr />
+<h2>六、行动建议（就一件）</h2>
+<p><strong>写第三节那张卡。它是一篇"立场 + 三条硬证据"的文章，全程不需要采访、不需要等回应、不需要法律结论，一下午能出 2000 字。</strong> 边界已经钉好了，照着写不会翻车。</p>
+<p>如果今天只够写 800 字，就写第四节那句标题——<strong>"每一行都 review 过了，但没人 review 过它们加起来的样子"</strong>。</p><div class="pager"><a class="l" href="2026-11-16-选题方案.html">← 2026-11-16 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-11-17</footer>
+</div>
+</body></html>
