@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1118 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-18</div><h1>1118 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-18 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线：1117「每一行 review 过了，没人 review 加起来的样子」→ 1118 早「你依赖的东西会消失，不通知你」→ <strong>今晚「被 AI 掏空的是来源地，不是流量」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>在草稿箱，仍未发。</strong> <code>草稿/</code> 里 <code>2026-11-17-…加起来的样子.md</code> + <code>publish_1117.py</code> + 封面脚本都在，<code>待发布/</code> 最新仍是 <code>0925-AI入侵澳医保</code>。今天早上说的「先发」没执行。</td>
+</tr>
+<tr>
+<td>1118 早的方案</td>
+<td><strong>未动。</strong>（GPT-6.2 Astra/Sol 89 分；开源维护 83 分）</td>
+</tr>
+<tr>
+<td>库存</td>
+<td>1116 / 1115 / 1114 / 1113 四张卡原地。</td>
+</tr>
+<tr>
+<td>今晚新增</td>
+<td>HN 14h 实跑 + 一手全文读 1 篇（Nicolas Bouliane，作者本人站点）+ HN 评论实读 9 条 + 论文二手转述 1 篇（已标注为二手）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>今晚只推一件事，因为它和 1117 那篇稿是同一条线的下一块砖，而且今天出现了作者本人的一手证词。写它比写新的更快——素材已经在 1117 稿的子目录里沉了一天。</strong></p>
+<hr />
+<h2>二、今晚主推 ⭐（81 分）</h2>
+<h3>「All About Berlin」掉了 75% 流量——AI 训练了它，然后把它从搜索结果里删掉了</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://nicolasbouliane.com/blog/death-by-ai">Nicolas Bouliane：AI is killing All About Berlin（作者本人站，一手全文，已读）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50542705">HN 545 pts / 516 评论</a></li>
+<li>
+<p>作者提到的 <a href="https://www.telegraph.co.uk/">Telegraph 报道</a> / <a href="https://www.npr.org/">NPR The Indicator</a>（二级传播已存在，说明不是孤例）</p>
+</li>
+<li>
+<p><strong>一句话</strong>：作者 2017 年起运营 berlinois 移民生活指南 All About Berlin，靠它生活了 6 年。<strong>7 年增长后，流量在 Google AI Overviews 上线后掉了 70%–75%</strong>。他原话：以前搜点什么会给你一个我的链接；<strong>现在给你一页广告、一段用我的内容训练出来的 AI 回答、最后才是我</strong>。</p>
+</li>
+<li>
+<p><strong>可直接引的硬细节（全部出自原文，逐条对应）</strong>：<br />
+  1. <strong>"first on Google" 的含义变了</strong>：他说「很难只靠四分之一的读者养活我的工作。很快我得另想办法付房租。」<br />
+  2. <strong>不是钱的问题（这段是全文最重的）</strong>：8 年心血，「陌生人知道是我开这个站的时候眼睛会亮」；柏林地方和联邦政府部门引他的指南；<strong>柏林移民局在用他自己的数据</strong>；启发了两个政府门户网站和几个其他城市的同类站。他说：<strong>「如果我的东西被搅进一段 AI 回答里，我就失去了声音和读者，我精心挑的字失去意义。没人再跟我握手、请我喝啤酒，没人告诉我他们的入籍申请过了没有。」</strong><br />
+  3. <strong>不是孤例，而且同行已经进入下一阶段</strong>：很多站长私下来找他诉苦；有人上了付费墙；<strong>有人放弃了但站还挂着——只是不再更新</strong>。<br />
+  4. <strong>他的预测（引用 Google 上周两条公告）</strong>：AI 回答将完全取代搜索结果，并且里面放广告。<strong>「这就是互联网的未来：没有网站，只有一个带广告的聊天框。」</strong><br />
+  5. <strong>HN 上读到的具体评论</strong>（已实读，可引用但必须标注是 HN 用户观点）：</p>
+<ul>
+<li>有人指出这篇<strong>本身是 5 月旧文被重新顶上来</strong>（<code>item?id=48283127</code>）——<strong>发布时不要写「今天」</strong>；</li>
+<li>一条最锋利的：<strong>「人们被训练成认为所有答案都来自 AI，但 AI 只是从这些来源拿到（不准确的）影子，同时正在杀死这些来源。等来源都没了怎么办？」</strong>（HN 用户 adamddev1）</li>
+<li>一条结构性的反驳（值得写进文章当对手方）：<strong>「这不是反例，这是分叉——给大众的垃圾和给精英的奢侈品，中间那层被消灭了。」</strong>（HN 用户 throwaway132448）</li>
+</ul>
+</li>
+<li>
+<p><strong>计分</strong>：热度 27/30（545/516 今日 AI 类第三）· <strong>角度 31/40</strong>（中文圈在写「AI 抢流量」，很少有人写「被抽干的是内容本身的来源地，不是分发渠道」）· 国内 23/30 → <strong>81</strong></p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>这不叫流量下降，叫「被摘了果子再被踢出园子」。</strong> 他的内容训练了回答，回答替代了他的链接。<strong>价值被吸收了，署名被删掉了</strong>——这是国内所有做原创内容的人都该看懂的一张图。<br />
+  2. <strong>最贵的一句是「政府在用我的数据」。</strong> 一个独立个人的维护质量，撑起了公共服务的准确性。<strong>这层依赖关系在流量报表上完全看不见</strong>，就像 ONNX Runtime 的 404 在微软的财报里也看不见。这正好接 1118 早那条旁证。<br />
+  3. <strong>国内落点：你的护城河是「没人可问」的那些细节。</strong> 能被 AI 摘要吃掉的，都是「查得到」的内容；吃不掉的是评论区、是熟人、是「我上周亲自去办了」。<strong>写不可摘要的东西，或者把读者变成关系而不是流量。</strong></p>
+</li>
+<li>
+<p><strong>⚠️ 边界（重要）</strong>：</p>
+</li>
+<li><strong>原文是 5 月文、今天被重新顶上 HN</strong>，标题里不要用「今天/刚刚」。</li>
+<li><code>revscope</code> 那条「AI 摘要让搜索流量掉 40%」<strong>样本可疑，早上的判断不变，不许拿来做数据支撑</strong>。</li>
+<li><strong>不要写「Google 承认」</strong>——他只引用了 Google 的公告标题，公告内容我没读原文。</li>
+</ul>
+<hr />
+<h2>三、备选（热度更高，但我只有二手来源）</h2>
+<h3>AI 编程把瓶颈推到了 code review：多写 30% 代码，交付没变，评审慢 49%</h3>
+<ul>
+<li><a href="https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/">ComplexDiscovery 转述（<strong>二手，我已读全文，但没读到论文原文</strong>）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50538303">HN 240 pts / 328 评论</a></li>
+<li>转述中的数字：Fiona Chen &amp; James Stratton（哈佛博士生，job-market paper，<strong>无同行评审迹象</strong>），718 家公司 / 725,938 人，数据来自 Jellyfish + Revelio Labs，2021-01 至 2026-03，交错 DID；<strong>代码量 +30%，完成量无可测提升，评审耗时 +49%</strong>；作者自认唯一失衡是「大公司更早采用」，已控制公司规模，且残留偏差方向<strong>偏向高估 AI 生产力</strong>。</li>
+<li><strong>为什么只做备选</strong>：转述里自相矛盾（718 vs 725 两处数字），我<strong>没读到论文原文</strong>。<strong>要用，必须先拿到 SSRN/作者页的原 PDF。</strong></li>
+<li><strong>但如果要用，这是 1117 那篇最硬的一块砖</strong>：那篇写的是「没有 review 加起来的样子」，这篇给的是「review 真的变慢了 49%」。<strong>两篇可以合并成一篇，不用新写。</strong></li>
+</ul>
+<hr />
+<h2>四、今日被埋掉的两条（今晚别碰）</h2>
+<ul>
+<li><strong>Codeberg 宕机</strong>（<a href="https://news.ycombinator.com/item?id=50544261">HN 255/247</a>）+ <strong>ONNX Runtime 404</strong>（我 22:00 又 curl 了一次，仍是 404）+ Apple 服务中断：三条<strong>同一天</strong>，全是「你以为一直在的东西不在了」。这是 1118 早主线的<strong>第二块旁证</strong>，攒着。</li>
+<li><strong>Java4Shell</strong>（<a href="https://calif.io/java4shell/">1043/277</a>）：今日热度第二，但非 AI 主线，且<strong>我未读原文</strong>，只做素材记录，不推。</li>
+</ul>
+<hr />
+<h2>五、今晚就干这一件</h2>
+<p><strong>把 1117 那篇发出去。</strong> 稿子 17,079 字节、封面脚本、发布脚本三件齐备，放在草稿箱一天了。发布脚本跑一次的成本是 <strong>3 分钟</strong>，它已经比今晚任何一个新选题都便宜。</p>
+<p>第二件（如果还有 40 分钟）：把第二节写成 1200 字短稿——<strong>素材全在一手原文里，不用再查，也不用碰任何跑分口径</strong>。标题给你：<strong>《我写了 8 年，政府在用我的数据，然后 Google 把我从搜索结果里删掉了》</strong>。</p><div class="pager"><a class="l" href="2026-11-17-选题方案.html">← 2026-11-17 选题方案</a><a class="r" href="2026-11-18-选题方案.html">2026-11-18 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-18</footer>
+</div>
+</body></html>
