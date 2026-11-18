@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-11-18（周三）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-18</div><h1>每日独立开发精选 — 2026-11-18（周三）</h1>
+<h2>🧠 Hacker News</h2>
+<ol>
+<li>
+<p><strong>GPT‑6.2 Astra and Sol 发布</strong>（1064 分 / 679 评论）<br />
+   <a href="https://openai.com/index/introducing-gpt-6-2-astra-sol/" target="_blank" rel="noopener">https://openai.com/index/introducing-gpt-6-2-astra-sol/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50535230" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50535230</a><br />
+   → Jus 点评：今天唯一的流量核弹。注意：<strong><code>gpt-6.1-sol</code> 是你 cc-connect 现在跑的型号</strong>，6.2 出来后要留意 aigocode 分组是否跟进，以及 codex 客户端版本兼容。别急着升——上次代理坑已经让你吃了 26 分钟的教训。</p>
+</li>
+<li>
+<p><strong>Java4Shell — OpenJDK 处理 Base64 时的 RCE</strong>（472 分 / 125 评论）<br />
+   <a href="https://calif.io/java4shell/" target="_blank" rel="noopener">https://calif.io/java4shell/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50538240" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50538240</a><br />
+   → Jus 点评：名字在致敬 Log4Shell，Java 生态又一次核弹级漏洞。<strong>Java 系后端（尤其华为内部那堆服务）这周该盯补丁了</strong>。</p>
+</li>
+<li>
+<p><strong>Nvidia 停止披露新加坡销售，营收达 1040 亿美元</strong>（377 分 / 181 评论）<br />
+   <a href="https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf" target="_blank" rel="noopener">https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50534631" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50534631</a><br />
+   → Jus 点评：<strong>这条和你直接相关</strong>。Nvidia 不报新加坡（众所周知的转口渠道）了，营收爆表。含义：中国区实际销量通过灰度渠道走，<strong>官方中国团队的业务占比在账面上被"藏"了</strong>。对你判断手上 N1-Auto 项目在公司的真实权重，是个有用的视角。</p>
+</li>
+<li>
+<p><strong>Microsoft 的 ONNX Runtime 从 GitHub 消失了</strong>（86 分 / 17 评论）<br />
+   <a href="https://github.com/microsoft/onnxruntime" target="_blank" rel="noopener">https://github.com/microsoft/onnxruntime</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50539610" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50539610</a><br />
+   → Jus 点评：仓库整个不见——要么误操作，要么合规动作。<strong>开源项目的"稳定托管"从来不是理所当然</strong>，这对你 x402 项目选 GitHub 托管的启示：镜像和 mirror 是必须做的。</p>
+</li>
+<li>
+<p><strong>Quad9 撤出法国：矿井里的金丝雀</strong>（236 分 / 67 评论）<br />
+   <a href="https://blog.cloudflare.com/quad9-withdrawal-from-france/" target="_blank" rel="noopener">https://blog.cloudflare.com/quad9-withdrawal-from-france/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50538994" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50538994</a><br />
+   → Jus 点评：DNS 服务商被要求做流量封锁，选择退出而不是配合。<strong>监管 vs 网络中立</strong>的经典冲突，也是"协议层比平台层顽强"的又一例证。</p>
+</li>
+<li>
+<p><strong>jQuery 4.1.0 发布</strong>（244 分 / 134 评论）<br />
+   <a href="https://github.com/jquery/jquery/releases/tag/4.1.0" target="_blank" rel="noopener">https://github.com/jquery/jquery/releases/tag/4.1.0</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50537156" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50537156</a><br />
+   → Jus 点评：jQuery 还活着而且在发版。怀旧 + 真实使用量，说明<strong>"无聊的技术"寿命比炫技的长</strong>。</p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-17）</h2>
+<ol>
+<li>
+<p><strong>Versine — "Agent 界的 Venmo"，让你的 AI 收发钱</strong><br />
+   <a href="https://www.producthunt.com/products/versine" target="_blank" rel="noopener">https://www.producthunt.com/products/versine</a><br />
+   → Jus 点评：<strong>这直接踩在你 x402 的赛道上</strong>。定位是 agent-to-agent 支付。差别的关键是：Versine 是"产品/平台"（有你得信任的中间人），x402 是"协议"。这正是你该做叙事区隔的地方——<strong>平台管钱，协议不管钱</strong>。今天必须点进去看他们的方案。</p>
+</li>
+<li>
+<p><strong>EkLine — 让你的 API 被 AI Agent 发现、推荐、使用</strong><br />
+   <a href="https://www.producthunt.com/products/ekline" target="_blank" rel="noopener">https://www.producthunt.com/products/ekline</a><br />
+   → Jus 点评：<strong>Agent 时代的 SEO（GEO）</strong>。你今天 HN 那篇"Google AI 答案让搜索流量掉 40%"正好呼应。做开源时记得：<strong>给 Agent 读的文档和给人读的不一样</strong>（llms.txt、结构化 endpoint 描述）。</p>
+</li>
+<li>
+<p><strong>RankSpot — 给 Agent 用的按量付费 SEO 执行层</strong><br />
+   <a href="https://www.producthunt.com/products/rankspot" target="_blank" rel="noopener">https://www.producthunt.com/products/rankspot</a><br />
+   → Jus 点评：又是 payment-per-use + agent 的组合。<strong>按次计费在 agent 场景已经是共识</strong>，这是你今天第三个印证。</p>
+</li>
+<li>
+<p><strong>OpenFrame — AI Agent 运维 IT，每步修复你批准</strong><br />
+   <a href="https://www.producthunt.com/products/openframe-3" target="_blank" rel="noopener">https://www.producthunt.com/products/openframe-3</a><br />
+   → Jus 点评：主打 "You approve every fix" 的人类审批环节。<strong>HITL（Human-in-the-loop）从卖点变成标配</strong>，你的 Rails 护栏思路在外部世界的版本。</p>
+</li>
+<li>
+<p><strong>Liquid d1.2 — 返回校准概率的决策模型</strong><br />
+   <a href="https://www.producthunt.com/products/lfm2" target="_blank" rel="noopener">https://www.producthunt.com/products/lfm2</a><br />
+   → Jus 点评：小模型 + 校准概率，方向冷门但扎实。跟你的 Evaluator 设计有关——<strong>"模型说 80% 就真的是 80%"</strong> 在自动化测试判定里值钱。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 Reddit（r/SideProject + r/SaaS）</h2>
+<ol>
+<li>
+<p><strong>"我厌倦了读上千页满是废话的书，做了个开源本地工具"</strong>（22 分 / 17 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1xyoru3/got_tired_of_reading_1000_page_books_full_of/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xyoru3/got_tired_of_reading_1000_page_books_full_of/</a><br />
+   → Jus 点评：本地 + 开源 + 明确痛点，独立开发的标准模板。</p>
+</li>
+<li>
+<p><strong>有人在我公开复出的几天后抄了我 app 的名字、吉祥物和定位</strong>（42 分 / 49 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1xymycu/someone_copied_my_apps_name_mascot_and_niche_just/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xymycu/someone_copied_my_apps_name_mascot_and_niche_just/</a><br />
+   → Jus 点评：<strong>做开源必读的反面教材</strong>。名字/品牌先占位（域名 + 商标 + GitHub org），代码开源不等于品牌开源。</p>
+</li>
+<li>
+<p><strong>做了个 Yoohoo，手机就能批 Claude Code 的权限请求</strong>（10 分 / 11 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1xyk067/built_yoohoo_so_i_can_answer_claude_codes/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xyk067/built_yoohoo_so_i_can_answer_claude_codes/</a><br />
+   → Jus 点评：<strong>这不就是你 codex 桥接的移动版吗</strong>。人在外面，agent 卡在权限确认上——这是真实痛点，而且实现不复杂。cc-connect + Telegram 其实已经有雏形了。</p>
+</li>
+<li>
+<p><strong>"你的 SaaS 为什么不能被 Claude 复制？"</strong>（61 分 / 98 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1xyfpmn/why_cant_your_saas_be_replicated_by_claude/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1xyfpmn/why_cant_your_saas_be_replicated_by_claude/</a><br />
+   → Jus 点评：今天最该想的一条。共识答案：<strong>能被复制的功能 = 护城河为零</strong>，活下来的靠数据、分发、信任、集成深度。这也是你选开源 + 协议的底层逻辑。</p>
+</li>
+<li>
+<p><strong>"我 3 天看了 20 个 SaaS 点子，每一个都已经有人做了"</strong>（11 分 / 20 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1xywgb4/i_checked_20_saas_ideas_in_3_days_and_every/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1xywgb4/i_checked_20_saas_ideas_in_3_days_and_every/</a><br />
+   → Jus 点评：点子本身不值钱，<strong>执行速度和分发才值钱</strong>。别在"有没有人做过"上内耗。</p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis 需求（还没人做的金矿）</h2>
+<blockquote>
+<p>⚠️ SMT 板块连续第二天异常：<code>/new</code> <code>/hot</code> 仍 403，登录态过期未修。<code>top?t=day</code> 只有 2 条，用周榜兜底，去重后只保留新增/新增实的。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Supermarket Navi — 超市内导航（新，11-17，3 分 / 4 评论）</strong><br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xyhtfs/supermarket_navi/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xyhtfs/supermarket_navi/</a><br />
+   → Jus 点评：<strong>今天的真新需求</strong>。找货架上的东西、按购物清单排最优路线。技术不难（室内定位 + 货架数据），护城河在<strong>逐店采集货架图</strong>——典型的苦活型生意，适合一个人慢慢做。</p>
+</li>
+<li>
+<p><strong>"为什么网站拦截器对我从来不管用"——要个真能坚持住的专注工具</strong>（11-12，6 分 / 4 评论，本周榜一）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xuax23/i_was_thinking_about_why_standard_website/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xuax23/i_was_thinking_about_why_standard_website/</a><br />
+   → Jus 点评：昨天已推，仍是本周热度第一，说明需求经得起一天。补充视角：<strong>做"罚钱"机制需要支付能力</strong>——正好可以吃 x402 的按次扣款，一个很自然的 dogfood 场景。</p>
+</li>
+<li>
+<p><strong>An AI companion that calls you on its own（无用户触发）</strong>（11-11）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xt5t80/an_ai_companion_that_text_and_video_calls_you_on/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xt5t80/an_ai_companion_that_text_and_video_calls_you_on/</a><br />
+   → Jus 点评：你"Agent 分身"的核心动作。<strong>主动性 + 支付能力</strong>这两条今天在 PH 上分别被 Versine 和主动性产品验证了。</p>
+</li>
+<li>
+<p><strong>虚拟支付卡合并成一张的免费 app</strong>（11-12）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xu69yl/i_wanted_to_create_a_free_app_for_combining_all/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xu69yl/i_wanted_to_create_a_free_app_for_combining_all/</a><br />
+   → Jus 点评：需求真实（很多人有 5 张虚拟卡），但<strong>金融合规门槛极高</strong>，个人做不了。看它是为了排除。</p>
+</li>
+</ol>
+<hr />
+<h2>🎯 今日灵感提炼</h2>
+<ol>
+<li><strong>x402 赛道今天被"公开竞争"了 —— Versine 上线 PH</strong>，口号就是 "Venmo for agents"。<br />
+   → 但<strong>它是平台，你是协议</strong>。这就是你真正的位置：不托管钱、不做账户体系、只做 402 的语义和链上结算原语。叙事上必须第一天就把这条讲清楚，否则会被当成"又一个支付产品"。</li>
+<li><strong>"按次计费"今天出现三次</strong>（RankSpot 按量 SEO、Versine agent 支付、SaaS 讨论里席位制已死）——市场共识在往你这边移动，<strong>时机是对的</strong>。</li>
+<li><strong>可操作的两条</strong>：<br />
+   - 去读 Versine 的产品页和技术细节，写一段"我们和他们不一样"的对比（顺便当 README 的 positioning 章节）<br />
+   - Yoohoo（手机批 agent 权限）这个痛，你的 cc-connect 已经有 80% 基础，做成一键批准 + 推送，是低成本的 dogfood 也给开源加分</li>
+</ol>
+<hr />
+<p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
+<em>SMT 板块异常第 2 天：/new /hot 403，fetch_smt.py 登录态过期，用 top?t=week 兜底（已去重）</em></p><div class="pager"><a class="l" href="2026-11-17.html">← 2026-11-17</a></div></article>
+<footer>自动生成 · 2026-11-18</footer>
+</div>
+</body></html>
