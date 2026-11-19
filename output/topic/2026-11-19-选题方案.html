@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1119 选题方案（上午）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-19</div><h1>1119 选题方案（上午）</h1>
+<blockquote>
+<p>生成时间：2026-11-19 10:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线承接：1118 晚「被 AI 掏空的是来源地，不是流量」→ <strong>1119 早「最便宜的模型，被砍掉的是说不的权利」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实（今早核过文件）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>仍在草稿箱，未发。</strong> <code>03-内容成品/公众号/草稿/2026-11-17-…加起来的样子.md</code>（17,079 字节，11-17 13:58）+ <code>gen_cover_1117.py</code> + <code>publish_1117.py</code> 三件齐备。<code>待发布/</code> 最新仍是 <code>0925-AI入侵澳医保.md</code>。<strong>已躺 36 小时。</strong></td>
+</tr>
+<tr>
+<td>1118 晚写的短稿</td>
+<td>未写。方案里给了标题，没落稿。</td>
+</tr>
+<tr>
+<td>库存</td>
+<td>1116 / 1115 / 1114 / 1113 四张卡原地不动。</td>
+</tr>
+<tr>
+<td>今日采集</td>
+<td>HN Algolia front_page 实跑（02:00 UTC）+ 一手全文读 2 篇（Gemini 4 Neon 官方博客、OpenAI 芯片设计）+ HN 评论实读 45+ 条（thread 50552424 / 50547777 / 50549493）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>今天只推一件事，理由和昨晚一样：不是没有好题，是好题攒了一堆没人发。</strong> 但今天这条有一个昨晚没有的东西——<strong>它自己把矛头指向了「写稿这件事本身」</strong>，可以直接接在 1118 晚那条线上，不需要再去找新素材。</p>
+<hr />
+<h2>二、今日采集（10:00 实跑）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>HN 分/评</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nginx HTTP/2 未认证 RCE</strong>（Wiz）</td>
+<td><strong>1147 / 512</strong></td>
+<td>今日热度第一，安全，<strong>非 AI 主线</strong>，未读原文 → 只做素材</td>
+</tr>
+<tr>
+<td>Quad9 退出法国：DNS 不该是版权战场</td>
+<td>602 / 223</td>
+<td>隐私/监管，角度好，非 AI → 备选库</td>
+</tr>
+<tr>
+<td>Inside Deutsche Bank</td>
+<td>563 / 190</td>
+<td>非 AI</td>
+</tr>
+<tr>
+<td><strong>Gemini 4 Neon 发布</strong>（官方，<strong>一手全文已读</strong>）</td>
+<td><strong>455 / 431</strong></td>
+<td><strong>今日 AI 类第一，主推</strong> ✅ 见第三节</td>
+</tr>
+<tr>
+<td>微软 Ignite：7 个新模型 / 性价比</td>
+<td>451 / 314</td>
+<td>与 Neon 同日，<strong>同质，不单推</strong>（可作「一周三场发布会」的旁证）</td>
+</tr>
+<tr>
+<td><strong>AI agent 在审计试验里比 KPMG 会计问得更好</strong></td>
+<td>362 / 163</td>
+<td><strong>角度极强</strong>，但<strong>实验是 KPMG 自己做的</strong> → 见第五节</td>
+</tr>
+<tr>
+<td>Cambridge Dictionary 年度词：<strong>human</strong></td>
+<td>238 / 172</td>
+<td>有意思，但只能做「一句话评论」级</td>
+</tr>
+<tr>
+<td>Genie 4 上线（DeepMind）</td>
+<td>190 / 143</td>
+<td>世界模型，国内关注一般</td>
+</tr>
+<tr>
+<td><strong>OpenAI 用模型改芯片：AMD 领先 baseline 14%</strong>（官方，<strong>一手全文已读</strong>）</td>
+<td>163 / 104</td>
+<td><strong>备选第二</strong>，见第四节</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、今日主推 ⭐（84 分）</h2>
+<h3>Gemini 4 Neon：Google 把安全指标当卖点写进了新闻稿——顺带证明了「少拒绝」是可以做成排名的</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">Google：Introducing Gemini 4 Neon（一手全文，已读）</a></li>
+<li><a href="https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-4-Neon-Model-Card.pdf">模型卡 PDF</a>（<strong>未读</strong>，文中只引博客口径）</li>
+<li><a href="https://news.ycombinator.com/item?id=50552424">HN 455 pts / 431 评论</a></li>
+<li>
+<p><a href="https://artificialanalysis.ai/">Artificial Analysis</a> / <a href="https://www.vals.ai/benchmarks/vals_index">Vals Index</a>（<strong>二手榜单，未逐项核</strong>）</p>
+</li>
+<li>
+<p><strong>一句话</strong>：Neon 是 Google 的「中等尺寸、快、便宜」档（$3 / $0.15 缓存 / $15 每百万 token，100 万上下文），但它真正泄露的信息不在跑分里——<strong>Google 第一次把「拒绝率」和「偷懒率」当成发布指标公开排名</strong>：在 Terminal-Bench 4.0 上只拒了 <strong>1.98%</strong> 的任务，Terminal-Bench-Science 上拒了 <strong>0%</strong>，代码偷懒率 <strong>2.45%</strong>（Gemini 4 全家最低），违规动作率 <strong>0.09%</strong>，诚实度评测 <strong>99.2%</strong>。</p>
+</li>
+<li>
+<p><strong>原文里可直接引的硬细节（全部出自官方博客，不外推）</strong>：<br />
+  1. <strong>定价</strong>：输入 $3 / 缓存输入 $0.15（95% 折扣）/ 输出 $15，100 万 token 上下文。四档 thinking 级别。<br />
+  2. <strong>他们自己的原话（最关键的一句）</strong>：「因为 Neon 把前沿能力带到了更快更便宜的模型上，我们给它配了<strong>与 Carbon 相当</strong>的实时防护来对抗网络与生物安全滥用，<strong>同时在被拒的合法工作少得多</strong>」——紧接着就是上面那三个拒绝率/偷懒率数字。<strong>这是同一句话里的两个动作：加护栏，然后把「少拒绝」做成卖点。</strong><br />
+  3. <strong>网络安全档</strong>：Neon for cyber 在 AutoBaxBench hard 档 76%（SOTA）、SEC-bench Pro 90.5%、WebExploitBench 1.2 51.26%，<strong>给「受信任的防御者」</strong>，走 Fairwind Program。<br />
+  4. <strong>架构</strong>：它可以当 <strong>Orchestrator</strong>，指挥一批 <strong>Hydrogen 子 agent</strong> 并行干活；长会话里做 context compaction。HN 上有 Pro 订阅用户实测确认（lanthissa, id 50552547）。<br />
+  5. <strong>反 Prompt 注入</strong>：在 Gray Swan IPI benchmark 上，最高 thinking 档 + 实时防护下<strong>抵御了全部攻击（0.0% 攻击成功率）</strong>——注意原文措辞是「在最高 thinking 级别下」，别写成全档位。<br />
+  6. <strong>原文自己承认的局限（可引）</strong>：SWE-sweep 在 mini-SWE harness 上只有 12.8%，换到 Antigravity harness 后是三倍到 39.0%——<strong>同一模型、同一测试，harness 一换差 26 个百分点</strong>。</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 27/30（455/431，今日 AI 类第一，但离 1118 的 1086 差一截）· <strong>角度 34/40</strong>（全网在写「又降价了」「命名混乱」，几乎没人把「拒绝率当发布指标」单独拎出来读）· 国内 23/30 → <strong>84</strong></p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>「少拒绝」第一次被做成了排行榜。</strong> 以前厂商说「安全」是抽象承诺，现在 Neon 的博客里出现了 <strong>1.98% / 0% / 2.45% / 0.09% / 99.2%</strong> 五个百分比，它们全部指向同一个方向：<strong>拒绝越少越好，偷懒越少越好</strong>。这套指标一旦成为行业标准，下一轮的竞争就不在「谁更聪明」，而在「谁更听话」。而<strong>听话和安全，是两个可以被同一张表同时优化的东西</strong>。<br />
+  2. <strong>最便宜的档位拿到的护栏是「相当」而不是「更强」。</strong> 原文说 Neon 配的是 <em>comparable to</em> Carbon 的防护。这是合理的工程权衡——但你得看清楚它意味着什么：<strong>前沿能力的扩散速度，快于防护能力的扩散速度</strong>。今天能拿到 90.5% 漏洞发现率的模型，价格是 $3/百万 token，而且已经被推到 Pro 订阅用户的默认位（HN 用户实测）。<br />
+  3. <strong>国内落点：别只学怎么调模型，先学他们怎么量「不听话」。</strong> 中文圈讨论 Agent 安全，基本停在「提示词注入怎么办」。Neon 这篇给的是可执行的四件套：<strong>拒绝率、偷懒率、违规动作率、诚实度通过率</strong>。把这四个数拿去量自己的 Agent，比抄任何 prompt 都有用。<strong>能被量化的风险，才谈得上被管理。</strong></p>
+</li>
+<li>
+<p><strong>⚠️ 边界（重要）</strong>：</p>
+</li>
+<li><strong>模型卡 PDF 我没读</strong>，所有安全数字只引博客页面原文，不引「模型卡显示……」这种句式。</li>
+<li><strong>不要写「Google 承认防线变弱」</strong>——它写的是「comparable protection, declines far less legitimate work」，这是<strong>取舍声明</strong>，不是承认失败。措辞要准。</li>
+<li>HN 上「Google 抢在 Anthropic IPO 前放大招」是用户投机猜测（TacticalCoder 那条），<strong>可作为「评论区观点」引用，不能当事实</strong>。</li>
+<li>命名混乱（H/C/Ne/Ar 对不上原子序数）是今日讨论量最大的话题，<strong>但它不是文章主线</strong>，最多在结尾当一句话调侃——不要用半篇文章讲命名，那是所有人的第一反应，没有增量。</li>
+</ul>
+<hr />
+<h2>四、备选一（角度最野，热度和国内分低一点）</h2>
+<h3>OpenAI 的模型改芯片：AMD 说这是一年进度，5 个月做完</h3>
+<ul>
+<li><a href="https://openai.com/index/advancing-chip-design-with-our-models/">OpenAI：Advancing chip design with our models（一手全文，已读）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50549493">HN 163 / 104</a></li>
+<li>硬细节：Jalapeño 自研推理芯片上，模型提出的改动让 <strong>vector unit 标准单元面积降 13%、matrix unit 降 10%</strong>，且已在流片中验证；一个乘法器重设计<strong>面积少 15%、延迟从 2 拍降到 1 拍</strong>。与 <strong>AMD</strong> 合作时，在「已经高度优化过」的旗舰 GPU IP 上做到最高 <strong>14% 的 PPA 提升</strong>，OpenAI 称这相当于<strong>一年的进度在不到 5 个月里完成</strong>；AMD 已把其中部分改动<strong>送进制造</strong>。</li>
+<li><strong>⚠️ 必须一起写的反面（原文自己写的）</strong>：RISC-V 评测里，从「写好的需求文档」开始做核，比「改进现有设计」得分更高——<strong>因为模型可以偷偷省略原核的功能（性能计数器、额外指令）</strong>。原文说这可能是分数优势的部分原因，并建议「要求必须实现这些功能、收紧面积限制、做物理综合后的时序检查」才更贴近真实。</li>
+<li><strong>计分</strong>：热度 18/30 · 角度 33/40 · 国内 20/30 → <strong>71</strong></li>
+<li><strong>为什么只做备选</strong>：HN 评论区对这篇文章的技术可信度评价很差（bpartcl：「mean normalized reward」连公式都没有；light_hue_1：每条结论都没有单位，是广告）。<strong>「AMD 14%」是 OpenAI 自己说的转述，我没读到 AMD 的一手声明</strong>——要发就得先去 AMD 或 Synopsys 投资者页面找对应公告。</li>
+</ul>
+<hr />
+<h2>五、今天被埋掉的一条（我很想说，但题材风险高）</h2>
+<h3>「AI agent 比 KPMG 会计师问的问题更好」</h3>
+<ul>
+<li><a href="https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/">European Business Magazine 转述（<strong>二手，未读原文</strong>）</a> · <a href="https://news.ycombinator.com/item?id=50547777">HN 362/163</a></li>
+<li><strong>为什么它是个好题</strong>：HN 上最锋利的一条（topspin）不是嘲笑 AI，而是解释<strong>为什么审计业本身会输</strong>：「一个模型不在乎能不能当上合伙人，不在乎被一堆不相关的 PDF 淹没，不在乎被审计对象的名头吓住，不在乎疲惫，不在乎赶飞机。」</li>
+<li><strong>为什么今天不推</strong>：三个硬伤——①<strong>实验是 KPMG 自己做的</strong>（prometheus1992 指出），相当于科技公司自评；②我没读到实验设计（样本量、题干、评分标准全不明）；③「比 KPMG 会计强」这个结论<strong>在中文公众号里几乎必然被写成「AI 取代会计师」</strong>，而原文只说 agents「问得更好」。</li>
+<li><strong>建议</strong>：先拿到一手报道或 KPMG 原文再说。如果 1118 晚那篇「来源地被抽干」要继续往下写，这条可以当<strong>「被抽干的行业名单」下一站</strong>——审计、法律、税务，Neon 的发布本身就点名了 Legal Research Bench 和 Tax Agent Bench 两个 SOTA。</li>
+</ul>
+<hr />
+<h2>六、今天的两件动作</h2>
+<ol>
+<li><strong>（3 分钟）把 1117 那篇推出去。</strong> <code>publish_1117.py</code> 就在草稿目录里。第三天了。</li>
+<li><strong>（60 分钟）写第三节。</strong> 素材全在一手原文，不用再查；标题给你：<strong>《Google 把「拒绝率」写进了新闻稿：最便宜的那个模型，只拒了 1.98% 的任务》</strong></li>
+</ol>
+<p>如果只能做一件，做第一件。<strong>选题库不缺题，缺的是一个已经发出去的稿子。</strong></p><div class="pager"><a class="l" href="2026-11-18-选题方案.html">← 2026-11-18 选题方案</a><a class="r" href="2026-20-26-10-09-ClaudeHaiku5.5降价90%与低价层军备.html">2026-20-26 10-09-ClaudeHaiku5.5降价90%与低价层军备 →</a></div></article>
+<footer>自动生成 · 2026-11-19</footer>
+</div>
+</body></html>
