@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-11-20（周五）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-20</div><h1>每日独立开发精选 — 2026-11-20（周五）</h1>
+<h2>🧠 Hacker News</h2>
+<ol>
+<li>
+<p><strong>Anthropic 在纳斯达克首日市值 2 万亿美元</strong>（770 分 / 1439 评论，今日爆炸话题）<br />
+   <a href="https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/" target="_blank" rel="noopener">https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50562754" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50562754</a><br />
+   → Jus 点评：1439 条评论里绝大多数在吵泡沫。对你有用的判断是：<strong>资本已经把 AI 基础设施层彻底商品化</strong>，模型/算力都不是个人能碰的战场。反过来说——越往上（协议、工具、分发、垂直场景）个人空间越大。</p>
+</li>
+<li>
+<p><strong>Claude 解决两个黑洞物理的开放问题</strong>（323 分 / 145 评论）<br />
+   <a href="https://www.anthropic.com/research/claude-black-hole-physics" target="_blank" rel="noopener">https://www.anthropic.com/research/claude-black-hole-physics</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50563148" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50563148</a><br />
+   → Jus 点评：AI 开始出"新知识"而不是"复述知识"。这条对做 AI 驱动自动化测试的你意义很直接：<strong>别只让 agent 跑测试用例，让它去找测试从没覆盖到的边界</strong>——那是真正的增量价值。</p>
+</li>
+<li>
+<p><strong>Java4Shell：这个洞 2026 年 9 月就有人报了</strong>（328 分 / 87 评论）<br />
+   <a href="https://github.com/openjdk/jdk/pull/32781" target="_blank" rel="noopener">https://github.com/openjdk/jdk/pull/32781</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50558906" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50558906</a><br />
+   → Jus 点评：昨天你看到的是"漏洞曝光 472 分"，今天是"<strong>两个月前就报了、到现在没修完</strong>"。这才是真正的教训：上报 ≠ 修复，开源维护者的响应能力是系统性瓶颈。</p>
+</li>
+<li>
+<p><strong>英国政府被迫承认给 Apple 下了秘密加密令</strong>（429 分 / 189 评论）<br />
+   <a href="https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/" target="_blank" rel="noopener">https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50562113" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50562113</a><br />
+   → Jus 点评：秘密法庭令 + 跨国公司。<strong>端到端加密的法律风险从技术问题变成政治问题</strong>。你做支付协议要把"不可审查性"和"合规可配合"的边界提前写清楚。</p>
+</li>
+<li>
+<p><strong>车库门垃圾广告：为什么我的车库门被陌生人打开了</strong>（701 分 / 291 评论）<br />
+   <a href="https://blog.harrison.page/garage-door-spam/" target="_blank" rel="noopener">https://blog.harrison.page/garage-door-spam/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50519231" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50519231</a><br />
+   → Jus 点评：今天最爽的一篇。物联网设备默认广播协议 + 无认证 = 谁都能开你家门。<strong>"默认开放"是几乎所有 IoT 协议的原罪</strong>。</p>
+</li>
+<li>
+<p><strong>付费广告如何变成 98% 的抽税机器</strong>（144 分 / 76 评论）<br />
+   <a href="https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine" target="_blank" rel="noopener">https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50564159" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50564159</a><br />
+   → Jus 点评：<strong>独立开发者的核心困境被量化了</strong>——买流量等于给平台交 98% 的税。这是为什么 Reddit/HN 的自然分发比投放值钱。</p>
+</li>
+<li>
+<p><strong>Show HN：Cornhole News —— 中西部版 Hacker News</strong>（168 分 / 84 评论）<br />
+   <a href="https://cornholenews.news" target="_blank" rel="noopener">https://cornholenews.news</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50561515" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50561515</a><br />
+   → Jus 点评：<strong>垂直化 HN 是一个可复制的模式</strong>——挑一个地域/行业，复制 HN 的信息结构，做社区。做内容站的话这是现成模板。</p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-19，今天 feed 出了 10 条）</h2>
+<ol>
+<li>
+<p><strong>Teaflask — 你 app 里的自我进化 AI copilot，零后端改动</strong><br />
+   <a href="https://www.producthunt.com/products/teaflask" target="_blank" rel="noopener">https://www.producthunt.com/products/teaflask</a><br />
+   → Jus 点评：<strong>今天最值得研究的</strong>。卖点是"不改后端就能接"，本质是把 agent 做成 SDK 级 drop-in。你做 Agent 分身正好可以从"接入成本趋零"切入——生态里最难的是让别人愿意集成你。</p>
+</li>
+<li>
+<p><strong>S.Space — 团队 + 所有人的 AI Agent 在一个工作区</strong>（昨天推过，仍在榜）<br />
+   <a href="https://www.producthunt.com/products/s-space" target="_blank" rel="noopener">https://www.producthunt.com/products/s-space</a><br />
+   → Jus 点评：连续两天在榜，说明真需求。<strong>Agent 协作层仍然是空位</strong>，这条昨天的判断今天被加强。</p>
+</li>
+<li>
+<p><strong>Cleared — 戒烟/戒电子烟的个人计划</strong><br />
+   <a href="https://www.producthunt.com/products/cleared-quit-nicotine" target="_blank" rel="noopener">https://www.producthunt.com/products/cleared-quit-nicotine</a><br />
+   → Jus 点评：纯工具 + 行为改变的赛道，<strong>订阅制友好、留存靠习惯</strong>。健康类个人 app 是单人开发者最稳的现金流类型之一。</p>
+</li>
+<li>
+<p><strong>Room AI — 像跟设计师对话一样改你的房间</strong><br />
+   <a href="https://www.producthunt.com/products/room-ai-2" target="_blank" rel="noopener">https://www.producthunt.com/products/room-ai-2</a><br />
+   → Jus 点评：垂直场景 + 视觉生成，切口清晰。<strong>"一次改一个变化"</strong>这个交互设计值得学——降低认知负担，比一次性给方案更容易接受。</p>
+</li>
+<li>
+<p><strong>Impractical — 做出 Framer/Notion 风格的发布视频</strong><br />
+   <a href="https://www.producthunt.com/products/impractical" target="_blank" rel="noopener">https://www.producthunt.com/products/impractical</a><br />
+   → Jus 点评：<strong>独立开发者最缺的其实是发布物料</strong>。这种"帮你做 launch video"的工具，直接对应你未来开源项目冷启动的第一屏。</p>
+</li>
+<li>
+<p><strong>HeyGen Avatar 6 — 看起来像你本人的 AI Avatar</strong><br />
+   <a href="https://www.producthunt.com/products/heygen" target="_blank" rel="noopener">https://www.producthunt.com/products/heygen</a><br />
+   → Jus 点评：数字人质量到了"能当本人用"的门槛。做内容站/副业品牌时，<strong>你本人出镜的成本可以降到零</strong>。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 Reddit（r/SideProject + r/SaaS）</h2>
+<ol>
+<li>
+<p><strong>我做了一个真能找到线索的开源 Reddit 监控工具</strong>（78 分 / 39 评论，今日第一）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1xzzzgw/i_made_an_opensource_reddit_monitoring_tool_that/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xzzzgw/i_made_an_opensource_reddit_monitoring_tool_that/</a><br />
+   → Jus 点评：<strong>巧合但极有用</strong>——你正在用 Reddit 做每日采集，官方 API 天天 403。这类"监控 + 找需求"的开源工具，对你是直接可用的生产力工具，也验证了"帮人从社区里挖需求"本身是产品。</p>
+</li>
+<li>
+<p><strong>有人把我的开源 overlay 项目加了登录+付费墙，然后上线了</strong>（23 分 / 32 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y09e08/someone_took_my_opensource_overlay_studio_project/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y09e08/someone_took_my_opensource_overlay_studio_project/</a><br />
+   → Jus 点评：<strong>本周第二次出现同类贴</strong>（前天是抄名字/吉祥物）。开源项目必须第一天定好许可（AGPL vs MIT 的差别就是这篇帖子的全部内容）。你将来发 x402 相关项目，许可证选择是战略决策不是形式。</p>
+</li>
+<li>
+<p><strong>做了个文件分享 side project，7.5K 活跃用户，学到的东西</strong>（32 分 / 24 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y03z00/built_a_filesharing_side_project_crossed_75k/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y03z00/built_a_filesharing_side_project_crossed_75k/</a><br />
+   → Jus 点评：小工具能到 7.5K 活跃，值得看他的分发路径——<strong>文件分享是天然病毒循环</strong>（每发一次就带一个曝光）。</p>
+</li>
+<li>
+<p><strong>AI 让 contact form 看起来很棒，但谁在真的回线索？</strong>（17 分 / 14 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y08gyw/ai_made_the_contact_form_look_great_but_whos/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y08gyw/ai_made_the_contact_form_look_great_but_whos/</a><br />
+   → Jus 点评：<strong>"AI 做前端，人做跟进"</strong>的现实暴露。这其实是个真实的产品机会：AI 把入站量放大十倍，但转化瓶颈还在人身上。</p>
+</li>
+<li>
+<p><strong>AI 杀死了"粗糙的 MVP"</strong>（19 分 / 23 评论，11-20 今天）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y0hj3n/ai_killed_the_scrappy_mvp/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y0hj3n/ai_killed_the_scrappy_mvp/</a><br />
+   → Jus 点评：<strong>今天最该想的一条</strong>。以前 MVP 靠简陋换速度，现在用户预期被 AI 拉高，"做得快"不再算优势，<strong>判断力和分发重新成为唯一壁垒</strong>。</p>
+</li>
+<li>
+<p><strong>辞职 6 个月做 SaaS 的更新</strong>（43 分 / 47 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y0166h/update_after_6_months_i_quit_my_fulltime_job_to/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y0166h/update_after_6_months_i_quit_my_fulltime_job_to/</a><br />
+   → Jus 点评：真实的时间线参考。你副业规划里"6 个月第一笔付费"的目标，这种帖是最诚实的对照组。</p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis 需求（还没人做的金矿）</h2>
+<blockquote>
+<p>⚠️ SMT 连续第 4 天 <code>/new</code> <code>/hot</code> 403，登录态未修。今天 <code>top?t=day</code> 只有 4 条，且 3 条是废帖。以下只保留 2 条 + 一句判断。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Crowdsourced「自拍 → 预设角色」匹配器（AR 相关）</strong>（11-19）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y03u1m/title_request_crowdsourced_selfietopreset/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y03u1m/title_request_crowdsourced_selfietopreset/</a><br />
+   → Jus 点评：把真人自拍匹配到游戏/虚拟形象的预设，靠众包数据训练。<strong>有真实场景（游戏建模/虚拟主播），但数据冷启动极难</strong>——典型的需要双边启动的项目，个人慎入。</p>
+</li>
+<li>
+<p><strong>"被迫装了 Life360，有没有更好的替代？"</strong>（11-19）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y0bpux/forced_to_get_life360_is_this_better/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y0bpux/forced_to_get_life360_is_this_better/</a><br />
+   → Jus 点评：这其实是<strong>抱怨 + 需求混合体</strong>——被家人强制安装的定位共享工具，痛点是隐私和强制感。可以做出"自愿+可撤销+最小披露"的替代方案。小但真实。</p>
+</li>
+<li>
+<p><strong>板块判断</strong>：SMT 已连续 4 天近乎停摆（<code>/new</code> <code>/hot</code> 全 403，日榜只剩个位数且大量废帖）。<br />
+   → <strong>Cookie 必须今天修，否则这个金矿板块就废了</strong>。下面会给你两个方案。</p>
+</li>
+</ol>
+<hr />
+<h2>🎯 今日灵感提炼</h2>
+<ol>
+<li><strong>"AI 杀死了粗糙 MVP"是今天最重的一句</strong>——它直接改写了独立开发的竞争逻辑。以前你的优势是"快"，现在速度归零，<strong>判断力（做什么）+ 分发（给谁看）才是全部</strong>。这两样恰好都是你能在有全职工作的情况下积累的（英伟达内部视角 + Reddit/HN 的日常嗅觉）。</li>
+<li><strong>两条开源侵占事件连续两天出现</strong>（昨天抄品牌、今天加付费墙重新发布）= 开源圈生态在恶化。<strong>你的项目第一天就要定许可证 + 品牌占位 + 一个明确的"这不是我们的官方发行版"声明位置</strong>。</li>
+<li><strong>可操作</strong>：<br />
+   - 🔧 SMT 的 Cookie 今天必须修（下面给方案）<br />
+   - 📝 去读 <a href="https://www.producthunt.com/products/teaflask">Teaflask</a> 的集成方式——"零后端改动接入"是 Agent 生态的正确姿势<br />
+   - 🎬 记一笔 <a href="https://www.producthunt.com/products/impractical">Impractical</a>：你未来开源项目发布时，第一屏物料的价值 &gt; README 的三倍</li>
+</ol>
+<hr />
+<p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
+<em>SMT 异常第 4 天：/new /hot 403，fetch_smt.py 登录态过期，top?t=day 仅 4 条（3 条废帖）</em></p><div class="pager"><a class="l" href="2026-11-19.html">← 2026-11-19</a></div></article>
+<footer>自动生成 · 2026-11-20</footer>
+</div>
+</body></html>
