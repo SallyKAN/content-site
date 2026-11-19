@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-11-19（周四）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-19</div><h1>每日独立开发精选 — 2026-11-19（周四）</h1>
+<h2>🧠 Hacker News</h2>
+<ol>
+<li>
+<p><strong>Nginx 未授权远程代码执行（HTTP/2 漏洞）</strong>（1097 分 / 493 评论，今日第一）<br />
+   <a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities" target="_blank" rel="noopener">https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50547374" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50547374</a><br />
+   → Jus 点评：<strong>今天最该处理的技术事项</strong>。未授权 RCE = 只要暴露 443 就可能中招。你 Mac mini 上跑的 cc-connect / 各种服务，先查 <code>nginx -v</code> 版本，公司那堆边缘网关这周也该推补丁了。</p>
+</li>
+<li>
+<p><strong>Gemini 4 Neon 发布</strong>（359 分 / 344 评论）<br />
+   <a href="https://blog.google/innovation-and-ai/models-and-models-and-research/gemini-models/introducing-gemini-4-neon/" target="_blank" rel="noopener">https://blog.google/innovation-and-ai/models-and-models-and-research/gemini-models/introducing-gemini-4-neon/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50552424" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50552424</a><br />
+   → Jus 点评：模型迭代周期已经压到 4-6 周一级。<strong>对独立开发者真正的含义</strong>：不要在"换更好的模型"上花时间，模型层是别人的战场，你的价值在协议/工具/分发。</p>
+</li>
+<li>
+<p><strong>Microsoft Ignite 2026：七个新模型，主打性价比</strong>（427 分 / 296 评论）<br />
+   <a href="https://microsoft.ai/news/microsoft-ignite-2026/" target="_blank" rel="noopener">https://microsoft.ai/news/microsoft-ignite-2026/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50548021" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50548021</a><br />
+   → Jus 点评：价格战继续。PH 上今天还有腾讯混元 $0.07/M 输入——<strong>推理成本在崩塌</strong>，按用量计费的 agent 经济模型越来越成立。</p>
+</li>
+<li>
+<p><strong>AI Agent 在审计测试中比 KPMG 会计师更会提问</strong>（331 分 / 147 评论）<br />
+   <a href="https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/" target="_blank" rel="noopener">https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50547777" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50547777</a><br />
+   → Jus 点评：赢的不是"答得好"，是<strong>"问得对"</strong>。跟你 Harness 里 Task Loop 的目标拆解是一回事——好的 agent 体系，提问质量 &gt; 回答质量。</p>
+</li>
+<li>
+<p><strong>DNS 解析器不该成为打击盗版的战场</strong>（577 分 / 214 评论，Quad9 后续）<br />
+   <a href="https://techstackups.com/articles/quad9-leaves-france-dns-blocking/" target="_blank" rel="noopener">https://techstackups.com/articles/quad9-leaves-france-dns-blocking/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50545958" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50545958</a><br />
+   → Jus 点评：昨天的 Quad9 撤法今天继续发酵。<strong>协议层一旦被强制执行业务规则，就失去中立性</strong>——你 x402 做中立支付原语，早晚也要面对同类问题（制裁名单、合规黑名单），现在可以想想立场怎么写进设计。</p>
+</li>
+<li>
+<p><strong>用 OpenAI 模型加速芯片设计</strong>（152 分 / 91 评论）<br />
+   <a href="https://openai.com/index/advancing-chip-design-with-our-models/" target="_blank" rel="noopener">https://openai.com/index/advancing-chip-design-with-our-models/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50549493" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50549493</a><br />
+   → Jus 点评：<strong>跟你在 Nvidia 干的事直接对线</strong>。AI 进芯片设计流程已经在真实落地。你在 Tegra/CUDA 侧做的 AI 驱动自动化测试，属于同一条趋势的另一半——这个视角在你简历/副业叙事里都值钱。</p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-19，注意今天只出了 5 条）</h2>
+<ol>
+<li>
+<p><strong>S.Space — 你的团队 + 所有人的 AI Agent，放在一个工作区</strong><br />
+   <a href="https://www.producthunt.com/products/s-space" target="_blank" rel="noopener">https://www.producthunt.com/products/s-space</a><br />
+   → Jus 点评：<strong>"Agent 协作层"开始有人做了</strong>。这是 Agent 分身最自然的 B 端形态——不是每个人一个 bot，而是一个团队共享的 agent 上下文。你做开源时这是最好的场景切入点。</p>
+</li>
+<li>
+<p><strong>Incredible Agents — 能看你屏幕、跑你 agent 的语音 AI</strong><br />
+   <a href="https://www.producthunt.com/products/incredible" target="_blank" rel="noopener">https://www.producthunt.com/products/incredible</a><br />
+   → Jus 点评：语音 + 屏幕理解 + 执行，三个能力叠一起。<strong>语音是 agent 最被低估的入口</strong>——双手占用时（开车/做饭/调试）才真正有刚需。</p>
+</li>
+<li>
+<p><strong>Toone — Grokbot 遇上 n8n/zapier</strong><br />
+   <a href="https://www.producthunt.com/products/toone" target="_blank" rel="noopener">https://www.producthunt.com/products/toone</a><br />
+   → Jus 点评：把 agent 和自动化编排粘起来。<strong>市场正在把"agent"和"workflow"缝在一起</strong>，说明纯 agent 单独用还不够——用户要的是能嵌进现有流程的东西。</p>
+</li>
+<li>
+<p><strong>腾讯混元 Hy4 flash — $0.07/M 输入</strong><br />
+   <a href="https://www.producthunt.com/products/hunyuan-a13b" target="_blank" rel="noopener">https://www.producthunt.com/products/hunyuan-a13b</a><br />
+   → Jus 点评：国产模型上 PH 打价格，<strong>海外分发已经开始了</strong>。你要是做面向国内的工具，模型成本已经不是问题了，别在这上面纠结。</p>
+</li>
+<li>
+<p><strong>Stringman — 把你的房间变成抓娃娃机</strong><br />
+   <a href="https://www.producthunt.com/products/stringman" target="_blank" rel="noopener">https://www.producthunt.com/products/stringman</a><br />
+   → Jus 点评：纯玩心硬件项目。今天榜单里唯一的"无用之物"，但<strong>这类项目最容易在 HN/Reddit 病毒传播</strong>——纯做开源影响力的人应该学它的可演示性（一 GIF 就懂）。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 Reddit（r/SideProject + r/SaaS）</h2>
+<ol>
+<li>
+<p><strong>"研究富豪怎么起家：几乎没有一个是白手起家"</strong>（299 分 / 103 评论，今日第一）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1xzf772/i_spent_months_reading_how_billionaires_actually/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xzf772/i_spent_months_reading_how_billionaires_actually/</a><br />
+   → Jus 点评：高热度情绪贴。理性看：<strong>幸存者偏差 + 起点资源才是真相</strong>。对你有用的是反面推论——别拿"某某白手起家"当参照系，按自己的资源（英伟达内部视角 + 深圳 + 150万本金）规划更实际。</p>
+</li>
+<li>
+<p><strong>推广 dev tool 6 周：38k 曝光 → 231 访问 → 6 次下载 → 0 用户</strong>（22 分 / 33 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1xz9a8g/6_weeks_promoting_my_dev_tool_38k_views_231/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xz9a8g/6_weeks_promoting_my_dev_tool_38k_views_231/</a><br />
+   → Jus 点评：<strong>转化率 0.016% 的真实漏斗</strong>，比任何增长文章都诚实。结论：曝光 ≠ 分发，开发工具的真实分发靠<strong>在别人已经卡住的场景里出现</strong>（issue 区、Reddit 具体问题帖），不是发推。</p>
+</li>
+<li>
+<p><strong>做了个开源系统设计模拟器，看系统为什么不稳定</strong>（71 分 / 4 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1xzjldt/i_built_a_free_opensource_system_design_simulator/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1xzjldt/i_built_a_free_opensource_system_design_simulator/</a><br />
+   → Jus 点评：教育型开源，非常适合冲 stars。<strong>你的 Agent 系统其实也缺这种"能跑起来看它在干嘛"的可视化</strong>——Harness 那种黑盒抽象正是被诟病的点。</p>
+</li>
+<li>
+<p><strong>"给 SaaS 创始人：开源永远不会是你真正的竞争对手"</strong>（13 分 / 15 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1xzio25/to_all_saas_founders_open_source_is_never_going/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1xzio25/to_all_saas_founders_open_source_is_never_going/</a><br />
+   → Jus 点评：<strong>这条对你极其重要</strong>。开源不是抢客户，是抢注意力——所以你选开源的动机（影响力）和这个逻辑自洽。别指望开源直接变钱，变成"信任 + 流量"再变现。</p>
+</li>
+<li>
+<p><strong>签下 15000 注册用户（今天发的）</strong>（144 分 / 118 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1xz6qzx/i_just_crossed_15000_signups_in_my_saas_today/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1xz6qzx/i_just_crossed_15000_signups_in_my_saas_today/</a><br />
+   → Jus 点评：评论里八成在问"多少付费"。注册和付费之间的沟，是这个板块永恒的主旋律。</p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis 需求（还没人做的金矿）</h2>
+<blockquote>
+<p>⚠️ SMT 连续第 3 天 <code>/new</code> <code>/hot</code> 403，登录态仍未修。<code>top?t=day</code> 能拉到 5 条（比前两天好）。以下按"实质需求"筛。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>按发薪周期算"可花余额"的预算 App</strong>（新，11-19）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xznk46/budgeting_app_that_focuses_on_spendable_money_by/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xznk46/budgeting_app_that_focuses_on_spendable_money_by/</a><br />
+   → Jus 点评：<strong>今天的真新需求</strong>。现有预算 App 按月算，但很多人是双周发薪/月头发薪，"这个月还剩多少能花"根本算不清。切口极小、单人可以做完、有付费意愿（个人财务工具付费率高）。</p>
+</li>
+<li>
+<p><strong>"告诉我你想要什么 App，我给票数最高的免费开源做出来"</strong>（新，11-19，5 评论）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xzqidx/tell_me_the_app_you_wish_existed_ill_build_the/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xzqidx/tell_me_the_app_you_wish_existed_ill_build_the/</a><br />
+   → Jus 点评：这不是需求，是<strong>别人的开源增长策略</strong>——用"免费帮做"换流量和选题。你可以偷这个钩子：在 r/SideProject 发"我帮你做 xx"，直接带来 star 和用户访谈素材。</p>
+</li>
+<li>
+<p><strong>"你不是懒，是科技公司给你脑子设了陷阱"——反注意力剥夺工具</strong>（新，11-19）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xzsprm/youre_not_lazy_big_tech_built_a_trap_for_your/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xzsprm/youre_not_lazy_big_tech_built_a_trap_for_your/</a><br />
+   → Jus 点评：和本周榜一的"网站拦截器不管用"是同一个需求的两面。<strong>这个方向在 SMT 上反复出现，说明真的没人做好</strong>。</p>
+</li>
+<li>
+<p><strong>Steam engine 咖啡机概念</strong>（新，11-19）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xzog99/thoughts_on_my_steam_engine_coffee_machine_concept/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xzog99/thoughts_on_my_steam_engine_coffee_machine_concept/</a><br />
+   → Jus 点评：蒸汽机造型咖啡机，纯硬件情怀。不适合你，但<strong>"把老机械美学套到日用品"是个稳定的众筹公式</strong>。</p>
+</li>
+<li>
+<p><strong>把电视和游戏联动起来</strong>（11-18）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1xz8c0l/linking_tv_and_games_together/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1xz8c0l/linking_tv_and_games_together/</a><br />
+   → Jus 点评：需求描述模糊，可行但依赖厂商 API。跳过。</p>
+</li>
+</ol>
+<hr />
+<h2>🎯 今日灵感提炼</h2>
+<ol>
+<li><strong>今天最值钱的一条是 Reddit 那句"开源永远不是 SaaS 的竞争对手"</strong>——它解释了你的路径为什么成立：开源换的是信任和注意力，不是营收。别再自我怀疑"开源怎么赚钱"，顺序是先影响力后变现。</li>
+<li><strong>Agent 协作层（S.Space）开始被做 = 你的时间窗在关</strong>。个人 agent 分身已经是红海（Versine、Rakazo、Grok Bot 替代品一堆），但<strong>团队共享 agent 上下文</strong>还很空。如果要在 8/31 前定方向，这个角度比"个人分身"更值得押。</li>
+<li><strong>可操作</strong>：<br />
+   - 🔧 <strong>先查 Nginx 版本</strong>（1097 分的未授权 RCE，别等）<br />
+   - 📝 抄 SMT 那个钩子：发一个"我免费帮你做，票最高的那个"帖，低成本换选题 + 流量 + 首批用户<br />
+   - 🎯 x402 合规立场要想清楚：Quad9 事件说明协议层被塞规则就会死，写进设计原则里</li>
+</ol>
+<hr />
+<p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
+<em>SMT 异常第 3 天：/new /hot 403，fetch_smt.py 登录态过期，用 top?t=day + week 混合兜底</em></p><div class="pager"><a class="l" href="2026-11-18.html">← 2026-11-18</a></div></article>
+<footer>自动生成 · 2026-11-19</footer>
+</div>
+</body></html>
