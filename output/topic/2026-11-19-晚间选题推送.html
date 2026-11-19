@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1119 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-19</div><h1>1119 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-19 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线：1118 晚「被 AI 掏空的是来源地」→ 1119 早「最便宜的模型，被砍掉的是说不的权利」→ <strong>今晚「招股书里的最坏情况，今天定价了」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实（22:00 核过文件）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>仍在草稿箱，仍未发。</strong> <code>草稿/2026-11-17-每一行都review过了…md</code>（17,079 字节）+ <code>gen_cover_1117.py</code> + <code>publish_1117.py</code>。<code>待发布/</code> 最新仍是 <code>0925-AI入侵澳医保</code>。<strong>第 37 小时。</strong></td>
+</tr>
+<tr>
+<td>1119 早的方案</td>
+<td>未动。Gemini 4 Neon（84 分）标题都给了，稿没写。</td>
+</tr>
+<tr>
+<td>1118 晚短稿</td>
+<td>未写。</td>
+</tr>
+<tr>
+<td>库存</td>
+<td>1116 / 1115 / 1114 / 1113 四张卡原地；<code>01-待深化选题/</code> 里还压着 0929–1004 的一批。</td>
+</tr>
+<tr>
+<td>今晚新增</td>
+<td>HN front_page 实跑（14:00 UTC）+ Anthropic 官方一手全文读 1 篇 + HN 评论实读 35 条</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>今晚这条和早上那条是同一个动作的两面。</strong> 早上推 Neon：模型把「拒绝率」压到 1.98% 当卖点。今晚 Anthropic 定价：那家天天讲危险的公司，股票代码叫 <strong>ANT</strong>。<strong>两条线在今天合上了——AI 公司在同一天里，一边卖「听话」，一边卖「危险」。</strong></p>
+<hr />
+<h2>二、今晚主推 ⭐（86 分）</h2>
+<h3>Anthropic 定价 $83：那家在招股书里写「模型可能抗拒关停」的公司，今天上市了</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering">Anthropic：Anthropic prices initial public offering（官方一手全文，已读）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50553843">HN 304 pts / 573 评论</a></li>
+<li>
+<p>关联：<a href="https://www.anthropic.com/news/anthropic-launches-roadshow-for-proposed-initial-public-offering">11/10 路演公告（官方）</a></p>
+</li>
+<li>
+<p><strong>一句话</strong>：11/18 定价 <strong>$83/股</strong>，发行 <strong>9.8 亿股</strong> A 类普通股，<strong>今天（11/19）在纳斯达克挂牌，代码「ANT」</strong>，11/20 交割。承销商另有 30 天 1.47 亿股超额配售权。招股书 11/18 生效。</p>
+</li>
+<li>
+<p><strong>原文里可直接引的硬数字（全部出自官方公告，不外推）</strong>：<br />
+  1. <strong>发行 980,000,000 股</strong>，其中公司卖 956,351,354 股，老股东卖 23,648,646 股。<strong>卖老股的钱公司一分不拿</strong>（原文明确写了）。<br />
+  2. <strong>$83 × 9.8 亿 ≈ 813 亿美元</strong>募资。若按 HN 用户 6thbit 的口径（825M → 980M 扩了），这是<strong>扩过的发行规模</strong>——但这是评论区测算，<strong>发布时必须标为「网友测算」</strong>。<br />
+  3. <strong>代码是 ANT。</strong> 一个把「AI 可能毁灭人类」写进风险因素的公司，选了三个字母里最像蚂蚁的那个。这条可以用，但别过度解读成「官方幽默」——公告里没有任何解释。<br />
+  4. <strong>官方公告没有披露发行后总股本和市值</strong>。全网都在传「1.5 万亿」，<strong>原文里没有</strong>。要写市值，必须写明「按 XX 测算」并给出算法。</p>
+</li>
+<li>
+<p><strong>计分</strong>：热度 24/30（304/573，评分数不算最高，但<strong>评论数今天是全站第二</strong>，讨论密度极高）· <strong>角度 35/40</strong>（中文圈在写「史上最大 IPO」「AI 泡沫」，几乎没人注意<strong>这次是「公司拿钱 + 老股东套现」的双轨结构，而且公司明确说不拿老股那部分钱</strong>）· 国内 27/30 → <strong>86</strong></p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>「最坏情况」终于被定价了。</strong> 1001 那张卡里我记过：招股书自曝「模型可能抗拒关停」。一个多月后，市场用 $83 给这段话标了价——<strong>不是打折，是照样买</strong>。风险披露在这家公司手里从来不是免责声明，是<strong>差异化叙事</strong>：别人卖能力，它卖「只有我们知道有多危险」。今天这个叙事开始按季度结算了。<br />
+  2. <strong>真正该看的是「谁在卖」。</strong> 980M 股里有 23.6M 是老股东出的，公司不拿钱。<strong>IPO 原本的意义是「小公司拿钱去长大」，现在变成了「大公司给早期投资人开出口」。</strong> HN 上 thibsrn 那句最狠：「这 IPO 感觉完全是为现有股东套现做的，不是为了融未来的钱。」（引评论要标 HN 用户）<br />
+  3. <strong>国内落点：定价权从「模型榜」搬到了「财报日历」。</strong> 今天的 HN 首页同时挂着 Anthropic IPO 和 Gemini 4 Neon、微软七款模型——<strong>模型发布从此不再是能力展示，是股价管理工具</strong>。HN 用户 consumer451 的问题（已实读）值得直接引：「如果你是领先者，你会不会压着新模型不发，等股价撑不住的时候再放？」<strong>一旦上市，发模型的节奏就和发季报的节奏绑在一起了。</strong></p>
+</li>
+<li>
+<p><strong>⚠️ 边界（重要）</strong>：</p>
+</li>
+<li><strong>市值、市盈率、首日涨幅，我一个都没有官方数字。</strong> 公告只有定价和股数。写这些必须标明测算来源。</li>
+<li><strong>不要写「公司估值 1.5 万亿」当事实</strong>——那是 HN 评论区（purple_ferret）的口径，官方公告不含市值。</li>
+<li>评论区里「Dario 不诚实」「故意削弱模型」（purpleidea）、「Anthropic 是这一代的 AltaVista」（throwa356262）<strong>都是用户观点，可以做成对话，不能当结论</strong>。</li>
+<li>今天还有 <strong>$26B 来自 Google/Nvidia 等</strong>的说法（6thbit 评论区）——<strong>我没在官方公告里找到，不写。</strong></li>
+</ul>
+<hr />
+<h2>三、备选（热度高，但不是 AI 主线）</h2>
+<h3>一天两个 RCE：Nginx HTTP/2 未认证 RCE（1444 分）+ Ruby2Shell 预认证 RCE（237 分）</h3>
+<ul>
+<li><a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Wiz：Unauthenticated RCE in Nginx</a> · <a href="https://news.ycombinator.com/item?id=50547374">HN 1444/609</a></li>
+<li><a href="https://verialabs.com/ruby2shell/">Veria Labs：Ruby2Shell</a> · <a href="https://news.ycombinator.com/item?id=50556287">HN 237/92</a> · <a href="https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/">Ruby 官方安全公告</a></li>
+<li>今天 HN 分数第一，<strong>但两篇原文我都没读</strong>。</li>
+<li><strong>能接的线</strong>：早上那条「AI 的护栏可比而不更强」——当 Nginx 这种<strong>所有人都以为不会出事的底座</strong>爆出未认证 RCE，上一轮「最便宜的前沿模型 + 90.5% 漏洞发现率只给受信任防御者」的取舍就有了现实重量。<strong>但要用，必须先读 Wiz 原文。</strong></li>
+</ul>
+<hr />
+<h2>四、今晚被埋掉的两条</h2>
+<ul>
+<li><strong>LLM 辅助逆向工程</strong>（<a href="https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering">slowchronicle</a>，HN 263/67）：这个题在中文圈几乎空白，<strong>但我没读原文</strong>，先记下。</li>
+<li><strong>IEEE Spectrum：AI 超级智能辩论有严重缺陷</strong>（<a href="https://spectrum.ieee.org/ai-superintelligence-debate">原文</a>，HN 68/70）：评分数低但<strong>评论/分数比接近 1:1</strong>，说明是「有话说但没热度」的题。适合做成「对手方观点」写进任何一篇 AI 风险稿里，<strong>单独推不值</strong>。</li>
+</ul>
+<hr />
+<h2>五、今晚就干这一件</h2>
+<p><strong>把 1117 那篇发出去。</strong> 第 37 小时。脚本在、封面在、稿在。<strong>跑一次 3 分钟。</strong></p>
+<p>如果还有 40 分钟，写第二节的短稿——标题给你：<strong>《$83 一股，代码 ANT：那家把「最坏情况」写进招股书的公司，今天上市了》</strong>。素材全在官方公告和已读评论里，不用再查。</p>
+<p><strong>一个残酷的事实：1117 那篇写的是「没人 review 加起来的样子」，今天已经是第三天没人 review 这一篇了。</strong></p><div class="pager"><a class="l" href="2026-11-18-选题方案.html">← 2026-11-18 选题方案</a><a class="r" href="2026-11-19-选题方案.html">2026-11-19 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-19</footer>
+</div>
+</body></html>
