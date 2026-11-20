@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-11-21（周六）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-21</div><h1>每日独立开发精选 — 2026-11-21（周六）</h1>
+<h2>🧠 Hacker News</h2>
+<ol>
+<li>
+<p><strong>Levent Alpöge 声称证明了广义黎曼猜想</strong>（2137 分 / 1462 评论，今日核弹）<br />
+   <a href="https://alpo.ge/remark.pdf" target="_blank" rel="noopener">https://alpo.ge/remark.pdf</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50574968" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50574968</a><br />
+   → Jus 点评：数学史上最大的悬案之一，今天整个 HN 都在炸。<strong>值得注意的不是真假，而是 Terry Tao 都下场写了博客</strong>——顶级数学家认真在评估。同一天还有 <a href="https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/">Terry Tao 自己那篇</a> 和 <a href="https://scottaaronson.blog/?p=10344">Scott Aaronson 的吐槽</a>。这波是本周唯一的"围观历史"时刻。</p>
+</li>
+<li>
+<p><strong>大型语言模型可以重写自己的权重</strong>（293 分 / 98 评论）<br />
+   <a href="https://arxiv.org/abs/2611.21885" target="_blank" rel="noopener">https://arxiv.org/abs/2611.21885</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50577265" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50577265</a><br />
+   → Jus 点评：<strong>今天对你最有用的一条</strong>。模型自己改自己的权重 = Agent 自优化闭环的理论版本。你 Harness 里那套 Trajectory→Evaluator→Optimizer 回写配置，本质是这个思路的工程近似。这篇值得读，能给你的设计提供理论背书。</p>
+</li>
+<li>
+<p><strong>我们把开发者提拔成架构师，却没告诉他们</strong>（184 分 / 109 评论）<br />
+   <a href="https://manidoraisamy.com/developer-to-architect.html" target="_blank" rel="noopener">https://manidoraisamy.com/developer-to-architect.html</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50579331" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50579331</a><br />
+   → Jus 点评：<strong>你现在的处境原样复刻</strong>——Agent Core Owner 的头衔底下是"测开"的实际身份感。读完这篇你会知道这不是你一个人的问题，是行业通病：架构角色的期望从来没被明确定义。</p>
+</li>
+<li>
+<p><strong>Inkling 2 Mini</strong>（338 分 / 46 评论）<br />
+   <a href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank" rel="noopener">https://thinkingmachines.ai/news/inkling-2-mini/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50581260" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50581260</a><br />
+   → Jus 点评：Thinking Machines 又出小模型。<strong>小模型赛道在变拥挤</strong>，这直接支撑"按次计费的 agent 经济"成立。</p>
+</li>
+<li>
+<p><strong>Vibecoding 一颗推理芯片</strong>（78 分 / 24 评论）<br />
+   <a href="https://ankitg.me/blog/vibecoding-inference-chip/" target="_blank" rel="noopener">https://ankitg.me/blog/vibecoding-inference-chip/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50579297" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50579297</a><br />
+   → Jus 点评：<strong>和你在 Nvidia 的领域最贴</strong>。用 AI 辅助做芯片设计，与昨天那篇"OpenAI 加速芯片设计"是同一趋势的两面。你对这类工具的判断可以直接变成内容/简历资产。</p>
+</li>
+<li>
+<p><strong>DreamCoder：Mastering Emacs 作者做的编码 harness + IDE</strong>（26 分 / 3 评论）<br />
+   <a href="https://www.masteringemacs.org/article/announcing-dreamcoder" target="_blank" rel="noopener">https://www.masteringemacs.org/article/announcing-dreamcoder</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50581110" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50581110</a><br />
+   → Jus 点评：<strong>老牌 Emacs 大神下场做 AI 编码工具</strong>。热度低但信号强——真正的老工程师在这件事上动手了，而且做的是"harness"而不是"模型"。</p>
+</li>
+<li>
+<p><strong>Winedroid —— 不用 Android 跑 Android 应用（WASM 演示）</strong>（58 分 / 25 评论）<br />
+   <a href="https://winedroid.soham.sh/demo/" target="_blank" rel="noopener">https://winedroid.soham.sh/demo/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50580536" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50580536</a><br />
+   → Jus 点评：WASM 吃掉一层层运行时。适合做技术好奇心储备。</p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-20）</h2>
+<ol>
+<li>
+<p><strong>UndoGuard — 自主 AI Agent 的 Ctrl+Z</strong><br />
+   <a href="https://www.producthunt.com/products/undoguard" target="_blank" rel="noopener">https://www.producthunt.com/products/undoguard</a><br />
+   → Jus 点评：<strong>今天必须点进去看的一个</strong>。给自主 agent 加撤销机制 = 你 Harness 里 Rails 护栏的外部商业版本。市场开始为"agent 出错了怎么办"付钱了，这说明 HITL/回滚正在从技术问题变成产品品类。</p>
+</li>
+<li>
+<p><strong>Tamekoshi — 会真正干活的 Tamagotchi 风格 AI 伙伴</strong><br />
+   <a href="https://www.producthunt.com/products/tamekoshi" target="_blank" rel="noopener">https://www.producthunt.com/products/tamekoshi</a><br />
+   → Jus 点评：<strong>"Agent 分身"的人格化包装</strong>。技术上很轻，卖的是情感连接。你的分身系统如果只讲技术，会输给这种懂人性的小东西——值得学的不是实现，是它的表达方式。</p>
+</li>
+<li>
+<p><strong>Upsolve MCP Connections — 把 Notion/Linear 接进你的数据 agent</strong><br />
+   <a href="https://www.producthunt.com/products/upsolve-ai" target="_blank" rel="noopener">https://www.producthunt.com/products/upsolve-ai</a><br />
+   → Jus 点评：MCP 生态在长出"连接器层"。<strong>MCP 是事实标准的又一次确认</strong>。</p>
+</li>
+<li>
+<p><strong>ToolJet — 通过安全审查的 vibe-coded 业务应用</strong><br />
+   <a href="https://www.producthunt.com/products/tooljet" target="_blank" rel="noopener">https://www.producthunt.com/products/tooljet</a><br />
+   → Jus 点评：主打"能过安全审查"。<strong>AI 生成的东西进不了企业，卡在合规</strong> —— 这本身就是个卖点级缺口。</p>
+</li>
+<li>
+<p><strong>Teaflask</strong>（昨天已推，今天仍在榜）<br />
+   <a href="https://www.producthunt.com/products/teaflask" target="_blank" rel="noopener">https://www.producthunt.com/products/teaflask</a><br />
+   → Jus 点评：连续两天在榜。"零后端改动接入"这个位置，真的是对的。</p>
+</li>
+<li>
+<p><strong>Interview Coach — 大声练习面试</strong><br />
+   <a href="https://www.producthunt.com/products/interview-coach-3" target="_blank" rel="noopener">https://www.producthunt.com/products/interview-coach-3</a><br />
+   → Jus 点评：…你 4 月那波面试要是早有这个。现在对你没用了，不过<strong>你手上那堆面试答案文件，是可以长成产品的</strong>（改造成面试陪练）。这点值得记一笔。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 Reddit（r/SideProject + r/SaaS）</h2>
+<ol>
+<li>
+<p><strong>做了个 app：在另一台 Android 装 SIM，iPhone 也能用</strong>（263 分 / 79 评论，今日第一）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y0w4or/i_built_an_app_that_lets_you_use_your_iphone_with/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y0w4or/i_built_an_app_that_lets_you_use_your_iphone_with/</a><br />
+   → Jus 点评：<strong>"硬件级限制 + 软件绕过"永远是最硬的切入点</strong>。这类需求（双机、跨设备、肉身受限）个人开发者特别容易赢，因为大厂嫌小。</p>
+</li>
+<li>
+<p><strong>iPhone + €89 稳定器 = 业余足球队的摄影师</strong>（203 分 / 37 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y11x46/i_turned_my_iphone_and_a_89_phone_stabilizer_into/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y11x46/i_turned_my_iphone_and_a_89_phone_stabilizer_into/</a><br />
+   → Jus 点评：<strong>"便宜硬件 + 软件 = 专业级产出"</strong> 是今年 SideProject 反复验证的公式。演示性极强，天然适合传播。</p>
+</li>
+<li>
+<p><strong>投了 103 份简历，3 个面试，最后做了个网站让公司来"竞价"要人</strong>（89 分 / 79 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y12p1p/i_applied_for_103_jobs_got_3_interviews_and_ended/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y12p1p/i_applied_for_103_jobs_got_3_interviews_and_ended/</a><br />
+   → Jus 点评：<strong>和你 4 月那波求职完全是同一条路</strong>，区别是他把痛苦本身做成了产品。你手上那套面试题库 + STAR 答案 + 岗位调研，其实是同类的原材料。</p>
+</li>
+<li>
+<p><strong>"竞争对手把我们举报给英国监管机构了"</strong>（71 分 / 50 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y0w7es/competitor_reported_us_to_the_authorities_in_the/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y0w7es/competitor_reported_us_to_the_authorities_in_the/</a><br />
+   → Jus 点评：<strong>做支付/agent 生意必须提前想这个</strong>。合规不是大公司专属，小公司被举报直接死。x402 的 KYC/AML 边界现在就得想。</p>
+</li>
+<li>
+<p><strong>花几个月做的 app，OpenAI 把整个想法变成了一个 ChatGPT 功能</strong>（27 分 / 44 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y0r1sn/i_spent_months_building_an_app_only_for_openai_to/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y0r1sn/i_spent_months_building_an_app_only_for_openai_to/</a><br />
+   → Jus 点评：<strong>平台吞噬风险的具体案例</strong>。这跟"为什么选协议不选平台"是同一个论证的反面。</p>
+</li>
+<li>
+<p><strong>AI 助手给我的注册量已经超过 Google 了</strong>（6 分 / 5 评论，今天发）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y1dgqe/ai_assistants_now_send_me_more_signups_than/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y1dgqe/ai_assistants_now_send_me_more_signups_than/</a><br />
+   → Jus 点评：<strong>今天最前瞻的一条</strong>，虽然分很低。AI 成为分发渠道已经不是预测了。做开源时，<strong>给 agent 写的文档（llms.txt、结构化描述）比 SEO 更重要</strong>——这是三个月前还不成立的说法。</p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis 需求（还没人做的金矿）</h2>
+<blockquote>
+<p>🔴 SMT 第 5 天严重退化：<code>/new</code> <code>/hot</code> 403，<code>fetch_smt.py</code> 登录态过期。今日 <code>top?t=day</code> 只 3 条。以下全部照实列出，不凑数。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>双击手机任意位置接电话（屏幕或背面）</strong>（11-20，2 分 / 3 评论）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y10en6/app_that_allows_to_double_tap_phone_anywhere_on/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y10en6/app_that_allows_to_double_tap_phone_anywhere_on/</a><br />
+   → Jus 点评：<strong>今天最有商业潜力的一条</strong>。戴手套、下雨、单手拿东西时接不了电话是真实痛点。技术上 iOS 受限（背面点击需要快捷指令），Android 可做。小需求、能量化、能收钱。</p>
+</li>
+<li>
+<p><strong>Letterboxd 风格的摄影统计，用 EXIF 数据生成</strong>（11-21 今天，真新需求）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y1cxl5/somebody_make_this_letterboxdstyle_stats_for/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y1cxl5/somebody_make_this_letterboxdstyle_stats_for/</a><br />
+   → Jus 点评：<strong>今天唯一的真新需求</strong>。Letterboxd 把"看电影"做成了社交档案，摄影圈同样有巨量 EXIF 但没人做成品味展示。切口清晰、数据天然结构化、社区属性强——<strong>是我这周在 SMT 上看到最像能做成的</strong>。</p>
+</li>
+<li>
+<p><strong>"低努力发明帖"</strong>（11-21）— 废帖，跳过<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y1e1r6/low_effort_invention_post/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y1e1r6/low_effort_invention_post/</a></p>
+</li>
+<li>
+<p><strong>板块状态判定</strong>：SMT 已连续 5 天几乎不可用。<strong>Cookie 再不修，这个栏目就只能停更</strong>。昨天的方案 A（你导出 Chrome 会话 Cookie）我随时可以执行。</p>
+</li>
+</ol>
+<hr />
+<h2>🎯 今日灵感提炼</h2>
+<ol>
+<li><strong>今天 HN 的主旋律是"AI 能做数学了"</strong>（黎曼猜想 + 模型改自己权重 + Claude 解黑洞），但真正对你有价值的解读是：<strong>AI 在"自我改进"这件事上正在从工程 trick 变成理论可能</strong>。你的 Harness 自优化闭环方向是对的，只是早了一步——这既是风险也是机会。</li>
+<li><strong>"把开发者提拔成架构师却不告诉他们"这条，建议你今天读完</strong>。它解释了你现在的 title 焦虑从哪来：不是你的问题，是行业从没定义清楚这个角色。这会直接影响你怎么在英伟达定位自己——<strong>别等公司定义，自己写出来</strong>。</li>
+<li><strong>可操作</strong>：<br />
+   - 📖 读 <a href="https://arxiv.org/abs/2611.21885">arxiv 2611.21885</a>（模型重写权重），对接你的 Evaluator/Optimizer 设计<br />
+   - 🛡️ 读 <a href="https://www.producthunt.com/products/undoguard">UndoGuard</a>，对照你的 Rails 护栏写一段差异<br />
+   - 💡 SMT 那条 <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y1cxl5/somebody_make_this_letterboxdstyle_stats_for/">EXIF 摄影统计</a> 值得单独评估——这是本周唯一让我觉得"能做且有人要"的<br />
+   - 🔴 SMT Cookie 第 5 天，需要你配合导出一次</li>
+</ol>
+<hr />
+<p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
+<em>SMT 异常第 5 天：/new /hot 403，fetch_smt.py 登录态过期，top?t=day 仅 3 条（含 1 条废帖）</em></p><div class="pager"><a class="l" href="2026-11-20.html">← 2026-11-20</a></div></article>
+<footer>自动生成 · 2026-11-21</footer>
+</div>
+</body></html>
