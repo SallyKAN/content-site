@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1120 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-20</div><h1>1120 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-20 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线：1119 晚「招股书里的最坏情况，今天定价了」→ 1120 早「能力」→ <strong>今晚「证据」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账（22:00 核过文件）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>仍在草稿箱，第 52 小时。</strong> 稿 17,079 字节（11/17 13:58）+ <code>gen_cover_1117.py</code> + <code>publish_1117.py</code> 齐备。<code>待发布/</code> 最新仍是 <code>0925-AI入侵澳医保</code>。</td>
+</tr>
+<tr>
+<td>1119 早 Neon</td>
+<td>未落稿</td>
+</tr>
+<tr>
+<td>1118 晚短稿</td>
+<td>未写</td>
+</tr>
+<tr>
+<td>库存</td>
+<td>1116 / 1115 / 1114 / 1113 四卡原地</td>
+</tr>
+<tr>
+<td>今晚新增</td>
+<td>HN front_page 实跑（14:00 UTC）+ 一手全文读 2 篇（Frostbite 博客、DeepMind 长文）+ HN 评论实读 20 条</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>二、今晚主推 ⭐（87 分）</h2>
+<h3>AI 自己设计了一颗 CPU：4.59 倍能效，从指令集一路做到 GDS</h3>
+<ul>
+<li><strong>原文链接</strong>：</li>
+<li><a href="https://architectlabs.com/blog/frostbite">Architect Labs：Introducing Frostbite（一手，已读）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50572503">HN 276 pts / 184 评论</a></li>
+<li><strong>一句话</strong>：一颗通用 CPU，<strong>指令集是新的</strong>，由 AI 系统从编译器、ISA、架构、微架构、RTL、验证一路迭代到<strong>最终 GDS</strong>（可直接流片的版图）。在 25 个事先选定的负载上（其中 <strong>15 个留到最后才给</strong>），<strong>能效是同等现代乱序/双发射顺序核的 4.59 倍</strong>。</li>
+</ul>
+<p><strong>原文硬事实（只写原文有的）</strong>：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术路线</td>
+<td>基于 <strong>interaction nets</strong>（交互网）：计算被表示成节点图，重写只发生在局部；每个值「恰好被使用一次」，没有共享可变状态</td>
+</tr>
+<tr>
+<td>为什么能赢</td>
+<td>主流 CPU 要在运行时去猜哪些指令互相依赖；交互网把依赖<strong>显式写出来</strong>，硬件不用猜</td>
+</tr>
+<tr>
+<td>验证强度</td>
+<td>25 个负载里 <strong>15 个是 holdout</strong>，最后一轮评测才用 —— 这一点比「4.59x」本身更值得写</td>
+</tr>
+<tr>
+<td>作者口径</td>
+<td>「当我们细看 AI 发现的架构原语时，意外地看到了原本很难人工架构出来的新硬件实现和运行时特性」</td>
+</tr>
+<tr>
+<td>前作</td>
+<td>Redwood：AI 在给定架构下实现、验证、部署一颗推理加速器</td>
+</tr>
+<tr>
+<td>主张</td>
+<td>未来数据中心 CPU、AI 加速器、交换机、网卡，都会经历同类的架构级位移</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>
+<p><strong>计分</strong>：热度 22/30（276/184，AI 题材今日第二高评论密度）· <strong>角度 38/40</strong>（中文圈今天全在写 Anthropic IPO 和 Claude 解物理题，「AI 设计了新 ISA 并跑到 GDS」几乎没人碰；而且<strong>这不是让 AI 写 RTL，是让 AI 改 ISA 本身</strong>）· 国内 27/30 → <strong>87</strong></p>
+</li>
+<li>
+<p><strong>三刀</strong>：<br />
+  1. <strong>从「AI 帮你写代码」到「AI 改规则」。</strong> 写 RTL 是让 AI 在现有语言里写得更快；Frostbite 是连<strong>语言本身</strong>一起发明。前者省人力，后者换赛道。<br />
+  2. <strong>4.59x 不足以信，15 个 holdout 才足以信。</strong> 用 AI 优化的最大风险是「针对测试集优化」。原文把 25 个负载里的 15 个留到最后一轮才给——<strong>这是整篇最该抄下来的方法，而不是那个倍数。</strong><br />
+  3. <strong>国内落点：真正的对手不是英伟达，是「设计周期」。</strong> HN 上 aurareturn 预测未来最贵的是四样：模型、算力、制造、材料。但如果设计一颗芯片从两年压到两个月，<strong>瓶颈会整体从「谁有设计能力」移到「谁能造」</strong>——这正是国内最关心的问题。HN 用户 fedpost 的冷水也要带上：「就像 agent 做 PCB 设计一样，HDL 从来不是最难的部分。」</p>
+</li>
+<li>
+<p><strong>⚠️ 边界</strong>：</p>
+</li>
+<li>「4.59x」是<strong>能效（perf/W）</strong>对比，不是性能。别写成「快 4.59 倍」。</li>
+<li>硅前结果（GDS 阶段），<strong>原文没说已流片实测</strong>——不要写成「造出来了」。</li>
+<li>原文来自一家做 AI 芯片设计的公司自家博客，<strong>有商业动机，标注来源</strong>。</li>
+<li>
+<p>评论区对「ASI 会不会顺势把 TSMC 也设计出来」发散很多，那是网友脑洞，不做事实。</p>
+</li>
+<li>
+<p><strong>推荐平台</strong>：公众号（1200–2000 字）&gt; Twitter thread（5–7 条）</p>
+</li>
+</ul>
+<hr />
+<h2>三、备选</h2>
+<h3>2. DeepMind：AGI 之后是什么（HN 97 / 203 评论）★ 一手已读</h3>
+<ul>
+<li><a href="https://institute.deepmind.com/essays/what-comes-after-agi/" target="_blank" rel="noopener">https://institute.deepmind.com/essays/what-comes-after-agi/</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50569519" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50569519</a></li>
+<li><strong>评分数低但评论数是分数的两倍</strong>——典型的「有话说但没热度」，适合当「对手方观点」直接进上面那篇。</li>
+<li>可直接引的硬数字（原文）：</li>
+<li>十年间有效算力年增 <strong>至少 10 倍</strong>（硬件 1.5x/年 × 算法 3–6x/年 × 投资 2.5x/年 相乘）</li>
+<li>推理效率 <strong>约 4x/年</strong> → 今天 10 亿美元算力才能做的工作，十年后 <strong>1000 美元</strong></li>
+<li>2023 年以来，固定基准分数的<strong>消费者价格年降超 13 倍</strong>（引 Epoch 研究）</li>
+<li>提出 <strong>「认知工业化」（cognitive industrialization）</strong>：认知劳动像当年机械工业化把体力劳动变成商品一样被标准化、规模化</li>
+<li>自我限定：<strong>「这当然不是必然的」</strong>（It's certainly not a given）</li>
+<li>好句子：「爱因斯坦确实想出了广义相对论，但十万个托勒密天文学家的会议大概想不出来。」</li>
+<li><strong>角度</strong>：AI 做完一颗 CPU（上面那条）正好是这篇长文的插图画——<strong>认知工业化第一个真正被打穿的不是文案岗，是芯片设计这种「要几十亿美金才敢试一次」的活。</strong></li>
+</ul>
+<h3>3. 「我能看出这是你自己写的」（HN 283 / 278）→ 小红书向</h3>
+<ul>
+<li>原文链接已 404，<strong>未读全文</strong>，只实读了 HN 评论（20 条）。</li>
+<li><a href="https://news.ycombinator.com/item?id=50571189" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50571189</a></li>
+<li>可用素材：正文被评论区指出把 "write" 写成 "right"（sambejk）；paganel 认为「看到真正的真人语法错误反而让人松一口气」；alex43578 反驳「人类不完美的价值包括医疗事故和误判」——<strong>这组对撞可以直接做一篇「我为什么故意不删错别字」</strong>。</li>
+<li>边界：<strong>没读原文，只能做素材，不能当事实引用。</strong></li>
+</ul>
+<h3>4. 「OpenSSL 9.8 分缓冲区溢出」（HN 306 / 254）→ 只记录</h3>
+<ul>
+<li><a href="https://github.com/openssl/openssl/pull/33652" target="_blank" rel="noopener">https://github.com/openssl/openssl/pull/33652</a></li>
+<li>CVE-2026-121481，CVSS 9.8，在 <code>EVP_EncodeBlock()</code>。<strong>未读 PR 原文</strong>，且今天已有一条 Ruby2Shell 在库。</li>
+<li>意义在于：<strong>这周第三个底座级漏洞</strong>（Nginx HTTP/2 → Ruby2Shell → OpenSSL）。这个「一周三连」本身是个选题，但需要先把三篇原文都读了。</li>
+</ul>
+<hr />
+<h2>四、采集但未推</h2>
+<ol start="5">
+<li>「我不信这是 1!」（HN 15/10）<a href="https://aperiodical.com/2026/11/i-cant-believe-its-1/" target="_blank" rel="noopener">https://aperiodical.com/2026/11/i-cant-believe-its-1/</a> — 数学小品，太窄</li>
+<li>Pete Warden：本地 AI、开源模型、语音接口（HN 263/231）<a href="https://thedataexchange.media/pete-warden-moonshine/" target="_blank" rel="noopener">https://thedataexchange.media/pete-warden-moonshine/</a> — 长播客，未听</li>
+<li>PostgreSQL 19 发布（HN 276/14）<a href="https://www.postgresql.org/docs/release/19.0/" target="_blank" rel="noopener">https://www.postgresql.org/docs/release/19.0/</a> — 加值低但阅读量稳，可做工具向短帖</li>
+<li>Synology 安全公告（HN 166/122）<a href="https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21" target="_blank" rel="noopener">https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21</a> — 与「底座三连」同族</li>
+<li>英国冰箱被黑客攻破后加固（HN 79/64）<a href="https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o" target="_blank" rel="noopener">https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o</a> — 物联网，可做小红书</li>
+<li>「不能用简单的话解释，说明你没懂」（HN 176/115，2017 旧文）<a href="https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it" target="_blank" rel="noopener">https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it</a> — 常青，可反复用</li>
+</ol>
+<hr />
+<h2>五、今晚就干这一件</h2>
+<p><strong>发 1117。</strong> 第 52 小时。稿在、封面脚本在、发布脚本在，<strong>跑一次 3 分钟</strong>。</p>
+<p>如果还有 40 分钟，写第二节：标题给你——<strong>《AI 把指令集自己发明了一遍，然后省下了 4.59 倍的电》</strong>。素材全在一手博客里，不用再查。</p>
+<p><strong>一句实话：今天 HN 首页上，AI 解了两个物理论文、AI 设计了一颗 CPU、AI 发现了一个二十年的 Ruby 漏洞。而你的草稿箱里，那篇讲「没人 review 加起来的样子」的稿子，已经第三天没人 review 了。</strong></p><div class="pager"><a class="l" href="2026-11-19-选题方案.html">← 2026-11-19 选题方案</a><a class="r" href="2026-11-20-选题方案.html">2026-11-20 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-20</footer>
+</div>
+</body></html>
