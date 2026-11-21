@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1121 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-21</div><h1>1121 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-21 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线：1120 晚「证据」→ 1121 早「四条战线同时交货」→ <strong>今晚「同一天，人类也交了」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账（22:00 核过文件）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>仍在草稿箱，第 81 小时。</strong> 稿 17,079 字节（11/17 13:58）+ <code>gen_cover_1117.py</code> + <code>covers/1117-decoherence.png</code> + <code>publish_1117.py</code> 齐备</td>
+</tr>
+<tr>
+<td><code>待发布/</code> 最新</td>
+<td>仍是 <code>0925-AI入侵澳医保.md</code>（9/25），两个月没动过</td>
+</tr>
+<tr>
+<td>1121 主推</td>
+<td>未落稿</td>
+</tr>
+<tr>
+<td>02-创作中选题</td>
+<td><strong>空的</strong></td>
+</tr>
+<tr>
+<td>库存</td>
+<td>1116 / 1115 / 1114 / 1113 四卡原地</td>
+</tr>
+<tr>
+<td>待深化选题</td>
+<td>40+ 张卡积压</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>二、今晚唯一结论：这件事今天的完整版还没被写出来</h2>
+<p>1121 上午的主推是「Alpöge 声称和 Claude 证明了黎曼猜想，只发 1740 万行 Lean」（94 分）。<strong>今天白天，故事的后半段到齐了</strong>——Ravi Vakil 那份 Masullo 的 GRH 证明有人细看、Terry Tao 给出了消化排序、Aaronson 把赌注押上。</p>
+<p>但真正让这条新闻从"技术奇观"变成"我们这个行业的问题"的，是下面这个事实：</p>
+<blockquote>
+<p><strong>同一条定理，同一周，两条路同时到达。一条 1740 万行、机器验收、没人读得完；一条人类做的、几个月同行细看、还在打磨。</strong></p>
+</blockquote>
+<p><strong>这不需要再采一次料。上午的方案里素材已经齐了，缺的只是一篇文章。</strong></p>
+<hr />
+<h2>三、今晚主推（口径不变，94 分）</h2>
+<h3>他和 Claude 一起证明了黎曼猜想，然后只发了一份没人能读的证明</h3>
+<ul>
+<li>原文链接：</li>
+<li><a href="https://alpo.ge/remark.pdf">Alpöge 声明 PDF</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50574968">HN 2372 pts / 1602 评论</a></li>
+<li><a href="https://scottaaronson.blog/?p=10344">Scott Aaronson</a></li>
+<li><a href="https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/">Terry Tao</a></li>
+<li><a href="https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/">Ravi Vakil：Masullo GRH</a></li>
+<li>硬事实、三刀、边界：<strong>见 <code>1121-选题方案.md</code> 第二节，已核一手 PDF，不用再查。</strong></li>
+<li><strong>标题必须带"声称"</strong>，不许写"AI 证明了黎曼猜想"。</li>
+</ul>
+<hr />
+<h2>四、今晚备选（按国内可写性排序）</h2>
+<ol>
+<li><strong>Signal 公开点名苹果谷歌微软</strong>（HN 511/305，一手已读）<a href="https://signal.org/blog/protecting-your-privacy/" target="_blank" rel="noopener">https://signal.org/blog/protecting-your-privacy/</a> — 「这对 Signal 是存在性威胁」；iOS 27 起禁用截图、Android 检测到 AI 助手读屏自动上锁；macOS 做不到。→ <strong>小红书首选</strong></li>
+<li><strong>模型改写自己的权重</strong>（HN 341/112，摘要已读）<a href="https://arxiv.org/abs/2611.21885" target="_blank" rel="noopener">https://arxiv.org/abs/2611.21885</a> — 27B 开放模型诊断失败并重写权重，未见过的题 +6.6 点；<strong>修好被打坏的自己，无重训恢复 80%</strong>。→ 公众号第二条</li>
+<li><strong>Inkling 2 Mini</strong>（HN 687/111，一手已读）<a href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank" rel="noopener">https://thinkingmachines.ai/news/inkling-2-mini/</a> — looped transformer，&lt;100B 开源权重双榜第一，把可解释性写进发布页。→ 工具短帖</li>
+<li><strong>把开发者提拔成架构师，却没告诉他们</strong>（HN 301/184，未读）<a href="https://manidoraisamy.com/developer-to-architect.html" target="_blank" rel="noopener">https://manidoraisamy.com/developer-to-architect.html</a> — 和 1117 稿同一母题，可做小红书对照文。</li>
+</ol>
+<hr />
+<h2>五、如果只有一小时</h2>
+<p><strong>跑 <code>publish_1117.py</code>。</strong> 第 81 小时，稿在、封面在、脚本在，3 分钟的事。</p>
+<p><strong>如果还能再写一小时</strong>：写第三节那篇。素材已经在方案里，标题也是现成的。写完这一篇，1117 那篇的母题（"没人 review 加起来的样子"）就和今天凌晨的新闻闭环了——<strong>一个人交了 1740 万行，全世界没人能 review。你上周写的那个问题，今天有了 1740 万行的例子。</strong></p>
+<hr />
+<h2>六、一句实话</h2>
+<p>库存四张卡、待深化 40+ 张卡、创作中 0 张、<code>待发布/</code> 停在 9/25。</p>
+<p><strong>断点不在选题。选题你多得写不完。断点在"跑那 3 分钟"。</strong></p><div class="pager"><a class="l" href="2026-11-20-选题方案.html">← 2026-11-20 选题方案</a><a class="r" href="2026-11-21-选题方案.html">2026-11-21 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-21</footer>
+</div>
+</body></html>
