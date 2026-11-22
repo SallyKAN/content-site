@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1122 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-22</div><h1>1122 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-22 22:00 (Asia/Shanghai)<br />
+审核标准：热度 30% + 独特角度 40% + 国内关注度 30%<br />
+主线：1121「只发了 Lean，因为他没有别的可发」→ 1122「一天之后，Lean 社区把这件事签了字」→ <strong>今晚「签完字了，那就赶紧发」</strong></p>
+</blockquote>
+<hr />
+<h2>一、出稿对账（22:00 核过文件系统）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>仍在草稿箱，第 104 小时。</strong> 稿 17,079 字节 + <code>cover_from_article.py</code>（20:34）+ <code>covers/1117-gz-21x9.png</code>、<code>1117-gz-1x1.png</code>（20:42）+ <code>publish.sh</code>（20:07，含 TUN 代理自动关停/恢复）<strong>全部齐备</strong></td>
+</tr>
+<tr>
+<td>今晚 20:07–20:42 的动作</td>
+<td>publish.sh / make_cover / cover_from_article / 双尺寸封面——<strong>说明人已经坐到发布这一步了，只差跑</strong></td>
+</tr>
+<tr>
+<td>1122 主推稿</td>
+<td>未落稿</td>
+</tr>
+<tr>
+<td>1121 / 1120 / 1119 / 1118 稿</td>
+<td>均未写</td>
+</tr>
+<tr>
+<td><code>待发布/</code> 最新</td>
+<td>仍是 <code>0925-AI入侵澳医保.md</code>（9/25），<strong>58 天没动</strong></td>
+</tr>
+<tr>
+<td>02-创作中选题</td>
+<td>空</td>
+</tr>
+<tr>
+<td>库存</td>
+<td>1116 / 1115 / 1114 / 1113 四卡原地；待深化 40+</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>二、今晚唯一结论</h2>
+<p>上午的方案已经把主推写到"素材齐、只差动笔"的程度，晚上 8 点你又把封面和发布脚本都做完了——<strong>今晚不缺选题，缺的是按回车。</strong></p>
+<p>所以今晚推送只有两件事：<strong>① 主推口径加一句硬更新 ② 1117 必须今晚发。</strong></p>
+<hr />
+<h2>三、今晚主推（口径微调，仍 96 分）</h2>
+<h3>Lean 社区正式认证了黎曼猜想证明：这件事从「声称」变成了「签字」</h3>
+<ul>
+<li>原文链接：</li>
+<li><a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">Lean 社区官方博客：Lean verification of the Riemann Hypothesis（2026-11-21 13:55）</a></li>
+<li><a href="https://math.mit.edu/~drew/grh/">MIT Andrew Sutherland 验证清单页（实时更新）</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50589618">HN 839 pts / 695 评论</a></li>
+<li><a href="https://news.ycombinator.com/item?id=50590441">MIT 验证文件 HN 帖 96/37</a></li>
+<li>前情：<a href="https://alpo.ge/remark.pdf">Alpöge 声明原文 PDF</a> · <a href="https://news.ycombinator.com/item?id=50574968">HN 2372/1602</a></li>
+</ul>
+<p><strong>今晚必须补进正文的一句硬更新（这是文章的钩子）</strong>：</p>
+<blockquote>
+<p>截至 MIT Sutherland 页面 11/21 12:55 UTC 的更新，<strong>默认 kernel 重放、paranoid kernel、lake comparator 端到端三项仍在跑</strong>。也就是说：社区签了字，但<strong>最后三项机器还在跑</strong>。</p>
+</blockquote>
+<p>→ 这让文章有了一个真实的、有时间戳的现场感：<strong>连"权威认证"本身都是进行中的状态。</strong></p>
+<p><strong>其他硬事实、三刀、边界：全部见 <code>1122-选题方案.md</code> 第二节，不用再采一次。</strong></p>
+<p>三条边界再强调一遍：<br />
+1. 这是<strong>社区声明</strong>，不是期刊发表；Lean/Mathlib 是利益相关方，文中要标注。<br />
+2. 不写"黎曼猜想被证明了"，写"Lean 社区认证了这份证明"。<br />
+3. 不把 175,187 模块说成"AI 独立完成"。</p>
+<p><strong>平台</strong>：公众号主推 1800–2500 字 &gt; Twitter thread 6 条（"他只有 Lean 可发" → "一天后 Lean 变成了证据标准"）。</p>
+<hr />
+<h2>四、今晚备选（按可写性排序，均不需再采）</h2>
+<ol>
+<li><strong>Inkling 2 Mini</strong>（HN 1388/281，一手已读）<a href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank" rel="noopener">https://thinkingmachines.ai/news/inkling-2-mini/</a> — 26.4B total / 3.4B active、权重激活 5.4B、NVFP4、~20GB 内存；可变循环 16s→37s，串行推理第 10 遍还在涨。<strong>looping 让"想得久"不落纸面，可监控性变成设计目标。</strong> → 与主推同一母题（产出可信的前提是过程可查）</li>
+<li><strong>GPGME 双重释放 CVE-2026-129975</strong>（HN 233/95，一手已读）<a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" target="_blank" rel="noopener">https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html</a> — 一封带超长 User ID 的签名邮件即可；影响多数邮件客户端 + Samba。<strong>彩蛋：原定 11/25 披露，被 Ruby2Shell 逼着 11/20 提前公开</strong> → 和你 1120 那篇直接接上</li>
+<li><strong>daraxonrasib 晚期胰腺癌</strong>（HN 627/150，一手已读）<a href="https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib" target="_blank" rel="noopener">https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib</a> — 61 人、8% 影像上消失、一年生存 76.6%（化疗 40–45%）。<strong>边界：61 人、非随机对照，别写"治愈"</strong> → 小红书/公众号健康向</li>
+<li><strong>iOS 上至今没有一家非 WebKit 浏览器</strong>（HN 491/269，一手已读）<a href="https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/" target="_blank" rel="noopener">https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/</a> — DMA 近三年零落地，卡点是"必须另做一个第二个 Firefox 让用户手动搬家" → 评论区好聊</li>
+</ol>
+<hr />
+<h2>五、如果只有 30 分钟</h2>
+<ol>
+<li><strong><code>cd 03-内容成品/公众号/草稿 &amp;&amp; ./publish.sh</code></strong> —— 稿、封面、脚本全在，第 104 小时了。这是今晚唯一的硬任务。</li>
+<li>发完再决定主推：<strong>今天数据好的话，主推明天早上写也不亏</strong>（后续还在跑，明天可能有第四项完成的更新）。</li>
+</ol><div class="pager"><a class="l" href="2026-11-21-选题方案.html">← 2026-11-21 选题方案</a><a class="r" href="2026-11-22-选题方案.html">2026-11-22 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-22</footer>
+</div>
+</body></html>
