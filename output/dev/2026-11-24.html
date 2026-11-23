@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-11-24（周二，凌晨版）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-24</div><h1>每日独立开发精选 — 2026-11-24（周二，凌晨版）</h1>
+<h2>🧠 Hacker News</h2>
+<ol>
+<li>
+<p><strong>Nvidia 重新任命黄仁勋为 CEO</strong>（1273 分 / <strong>2397 评论</strong>，创这周纪录）<br />
+   <a href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html" target="_blank" rel="noopener">https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50611576" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50611576</a><br />
+   → Jus 点评：<strong>昨天那条现在升级成 2397 条评论了</strong>，说明事情不简单。CNBC 版本比 Nvidia 官方稿多了一层语境。<strong>这是本周唯一值得你熬夜看评论的事</strong>——不是看热闹，是看你所在公司的权力结构变化会怎么传导到 N1-Auto 这个项目上。</p>
+</li>
+<li>
+<p><strong>Ladybird 进入 alpha</strong>（787 分 / 222 评论）<br />
+   <a href="https://ladybird.org/posts/alpha/" target="_blank" rel="noopener">https://ladybird.org/posts/alpha/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50614249" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50614249</a><br />
+   → Jus 点评：<strong>从零写的独立浏览器引擎终于 alpha</strong>。这是"对抗平台垄断 + 纯工程信仰"的活标本，做了好几年。<strong>做开源想长期坚持的人应该读它的路线图</strong>——它证明了不靠资本也能推完一个荒谬大的工程。</p>
+</li>
+<li>
+<p><strong>"应 ARM 要求，本站将于 2026 年 12 月 4 日关闭"</strong>（81 分 / 13 评论）<br />
+   <a href="https://arm.jonpalmisc.com/" target="_blank" rel="noopener">https://arm.jonpalmisc.com/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50617499" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50617499</a><br />
+   → Jus 点评：<strong>跟你在 Nvidia/ARM 生态直接相关</strong>。个人做 ARM 相关工具被法务叫停——<strong>芯片厂商对生态的控制力比你想象的强</strong>。做 Tegra 周边工具要想清楚许可边界。</p>
+</li>
+<li>
+<p><strong>NariQ：把一个 BF16 级 Qwen3.8-27B 塞进 10 GB 文件</strong>（35 分 / 4 评论）<br />
+   <a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF" target="_blank" rel="noopener">https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50611402" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50611402</a><br />
+   → Jus 点评：<strong>分低但极其有用</strong>。量化技术又进一步，27B 级别模型 10GB 就能跑。<strong>意味着你 Mac mini 上能跑接近前线水平的本地模型</strong>——私有 agent 栈的成本已经低到可以随便试。</p>
+</li>
+<li>
+<p><strong>Kagi Mail 公测</strong>（160 分 / 124 评论）<br />
+   <a href="https://blog.kagi.com/kagi-mail-public-beta" target="_blank" rel="noopener">https://blog.kagi.com/kagi-mail-public-beta</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50615481" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50615481</a><br />
+   → Jus 点评：Kagi（付费搜索引擎）做邮件了。<strong>"付费、不追踪、无广告"的产品线在扩张</strong>——说明这个市场真实存在且能养活公司，不只是理想主义。</p>
+</li>
+<li>
+<p><strong>Yann LeCun 开炮：Dario 在炒作危险，好让开源模型被禁、自己保持控制</strong>（141 分 / 65 评论）<br />
+   <a href="https://twitter.com/ylecun/status/2124550037912920090" target="_blank" rel="noopener">https://twitter.com/ylecun/status/2124550037912920090</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50615308" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50615308</a><br />
+   → Jus 点评：<strong>开源 vs 闭源的政治战开打了</strong>。你选开源路线，这两派的力量对比会直接影响你的项目环境（许可证、监管、模型可得性）。值得跟。</p>
+</li>
+<li>
+<p><strong>Show HN: 在我村里开车兜风（3D）</strong>（77 分 / 54 评论）<br />
+   <a href="https://cherwellvalleymotorclub.app" target="_blank" rel="noopener">https://cherwellvalleymotorclub.app</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50574412" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50574412</a><br />
+   → Jus 点评：把真实地点做成 3D 可驾驶。<strong>"给具体的人做具体的东西"</strong>，比做通用产品更容易被爱。</p>
+</li>
+<li>
+<p><strong>水星探测器第二次进入轨道</strong>（190 分 / 66 评论）<br />
+   <a href="https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo" target="_blank" rel="noopener">https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50587439" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50587439</a><br />
+   → Jus 点评：人类史上第二次。纯科普补给，凌晨读这个挺好。</p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-23 完整榜单，今天多出两个重要的）</h2>
+<ol>
+<li>
+<p><strong>Plango — 让你的 AI agent 整夜安全地工作</strong><br />
+   <a href="https://www.producthunt.com/products/plango" target="_blank" rel="noopener">https://www.producthunt.com/products/plango</a><br />
+   → Jus 点评：<strong>今天最该点进去看的一个</strong>。核心词是 "safely"——<strong>agent 夜间自主运行的安全边界</strong>。这跟你的 Rails 护栏、gitroots 的路径权限是同一个战场：不是让 agent 更强，是让它在无人看管时不出事。这个方向的商业价值正在被确认。</p>
+</li>
+<li>
+<p><strong>TeaserKit — 你的 coding agent 导演你的发布视频</strong>（昨天提过，今天确认在榜）<br />
+   <a href="https://www.producthunt.com/products/teaserkit" target="_blank" rel="noopener">https://www.producthunt.com/products/teaserkit</a><br />
+   → Jus 点评：本周第三次出现的"发布物料"赛道，三家不同的产品。<strong>信号已经到了可以下注的程度</strong>。</p>
+</li>
+<li>
+<p><strong>Modem — 找到、修好、跟进每一个客户问题</strong><br />
+   <a href="https://www.producthunt.com/products/modem" target="_blank" rel="noopener">https://www.producthunt.com/products/modem</a><br />
+   → Jus 点评：客户反馈闭环。这类工具的价值全靠"是否真的能闭环"，别被 demo 骗。</p>
+</li>
+<li>
+<p><strong>Journalistic Tech — 异步采访，帮你登上 HackerNoon</strong><br />
+   <a href="https://www.producthunt.com/products/journalistic-tech" target="_blank" rel="noopener">https://www.producthunt.com/products/journalistic-tech</a><br />
+   → Jus 点评：<strong>用内容换外链的分发服务</strong>。你做开源想上 HN/HackerNoon 的话，这类服务可以买时间。</p>
+</li>
+<li>
+<p><strong>Letter Visitors — 直接在网站上看到访客</strong><br />
+   <a href="https://www.producthunt.com/products/visitors" target="_blank" rel="noopener">https://www.producthunt.com/products/visitors</a><br />
+   → Jus 点评：<strong>把分析数据"画在网站上"</strong>而不是给你一个 dashboard。呈现方式的创新往往比功能创新更容易传播。</p>
+</li>
+<li>
+<p><strong>Yoroll — 不用游戏引擎就能做可玩的故事</strong><br />
+   <a href="https://www.producthunt.com/products/yoroll" target="_blank" rel="noopener">https://www.producthunt.com/products/yoroll</a><br />
+   → Jus 点评：交互叙事工具。适合做内容的人扩展形态。</p>
+</li>
+<li>
+<p><strong>Daymaker — 私人到对方愿意见你的礼物</strong><br />
+   <a href="https://www.producthunt.com/products/daymaker" target="_blank" rel="noopener">https://www.producthunt.com/products/daymaker</a><br />
+   → Jus 点评：用礼物换会议。B2B 销售的真实切口，但商业模式偏"服务"不偏"软件"。</p>
+</li>
+<li>
+<p><strong>Leapdeck — 一个键或 iPhone 跳到任意 Mac Space</strong><br />
+   <a href="https://www.producthunt.com/products/leapdeck" target="_blank" rel="noopener">https://www.producthunt.com/products/leapdeck</a><br />
+   → Jus 点评：极小极专的 Mac 效率工具。<strong>启动成本近零，适合做第一个付费产品练手。</strong></p>
+</li>
+</ol>
+<hr />
+<h2>🌱 Reddit（r/SideProject + r/SaaS）</h2>
+<ol>
+<li>
+<p><strong>我受够了给手机样机打关键帧，现在我的手就是动画</strong>（412 分 / 47 评论，<strong>今日第一，比昨天涨了 379 分</strong>）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y3ima6/i_got_tired_of_keyframing_phone_mockups_so_now_my/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y3ima6/i_got_tired_of_keyframing_phone_mockups_so_now_my/</a><br />
+   → Jus 点评：<strong>昨天 33 分，今天 412 分</strong>——这是典型的 HN/Reddit 二次发酵。说明这条内容真的戳中了一批人。<strong>"用真实的手代替软件动画"</strong>，成本极低，效果极真。</p>
+</li>
+<li>
+<p><strong>我做了个带 3D X 光身体的拉伸 App</strong>（54 分 / 26 评论，昨天还是 15 分）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y3ilei/i_built_a_stretching_app_with_a_3d_xray_body/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y3ilei/i_built_a_stretching_app_with_a_3d_xray_body/</a><br />
+   → Jus 点评：也在涨。<strong>3D 可视化 + 身体觉察</strong>——健康类 App 正在从"记录"转向"看见"。</p>
+</li>
+<li>
+<p><strong>我终于把 App 做到 100 美元了，比我预想的花了太久</strong>（14 分 / 21 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y3g5bj/i_finally_crossed_100_for_my_app_it_took_much/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y3g5bj/i_finally_crossed_100_for_my_app_it_took_much/</a><br />
+   → Jus 点评：<strong>最诚实的对照组</strong>。100 美元花了很久——记住这个体感，你的"6 个月内第一笔付费"目标应该按这个节奏校准，别被"4 天赚到第一桶金"的帖子带节奏。</p>
+</li>
+<li>
+<p><strong>我的情侣天数 App 零推广到 2.5 万 Android 安装</strong>（10 分 / 17 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y3jmn9/my_couple_daycounter_app_reached_25000_android/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y3jmn9/my_couple_daycounter_app_reached_25000_android/</a><br />
+   → Jus 点评：<strong>"零推广 2.5 万安装"值得看他是怎么做到的</strong>——通常是商店 SEO + 长期稳定更新，不是玄学。</p>
+</li>
+<li>
+<p><strong>做了个追踪所有固定开支的 App（不只是订阅）</strong>（11 分 / 11 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y3jezs/made_an_app_that_tracks_all_my_fixed_costs_not/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y3jezs/made_an_app_that_tracks_all_my_fixed_costs_not/</a><br />
+   → Jus 点评：<strong>从"订阅管理"扩到"固定成本"</strong>——红海里的差异化切口。前几天 SMT 有个"按发薪周期算可花余额"，都是同一类"现有财务 App 算不清"的痛点。</p>
+</li>
+<li>
+<p><strong>"怎么不花钱拿到第一批 SaaS 客户"</strong>（76 分 / <strong>89 评论</strong>，连续两天第一）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y32zco/how_are_people_getting_their_first_saas_customers/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y32zco/how_are_people_getting_their_first_saas_customers/</a><br />
+   → Jus 点评：<strong>89 条评论是这周最实操的讨论</strong>。你的第一个付费客户，答案大概率在这帖里。值得花 20 分钟读完评论。</p>
+</li>
+<li>
+<p><strong>上线 9 天，激活率是零：注册的人都没做那关键一步</strong>（4 分 / 16 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y3lm05/9_days_after_launch_activation_is_zero_nobody_who/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y3lm05/9_days_after_launch_activation_is_zero_nobody_who/</a><br />
+   → Jus 点评：<strong>比分更值钱的是这个数字</strong>。做产品最容易忽略的不是获客，是<strong>从注册到第一次价值体验之间的那一步</strong>。</p>
+</li>
+<li>
+<p><strong>"AI 让构建变容易、也变得一文不值"</strong>（7 分 / <strong>78 评论</strong>，还在涨）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y3ddiz/ai_made_building_easy_and_made_it_worthless_at/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y3ddiz/ai_made_building_easy_and_made_it_worthless_at/</a><br />
+   → Jus 点评：昨天 64 条，今天 78 条。<strong>这周第七次出现同主题</strong>。不用再讨论了，接受它，把精力放在判断力和分发上。</p>
+</li>
+<li>
+<p><strong>我把视频工作室做成了桌面 App 而不是 Web SaaS</strong>（7 分 / 5 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y3g24a/i_built_an_allinone_video_studio_as_a_desktop_app/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y3g24a/i_built_an_allinone_video_studio_as_a_desktop_app/</a><br />
+   → Jus 点评：<strong>反向选择：桌面而非 Web</strong>。对重度本地处理（视频/音频/AI）这是合理选择——也和"数据不出本机"的趋势一致。</p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis 需求</h2>
+<blockquote>
+<p>🔴 第 9 天。<code>/new</code> <code>/hot</code> 403，登录态过期。今天 <code>top?t=day</code> 4 条，只有 1 条新的。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>用你的窗口当平台的平台跳跃游戏</strong>（11-24 今天，1 分）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y3nmtl/platformer_that_uses_your_windows_as_a_platform/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y3nmtl/platformer_that_uses_your_windows_as_a_platform/</a><br />
+   → Jus 点评：<strong>今天的真新需求</strong>。让游戏角色在你真实的桌面窗口之间跳跃——技术上是要读取窗口位置（macOS 无障碍 API / Windows Win32），<strong>做得出 demo 就一定会火</strong>，商业价值一般但传播价值极高。适合做开源玩票。</p>
+</li>
+<li>
+<p>其余 3 条都是昨天已经报过的废帖（clone 讨论、joke shop 调查、找父母的 App），不重复。</p>
+</li>
+<li>
+<p><strong>板块判定：第 9 天，本周累计 4 个够格需求（新增"窗口平台游戏"）。</strong><br />
+   → 再确认一次我的建议：<strong>修 Cookie，或者改成隔周。</strong></p>
+</li>
+</ol>
+<hr />
+<h2>🎯 今日灵感提炼</h2>
+<ol>
+<li><strong>黄仁勋那条评论从 765 涨到 2397</strong>——不是热度自然增长，是事件在演化。<strong>今天最该做的就一件事：读那个帖子的前 50 条评论</strong>，弄清楚"Nvidia 董事会为什么用 reinstated 这个词"。</li>
+<li><strong>今天三个产品指向同一件事</strong>：Plango（agent 夜间安全运行）、gitroots（路径级权限）、UndoGuard（agent 的 Ctrl+Z）——<strong>"约束 agent"已经是独立的产品品类了</strong>。这正好是你 Harness 里 Rails 护栏的商业化验证，也说明<strong>做 agent 安全/边界，比做 agent 能力更有市场</strong>。</li>
+<li><strong>NariQ 的 27B/10GB 是个转折点</strong>：本地跑接近前线水平的模型，成本已经不是障碍。<strong>你的私有 agent 栈可以今天就搭起来试</strong>。</li>
+<li><strong>可操作</strong>：<br />
+   - 📰 读黄仁勋帖评论（今天唯一必做）<br />
+   - 🧪 试试 <a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF">NariQ Qwen3.8-27B</a> 在 Mac mini 上跑起来，测测能不能支撑你的 agent 日常<br />
+   - 📖 读 <a href="https://reddit.com/r/SaaS/comments/1y32zco/how_are_people_getting_their_first_saas_customers/">89 评论的获客帖</a><br />
+   - 💡 记：「窗口平台游戏」是个低成本高传播的开源玩票项目</li>
+</ol>
+<hr />
+<p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
+<em>SMT 异常第 9 天：/new /hot 403，fetch_smt.py 登录态过期，top?t=day 仅 4 条（1 条新）</em></p><div class="pager"><a class="l" href="2026-11-23.html">← 2026-11-23</a></div></article>
+<footer>自动生成 · 2026-11-24</footer>
+</div>
+</body></html>
