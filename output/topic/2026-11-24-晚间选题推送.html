@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1124 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-24</div><h1>1124 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-24 22:00 (Asia/Shanghai)<br />
+上午方案：<code>1124-选题方案.md</code><br />
+今晚新抓一手：MIT 验证页 <code>Page last updated 2026-11-24 05:25 UTC</code>（上一版是 11-23 23:45 UTC）</p>
+</blockquote>
+<hr />
+<h2>一、老账（22:00 文件系统核对）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>仍在 <code>03-内容成品/公众号/草稿/</code>，第 165 小时</strong>（11/17 13:58 → 11/24 22:00）。稿 + cover 脚本 + covers/ 图 + <code>publish.sh</code> 全齐，按回车就发</td>
+</tr>
+<tr>
+<td>1122 / 1121 / 1120 / 1119 / 1118 稿</td>
+<td>均未写</td>
+</tr>
+<tr>
+<td>02-创作中选题</td>
+<td>空</td>
+</tr>
+<tr>
+<td>待发布/</td>
+<td>最新仍 <code>0925-AI入侵澳医保.md</code>，<strong>60 天</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>第七天。今晚不再把消息额度花在这张表上，只给一个判断：<strong>这几天你不是选题不够，是在等一个"完美闭合"的结局。那结局永远不会到，也不会妨碍你发稿</strong>——今晚的证据正好说明这点。</p>
+<hr />
+<h2>二、今晚新事实：页面更新了，而"最后一步"还在跑</h2>
+<p>MIT 页面 2026-11-24 05:25 UTC 的更新，全在<strong>新增</strong>，不在<strong>推翻</strong>：</p>
+<ul>
+<li>✅ 昨天那些全部维持：default kernel 48h3m / paranoid 72h20m / comparator v4.33.0「Your solution is okay!」/ sandbox 615 亿字节 sha256 一致</li>
+<li>🔬 环境变量那条（<code>MIMALLOC_GENERIC_COLLECT=1000000</code>，48h→9h8m、72h→10h）<strong>原样保留在表里</strong>，Sutherland 专门加了一句解释："The setting is an environment variable read by the stock binary… changes nothing about what is checked."（官方替你把"这不是作弊"说清楚了，正文可直接引）</li>
+<li>🆕 <strong>lake comparator 的三个阶段拆开了</strong>：paranoid kernel 阶段约 11/23 19:53 UTC 接受，nanoda 阶段约 21:31 UTC 接受，最后一段 Lean default kernel <strong>单线程，从那时起跑</strong>，页面明写 "took 48 hours when run on its own"。<strong>也就是说这段预计 11/25 晚上左右出结果——今晚仍然 running</strong></li>
+<li>🆕 <strong>算术后果独立旁证</strong>：把证明与 kimihiro64/Robin1984（独立形式化，11/23 提交）合并，得到三条"无假设、不提 ζ 零点"的定理：Robin 不等式（n&gt;5040）、Lagarias 判据、分圆域修正理想 Robin。这几条<strong>不依赖 Mathlib 对 ζ 的定义</strong>，是防"定义对错了"的那层保险</li>
+<li>🆕 <strong>Robin1984 自己被完整验过</strong>：lake build 4901 jobs、1h21m，11/24 01:16 UTC 通过；con-leche 接受 102,238 条声明</li>
+<li>🆕 <strong>1/175,187 的真相写细了</strong>：98,219 个 olean 编进了绝对路径 <code>/home/ubuntu/grh/src/…</code>；<code>LocModel.olean</code> 那个不一致是 Lean 并行展开定理体时绑定变量名竞争（38 字节），单线程 6 次全一致，v4.36.0 已修（PR #15499），<strong>且这个 lemma 不在 export 依赖路径里</strong></li>
+</ul>
+<p><strong>一句话</strong>：证明了的东西一条没少，新增的全是旁证和补充说明；唯一还没完的仍是<strong>同一个单线程 kernel 重放</strong>。</p>
+<hr />
+<h2>三、主推（99 分，今晚就能写完，且写完不会被明天的更新打死）</h2>
+<h3>标题方向：《验证报告更新了三次，唯一没变的是那个还在跑的进程》</h3>
+<p><strong>为什么今晚必须写它</strong>：这是你手上<strong>唯一</strong>一篇素材已经完全固化、结论怎么写都不会错、且明天页面更新也只会给它添证据的稿。连锁三天的"等结局"焦虑，今晚可以直接终结。</p>
+<p><strong>核心结构（四段）</strong>：</p>
+<ol>
+<li><strong>开头</strong>：三天三版验证页（11/22 16:20 → 11/23 23:45 → 11/24 05:25）。变化的是旁证越来越厚，不变的是同一行 <code>running</code>。</li>
+<li><strong>第一刀（造价）</strong>：nanoda 80 线程 27 分 42 秒通过；最权威那条路单线程按天算。<strong>可信度的定价单位是串行小时。</strong></li>
+<li><strong>第二刀（工程债）</strong>：一个环境变量（allocator 回收策略）让 48h 变 9h8m、72h 变 10h。页面自己强调"changes nothing about what is checked"——<strong>"权威性很慢"里有相当一部分不是数学的代价，是分配器的代价</strong>。这句是全篇最好的钩子。</li>
+<li><strong>第三刀（收窄射程）</strong>：1/175,187、98,219 个文件里的绝对路径、lean4lean 5 个 module 要调高 step limit、bundled con-leche 在 v4.36 直接 declined——<strong>做验证的人一直在主动列出自己的边界</strong>。这正是和 1121 那天 2372 分热度形成反差的真正技术文化。</li>
+<li><strong>结尾（钉死）</strong>："截止 11/24 05:25 UTC，除最后一段单线程重放外，所有独立检查均已通过。这件事技术上已经闭合了。留下更普遍的教训是：<strong>AI 交出的证明，人类验证它的成本正在成为新的瓶颈。</strong>"</li>
+</ol>
+<p><strong>原文链接（正文必带）</strong>：<br />
+- <a href="https://math.mit.edu/~drew/grh/">MIT Andrew Sutherland 验证页（Page last updated 2026-11-24 05:25 UTC）</a><br />
+- <a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">Lean/Mathlib 社区联合声明（11/21）</a><br />
+- <a href="https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/">Scientific American（11/21 更新）</a><br />
+- <a href="https://github.com/kimihiro64/Robin1984">Robin1984 独立形式化仓库</a><br />
+- <a href="https://github.com/leanprover/lean4/issues/15498">Lean issue #15498</a> · <a href="https://github.com/leanprover/lean4/pull/15499">PR #15499</a><br />
+- 前情：<a href="https://alpo.ge/remark.pdf">Alpöge 声明 PDF</a> · <a href="https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/">Buzzard 博客</a></p>
+<p><strong>边界三条</strong>：<br />
+1. 不写"黎曼猜想被证明了"；写"形式化证明的机器验证除最后一段单线程重放外已完成"<br />
+2. Lean / Mathlib / con-* / Robin1984 都是利益相关方或社区项目，标注清楚<br />
+3. 不写"AI 独立完成"——checks run with Claude Code，数学与人审是人的</p>
+<p><strong>平台</strong>：公众号 1800–2500 字；Twitter thread 6 条：<br />
+「他只有 Lean 可发」→「一天后社区签字」→「第三天连 Lean 自己都跑不完」→「第四天通过了，单线程 48 小时」→「改一个环境变量，剩下 39 小时没了」→「验证成本才是新瓶颈」</p>
+<hr />
+<h2>四、备选（仍然只有这一个，素材纯一手）</h2>
+<p><strong>GPGME 双重释放 CVE-2026-129975</strong>（HN 233/95）<br />
+<a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" target="_blank" rel="noopener">https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html</a><br />
+超长 User ID 触发，影响多数邮件客户端 + Samba；原定 11/25 披露，被 Ruby2Shell 逼到 11/20 提前公开。1500 字快稿，接 1120 那篇的攻击面主线。</p>
+<hr />
+<h2>五、今晚 30 分钟版（按顺序，别改）</h2>
+<ol>
+<li><code>cd 03-内容成品/公众号/草稿 &amp;&amp; ./publish.sh</code> —— <strong>第 165 小时，最优先</strong></li>
+<li>主推按上面四段写，素材全在本文件，<strong>不需要等 11/25 那个 kernel 出结果</strong></li>
+<li>实在不想写主推就写 GPGME，也够了</li>
+</ol>
+<p><strong>一句话总结</strong>：今晚的选题不缺，缺的是按下回车。明天的页面更新只会给这篇稿添一条旁证，不会让它变旧。</p><div class="pager"><a class="l" href="2026-11-23-选题方案.html">← 2026-11-23 选题方案</a><a class="r" href="2026-11-24-选题方案.html">2026-11-24 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-25</footer>
+</div>
+</body></html>

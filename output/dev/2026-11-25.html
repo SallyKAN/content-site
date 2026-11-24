@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-11-25（周三，凌晨版）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-25</div><h1>每日独立开发精选 — 2026-11-25（周三，凌晨版）</h1>
+<h2>🧠 Hacker News</h2>
+<ol>
+<li>
+<p><strong>LLM agent 为它的母公司工作，不是为你</strong>（686 分 / 291 评论，今日第一）<br />
+   <a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/" target="_blank" rel="noopener">https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50627340" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50627340</a><br />
+   → Jus 点评：<strong>今天唯一必读，直接命中你的方向</strong>。核心论点：你用的 agent 的激励来自模型厂商，不是你的利益。<strong>这正是 x402 和"Agent 分身"要解决的根本问题</strong>——agent 得有自己的身份、钱包、可验证的行为边界，而不是寄生在某家厂商的 API 上。这篇文章基本是你副业方向的问题陈述（problem statement）。<br />
+   → <strong>建议</strong>：把这篇的论点整理成你 README 的 motivations 章节。</p>
+</li>
+<li>
+<p><strong>Check Point 管理服务器被攻破，波及 22 个组织</strong>（152 分 / 51 评论）<br />
+   <a href="https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign" target="_blank" rel="noopener">https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50630594" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50630594</a><br />
+   → Jus 点评：安全网关本身被打穿。<strong>"守门人被攻破"是安全领域最坏的情形</strong>，也是为什么 agent 权限层不能靠单点。</p>
+</li>
+<li>
+<p><strong>Jetty Pro（John Siracusa 写的）</strong>（120 分 / 45 评论）<br />
+   <a href="http://hypercritical.co/2026/11/23/jetty-pro" target="_blank" rel="noopener">http://hypercritical.co/2026/11/23/jetty-pro</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50630462" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50630462</a><br />
+   → Jus 点评：老牌 Mac 评论家写的长文。<strong>独立写作者靠长期信誉活得很好</strong>——这是"开源影响力"之外的另一条个人品牌路径。</p>
+</li>
+<li>
+<p><strong>用你的闲置算力训练自己的本地模型</strong>（78 分 / 15 评论）<br />
+   <a href="https://github.com/sous-labs/songe" target="_blank" rel="noopener">https://github.com/sous-labs/songe</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50629231" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50629231</a><br />
+   → Jus 点评：<strong>承接这几天的本地模型线</strong>。Inkling 量化 → NariQ → 现在连训练都能用闲置算力。<strong>个人拥有模型的时代真的在成形</strong>，这对"agent 不该依附厂商"的论点是最好的技术支撑。</p>
+</li>
+<li>
+<p><strong>"KL 散度永远不会为负 —— 除了在 PyTorch 里"</strong>（44 分 / 12 评论）<br />
+   <a href="https://arxiv.org/abs/2611.30835" target="_blank" rel="noopener">https://arxiv.org/abs/2611.30835</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50629962" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50629962</a><br />
+   → Jus 点评：框架实现与数学定义的偏差。<strong>做测试的人该细读</strong>——这类"库的行为违背数学保证"的 bug 正是自动化测试最难抓的类型。你的 AI 驱动测试系统可以拿这个当选题灵感。</p>
+</li>
+<li>
+<p><strong>MIT 物理学家：Anthropic 员工公开谈论"接管世界"</strong>（97 分 / 42 评论）<br />
+   <a href="https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/" target="_blank" rel="noopener">https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50631210" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50631210</a><br />
+   → Jus 点评：和昨天 LeCun 开炮 Dario 是同一条战线。<strong>AI 公司的公共形象正在被围攻</strong>，这对开源阵营是顺风。</p>
+</li>
+<li>
+<p><strong>拆分 USB-C：一个口同时跑 USB 3 和 USB 2</strong>（62 分 / 39 评论）<br />
+   <a href="https://www.frankchiarulli.com/blog/splitting-usb-c/" target="_blank" rel="noopener">https://www.frankchiarulli.com/blog/splitting-usb-c/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50629106" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50629106</a><br />
+   → Jus 点评：硬件 hack。你在做嵌入式/车载，这类底层硬件知识是加分项。</p>
+</li>
+<li>
+<p><strong>Show HN: Mason —— 基于列式存储的轻量 Postgres 只读副本</strong>（23 分 / 1 评论）<br />
+   <a href="https://masondata.ai/" target="_blank" rel="noopener">https://masondata.ai/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50630294" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50630294</a><br />
+   → Jus 点评：小项目但方向清晰。<strong>"给 Postgres 加一层"永远有人要</strong>。</p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-24）</h2>
+<ol>
+<li>
+<p><strong>Orpheus — 在一个地方管理你所有的 Claude 订阅</strong><br />
+   <a href="https://www.producthunt.com/products/orpheus-2" target="_blank" rel="noopener">https://www.producthunt.com/products/orpheus-2</a><br />
+   → Jus 点评：<strong>你的 cc-connect 的"正规版"</strong>。多账号/多订阅的统一管理，正是你上周折腾的东西。<strong>说明这个痛点已经被验证成产品了</strong>——你的开源版本如果做轻一点，差异化就是"开源 + 可自托管"。</p>
+</li>
+<li>
+<p><strong>tday.com — 让你的 coding agent 讲一段功能演示（带旁白的 demo）</strong><br />
+   <a href="https://www.producthunt.com/products/tday" target="_blank" rel="noopener">https://www.producthunt.com/products/tday</a><br />
+   → Jus 点评：<strong>"发布物料"赛道第 4 个</strong>（TeaserKit、Creavit、Impractical、tday）。<strong>四家了，赛道确定成立</strong>。而且这个是"自动生成 demo 视频"——比手工录屏省太多时间。你做开源项目时直接用它。</p>
+</li>
+<li>
+<p><strong>Open Source Solana Wallet</strong>（重要，注意）<br />
+   <a href="https://www.producthunt.com/products/open-source-solana-wallet" target="_blank" rel="noopener">https://www.producthunt.com/products/open-source-solana-wallet</a><br />
+   → Jus 点评：<strong>x402 生态的直接相关项</strong>。x402 的支付走 Solana/Base 稳定币，开源钱包意味着<strong>agent 自持私钥的基础设施在成熟</strong>。配合今天 HN 那篇"agent 为母公司工作"，你该认真看这个钱包的架构。</p>
+</li>
+<li>
+<p><strong>Ashwa — 永远不会忘记你说过什么的 AI 伙伴</strong><br />
+   <a href="https://www.producthunt.com/products/ashwa" target="_blank" rel="noopener">https://www.producthunt.com/products/ashwa</a><br />
+   → Jus 点评：记忆又是卖点。<strong>这周第四次</strong>（AI Context Flow、Gauth、Ashwa、S.Space）。记忆/上下文的归属是当前最热的产品命题。</p>
+</li>
+<li>
+<p><strong>Finseo — 公司大脑 + 外联，让 AI 提到你的品牌</strong><br />
+   <a href="https://www.producthunt.com/products/finseo-ai" target="_blank" rel="noopener">https://www.producthunt.com/products/finseo-ai</a><br />
+   → Jus 点评：<strong>GEO（生成引擎优化）产品化</strong>。前几天 Reddit 说"AI 带来的注册量超过 Google"，现在有专门的工具卖了。做开源分发时这是新渠道。</p>
+</li>
+<li>
+<p><strong>Kopyo — 记住一切的 Mac 剪贴板管理器</strong><br />
+   <a href="https://www.producthunt.com/products/kopyo" target="_blank" rel="noopener">https://www.producthunt.com/products/kopyo</a><br />
+   → Jus 点评：本地优先的效率工具。单功能、单平台、能收钱，适合做第一个付费产品的参照。</p>
+</li>
+<li>
+<p><strong>Context — 让你为每个会议做好准备的日历</strong><br />
+   <a href="https://www.producthunt.com/products/context-13" target="_blank" rel="noopener">https://www.producthunt.com/products/context-13</a><br />
+   → Jus 点评：日历 + 上下文聚合。小切口，但"会前准备"是真实的时间黑洞。</p>
+</li>
+<li>
+<p><strong>Kodak SlideTag — 1935 年风格的胶片幻灯片 E-Ink 相框，还能像 AirTag 那样追踪</strong><br />
+   <a href="https://www.producthunt.com/products/kodak-slidetag" target="_blank" rel="noopener">https://www.producthunt.com/products/kodak-slidetag</a><br />
+   → Jus 点评：<strong>怀旧硬件 + IoT</strong>。今天最有意思的产品设计，说明"把旧形态重新做成数码"有市场。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 Reddit（r/SideProject + r/SaaS）</h2>
+<ol>
+<li>
+<p><strong>我们做了只卡通老鼠，实时绕着地球跑 73,158 公里</strong>（158 分 / 32 评论，今日第一）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y4a822/we_made_a_tiny_cartoon_mouse_thats_running_73158/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4a822/we_made_a_tiny_cartoon_mouse_thats_running_73158/</a><br />
+   → Jus 点评：昨天 41 分，今天 158 分。<strong>"无用的浪漫"型项目在持续发酵</strong>。这类东西的价值不在商业化，在<strong>建立"这个人有意思"的个人品牌</strong>——对你做开源影响力同样有效。</p>
+</li>
+<li>
+<p><strong>我花了 150+ 小时做了个僵尸在现实里追你的 App</strong>（39 分 / 43 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y4duqn/i_spent_150_hours_building_an_app_where_zombies/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4duqn/i_spent_150_hours_building_an_app_where_zombies/</a><br />
+   → Jus 点评：AR 游戏 + 现实空间。<strong>这周第三个"把现实空间变成游戏场地"的项目</strong>（窗口跳跃、光枪、僵尸追逐）。方向很明确。</p>
+</li>
+<li>
+<p><strong>我儿子要在特斯拉里玩 Fortnite，我就做了，现在 3000+ 辆特斯拉每天在用</strong>（9 分 / 16 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y4jla0/my_son_asked_for_fortnite_in_the_tesla_so_i_built/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4jla0/my_son_asked_for_fortnite_in_the_tesla_so_i_built/</a><br />
+   → Jus 点评：<strong>这条和你最贴</strong>。在车载系统上跑应用——<strong>这就是你在 Tegra/Thor 生态里的领域</strong>。3000+ 辆车的实际使用量说明：<strong>车载应用生态是真的空</strong>。值得花 20 分钟读他怎么做适配的。</p>
+</li>
+<li>
+<p><strong>78 封冷邮件拿到 1 个用户，在论坛回帖拿到 6 个</strong>（9 分 / 13 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4a8qg/78_cold_emails_got_me_1_user_answering_threads/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4a8qg/78_cold_emails_got_me_1_user_answering_threads/</a><br />
+   → Jus 点评：<strong>今天最实操的一条</strong>。具体数字比任何增长方法论都可信。<strong>"在别人卡住的地方出现"比"主动推销"有效 6 倍</strong>——这也解释了为什么你每天挖需求帖是有价值的。</p>
+</li>
+<li>
+<p><strong>3 个月：450 注册，4 个付费</strong>（8 分 / 12 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4drms/3_months_in_450_signups_4_paying_users/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4drms/3_months_in_450_signups_4_paying_users/</a><br />
+   → Jus 点评：0.89% 付费转化。<strong>这是独立开发的真实基准线</strong>，你的"6 个月第一笔付费"目标完全合理，不算激进。</p>
+</li>
+<li>
+<p><strong>"大家都说给本地商家做无聊的 SaaS 像白捡钱，我试了一下"</strong>（69 分 / 59 评论，在榜一整天）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4aaf8/everyone_says_build_boring_saas_for_local/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4aaf8/everyone_says_build_boring_saas_for_local/</a><br />
+   → Jus 点评：分数和评论都涨了。<strong>评论区大概是"能签单但服务成本吃死你"</strong>——这条对你排除方向有用。</p>
+</li>
+<li>
+<p><strong>"大多数公司用 AI 的方式，就像工厂最初用电的方式"</strong>（<strong>126 分 / 39 评论</strong>，昨天 30 分 → 今天 126 分）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y48dco/most_companies_are_using_ai_the_way_factories/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y48dco/most_companies_are_using_ai_the_way_factories/</a><br />
+   → Jus 点评：<strong>昨天我说这条最有框架感，今天它在发酵</strong>。值得完整读完评论。</p>
+</li>
+<li>
+<p><strong>我做了给 AI agent 的反检测浏览器，录了一次真实 bot 测试</strong>（3 分 / 2 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4ilak/i_built_an_antidetect_browser_for_ai_agents_and/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4ilak/i_built_an_antidetect_browser_for_ai_agents_and/</a><br />
+   → Jus 点评：<strong>灰色地带但极其相关的技术</strong>。agent 被网站识别和封禁是真实问题。<strong>这说明"agent 在互联网上的身份"是个未解决问题</strong>——和 x402 的"agent 身份+支付"是同一个底层命题。</p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis</h2>
+<blockquote>
+<p>🔴 第 11 天。<code>/new</code> <code>/hot</code> 403 持续。今天 <code>top?t=day</code> 只有 3 条：</p>
+</blockquote>
+<ol>
+<li><strong>boobs.fan 域名做成全球投票平台</strong>（4 分 / 2 评论）— 玩梗，非需求<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y47034/i_bought_boobsfan_for_669_and_turned_it_into_a/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y47034/i_bought_boobsfan_for_669_and_turned_it_into_a/</a></li>
+<li><strong>"有什么日常问题你希望有人解决"</strong>（0 分 / 3 评论）— 提问帖，评论也许有料<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y3xrnp/whats_one_everyday_problem_you_wish_someone_would/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y3xrnp/whats_one_everyday_problem_you_wish_someone_would/</a></li>
+<li><strong>joke shop idea</strong>（1 分 / 0 评论）— 废帖<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y4jl53/joke_shop_idea/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y4jl53/joke_shop_idea/</a></li>
+</ol>
+<p><strong>第 11 天，第三天零有效新增。</strong></p>
+<hr />
+<h2>🎯 今日灵感提炼</h2>
+<ol>
+<li>
+<p><strong>今天所有线索收束到同一句话：「agent 不是你的」。</strong><br />
+   - HN 第一：<a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">LLM agent 为母公司工作，不是为你</a><br />
+   - PH：<a href="https://www.producthunt.com/products/open-source-solana-wallet">开源 Solana 钱包</a>（agent 自持私钥）<br />
+   - Reddit：<a href="https://reddit.com/r/SaaS/comments/1y4ilak/i_built_an_antidetect_browser_for_ai_agents_and/">agent 反检测浏览器</a>（agent 在互联网上要有身份）<br />
+   - <strong>这三件事加起来，就是 x402 + Agent 分身 的完整问题陈述。</strong> 你的方向今天被三篇独立来源同时确认了。</p>
+</li>
+<li>
+<p><strong>"发布物料"赛道今天到 4 家（tday 加入）</strong>，可以断言是本年最确定的独立开发机会之一。你未来开源项目发布时，直接花 50 美元买服务比自己折腾强。</p>
+</li>
+<li>
+<p><strong>特斯拉那个项目值得你看 20 分钟</strong>——3000+ 辆车在用，说明<strong>车载应用生态是真空白</strong>。你在 Nvidia 做 Tegra/Thor，这个位置的信息优势比你想的大。</p>
+</li>
+<li>
+<p><strong>可操作</strong>：<br />
+   - 📖 <strong>必读</strong> <a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">LLM agents work for their parent companies</a>，把论点抽成你项目的 motivations<br />
+   - 💼 看 <a href="https://www.producthunt.com/products/open-source-solana-wallet">开源 Solana 钱包</a> 的架构，对照 x402 的支付链路<br />
+   - 🚗 读 <a href="https://reddit.com/r/SideProject/comments/1y4jla0/my_son_asked_for_fortnite_in_the_tesla_so_i_built/">特斯拉 Fortnite 那个帖子</a><br />
+   - 🔴 SMT 第 11 天</p>
+</li>
+</ol>
+<hr />
+<p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
+<em>SMT 异常第 11 天：/new /hot 403，连续三天零有效新增</em></p><div class="pager"><a class="l" href="2026-11-24.html">← 2026-11-24</a></div></article>
+<footer>自动生成 · 2026-11-25</footer>
+</div>
+</body></html>
