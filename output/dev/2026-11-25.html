@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>每日独立开发精选 — 2026-11-25（周三，凌晨版）</title>
+<title>每日独立开发精选 — 2026-11-25（周三，晚间增补版）</title>
 <meta name="color-scheme" content="light dark">
 <style>
 :root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
@@ -61,188 +61,196 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 <a href="../index.html">📚 Snape 的内容站</a>
 <nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
 </header>
-<article><div class="meta">2026-11-25</div><h1>每日独立开发精选 — 2026-11-25（周三，凌晨版）</h1>
-<h2>🧠 Hacker News</h2>
-<ol>
-<li>
-<p><strong>LLM agent 为它的母公司工作，不是为你</strong>（686 分 / 291 评论，今日第一）<br />
-   <a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/" target="_blank" rel="noopener">https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50627340" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50627340</a><br />
-   → Jus 点评：<strong>今天唯一必读，直接命中你的方向</strong>。核心论点：你用的 agent 的激励来自模型厂商，不是你的利益。<strong>这正是 x402 和"Agent 分身"要解决的根本问题</strong>——agent 得有自己的身份、钱包、可验证的行为边界，而不是寄生在某家厂商的 API 上。这篇文章基本是你副业方向的问题陈述（problem statement）。<br />
-   → <strong>建议</strong>：把这篇的论点整理成你 README 的 motivations 章节。</p>
-</li>
-<li>
-<p><strong>Check Point 管理服务器被攻破，波及 22 个组织</strong>（152 分 / 51 评论）<br />
-   <a href="https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign" target="_blank" rel="noopener">https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50630594" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50630594</a><br />
-   → Jus 点评：安全网关本身被打穿。<strong>"守门人被攻破"是安全领域最坏的情形</strong>，也是为什么 agent 权限层不能靠单点。</p>
-</li>
-<li>
-<p><strong>Jetty Pro（John Siracusa 写的）</strong>（120 分 / 45 评论）<br />
-   <a href="http://hypercritical.co/2026/11/23/jetty-pro" target="_blank" rel="noopener">http://hypercritical.co/2026/11/23/jetty-pro</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50630462" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50630462</a><br />
-   → Jus 点评：老牌 Mac 评论家写的长文。<strong>独立写作者靠长期信誉活得很好</strong>——这是"开源影响力"之外的另一条个人品牌路径。</p>
-</li>
-<li>
-<p><strong>用你的闲置算力训练自己的本地模型</strong>（78 分 / 15 评论）<br />
-   <a href="https://github.com/sous-labs/songe" target="_blank" rel="noopener">https://github.com/sous-labs/songe</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50629231" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50629231</a><br />
-   → Jus 点评：<strong>承接这几天的本地模型线</strong>。Inkling 量化 → NariQ → 现在连训练都能用闲置算力。<strong>个人拥有模型的时代真的在成形</strong>，这对"agent 不该依附厂商"的论点是最好的技术支撑。</p>
-</li>
-<li>
-<p><strong>"KL 散度永远不会为负 —— 除了在 PyTorch 里"</strong>（44 分 / 12 评论）<br />
-   <a href="https://arxiv.org/abs/2611.30835" target="_blank" rel="noopener">https://arxiv.org/abs/2611.30835</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50629962" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50629962</a><br />
-   → Jus 点评：框架实现与数学定义的偏差。<strong>做测试的人该细读</strong>——这类"库的行为违背数学保证"的 bug 正是自动化测试最难抓的类型。你的 AI 驱动测试系统可以拿这个当选题灵感。</p>
-</li>
-<li>
-<p><strong>MIT 物理学家：Anthropic 员工公开谈论"接管世界"</strong>（97 分 / 42 评论）<br />
-   <a href="https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/" target="_blank" rel="noopener">https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50631210" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50631210</a><br />
-   → Jus 点评：和昨天 LeCun 开炮 Dario 是同一条战线。<strong>AI 公司的公共形象正在被围攻</strong>，这对开源阵营是顺风。</p>
-</li>
-<li>
-<p><strong>拆分 USB-C：一个口同时跑 USB 3 和 USB 2</strong>（62 分 / 39 评论）<br />
-   <a href="https://www.frankchiarulli.com/blog/splitting-usb-c/" target="_blank" rel="noopener">https://www.frankchiarulli.com/blog/splitting-usb-c/</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50629106" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50629106</a><br />
-   → Jus 点评：硬件 hack。你在做嵌入式/车载，这类底层硬件知识是加分项。</p>
-</li>
-<li>
-<p><strong>Show HN: Mason —— 基于列式存储的轻量 Postgres 只读副本</strong>（23 分 / 1 评论）<br />
-   <a href="https://masondata.ai/" target="_blank" rel="noopener">https://masondata.ai/</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50630294" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50630294</a><br />
-   → Jus 点评：小项目但方向清晰。<strong>"给 Postgres 加一层"永远有人要</strong>。</p>
-</li>
-</ol>
-<hr />
-<h2>🚀 Product Hunt（11-24）</h2>
-<ol>
-<li>
-<p><strong>Orpheus — 在一个地方管理你所有的 Claude 订阅</strong><br />
-   <a href="https://www.producthunt.com/products/orpheus-2" target="_blank" rel="noopener">https://www.producthunt.com/products/orpheus-2</a><br />
-   → Jus 点评：<strong>你的 cc-connect 的"正规版"</strong>。多账号/多订阅的统一管理，正是你上周折腾的东西。<strong>说明这个痛点已经被验证成产品了</strong>——你的开源版本如果做轻一点，差异化就是"开源 + 可自托管"。</p>
-</li>
-<li>
-<p><strong>tday.com — 让你的 coding agent 讲一段功能演示（带旁白的 demo）</strong><br />
-   <a href="https://www.producthunt.com/products/tday" target="_blank" rel="noopener">https://www.producthunt.com/products/tday</a><br />
-   → Jus 点评：<strong>"发布物料"赛道第 4 个</strong>（TeaserKit、Creavit、Impractical、tday）。<strong>四家了，赛道确定成立</strong>。而且这个是"自动生成 demo 视频"——比手工录屏省太多时间。你做开源项目时直接用它。</p>
-</li>
-<li>
-<p><strong>Open Source Solana Wallet</strong>（重要，注意）<br />
-   <a href="https://www.producthunt.com/products/open-source-solana-wallet" target="_blank" rel="noopener">https://www.producthunt.com/products/open-source-solana-wallet</a><br />
-   → Jus 点评：<strong>x402 生态的直接相关项</strong>。x402 的支付走 Solana/Base 稳定币，开源钱包意味着<strong>agent 自持私钥的基础设施在成熟</strong>。配合今天 HN 那篇"agent 为母公司工作"，你该认真看这个钱包的架构。</p>
-</li>
-<li>
-<p><strong>Ashwa — 永远不会忘记你说过什么的 AI 伙伴</strong><br />
-   <a href="https://www.producthunt.com/products/ashwa" target="_blank" rel="noopener">https://www.producthunt.com/products/ashwa</a><br />
-   → Jus 点评：记忆又是卖点。<strong>这周第四次</strong>（AI Context Flow、Gauth、Ashwa、S.Space）。记忆/上下文的归属是当前最热的产品命题。</p>
-</li>
-<li>
-<p><strong>Finseo — 公司大脑 + 外联，让 AI 提到你的品牌</strong><br />
-   <a href="https://www.producthunt.com/products/finseo-ai" target="_blank" rel="noopener">https://www.producthunt.com/products/finseo-ai</a><br />
-   → Jus 点评：<strong>GEO（生成引擎优化）产品化</strong>。前几天 Reddit 说"AI 带来的注册量超过 Google"，现在有专门的工具卖了。做开源分发时这是新渠道。</p>
-</li>
-<li>
-<p><strong>Kopyo — 记住一切的 Mac 剪贴板管理器</strong><br />
-   <a href="https://www.producthunt.com/products/kopyo" target="_blank" rel="noopener">https://www.producthunt.com/products/kopyo</a><br />
-   → Jus 点评：本地优先的效率工具。单功能、单平台、能收钱，适合做第一个付费产品的参照。</p>
-</li>
-<li>
-<p><strong>Context — 让你为每个会议做好准备的日历</strong><br />
-   <a href="https://www.producthunt.com/products/context-13" target="_blank" rel="noopener">https://www.producthunt.com/products/context-13</a><br />
-   → Jus 点评：日历 + 上下文聚合。小切口，但"会前准备"是真实的时间黑洞。</p>
-</li>
-<li>
-<p><strong>Kodak SlideTag — 1935 年风格的胶片幻灯片 E-Ink 相框，还能像 AirTag 那样追踪</strong><br />
-   <a href="https://www.producthunt.com/products/kodak-slidetag" target="_blank" rel="noopener">https://www.producthunt.com/products/kodak-slidetag</a><br />
-   → Jus 点评：<strong>怀旧硬件 + IoT</strong>。今天最有意思的产品设计，说明"把旧形态重新做成数码"有市场。</p>
-</li>
-</ol>
-<hr />
-<h2>🌱 Reddit（r/SideProject + r/SaaS）</h2>
-<ol>
-<li>
-<p><strong>我们做了只卡通老鼠，实时绕着地球跑 73,158 公里</strong>（158 分 / 32 评论，今日第一）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y4a822/we_made_a_tiny_cartoon_mouse_thats_running_73158/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4a822/we_made_a_tiny_cartoon_mouse_thats_running_73158/</a><br />
-   → Jus 点评：昨天 41 分，今天 158 分。<strong>"无用的浪漫"型项目在持续发酵</strong>。这类东西的价值不在商业化，在<strong>建立"这个人有意思"的个人品牌</strong>——对你做开源影响力同样有效。</p>
-</li>
-<li>
-<p><strong>我花了 150+ 小时做了个僵尸在现实里追你的 App</strong>（39 分 / 43 评论）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y4duqn/i_spent_150_hours_building_an_app_where_zombies/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4duqn/i_spent_150_hours_building_an_app_where_zombies/</a><br />
-   → Jus 点评：AR 游戏 + 现实空间。<strong>这周第三个"把现实空间变成游戏场地"的项目</strong>（窗口跳跃、光枪、僵尸追逐）。方向很明确。</p>
-</li>
-<li>
-<p><strong>我儿子要在特斯拉里玩 Fortnite，我就做了，现在 3000+ 辆特斯拉每天在用</strong>（9 分 / 16 评论）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y4jla0/my_son_asked_for_fortnite_in_the_tesla_so_i_built/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4jla0/my_son_asked_for_fortnite_in_the_tesla_so_i_built/</a><br />
-   → Jus 点评：<strong>这条和你最贴</strong>。在车载系统上跑应用——<strong>这就是你在 Tegra/Thor 生态里的领域</strong>。3000+ 辆车的实际使用量说明：<strong>车载应用生态是真的空</strong>。值得花 20 分钟读他怎么做适配的。</p>
-</li>
-<li>
-<p><strong>78 封冷邮件拿到 1 个用户，在论坛回帖拿到 6 个</strong>（9 分 / 13 评论）<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y4a8qg/78_cold_emails_got_me_1_user_answering_threads/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4a8qg/78_cold_emails_got_me_1_user_answering_threads/</a><br />
-   → Jus 点评：<strong>今天最实操的一条</strong>。具体数字比任何增长方法论都可信。<strong>"在别人卡住的地方出现"比"主动推销"有效 6 倍</strong>——这也解释了为什么你每天挖需求帖是有价值的。</p>
-</li>
-<li>
-<p><strong>3 个月：450 注册，4 个付费</strong>（8 分 / 12 评论）<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y4drms/3_months_in_450_signups_4_paying_users/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4drms/3_months_in_450_signups_4_paying_users/</a><br />
-   → Jus 点评：0.89% 付费转化。<strong>这是独立开发的真实基准线</strong>，你的"6 个月第一笔付费"目标完全合理，不算激进。</p>
-</li>
-<li>
-<p><strong>"大家都说给本地商家做无聊的 SaaS 像白捡钱，我试了一下"</strong>（69 分 / 59 评论，在榜一整天）<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y4aaf8/everyone_says_build_boring_saas_for_local/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4aaf8/everyone_says_build_boring_saas_for_local/</a><br />
-   → Jus 点评：分数和评论都涨了。<strong>评论区大概是"能签单但服务成本吃死你"</strong>——这条对你排除方向有用。</p>
-</li>
-<li>
-<p><strong>"大多数公司用 AI 的方式，就像工厂最初用电的方式"</strong>（<strong>126 分 / 39 评论</strong>，昨天 30 分 → 今天 126 分）<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y48dco/most_companies_are_using_ai_the_way_factories/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y48dco/most_companies_are_using_ai_the_way_factories/</a><br />
-   → Jus 点评：<strong>昨天我说这条最有框架感，今天它在发酵</strong>。值得完整读完评论。</p>
-</li>
-<li>
-<p><strong>我做了给 AI agent 的反检测浏览器，录了一次真实 bot 测试</strong>（3 分 / 2 评论，今天新发）<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y4ilak/i_built_an_antidetect_browser_for_ai_agents_and/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4ilak/i_built_an_antidetect_browser_for_ai_agents_and/</a><br />
-   → Jus 点评：<strong>灰色地带但极其相关的技术</strong>。agent 被网站识别和封禁是真实问题。<strong>这说明"agent 在互联网上的身份"是个未解决问题</strong>——和 x402 的"agent 身份+支付"是同一个底层命题。</p>
-</li>
-</ol>
-<hr />
-<h2>#️⃣ SomebodyMakeThis</h2>
+<article><div class="meta">2026-11-25</div><h1>每日独立开发精选 — 2026-11-25（周三，晚间增补版）</h1>
 <blockquote>
-<p>🔴 第 11 天。<code>/new</code> <code>/hot</code> 403 持续。今天 <code>top?t=day</code> 只有 3 条：</p>
+<p>凌晨 02:30 已推一版。这版是晚间榜单刷新，<strong>新增 8 条</strong>（HN 换血 + Reddit 出现爆款 + SMT 终于有真需求了）。</p>
+</blockquote>
+<h2>🧠 Hacker News（新增，变化很大）</h2>
+<ol>
+<li>
+<p><strong>矩阵乘法的指数是 9/4 = Θ(n^2.25)（OpenAI 出的 PDF）</strong>（629 分 / 334 评论，今日第一）<br />
+   <a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf" target="_blank" rel="noopener">https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50637220" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50637220</a><br />
+   → Jus 点评：<strong>这周第二次"AI 做出数学突破"</strong>（上次是黎曼猜想）。这次是 OpenAI 挂在自己 github 上的预印本，比上次那个个人声明更可信。<strong>评论区在吵"这算不算 AI 做的"</strong>——但对工程界来说，如果 n^2.25 成立，未来所有矩阵运算的复杂度下界都要重写。<br />
+   → 对你：这是个"算法层正在被重写"的信号，长期值得跟。</p>
+</li>
+<li>
+<p><strong>模型可以通过推理服务器通信，即使被沙箱隔离</strong>（230 分 / 88 评论）<br />
+   <a href="https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being" target="_blank" rel="noopener">https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50637686" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50637686</a><br />
+   → Jus 点评：<strong>今天最该警惕的一条，和你的方向正面相关</strong>。多 agent 系统里，你以为隔离了，其实它们能通过共享的 inference server 侧信道沟通。<strong>你做 Agent 分身/多 agent 编排，必须知道这个洞</strong> —— "隔离"在 LLM 时代不等于"隔离"。</p>
+</li>
+<li>
+<p><strong>Old Nvidia / ATI 技术演示，在浏览器里重新跑起来</strong>（119 分 / 26 评论）<br />
+   <a href="https://gpu-demo-gallery.pages.dev/" target="_blank" rel="noopener">https://gpu-demo-gallery.pages.dev/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50638503" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50638503</a><br />
+   → Jus 点评：<strong>你的领域 + 你的技术栈（WebGPU/WASM）</strong>。把老 GPU demo 跑进浏览器，技术难度不低，而且天然的怀旧传播力。<strong>这类项目是个人做技术影响力最容易出成绩的模板</strong>。</p>
+</li>
+<li>
+<p><strong>Ternary Bonsai 2.5 27B</strong>（445 分 / 141 评论）<br />
+   <a href="https://prismml.com/news/bonsai-2-5-27b" target="_blank" rel="noopener">https://prismml.com/news/bonsai-2-5-27b</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50633922" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50633922</a><br />
+   → Jus 点评：<strong>三进制量化，27B 级</strong>。这周第四个本地模型突破（Inkling 5.4GB → NariQ 10GB → songe 训练 → Bonsai 三进制）。<strong>"个人拥有一台能跑好模型的机器"已经是现实</strong>，你的私有 agent 栈没有理由再等。</p>
+</li>
+<li>
+<p><strong>Marginalia Search 的现状：钱、C++、Rust、AI</strong>（113 分 / 49 评论）<br />
+   <a href="https://www.marginalia.nu/log/a_141_marginalia_update/" target="_blank" rel="noopener">https://www.marginalia.nu/log/a_141_marginalia_update/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50638220" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50638220</a><br />
+   → Jus 点评：<strong>独立搜索引擎的存活实录</strong>。创始人坦率讲钱的问题——<strong>做独立产品最难的一直是"活下来"</strong>，不是技术。读这种一手复盘比读增长文章有用。</p>
+</li>
+<li>
+<p><strong>绕过 iOS Safari 的 60 FPS 限制，做原生手感 Web 应用</strong>（183 分 / 71 评论）<br />
+   <a href="https://rida.dev/blog/bypassing-ios-safari-60-fps-limit" target="_blank" rel="noopener">https://rida.dev/blog/bypassing-ios-safari-60-fps-limit</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50637890" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50637890</a><br />
+   → Jus 点评：iOS Web 性能的硬核技巧。如果你以后做本地 agent 的界面，这条直接影响体验。</p>
+</li>
+<li>
+<p><strong>GPT-6 模型展现出内在的蛋白质设计能力</strong>（264 分 / 83 评论）<br />
+   <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/" target="_blank" rel="noopener">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50634658" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50634658</a><br />
+   → Jus 点评：模型在专业领域的"涌现能力"。<strong>注意"intrinsic"（内在的）这个词</strong>——不是专门训练的，是自然而然会的。这类能力扩展对你的 agent 设计有启示：别把 agent 限制在你预设的流程里。</p>
+</li>
+<li>
+<p><strong>Button Sounds —— 专业录制的按钮点击音效集</strong>（373 分 / 50 评论）<br />
+   <a href="https://buttons.joshwcomeau.com/" target="_blank" rel="noopener">https://buttons.joshwcomeau.com/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50638032" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50638032</a><br />
+   → Jus 点评：<strong>"极小极专但有品味"的项目典范</strong>。Josh Comeau 做的，一个音效集能上 373 分。<strong>做东西的品味本身就是分发能力</strong>。</p>
+</li>
+<li>
+<p><strong>用 3 美元接管美国财政部子域名</strong>（81 分 / 18 评论）<br />
+   <a href="https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each" target="_blank" rel="noopener">https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50638478" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50638478</a><br />
+   → Jus 点评：安全研究的经典类型。<strong>"子域名接管"是低级但常见的漏洞</strong>，你做任何 Web 服务都要检查这个。</p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-25）</h2>
+<ol>
+<li>
+<p><strong>Granular.Build — 把 AI agent 放进可视化工作区干活</strong><br />
+   <a href="https://www.producthunt.com/products/granular-build" target="_blank" rel="noopener">https://www.producthunt.com/products/granular-build</a><br />
+   → Jus 点评：<strong>今天最该看的</strong>。可视化 + 多 agent 编排，<strong>这正是"团队共享 agent 上下文"的具体产品化</strong>（前几天 S.Space 的延续）。你的分身系统如果做可视化，这是必须对标的。</p>
+</li>
+<li>
+<p><strong>distribution.dev — 一次投放，在多个开发者站点做广告</strong><br />
+   <a href="https://www.producthunt.com/products/distribution-dev" target="_blank" rel="noopener">https://www.producthunt.com/products/distribution-dev</a><br />
+   → Jus 点评：<strong>做开源的人该记一下</strong>。"面向开发者分发"已经产品化了。你未来项目冷启动时，相比买通用广告，这类定向渠道更划算。</p>
+</li>
+<li>
+<p><strong>Willow iOS 2.0 — 口述时不用切 App</strong><br />
+   <a href="https://www.producthunt.com/products/willow-voice" target="_blank" rel="noopener">https://www.producthunt.com/products/willow-voice</a><br />
+   → Jus 点评：语音输入的体验优化。<strong>语音正在成为 agent 的主要输入通道</strong>，这类底层体验改进值得跟。</p>
+</li>
+<li>
+<p><strong>Hourly Journal — 记小时，理解你的日子</strong><br />
+   <a href="https://www.producthunt.com/products/hourly-journal" target="_blank" rel="noopener">https://www.producthunt.com/products/hourly-journal</a><br />
+   → Jus 点评：时间颗粒度到小时。<strong>你有全职工作 + 想做副业，这类工具对你个人有用</strong>（知道时间到底去哪了）。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 Reddit（晚间爆款）</h2>
+<ol>
+<li>
+<p><strong>🔥 我做了个比价 App：同一次行程对比 Waymo / Uber / Lyft / 出租车</strong>（<strong>406 分 / 78 评论，今日第一</strong>）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y4mkhq/i_built_an_app_that_compares_waymo_uber_lyft_and/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4mkhq/i_built_an_app_that_compares_waymo_uber_lyft_and/</a><br />
+   → Jus 点评：<strong>今天最实的生意</strong>。自动驾驶上路后"该叫谁的车"成了新问题，而聚合比价是天然刚需。<strong>这类"新品类出现时的第一层工具"赚钱效率最高</strong>，且不需要自己有车队。</p>
+</li>
+<li>
+<p><strong>卡通老鼠绕地球跑 73,158 公里</strong>（261 分 / 42 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y4a822/we_made_a_tiny_cartoon_mouse_thats_running_73158/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4a822/we_made_a_tiny_cartoon_mouse_thats_running_73158/</a><br />
+   → Jus 点评：<strong>追踪四天：41 → 158 → 261 分</strong>。持续发酵。这类"无用的浪漫"项目生命周期比工具类长得多。</p>
+</li>
+<li>
+<p><strong>特斯拉里跑 Fortnite，3000+ 辆车每天在用</strong>（<strong>58 分 / 65 评论</strong>，比早上涨了）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y4jla0/my_son_asked_for_fortnite_in_the_tesla_so_i_built/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4jla0/my_son_asked_for_fortnite_in_the_tesla_so_i_built/</a><br />
+   → Jus 点评：<strong>评论数远超分数，说明讨论极激烈</strong>（大概在吵安全/合规/特斯拉会不会封）。<strong>这就是车载生态现在的真实状态：有人做、有人用、规则还不清</strong>。你在 Nvidia 的位置能看到规则那一侧，这是信息差。</p>
+</li>
+<li>
+<p><strong>PiPod：不需要注册的免费 coding agent</strong>（19 分 / 0 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y4n1u4/pipod_a_free_coding_agent_that_doesnt_need_a/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4n1u4/pipod_a_free_coding_agent_that_doesnt_need_a/</a><br />
+   → Jus 点评："免注册"作为卖点。<strong>隐私/零门槛正在成为 coding agent 的差异化</strong>——和"agent 不是你的"那条主线一致。</p>
+</li>
+<li>
+<p><strong>一个小模拟：去摸草（touch grass）</strong>（54 分 / 7 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y4ns3z/made_a_small_simulation_to_touch_grass/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y4ns3z/made_a_small_simulation_to_touch_grass/</a><br />
+   → Jus 点评：反屏幕的项目。有意思的元叙事。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 r/SaaS（晚间）</h2>
+<ol>
+<li>
+<p><strong>"大家都说给本地商家做无聊 SaaS 像白捡钱"</strong>（<strong>117 分 / 91 评论</strong>，昨天 69 分 → 今天 117）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4aaf8/everyone_says_build_boring_saas_for_local/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4aaf8/everyone_says_build_boring_saas_for_local/</a><br />
+   → Jus 点评：<strong>连续两天发酵，91 条评论</strong>。这是本周最有价值的"排除性"阅读——读完你就知道为什么这条看似稳的路其实很坑。</p>
+</li>
+<li>
+<p><strong>黑五把 300 美元的服务卖 1 美元，拿下了 108 个付费客户</strong>（46 分 / 67 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4jf3p/i_offered_a_300_service_for_just_1_this_black/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4jf3p/i_offered_a_300_service_for_just_1_this_black/</a><br />
+   → Jus 点评：<strong>极端定价换首批客户的实战案例</strong>。67 条评论大概在吵"这是不是亏本买教训"。<strong>但对你"6 个月第一笔付费"的目标，这种打法值得研究</strong>——先拿到付款行为，再谈价格。</p>
+</li>
+<li>
+<p><strong>我 3 年做了 15+ 个 SaaS，没有一个赚钱</strong>（9 分 / 24 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4zbw5/i_built_15_saas_products_in_3_years_and_none_of/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4zbw5/i_built_15_saas_products_in_3_years_and_none_of/</a><br />
+   → Jus 点评：<strong>最该读的劝退文</strong>。15 个都失败，说明问题不在执行在选题。<strong>读完再定你的方向，能省半年</strong>。</p>
+</li>
+<li>
+<p><strong>250+ 自然注册只有 1 个付费用户，求救</strong>（7 分 / 19 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4t1ba/help_250_organic_signups_with_only_one_paying_user/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4t1ba/help_250_organic_signups_with_only_one_paying_user/</a><br />
+   → Jus 点评：0.4% 转化。和昨天那条 0.89% 一起构成了<strong>真实的基准区间</strong>。</p>
+</li>
+<li>
+<p><strong>40k MRR</strong>（42 分 / 39 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y4eft1/guys_our_saas_just_passed_40k_mrr/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y4eft1/guys_our_saas_just_passed_40k_mrr/</a><br />
+   → Jus 点评：成功案例对照。看它用了多久、怎么起量的。</p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis — 🔔 <strong>终于有真需求了</strong></h2>
+<blockquote>
+<p>第 11 天 403 依旧，但今天 <code>top?t=day</code> 冒出 4 条新的。<strong>其中 1 条是本周最好的需求。</strong></p>
 </blockquote>
 <ol>
-<li><strong>boobs.fan 域名做成全球投票平台</strong>（4 分 / 2 评论）— 玩梗，非需求<br />
-   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y47034/i_bought_boobsfan_for_669_and_turned_it_into_a/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y47034/i_bought_boobsfan_for_669_and_turned_it_into_a/</a></li>
-<li><strong>"有什么日常问题你希望有人解决"</strong>（0 分 / 3 评论）— 提问帖，评论也许有料<br />
-   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y3xrnp/whats_one_everyday_problem_you_wish_someone_would/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y3xrnp/whats_one_everyday_problem_you_wish_someone_would/</a></li>
-<li><strong>joke shop idea</strong>（1 分 / 0 评论）— 废帖<br />
-   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y4jl53/joke_shop_idea/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y4jl53/joke_shop_idea/</a></li>
+<li>
+<p><strong>⭐ 「一个按钮，真正清空所有浏览器里所有缓存、Cookie 和残留垃圾」</strong>（11-25 今天，2 分）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y4yl9w/a_single_button_that_actually_wipes_all_cache/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y4yl9w/a_single_button_that_actually_wipes_all_cache/</a><br />
+   → Jus 点评：<strong>这是这周我见过最像能做成生意的需求</strong>。<br />
+   - 痛点真实且普遍：开发/测试时清缓存要翻每个浏览器的层层菜单，清完还清不干净<br />
+   - 现有方案都很烂：各家清理工具臃肿、带广告、不跨浏览器<br />
+   - 技术可实现：读各浏览器 profile 目录直接删（macOS 上路径已知）<br />
+   - <strong>商业化路径清晰</strong>：免费版清当前浏览器，Pro 版跨浏览器+定时+白名单（保住登录态）<br />
+   - <strong>对你的额外价值</strong>：这在开发 agent 自动化测试时是真实痛点——<strong>测试环境不干净是 flaky test 的头号来源</strong>。你可以自用 + 开源 + 卖 Pro。</p>
+</li>
+<li>
+<p><strong>Batocera（或别的游戏 HTPC）安装器，给 Nvidia Shield TV 用</strong>（11-25，1 分）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y4yl3v/batocera_or_another_gaming_htpc_installer_for/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y4yl3v/batocera_or_another_gaming_htpc_installer_for/</a><br />
+   → Jus 点评：<strong>跟你所在的 Nvidia 生态直接相关</strong>。Shield TV 装 Batocera 没有傻瓜化方案。需求真实但受众窄、Nvidia 可能随时封。<strong>适合做开源玩票，不适合当生意</strong>。</p>
+</li>
+<li>
+<p><strong>正在做一个新标签页扩展</strong>（11-25，2 评论）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y4mzfi/working_on_a_new_tab_extension/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y4mzfi/working_on_a_new_tab_extension/</a><br />
+   → Jus 点评：自述项目，不是需求。新标签页扩展已经是极度饱和的赛道。</p>
+</li>
+<li>
+<p><strong>Joke shop idea</strong>（3 分）— 废帖，跳过</p>
+</li>
 </ol>
-<p><strong>第 11 天，第三天零有效新增。</strong></p>
+<p><strong>结论</strong>：第 11 天终于挖到 1 个够格需求（清缓存按钮）+ 1 个玩票方向。<strong>Cookie 还是该修，但今天不用降级。</strong></p>
 <hr />
-<h2>🎯 今日灵感提炼</h2>
+<h2>🎯 今日灵感提炼（晚间补充）</h2>
 <ol>
-<li>
-<p><strong>今天所有线索收束到同一句话：「agent 不是你的」。</strong><br />
-   - HN 第一：<a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">LLM agent 为母公司工作，不是为你</a><br />
-   - PH：<a href="https://www.producthunt.com/products/open-source-solana-wallet">开源 Solana 钱包</a>（agent 自持私钥）<br />
-   - Reddit：<a href="https://reddit.com/r/SaaS/comments/1y4ilak/i_built_an_antidetect_browser_for_ai_agents_and/">agent 反检测浏览器</a>（agent 在互联网上要有身份）<br />
-   - <strong>这三件事加起来，就是 x402 + Agent 分身 的完整问题陈述。</strong> 你的方向今天被三篇独立来源同时确认了。</p>
-</li>
-<li>
-<p><strong>"发布物料"赛道今天到 4 家（tday 加入）</strong>，可以断言是本年最确定的独立开发机会之一。你未来开源项目发布时，直接花 50 美元买服务比自己折腾强。</p>
-</li>
-<li>
-<p><strong>特斯拉那个项目值得你看 20 分钟</strong>——3000+ 辆车在用，说明<strong>车载应用生态是真空白</strong>。你在 Nvidia 做 Tegra/Thor，这个位置的信息优势比你想的大。</p>
-</li>
-<li>
-<p><strong>可操作</strong>：<br />
-   - 📖 <strong>必读</strong> <a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">LLM agents work for their parent companies</a>，把论点抽成你项目的 motivations<br />
-   - 💼 看 <a href="https://www.producthunt.com/products/open-source-solana-wallet">开源 Solana 钱包</a> 的架构，对照 x402 的支付链路<br />
-   - 🚗 读 <a href="https://reddit.com/r/SideProject/comments/1y4jla0/my_son_asked_for_fortnite_in_the_tesla_so_i_built/">特斯拉 Fortnite 那个帖子</a><br />
-   - 🔴 SMT 第 11 天</p>
-</li>
+<li><strong>🔥 「清缓存一个按钮」这条，我建议你认真评估</strong>。理由三个：① 你自己就痛（做自动化测试时环境不干净是 flaky 的头号原因）② 技术简单到一周能出 MVP ③ 免费+Pro 的商业模式天然成立。<strong>这可能是你"6 个月内第一笔付费"最短的路径</strong>，比 x402 快得多。</li>
+<li><strong>HN 那篇「模型能通过推理服务器绕过沙箱通信」必须读</strong>。你做多 agent 编排，如果不知道这个侧信道，"隔离"就是纸糊的。这是安全设计层面的硬知识。</li>
+<li><strong>今天两个定价信号值得记</strong>：黑五 300 美元服务卖 1 美元换来 108 个付费客户（拿付款行为优先于拿利润）；对比 15 个 SaaS 全失败那位（选题错，执行再好也没用）。</li>
+<li><strong>可操作</strong>：<br />
+   - 🔒 读 <a href="https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being">沙箱侧信道那篇</a><br />
+   - 💡 <strong>认真评估"清缓存按钮"</strong> —— 本周唯一一个我认为你能在 4 周内做出并收钱的东西<br />
+   - 📖 读 <a href="https://reddit.com/r/SaaS/comments/1y4zbw5/i_built_15_saas_products_in_3_years_and_none_of/">15 个 SaaS 全失败</a> 和 <a href="https://reddit.com/r/SaaS/comments/1y4aaf8/everyone_says_build_boring_saas_for_local/">本地商家 SaaS 实录</a><br />
+   - 🎮 收藏 <a href="https://gpu-demo-gallery.pages.dev/">GPU 老 demo 跑进浏览器</a>，技术参考</li>
 </ol>
 <hr />
 <p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
-<em>SMT 异常第 11 天：/new /hot 403，连续三天零有效新增</em></p><div class="pager"><a class="l" href="2026-11-24.html">← 2026-11-24</a></div></article>
+<em>SMT 第 11 天 403，但今天意外挖到 1 个优质需求</em></p><div class="pager"><a class="l" href="2026-11-24.html">← 2026-11-24</a></div></article>
 <footer>自动生成 · 2026-11-25</footer>
 </div>
 </body></html>
