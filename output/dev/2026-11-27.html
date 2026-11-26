@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-11-27（周五）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-27</div><h1>每日独立开发精选 — 2026-11-27（周五）</h1>
+<h2>🧠 Hacker News</h2>
+<ol>
+<li>
+<p><strong>Intel One Mono 字体</strong>（305 分 / 183 评论，今日第一）<br />
+   <a href="https://github.com/intel/intel-one-mono" target="_blank" rel="noopener">https://github.com/intel/intel-one-mono</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50653667" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50653667</a><br />
+   → Jus 点评：<strong>Intel 开源的等宽编程字体，183 条评论在吵字形细节</strong>。有意思的是：<strong>一个大公司做了个纯审美的小东西，拿了 305 分</strong>。这印证了前两天那条「做东西的品味本身就是分发能力」——不一定要做大项目，一个做好了的字体也能带来巨大的曝光。<br />
+   → 实用：你现在写代码/写文档多，可以试试，它对低视力人群做过可读性优化。</p>
+</li>
+<li>
+<p><strong>Euro-Office 上桌面：Nextcloud Office 桌面应用</strong>（289 分 / 112 评论）<br />
+   <a href="https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/" target="_blank" rel="noopener">https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50654289" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50654289</a><br />
+   → Jus 点评：<strong>"欧洲数字主权"这条路在持续兑现</strong>。开源替代 Microsoft 365 从 Web 走到桌面。<strong>对独立开发者的启示：政府/机构的"去美国软件化"是个长期的采购窗口</strong>，欧洲这块市场现在有真实预算。</p>
+</li>
+<li>
+<p><strong>Tell HN: 感恩节快乐</strong>（272 分 / 77 评论）<br />
+   <a href="https://news.ycombinator.com/item?id=50655664" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50655664</a><br />
+   → Jus 点评：今天 HN 会安静（美国假期）。<strong>这是个规律，可以做内容日历用</strong>：感恩节/圣诞/新年期间 HN 流量低但竞争也低，<strong>你的项目在这种日子发反而更容易被看到</strong>。</p>
+</li>
+<li>
+<p><strong>45°C 进水温度让冷水机组失效了，大多数人还没注意到</strong>（116 分 / 39 评论）<br />
+   <a href="https://www.theregister.com/hpc/2026/11/26/45c-inlets-just-killed-the-chiller-most-people-havent-noticed-yet/5311831" target="_blank" rel="noopener">https://www.theregister.com/hpc/2026/11/26/45c-inlets-just-killed-the-chiller-most-people-havent-noticed-yet/5311831</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50655278" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50655278</a><br />
+   → Jus 点评：<strong>液冷/数据中心散热的行业转折点</strong>。你在 Nvidia，这个跟你领域沾边（芯片、功耗、散热）。<strong>"温水冷却"是未来所有 AI 数据中心的基本盘</strong>，值得了解。</p>
+</li>
+<li>
+<p><strong>好奇心不是独奏</strong>（47 分 / 11 评论）<br />
+   <a href="https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/" target="_blank" rel="noopener">https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50636931" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50636931</a><br />
+   → Jus 点评：MIT Press 关于"好奇心是协作性的"。<strong>对你独处做副业是个提醒：一个人闷头做容易枯竭，得有人一起。</strong></p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-26）</h2>
+<ol>
+<li>
+<p><strong>VibeCode.surf — 氛围编程的浏览器内环境</strong><br />
+   <a href="https://www.producthunt.com/products/vibecode-surf" target="_blank" rel="noopener">https://www.producthunt.com/products/vibecode-surf</a><br />
+   → Jus 点评：<strong>"Vibe coding"已经成了一个命名流派</strong>（命名即品类，品类即机会）。浏览器内 + 零安装，直接对标 Replit/Lovable。</p>
+</li>
+<li>
+<p><strong>Kagi Mail</strong>（前几天上过 HN，现在上 PH）<br />
+   <a href="https://www.producthunt.com/products/kagi" target="_blank" rel="noopener">https://www.producthunt.com/products/kagi</a><br />
+   → Jus 点评：<strong>Kagi 做付费搜索引擎活下来了，现在做付费邮箱</strong>。这是"反广告商业模式"的连续验证。<strong>他们的会员订阅模式值得研究</strong>：你花钱买产品，产品不卖你数据。</p>
+</li>
+<li>
+<p><strong>Chunkify</strong><br />
+   <a href="https://www.producthunt.com/products/chunkify" target="_blank" rel="noopener">https://www.producthunt.com/products/chunkify</a></p>
+</li>
+<li><strong>Meboki</strong><br />
+   <a href="https://www.producthunt.com/products/meboki" target="_blank" rel="noopener">https://www.producthunt.com/products/meboki</a></li>
+<li><strong>Blink</strong><br />
+   <a href="https://www.producthunt.com/products/blink-35" target="_blank" rel="noopener">https://www.producthunt.com/products/blink-35</a><br />
+   → Jus 点评：三个都不够明显，等你需要时再看。</li>
+</ol>
+<hr />
+<h2>🌱 Reddit（r/SideProject）</h2>
+<ol>
+<li>
+<p><strong>🔥 我的副业项目失控了：做了个 GTA 风格沙盒，是整个（城市）</strong>（<strong>216 分 / 52 评论</strong>，今日第一）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y5cqd1/my_side_project_got_a_little_out_of_hand_i_built/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y5cqd1/my_side_project_got_a_little_out_of_hand_i_built/</a><br />
+   → Jus 点评：155 → 216 分，稳居第一。<strong>"失控的副业"这个叙事是本周最强的传播引擎</strong>——人们爱看一个人被自己的项目吞掉。</p>
+</li>
+<li>
+<p><strong>🎯 我做了个搜索引擎，查你的点子是不是已经有人在做</strong>（14 分 / 20 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y62oj2/i_built_a_search_engine_to_find_out_if_someone_is/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y62oj2/i_built_a_search_engine_to_find_out_if_someone_is/</a><br />
+   → Jus 点评：<strong>这条对你极其相关，因为这就是你每天在做的事</strong>。你做需求挖掘和竞品验证，本质上是在手工跑这个工具。<br />
+   → <strong>两层价值</strong>：① 可以直接试用，省你时间 ② <strong>"点子撞车检测"是个真实的付费需求</strong>——每个做副业的人都该在动手前查一次。<strong>这可能比"清缓存按钮"更接近你的能力圈。</strong></p>
+</li>
+<li>
+<p><strong>做了个 GTA 全系列电台站，10 万人试过</strong>（12 分 / 8 评论，新发）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y618dm/built_a_gta_radio_stations_site_n_got_100k_people/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y618dm/built_a_gta_radio_stations_site_n_got_100k_people/</a><br />
+   → Jus 点评：<strong>注意这个数字对比</strong>：同一个需求，昨晚那个帖子 89 分 / 39 评论，今晚这个 12 分 / 8 评论但<strong>实际有 10 万用户</strong>。<strong>Reddit 分数和真实用户量完全脱钩。</strong> 这是个重要的校准：别拿 upvote 当市场验证。</p>
+</li>
+<li>
+<p><strong>🧠 一个 &lt;1MB 的类脑 AI 在普通 CPU 上，打赢了 2026 FightingICE LLM 赛道的冠军</strong>（71 分 / 11 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y5wj2l/a_1_mb_braininspired_ai_on_a_plain_cpu_beat_the/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y5wj2l/a_1_mb_braininspired_ai_on_a_plain_cpu_beat_the/</a><br />
+   → Jus 点评：<strong>今天技术上最有趣的一条</strong>。1MB 的类脑模型打赢 LLM 赛道冠军，在通用 CPU 上。<strong>这是"小模型在特定任务上吊打大模型"的实证</strong>。对你做嵌入式/车载（算力受限环境）有直接参考价值——<strong>你负责的 N1-Auto 正是算力受限平台</strong>。</p>
+</li>
+<li>
+<p><strong>iPhone 通知历史，用发件人的声音读</strong>（27 分 / 18 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y5ej5c/i_built_iphone_notification_history_it_reads_them/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y5ej5c/i_built_iphone_notification_history_it_reads_them/</a></p>
+</li>
+<li>
+<p><strong>给小组用的端到端加密共享相册</strong>（12 分 / 12 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y5zaaz/i_built_a_shared_photo_album_app_for_small_groups/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y5zaaz/i_built_a_shared_photo_album_app_for_small_groups/</a></p>
+</li>
+<li>
+<p><strong>免费家庭派对游戏：电视是屏幕，手机是手柄</strong>（28 分 / 6 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y5itq9/my_brother_and_i_made_a_free_party_game_for/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y5itq9/my_brother_and_i_made_a_free_party_game_for/</a><br />
+   → Jus 点评：兄弟俩一起做。<strong>"电视当屏幕、手机当手柄"这个技术方案在家庭场景是零门槛</strong>，感恩节期间上线时机很准。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 r/SaaS</h2>
+<ol>
+<li>
+<p><strong>上线整整 1 个月，近 3000 用户（不是付费）</strong>（<strong>52 分 / 31 评论</strong>，今日第一）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y5cc9n/i_hit_almost_3k_users_today_after_exactly_1_month/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y5cc9n/i_hit_almost_3k_users_today_after_exactly_1_month/</a><br />
+   → Jus 点评：他自己特意写"不是付费"。<strong>这个诚实是这条的价值</strong>——一半人看到 3000 用户会以为是成功，其实一分钱没进。</p>
+</li>
+<li>
+<p><strong>🚨 「我用潜在用户验证了想法、做了 MVP、上线了……然后（没人要）」</strong>（9 分 / <strong>42 评论</strong>）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y5vcwa/validated_my_saas_idea_with_potential_users_built/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y5vcwa/validated_my_saas_idea_with_potential_users_built/</a><br />
+   → Jus 点评：<strong>今天最该读的一条，因为它否定了"验证"这件事本身的可靠性</strong>。他做了所有"正确"的事——问用户、做 MVP、上线——然后失败了。<br />
+   → <strong>42 条评论里大概有真答案</strong>。我猜是：<strong>用户说"我会用"不等于会付钱</strong>。这直接关系到你的 x402/清缓存按钮要不要先做付费验证。</p>
+</li>
+<li>
+<p><strong>💬 「这个月快 1 万美元收入，但我还是没钱」</strong>（18 分 / 10 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y5zlui/almost_10k_this_month_and_still_broke/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y5zlui/almost_10k_this_month_and_still_broke/</a><br />
+   → Jus 点评：<strong>最真实的独立开发财务真相</strong>。1 万美元营收 ≠ 1 万美元到手（成本、税、退款、订阅预付摊分）。<strong>这条该在你想"辞职做副业"时重读一遍。</strong></p>
+</li>
+<li>
+<p><strong>🚀 「做两周就拿到第一单了，怎么提升分发？」</strong>（11 分 / 24 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y5x6lz/first_sale_after_2_weeks_of_building_how_do_you/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y5x6lz/first_sale_after_2_weeks_of_building_how_do_you/</a><br />
+   → Jus 点评：<strong>两周第一单</strong>，快了。评论在给分发建议，值得看。</p>
+</li>
+<li>
+<p><strong>我的新项目刚拿到第一单</strong>（10 分 / 10 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y61oo1/my_new_project_just_made_its_first_sale/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y61oo1/my_new_project_just_made_its_first_sale/</a><br />
+   → Jus 点评：今天出现两条"第一单"，说明<strong>这周整体有回暖</strong>。</p>
+</li>
+<li>
+<p><strong>独立开发者：部署第一个 SaaS 前，你希望自己早知道什么？</strong>（8 分 / 16 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y5zkiw/solo_founders_what_did_you_wish_you_knew_before/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y5zkiw/solo_founders_what_did_you_wish_you_knew_before/</a><br />
+   → Jus 点评：<strong>评论区是免费的"避坑合集"</strong>，16 条经验，读一遍等于省几个月。</p>
+</li>
+<li>
+<p><strong>Ramp 数据：AI 的 Jevons 悖论断裂</strong>（30 分 / 11 评论，昨天推过）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y5h2ff/ramp_credit_card_spending_data_suggests_recently/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y5h2ff/ramp_credit_card_spending_data_suggests_recently/</a></p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis</h2>
+<blockquote>
+<p>🔴 第 13 天 403 依旧。今晚日榜只有 1 条：</p>
+</blockquote>
+<ol>
+<li><strong>「想象一个网站，整个互联网一起给圣诞老人制造问题」</strong>（0 分 / 0 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y63pjm/imagine_a_website_where_the_internet_collectively/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y63pjm/imagine_a_website_where_the_internet_collectively/</a><br />
+   → Jus 点评：<strong>协作式集体游戏</strong>，类似 Twitch Plays 的变体。技术简单（共享状态 + 实时同步），传播性强（节日主题 + 参与感）。<strong>属于"玩票但可能爆"的类型</strong>，适合周末做。</li>
+</ol>
+<p><strong>13 天里，这个板块只挖出过 3 个真正够格的：清缓存按钮、挠背器、窗口跳跃游戏。</strong></p>
+<hr />
+<h2>🎯 今日灵感提炼</h2>
+<ol>
+<li>
+<p><strong>🎯 今天最好的发现：「点子撞车检测搜索引擎」</strong><br />
+<a href="https://reddit.com/r/SideProject/comments/1y62oj2/i_built_a_search_engine_to_find_out_if_someone_is/">那条帖子</a> 正好是你每天在做的事的手工版。<br />
+   → <strong>这是个比我前两天推的"清缓存按钮"更贴近你能力圈的方向</strong>：你做需求挖掘、竞品扫描、技术调研，这是你的日常。<strong>把它产品化，你有真实的领域知识和使用经验。</strong><br />
+   → 而且它有个天然优势：<strong>用户是"即将动手做副业的人"，他们正在积极寻找工具，付费意愿高</strong>。</p>
+</li>
+<li>
+<p><strong>⚠️ 一个必须校准的认知：「Reddit 分数 ≠ 真实用户量」</strong><br />
+   GTA 电台站：昨晚 89 分，今晚另一个 12 分——但<strong>那个拿到 10 万真实用户</strong>。<br />
+   → <strong>这对你判断需求极其重要</strong>：以后我给的分数只代表"HN/Reddit 的传播效果"，不代表市场大小。<strong>别拿 upvote 当验证。</strong></p>
+</li>
+<li>
+<p><strong>🚨 「验证了想法、做了 MVP、上线、然后死了」（42 条评论）——比"不敢上线"更值得读。</strong><br />
+   前者是怕，后者是真死了。<strong>做完所有"正确"步骤仍然失败的人的经验，价值高于成功者的复盘。</strong></p>
+</li>
+<li>
+<p><strong>💰 「1 万美元营收但还是没钱」——这条该在你考虑辞职时重读。</strong></p>
+</li>
+<li>
+<p><strong>🧠 1MB 类脑模型打赢 LLM 冠军（普通 CPU）</strong> —— 你在 N1-Auto 这种算力受限平台工作，<strong>"小模型在特定任务吊打大模型"是能直接用上的知识</strong>。</p>
+</li>
+<li>
+<p><strong>可操作（按优先级）</strong>：<br />
+   - 🎯 <strong>评估"点子撞车检测"这个方向</strong> —— 比清缓存按钮更贴你，我今天改推荐这个<br />
+   - 🚨 读 <a href="https://reddit.com/r/SaaS/comments/1y5vcwa/validated_my_saas_idea_with_potential_users_built/">「验证完就死了」的 42 条评论</a><br />
+   - 🧠 看 <a href="https://reddit.com/r/SideProject/comments/1y5wj2l/a_1_mb_braininspired_ai_on_a_plain_cpu_beat_the/">1MB 类脑模型</a> 的技术路径<br />
+   - 💰 记 <a href="https://reddit.com/r/SaaS/comments/1y5zlui/almost_10k_this_month_and_still_broke/">「1万营收但没钱」</a> 这个真相<br />
+   - 📖 读 <a href="https://reddit.com/r/SaaS/comments/1y5zkiw/solo_founders_what_did_you_wish_you_knew_before/">「部署前该知道什么」的 16 条回答</a></p>
+</li>
+</ol>
+<hr />
+<p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
+<em>注：今天是美国感恩节，HN/Reddit 流量偏低属正常</em></p><div class="pager"><a class="l" href="2026-11-26.html">← 2026-11-26</a></div></article>
+<footer>自动生成 · 2026-11-27</footer>
+</div>
+</body></html>
