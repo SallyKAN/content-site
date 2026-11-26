@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1126 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-26</div><h1>1126 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-26 22:00 (Asia/Shanghai)<br />
+上午方案：<code>1126-选题方案.md</code>（主推 9/4 + "没人读完"，94 分）<br />
+今晚新抓一手：HN Algolia front_page 实跑 25 条（22:00 CST 快照）；新增一手信源：<strong>OpenAI 计费改口推文</strong>（Tibo @thsottiaux）、<strong>friedgil 的 VP≠VNP 三分钟科普</strong>（引 Anthropic 正式论文 PDF）</p>
+</blockquote>
+<hr />
+<h2>一、老账（22:00 文件系统核对）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>仍在 <code>03-内容成品/公众号/草稿/</code>，第 224 小时</strong>（11/17 13:58 → 11/26 22:00）</td>
+</tr>
+<tr>
+<td><code>auto_publish.py</code> / <code>publish_one.py</code></td>
+<td>11/25 11:46 写好，<strong>第 34 小时，零次执行</strong></td>
+</tr>
+<tr>
+<td>新噪音</td>
+<td>11/26 11:46 草稿目录新增一个 <code>.pages</code> 文件（<code>Market一期需开发方补充的材料清单.pages</code>，852 KB）——<strong>这不是内容，是别的项目漏进了发布目录</strong></td>
+</tr>
+<tr>
+<td>1122 / 1121 / 1120 / 1119 / 1118 稿</td>
+<td>均未写</td>
+</tr>
+<tr>
+<td>02-创作中选题</td>
+<td>空</td>
+</tr>
+<tr>
+<td>公众号/待发布/</td>
+<td>最新仍 <code>0925-AI入侵澳医保.md</code>，<strong>63 天</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>第十一天。今天值得记一笔的是那个 <code>.pages</code> 文件：<strong>你在草稿目录里往另一个方向用力了</strong>。发布目录现在是"什么都往里放"的状态，所以 <code>publish.sh</code> 跑起来更像风险而不是便利——这可能就是它没被跑的原因。</p>
+<hr />
+<h2>二、今晚的热度变化（22:00 实抓，全是一手数字）</h2>
+<p>上午方案里的三条主线<strong>全部继续涨，而且涨得很大</strong>：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>10:00</th>
+<th>22:00</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aaronson「Holy shit ×4」</td>
+<td>899 / 748</td>
+<td><strong>1718 / 1549</strong></td>
+<td>翻倍，且已冲到全站第一</td>
+</tr>
+<tr>
+<td>1Password 事件</td>
+<td>1151 / 496</td>
+<td><strong>1520 / 654</strong></td>
+<td>上午我说它会超过 9/4，现在超了</td>
+</tr>
+<tr>
+<td>GRH-Lean 短版（Anthropic）</td>
+<td>280 / 127</td>
+<td><strong>491 / 285</strong></td>
+<td>也翻了</td>
+</tr>
+<tr>
+<td>NYT 警告摄影师别升 Photoshop</td>
+<td>200 / 152</td>
+<td><strong>475 / 393</strong></td>
+<td>新料，值得单看</td>
+</tr>
+<tr>
+<td>GPT-6.2 Astra vs Sol</td>
+<td>248 / 72</td>
+<td><strong>412 / 115</strong></td>
+<td>见下第三条</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>结论：今天是这一周热度最集中的一天，而且全部压在"AI 出数学"和"AI 出账本"这两件事上。</strong></p>
+<hr />
+<h2>三、今晚三条新的、上午没写透的东西</h2>
+<h3>1. Anthropic 的 VP ≠ VNP 有了正式论文，还有人写了三分钟版</h3>
+<p>上午方案里我只是借 Aaronson 的一句话提到 VP≠VNP。今晚追到了原身：</p>
+<ul>
+<li>论文：<a href="https://github.com/anthropics/formal-math/blob/main/vp-vnp/paper.pdf">github.com/anthropics/formal-math/blob/main/vp-vnp/paper.pdf</a></li>
+<li>三分钟科普（HN 168/54）：<a href="https://www.friedgil.com/vpvnp">What VP ≠ VNP Means (In 3 Minutes)</a></li>
+</ul>
+<p>科普那篇给了一个<strong>极好用的中文可转述骨架</strong>：行列式有多项式时间算法（高斯消元），<strong>积和式（permanent）没有已知的多项式时间算法</strong>；VP≠VNP 形式化地说的是：在<strong>算术电路规模多项式</strong>的模型下，积和式算不出来。作者还补了一句关键的 p 边界——"这只是算术电路模型下的不可能性，不是 P≠NP"。<strong>这句话正好是你昨天稿子里要的那个边界，可以直接引用。</strong></p>
+<h3>2. OpenAI 自己承认了"计费错误"——这批涨价不是涨价</h3>
+<p>一手：<a href="https://x.com/thsottiaux/status/2125784147889393806">Tibo @thsottiaux 推文</a>（HN 351/192）</p>
+<p>原文关键句（我读到的部分）："<strong>We made a billing mistake at launch of GPT-6.2</strong> that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. We've fixed this now… you will reach your limits <strong>40% faster on GPT-6.2 Astra and 25% faster on Sol</strong>." 后面补：<strong>no price changes</strong>，也<strong>不会 retroactively charge</strong>。</p>
+<p>这条是今天<strong>唯一一条给普通用户直接体感的 AI 新闻</strong>——不写数学的读者也会点。而且它的角度很干净：<strong>不是模型变弱了，是账单之前算错了。</strong> 和上午那条 9/4 放在一起是个漂亮的反差：一边是 AI 证明人类六十年没证出来的下界，一边是 AI 公司把自己少收的钱补收回来。</p>
+<h3>3. 1Password 事件今晚反超 9/4</h3>
+<p>1520 分，已超过上午方案里主推的 9/4（1025）。但<strong>热度第一不等于最该写</strong>——这条现在全网都在写，角度拥挤。你上午方案里给的角度（"代码 review 过了，但没人 review 提交它的人是谁"）仍然是差异化最好的一个，适合做<strong>短稿</strong>而不是主推。</p>
+<hr />
+<h2>四、今晚主推（维持上午判断，但换结尾）</h2>
+<h3>《一夜之间，那些老问题被直接回答了——然后没人读过它》</h3>
+<p><strong>为什么维持</strong>：上午 94 分，今晚三条支撑全部翻倍（1718 / 491 / 446），<strong>素材没有一条过期，反而更硬</strong>。唯一要改的是结尾——见下。</p>
+<p><strong>四段结构（不变，直接照上午方案抄）</strong>：<br />
+1. 那个数字变成了分数：ω = 9/4，定理 1.1，⌈n^{9/4}/2⌉ 下界<br />
+2. 更难的是下界，而下界是 AI 证的（Aaronson："I never expected this challenge to be all that much easier than P ≠ NP"）<br />
+3. 然后翻开目录：Google Cogentic 六篇（整数分解 L_N[1/3]、有限域离散对数）、VP≠VNP、傅里叶变换 N(log N)^{1/2+o(1)}<br />
+4. 唯一有机器证书的写着 "No mathematician has read it through"</p>
+<p><strong>今晚新增的结尾改法（推荐）</strong>：把第四段的落点从"信任模型"换成<strong>"解释权"</strong>——</p>
+<blockquote>
+<p>今晚 HN 上有一篇三分钟科普，把 Anthropic 的 VP≠VNP 讲成一句人话：行列式能多项式时间算，积和式不能。作者最后一定得补一句"这只是算术电路模型下的结论，不是 P≠NP"。<br />
+<strong>这就是今天最好的画面</strong>：AI 一夜之间交出了一整排定理，而人类现在的工作，是在每条定理后面加一句"它到底证明了什么、没证明什么"。<br />
+证明已经不用人做了，<strong>解释还得人来做</strong>。</p>
+</blockquote>
+<p>这个结尾比"barring information to the contrary"更好发——前者是行业内的话，后者是给读者的钩子。</p>
+<p><strong>原文链接（正文必带，全在一手）</strong>：<br />
+- <a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf">OpenAI：The matrix multiplication exponent is nine fourths（PDF，2026-11-24）</a><br />
+- <a href="https://scottaaronson.blog/?p=10379">Scott Aaronson：The magnitude of what's now happening（11/25，HN 1718 分）</a><br />
+- <a href="https://github.com/anthropics/formal-math/blob/main/vp-vnp/paper.pdf">Anthropic：VP ≠ VNP 论文 PDF</a><br />
+- <a href="https://www.friedgil.com/vpvnp">friedgil：What VP ≠ VNP Means (In 3 Minutes)</a><br />
+- <a href="https://github.com/lsernau/grh-lean">lsernau/grh-lean：短版 GRH Lean（README 含"无人读完"）</a><br />
+- <a href="https://github.com/google-research/google-research/tree/master/cogentic_research_papers">Google Research：Cogentic papers（含 Unconditional Integer Factorization）</a><br />
+- HN：Aaronson <a href="https://news.ycombinator.com/item?id=50646108" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50646108</a> · 9/4 <a href="https://news.ycombinator.com/item?id=50637220" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50637220</a> · GRH-Lean <a href="https://news.ycombinator.com/item?id=50648050" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50648050</a></p>
+<p><strong>边界三条（不变，加一条）</strong>：<br />
+1. 不写"P ≠ NP 被证明"<br />
+2. 不写"AI 独立证明"，写"公司/团队发布"<br />
+3. 不把"整数分解/离散对数"延伸成"RSA 已破"<br />
+4. <strong>新增</strong>：VP≠VNP 必须写成"算术电路模型下的不可能性"，引用 friedgil 原文的边界句——这是全篇最容易被抓的错</p>
+<hr />
+<h2>五、备选一：OpenAI 的"计费错误"（84 分，最容易被普通人转发）</h2>
+<ul>
+<li><a href="https://x.com/thsottiaux/status/2125784147889393806">Tibo 推文原文</a> · <a href="https://news.ycombinator.com/item?id=50651117">HN 351/192</a></li>
+<li><strong>角度</strong>：不是"OpenAI 涨价"，是<strong>"一直以来的便宜是 bug"</strong>。同样的工作，现在 Astra 早 40%、Sol 早 25% 撞上限；官方明说 no price changes、不追溯收费。</li>
+<li><strong>为什么值得写</strong>：这是今天唯一一条<strong>读者能立刻在自己账号里验证</strong>的新闻（打开 usage 页）。和 GPT-6.2 的 code golf 记录（412 分，<a href="https://bjin.github.io/go-codegolf-benchmark/#leaderboard">leaderboard</a>）合起来是完整一问：<strong>模型在变强，可用预算在变小。</strong></li>
+<li><strong>边界</strong>：只写推文说过的三件事（billing mistake / 40%·25% / no retroactive charge）；不写"变贵了"，原文明确说没有价格变动。</li>
+<li><strong>平台</strong>：小红书 300 字 + 一张 usage 截图，<strong>20 分钟能发</strong>。</li>
+</ul>
+<h2>六、备选二：NYT 让摄影师别升级 Photoshop（80 分，475/393）</h2>
+<ul>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features">The Verge 报道</a> · 存档 <a href="https://archive.ph/pcUgy" target="_blank" rel="noopener">https://archive.ph/pcUgy</a></li>
+<li><strong>角度</strong>：第一次有大媒体机构对员工说"<strong>不要升级工具</strong>"——不是因为贵，是因为怕。<strong>职业摄影的信任锚点从"我怎么拍"变成了"我用的软件有没有偷偷生成"。</strong></li>
+<li>边界：报道口径是 NYT 对摄影师的内部/公开提醒，写"报道指出"，不写"Adobe 承认"</li>
+<li>平台：公众号 1200 字，配 1117 那篇"review"主题，能做系列</li>
+</ul>
+<hr />
+<h2>七、今晚 30 分钟版（按顺序，别改）</h2>
+<ol>
+<li><code>cd 03-内容成品/公众号/草稿 &amp;&amp; mv 'Market一期需开发方补充的材料清单.pages' ~/BusinessContent/temp/</code> —— <strong>先把那个无关文件挪出去，再谈发布</strong></li>
+<li>写主推四段（素材 100% 在 <code>1126-选题方案.md</code> + 本文，不要去找新资料），<strong>结尾用今晚的"解释权"版</strong></li>
+<li>只想发短的：备选一的 billing 那条，小红书 20 分钟，读者体感最强</li>
+</ol>
+<p><strong>一句话</strong>：今天热度翻了一倍，但值得写的东西一点没变——变的只是你手上多了一句更好的结尾："<strong>证明已经不用人做了，解释还得人来做。</strong>"</p><div class="pager"><a class="l" href="2026-11-25-选题方案.html">← 2026-11-25 选题方案</a><a class="r" href="2026-11-26-选题方案.html">2026-11-26 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-26</footer>
+</div>
+</body></html>
