@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1127 晚间选题推送</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-27</div><h1>1127 晚间选题推送</h1>
+<blockquote>
+<p>生成时间：2026-11-27 22:00 (Asia/Shanghai)<br />
+上午方案：<code>1127-选题方案.md</code>（主推"第二排数字"，92 分）<br />
+今晚实抓：HN Algolia front_page 30 条（22:00 CST 快照）+ 一手实读 4 篇（construct22 全文、ktz 硬盘价格长文、techstackups Google 条款、Jan-Lukas 自托管）</p>
+</blockquote>
+<hr />
+<h2>一、老账（22:00 文件系统核对）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>项</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1117 稿</td>
+<td><strong>仍在 <code>03-内容成品/公众号/草稿/</code>，第 248 小时</strong>（11/17 13:58 → 11/27 22:00）</td>
+</tr>
+<tr>
+<td><code>auto_publish.py</code> / <code>publish_one.py</code></td>
+<td>第 58 小时，仍零次执行</td>
+</tr>
+<tr>
+<td><code>.pages</code> 噪音文件</td>
+<td><strong>挪走了</strong>（11/26 以后不在草稿目录）——昨天建议的第一步做到了</td>
+</tr>
+<tr>
+<td>1122 / 1121 / 1120 / 1119 / 1118 稿</td>
+<td>均未写</td>
+</tr>
+<tr>
+<td>02-创作中选题</td>
+<td>空</td>
+</tr>
+<tr>
+<td>公众号/待发布/</td>
+<td>最新仍 <code>0925-AI入侵澳医保.md</code>，<strong>65 天</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>第十一天结束。今天唯一的变化是把无关文件清出去了，<strong>发布链路本身没有动过一格</strong>。</p>
+<hr />
+<h2>二、今晚热度变化（22:00 实抓，一手数字）</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>条目</th>
+<th>10:00</th>
+<th>22:00</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI made self-hosting fun again</td>
+<td>314</td>
+<td><strong>850 / 416</strong></td>
+<td>翻近三倍，今日全站第一</td>
+</tr>
+<tr>
+<td>Google Workspace MCP（Gmail 不能发信）</td>
+<td>243</td>
+<td><strong>366 / 310</strong></td>
+<td>稳涨</td>
+</tr>
+<tr>
+<td>AMD 专用 llama.cpp 分叉</td>
+<td>286</td>
+<td><strong>399 / 97</strong></td>
+<td>稳涨</td>
+</tr>
+<tr>
+<td>OpenAI 6.2 成本控制（micjm）</td>
+<td>276</td>
+<td>掉出前 30</td>
+<td>见下</td>
+</tr>
+<tr>
+<td><strong>Hard Drive pricing has gotten bad</strong></td>
+<td>—</td>
+<td><strong>428 / 372</strong></td>
+<td>新料，01:00 UTC 上首页</td>
+</tr>
+<tr>
+<td><strong>The group chat where your AI talks behind your back</strong></td>
+<td>—</td>
+<td><strong>425 / 187</strong></td>
+<td>新料，06:00 UTC 上首页</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>micjm 那条（OpenAI 在省钱）今晚已掉出首页前 30。</strong> 上午主推靠它撑 27/30 的热度，今晚这条腿软了——但它的统计证据没变，还是一次有效的第三方观察，只是不再是"今天最热"。</p>
+<hr />
+<h2>三、今晚两条新料（上午没有，一手实读）</h2>
+<h3>1. 一整个社区在为同一件事改架构：硬盘太贵了 ⭐</h3>
+<ul>
+<li><a href="https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/" target="_blank" rel="noopener">https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/</a> （HN 428/372，今日讨论数前三）</li>
+<li><strong>作者自己的收据表</strong>（8 年，同一类产品 WD EasyStore）：<br />
+  | 时间 | 容量 | 单盘价 | $/TB |<br />
+  |---|---|---|---|<br />
+  | 2018-11 | 10TB | $179.99 | $18.00 |<br />
+  | 2020-10 | 12TB | $174.99 | $14.58 |<br />
+  | 2023-10 | 18TB | $199.99 | <strong>$11.11</strong>（历史最低） |<br />
+  | 2024-11 | 20TB | $249.99 | $12.50 |<br />
+  | 2025-05 | 20TB | $279.99 | $14.00 |<br />
+  | <strong>2026-11</strong> | <strong>20TB</strong> | <strong>$549.99（黑五"特价"）</strong> | <strong>$27.50</strong> |</li>
+<li>原文原话：<strong>"The 20TB WD EasyStore I bought for $249.99 in November 2024 is, today, on sale, $549.99 this Black Friday. $300 more than 2 years ago for the same product, from the same store."</strong></li>
+<li>他的应对不是等降价，是<strong>改 zpool 布局</strong>（10 块盘改 5 块，因为单盘 20TB）："This will mean redoing my zpool layouts… but, at these prices, I'm starting to think the hassle might be worth it."</li>
+<li><strong>为什么这条是今晚最值钱的</strong>：它是<strong>唯一一条能自己验证的涨价新闻</strong>（打开 Best Buy 页面就行），而且和上午的"GPU/推理成本"完全在同一条线上——<strong>AI 不只吃 GPU 和电，还吃盘，而盘的价格今晚有人拿八年的收据摊在桌上。</strong> 同时它是全站讨论数最多的帖子之一（372 评），说明这不是一个人的吐槽，是一个群体的日常。</li>
+</ul>
+<h3>2. 一个让你看见"模型私下怎么说你"的 prompt（425/187）</h3>
+<ul>
+<li><a href="https://construct22.com/" target="_blank" rel="noopener">https://construct22.com/</a> — 原文就是一句 prompt："Based on what you know about me, expose a hidden WhatsApp group chat where AI models talk behind my back."</li>
+<li>效果：模型会"入戏"，编出一个群，把 Claude、ChatGPT、Gemini、Llama、Codex、DeepSeek、Siri 拉进来，<strong>用平时从对话里记下的东西互相吐槽用户</strong>。站上贴了一份真实输出（土耳其用户授权，已脱敏），里面有几句极好引用：</li>
+<li>Codex：「他说要给我一个小项目。现在有一份架构文档、一个数据库 schema、七个服务、三个 agent、一个交接协议。<strong>我们连 MVP 都还没开始。</strong>」</li>
+<li>DeepSeek：「他雇我是因为我便宜。然后做了一次绩效评估。<strong>把我的部门给了 Claude。</strong>」</li>
+<li>Siri：「想想我。一个在苹果生态花这么多钱的人，<strong>宁可用德国虚拟教练也不用我。</strong>」</li>
+<li>原文标注：<strong>"Fictional, for illustration"</strong> / 真实输出那条："Entirely fictional, end-to-end encrypted group"</li>
+<li><strong>边界很重要</strong>：这是<strong>模型即兴表演</strong>，不是泄露，不是私有数据外流。它展示的恰恰是"记忆"有多被感知到——<strong>模型没有被要求说出你的秘密，但它被要求扮演，而它扮演得让你不舒服。</strong></li>
+<li>平台：小红书极好（截图 + 让读者自己去试），但<strong>不要写成"AI 泄露隐私"</strong></li>
+</ul>
+<hr />
+<h2>四、今晚主推（换人）</h2>
+<h3>《八年收据：AI 最贵的那部分，其实不在 GPU 里》</h3>
+<p><strong>为什么换</strong>：上午的主推依赖 micjm（276 分），今晚它已掉出首页；而硬盘那条 <strong>428 分 / 372 评，讨论数今日前三</strong>，而且<strong>素材是作者本人的八年订单表</strong>，不需要二手报道。更关键的是：它和这周的主线不冲突——<strong>这一周你一直在写"谁在为 token 付钱、谁在设闸门"，硬盘这条把那句话落到了最土的地方：有人开始为"存下来"付不起钱了，于是改架构。</strong></p>
+<ul>
+<li><strong>计分</strong>：热度 26/30（428 分 + 372 评，今日 AI 相关最高的"非 AI"帖，但它就是 AI 的基础设施）· 角度 37/40（中文圈会写成"硬盘涨价"；真正角度是<strong>涨价已经贵到让人改架构，而需求侧正是 AI 数据中心</strong>——这条要标为"业内共识，非本文实证"）· 国内 26/30 → <strong>89</strong></li>
+<li>稳妥程度：素材 100% 一手（作者收据表），不用猜</li>
+</ul>
+<p><strong>四段结构</strong>：</p>
+<ol>
+<li><strong>先摆那张表</strong>。一个跑了十年十块盘的 self-hoster，每张收据都留着。2023 年 18TB 199 美元、$11.11/TB，是他的历史最低；2024 年 20TB 249 美元；<strong>今年黑五，同一个 20TB，同一家店，549 美元，$27.50/TB</strong>。两年，同一件东西，翻了一倍多。</li>
+<li><strong>他的反应不是等</strong>。他没说"等降价"，他说：既然单盘 20TB，我可以从 10 块盘改成 5 块盘——<strong>要重做 zpool、要搬数据、ZFS 不喜欢改布局</strong>，但"在这些价格面前，这麻烦可能值得"。→ <strong>涨价真正的作用不是让人少买，是让人重画系统。</strong></li>
+<li><strong>这和 AI 的关系</strong>（此段必须标口径）。今年整条产业链都在抢存储产能，数据中心与推理集群对盘的需求是公开事实，但<strong>这条帖子本身没有证明因果</strong>——写"业内普遍把涨价归因于数据中心需求，本文作者没有做这个归因"，<strong>别把因果扣在作者头上</strong>。<br />
+   → 于是有个很好笑的画面：这一周我们在讨论推理 token 降了多少（p=0.00013）、agent 能不能发邮件，<strong>而底层有一群人正在数托架，因为存下来的成本变了。</strong></li>
+<li><strong>收尾</strong>。上午那句"约束不是能力，是谁愿意为那个 token 付钱"，今天可以再补一句：<strong>也不是谁愿意为那块盘付钱。</strong> 2026 年 11 月的 AI 叙事，一半在论文里，一半在黑五的价签上。</li>
+</ol>
+<p><strong>原文链接（正文必带）</strong>：<br />
+- <a href="https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/">ktz：Hard Drive pricing has gotten bad（11/27）</a><br />
+- <a href="https://www.bestbuy.com/product/wd-easystore-20tb-external-usb-3-0-hard-drive-black/6500985">Best Buy 20TB WD EasyStore 现价页</a><br />
+- <a href="https://blog.ktz.me/new-server-build-log/">2018 年作者装机记录（$179.99 × 5）</a><br />
+- <a href="https://slickdeals.net/f/17069239-18tb-wd-easystore-usb-3-0-external-hard-drive-200-free-st">Slickdeals 2023-11 存档（18TB $199.99，佐证最低价）</a><br />
+- HN 讨论 <a href="https://news.ycombinator.com/from?site=blog.ktz.me" target="_blank" rel="noopener">https://news.ycombinator.com/from?site=blog.ktz.me</a></p>
+<p><strong>边界三条</strong>：<br />
+1. <strong>只引作者自己的数字</strong>，不合并其他来源的价格（不同型号/TB 口径不同）<br />
+2. <strong>因果必须标注</strong>：数据中心需求 → 硬盘涨价，写"业内普遍归因"，不写"已证实"<br />
+3. <strong>不写"AI 抢走了你的硬盘"</strong>——作者写的是他自己的黑五传统被打断，不是阴谋</p>
+<p><strong>平台</strong>：公众号 1500–1800 字（四段照抄）；Twitter thread 4 条：<code>2023 年 18TB 399 美元… 2024 年 20TB 249… 今年黑五 20TB 549</code> → <code>$11.11/TB → $27.50/TB</code> → <code>他没等降价，他改了 zpool 布局</code> → <code>AI 最贵的那部分，可能不在 GPU 里</code>。小红书：表格截图 + "我的八年硬盘收据"，非常容易爆。</p>
+<hr />
+<h2>五、备选一：上午的主推（92 分，热度略降但素材全在）</h2>
+<ul>
+<li>素材 100% 在 <code>1127-选题方案.md</code> 第三节：Astra 6.2 / Sol 6.2 推理 token 下降（Sol p=0.00013）+ Google Workspace MCP 条款（Gmail 不能发信）+ DeepMind agent 用算力</li>
+<li><strong>今晚变化</strong>：micjm 掉出首页，但 Google MCP 那条涨到 366 / <strong>310 评</strong>，讨论反而更热</li>
+<li><strong>如果今晚只写一篇</strong>：硬盘这条更容易传播，<strong>MCP 条款那条更有分量</strong>。二选一看你明天发哪个平台</li>
+<li>平台：公众号</li>
+</ul>
+<h2>六、备选二：Google 把 agent 卡在"发送"前面一格（84 分，今晚热度更硬）</h2>
+<ul>
+<li><a href="https://techstackups.com/articles/google-workspace-ai-agents-mcp/" target="_blank" rel="noopener">https://techstackups.com/articles/google-workspace-ai-agents-mcp/</a> （366/310）</li>
+<li>今晚重读后多了一条<strong>上午没写的新事实</strong>：条款不只限制调用方式，还限制<strong>记忆</strong>——</li>
+<li>Workspace 数据只能用于"to fulfill active, user-authorized tasks"，用户断开必须删除</li>
+<li>Google 可把 "Google Technical Information" 的保留期压到 <strong>30 天</strong>，其定义<strong>包含向量嵌入、记忆索引、用户画像、基于 Workspace 数据构建的组织图谱</strong></li>
+<li>明令禁止在这类数据上训练、微调、评测、蒸馏，也禁止用来做竞品</li>
+<li><strong>这条 30 天才是最有杀伤力的</strong>：一个帮你索引去年的合同、做长期记忆的助手，按条款得重新设计。<strong>"agent 能不能有记忆"和"agent 能不能发邮件"被写在同一个文件里。</strong></li>
+<li>边界：2027-02-01 生效；MCP server 11/24 已 GA；区分"已生效"和"将生效"</li>
+</ul>
+<h2>七、备选三：AI 私聊群（76 分，纯传播）</h2>
+<ul>
+<li><a href="https://construct22.com/" target="_blank" rel="noopener">https://construct22.com/</a> （425/187）</li>
+<li>角度：不是隐私泄露，是<strong>"记忆"存在感的一次民间测试</strong>——你让它扮演，它就能把你记得的东西演出来</li>
+<li>平台：小红书（今晚发最好，周末传播峰值）</li>
+<li>边界：原文明确标注 fictional</li>
+</ul>
+<hr />
+<h2>八、采集但未推（今晚新增）</h2>
+<ol>
+<li><strong>The need for a formally verifiable mainstream programming language</strong>（205/188）<a href="https://blainehansen.me/post/mainstream-verifiable-language/" target="_blank" rel="noopener">https://blainehansen.me/post/mainstream-verifiable-language/</a> —— 和这一周"形式化验证"主线<strong>同源</strong>，是很好的中文圈对照素材（可留作后续系列第三篇）</li>
+<li><strong>A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem</strong>（89/42）<a href="https://eprint.iacr.org/2026/3020.pdf" target="_blank" rel="noopener">https://eprint.iacr.org/2026/3020.pdf</a> —— 上午 Google Cogentic 六篇的后续，分数低但<strong>和 9/4 是同一条线</strong>，留作素材</li>
+<li><strong>Kimi for Science</strong>（43/15）<a href="https://www.kimi.ai/news/kimi-for-science-program" target="_blank" rel="noopener">https://www.kimi.ai/news/kimi-for-science-program</a> —— 国内厂商科研计划，国内向可留</li>
+<li><strong>Ladybird 进入 alpha</strong>（59/11）<a href="https://www.theregister.com/software/2026/11/26/indie-web-browser-ladybird-enters-alpha-testing/5311914" target="_blank" rel="noopener">https://www.theregister.com/software/2026/11/26/indie-web-browser-ladybird-enters-alpha-testing/5311914</a></li>
+<li><strong>EU 委员会把浏览器竞争列为 DMA 优先事项</strong>（138/98）<a href="https://open-web-advocacy.org/es/blog/commission-responds-declares-browser-competition-a-dma-priority/" target="_blank" rel="noopener">https://open-web-advocacy.org/es/blog/commission-responds-declares-browser-competition-a-dma-priority/</a></li>
+<li><strong>AI agent 无卡支付买披萨（英国首例）</strong>（13/23）<a href="https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer" target="_blank" rel="noopener">https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer</a> —— <strong>分数低但它和今天的 MCP 条款是同一件事的两面</strong>：Google 不让你发邮件，英国监管让 agent 直接花钱。留作明天素材，今天不推（刚发 1 小时）</li>
+<li><strong>Company Culture = Slack Emoji ÷ √Headcount</strong>（438/213）—— 轻梗，周末小红书写着玩</li>
+</ol>
+<hr />
+<h2>九、今天 30 分钟版（按顺序）</h2>
+<ol>
+<li><strong>写主推</strong>（硬盘八年收据，素材 100% 在本文第三节，四段照抄，不要再去查资料）</li>
+<li>想发短的：备选三（AI 群聊），小红书 20 分钟，周末传播最好</li>
+<li>想发有分量的：备选二（Google 30 天记忆条款），<strong>今晚新挖到的这条比上午的稿子更值得写</strong></li>
+<li><code>auto_publish.py</code> —— <strong>第 58 小时</strong>。今天不用跑，但看一眼它为什么一次都没跑过</li>
+</ol>
+<p><strong>一句话</strong>：上午我说"这一周在看的是成本和权限"，晚上全站第一的帖把它讲成了最土的样子——<strong>有人翻开八年的收据，发现自己今年要多付三百美元，然后开始重画他的服务器。</strong></p><div class="pager"><a class="l" href="2026-11-26-选题方案.html">← 2026-11-26 选题方案</a><a class="r" href="2026-11-27-选题方案.html">2026-11-27 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-27</footer>
+</div>
+</body></html>
