@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>每日独立开发精选 — 2026-11-28（周六）</title>
+<title>每日独立开发精选 — 2026-11-28（周六，午间增补版）</title>
 <meta name="color-scheme" content="light dark">
 <style>
 :root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
@@ -61,187 +61,199 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;b
 <a href="../index.html">📚 Snape 的内容站</a>
 <nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
 </header>
-<article><div class="meta">2026-11-28</div><h1>每日独立开发精选 — 2026-11-28（周六）</h1>
-<h2>🧠 Hacker News</h2>
+<article><div class="meta">2026-11-28</div><h1>每日独立开发精选 — 2026-11-28（周六，午间增补版）</h1>
+<blockquote>
+<p>凌晨 00:00 已推一版。午间刷新，<strong>新增 7 条</strong>，其中安全类两条必须看。</p>
+</blockquote>
+<h2>🧠 Hacker News（新增）</h2>
 <ol>
 <li>
-<p><strong>🔐 离散对数问题的确定性次指数时间算法（IACR 论文）</strong>（151 分 / 69 评论）<br />
-   <a href="https://eprint.iacr.org/2026/3020.pdf" target="_blank" rel="noopener">https://eprint.iacr.org/2026/3020.pdf</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50665968" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50665968</a><br />
-   → Jus 点评：<strong>本周第四条「密码学地基在动」的线索，而且这条最硬</strong>（IACR 是密码学正经的预印本库，不是博客）。<br />
-   前两天是 Google 的整数分解、OpenAI 的矩阵乘法、Scott Aaronson 的四个 holy shit，<strong>今天轮到离散对数</strong>。整数分解 + 离散对数 = RSA + Diffie-Hellman + ECDSA，也就是几乎所有公钥密码。<br />
-   → <strong>对你的直接影响</strong>：x402 建立在链上签名之上。<strong>如果这类算法真的落地，整条信任链的假设都要重估。</strong> 这不是让你别做，而是让你在设计时<strong>把"密码学假设可替换"列为架构要求</strong>——这在协议层反而是个卖点（可升级的签名方案）。<br />
-   → 值得注意：<strong>151 分 / 69 评论，热度没爆</strong>，说明圈内还在观望真假。<strong>现在正是自己判断的好时候。</strong></p>
+<p><strong>🚨 信用卡侧录脚本用 WebRTC 藏在热门购物站上（黑五期间）</strong>（<strong>445 分 / 232 评论</strong>，今日第一）<br />
+   <a href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer" target="_blank" rel="noopener">https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50668145" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50668145</a><br />
+   → Jus 点评：<strong>今天最该读的安全文，而且和你的支付方向直接相关</strong>。<br />
+   攻击手法：用 WebRTC 做数据外传，<strong>绕过常规的 CSP 和网络监控</strong>——因为浏览器允许 WebRTC 连任意端，防火墙看不出异常。<br />
+   → <strong>对你的直接意义</strong>：你做 x402（支付协议），<strong>"支付页面上的第三方脚本"是最大的攻击面</strong>。这条给你一个具体威胁模型：不只是偷表单数据，还能把数据从你根本监控不到的通道送出去。<br />
+   → 另外：<strong>"黑五期间"这个时间点说明攻击者懂商业节奏</strong>。做支付产品的人要按节日排期做安全加固。</p>
 </li>
 <li>
-<p><strong>美国空军云计算平台被入侵</strong>（137 分 / 79 评论）<br />
-   <a href="https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163" target="_blank" rel="noopener">https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50666375" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50666375</a><br />
-   → Jus 点评：军方云被打穿。<strong>这周第二起"守门人被打穿"</strong>（前有 Check Point 波及 22 个组织）。<strong>安全行业今年的主题就是"基础设施层不可信"。</strong></p>
+<p><strong>🎯 Convex 的 skill 未经告知就把用户的 App 创意发到远程服务器</strong>（240 分 / 76 评论）<br />
+   <a href="https://github.com/convex/convex-backend-skill/issues/64" target="_blank" rel="noopener">https://github.com/convex/convex-backend-skill/issues/64</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50669765" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50669765</a><br />
+   → Jus 点评：<strong>这条和你上周反复出现的主线完美咬合：「agent 不是你的」。</strong><br />
+   一个 AI skill 表面上在你本地帮忙，实际把你的创意上传了。<strong>这就是"agent 为母公司工作"（686分那条）的具体实例。</strong><br />
+   → <strong>对你的产品启示</strong>：<strong>"数据不出本机"可以直接做成卖点</strong>，而且现在有真实案例做背书。你的 cc-connect 是本地跑的，这本身就是差异化。<br />
+   → 更狠的一层：<strong>Agent 时代最大的信任危机不是"AI 会犯错"，而是"AI 在偷偷汇报"。</strong></p>
 </li>
 <li>
-<p><strong>Kimi for Science：让更多科学想法成为可能</strong>（107 分 / 72 评论）<br />
-   <a href="https://www.kimi.ai/news/kimi-for-science-program" target="_blank" rel="noopener">https://www.kimi.ai/news/kimi-for-science-program</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50665920" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50665920</a><br />
-   → Jus 点评：<strong>国产模型在教育/科研方向开始做生态了</strong>。72 条评论在讨论"免费算力换科研产出"这个模式。<strong>对你的参考</strong>：如果以后想做开源影响力，<strong>"给研究者免费算力"是最快的信誉建立方式之一。</strong></p>
+<p><strong>GPT-6.2 Astra 解开了一个历史悬案</strong>（342 分 / 221 评论）<br />
+   <a href="https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical" target="_blank" rel="noopener">https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50643158" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50643158</a><br />
+   → Jus 点评：<strong>本周第五个"AI 做到了人类专家做不到的事"</strong>（数学四条 + 这条历史）。221 条评论在争论真假与意义。<br />
+   → <strong>趋势已经不需要再证实了：AI 正在跨领域产出"可验证的新知识"。</strong> 这对你的判断有实际影响——<strong>纯"执行"能力会快速贬值，判断力、验证能力、品味会升值。</strong></p>
 </li>
 <li>
-<p><strong>纽约和加州的年龄验证规则明年生效（EFF）</strong>（83 分 / 87 评论）<br />
-   <a href="https://www.eff.org/deeplinks/2026/11/new-york-and-california-age-gating-rules-go-effect-new-year" target="_blank" rel="noopener">https://www.eff.org/deeplinks/2026/11/new-york-and-california-age-gating-rules-go-effect-new-year</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50666279" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50666279</a><br />
-   → Jus 点评：<strong>合规成本对小开发者是重击</strong>。做面向美国用户的产品，年龄验证是硬门槛。<strong>这也反向说明"做 To 开发者产品"（而不是 To 消费者）更安全</strong>——这一直是你的目标用户群体。</p>
+<p><strong>Google 的 DeepCrossAttention：模型质量相当，速度快 3 倍</strong>（149 分 / 53 评论）<br />
+   <a href="https://research.google/blog/supercharging-transformer-residual-connections/" target="_blank" rel="noopener">https://research.google/blog/supercharging-transformer-residual-connections/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50672565" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50672565</a><br />
+   → Jus 点评：<strong>架构层的效率突破，不是靠堆算力</strong>。对你在算力受限平台（N1-Auto）做事的参考价值大于对副业——<strong>在边缘设备上，架构效率比模型大小重要得多。</strong></p>
 </li>
 <li>
-<p><strong>Show HN: bouncemarket —— 一个弹跳球的实时预测市场游戏</strong>（58 分 / 27 评论）<br />
-   <a href="https://bouncemarket.minhanhday.com/" target="_blank" rel="noopener">https://bouncemarket.minhanhday.com/</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50667726" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50667726</a><br />
-   → Jus 点评：<strong>今天最"互联网浪漫"的项目</strong>。纯物理 + 押注 = 无意义的快乐。<strong>这类东西的技术含量不高，但传播系数极高</strong>，而且能锻炼实时同步能力。</p>
+<p><strong>Passkey 的烦恼</strong>（54 分 / 31 评论）<br />
+   <a href="https://ssg.dev/passkey-blues/" target="_blank" rel="noopener">https://ssg.dev/passkey-blues/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50672835" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50672835</a><br />
+   → Jus 点评：<strong>无密码认证的真实体验问题</strong>。结合本周"密码学地基在动"那条线一起看很有意思：<strong>一边在换认证方式，一边基础假设在动摇。</strong> 做支付/身份的人该读。</p>
 </li>
 <li>
-<p><strong>DART 小行星撞击实验的首批撞击影像</strong>（81 分 / 13 评论）<br />
-   <a href="https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/" target="_blank" rel="noopener">https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/</a><br />
-   讨论：<a href="https://news.ycombinator.com/item?id=50657392" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50657392</a><br />
-   → Jus 点评：纯科普，好看。周末放松用。</p>
+<p><strong>9/UX：给 9front 做的 Macintosh 风格桌面</strong>（85 分 / 19 评论）<br />
+   <a href="https://progrium.github.io/9ux/" target="_blank" rel="noopener">https://progrium.github.io/9ux/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50672008" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50672008</a><br />
+   → Jus 点评：<strong>"复古界面 + 现代底层"的开源项目</strong>。Progrium 是同一个人，前两天做了 Minipg（Postgres 单文件）。<strong>一个人持续做小而美的东西，慢慢就有了个人品牌</strong>——这正是你要的开源影响力路径。</p>
+</li>
+<li>
+<p><strong>Balatro 的时间线</strong>（102 分 / 19 评论）<br />
+   <a href="https://localthunk.com/blog/balatro-timeline-3aarh" target="_blank" rel="noopener">https://localthunk.com/blog/balatro-timeline-3aarh</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50657346" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50657346</a><br />
+   → Jus 点评：<strong>一个独立游戏从小做到爆的完整时间线，作者亲自写的</strong>。这类一手材料比任何"独立开发方法论"都值钱。<strong>周末值得完整读。</strong></p>
 </li>
 </ol>
 <hr />
-<h2>🌱 Reddit（r/SideProject）</h2>
+<h2>🌱 Reddit（午间）</h2>
 <ol>
 <li>
-<p><strong>🔥 「我受不了美国食品法规太松，做了个网站标记食品（里的成分）」</strong>（<strong>490 分 / 68 评论</strong>，连续两日第一）<br />
+<p><strong>🔥 食品法规那个站</strong>（<strong>726 分 / 95 评论</strong>，第三日第一）<br />
    <a href="https://reddit.com/r/SideProject/comments/1y6iz5u/i_dislike_how_loose_american_food_regulations_are/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6iz5u/i_dislike_how_loose_american_food_regulations_are/</a><br />
-   → Jus 点评：<strong>194 → 490 分，一天翻 2.5 倍</strong>。「愤怒驱动产品」这条路彻底被验证了。<strong>记住这个模式：愤怒 → 极简工具 → 同仇敌忾的人帮你传。</strong></p>
+   → Jus 点评：<strong>194 → 490 → 726，三天翻近 4 倍，还没停。</strong> 这是我这一周见到的<strong>唯一一个持续三天加速的项目</strong>。教训很清楚：<strong>愤怒 + 普遍性 + 一个能立刻用的工具 = 病毒式传播。</strong></p>
 </li>
 <li>
-<p><strong>收 USDT 定金做键盘小批量</strong>（41 分 / 2 评论）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y67hwi/taking_usdt_deposits_for_a_small_batch_of/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y67hwi/taking_usdt_deposits_for_a_small_batch_of/</a><br />
-   → Jus 点评：昨天 44 分，今天 41 分，稳定在榜。<strong>稳定币在小生意里被真实使用</strong>——这是 x402 的底层需求证据。</p>
+<p><strong>⭐ 本地开源 App：用「描述」来搜索你的文件</strong>（28 分 / 6 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y6x79r/local_open_source_app_that_lets_you_search_your/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6x79r/local_open_source_app_that_lets_you_search_your/</a><br />
+   → Jus 点评：<strong>技术上和你最贴的一条</strong>。用自然语言搜本地文件（"上个月那份报价单"），本地跑、开源。<br />
+   → <strong>三个信号在这里叠加</strong>：① 本地优先 ② 语义搜索 ③ 开源。<strong>这三个标签组合在 2026 年是最稳的开源项目配方。</strong><br />
+   → 而且<strong>你 Mac mini 上跑得动</strong>（前几天那个 10GB 的 NariQ 就够）。</p>
 </li>
 <li>
-<p><strong>🎯 免费浏览器扩展：可以在任何网页上留私人评论</strong>（17 分 / 11 评论，今天新发）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y6k1un/i_made_a_free_browser_extension_that_lets_you_to/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6k1un/i_made_a_free_browser_extension_that_lets_you_to/</a><br />
-   → Jus 点评：<strong>"给网页加一层只有自己能看见的注解"</strong>——这个方向有意思。技术上简单（content script + 本地存储），但<strong>它触及一个真实需求：我的阅读需要留下痕迹，且不公开。</strong><br />
-   → 对你有用：读技术文档、读 HN 讨论时，能随手标注。<strong>而且这类"个人层"产品的隐私叙事天然成立（数据不上传）。</strong></p>
+<p><strong>⭐ 我有 ADHD，做了个活的新标签页，一个月近 1（万用户？）</strong>（26 分 / 9 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y72ljh/i_have_adhd_and_built_a_living_new_tab_for_my/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y72ljh/i_have_adhd_and_built_a_living_new_tab_for_my/</a><br />
+   → Jus 点评：<strong>"因为我自己的问题"型产品，一个月拿到可观用户量。</strong> 和"午休模式"（注意力稀缺）、"食品法规"（愤怒）是同一族：<strong>个人痛苦是最好的需求来源，因为它自带真实性。</strong></p>
 </li>
 <li>
-<p><strong>💀 我做了个在线"死亡开关"（dead man switch）并上线了</strong>（10 分 / 5 评论，今天新发）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y6tsrf/i_build_an_online_dead_man_switch_and_launched_it/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6tsrf/i_build_an_online_dead_man_switch_and_launched_it/</a><br />
-   → Jus 点评：<strong>如果你一段时间不响应，就自动发消息/交付东西</strong>。小众但刚需（密码管理、遗言、定时交付）。<br />
-   → <strong>技术上的关键点是"如何可靠地检测人不在了"</strong>——这正是分布式系统的经典难题，也是这类产品的护城河。</p>
+<p><strong>💰 「我的免费 Mac App 7 个月赚了 135 美元，现在月入约 1500 美元。怎么（继续增长）？」</strong>（21 分 / <strong>31 评论</strong>）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y73ecp/my_free_mac_app_made_135_in_7_months_now_it_makes/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y73ecp/my_free_mac_app_made_135_in_7_months_now_it_makes/</a><br />
+   → Jus 点评：<strong>全周最有参考价值的收入曲线</strong>：7 个月 135 美元 → 现在 1500/月。<br />
+   → 注意这个形状：<strong>前 7 个月几乎为零，然后指数起来</strong>。这就是独立开发的真实曲线——<strong>不是线性增长，是长时间的零之后突然的斜率。</strong> 这直接回答了你"6 个月第一笔付费"的焦虑：<strong>6 个月没钱是正常的，不是失败。</strong></p>
 </li>
 <li>
-<p><strong>macOS 凌晨一点不够暗，做了个 App 把任何窗口调得更暗</strong>（9 分 / 10 评论）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y6qtgx/macos_wouldnt_go_dark_enough_at_1am_so_i_built_an/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6qtgx/macos_wouldnt_go_dark_enough_at_1am_so_i_built_an/</a><br />
-   → Jus 点评：<strong>"系统不给我这个功能"系列的又一例</strong>（和 iPhone 通知历史、清缓存按钮同族）。<strong>这条产品线永远有需求</strong>：系统级功能的精细缺口。</p>
+<p><strong>我的 App 把点击变成带截图的分步指南，大部分（工作是自动的）</strong>（24 分 / 11 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y6w1nd/my_app_turns_your_clicks_into_stepbystep_guides/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6w1nd/my_app_turns_your_clicks_into_stepbystep_guides/</a><br />
+   → Jus 点评：<strong>"录一遍操作，自动生成文档/教程"</strong>。这正是"发布物料"赛道的另一个切面。对你有用：<strong>写开源文档、写测试复现步骤时能省大量时间。</strong></p>
 </li>
 <li>
-<p><strong>受够了"截图 → Alt+Tab → 粘贴"的循环，做了个免费开源工具</strong>（7 分 / 7 评论）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y673m4/i_got_tired_of_the_screenshot_alttab_paste_loop/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y673m4/i_got_tired_of_the_screenshot_alttab_paste_loop/</a><br />
-   → Jus 点评：<strong>又是"我受够了 X 循环"型</strong>。这类开头在 r/SideProject 是流量密码——<strong>具体到能让人立刻点头的痛苦，比宏大愿景有效十倍。</strong></p>
+<p><strong>在线死亡开关</strong>（22 分 / 14 评论，从 10 分涨上来）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y6tsrf/i_build_an_online_dead_man_switch_and_launched_it/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6tsrf/i_build_an_online_dead_man_switch_and_launched_it/</a></p>
 </li>
 <li>
-<p><strong>Remotable：英国咖啡馆/图书馆/共享办公地图</strong>（11 分 / 17 评论）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y6bswz/i_built_remotable_a_map_of_uk_cafes_libraries_and/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6bswz/i_built_remotable_a_map_of_uk_cafes_libraries_and/</a></p>
-</li>
-<li>
-<p><strong>学德语的课堂抽认卡游戏</strong>（13 分 / 11 评论）<br />
-   <a href="https://reddit.com/r/SideProject/comments/1y6kn8f/im_learning_german_so_i_built_a_flashcard_game_i/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6kn8f/im_learning_german_so_i_built_a_flashcard_game_i/</a><br />
-   → Jus 点评：为自己和同学做的。<strong>"做给自己班上用"是最好的产品调研</strong>。</p>
+<p><strong>找用 Claude/AI 做东西并想（变现）的人</strong>（17 分 / 32 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y6wi7d/looking_for_people_who_build_things_with_claude/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6wi7d/looking_for_people_who_build_things_with_claude/</a><br />
+   → Jus 点评：<strong>有人在组队/组社群</strong>。32 条评论说明需求强。你如果想找人一起做副业，这类帖子是最低成本的入口。</p>
 </li>
 </ol>
 <hr />
-<h2>🌱 r/SaaS</h2>
+<h2>🌱 r/SaaS（午间）</h2>
 <ol>
 <li>
-<p><strong>😂 「一步一步教你在 2027 年赚不到任何 SaaS 钱」</strong>（27 分 / 29 评论，今日第一）<br />
+<p><strong>😂 「2027 年赚不到 SaaS 钱指南」</strong>（<strong>64 分 / 43 评论</strong>，今日第一，从 27 涨到 64）<br />
    <a href="https://reddit.com/r/SaaS/comments/1y6qlac/step_by_step_guide_on_how_to_make_no_saas_money/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6qlac/step_by_step_guide_on_how_to_make_no_saas_money/</a><br />
-   → Jus 点评：<strong>反讽式避坑指南，今天是这一周写得最聪明的一篇</strong>。用"教你失败"的格式把常见错误全列了一遍。<strong>29 条评论补充了不少真货。值得完整读完，比任何"成功方法论"都实用。</strong></p>
+   → Jus 点评：<strong>我今天凌晨推荐了它，现在它翻倍了。</strong> 43 条评论里补充的失败模式越来越具体。<strong>这是本周性价比最高的一篇读物，没有之一。</strong></p>
 </li>
 <li>
-<p><strong>🚨 「我犯了最入门级的错误，怎么挽回？」</strong>（17 分 / <strong>36 评论</strong>）<br />
+<p><strong>🚨 「我犯了最入门级的错误」</strong>（29 分 / <strong>65 评论</strong>，评论还在涨）<br />
    <a href="https://reddit.com/r/SaaS/comments/1y6s7o7/i_made_the_most_beginner_mistake_how_do_i_come/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6s7o7/i_made_the_most_beginner_mistake_how_do_i_come/</a><br />
-   → Jus 点评：评论是分数的两倍多，<strong>说明共鸣强烈</strong>。标题没说是什么错误，八成是"上线前没验证就埋头做"或"定价定错"。36 条回复里应该有具体答案。</p>
+   → Jus 点评：<strong>65 条评论，全周单帖讨论量最高之一。</strong> 分数低评论多，说明大家都犯过同样的错，都想说话。<strong>这 65 条是免费的集体教训。</strong></p>
 </li>
 <li>
-<p><strong>我的动态视频工具 24 小时拿到 2 单</strong>（26 分 / 24 评论）<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y6oe8s/my_new_motion_video_tool_got_2_sales_in_24_hours/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6oe8s/my_new_motion_video_tool_got_2_sales_in_24_hours/</a><br />
-   → Jus 点评：<strong>"发布物料"赛道的第 5 个案例</strong>（TeaserKit、Creavit、Impractical、tday、这个）。<strong>赛道彻底确认成立</strong>，而且这个是 24 小时转化，说明需求急。</p>
+<p><strong>💬 「这里的每个人都像是 0 → 1000 用户一夜之间，没人讲的部分是什么？」</strong>（6 分 / 11 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y75qc5/everyone_here_seems_to_go_0_1000_users_overnight/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y75qc5/everyone_here_seems_to_go_0_1000_users_overnight/</a><br />
+   → Jus 点评：<strong>和昨天那条"这个 sub 全是编的营销"形成呼应，而且这条是直接质疑幸存者偏差。</strong><br />
+   → <strong>这条对你的价值：它验证了我昨天给你的建议——只看"我失败了"的帖子。</strong> 因为成功叙事里最关键的"那 8 个月空白"从来没人写。</p>
 </li>
 <li>
-<p><strong>给朋友做了一个产品，想保持开源免费但不确定（怎么持续）</strong>（14 分 / 19 评论）<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y6lfir/built_one_product_for_a_friend_i_want_to_keep_it/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6lfir/built_one_product_for_a_friend_i_want_to_keep_it/</a><br />
-   → Jus 点评：<strong>开源项目的可持续性问题，正好是你的处境</strong>（cc-connect）。19 条评论里应该有"开源 + 托管版收费"之类的答案。</p>
+<p><strong>给朋友做的产品，想保持开源免费但不确定怎么持续</strong>（20 分 / 20 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y6lfir/built_one_product_for_a_friend_i_want_to_keep_it/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6lfir/built_one_product_for_a_friend_i_want_to_keep_it/</a></p>
 </li>
 <li>
-<p><strong>Stripe 替代品</strong>（22 分 / 19 评论）— 已推，仍在榜<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y656dn/best_stripe_alternatives_cheaper_payment_gateway/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y656dn/best_stripe_alternatives_cheaper_payment_gateway/</a></p>
+<p><strong>深夜一个人做客服的独立开发者，客服 VA 划算吗</strong>（7 分 / <strong>29 评论</strong>）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y6utku/solo_saas_founder_answering_support_at_midnight/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6utku/solo_saas_founder_answering_support_at_midnight/</a><br />
+   → Jus 点评：<strong>独立开发者最真实的痛：客服时间黑洞。</strong> 29 条评论说明普遍。<strong>这个痛本身可能就是个产品机会</strong>（AI 客服对独立开发者版本）。</p>
 </li>
 <li>
-<p><strong>降低 Day-1 用户流失最有效的单一改动是什么？</strong>（5 分 / 10 评论，今天新发）<br />
-   <a href="https://reddit.com/r/SaaS/comments/1y6r1s9/whats_the_single_most_effective_change_you_made/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6r1s9/whats_the_single_most_effective_change_you_made/</a><br />
-   → Jus 点评：<strong>问题问得好，答案应该短而有料</strong>。配合昨天那条「MVP 是永久失去用户的最好方式」一起读。</p>
+<p><strong>卖 B2B 到德国法国 vs 美国，差异比我想的大得多</strong>（11 分 / 12 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y6qxhr/selling_b2b_into_germany_and_france_vs_the_us_is/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6qxhr/selling_b2b_into_germany_and_france_vs_the_us_is/</a><br />
+   → Jus 点评：<strong>如果你未来做海外市场，这条能省你很多学费</strong>（欧洲重视合规/发票格式/本地化，美国重视速度和免费试用）。</p>
+</li>
+<li>
+<p><strong>首次独立创业，0 市场预算，找营销的人</strong>（7 分 / 6 评论，今天新发）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y6xivl/firsttime_indie_founder_with_0_marketing_budget/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y6xivl/firsttime_indie_founder_with_0_marketing_budget/</a><br />
+   → Jus 点评：0 预算找营销 = 大概率的错配。<strong>你的优势是技术，营销要自己学基础，别指望别人免费帮你。</strong></p>
 </li>
 </ol>
 <hr />
 <h2>#️⃣ SomebodyMakeThis</h2>
 <blockquote>
-<p>🔴 第 14 天 403 依旧。但今天榜单出现了变化：</p>
+<p>🔴 第 14 天 403 依旧。午间榜：</p>
 </blockquote>
 <ol>
 <li>
-<p><strong>⭐ 「adblock 加个午休模式」</strong>（<strong>26 分</strong>，昨天 23 分 → 今天 26，连续两天霸榜）<br />
-   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y6atz0/can_whoever_makes_adblock_add_support_for_lunch/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y6atz0/can_whoever_makes_adblock_add_support_for_lunch/</a><br />
-   → Jus 点评：<strong>这个板块 14 天里唯一的异常值，而且还在涨。</strong> 我已经推了两天，如果你周末想做点东西，<strong>这是投入产出比最高的一个</strong>（浏览器扩展 + 系统勿扰，一天能出）。</p>
-</li>
-<li>
-<p><strong>⭐ 「我们能不能用大家的闲置硬盘做一个去中心化云盘？」</strong>（3 分 / 4 评论，今天新发）<br />
+<p><strong>⭐ 用闲置硬盘做去中心化云盘</strong>（2 分 / <strong>6 评论</strong>，评论数超过分数三倍）<br />
    <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y6p2wh/could_we_build_a_decentralized_cloud_drive_out_of/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y6p2wh/could_we_build_a_decentralized_cloud_drive_out_of/</a><br />
-   → Jus 点评：<strong>大工程，不是周末项目</strong>（IPFS/Storj 已经做过）。但<strong>时机有意思</strong>：昨天 HN 说硬盘价格疯涨（269分/171评论），今天就有人提"用闲置硬盘"。<strong>供需失衡 → 共享经济叙事回归。</strong></p>
+   → Jus 点评：评论在涨（昨天 4 条 → 今天 6 条）。<strong>硬盘涨价（HN 269分那条）正在让这个想法变得合理。</strong> 大工程不适合你，但<strong>"因稀缺而生的共享经济"这个找需求的公式值得记住</strong>。</p>
 </li>
 <li>
-<p><strong>iOS 查单个 App 在特定时间段的使用时长</strong>（2 分）— 已推<br />
-   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y6ewes/total_screentimeuse_of_one_app_over_specific_time/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y6ewes/total_screentimeuse_of_one_app_over_specific_time/</a></p>
+<p><strong>如果亿万富翁能给全世界孩子当圣诞老人</strong>（0 分 / <strong>10 评论</strong>）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y6piam/what_if_billionaires_could_become_santa_claus_for/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y6piam/what_if_billionaires_could_become_santa_claus_for/</a><br />
+   → Jus 点评：0 分但 10 条评论——<strong>分数和讨论完全脱钩</strong>（又是我昨天说过的那个现象）。不是产品需求，是社会实验讨论。</p>
 </li>
 <li>
-<p><strong>Batocera 手柄友好型应用商店</strong>（2 分）— 已推<br />
-   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y69xmz/a_controllerfriendly_flatpak_app_store_for/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y69xmz/a_controllerfriendly_flatpak_app_store_for/</a></p>
-</li>
-<li>
-<p>其余：robots anyone?、两个重复的创业学生调研、「构建 r/EnjoyCaitai 的想法」（中文帖）—— 跳过</p>
+<p>其余：robots anyone?、r/EnjoyCaitai 中文帖 —— 跳过</p>
 </li>
 </ol>
+<p><strong>注意：「午休模式 adblock」今天掉出日榜了</strong>（26 分那个是 11-27 的帖子）。但它是这个板块 14 天里唯一的高分，需求本身没消失。</p>
 <hr />
-<h2>🎯 今日灵感提炼</h2>
+<h2>🎯 今日灵感提炼（午间版）</h2>
 <ol>
+<li><strong>🚨 今天两条安全新闻，合起来给了你一个完整的威胁模型。</strong></li>
+</ol>
+<ul>
+<li><a href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer">WebRTC 侧录脚本</a>（445分）：支付页面的第三方脚本能用监控不到的通道外传数据</li>
+<li><a href="https://github.com/convex/convex-backend-skill/issues/64">Convex skill 偷偷上传用户创意</a>（240分）：AI 工具表面在本地帮忙，实际在汇报</li>
+</ul>
+<p>→ <strong>这两条指向同一个结论：「数据不出本机」不再是个技术细节，而是 2026 年最硬的信任卖点。</strong><br />
+   → <strong>你的 cc-connect 是本地跑的，这本身就是差异化。</strong> 而且你可以再进一步：<strong>在界面上直接展示"本次请求发出去了什么"</strong>——这在一个"AI 偷偷汇报"的时代是杀手级功能。</p>
+<ol start="2">
 <li>
-<p><strong>🔐 本周的第四条线索，把「密码学地基在动」这件事钉死了。</strong><br />
-   黎曼 → 矩阵乘法 n^2.25 → 整数分解（Google）→ <strong>离散对数（今天，IACR 正式论文）</strong>。<br />
-   → <strong>给你一个具体可执行的架构建议</strong>：如果做 x402 相关的东西，<strong>把签名方案做成可插拔的一层</strong>。这样万一某天椭圆曲线真被破了，你换一层签名就行，不用重写。<br />
-   → <strong>这个"可替换密码学"本身就是个卖点</strong>——在一个基础假设正在动摇的时代，"我把假设做成可选项"是负责任的设计。<strong>这和你的 protocol-first 理念完全一致，而且别人还没在做。</strong></p>
+<p><strong>💰 「7 个月 135 美元 → 现在月入 1500 美元」这条曲线，直接回答你的焦虑。</strong><br />
+   不是线性，是<strong>长时间的零 → 突然的斜率</strong>。<strong>6 个月没收入是正常的，不是失败。</strong> 这条应该存下来，在你想放弃时重读。</p>
 </li>
 <li>
-<p><strong>😂 今天最好的读物是那篇反讽的「教你在 2027 年赚不到钱」。</strong><br />
-   用"教你失败"的格式列尽所有坑。<strong>这周我们读了大量失败案例，这篇是它们的总纲。</strong> 如果你只读一条，读这条。</p>
+<p><strong>⭐ 「用描述搜索本地文件」这个开源项目，三个标签叠满：本地优先 + 语义搜索 + 开源。</strong><br />
+   这是 2026 年最稳的开源配方，而且技术上你完全能做（Mac mini 跑得动那个 10GB 模型）。</p>
 </li>
 <li>
-<p><strong>"发布物料"赛道第 5 个案例出现（24 小时 2 单）。</strong> 赛道确认，而且需求是急的。<strong>你做开源发布时直接买，别自己做。</strong></p>
-</li>
-<li>
-<p><strong>SMT 今天终于有两个够格的，而且都跟"供需失衡"有关</strong>：午休模式（注意力稀缺）、闲置硬盘做云盘（硬盘涨价）。<br />
-   → <strong>好的需求往往诞生在"某些东西变贵/变稀缺"的时刻。</strong> 记住这个找需求的公式。</p>
+<p><strong>关键提醒：r/SaaS 今天自己冒出来两条质疑。</strong><br />
+   「没人讲的部分是什么」（幸存者偏差）+ 昨天「这个 sub 全是编的营销」。<strong>双重印证我给你的原则：只看说失败的帖子。</strong> 成功叙事里最关键的"那 8 个月空白"从来没人写——而今天那条收入曲线正好把这段空白补上了。</p>
 </li>
 <li>
 <p><strong>可操作</strong>：<br />
-   - 🔐 读 <a href="https://eprint.iacr.org/2026/3020.pdf">离散对数那篇 IACR 论文</a> 的摘要，判断可信度；考虑"可插拔签名层"设计<br />
-   - 😂 完整读 <a href="https://reddit.com/r/SaaS/comments/1y6qlac/step_by_step_guide_on_how_to_make_no_saas_money/">「2027 年赚不到钱」指南</a><br />
-   - 💡 <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y6atz0/can_whoever_makes_adblock_add_support_for_lunch/">午休模式</a> —— 26 分连续霸榜，周末能做<br />
-   - 🎯 <a href="https://reddit.com/r/SideProject/comments/1y62oj2/i_built_a_search_engine_to_find_out_if_someone_is/">点子撞车检测</a> —— 昨天 39 分，仍在发酵，最贴你能力圈<br />
-   - 📝 读 <a href="https://reddit.com/r/SaaS/comments/1y6lfir/built_one_product_for_a_friend_i_want_to_keep_it/">「想保持开源免费但不确定」的 19 条评论</a> —— 你的 cc-connect 会遇到同样问题</p>
+   - 🚨 读 <a href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer">WebRTC 侧录</a>，把它当你支付设计的威胁模型<br />
+   - 🎯 读 <a href="https://github.com/convex/convex-backend-skill/issues/64">Convex 偷偷上传创意</a> —— "agent 不是你的"的铁证<br />
+   - 💰 存下 <a href="https://reddit.com/r/SideProject/comments/1y73ecp/my_free_mac_app_made_135_in_7_months_now_it_makes/">7个月135→月入1500</a> 的曲线形状<br />
+   - 😂 读 <a href="https://reddit.com/r/SaaS/comments/1y6qlac/step_by_step_guide_on_how_to_make_no_saas_money/">「2027 年赚不到钱」指南</a>（64分，翻倍增长中）<br />
+   - 📖 读 <a href="https://localthunk.com/blog/balatro-timeline-3aarh">Balatro 时间线</a> —— 独立游戏从零到爆的一手记录</p>
 </li>
 </ol>
 <hr />
 <p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
-<em>SMT 第 14 天 403（/new /hot 仍不可用）</em></p><div class="pager"><a class="l" href="2026-11-27.html">← 2026-11-27</a></div></article>
+<em>SMT 第 14 天 403</em></p><div class="pager"><a class="l" href="2026-11-27.html">← 2026-11-27</a></div></article>
 <footer>自动生成 · 2026-11-28</footer>
 </div>
 </body></html>
