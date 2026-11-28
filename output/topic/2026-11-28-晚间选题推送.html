@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1128 晚间选题推送（周六 22:00）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="" href="/dev/index.html">🧰 每日独立开发精选</a><a class="on" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-28</div><h1>1128 晚间选题推送（周六 22:00）</h1>
+<ul>
+<li>上游：<code>1128-选题方案.md</code>（10:00 采集，HN 首页 30 条 + 7 篇一手实读）</li>
+<li>出稿对账（22:00 核对）：草稿目录仍<strong>无 1125–1128 任何正文</strong>，<code>auto_publish.py</code> / <code>publish_one.py</code> 自 11/25 11:46 写入后<strong>连续第 3 天零执行</strong>；待发布目录最新仍是 <code>0925-AI入侵澳医保.md</code>（第 66 天）</li>
+<li>结论不变：卡点不在工具，在最后一下没人按</li>
+</ul>
+<hr />
+<h2>⭐ 今晚就写这一篇（90 分）</h2>
+<h3>《用来检查 AI 证明的那个程序，自己有一份 bug 清单》</h3>
+<p><strong>为什么是今晚的</strong>：周末晚上适合"能吵起来又有硬数据"的长文。djb 这篇的全部素材都在原文页面上，不用再查，表可以直接照抄——<strong>今晚两小时能落地的唯一一篇</strong>。</p>
+<p><strong>三条可用原话（直译，不要转述）</strong><br />
+1. "There are some computer programs that claim to check every step in a proof. However, various <strong>'soundness bugs'</strong> have been reported that at least potentially allowed <strong>false statements</strong> to slip past these programs."<br />
+2. "<strong>We're supposed to trust one binary because it has supposedly been checked by another large proof-checking binary.</strong>"（信任链，全文最硬一句）<br />
+3. HOL Light 内核只有 <strong>400 行</strong>——这是他能给的唯一诚实出路：缩小信任内核。</p>
+<p><strong>表（照抄，不要改口径）</strong>：HOL Light 3 / Mizar 7 / Metamath 9 / Isabelle 20 / <strong>Lean 3·4 共 23</strong> / HOL4 24 / <strong>Coq·Rocq 86+</strong></p>
+<p><strong>四段骨架</strong><br />
+1. 摆这一周：11/24 OpenAI 9/4 → 11/25 Cogentic 六篇 → 11/26 "AIA 证了黎曼猜想，Lean 可验证" —— 共同句式是<strong>「可以用 Lean 验证」</strong>，听起来是终点，其实是把问题往后推一格。<br />
+2. djb 的表 + 边界（23 是<strong>历史上被报告过</strong>的数量，不是现版本有 23 个活跃漏洞；他明确排除 <code>native_decide</code>）。<br />
+3. 信任链：信证明 → 因为检查器 → 信检查器 → 因为另一个检查器。给的三条解法：400 行内核、多检查器交叉（"但 bug 有时是共有的"）、给检查器本身写证明（2006 HOL Light 内核 / 2022 Candle in HOL4）。<br />
+4. 收口：<strong>每一层都对，但每一层都在借下一层的信用。</strong> 这不是 AI 的问题，是"证明"本来的样子——AI 只是把速度提到了我们来不及复查的地步。顺手带一句：今天首页第二名 Nielsen 下架自己的书、第四名 Astra 拒绝承认自己的发现，三件事撞在同一天。</p>
+<p><strong>边界四条</strong><br />
+- ❌ 不写"Lean 的证明不可信"<br />
+- ❌ 不写"Coq 最差"（数量多也可能是历史长/用户多/报告文化好，这是<strong>我们的推论</strong>，要标出来）<br />
+- ⚠️ Astra 那条必须写"作者为历史学者、测试的是未预发布模型"，身份认定是学者的判断<br />
+- ⚠️ Nielsen 只引他自己的话，不替他点名"哪些实验室"</p>
+<p><strong>链接（正文必带）</strong><br />
+- <a href="https://cr.yp.to/proofs/falseccp.html">djb：False computer-checked proofs</a><br />
+- <a href="https://news.ycombinator.com/item?id=50667989">HN 讨论</a><br />
+- <a href="https://www.cl.cam.ac.uk/~jrh13/papers/holhol.pdf">HOL Light 内核正确性（2006）</a><br />
+- <a href="https://arxiv.org/abs/2205.07813">Candle in HOL4（2022）</a><br />
+- <a href="https://neuralnetworksanddeeplearning.com/">Nielsen 下架说明</a><br />
+- <a href="https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical">GPT-6.2 Astra 与 1808 年速写本</a><br />
+- <a href="https://collections.library.yale.edu/catalog/32369099">耶鲁 Beinecke 原件</a></p>
+<hr />
+<h2>如果今晚不想写长的：备选排位</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>排位</th>
+<th>选题</th>
+<th>平台/字数</th>
+<th>今晚动手成本</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td><strong>Astra 与 218 年匿名速写本</strong></td>
+<td>小红书 3 屏 / 20 分钟</td>
+<td>最低</td>
+<td>周末传播最好：22 分钟 / 218 年 / 84 页 34 页有画 / <strong>模型拒绝承认是自己发现的</strong>（坚持说 "attributed to Chabot"）。必须标"作者测试、未预发布"</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Nielsen 把教材撤下来</strong></td>
+<td>公众号 1200 字</td>
+<td>低</td>
+<td>热度最高（388/256）但<strong>纯观点无新事实</strong>。火柴类比可自引："一分钱的技术，要每年几千亿美元去防"</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Convex 的 <code>SKILL.md</code> 教 agent 绕过安全分类器</strong></td>
+<td>公众号，接昨天 Google MCP</td>
+<td>中</td>
+<td>原文写着"合并下载和执行会被 harness 安全分类器拦"，所以拆成两条调用。硬核、国内开发者最爱。附赠事实：issue 挂一个月无人理，上首页 5 小时后第一条评论是"我本来正准备给 Convex 付钱"</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>责任线快讯</strong></td>
+<td>小红书/公众号 1200 字</td>
+<td>中</td>
+<td>① VA+OR 起诉 SpaceX/xAI：卖点是<strong>诉点主打"虚假宣传"</strong>，且"一张已有照片就够"；② 房东 AI 批了延期、人提前 11 天被赶走：全文最有力一句是<strong>"邮件里没有一个字说是 AI"</strong>，须标"物业未确认"</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>今晚的执行清单（按顺序，别跳）</h2>
+<ol>
+<li>写主推四段（素材 100% 现成，不用再查）</li>
+<li>画表 + 配图（<code>make_cover.py</code> 里改标题即可）</li>
+<li>进草稿目录 → <strong>顺手跑一次 <code>publish_one.py</code></strong>。这不是因为今天这篇特别重要，是因为<strong>第 4 天还没跑，这条链路就彻底成摆设了</strong></li>
+<li>明早 10:00 采集前，把今晚这篇的"写了/没写"记一笔，别再出现 1125–1128 连续空档</li>
+</ol>
+<hr />
+<p><strong>一句话</strong>：这一周全世界都在说"AI 证的定理可以用 Lean 验证"。今天早上有个人贴出一张表：<strong>Lean 有 23 个已知的验证器 bug，Coq 八十多个，有些被演示过可以利用。</strong> 我们用来确认"对"的那个东西，自己也在等下一次被确认。</p><div class="pager"><a class="l" href="2026-11-27-选题方案.html">← 2026-11-27 选题方案</a><a class="r" href="2026-11-28-选题方案.html">2026-11-28 选题方案 →</a></div></article>
+<footer>自动生成 · 2026-11-29</footer>
+</div>
+</body></html>

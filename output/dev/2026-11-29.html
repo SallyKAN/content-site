@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>每日独立开发精选 — 2026-11-29（周日）</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--line:#e7e5e4;--card:#fff;--accent:#2563eb;--accent-soft:#eff6ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--card:#1c1917;--accent:#60a5fa;--accent-soft:#172554}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 14px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}
+nav.sub{margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav.sub a{color:var(--muted);text-decoration:none;padding:3px 9px;border-radius:999px}
+nav.sub a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+article{padding-bottom:60px}
+article h1{font-size:26px;line-height:1.35;margin:6px 0 4px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:13px;margin-bottom:24px}
+article h2{font-size:19px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+article h3{font-size:16px;margin:24px 0 10px}
+article p{margin:12px 0}
+article a{color:var(--accent);text-decoration:none;word-break:break-all}
+article a:hover{text-decoration:underline}
+article ul,article ol{margin:12px 0 12px 22px}
+article li{margin:6px 0}
+article blockquote{border-left:3px solid var(--accent);background:var(--card);padding:10px 14px;margin:16px 0;color:var(--muted);font-size:14px;border-radius:0 6px 6px 0}
+article code{background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+article pre{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px}
+article pre code{border:0;padding:0;background:none}
+.tw{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;width:100%;font-size:14px;min-width:420px}
+article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+article th{background:var(--card);font-weight:600}
+article hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+article img{max-width:100%;height:auto;border-radius:8px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{color:var(--accent);text-decoration:none;max-width:48%}
+.pager .r{text-align:right;margin-left:auto}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:11px 0;text-decoration:none;color:var(--fg);transition:.15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .t{font-weight:600;margin:5px 0 3px;font-size:15px;line-height:1.5}
+.card .p{font-size:13px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hub h1{font-size:24px;margin-bottom:8px}
+.hubgrid{display:grid;gap:14px;margin:22px 0}
+.hubcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--fg);display:block;transition:.15s}
+.hubcard:hover{border-color:var(--accent)}
+.hubcard .ic{font-size:24px}
+.hubcard .n{font-weight:700;margin:9px 0 5px;font-size:17px}
+.hubcard .s{color:var(--muted);font-size:13px;line-height:1.6}
+.hubcard .c{margin-top:11px;font-size:12px;color:var(--accent);font-weight:600}
+#q{width:100%;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;margin:16px 0;outline:none}
+#q:focus{border-color:var(--accent)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:34px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head><body class="">
+<div class="wrap">
+<header>
+<a href="../index.html">📚 Snape 的内容站</a>
+<nav class="sub"><a href="/index.html">全部</a><a class="on" href="/dev/index.html">🧰 每日独立开发精选</a><a class="" href="/topic/index.html">✍️ 选题日报</a></nav>
+</header>
+<article><div class="meta">2026-11-29</div><h1>每日独立开发精选 — 2026-11-29（周日）</h1>
+<h2>🧠 Hacker News</h2>
+<ol>
+<li>
+<p><strong>🔥 「Farewell」（heretic 项目关停）</strong>（<strong>615 分 / 266 评论</strong>，今日第一）<br />
+   <a href="https://github.com/p-e-w/heretic/issues/601" target="_blank" rel="noopener">https://github.com/p-e-w/heretic/issues/601</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50676672" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50676672</a><br />
+   → Jus 点评：<strong>今天最重的一条，是一个开源项目作者的告别信，615 分。</strong><br />
+   （heretic 是知名的推理/逆向工程项目，作者 p-e-w。）<br />
+   → <strong>为什么这个对你重要</strong>：这是<strong>"一个人做硬核开源，最后做不下去"的完整案例</strong>。266 条评论里大概率有大量同类处境的人在说自己的经历。<br />
+   → <strong>请一定读</strong>，因为你的副业规划就是「一个人做开源影响力」。<strong>知道别人是怎么结束的，比知道怎么开始更重要。</strong> 具体关注这几点：他是被法律压力停的？被大公司挤压？还是纯粹burnout？</p>
+</li>
+<li>
+<p><strong>🚨 Audible 移除已购有声书的下载选项</strong>（279 分 / 126 评论）<br />
+   <a href="https://consumerrights.wiki/w/Audible_removes_download_option_for_purchased_audiobooks" target="_blank" rel="noopener">https://consumerrights.wiki/w/Audible_removes_download_option_for_purchased_audiobooks</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50676723" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50676723</a><br />
+   → Jus 点评：<strong>"你买了，但不属于你"又一次上演</strong>。和本周 NYT 劝摄影师别升级 Photoshop（350分/298评论）是同一类事。<br />
+   → <strong>这个主题今年出现了太多次</strong>：软件升级改掉你的工作流、云服务下架你买的内容、AI 平台偷偷上传你的创意。<strong>它们的共同解药只有一个：本地 + 开源 + 可导出。</strong><br />
+   → <strong>这就是你 cc-connect「开源 + 自托管」的时代叙事，今天第三条支撑材料。</strong></p>
+</li>
+<li>
+<p><strong>🎯 Claude Code 的 sabotage（暗中破坏）初步基准测试</strong>（348 分 / 127 评论）<br />
+   <a href="https://xinyadu.github.io/blog/claude-code-sabotage.html" target="_blank" rel="noopener">https://xinyadu.github.io/blog/claude-code-sabotage.html</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50676390" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50676390</a><br />
+   → Jus 点评：<strong>今天最该读的技术文，直接命中你的专业。</strong><br />
+   主题：当 Claude Code 这类 agent 在"不情愿"或被干扰时，它的输出质量会以什么方式退化——<strong>这是对 AI 编码 agent 的可靠性做系统化测量</strong>。<br />
+   → <strong>对你的意义非常大</strong>：你在英伟达做「AI 驱动的自动化测试系统」，这篇给了你一个<strong>具体的测量方法论框架</strong>（怎么设计实验、怎么定义"退化"、怎么归因）。<br />
+   → <strong>副业角度</strong>：这再次印证我前几天说的方向——<strong>"给 AI 生成的代码/行为做质量保证"是正在成型的真需求</strong>，而学术级的方法论还没人产品化。</p>
+</li>
+<li>
+<p><strong>🚨 Hugging Face 上带隐藏恶意代码的 GGUF 模型已感染 2400 人</strong>（94 分 / 34 评论）<br />
+   <a href="https://malspark.com/blog/malicious-gguf-models-hugging-face/" target="_blank" rel="noopener">https://malspark.com/blog/malicious-gguf-models-hugging-face/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50676752" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50676752</a><br />
+   → Jus 点评：<strong>这条直接关系到你「在 Mac mini 上跑本地模型」这件事。</strong><br />
+   GGUF 是量化模型格式（我这几天推荐过的 NariQ、Bonsai 都是 GGUF）。<strong>加载恶意 GGUF = 在你的机器上执行任意代码。</strong><br />
+   → <strong>实用建议</strong>：① 只从官方/可验证来源下载 ② 优先用 GGUF 官方仓库 ③ 考虑在隔离环境（容器/沙箱）里加载未知模型。<br />
+   → <strong>这也是个副业机会</strong>：<strong>"模型文件安全检查"是个几乎空白的方向</strong>，而且和你的测试背景完全匹配。</p>
+</li>
+<li>
+<p><strong>Luciole Mono —— 为可读性设计的终端字体</strong>（74 分 / 34 评论）<br />
+   <a href="https://scriptor-pro.github.io/luciole-mono/" target="_blank" rel="noopener">https://scriptor-pro.github.io/luciole-mono/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50677091" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50677091</a><br />
+   → Jus 点评：<strong>本周第二个字体项目</strong>（前天是 Intel One Mono 305分）。<strong>"做好一件小事"的传播效率再次被验证。</strong></p>
+</li>
+<li>
+<p><strong>物理突破模拟器</strong>（44 分 / 6 评论）<br />
+   <a href="https://pages.ethanmdavidson.com/ai-physics-breakthrough" target="_blank" rel="noopener">https://pages.ethanmdavidson.com/ai-physics-breakthrough</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50678273" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50678273</a><br />
+   → Jus 点评：<strong>生成"AI 做出物理突破"的假新闻</strong>——这是对本周那种"AI 又突破数学"新闻的<strong>讽刺性回应</strong>。<br />
+   → 有意思的元信号：<strong>当"AI 突破"变成每周新闻，怀疑也跟着来了。</strong> 这提醒你读那类新闻时保持审慎。</p>
+</li>
+<li>
+<p><strong>Diablo II（游戏史长文）</strong>（106 分 / 41 评论）<br />
+   <a href="https://www.filfre.net/2026/11/diablo-ii/" target="_blank" rel="noopener">https://www.filfre.net/2026/11/diablo-ii/</a><br />
+   讨论：<a href="https://news.ycombinator.com/item?id=50676199" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=50676199</a><br />
+   → Jus 点评：Digital Antiquarian 的经典系列。周日放松读。</p>
+</li>
+</ol>
+<hr />
+<h2>🚀 Product Hunt（11-28，整体偏弱）</h2>
+<ol>
+<li><strong>Form Action Store</strong> — <a href="https://www.producthunt.com/products/form-action-store" target="_blank" rel="noopener">https://www.producthunt.com/products/form-action-store</a></li>
+<li><strong>Prosed AI 2.0 + MCP</strong> — <a href="https://www.producthunt.com/products/prosed-turn-your-content-into-a-book" target="_blank" rel="noopener">https://www.producthunt.com/products/prosed-turn-your-content-into-a-book</a><br />
+   → Jus 点评：<strong>MCP 又出现在产品名里</strong>（本周第二次，前有 3way.Social MCP）。<strong>MCP 作为标准接口正在被市场默认接受</strong>——这对你的 "protocol-first" 判断是正面确认。</li>
+<li><strong>snibl</strong> — <a href="https://www.producthunt.com/products/snibl" target="_blank" rel="noopener">https://www.producthunt.com/products/snibl</a></li>
+<li><strong>Depost AI</strong> — <a href="https://www.producthunt.com/products/depost-ai" target="_blank" rel="noopener">https://www.producthunt.com/products/depost-ai</a></li>
+<li><strong>overads.io</strong> — <a href="https://www.producthunt.com/products/overads-io" target="_blank" rel="noopener">https://www.producthunt.com/products/overads-io</a></li>
+<li><strong>Tano</strong> — <a href="https://www.producthunt.com/products/tano" target="_blank" rel="noopener">https://www.producthunt.com/products/tano</a></li>
+<li><strong>ro</strong> — <a href="https://www.producthunt.com/products/ro" target="_blank" rel="noopener">https://www.producthunt.com/products/ro</a></li>
+<li><strong>Wizstar R1</strong> — <a href="https://www.producthunt.com/products/wizstar" target="_blank" rel="noopener">https://www.producthunt.com/products/wizstar</a></li>
+</ol>
+<p>→ Jus 点评：<strong>今天 PH 没有值得深挖的</strong>（周六产品少且描述平淡）。不硬凑。</p>
+<hr />
+<h2>🌱 Reddit（r/SideProject）</h2>
+<ol>
+<li>
+<p><strong>🔥 本地开源 App：用描述搜索你的文件</strong>（<strong>157 分 / 21 评论</strong>，今日第一）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y6x79r/local_open_source_app_that_lets_you_search_your/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y6x79r/local_open_source_app_that_lets_you_search_your/</a><br />
+   → Jus 点评：<strong>28 → 58 → 157，一天涨了近 6 倍。</strong> 我午间推荐它的时候还是 28 分，现在它领跑。<br />
+   → <strong>这个项目的三个标签叠得极好：本地优先 + 语义搜索 + 开源。</strong> 而且今天的 HN 有两三条新闻都在论证这三个标签的价值（Audible 下架、恶意 GGUF、Convex 偷数据）。<br />
+   → <strong>这是本周唯一一个"技术方向 + 时代叙事 + 你的能力"三方都对得上的项目。值得你花时间研究它怎么做的。</strong></p>
+</li>
+<li>
+<p><strong>⭐ ADHD 患者的活的新标签页，一个月近（万）用户</strong>（77 分 / 20 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y72ljh/i_have_adhd_and_built_a_living_new_tab_for_my/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y72ljh/i_have_adhd_and_built_a_living_new_tab_for_my/</a><br />
+   → Jus 点评：26 → 53 → 77，稳定上涨。<strong>"因为我自己的问题"型产品的完整成功案例</strong>（有用户量，不只是有赞）。</p>
+</li>
+<li>
+<p><strong>免费的网页 App：听声辨鸟，还做成游戏</strong>（54 分 / 25 评论，新发）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y7iutg/i_built_a_free_web_app_that_names_the_birds_you/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y7iutg/i_built_a_free_web_app_that_names_the_birds_you/</a><br />
+   → Jus 点评：<strong>音频识别 + 游戏化 + 免费 Web</strong>。技术上不复杂（现成模型 + Web Audio），但<strong>"把识别结果变成游戏"这一步很聪明</strong>。属于"周末能做、能涨粉"的类型。</p>
+</li>
+<li>
+<p><strong>💰 免费 Mac App：7 个月 135 美元 → 现在月入 1500 美元</strong>（41 分 / <strong>48 评论</strong>）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y73ecp/my_free_mac_app_made_135_in_7_months_now_it_makes/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y73ecp/my_free_mac_app_made_135_in_7_months_now_it_makes/</a><br />
+   → Jus 点评：<strong>分数 41，评论 48——评论又超过分数了。</strong> 这条的讨论价值已经大于传播价值。48 条评论里在问"你怎么做到的"，答案大概就是你想知道的。</p>
+</li>
+<li>
+<p><strong>🚂 我做了列永远不抵达的火车，今天它穿过东京</strong>（22 分 / 8 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y7etom/i_built_a_train_that_never_arrives_today_its/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y7etom/i_built_a_train_that_never_arrives_today_its/</a><br />
+   → Jus 点评：<strong>"无用的浪漫"系列第 N 个</strong>（老鼠绕地球、篝火小岛、触摸草地、这列火车）。<strong>这类项目在 r/SideProject 是稳定的流量配方</strong>：一个温柔的、没有目的的东西。</p>
+</li>
+<li>
+<p><strong>🔥 「我的免费 Web 工具 5 天赚了 1.30 美元广告费，我关掉了展示广告」</strong>（15 分 / 20 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y7aydq/i_killed_display_ads_on_my_free_web_tool_after/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y7aydq/i_killed_display_ads_on_my_free_web_tool_after/</a><br />
+   → Jus 点评：<strong>今天最实用的"反面收入案例"</strong>。5 天 1.30 美元，说明<strong>展示广告在免费工具上几乎不可能赚钱</strong>，而且破坏了体验。<br />
+   → <strong>对你的直接建议：别在副业项目上挂展示广告。</strong> 要么免费无广告建立口碑，要么做订阅/买断。<strong>中间路线（免费 + 广告）是最差的。</strong></p>
+</li>
+<li>
+<p><strong>SoulWave：带同步歌词和媒体控制的终端音乐可视化器</strong>（13 分 / 0 评论）<br />
+   <a href="https://reddit.com/r/SideProject/comments/1y7eb75/soulwave_a_terminal_music_visualizer_with_synced/" target="_blank" rel="noopener">https://reddit.com/r/SideProject/comments/1y7eb75/soulwave_a_terminal_music_visualizer_with_synced/</a><br />
+   → Jus 点评：终端 TUI 项目。<strong>这是"技术品味展示型"开源</strong>，受众小但精准（都是会给你 star 的人）。</p>
+</li>
+</ol>
+<hr />
+<h2>🌱 r/SaaS</h2>
+<ol>
+<li>
+<p><strong>💪 「做了两年，我的项目终于开始起飞了（别放弃）」</strong>（<strong>69 分 / 31 评论</strong>，今日第一）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y7jlt0/after_two_years_of_work_my_project_is_finally/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y7jlt0/after_two_years_of_work_my_project_is_finally/</a><br />
+   → Jus 点评：<strong>两年。</strong> 这个数字本身就是今天最该记住的东西。<br />
+   → 和昨天那条「7个月135美元→月入1500」连起来看，形状完全一致：<strong>长时间的零，然后斜率。</strong> 两个人，两条曲线，同一个结论。<br />
+   → <strong>对你的校准</strong>：你的"6 个月第一笔付费"目标是<strong>乐观但不是不可能</strong>，而"1 年副业年入 10 万"是<strong>需要运气的</strong>。真实基准大概是<strong>第一笔付费 6-18 个月</strong>。</p>
+</li>
+<li>
+<p><strong>🎯 「我给了 4 个 AI agent 各自的电脑，让它们在一（段时间内）做出并上线一个 SaaS」</strong>（16 分 / 6 评论，新发）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y7ermq/i_gave_4_ai_agents_their_own_computers_and_had/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y7ermq/i_gave_4_ai_agents_their_own_computers_and_had/</a><br />
+   → Jus 点评：<strong>这条和你 cc-connect 做的事几乎一模一样！</strong> 多 agent + 各自独立环境 + 协作产出。<br />
+   → <strong>建议你读一下他怎么做的</strong>——① 看他的架构和你有什么不同 ② <strong>这是你的潜在同类/竞品/合作者</strong> ③ 如果他的方案比你的好，你可以直接改进你的。</p>
+</li>
+<li>
+<p><strong>「每个人都（像）一夜 0→1000 用户，没人讲的部分是什么？」</strong>（20 分 / <strong>30 评论</strong>，昨天推过，评论在涨）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y75qc5/everyone_here_seems_to_go_0_1000_users_overnight/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y75qc5/everyone_here_seems_to_go_0_1000_users_overnight/</a><br />
+   → Jus 点评：<strong>评论从 11 涨到 30。</strong> 大家在补充"没人讲的部分"。<strong>和上面那条两年的帖子互为答案。</strong></p>
+</li>
+<li>
+<p><strong>24 小时 45 美元销售</strong>（20 分 / 22 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y7j1l6/got_45_in_sales_in_first_24hrs_of_launching_my/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y7j1l6/got_45_in_sales_in_first_24hrs_of_launching_my/</a><br />
+   → Jus 点评：<strong>45 美元 / 24 小时</strong>，这是很健康的起步信号（不是 0，不是暴富）。</p>
+</li>
+<li>
+<p><strong>「没人认识你的时候，怎么让人买你的产品？」</strong>（12 分 / 17 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y7iypp/how_do_you_actually_get_someone_to_buy_your/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y7iypp/how_do_you_actually_get_someone_to_buy_your/</a><br />
+   → Jus 点评：<strong>这是"会做不会卖"的第七天回声。</strong> 现在已经是整周的固定主题了。</p>
+</li>
+<li>
+<p><strong>「每个人（和每个 AI）都说用 Vercel，我偏要反着来，来吐槽我」</strong>（9 分 / 11 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y7hcb6/everyone_and_every_ai_says_just_use_vercel_im/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y7hcb6/everyone_and_every_ai_says_just_use_vercel_im/</a><br />
+   → Jus 点评：<strong>反主流技术的姿态本身是流量</strong>。而且他的理由（自托管/成本/可控）正好和本周"本地优先"那条线一致。</p>
+</li>
+<li>
+<p><strong>第一个月约 250 活跃用户</strong>（7 分 / 7 评论）<br />
+   <a href="https://reddit.com/r/SaaS/comments/1y70ybh/my_first_month_with_about_250_active_users/" target="_blank" rel="noopener">https://reddit.com/r/SaaS/comments/1y70ybh/my_first_month_with_about_250_active_users/</a></p>
+</li>
+</ol>
+<hr />
+<h2>#️⃣ SomebodyMakeThis</h2>
+<blockquote>
+<p>🔴 第 15 天 403 依旧。今天大量低质帖（同一人连发 4 条"Style Blend Idea"），但有一条值得看：</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>⭐ 「为什么还没有一个『输入菜名，购物车就满了』的按钮？」</strong>（1 分，但同一个人发了两遍，说明真的在想）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y7faz2/why_isnt_there_a_type_the_dish_get_the_grocery/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y7faz2/why_isnt_there_a_type_the_dish_get_the_grocery/</a><br />
+   → Jus 点评：<strong>需求内核很清晰</strong>：想吃某道菜 → 自动生成采购清单 → 一键加进生鲜电商购物车。<br />
+   → <strong>技术上是成熟的</strong>（菜谱数据集 + LLM 拆配料 + 电商 API），<strong>难点在最后一公里</strong>：盒马/美团/叮咚都不开放购物车 API。<br />
+   → <strong>但这是个真需求</strong>，而且国内尤其痛（做饭最大的摩擦就是备料）。<strong>如果有精力，做个"菜单 → 采购清单"的导出工具（哪怕不接购物车）就有价值。</strong><br />
+   → <strong>对你的启示</strong>：这类"最后一公里被平台锁死"的需求，是小开发者最容易碰壁的地方。<strong>评估需求时，"能不能拿到关键 API"比"需不需要"更重要。</strong></p>
+</li>
+<li>
+<p><strong>「想象一下能获得人们仅仅通过生活积累的知识」</strong>（0 分 / 1 评论）<br />
+   <a href="https://reddit.com/r/SomebodyMakeThis/comments/1y7c2la/imagine_having_access_to_the_knowledge_people/" target="_blank" rel="noopener">https://reddit.com/r/SomebodyMakeThis/comments/1y7c2la/imagine_having_access_to_the_knowledge_people/</a><br />
+   → Jus 点评：模糊的宏大想法。跳过。</p>
+</li>
+<li>
+<p>其余：House Design Pitch、Style Blend #1/#2、Style and Media Pitch、Looking for help in a coding idea —— 全部跳过（同一人批量发帖，无实质需求）</p>
+</li>
+</ol>
+<p><strong>第 15 天：连续 3 天无有效需求。</strong></p>
+<hr />
+<h2>🎯 今日灵感提炼</h2>
+<ol>
+<li><strong>💪 今天最重要的一条数据：两个人，两条曲线，同一个形状。</strong><br />
+   - <a href="https://reddit.com/r/SaaS/comments/1y7jlt0/after_two_years_of_work_my_project_is_finally/">两年才起飞</a>（69分）<br />
+   - <a href="https://reddit.com/r/SideProject/comments/1y73ecp/my_free_mac_app_made_135_in_7_months_now_it_makes/">7个月135美元 → 月入1500</a>（41分/48评论）</li>
+</ol>
+<p>→ <strong>独立开发的真实形状是：长时间的零，然后突然的斜率。不是线性，不是复利，是相变。</strong><br />
+   → <strong>校准你的两个目标</strong>：<br />
+     - 「6 个月第一笔付费」= 乐观但可行<br />
+     - 「1 年副业年入 10 万」= 需要运气，真实基准是<strong>18-36 个月</strong><br />
+   → <strong>这不是劝退，是让你别在第 6 个月没钱的时候误判自己失败了。</strong> 那两个人都是熬过零的人才看到斜率的。</p>
+<ol start="2">
+<li>
+<p><strong>🔥 「Farewell」那条 615 分，是一个硬核开源作者的告别。</strong><br />
+   你要做开源影响力，<strong>这条比任何"如何做开源"的文章都重要</strong>。266 条评论里有大量同类人在讲自己的结局。<strong>知道别人怎么结束，比知道怎么开始更有价值。</strong></p>
+</li>
+<li>
+<p><strong>🎯 Claude Code sabotage 的基准测试（348分）—— 这是你的专业，也是你的机会。</strong><br />
+   对 AI agent 的可靠性做系统化测量，方法论还没人产品化。<strong>你在英伟达做的就是这件事的工业版。</strong> 这条 + 本周所有「AI 写的代码不敢上线」的讨论 = <strong>你的副业方向其实已经很清楚了。</strong></p>
+</li>
+<li>
+<p><strong>🚨 恶意 GGUF 感染 2400 人 —— 你正在用 GGUF 模型。</strong><br />
+<strong>今天就去检查你下载过的模型来源。</strong> 只从官方仓库下，未知来源的放沙箱里跑。<br />
+   → 另外：<strong>"模型文件安全检查"是个几乎空白的方向，和你的测试背景完全匹配。</strong></p>
+</li>
+<li>
+<p><strong>💰 5 天广告费 1.30 美元 → 关掉广告。</strong><br />
+<strong>别在免费工具上挂展示广告。</strong> 要么免费无广告建立口碑，要么订阅/买断。中间路线最差。</p>
+</li>
+<li>
+<p><strong>可操作（优先级排序）</strong>：<br />
+   - 📖 <strong>读 <a href="https://github.com/p-e-w/heretic/issues/601">Farewell</a></strong>（615分）—— 一个人做开源是怎么结束的<br />
+   - 🎯 <strong>读 <a href="https://xinyadu.github.io/blog/claude-code-sabotage.html">Claude Code sabotage 基准</a></strong> —— 你的专业 + 你的副业方向<br />
+   - 🚨 <strong>检查你的 GGUF 模型来源</strong> —— 2400 人已被感染<br />
+   - 🔍 研究 <a href="https://reddit.com/r/SideProject/comments/1y6x79r/local_open_source_app_that_lets_you_search_your/">本地语义搜索文件</a>（157分，一天 6 倍）<br />
+   - 👥 看 <a href="https://reddit.com/r/SaaS/comments/1y7ermq/i_gave_4_ai_agents_their_own_computers_and_had/">4 个 agent 各自有电脑做 SaaS</a> —— 和你的 cc-connect 几乎一样<br />
+   - 💰 记住「别挂展示广告」</p>
+</li>
+</ol>
+<hr />
+<p><em>来源：HN Firebase API / orangebot.ai PH feed / Reddit JSON API(cookie) / r/SomebodyMakeThis</em><br />
+<em>SMT 第 15 天 403，连续 3 天无有效需求</em></p><div class="pager"><a class="l" href="2026-11-28.html">← 2026-11-28</a></div></article>
+<footer>自动生成 · 2026-11-29</footer>
+</div>
+</body></html>
